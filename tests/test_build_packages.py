@@ -12,16 +12,14 @@ import subprocess
 import sys
 import tempfile
 import unittest
-import zipfile
 from pathlib import Path
 
 TOOL = Path(__file__).resolve().parent.parent / "tools" / "build-packages"
 CHECK = Path(__file__).resolve().parent.parent / "tools" / "check-comparisons"
 
-# Imports name the folder after the source's stem (or --id); extract reads a zip entry.
+# Imports name the folder after the source's stem (or --id).
 FAKE_OA_TOOL = """
 import sys
-import zipfile
 from pathlib import Path
 
 args = sys.argv[1:]
@@ -32,9 +30,6 @@ if args[:2] == ["mutator", "import"]:
     (out / name).mkdir(parents=True)
     (out / name / "oamut.yaml").write_text("id: " + name + "\\n")
     print("imported " + name)
-elif args[:1] == ["extract"]:
-    with zipfile.ZipFile(args[1]) as archive:
-        Path(args[3]).write_bytes(archive.read(args[2]))
 else:
     sys.exit(2)
 """
@@ -62,8 +57,6 @@ class BuildPackagesTest(unittest.TestCase):
         test.mkdir(parents=True)
         (test / "One.tam").write_text("one\n", encoding="utf-8")
         (test / "Two.tam").write_text("two\n", encoding="utf-8")
-        with zipfile.ZipFile(test / "data.zip", "w") as archive:
-            archive.writestr("units/a.fbi", ENTRY_BYTES)
         self.family = self.repo / "sample"
         self.family.mkdir()
         self.write_imports(["one\tTest/One.tam", "two\tTest/Two.tam"])
@@ -71,7 +64,9 @@ class BuildPackagesTest(unittest.TestCase):
         package.mkdir()
         (package / "oamut.yaml").write_text("oamut: 1\nid: pkg\n", encoding="utf-8")
         (package / "mutator.lua").write_text("return {}\n", encoding="utf-8")
-        self.write_files(hashlib.sha256(ENTRY_BYTES).hexdigest())
+        shipped = package / "files" / "units"
+        shipped.mkdir(parents=True)
+        (shipped / "a.fbi").write_bytes(ENTRY_BYTES)
         (self.family / "_verify").mkdir()
         (self.family / "_verify" / "comparisons.tsv").write_text(
             "row\tcurated\timports\tallowed\npkg\t./pkg\t_imports/one\t-\n", encoding="utf-8"
@@ -80,10 +75,6 @@ class BuildPackagesTest(unittest.TestCase):
     def write_imports(self, rows: list[str]) -> None:
         text = "import\tsource\n" + "".join(row + "\n" for row in rows)
         (self.family / "_imports.tsv").write_text(text, encoding="utf-8")
-
-    def write_files(self, sha256: str) -> None:
-        text = f"path\tsource\tentry\tsha256\nfiles/units/a.fbi\tTest/data.zip\tunits/a.fbi\t{sha256}\n"
-        (self.family / "pkg" / "from-originals.tsv").write_text(text, encoding="utf-8")
 
     def build(self, *args: str, cwd: Path | None = None) -> subprocess.CompletedProcess[str]:
         command = [sys.executable, "-I", str(self.repo / "tools" / "build-packages"), "--tool", str(self.fake)]
@@ -95,7 +86,7 @@ class BuildPackagesTest(unittest.TestCase):
         for _ in range(2):
             proc = self.build("sample")
             self.assertEqual(proc.returncode, 0, proc.stderr)
-            self.assertIn("build: sample: 2 imports, 1 packages, 1 files from originals", proc.stdout)
+            self.assertIn("build: sample: 2 imports, 1 packages", proc.stdout)
         built = self.repo / "build" / "sample"
         self.assertTrue((built / ".build-packages").is_file())
         self.assertEqual((built / "pkg" / "files" / "units" / "a.fbi").read_bytes(), ENTRY_BYTES)
@@ -145,11 +136,41 @@ class BuildPackagesTest(unittest.TestCase):
 
     def test_failed_family_leaves_no_build(self) -> None:
         self.assertEqual(self.build("sample").returncode, 0)
-        self.write_files("0" * 64)
+        archive = self.family / "pkg" / "files" / "packed.ccx"
+        archive.write_bytes(b"not a real archive")
         proc = self.build("sample")
         self.assertEqual(proc.returncode, 1, proc.stderr)
-        self.assertIn("SHA-256 mismatch", proc.stderr)
+        self.assertIn("files/packed.ccx", proc.stderr)
         self.assertEqual(tree(self.repo / "build"), [])
+
+    def test_source_files_are_copied_byte_for_byte(self) -> None:
+        payload = b"unit\r\n\x00\xff bytes"
+        target = self.family / "pkg" / "files" / "units" / "a.fbi"
+        target.write_bytes(payload)
+        model = self.family / "pkg" / "files" / "objects3d" / "m.3do"
+        model.parent.mkdir(parents=True)
+        model.write_bytes(b"\x00model")
+        proc = self.build("sample")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        built = self.repo / "build" / "sample" / "pkg"
+        self.assertEqual((built / "files" / "units" / "a.fbi").read_bytes(), payload)
+        self.assertEqual((built / "files" / "objects3d" / "m.3do").read_bytes(), b"\x00model")
+        self.assertEqual((built / "oamut.yaml").read_bytes(), (self.family / "pkg" / "oamut.yaml").read_bytes())
+        self.assertEqual((built / "mutator.lua").read_bytes(), (self.family / "pkg" / "mutator.lua").read_bytes())
+        self.assertEqual(hashlib.sha256(payload).digest(), hashlib.sha256((built / "files" / "units" / "a.fbi").read_bytes()).digest())
+
+    def test_archive_under_files_is_refused(self) -> None:
+        names = ("units/pack.ccx", "nested/PACK.ZIP", "a.ufo", "b.hpi", "c.gp3", "d.tam", "e.UFO")
+        for name in names:
+            with self.subTest(name=name):
+                path = self.family / "pkg" / "files" / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_bytes(b"archive")
+                proc = self.build("sample")
+                self.assertEqual(proc.returncode, 1, proc.stderr)
+                self.assertIn(f"files/{name}", proc.stderr)
+                self.assertFalse((self.repo / "build" / "sample").exists())
+                path.unlink()
 
 
 if __name__ == "__main__":
