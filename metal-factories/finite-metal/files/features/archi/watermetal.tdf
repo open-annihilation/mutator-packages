@@ -1,0 +1,50 @@
+[ArchiAquaOre1]  // Small
+{
+	world=archipelago;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armpt_dead;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=150;
+	damage=448;
+	reclaimable=1;
+	seqnamereclamate=tree1reclamate;
+}
+
+[ArchiAquaOre2]  // Medium
+{
+	world=archipelago;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armcs_dead;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=300;
+	damage=884;
+	reclaimable=1;
+	seqnamereclamate=tree1reclamate;
+}
+
+[ArchiAquaOre3]  // Huge
+{
+	world=archipelago;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armsub_dead;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=750;
+	damage=488;
+	reclaimable=1;
+	seqnamereclamate=tree1reclamate;
+}

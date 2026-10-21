@@ -2,7 +2,7 @@
 
 Five packages replace the twelve Warp Gate mutators Immerman shipped. `warpgate` holds the six gate versions as one Commander arrives choice and follows 4.1 for every arrival. `wg-quickstart`, `wg-fortress`, `wg-early-warning` and `ai-scrouge` each require `warpgate`. Fortress's three tiers are one Gate energy number.
 
-`originals/` and `build/` are gitignored. The commands below build the faithful imports and the curated packages under `build/warpgate/`. The gates, models, scripts, commander button art, Scrouge units and locator weapon are named in `from-originals.tsv` and taken from the originals by `tools/build-packages`. Nothing extracted is committed. L20 compares each row and writes the reports and the allowed-difference files. `_verify/` lists only `comparisons.tsv`.
+`originals/` and `build/` are gitignored. The commands below build the faithful imports and copy the curated packages under `build/warpgate/`. The gates, models, scripts, commander button art, Scrouge units and locator weapon are in each package's `files/`. Files names the archive and entry of each one. The archives themselves stay out of Git. L20 compares each row and writes the reports and the allowed-difference files. `_verify/` lists only `comparisons.tsv`.
 
 ## Originals
 
@@ -42,9 +42,9 @@ Each `.tam` has its `.sm` beside it, and the six gate versions and (AI) Scrouge 
 
 The arrival archives are at-gate `{}Warpgate31(1).ccx`, near `{}Warpgate4_1(1).ccx`, near-twin `{}Warpgate4_0-TwinComm(1).ccx`, chosen `{}Warpgate4_0-Targetting(1).ccx`, chosen-twin `{}Warpgate4_0-TwinTarget(1).ccx`. The gates replace 3.1c's Galactic Gates, as the originals' archives did. The locator weapon keeps the id its file requests, and the engine moves that id when another weapon already holds it.
 
-## Files shipped
+## Files
 
-Each hash is the SHA-256 of the archive entry. The build checks it and copies the bytes unchanged. The commanders' two button pictures are the same bytes in every archive, so those two hashes repeat. The other files are hashed from the archive the row names. `near` and 4.0 share gate unit files, models and scripts; TwinComm's scripts differ; Targetting and TwinTarget share the unit files, the models and the locator weapon, and their scripts differ.
+Each hash is the SHA-256 of the archive entry. The file under `files/` is those bytes. The commanders' two button pictures are the same bytes in every archive, so those two hashes repeat. The other files are hashed from the archive the row names. `near` and 4.0 share gate unit files, models and scripts; TwinComm's scripts differ; Targetting and TwinTarget share the unit files, the models and the locator weapon, and their scripts differ.
 
 ### warpgate
 
@@ -168,4 +168,4 @@ T=$OA_WT/mutators-engine/build/oa-tool
 tools/build-packages --tool "$T" warpgate
 ```
 
-That prints `build: warpgate: 12 imports, 5 packages, 48 files from originals`. Pack and check from `build/warpgate`. Paths in `_verify/comparisons.tsv` are relative to that folder. A second `tools/build-packages --tool "$T" warpgate --out <empty folder>` matches `build/warpgate`.
+That prints `build: warpgate: 12 imports, 5 packages`. Pack and check from `build/warpgate`. Paths in `_verify/comparisons.tsv` are relative to that folder. A second `tools/build-packages --tool "$T" warpgate --out <empty folder>` matches `build/warpgate`.

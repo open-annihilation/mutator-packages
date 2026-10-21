@@ -67,7 +67,7 @@ T=$OA_WT/mutators-engine/build/oa-tool
 tools/build-packages --tool "$T" economy
 ```
 
-That prints `build: economy: 26 imports, 13 packages, 0 files from originals`. Pack and check from `build/economy`:
+That prints `build: economy: 26 imports, 13 packages`. Pack and check from `build/economy`:
 
 ```sh
 S=$(mktemp -d -t L02)

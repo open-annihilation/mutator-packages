@@ -51,7 +51,7 @@ T=$OA_WT/mutators-engine/build/oa-tool
 tools/build-packages --tool "$T" mac-world
 ```
 
-That prints `build: mac-world: 14 imports, 9 packages, 0 files from originals`. Pack and check from `build/mac-world`:
+That prints `build: mac-world: 14 imports, 9 packages`. Pack and check from `build/mac-world`:
 
 ```sh
 S=$(mktemp -d -t L12)

@@ -48,7 +48,9 @@ The author of every original is MAC (macraig). Each `.tam` has its `.sm` beside 
 
 ## The sight table
 
-`enhanced-los` ships one file taken from an original:
+`enhanced-los` ships one file taken from an original.
+
+### Files
 
 | Path in the package | Source under `originals/` | Entry | SHA-256 |
 |---|---|---|---|
@@ -86,7 +88,7 @@ T=$OA_WT/mutators-engine/build/oa-tool
 tools/build-packages --tool "$T" mac-units
 ```
 
-That prints `build: mac-units: 35 imports, 16 packages, 1 files from originals`. Pack and check from `build/mac-units`:
+That prints `build: mac-units: 35 imports, 16 packages`. Pack and check from `build/mac-units`:
 
 ```sh
 S=$(mktemp -d -t L11)

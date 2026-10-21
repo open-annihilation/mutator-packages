@@ -1,0 +1,35 @@
+[armntow_dead]
+	{
+	world=All Worlds;
+	description=Arm Nanotower Remains;
+	category=arm_corpses;
+	object=armntow_dead;
+	footprintx=4;
+	footprintz=4;
+	height=20;
+	blocking=1;
+	hitdensity=100;
+	metal=1446;
+	damage=2808;
+	reclaimable=1;
+	featurereclamate=smudge01;
+      seqnamereclamate=tree1reclamate;
+	}
+
+[armntow_heap]
+	{
+	world=All Worlds;
+	description=Wreckage;
+	category=heaps;
+	object=3x3b;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=456;
+	damage=340;
+	reclaimable=1;
+	featurereclamate=smudge01;
+	seqnamereclamate=tree1reclamate;
+	}

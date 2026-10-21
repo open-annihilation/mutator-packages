@@ -1,6 +1,6 @@
 # MAC's unit tweaks
 
-Fourteen packages replace sixteen of MAC's (macraig) single-unit tweaks and his two unit adders. The tweaks name the units they change, as the originals do, so a game without that unit is unchanged. The two adders ship the original's files, named in `from-originals.tsv` and copied by `tools/build-packages`. Absolute Annihilation 6.0 Tweaks is not converted. No comparison needs an allowed difference. The reports are in `_verify/`.
+Fourteen packages replace sixteen of MAC's (macraig) single-unit tweaks and his two unit adders. The tweaks name the units they change, as the originals do, so a game without that unit is unchanged. The two adders ship the original's files in `files/`. Files lists each path, the archive and entry it came from, and its SHA-256. Absolute Annihilation 6.0 Tweaks is not converted. No comparison needs an allowed difference. The reports are in `_verify/`.
 
 The import id is the id `oa-tool mutator import` makes from the title, with no `--works-with`. MAC's codes (`UTASP`, `TAUCP17`, `UT40b`, `AA60` and the rest) stay on each legacy record.
 
@@ -61,36 +61,43 @@ P05's warnings, from `tools/build-packages`. F02 refuses a path outside the per-
 
 Every other import warning is a compatibility code with no mod (`UTASP`, `UT30b`, `UT40b`, `UT50b`, `TAUCP17`, `TAUCP18`, `TAUCP23`, `AA60`), the note that tags default to gameplay, or, for the Seahawk, that an empty line before the compatibility line was skipped. OTA and TACC on the two plane tweaks map to the base game. None of those codes is passed as `--works-with`.
 
-## Files from the originals
+## Files
 
-Each hash is the SHA-256 of the archive entry. The build checks it and copies the bytes unchanged. Paths keep the archive's names.
+Each hash is the SHA-256 of the archive entry. The file under `files/` is those bytes. Paths keep the archive's names.
 
-| Package path | Source | Entry | SHA-256 |
+### nano-tower
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
 |---|---|---|---|
-| `nano-tower` `files/anims/ARMMTLAB_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `anims/ARMMTLAB_gadget.GAF` | `37952b88827200c6a5c942a56d73b1adcdd14b30dedc72ee1d7f42b931922a7f` |
-| `nano-tower` `files/anims/ARMNTOW_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `anims/ARMNTOW_gadget.GAF` | `3d0e26d00bc8b9de1fc693fbd0b01958c42d1ed4e09a480f49d051664845a297` |
-| `nano-tower` `files/download/armmtlab.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `download/armmtlab.tdf` | `c841fdd6352a85954cbae8f765aca2b3c7261f0e9d8184b68ad850051806973e` |
-| `nano-tower` `files/download/armntow.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `download/armntow.tdf` | `39668fd3e75f84631fce9406fc31480b5558f43200ea55ff5659ef4b3f8df6e8` |
-| `nano-tower` `files/features/corpses/armmtlab_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `features/corpses/armmtlab_dead.tdf` | `a07d0f7b9d3f92fa73a660b82db7b7be30faf174bc55e5b7b03ca269fe0ccfa3` |
-| `nano-tower` `files/features/corpses/armntow_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `features/corpses/armntow_dead.tdf` | `60beee10440e48e6326e69c000d2fe59407fa7a94a864af134765b306f05bcd8` |
-| `nano-tower` `files/objects3d/armmtlab.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armmtlab.3do` | `9aca5e40edd267f600e6412691d3a2d3788eeda3d73febb3d40032cd647a14ff` |
-| `nano-tower` `files/objects3d/armmtlab_dead.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armmtlab_dead.3do` | `96722ea3e7b7562bba6f13f4bb325881becaf5ae5f626d69d9b92a365ca148f6` |
-| `nano-tower` `files/objects3d/armntow.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armntow.3do` | `4c37c715ae2838dc855fe96685aa3356154e876ea9411c976ebbbe4914acacd5` |
-| `nano-tower` `files/objects3d/armntow_dead.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armntow_dead.3do` | `b6cd9f37158aa8ccae90c22cea8bccb1fd533981893dc9bc22abc6738a7db21c` |
-| `nano-tower` `files/scripts/armmtlab.cob` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `scripts/armmtlab.cob` | `2cdfa0a8c4f9c77ed3d8ef844be1bd558e11457359abcb91ac99a54e83e8edb6` |
-| `nano-tower` `files/scripts/armntow.cob` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `scripts/armntow.cob` | `b82c78d382fc9e3087e4ab06a96a51955787bd1663459ee59129d0ac051397b3` |
-| `nano-tower` `files/unitpics/armmtlab.pcx` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `unitpics/armmtlab.pcx` | `60f685447d0ddffbfe77d44306a92fae3b6bbd00886324f60b75011da6fad278` |
-| `nano-tower` `files/unitpics/armntow.pcx` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `unitpics/armntow.pcx` | `e5a8b6461abe3a80b917e0e3e3ef2c87d61fa5a9dd8ff1f7e912a597161f55a2` |
-| `nano-tower` `files/units/armmtlab.fbi` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `units/armmtlab.fbi` | `28fcfd08832d79c1c01e8943513564a79ff653e5b1a283566e241a95359b6f1d` |
-| `nano-tower` `files/units/armntow.fbi` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `units/armntow.fbi` | `59032f11c6860fd2e816b1c20cae57367f179e4e7f4b0a7e2259edb215502dcf` |
-| `dragons-eye` `files/units/Armeyes.fbi` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `units/Armeyes.fbi` | `53e7746e29a9f07d7812779c8057b0ac4853a33b8fce25dc92fe7e86d2ae59aa` |
-| `dragons-eye` `files/objects3d/Armeyes.3do` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `objects3d/Armeyes.3do` | `fde1ee37949e486a664493fceae9296ecef666d1d0fa142b5683dbe7235ccc0c` |
-| `dragons-eye` `files/scripts/Armeyes.COB` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `scripts/Armeyes.COB` | `28f0715fada60a392a1eb5d3e27acf9360bb1690d53b339522662444e5a47bed` |
-| `dragons-eye` `files/unitpics/Armeyes.pcx` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `unitpics/Armeyes.pcx` | `1900904298c74994c79d074a814ff264030ab6bb563e5520bdfe184ac7113205` |
-| `dragons-eye` `files/features/corpses/Dragonseyes_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `features/corpses/Dragonseyes_dead.tdf` | `4e6769f1285b49feebe6f3fc11e2d5ac91a520ed80c49e93294de2b0b9b7fee5` |
-| `dragons-eye` `files/download/Armeyes.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `download/Armeyes.tdf` | `c092c4422e558bca181fa4b10685a0bed2d591d268c8adfde0a27bf8ac3470c3` |
-| `dragons-eye` `files/download/Armeyes1.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `download/Armeyes1.tdf` | `d38c47f80635941e4a10be06e377eaefbfe3ff8e140c05c91366ec0f09b40cc0` |
-| `dragons-eye` `files/anims/ARMEYES_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `anims/ARMEYES_gadget.GAF` | `1712b716368e05b39c983debf1004bce9e5567c62d8415191e414c89523b823f` |
+| `files/anims/ARMMTLAB_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `anims/ARMMTLAB_gadget.GAF` | `37952b88827200c6a5c942a56d73b1adcdd14b30dedc72ee1d7f42b931922a7f` |
+| `files/anims/ARMNTOW_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `anims/ARMNTOW_gadget.GAF` | `3d0e26d00bc8b9de1fc693fbd0b01958c42d1ed4e09a480f49d051664845a297` |
+| `files/download/armmtlab.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `download/armmtlab.tdf` | `c841fdd6352a85954cbae8f765aca2b3c7261f0e9d8184b68ad850051806973e` |
+| `files/download/armntow.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `download/armntow.tdf` | `39668fd3e75f84631fce9406fc31480b5558f43200ea55ff5659ef4b3f8df6e8` |
+| `files/features/corpses/armmtlab_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `features/corpses/armmtlab_dead.tdf` | `a07d0f7b9d3f92fa73a660b82db7b7be30faf174bc55e5b7b03ca269fe0ccfa3` |
+| `files/features/corpses/armntow_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `features/corpses/armntow_dead.tdf` | `60beee10440e48e6326e69c000d2fe59407fa7a94a864af134765b306f05bcd8` |
+| `files/objects3d/armmtlab.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armmtlab.3do` | `9aca5e40edd267f600e6412691d3a2d3788eeda3d73febb3d40032cd647a14ff` |
+| `files/objects3d/armmtlab_dead.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armmtlab_dead.3do` | `96722ea3e7b7562bba6f13f4bb325881becaf5ae5f626d69d9b92a365ca148f6` |
+| `files/objects3d/armntow.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armntow.3do` | `4c37c715ae2838dc855fe96685aa3356154e876ea9411c976ebbbe4914acacd5` |
+| `files/objects3d/armntow_dead.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armntow_dead.3do` | `b6cd9f37158aa8ccae90c22cea8bccb1fd533981893dc9bc22abc6738a7db21c` |
+| `files/scripts/armmtlab.cob` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `scripts/armmtlab.cob` | `2cdfa0a8c4f9c77ed3d8ef844be1bd558e11457359abcb91ac99a54e83e8edb6` |
+| `files/scripts/armntow.cob` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `scripts/armntow.cob` | `b82c78d382fc9e3087e4ab06a96a51955787bd1663459ee59129d0ac051397b3` |
+| `files/unitpics/armmtlab.pcx` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `unitpics/armmtlab.pcx` | `60f685447d0ddffbfe77d44306a92fae3b6bbd00886324f60b75011da6fad278` |
+| `files/unitpics/armntow.pcx` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `unitpics/armntow.pcx` | `e5a8b6461abe3a80b917e0e3e3ef2c87d61fa5a9dd8ff1f7e912a597161f55a2` |
+| `files/units/armmtlab.fbi` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `units/armmtlab.fbi` | `28fcfd08832d79c1c01e8943513564a79ff653e5b1a283566e241a95359b6f1d` |
+| `files/units/armntow.fbi` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `units/armntow.fbi` | `59032f11c6860fd2e816b1c20cae57367f179e4e7f4b0a7e2259edb215502dcf` |
+
+### dragons-eye
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/units/Armeyes.fbi` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `units/Armeyes.fbi` | `53e7746e29a9f07d7812779c8057b0ac4853a33b8fce25dc92fe7e86d2ae59aa` |
+| `files/objects3d/Armeyes.3do` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `objects3d/Armeyes.3do` | `fde1ee37949e486a664493fceae9296ecef666d1d0fa142b5683dbe7235ccc0c` |
+| `files/scripts/Armeyes.COB` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `scripts/Armeyes.COB` | `28f0715fada60a392a1eb5d3e27acf9360bb1690d53b339522662444e5a47bed` |
+| `files/unitpics/Armeyes.pcx` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `unitpics/Armeyes.pcx` | `1900904298c74994c79d074a814ff264030ab6bb563e5520bdfe184ac7113205` |
+| `files/features/corpses/Dragonseyes_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `features/corpses/Dragonseyes_dead.tdf` | `4e6769f1285b49feebe6f3fc11e2d5ac91a520ed80c49e93294de2b0b9b7fee5` |
+| `files/download/Armeyes.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `download/Armeyes.tdf` | `c092c4422e558bca181fa4b10685a0bed2d591d268c8adfde0a27bf8ac3470c3` |
+| `files/download/Armeyes1.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `download/Armeyes1.tdf` | `d38c47f80635941e4a10be06e377eaefbfe3ff8e140c05c91366ec0f09b40cc0` |
+| `files/anims/ARMEYES_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `anims/ARMEYES_gadget.GAF` | `1712b716368e05b39c983debf1004bce9e5567c62d8415191e414c89523b823f` |
 
 `nano-tower` and `nano-tower-tweak` conflict. One adds the pad and the tower, and the other changes those units when a pack already has them.
 

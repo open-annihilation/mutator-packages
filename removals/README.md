@@ -1,6 +1,6 @@
 # Removals, toggles and tables
 
-Eighteen packages replace twenty of the twenty-two TA: Mutation removal, toggle and table mutators. MAC (macraig)'s Friendly Skies and Even Friendlier Skies are the aircraft option on No Air. Hover Craft Fix and Vibrant Colors are not converted. Every rule is Lua. Double LOS is the only package that takes a file from the originals, and it names that file in `from-originals.tsv`.
+Eighteen packages replace twenty of the twenty-two TA: Mutation removal, toggle and table mutators. MAC (macraig)'s Friendly Skies and Even Friendlier Skies are the aircraft option on No Air. Hover Craft Fix and Vibrant Colors are not converted. Every rule is Lua. Double LOS is the only package that ships a file from the originals, and Files names that file.
 
 `originals/` and `build/` are gitignored. The commands below build the faithful imports and the curated packages under `build/removals/`. L21 compares each row and records the reports and the allowed-difference files.
 
@@ -70,6 +70,14 @@ Double LOS keeps the sight and radar factors and ships `files/gamedata/los.tdf` 
 
 AI Tag Remover drops `ai_weight` and `ai_limit` when the field is present. The original looked for the text "we" and "li". On this game every unit that has either field holds that text, so the same units match.
 
+## Files
+
+### double-los
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/gamedata/los.tdf` | `Mutators/{}DoubleLOS(1).ccx` | `gamedata/los.tdf` | `47f7079821ce0d0123d844d47343ad82483a48f13b70eed7c2877d9228e5de6a` |
+
 ## Build, pack and check
 
 From this repository, with the mutators environment sourced:
@@ -80,7 +88,7 @@ T=$OA_WT/mutators-engine/build/oa-tool
 tools/build-packages --tool "$T" removals
 ```
 
-That prints `build: removals: 22 imports, 18 packages, 1 files from originals`. Pack and check from `build/removals`:
+That prints `build: removals: 24 imports, 18 packages`. Pack and check from `build/removals`:
 
 ```sh
 S=$(mktemp -d -t L06)

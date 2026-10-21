@@ -1,0 +1,15 @@
+# Models, compiled scripts, button art and unit pictures are binary.
+# Both cases are named so a case-sensitive checkout matches the file.
+*.3do binary
+*.cob binary
+*.COB binary
+*.gaf binary
+*.GAF binary
+*.pcx binary
+*.PCX binary
+
+# Unit, feature and menu text. Line endings stay as the archives stored them.
+*.fbi -text
+*.FBI -text
+*.tdf -text
+*.TDF -text

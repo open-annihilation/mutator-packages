@@ -42,11 +42,13 @@ Three tags in the corpus do not match the weapons the originals need. The packag
 - Battle Ship Deck Lasers says `*`. The Arm unit file sets `ARM_BATSAFT` and `ARM_BATSFORE`, which are Uberhack-only. `battleship-deck-lasers` does not set those fields, so the base game's `ARM_BATS` stays in both slots.
 - Better L.L.T and Terrain Terror say `*`. The weapon is Core Contingency's `ARMSCORP_WEAPON`. Each package has a units hook: when `ctx.weapons` lacks that weapon, it calls `ctx.incompatible` and names the original.
 
-## Files from the originals
+## Files
 
-`battleship-deck-lasers` names four runtime files in `from-originals.tsv`. The build checks each SHA-256 and copies the bytes unchanged. The `.bos` sources are not named: the game never reads them.
+### battleship-deck-lasers
 
-| Package path | Source | Entry | SHA-256 |
+`battleship-deck-lasers` ships four runtime files. Each hash is the SHA-256 of the archive entry, and the file under `files/` is those bytes. The `.bos` sources are not shipped: the game never reads them.
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
 |---|---|---|---|
 | `files/objects3d/armbats.3do` | `Mutators/}{BSDECKL.ccx` | `objects3d/armbats.3do` | `ba74d46536db75d664c238963deec8eb6cce8a08276a213ac7ab93e3329d84ab` |
 | `files/objects3d/corbats.3do` | `Mutators/}{BSDECKL.ccx` | `objects3d/corbats.3do` | `1136af2b7883559a8f01ad27ca245f7b2d485ee194a93d0574d502291fbad7a7` |
@@ -115,4 +117,4 @@ T=$OA_WT/mutators-engine/build/oa-tool
 tools/build-packages --tool "$T" weapons
 ```
 
-That prints `build: weapons: 15 imports, 14 packages, 4 files from originals`. Pack and check from `build/weapons`. Paths in `_verify/comparisons.tsv` are relative to `build/weapons`. A second `tools/build-packages --tool "$T" weapons --out <empty folder>` matches `build/weapons`.
+That prints `build: weapons: 15 imports, 14 packages`. Pack and check from `build/weapons`. Paths in `_verify/comparisons.tsv` are relative to `build/weapons`. A second `tools/build-packages --tool "$T" weapons --out <empty folder>` matches `build/weapons`.

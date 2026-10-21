@@ -1,0 +1,63 @@
+[UNITINFO]
+        {
+        UnitName=scrgmex;
+        UnitNumber=7893;
+        Side=CORE;
+        Version=1;
+        ObjectName=scrgmex;
+        Name=Metal Guardian;
+        Designation=ME-9;
+        Description=Self-repairing Metal Guardian;
+        FootprintX=3;
+        FootprintZ=3;
+        BuildAngle=32768;
+        MaxSlope=10;
+        MaxWaterDepth=255;
+        BuildCostEnergy=226;
+        BuildCostMetal=21;
+        EnergyUse=5;
+        EnergyStorage=300000;
+        EnergyMake=40;
+        MetalStorage=100000;
+        MinCloakDistance=30;
+        MaxDamage=3000;
+        BuildTime=1436;
+        WorkerTime=0;
+        HealTime=32;
+        ActivateWhenBuilt=1;
+        OnOffable=1;
+        SoundCategory=COR_MEX;
+        FireStandOrders=1;
+        StandingFireOrder=2;
+        DefaultMissionType=GUARD_NOMOVE;
+        CanStop=1;
+        CanGuard=1;
+        CanAttack=1;
+        CanReclamate=1;
+        CanCapture=1;
+        ShootMe=1;
+        Category=CORE METAL NOWEAPON NOTAIR NOTSUB CTRL_X NOTSHIP ANTIEMG ANTIGATOR LEVEL1;
+        ExplodeAs=MEDIUM_BUILDINGEX;
+        TEDClass=METAL;
+        SightDistance=350;
+        RadarDistance=0;
+        RadarDistanceJam=800;
+        SonarDistanceJam=800;
+        Weapon1=ARM_LIGHTLASER;
+        Weapon2=ARM_TORPEDO;
+        BadTargetCategory=ANTILASER;
+        NoChaseCategory=MOBILE;
+        ThreeD=1;
+        ZBuffer=1;
+        BMCode=0;
+        Amphibious=1;
+        Downloadable=1;
+        Copyright=Copyright 1997 Humongous Entertainment. All rights reserved.;
+        YardMap=ooooooooo;
+        selfdestructcountdown=1;
+        ExtractsMetal=0.002;
+        ai_weight=Weight SCRGMEX 40;
+        ai_limit=limit SCRGMEX 50;
+        }
+
+//Generated with TA FBI Editor v1.6
