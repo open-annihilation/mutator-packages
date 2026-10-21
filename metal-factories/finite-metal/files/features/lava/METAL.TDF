@@ -1,0 +1,82 @@
+[LavaMetal1]  // Medium
+{
+	world=lava;
+	description=Rock;
+	category=rocks;
+	animating=0;
+	footprintx=3;
+	footprintz=3;
+	height=14;
+	filename=lavarockb;
+	seqname=rockb011;
+	seqnameshad=rockb011shad;
+	seqnamereclamate=rockB011rec;
+	metal=300;
+
+	seqnamedie=rockboom01;
+	featurereclamate=lavarockB011scar;
+	featuredead=lavarockB011scar;
+
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=2000;
+}
+
+[LavaMetal2]  // Small
+{
+	world=lava;
+	description=Rock;
+	category=rocks;
+	animating=0;
+	footprintx=3;
+	footprintz=3;
+	height=6;
+	filename=lavarockb;
+	seqname=rockb017;
+	seqnameshad=rockb017shad;
+	seqnamereclamate=rockB017rec;
+	metal=150;
+
+	seqnamedie=rockboom01;
+	featurereclamate=lavarockB017scar;
+	featuredead=lavarockB017scar;
+
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=2000;
+}
+
+[LavaMetal3]  // Huge
+{
+	world=lava;
+	description=Rock;
+	category=rocks;
+	animating=0;
+	footprintx=3;
+	footprintz=3;
+	height=2;
+	filename=lavarocka;
+	seqname=rocka005;
+	seqnameshad=rocka005shad;
+	seqnamereclamate=rockA005rec;
+	metal=600;
+
+	seqnamedie=rockboom01;
+	featurereclamate=lavarockA005scar;
+	featuredead=lavarockA005scar;
+
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=2000;
+}
+
+

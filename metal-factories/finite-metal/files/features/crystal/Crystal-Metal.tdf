@@ -1,0 +1,132 @@
+[CrystalMetal1]  // Small
+{
+	world=crystal;
+	description=Rock;
+	category=rocks;
+	animating=0;
+	footprintx=3;
+	footprintz=2;
+	height=4;
+	filename=moonrocks;
+	seqname=rock07;
+	seqnameshad=rock07shad;
+	seqnamereclamate=rock07rec;
+	metal=150;
+
+	seqnamedie=rockboom;
+	featurereclamate=moonrock07scar;
+	featuredead=moonrock07scar;
+
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=2000;
+}
+
+[CrystalMetal2]  // Medium
+{
+	world=crystal;
+	description=Rock;
+	category=rocks;
+	animating=0;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	filename=moonrocks;
+	seqname=rock08;
+	seqnameshad=rock08shad;
+	seqnamereclamate=rock08rec;
+	metal=300;
+
+	seqnamedie=rockboom;
+	featurereclamate=moonrock08scar;
+	featuredead=moonrock08scar;
+
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=2000;
+}
+
+[CrystalMetal3]  // Huge
+{
+	world=crystal;
+	description=Rock;
+	category=rocks;
+	animating=0;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	filename=moonrocks;
+	seqname=rock09;
+	seqnameshad=rock09shad;
+	seqnamereclamate=rock09rec;
+	metal=600;
+
+	seqnamedie=rockboom;
+	featurereclamate=moonrock09scar;
+	featuredead=moonrock09scar;
+
+	animtrans=0;
+	shadtrans=1;
+	reclaimable=1;
+	blocking=1;
+	hitdensity=100;
+	damage=2000;
+}
+
+[CrystalAquaOre1]  // Small
+{
+	world=crystal;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armpt_dead;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=150;
+	damage=448;
+	reclaimable=1;
+	seqnamereclamate=tree1reclamate;
+}
+
+[CrystalAquaOre2]  // Medium
+{
+	world=crystal;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armcs_dead;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=300;
+	damage=884;
+	reclaimable=1;
+	seqnamereclamate=tree1reclamate;
+}
+
+[CrystalAquaOre3]  // Huge
+{
+	world=crystal;
+	world=archipelago;
+	description=Wreckage;
+	category=arm_corpses;
+	object=armsub_dead;
+	footprintx=3;
+	footprintz=3;
+	height=4;
+	blocking=0;
+	hitdensity=100;
+	metal=750;
+	damage=488;
+	reclaimable=1;
+	seqnamereclamate=tree1reclamate;
+}
