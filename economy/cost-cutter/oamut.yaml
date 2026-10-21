@@ -1,0 +1,17 @@
+oamut: 1
+id: "cost-cutter"
+name: "Cost Cutter"
+version: "1"
+author:
+  name: "Immerman"
+description: "Every unit costs half as much metal and energy to build.\n\nImmerman's Cost Cutter 1/2 halved those two costs on every unit.\n\nThis package keeps that rule."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Cost Cutter 1/2"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}CostCutter1_2.tam", "{}CostCutter1_2.sm"]

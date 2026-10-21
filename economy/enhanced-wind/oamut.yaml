@@ -1,0 +1,17 @@
+oamut: 1
+id: "enhanced-wind"
+name: "Enhanced Wind Generators"
+version: "1"
+author:
+  name: "Immerman"
+description: "Wind generators cost 2.5 times as much and make three times the energy.\n\nImmerman's Enhanced Wind Generators did this only when the English name contained \"Wind Generator\".\n\nThis package selects by the wind-generator field instead, so a translated or modded generator counts. On Total Annihilation 3.1c the same two units, ARMWIN and CORWIN, match."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Enhanced Wind Generators"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}EnhancedWindGenerators.tam", "{}EnhancedWindGenerators.sm"]

@@ -1,0 +1,17 @@
+oamut: 1
+id: "level-2-discount"
+name: "Level 2 Discount"
+version: "1"
+author:
+  name: "Unknown"
+description: "Level 2 KBots and vehicles cost 30 percent less metal, energy and build time.\n\nThe files credit no one. The idea is Quitch(y) and Zeppelin's, and it shipped in the TA: Mutation corpus as Level 2 Cost Reduc., forty-three Uberhack 2.0 unit files. The hand-picked list also held the decoy commanders, a seaplane and Uberhack's construction Freaker.\n\nThis package is one rule that works on any mod: the category contains LEVEL2, the unit moves, and it is not a builder, an aircraft, a floater, a hovercraft or TED class WATER."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Level 2 Cost Reduc."
+    prefix: "}{"
+    compatibility: ["UH", "UH20"]
+    files: ["}{level2mut.tam", "}{level2mut.ccx"]

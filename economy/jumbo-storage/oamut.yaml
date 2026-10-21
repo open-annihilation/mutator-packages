@@ -1,0 +1,27 @@
+oamut: 1
+id: "jumbo-storage"
+name: "Jumbo Storage"
+version: "1"
+author:
+  name: "Immerman"
+description: "Storage of 300 or more metal or energy is two, four or eight times larger.\n\nImmerman's Jumbo Storage 2x and Jumbo Storage 4x each multiplied that storage, and the two together made eight times.\n\nThis package is both originals, with one storage choice."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  factor:
+    type: "choice"
+    values: [2, 4, 8]
+    default: 2
+    label: "Storage"
+legacy:
+  - name: "Jumbo Storage 2x"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}JumboStorage2x.tam", "{}JumboStorage2x.sm"]
+  - name: "Jumbo Storage 4x"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}JumboStorage4x.tam", "{}JumboStorage4x.sm"]

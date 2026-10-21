@@ -1,0 +1,17 @@
+oamut: 1
+id: "no-waste"
+name: "No Waste"
+version: "1"
+author:
+  name: "Recon"
+description: "Commanders store 1900000 metal and 1900000 energy.\n\nRecon's No Waste set those figures. Its text says a million.\n\nThis package keeps the original numbers."
+tags: ["commanders", "economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "No Waste"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}NoWaste.tam", "{}NoWaste.sm"]
