@@ -1,0 +1,18 @@
+oamut: 1
+id: "kroggy-comm"
+name: "Krogoth Commander"
+version: "1"
+author:
+  name: "Immerman"
+description: "Use an amphibious Krogoth as a commander. Turn it off to disable the radar, the sonar and the head laser in exchange for 7 energy. The D-gun aims the head laser. Arm and Core are both named because one script is shipped for each commander. This package replaces KroggyComm 1.1 by Immerman. The model and the scripts stay as files, and the Krogoth's stats are rules, including the cloak and bad-target removals that belong to that design. Heal time, the override adjust, the default mission and the localized names stay, because the 2001 unit files left them out. It needs Core Contingency's Krogoth weapons."
+tags: ["commanders", "new-units"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["anni-comm", "special-tech-comm", "commander-blast", "tribe-commander"]
+layers: ["files", "units"]
+legacy:
+  - name: "KroggyComm 1.1"
+    prefix: "}{"
+    compatibility: ["TACC", "UH"]
+    files: ["}{KroggyComm11.tam", "}{KroggyComm11.ccx"]

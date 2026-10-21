@@ -1,0 +1,17 @@
+oamut: 1
+id: "no-rampage-comm"
+name: "No Rampage Commander"
+version: "1"
+author:
+  name: "Drinken"
+description: "You do not have to watch the commander while it guards a plant. Commanders do not chase armed units. This package replaces No Rampage-Comm by Drinken. The original replaced the no-chase list, so commanders began chasing aircraft; this one adds the WEAPON token and keeps the tokens the commander already has."
+tags: ["commanders", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "No Rampage-Comm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}No_RampageComm.tam", "{}No_RampageComm.sm"]

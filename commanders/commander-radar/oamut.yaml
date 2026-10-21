@@ -1,0 +1,27 @@
+oamut: 1
+id: "commander-radar"
+name: "Commander Radar"
+version: "1"
+author:
+  name: "Drinken"
+description: "Commanders gain the advanced radar tower's range, or lose radar entirely. Advanced sets the radar distance to 2880, the range of 3.1c's advanced radar tower, and none sets it to 0. This package replaces Advanced Radar Comm and No Radar Comm, both by Drinken. It also requires a unit that can move, which those originals did not, so Warp Gate 3.1's gates keep their own radar."
+tags: ["commanders"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  radar:
+    type: choice
+    label: "Radar"
+    values: ["advanced", "none"]
+    default: "advanced"
+legacy:
+  - name: "Advanced Radar Comm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}AdvRadarComm.tam", "{}AdvRadarComm.sm"]
+  - name: "No Radar Comm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}NoRadarComm.tam", "{}NoRadarComm.sm"]

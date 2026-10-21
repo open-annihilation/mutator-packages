@@ -1,0 +1,18 @@
+oamut: 1
+id: "tribe-commander"
+name: "Tribe Commander"
+version: "1"
+author:
+  name: "Zapper (ACUT)"
+description: "The Arm commander uses the Tribe model and script, and it still uses the Arm commander's laser and D-gun. The Arm commander is named because the script is the Arm commander's. This package replaces Tribe Commander by Zapper of ACUT. The original unit file dropped the commander flag, the player name, the minimum cloak distance, the override adjust and the Spanish and Italian names, so the game stopped treating the unit as the commander; this package changes only the model."
+tags: ["commanders"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["kroggy-comm"]
+layers: ["files", "units"]
+legacy:
+  - name: "Tribe Commander"
+    prefix: "}{"
+    compatibility: ["TACC", "UH"]
+    files: ["}{Tribe.tam", "}{Tribe.ccx"]

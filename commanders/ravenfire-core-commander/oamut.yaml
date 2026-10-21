@@ -1,0 +1,17 @@
+oamut: 1
+id: "ravenfire-core-commander"
+name: "RavenFire's Core Commander"
+version: "1"
+author:
+  name: "RavenFire"
+description: "Replaces the Core commander and the Core decoy commander with a model by RavenFire. This package replaces RavenFire's Core Com Model by RavenFire. The model works only because its piece names match 3.1c's Core commander scripts."
+tags: ["commanders"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["files"]
+legacy:
+  - name: "RavenFire's Core Com Model"
+    prefix: "}{"
+    compatibility: ["*"]
+    files: ["}{RFCoreComModel.tam", "}{RFCoreComModel.ccx"]
