@@ -1,0 +1,1367 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: finite-metal 1 counter_strike=yes
+# seed: 0
+field features/acid/acidmetal.tdf [acidaquaore1] animating: 0 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] animtrans: 0 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] blocking: (absent) -> 0	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] category: metal -> arm_corpses	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] damage: 32009 -> 448	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] description: Metal -> Wreckage	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] filename: acidmetal -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] height: 0 -> 4	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] hitdensity: 5 -> 100	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] indestructible: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] metal: 86 -> 150	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] object: (absent) -> armpt_dead	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] reclaimable: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] seqname: acidaquaore01 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] seqnameshad:  -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore1] shadtrans: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] animating: 0 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] animtrans: 0 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] blocking: (absent) -> 0	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] category: metal -> arm_corpses	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] damage: 32009 -> 884	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] description: Metal -> Wreckage	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] filename: acidmetal -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] height: 0 -> 4	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] hitdensity: 5 -> 100	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] indestructible: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] metal: 127 -> 300	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] object: (absent) -> armcs_dead	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] reclaimable: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] seqname: acidaquaore02 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] seqnameshad:  -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] shadtrans: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore2] world: acid -> water	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] animating: 0 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] animtrans: 0 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] blocking: (absent) -> 0	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] category: metal -> arm_corpses	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] damage: 32009 -> 488	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] description: Metal -> Wreckage	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] filename: acidmetal -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] height: 0 -> 4	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] hitdensity: 5 -> 100	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] indestructible: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] metal: 223 -> 750	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] object: (absent) -> armsub_dead	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] reclaimable: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] seqname: acidaquaore03 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] seqnameshad:  -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] shadtrans: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidaquaore3] world: acid -> water	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] blocking: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] category: metal -> rocks	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] damage: 32009 -> 2000	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] description: Metal -> Rock	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] featuredead: (absent) -> rock05a	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] featurereclamate: (absent) -> rock05recscar	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] filename: acidmetal -> rocks	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] height: 0 -> 20	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] hitdensity: 5 -> 100	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] indestructible: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] metal: 86 -> 150	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] reclaimable: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] seqname: acidmetal01 -> greenrock05	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] seqnamereclamate: (absent) -> rock05rec	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal1] seqnameshad:  -> rock05shad	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] blocking: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] category: metal -> rocks	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] damage: 32009 -> 2000	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] description: Metal -> Rock	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] featuredead: (absent) -> rock4a	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] featurereclamate: (absent) -> rock04recscar	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] filename: acidmetal -> rocks	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] height: 0 -> 20	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] hitdensity: 5 -> 100	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] indestructible: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] metal: 140 -> 300	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] reclaimable: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] seqname: acidmetal02 -> rock4	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] seqnamereclamate: (absent) -> rock04rec	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal2] seqnameshad:  -> rock4sha	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] blocking: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] category: metal -> rocks	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] damage: 32009 -> 2000	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] description: Metal -> Rock	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] featuredead: (absent) -> rock2a	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] featurereclamate: (absent) -> rock02xrecscar	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] filename: acidmetal -> rocks	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] height: 0 -> 20	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] hitdensity: 5 -> 100	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] indestructible: 1 -> (absent)	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] metal: 235 -> 600	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] reclaimable: (absent) -> 1	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] seqname: acidmetal03 -> rock2	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] seqnamereclamate: (absent) -> rock02rec	by finite-metal
+field features/acid/acidmetal.tdf [acidmetal3] seqnameshad:  -> rock2sha	by finite-metal
+field features/archi/metal.tdf [archmetal1] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetal1] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetal1] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetal1] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetal1] featuredead: (absent) -> rock4a	by finite-metal
+field features/archi/metal.tdf [archmetal1] featurereclamate: (absent) -> rock04recscar	by finite-metal
+field features/archi/metal.tdf [archmetal1] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetal1] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetal1] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetal1] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetal1] metal: 187 -> 300	by finite-metal
+field features/archi/metal.tdf [archmetal1] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetal1] seqname: archmetal1 -> rock4	by finite-metal
+field features/archi/metal.tdf [archmetal1] seqnamereclamate: (absent) -> rock04rec	by finite-metal
+field features/archi/metal.tdf [archmetal1] seqnameshad:  -> rock4sha	by finite-metal
+field features/archi/metal.tdf [archmetal2] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetal2] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetal2] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetal2] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetal2] featuredead: (absent) -> rock05a	by finite-metal
+field features/archi/metal.tdf [archmetal2] featurereclamate: (absent) -> rock05recscar	by finite-metal
+field features/archi/metal.tdf [archmetal2] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetal2] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetal2] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetal2] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetal2] metal: 116 -> 150	by finite-metal
+field features/archi/metal.tdf [archmetal2] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetal2] seqname: archmetal2 -> greenrock05	by finite-metal
+field features/archi/metal.tdf [archmetal2] seqnamereclamate: (absent) -> rock05rec	by finite-metal
+field features/archi/metal.tdf [archmetal2] seqnameshad:  -> rock05shad	by finite-metal
+field features/archi/metal.tdf [archmetal3] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetal3] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetal3] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetal3] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetal3] featuredead: (absent) -> rock2a	by finite-metal
+field features/archi/metal.tdf [archmetal3] featurereclamate: (absent) -> rock02xrecscar	by finite-metal
+field features/archi/metal.tdf [archmetal3] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetal3] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetal3] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetal3] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetal3] metal: 223 -> 600	by finite-metal
+field features/archi/metal.tdf [archmetal3] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetal3] seqname: archmetal3 -> rock2	by finite-metal
+field features/archi/metal.tdf [archmetal3] seqnamereclamate: (absent) -> rock02rec	by finite-metal
+field features/archi/metal.tdf [archmetal3] seqnameshad:  -> rock2sha	by finite-metal
+field features/archi/metal.tdf [archmetalb1] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalb1] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalb1] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetalb1] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetalb1] featuredead: (absent) -> rock4a	by finite-metal
+field features/archi/metal.tdf [archmetalb1] featurereclamate: (absent) -> rock04recscar	by finite-metal
+field features/archi/metal.tdf [archmetalb1] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalb1] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetalb1] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetalb1] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetalb1] metal: 127 -> 300	by finite-metal
+field features/archi/metal.tdf [archmetalb1] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalb1] seqname: archmetalb01 -> rock4	by finite-metal
+field features/archi/metal.tdf [archmetalb1] seqnamereclamate: (absent) -> rock04rec	by finite-metal
+field features/archi/metal.tdf [archmetalb1] seqnameshad:  -> rock4sha	by finite-metal
+field features/archi/metal.tdf [archmetalb2] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalb2] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalb2] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetalb2] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetalb2] featuredead: (absent) -> rock05a	by finite-metal
+field features/archi/metal.tdf [archmetalb2] featurereclamate: (absent) -> rock05recscar	by finite-metal
+field features/archi/metal.tdf [archmetalb2] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalb2] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetalb2] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetalb2] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetalb2] metal: 86 -> 150	by finite-metal
+field features/archi/metal.tdf [archmetalb2] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalb2] seqname: archmetalb02 -> greenrock05	by finite-metal
+field features/archi/metal.tdf [archmetalb2] seqnamereclamate: (absent) -> rock05rec	by finite-metal
+field features/archi/metal.tdf [archmetalb2] seqnameshad:  -> rock05shad	by finite-metal
+field features/archi/metal.tdf [archmetalb3] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalb3] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalb3] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetalb3] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetalb3] featuredead: (absent) -> rock2a	by finite-metal
+field features/archi/metal.tdf [archmetalb3] featurereclamate: (absent) -> rock02xrecscar	by finite-metal
+field features/archi/metal.tdf [archmetalb3] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalb3] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetalb3] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetalb3] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetalb3] metal: 223 -> 600	by finite-metal
+field features/archi/metal.tdf [archmetalb3] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalb3] seqname: archmetalb03 -> rock2	by finite-metal
+field features/archi/metal.tdf [archmetalb3] seqnamereclamate: (absent) -> rock02rec	by finite-metal
+field features/archi/metal.tdf [archmetalb3] seqnameshad:  -> rock2sha	by finite-metal
+field features/archi/metal.tdf [archmetalc1] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalc1] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalc1] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetalc1] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetalc1] featuredead: (absent) -> rock4a	by finite-metal
+field features/archi/metal.tdf [archmetalc1] featurereclamate: (absent) -> rock04recscar	by finite-metal
+field features/archi/metal.tdf [archmetalc1] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalc1] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetalc1] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetalc1] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetalc1] metal: 127 -> 300	by finite-metal
+field features/archi/metal.tdf [archmetalc1] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalc1] seqname: archmetalc01 -> rock4	by finite-metal
+field features/archi/metal.tdf [archmetalc1] seqnamereclamate: (absent) -> rock04rec	by finite-metal
+field features/archi/metal.tdf [archmetalc1] seqnameshad:  -> rock4sha	by finite-metal
+field features/archi/metal.tdf [archmetalc2] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalc2] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalc2] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetalc2] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetalc2] featuredead: (absent) -> rock05a	by finite-metal
+field features/archi/metal.tdf [archmetalc2] featurereclamate: (absent) -> rock05recscar	by finite-metal
+field features/archi/metal.tdf [archmetalc2] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalc2] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetalc2] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetalc2] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetalc2] metal: 86 -> 150	by finite-metal
+field features/archi/metal.tdf [archmetalc2] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalc2] seqname: archmetalc02 -> greenrock05	by finite-metal
+field features/archi/metal.tdf [archmetalc2] seqnamereclamate: (absent) -> rock05rec	by finite-metal
+field features/archi/metal.tdf [archmetalc2] seqnameshad:  -> rock05shad	by finite-metal
+field features/archi/metal.tdf [archmetalc3] blocking: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalc3] category: metal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalc3] damage: 32009 -> 2000	by finite-metal
+field features/archi/metal.tdf [archmetalc3] description: Metal -> Rock	by finite-metal
+field features/archi/metal.tdf [archmetalc3] featuredead: (absent) -> rock2a	by finite-metal
+field features/archi/metal.tdf [archmetalc3] featurereclamate: (absent) -> rock02xrecscar	by finite-metal
+field features/archi/metal.tdf [archmetalc3] filename: ArchiMetal -> rocks	by finite-metal
+field features/archi/metal.tdf [archmetalc3] height: 0 -> 20	by finite-metal
+field features/archi/metal.tdf [archmetalc3] hitdensity: 5 -> 100	by finite-metal
+field features/archi/metal.tdf [archmetalc3] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/metal.tdf [archmetalc3] metal: 223 -> 600	by finite-metal
+field features/archi/metal.tdf [archmetalc3] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/metal.tdf [archmetalc3] seqname: archmetalc03 -> rock2	by finite-metal
+field features/archi/metal.tdf [archmetalc3] seqnamereclamate: (absent) -> rock02rec	by finite-metal
+field features/archi/metal.tdf [archmetalc3] seqnameshad:  -> rock2sha	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] animating: 0 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] animtrans: 0 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] blocking: (absent) -> 0	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] category: metal -> arm_corpses	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] damage: 32009 -> 448	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] description: Metal -> Wreckage	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] filename: ArchiAquaOre -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] height: 0 -> 4	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] hitdensity: 5 -> 100	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] metal: 93 -> 150	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] object: (absent) -> armpt_dead	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] seqname: archiaquaore1 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] seqnameshad:  -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore1] shadtrans: 1 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] animating: 0 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] animtrans: 0 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] blocking: (absent) -> 0	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] category: metal -> arm_corpses	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] damage: 32009 -> 884	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] description: Metal -> Wreckage	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] filename: ArchiAquaOre -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] height: 0 -> 4	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] hitdensity: 5 -> 100	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] metal: 129 -> 300	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] object: (absent) -> armcs_dead	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] seqname: archiaquaore2 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] seqnameshad:  -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore2] shadtrans: 1 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] animating: 0 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] animtrans: 0 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] blocking: (absent) -> 0	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] category: metal -> arm_corpses	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] damage: 32009 -> 488	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] description: Metal -> Wreckage	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] filename: ArchiAquaOre -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] height: 0 -> 4	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] hitdensity: 5 -> 100	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] indestructible: 1 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] metal: 243 -> 750	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] object: (absent) -> armsub_dead	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] reclaimable: (absent) -> 1	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] seqname: archiaquaore3 -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] seqnameshad:  -> (absent)	by finite-metal
+field features/archi/watermetal.tdf [archiaquaore3] shadtrans: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] animating: 0 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] animtrans: 0 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] blocking: (absent) -> 0	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] category: metal -> arm_corpses	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] damage: 32009 -> 448	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] description: Metal -> Wreckage	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] filename: crys-metal -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] height: 0 -> 4	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] hitdensity: 5 -> 100	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] indestructible: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] metal: 86 -> 150	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] object: (absent) -> armpt_dead	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] reclaimable: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] seqname: crys-aquaore01 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] seqnameshad:  -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore1] shadtrans: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] animating: 0 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] animtrans: 0 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] blocking: (absent) -> 0	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] category: metal -> arm_corpses	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] damage: 32009 -> 884	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] description: Metal -> Wreckage	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] filename: crys-metal -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] height: 0 -> 4	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] hitdensity: 5 -> 100	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] indestructible: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] metal: 127 -> 300	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] object: (absent) -> armcs_dead	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] reclaimable: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] seqname: crys-aquaore02 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] seqnameshad:  -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore2] shadtrans: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] animating: 0 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] animtrans: 0 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] blocking: (absent) -> 0	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] category: metal -> arm_corpses	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] damage: 32009 -> 488	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] description: Metal -> Wreckage	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] filename: crys-metal -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] height: 0 -> 4	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] hitdensity: 5 -> 100	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] indestructible: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] metal: 223 -> 750	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] object: (absent) -> armsub_dead	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] reclaimable: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] seqname: crys-aquaore03 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] seqnameshad:  -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] shadtrans: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalaquaore3] world: crystal -> archipelago	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] blocking: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] category: metal -> rocks	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] damage: 32009 -> 2000	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] description: Metal -> Rock	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] featuredead: (absent) -> moonrock07scar	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] featurereclamate: (absent) -> moonrock07scar	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] filename: crys-metal -> moonrocks	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] footprintz: 3 -> 2	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] height: 0 -> 4	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] hitdensity: 5 -> 100	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] indestructible: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] metal: 86 -> 150	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] reclaimable: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] seqname: crys-metal01 -> rock07	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] seqnamereclamate: (absent) -> rock07rec	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal1] seqnameshad:  -> rock07shad	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] blocking: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] category: metal -> rocks	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] damage: 32009 -> 2000	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] description: Metal -> Rock	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] featuredead: (absent) -> moonrock08scar	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] featurereclamate: (absent) -> moonrock08scar	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] filename: crys-metal -> moonrocks	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] height: 0 -> 4	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] hitdensity: 5 -> 100	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] indestructible: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] metal: 140 -> 300	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] reclaimable: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] seqname: crys-metal02 -> rock08	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] seqnamereclamate: (absent) -> rock08rec	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal2] seqnameshad:  -> rock08shad	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] blocking: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] category: metal -> rocks	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] damage: 32009 -> 2000	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] description: Metal -> Rock	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] featuredead: (absent) -> moonrock09scar	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] featurereclamate: (absent) -> moonrock09scar	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] filename: crys-metal -> moonrocks	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] height: 0 -> 4	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] hitdensity: 5 -> 100	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] indestructible: 1 -> (absent)	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] metal: 235 -> 600	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] reclaimable: (absent) -> 1	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] seqname: crys-metal03 -> rock09	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] seqnamereclamate: (absent) -> rock09rec	by finite-metal
+field features/crystal/crystal-metal.tdf [crystalmetal3] seqnameshad:  -> rock09shad	by finite-metal
+field features/desert/metal.tdf [drymetal01] blocking: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetal01] category: metal -> rocks	by finite-metal
+field features/desert/metal.tdf [drymetal01] damage: 32009 -> 2000	by finite-metal
+field features/desert/metal.tdf [drymetal01] description: Metal Deposit -> Rock	by finite-metal
+field features/desert/metal.tdf [drymetal01] featuredead: (absent) -> drycrush33	by finite-metal
+field features/desert/metal.tdf [drymetal01] featurereclamate: (absent) -> dryrock07scar	by finite-metal
+field features/desert/metal.tdf [drymetal01] filename: drymetal -> dryrocks	by finite-metal
+field features/desert/metal.tdf [drymetal01] height: 0 -> 5	by finite-metal
+field features/desert/metal.tdf [drymetal01] hitdensity: 5 -> 100	by finite-metal
+field features/desert/metal.tdf [drymetal01] indestructible: 1 -> (absent)	by finite-metal
+field features/desert/metal.tdf [drymetal01] metal: 112 -> 300	by finite-metal
+field features/desert/metal.tdf [drymetal01] reclaimable: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetal01] seqname: metal01 -> rock07	by finite-metal
+field features/desert/metal.tdf [drymetal01] seqnamedie: (absent) -> rock07boom	by finite-metal
+field features/desert/metal.tdf [drymetal01] seqnamereclamate: (absent) -> rock07rec	by finite-metal
+field features/desert/metal.tdf [drymetal01] seqnameshad:  -> rock07shad	by finite-metal
+field features/desert/metal.tdf [drymetal02] blocking: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetal02] category: metal -> rocks	by finite-metal
+field features/desert/metal.tdf [drymetal02] damage: 32009 -> 2000	by finite-metal
+field features/desert/metal.tdf [drymetal02] description: Metal Deposit -> Rock	by finite-metal
+field features/desert/metal.tdf [drymetal02] featuredead: (absent) -> dryrock08scar	by finite-metal
+field features/desert/metal.tdf [drymetal02] featurereclamate: (absent) -> dryrock08scar	by finite-metal
+field features/desert/metal.tdf [drymetal02] filename: drymetal -> dryrocks	by finite-metal
+field features/desert/metal.tdf [drymetal02] footprintx: 3 -> 2	by finite-metal
+field features/desert/metal.tdf [drymetal02] footprintz: 3 -> 2	by finite-metal
+field features/desert/metal.tdf [drymetal02] height: 0 -> 5	by finite-metal
+field features/desert/metal.tdf [drymetal02] hitdensity: 5 -> 100	by finite-metal
+field features/desert/metal.tdf [drymetal02] indestructible: 1 -> (absent)	by finite-metal
+field features/desert/metal.tdf [drymetal02] metal: 56 -> 150	by finite-metal
+field features/desert/metal.tdf [drymetal02] reclaimable: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetal02] seqname: metal02 -> rock08	by finite-metal
+field features/desert/metal.tdf [drymetal02] seqnamedie: (absent) -> rock08boom	by finite-metal
+field features/desert/metal.tdf [drymetal02] seqnamereclamate: (absent) -> rock08rec	by finite-metal
+field features/desert/metal.tdf [drymetal02] seqnameshad:  -> rock08shad	by finite-metal
+field features/desert/metal.tdf [drymetal03] blocking: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetal03] category: metal -> rocks	by finite-metal
+field features/desert/metal.tdf [drymetal03] damage: 32009 -> 2000	by finite-metal
+field features/desert/metal.tdf [drymetal03] description: Metal Deposit -> Rock	by finite-metal
+field features/desert/metal.tdf [drymetal03] featuredead: (absent) -> drycrush34	by finite-metal
+field features/desert/metal.tdf [drymetal03] featurereclamate: (absent) -> dryrock04scar	by finite-metal
+field features/desert/metal.tdf [drymetal03] filename: drymetal -> dryrocks	by finite-metal
+field features/desert/metal.tdf [drymetal03] height: 0 -> 5	by finite-metal
+field features/desert/metal.tdf [drymetal03] hitdensity: 5 -> 100	by finite-metal
+field features/desert/metal.tdf [drymetal03] indestructible: 1 -> (absent)	by finite-metal
+field features/desert/metal.tdf [drymetal03] metal: 223 -> 600	by finite-metal
+field features/desert/metal.tdf [drymetal03] reclaimable: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetal03] seqname: metal03 -> rock04	by finite-metal
+field features/desert/metal.tdf [drymetal03] seqnamedie: (absent) -> rock04boom	by finite-metal
+field features/desert/metal.tdf [drymetal03] seqnamereclamate: (absent) -> rock04rec	by finite-metal
+field features/desert/metal.tdf [drymetal03] seqnameshad:  -> rock04shad	by finite-metal
+field features/desert/metal.tdf [drymetalb01] blocking: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetalb01] category: metal -> rocks	by finite-metal
+field features/desert/metal.tdf [drymetalb01] damage: 32009 -> 2000	by finite-metal
+field features/desert/metal.tdf [drymetalb01] description: Metal Deposit -> Rock	by finite-metal
+field features/desert/metal.tdf [drymetalb01] featuredead: (absent) -> drycrush33	by finite-metal
+field features/desert/metal.tdf [drymetalb01] featurereclamate: (absent) -> dryrock07scar	by finite-metal
+field features/desert/metal.tdf [drymetalb01] filename: drymetal -> dryrocks	by finite-metal
+field features/desert/metal.tdf [drymetalb01] height: 0 -> 5	by finite-metal
+field features/desert/metal.tdf [drymetalb01] hitdensity: 5 -> 100	by finite-metal
+field features/desert/metal.tdf [drymetalb01] indestructible: 1 -> (absent)	by finite-metal
+field features/desert/metal.tdf [drymetalb01] metal: 112 -> 300	by finite-metal
+field features/desert/metal.tdf [drymetalb01] reclaimable: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetalb01] seqname: metalb01 -> rock07	by finite-metal
+field features/desert/metal.tdf [drymetalb01] seqnamedie: (absent) -> rock07boom	by finite-metal
+field features/desert/metal.tdf [drymetalb01] seqnamereclamate: (absent) -> rock07rec	by finite-metal
+field features/desert/metal.tdf [drymetalb01] seqnameshad:  -> rock07shad	by finite-metal
+field features/desert/metal.tdf [drymetalb02] blocking: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetalb02] category: metal -> rocks	by finite-metal
+field features/desert/metal.tdf [drymetalb02] damage: 32009 -> 2000	by finite-metal
+field features/desert/metal.tdf [drymetalb02] description: Metal Deposit -> Rock	by finite-metal
+field features/desert/metal.tdf [drymetalb02] featuredead: (absent) -> dryrock08scar	by finite-metal
+field features/desert/metal.tdf [drymetalb02] featurereclamate: (absent) -> dryrock08scar	by finite-metal
+field features/desert/metal.tdf [drymetalb02] filename: drymetal -> dryrocks	by finite-metal
+field features/desert/metal.tdf [drymetalb02] footprintx: 3 -> 2	by finite-metal
+field features/desert/metal.tdf [drymetalb02] footprintz: 3 -> 2	by finite-metal
+field features/desert/metal.tdf [drymetalb02] height: 0 -> 5	by finite-metal
+field features/desert/metal.tdf [drymetalb02] hitdensity: 5 -> 100	by finite-metal
+field features/desert/metal.tdf [drymetalb02] indestructible: 1 -> (absent)	by finite-metal
+field features/desert/metal.tdf [drymetalb02] metal: 56 -> 150	by finite-metal
+field features/desert/metal.tdf [drymetalb02] reclaimable: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetalb02] seqname: metalb02 -> rock08	by finite-metal
+field features/desert/metal.tdf [drymetalb02] seqnamedie: (absent) -> rock08boom	by finite-metal
+field features/desert/metal.tdf [drymetalb02] seqnamereclamate: (absent) -> rock08rec	by finite-metal
+field features/desert/metal.tdf [drymetalb02] seqnameshad:  -> rock08shad	by finite-metal
+field features/desert/metal.tdf [drymetalb03] blocking: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetalb03] category: metal -> rocks	by finite-metal
+field features/desert/metal.tdf [drymetalb03] damage: 32009 -> 2000	by finite-metal
+field features/desert/metal.tdf [drymetalb03] description: Metal Deposit -> Rock	by finite-metal
+field features/desert/metal.tdf [drymetalb03] featuredead: (absent) -> drycrush34	by finite-metal
+field features/desert/metal.tdf [drymetalb03] featurereclamate: (absent) -> dryrock04scar	by finite-metal
+field features/desert/metal.tdf [drymetalb03] filename: drymetal -> dryrocks	by finite-metal
+field features/desert/metal.tdf [drymetalb03] height: 0 -> 5	by finite-metal
+field features/desert/metal.tdf [drymetalb03] hitdensity: 5 -> 100	by finite-metal
+field features/desert/metal.tdf [drymetalb03] indestructible: 1 -> (absent)	by finite-metal
+field features/desert/metal.tdf [drymetalb03] metal: 223 -> 600	by finite-metal
+field features/desert/metal.tdf [drymetalb03] reclaimable: (absent) -> 1	by finite-metal
+field features/desert/metal.tdf [drymetalb03] seqname: metalb03 -> rock04	by finite-metal
+field features/desert/metal.tdf [drymetalb03] seqnamedie: (absent) -> rock04boom	by finite-metal
+field features/desert/metal.tdf [drymetalb03] seqnamereclamate: (absent) -> rock04rec	by finite-metal
+field features/desert/metal.tdf [drymetalb03] seqnameshad:  -> rock04shad	by finite-metal
+field features/green/metal.tdf [rockmetal1] blocking: (absent) -> 1	by finite-metal
+field features/green/metal.tdf [rockmetal1] damage: 32009 -> 2000	by finite-metal
+field features/green/metal.tdf [rockmetal1] description: Metal -> Rock	by finite-metal
+field features/green/metal.tdf [rockmetal1] featuredead: (absent) -> rock4a	by finite-metal
+field features/green/metal.tdf [rockmetal1] featurereclamate: (absent) -> rock04recscar	by finite-metal
+field features/green/metal.tdf [rockmetal1] height: 4 -> 20	by finite-metal
+field features/green/metal.tdf [rockmetal1] hitdensity: 5 -> 100	by finite-metal
+field features/green/metal.tdf [rockmetal1] indestructible: 1 -> (absent)	by finite-metal
+field features/green/metal.tdf [rockmetal1] metal: 127 -> 300	by finite-metal
+field features/green/metal.tdf [rockmetal1] reclaimable: (absent) -> 1	by finite-metal
+field features/green/metal.tdf [rockmetal1] seqname: rockmetal1 -> rock4	by finite-metal
+field features/green/metal.tdf [rockmetal1] seqnamereclamate: (absent) -> rock04rec	by finite-metal
+field features/green/metal.tdf [rockmetal1] seqnameshad:  -> rock4sha	by finite-metal
+field features/green/metal.tdf [rockmetal2] blocking: (absent) -> 1	by finite-metal
+field features/green/metal.tdf [rockmetal2] damage: 32009 -> 2000	by finite-metal
+field features/green/metal.tdf [rockmetal2] description: Metal -> Rock	by finite-metal
+field features/green/metal.tdf [rockmetal2] featuredead: (absent) -> rock05a	by finite-metal
+field features/green/metal.tdf [rockmetal2] featurereclamate: (absent) -> rock05recscar	by finite-metal
+field features/green/metal.tdf [rockmetal2] height: 4 -> 20	by finite-metal
+field features/green/metal.tdf [rockmetal2] hitdensity: 5 -> 100	by finite-metal
+field features/green/metal.tdf [rockmetal2] indestructible: 1 -> (absent)	by finite-metal
+field features/green/metal.tdf [rockmetal2] metal: 86 -> 150	by finite-metal
+field features/green/metal.tdf [rockmetal2] reclaimable: (absent) -> 1	by finite-metal
+field features/green/metal.tdf [rockmetal2] seqname: rockmetal2 -> greenrock05	by finite-metal
+field features/green/metal.tdf [rockmetal2] seqnamereclamate: (absent) -> rock05rec	by finite-metal
+field features/green/metal.tdf [rockmetal2] seqnameshad:  -> rock05shad	by finite-metal
+field features/green/metal.tdf [rockmetal3] blocking: (absent) -> 1	by finite-metal
+field features/green/metal.tdf [rockmetal3] damage: 32009 -> 2000	by finite-metal
+field features/green/metal.tdf [rockmetal3] description: Metal -> Rock	by finite-metal
+field features/green/metal.tdf [rockmetal3] featuredead: (absent) -> rock2a	by finite-metal
+field features/green/metal.tdf [rockmetal3] featurereclamate: (absent) -> rock02xrecscar	by finite-metal
+field features/green/metal.tdf [rockmetal3] height: 4 -> 20	by finite-metal
+field features/green/metal.tdf [rockmetal3] hitdensity: 5 -> 100	by finite-metal
+field features/green/metal.tdf [rockmetal3] indestructible: 1 -> (absent)	by finite-metal
+field features/green/metal.tdf [rockmetal3] metal: 223 -> 600	by finite-metal
+field features/green/metal.tdf [rockmetal3] reclaimable: (absent) -> 1	by finite-metal
+field features/green/metal.tdf [rockmetal3] seqname: rockmetal3 -> rock2	by finite-metal
+field features/green/metal.tdf [rockmetal3] seqnamereclamate: (absent) -> rock02rec	by finite-metal
+field features/green/metal.tdf [rockmetal3] seqnameshad:  -> rock2sha	by finite-metal
+field features/green/metal.tdf [rockmetal] blocking: (absent) -> 1	by finite-metal
+field features/green/metal.tdf [rockmetal] damage: 32009 -> 2000	by finite-metal
+field features/green/metal.tdf [rockmetal] description: Metal -> Rock	by finite-metal
+field features/green/metal.tdf [rockmetal] featuredead: (absent) -> rock3a	by finite-metal
+field features/green/metal.tdf [rockmetal] featurereclamate: (absent) -> rock03recscar	by finite-metal
+field features/green/metal.tdf [rockmetal] height: 4 -> 20	by finite-metal
+field features/green/metal.tdf [rockmetal] hitdensity: 5 -> 100	by finite-metal
+field features/green/metal.tdf [rockmetal] indestructible: 1 -> (absent)	by finite-metal
+field features/green/metal.tdf [rockmetal] metal: 187 -> 450	by finite-metal
+field features/green/metal.tdf [rockmetal] reclaimable: (absent) -> 1	by finite-metal
+field features/green/metal.tdf [rockmetal] seqname: rockmetal4 -> rock3	by finite-metal
+field features/green/metal.tdf [rockmetal] seqnamereclamate: (absent) -> rock03rec	by finite-metal
+field features/green/metal.tdf [rockmetal] seqnameshad:  -> rock3sha	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] animating: 0 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] animtrans: 0 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] blocking: (absent) -> 0	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] category: rocks -> arm_corpses	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] damage: 32009 -> 448	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] description: Metal -> Wreckage	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] filename: GreenAquaOre -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] hitdensity: 5 -> 100	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] indestructible: 1 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] metal: 116 -> 150	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] object: (absent) -> armpt_dead	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] reclaimable: (absent) -> 1	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] seqname: greenaquaore01 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] seqnameshad:  -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore1] shadtrans: 1 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] animating: 0 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] animtrans: 0 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] blocking: (absent) -> 0	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] category: rocks -> arm_corpses	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] damage: 32009 -> 884	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] description: Metal -> Wreckage	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] filename: GreenAquaOre -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] hitdensity: 5 -> 100	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] indestructible: 1 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] metal: 187 -> 300	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] object: (absent) -> armcs_dead	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] reclaimable: (absent) -> 1	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] seqname: greenaquaore02 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] seqnameshad:  -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore2] shadtrans: 1 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] animating: 0 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] animtrans: 0 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] blocking: (absent) -> 0	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] category: rocks -> arm_corpses	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] damage: 32009 -> 488	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] description: Metal -> Wreckage	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] filename: GreenAquaOre -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] hitdensity: 5 -> 100	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] indestructible: 1 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] metal: 250 -> 750	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] object: (absent) -> armsub_dead	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] reclaimable: (absent) -> 1	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] seqname: greenaquaore03 -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] seqnameshad:  -> (absent)	by finite-metal
+field features/green/watermetal.tdf [greenaquaore3] shadtrans: 1 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] animating: 0 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] animtrans: 0 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] blocking: (absent) -> 0	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] category: metal -> arm_corpses	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] damage: 32009 -> 448	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] description: Metal Deposit -> Wreckage	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] filename: iceAquaOre -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] hitdensity: 5 -> 100	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] indestructible: 1 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] metal: 86 -> 150	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] object: (absent) -> armpt_dead	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] reclaimable: (absent) -> 1	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] seqname: iceaquaore1 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] seqnameshad:  -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore1] shadtrans: 1 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] animating: 0 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] animtrans: 0 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] blocking: (absent) -> 0	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] category: metal -> arm_corpses	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] damage: 32009 -> 884	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] description: Metal Deposit -> Wreckage	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] filename: iceAquaOre -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] hitdensity: 5 -> 100	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] indestructible: 1 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] metal: 127 -> 300	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] object: (absent) -> armcs_dead	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] reclaimable: (absent) -> 1	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] seqname: iceaquaore2 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] seqnameshad:  -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore2] shadtrans: 1 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] animating: 0 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] animtrans: 0 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] blocking: (absent) -> 0	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] category: metal -> arm_corpses	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] damage: 32009 -> 488	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] description: Metal Deposit -> Wreckage	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] filename: iceAquaOre -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] hitdensity: 5 -> 100	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] indestructible: 1 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] metal: 223 -> 750	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] object: (absent) -> armsub_dead	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] reclaimable: (absent) -> 1	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] seqname: iceaquaore3 -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] seqnameshad:  -> (absent)	by finite-metal
+field features/ice/icewatermetal.tdf [iceaquaore3] shadtrans: 1 -> (absent)	by finite-metal
+field features/ice/metal.tdf [icemetal01] blocking: (absent) -> 1	by finite-metal
+field features/ice/metal.tdf [icemetal01] category: metal -> rocks	by finite-metal
+field features/ice/metal.tdf [icemetal01] damage: 32009 -> 2000	by finite-metal
+field features/ice/metal.tdf [icemetal01] description: Metal Deposit -> Rock	by finite-metal
+field features/ice/metal.tdf [icemetal01] featuredead: (absent) -> moonrock08scar	by finite-metal
+field features/ice/metal.tdf [icemetal01] featurereclamate: (absent) -> moonrock08scar	by finite-metal
+field features/ice/metal.tdf [icemetal01] filename: icemetal -> moonrocks	by finite-metal
+field features/ice/metal.tdf [icemetal01] height: 0 -> 4	by finite-metal
+field features/ice/metal.tdf [icemetal01] hitdensity: 5 -> 100	by finite-metal
+field features/ice/metal.tdf [icemetal01] indestructible: 1 -> (absent)	by finite-metal
+field features/ice/metal.tdf [icemetal01] metal: 122 -> 300	by finite-metal
+field features/ice/metal.tdf [icemetal01] reclaimable: (absent) -> 1	by finite-metal
+field features/ice/metal.tdf [icemetal01] seqname: metal01 -> rock08	by finite-metal
+field features/ice/metal.tdf [icemetal01] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/ice/metal.tdf [icemetal01] seqnamereclamate: (absent) -> rock08rec	by finite-metal
+field features/ice/metal.tdf [icemetal01] seqnameshad:  -> rock08shad	by finite-metal
+field features/ice/metal.tdf [icemetal02] blocking: (absent) -> 1	by finite-metal
+field features/ice/metal.tdf [icemetal02] category: metal -> rocks	by finite-metal
+field features/ice/metal.tdf [icemetal02] damage: 32009 -> 2000	by finite-metal
+field features/ice/metal.tdf [icemetal02] description: Metal Deposit -> Rock	by finite-metal
+field features/ice/metal.tdf [icemetal02] featuredead: (absent) -> moonrock07scar	by finite-metal
+field features/ice/metal.tdf [icemetal02] featurereclamate: (absent) -> moonrock07scar	by finite-metal
+field features/ice/metal.tdf [icemetal02] filename: icemetal -> moonrocks	by finite-metal
+field features/ice/metal.tdf [icemetal02] footprintz: 3 -> 2	by finite-metal
+field features/ice/metal.tdf [icemetal02] height: 0 -> 4	by finite-metal
+field features/ice/metal.tdf [icemetal02] hitdensity: 5 -> 100	by finite-metal
+field features/ice/metal.tdf [icemetal02] indestructible: 1 -> (absent)	by finite-metal
+field features/ice/metal.tdf [icemetal02] metal: 76 -> 150	by finite-metal
+field features/ice/metal.tdf [icemetal02] reclaimable: (absent) -> 1	by finite-metal
+field features/ice/metal.tdf [icemetal02] seqname: metal02 -> rock07	by finite-metal
+field features/ice/metal.tdf [icemetal02] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/ice/metal.tdf [icemetal02] seqnamereclamate: (absent) -> rock07rec	by finite-metal
+field features/ice/metal.tdf [icemetal02] seqnameshad:  -> rock07shad	by finite-metal
+field features/ice/metal.tdf [icemetal03] blocking: (absent) -> 1	by finite-metal
+field features/ice/metal.tdf [icemetal03] category: metal -> rocks	by finite-metal
+field features/ice/metal.tdf [icemetal03] damage: 32009 -> 2000	by finite-metal
+field features/ice/metal.tdf [icemetal03] description: Metal Deposit -> Rock	by finite-metal
+field features/ice/metal.tdf [icemetal03] featuredead: (absent) -> moonrock09scar	by finite-metal
+field features/ice/metal.tdf [icemetal03] featurereclamate: (absent) -> moonrock09scar	by finite-metal
+field features/ice/metal.tdf [icemetal03] filename: icemetal -> moonrocks	by finite-metal
+field features/ice/metal.tdf [icemetal03] height: 0 -> 4	by finite-metal
+field features/ice/metal.tdf [icemetal03] hitdensity: 5 -> 100	by finite-metal
+field features/ice/metal.tdf [icemetal03] indestructible: 1 -> (absent)	by finite-metal
+field features/ice/metal.tdf [icemetal03] metal: 223 -> 600	by finite-metal
+field features/ice/metal.tdf [icemetal03] reclaimable: (absent) -> 1	by finite-metal
+field features/ice/metal.tdf [icemetal03] seqname: metal03 -> rock09	by finite-metal
+field features/ice/metal.tdf [icemetal03] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/ice/metal.tdf [icemetal03] seqnamereclamate: (absent) -> rock09rec	by finite-metal
+field features/ice/metal.tdf [icemetal03] seqnameshad:  -> rock09shad	by finite-metal
+field features/lava/metal.tdf [lavametal1] blocking: (absent) -> 1	by finite-metal
+field features/lava/metal.tdf [lavametal1] category: metal -> rocks	by finite-metal
+field features/lava/metal.tdf [lavametal1] damage: 32009 -> 2000	by finite-metal
+field features/lava/metal.tdf [lavametal1] description: Metal Deposit -> Rock	by finite-metal
+field features/lava/metal.tdf [lavametal1] featuredead: (absent) -> lavarockB011scar	by finite-metal
+field features/lava/metal.tdf [lavametal1] featurereclamate: (absent) -> lavarockB011scar	by finite-metal
+field features/lava/metal.tdf [lavametal1] filename: lavastuff2 -> lavarockb	by finite-metal
+field features/lava/metal.tdf [lavametal1] height: 0 -> 14	by finite-metal
+field features/lava/metal.tdf [lavametal1] hitdensity: 5 -> 100	by finite-metal
+field features/lava/metal.tdf [lavametal1] indestructible: 1 -> (absent)	by finite-metal
+field features/lava/metal.tdf [lavametal1] metal: 142 -> 300	by finite-metal
+field features/lava/metal.tdf [lavametal1] reclaimable: (absent) -> 1	by finite-metal
+field features/lava/metal.tdf [lavametal1] seqname: metal1 -> rockb011	by finite-metal
+field features/lava/metal.tdf [lavametal1] seqnamedie: (absent) -> rockboom01	by finite-metal
+field features/lava/metal.tdf [lavametal1] seqnamereclamate: (absent) -> rockB011rec	by finite-metal
+field features/lava/metal.tdf [lavametal1] seqnameshad:  -> rockb011shad	by finite-metal
+field features/lava/metal.tdf [lavametal2] blocking: (absent) -> 1	by finite-metal
+field features/lava/metal.tdf [lavametal2] category: metal -> rocks	by finite-metal
+field features/lava/metal.tdf [lavametal2] damage: 32009 -> 2000	by finite-metal
+field features/lava/metal.tdf [lavametal2] description: Metal Deposit -> Rock	by finite-metal
+field features/lava/metal.tdf [lavametal2] featuredead: (absent) -> lavarockB017scar	by finite-metal
+field features/lava/metal.tdf [lavametal2] featurereclamate: (absent) -> lavarockB017scar	by finite-metal
+field features/lava/metal.tdf [lavametal2] filename: lavastuff2 -> lavarockb	by finite-metal
+field features/lava/metal.tdf [lavametal2] height: 0 -> 6	by finite-metal
+field features/lava/metal.tdf [lavametal2] hitdensity: 5 -> 100	by finite-metal
+field features/lava/metal.tdf [lavametal2] indestructible: 1 -> (absent)	by finite-metal
+field features/lava/metal.tdf [lavametal2] metal: 86 -> 150	by finite-metal
+field features/lava/metal.tdf [lavametal2] reclaimable: (absent) -> 1	by finite-metal
+field features/lava/metal.tdf [lavametal2] seqname: metal2 -> rockb017	by finite-metal
+field features/lava/metal.tdf [lavametal2] seqnamedie: (absent) -> rockboom01	by finite-metal
+field features/lava/metal.tdf [lavametal2] seqnamereclamate: (absent) -> rockB017rec	by finite-metal
+field features/lava/metal.tdf [lavametal2] seqnameshad:  -> rockb017shad	by finite-metal
+field features/lava/metal.tdf [lavametal3] blocking: (absent) -> 1	by finite-metal
+field features/lava/metal.tdf [lavametal3] category: metal -> rocks	by finite-metal
+field features/lava/metal.tdf [lavametal3] damage: 32009 -> 2000	by finite-metal
+field features/lava/metal.tdf [lavametal3] description: Metal Deposit -> Rock	by finite-metal
+field features/lava/metal.tdf [lavametal3] featuredead: (absent) -> lavarockA005scar	by finite-metal
+field features/lava/metal.tdf [lavametal3] featurereclamate: (absent) -> lavarockA005scar	by finite-metal
+field features/lava/metal.tdf [lavametal3] filename: lavastuff2 -> lavarocka	by finite-metal
+field features/lava/metal.tdf [lavametal3] height: 0 -> 2	by finite-metal
+field features/lava/metal.tdf [lavametal3] hitdensity: 5 -> 100	by finite-metal
+field features/lava/metal.tdf [lavametal3] indestructible: 1 -> (absent)	by finite-metal
+field features/lava/metal.tdf [lavametal3] metal: 222 -> 600	by finite-metal
+field features/lava/metal.tdf [lavametal3] reclaimable: (absent) -> 1	by finite-metal
+field features/lava/metal.tdf [lavametal3] seqname: metal3 -> rocka005	by finite-metal
+field features/lava/metal.tdf [lavametal3] seqnamedie: (absent) -> rockboom01	by finite-metal
+field features/lava/metal.tdf [lavametal3] seqnamereclamate: (absent) -> rockA005rec	by finite-metal
+field features/lava/metal.tdf [lavametal3] seqnameshad:  -> rocka005shad	by finite-metal
+field features/mars/metal.tdf [marsmetal01] blocking: (absent) -> 1	by finite-metal
+field features/mars/metal.tdf [marsmetal01] category: metal -> rocks	by finite-metal
+field features/mars/metal.tdf [marsmetal01] damage: 32009 -> 2000	by finite-metal
+field features/mars/metal.tdf [marsmetal01] description: Metal Deposit -> Rock	by finite-metal
+field features/mars/metal.tdf [marsmetal01] featuredead: (absent) -> marsrock03hit	by finite-metal
+field features/mars/metal.tdf [marsmetal01] featurereclamate: (absent) -> marsrock16scar	by finite-metal
+field features/mars/metal.tdf [marsmetal01] filename: marsglyphs -> marsrocks	by finite-metal
+field features/mars/metal.tdf [marsmetal01] footprintx: 3 -> 2	by finite-metal
+field features/mars/metal.tdf [marsmetal01] footprintz: 3 -> 2	by finite-metal
+field features/mars/metal.tdf [marsmetal01] height: 0 -> 10	by finite-metal
+field features/mars/metal.tdf [marsmetal01] hitdensity: 5 -> 100	by finite-metal
+field features/mars/metal.tdf [marsmetal01] indestructible: 1 -> (absent)	by finite-metal
+field features/mars/metal.tdf [marsmetal01] metal: 122 -> 300	by finite-metal
+field features/mars/metal.tdf [marsmetal01] reclaimable: (absent) -> 1	by finite-metal
+field features/mars/metal.tdf [marsmetal01] seqname: metal01 -> rock16	by finite-metal
+field features/mars/metal.tdf [marsmetal01] seqnamereclamate: (absent) -> rock16rec	by finite-metal
+field features/mars/metal.tdf [marsmetal01] seqnameshad:  -> rock16shad	by finite-metal
+field features/mars/metal.tdf [marsmetal02] blocking: (absent) -> 1	by finite-metal
+field features/mars/metal.tdf [marsmetal02] category: metal -> rocks	by finite-metal
+field features/mars/metal.tdf [marsmetal02] damage: 32009 -> 2000	by finite-metal
+field features/mars/metal.tdf [marsmetal02] description: Metal Deposit -> Rock	by finite-metal
+field features/mars/metal.tdf [marsmetal02] featuredead: (absent) -> marsrock03hit	by finite-metal
+field features/mars/metal.tdf [marsmetal02] featurereclamate: (absent) -> marsrock34scar	by finite-metal
+field features/mars/metal.tdf [marsmetal02] filename: marsglyphs -> marsrocks2	by finite-metal
+field features/mars/metal.tdf [marsmetal02] footprintx: 3 -> 2	by finite-metal
+field features/mars/metal.tdf [marsmetal02] footprintz: 3 -> 2	by finite-metal
+field features/mars/metal.tdf [marsmetal02] height: 0 -> 10	by finite-metal
+field features/mars/metal.tdf [marsmetal02] hitdensity: 5 -> 100	by finite-metal
+field features/mars/metal.tdf [marsmetal02] indestructible: 1 -> (absent)	by finite-metal
+field features/mars/metal.tdf [marsmetal02] metal: 86 -> 150	by finite-metal
+field features/mars/metal.tdf [marsmetal02] reclaimable: (absent) -> 1	by finite-metal
+field features/mars/metal.tdf [marsmetal02] seqname: metal02 -> rock34	by finite-metal
+field features/mars/metal.tdf [marsmetal02] seqnamereclamate: (absent) -> rock34rec	by finite-metal
+field features/mars/metal.tdf [marsmetal02] seqnameshad:  -> rock34shad	by finite-metal
+field features/mars/metal.tdf [marsmetal03] blocking: (absent) -> 1	by finite-metal
+field features/mars/metal.tdf [marsmetal03] category: metal -> rocks	by finite-metal
+field features/mars/metal.tdf [marsmetal03] damage: 32009 -> 2000	by finite-metal
+field features/mars/metal.tdf [marsmetal03] description: Metal Deposit -> Rock	by finite-metal
+field features/mars/metal.tdf [marsmetal03] featuredead: (absent) -> marsrock02hit	by finite-metal
+field features/mars/metal.tdf [marsmetal03] featurereclamate: (absent) -> marsrock09scar	by finite-metal
+field features/mars/metal.tdf [marsmetal03] filename: marsglyphs -> marsrocks	by finite-metal
+field features/mars/metal.tdf [marsmetal03] height: 0 -> 10	by finite-metal
+field features/mars/metal.tdf [marsmetal03] hitdensity: 5 -> 100	by finite-metal
+field features/mars/metal.tdf [marsmetal03] indestructible: 1 -> (absent)	by finite-metal
+field features/mars/metal.tdf [marsmetal03] metal: 223 -> 600	by finite-metal
+field features/mars/metal.tdf [marsmetal03] reclaimable: (absent) -> 1	by finite-metal
+field features/mars/metal.tdf [marsmetal03] seqname: metal03 -> rock09	by finite-metal
+field features/mars/metal.tdf [marsmetal03] seqnamereclamate: (absent) -> rock09rec	by finite-metal
+field features/mars/metal.tdf [marsmetal03] seqnameshad:  -> rock09shad	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] animating: 0 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] animtrans: 0 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] blocking: (absent) -> 0	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] category: metal -> arm_corpses	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] damage: 32009 -> 448	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] description: Metal -> Wreckage	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] filename: marsaquaore -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] height: 0 -> 4	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] hitdensity: 5 -> 100	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] indestructible: 1 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] metal: 88 -> 150	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] object: (absent) -> armpt_dead	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] reclaimable: (absent) -> 1	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] seqname: marsaquaore1 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] seqnameshad:  -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore1] shadtrans: 1 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] animating: 0 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] animtrans: 0 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] blocking: (absent) -> 0	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] category: metal -> arm_corpses	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] damage: 32009 -> 884	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] description: Metal -> Wreckage	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] filename: marsaquaore -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] height: 0 -> 4	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] hitdensity: 5 -> 100	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] indestructible: 1 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] metal: 121 -> 300	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] object: (absent) -> armcs_dead	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] reclaimable: (absent) -> 1	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] seqname: marsaquaore2 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] seqnameshad:  -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore2] shadtrans: 1 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] animating: 0 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] animtrans: 0 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] blocking: (absent) -> 0	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] category: metal -> arm_corpses	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] damage: 32009 -> 488	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] description: Metal -> Wreckage	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] filename: marsaquaore -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] height: 0 -> 4	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] hitdensity: 5 -> 100	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] indestructible: 1 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] metal: 244 -> 750	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] object: (absent) -> armsub_dead	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] reclaimable: (absent) -> 1	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] seqname: marsaquaore3 -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] seqnameshad:  -> (absent)	by finite-metal
+field features/mars/watermetal.tdf [marsaquaore3] shadtrans: 1 -> (absent)	by finite-metal
+field features/moon/metal.tdf [moonmetal01] blocking: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetal01] category: metal -> rocks	by finite-metal
+field features/moon/metal.tdf [moonmetal01] damage: 32009 -> 2000	by finite-metal
+field features/moon/metal.tdf [moonmetal01] description: Metal Deposit -> Rock	by finite-metal
+field features/moon/metal.tdf [moonmetal01] featuredead: (absent) -> moonrock08scar	by finite-metal
+field features/moon/metal.tdf [moonmetal01] featurereclamate: (absent) -> moonrock08scar	by finite-metal
+field features/moon/metal.tdf [moonmetal01] filename: moonmetal -> moonrocks	by finite-metal
+field features/moon/metal.tdf [moonmetal01] height: 0 -> 4	by finite-metal
+field features/moon/metal.tdf [moonmetal01] hitdensity: 5 -> 100	by finite-metal
+field features/moon/metal.tdf [moonmetal01] indestructible: 1 -> (absent)	by finite-metal
+field features/moon/metal.tdf [moonmetal01] metal: 112 -> 300	by finite-metal
+field features/moon/metal.tdf [moonmetal01] reclaimable: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetal01] seqname: metal01 -> rock08	by finite-metal
+field features/moon/metal.tdf [moonmetal01] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/moon/metal.tdf [moonmetal01] seqnamereclamate: (absent) -> rock08rec	by finite-metal
+field features/moon/metal.tdf [moonmetal01] seqnameshad:  -> rock08shad	by finite-metal
+field features/moon/metal.tdf [moonmetal02] blocking: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetal02] category: metal -> rocks	by finite-metal
+field features/moon/metal.tdf [moonmetal02] damage: 32009 -> 2000	by finite-metal
+field features/moon/metal.tdf [moonmetal02] description: Metal Deposit -> Rock	by finite-metal
+field features/moon/metal.tdf [moonmetal02] featuredead: (absent) -> moonrock07scar	by finite-metal
+field features/moon/metal.tdf [moonmetal02] featurereclamate: (absent) -> moonrock07scar	by finite-metal
+field features/moon/metal.tdf [moonmetal02] filename: moonmetal -> moonrocks	by finite-metal
+field features/moon/metal.tdf [moonmetal02] footprintz: 3 -> 2	by finite-metal
+field features/moon/metal.tdf [moonmetal02] height: 0 -> 4	by finite-metal
+field features/moon/metal.tdf [moonmetal02] hitdensity: 5 -> 100	by finite-metal
+field features/moon/metal.tdf [moonmetal02] indestructible: 1 -> (absent)	by finite-metal
+field features/moon/metal.tdf [moonmetal02] metal: 56 -> 150	by finite-metal
+field features/moon/metal.tdf [moonmetal02] reclaimable: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetal02] seqname: metal02 -> rock07	by finite-metal
+field features/moon/metal.tdf [moonmetal02] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/moon/metal.tdf [moonmetal02] seqnamereclamate: (absent) -> rock07rec	by finite-metal
+field features/moon/metal.tdf [moonmetal02] seqnameshad:  -> rock07shad	by finite-metal
+field features/moon/metal.tdf [moonmetal03] blocking: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetal03] category: metal -> rocks	by finite-metal
+field features/moon/metal.tdf [moonmetal03] damage: 32009 -> 2000	by finite-metal
+field features/moon/metal.tdf [moonmetal03] description: Metal Deposit -> Rock	by finite-metal
+field features/moon/metal.tdf [moonmetal03] featuredead: (absent) -> moonrock09scar	by finite-metal
+field features/moon/metal.tdf [moonmetal03] featurereclamate: (absent) -> moonrock09scar	by finite-metal
+field features/moon/metal.tdf [moonmetal03] filename: moonmetal -> moonrocks	by finite-metal
+field features/moon/metal.tdf [moonmetal03] height: 0 -> 4	by finite-metal
+field features/moon/metal.tdf [moonmetal03] hitdensity: 5 -> 100	by finite-metal
+field features/moon/metal.tdf [moonmetal03] indestructible: 1 -> (absent)	by finite-metal
+field features/moon/metal.tdf [moonmetal03] metal: 223 -> 600	by finite-metal
+field features/moon/metal.tdf [moonmetal03] reclaimable: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetal03] seqname: metal03 -> rock09	by finite-metal
+field features/moon/metal.tdf [moonmetal03] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/moon/metal.tdf [moonmetal03] seqnamereclamate: (absent) -> rock09rec	by finite-metal
+field features/moon/metal.tdf [moonmetal03] seqnameshad:  -> rock09shad	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] blocking: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] category: metal -> rocks	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] damage: 32009 -> 2000	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] description: Metal Deposit -> Rock	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] featuredead: (absent) -> moonrock08scar	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] featurereclamate: (absent) -> moonrock08scar	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] filename: moonmetal -> moonrocks	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] height: 0 -> 4	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] hitdensity: 5 -> 100	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] indestructible: 1 -> (absent)	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] metal: 112 -> 300	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] reclaimable: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] seqname: metaldark01 -> rock08	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] seqnamereclamate: (absent) -> rock08rec	by finite-metal
+field features/moon/metal.tdf [moonmetaldark01] seqnameshad:  -> rock08shad	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] blocking: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] category: metal -> rocks	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] damage: 32009 -> 2000	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] description: Metal Deposit -> Rock	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] featuredead: (absent) -> moonrock07scar	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] featurereclamate: (absent) -> moonrock07scar	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] filename: moonmetal -> moonrocks	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] footprintz: 3 -> 2	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] height: 0 -> 4	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] hitdensity: 5 -> 100	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] indestructible: 1 -> (absent)	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] metal: 56 -> 150	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] reclaimable: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] seqname: metaldark02 -> rock07	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] seqnamereclamate: (absent) -> rock07rec	by finite-metal
+field features/moon/metal.tdf [moonmetaldark02] seqnameshad:  -> rock07shad	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] blocking: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] category: metal -> rocks	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] damage: 32009 -> 2000	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] description: Metal Deposit -> Rock	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] featuredead: (absent) -> moonrock09scar	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] featurereclamate: (absent) -> moonrock09scar	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] filename: moonmetal -> moonrocks	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] height: 0 -> 4	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] hitdensity: 5 -> 100	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] indestructible: 1 -> (absent)	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] metal: 223 -> 600	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] reclaimable: (absent) -> 1	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] seqname: metaldark03 -> rock09	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] seqnamedie: (absent) -> rockboom	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] seqnamereclamate: (absent) -> rock09rec	by finite-metal
+field features/moon/metal.tdf [moonmetaldark03] seqnameshad:  -> rock09shad	by finite-metal
+field features/slate/metal.tdf [slatemetal10] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal10] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal10] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal10] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal10] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal10] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal10] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal10] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal10] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal10] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal10] metal: 197 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal10] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal10] seqname: slatevein11 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal10] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal10] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal11] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal11] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal11] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal11] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal11] featuredead: (absent) -> SlateCrushed05	by finite-metal
+field features/slate/metal.tdf [slatemetal11] featurereclamate: (absent) -> sl-rocksmudge5	by finite-metal
+field features/slate/metal.tdf [slatemetal11] filename: slateveins -> slaterocks1	by finite-metal
+field features/slate/metal.tdf [slatemetal11] height: 0 -> 50	by finite-metal
+field features/slate/metal.tdf [slatemetal11] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal11] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal11] metal: 185 -> 600	by finite-metal
+field features/slate/metal.tdf [slatemetal11] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal11] seqname: slatevein16 -> sl-rock05	by finite-metal
+field features/slate/metal.tdf [slatemetal11] seqnamereclamate: (absent) -> sl-rock05rec	by finite-metal
+field features/slate/metal.tdf [slatemetal11] seqnameshad:  -> sl-rock05shad	by finite-metal
+field features/slate/metal.tdf [slatemetal12] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal12] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal12] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal12] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal12] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal12] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal12] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal12] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal12] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal12] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal12] metal: 168 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal12] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal12] seqname: slatevein14 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal12] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal12] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal13] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal13] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal13] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal13] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal13] featuredead: (absent) -> SlateCrushed05	by finite-metal
+field features/slate/metal.tdf [slatemetal13] featurereclamate: (absent) -> sl-rocksmudge5	by finite-metal
+field features/slate/metal.tdf [slatemetal13] filename: slateveins -> slaterocks1	by finite-metal
+field features/slate/metal.tdf [slatemetal13] footprintx: 6 -> 3	by finite-metal
+field features/slate/metal.tdf [slatemetal13] height: 0 -> 50	by finite-metal
+field features/slate/metal.tdf [slatemetal13] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal13] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal13] metal: 230 -> 600	by finite-metal
+field features/slate/metal.tdf [slatemetal13] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal13] seqname: slatevein10 -> sl-rock05	by finite-metal
+field features/slate/metal.tdf [slatemetal13] seqnamereclamate: (absent) -> sl-rock05rec	by finite-metal
+field features/slate/metal.tdf [slatemetal13] seqnameshad:  -> sl-rock05shad	by finite-metal
+field features/slate/metal.tdf [slatemetal14] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal14] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal14] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal14] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal14] featuredead: (absent) -> SlateCrushed05	by finite-metal
+field features/slate/metal.tdf [slatemetal14] featurereclamate: (absent) -> sl-rocksmudge5	by finite-metal
+field features/slate/metal.tdf [slatemetal14] filename: slateveins -> slaterocks1	by finite-metal
+field features/slate/metal.tdf [slatemetal14] height: 0 -> 50	by finite-metal
+field features/slate/metal.tdf [slatemetal14] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal14] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal14] metal: 176 -> 600	by finite-metal
+field features/slate/metal.tdf [slatemetal14] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal14] seqname: slatevein15 -> sl-rock05	by finite-metal
+field features/slate/metal.tdf [slatemetal14] seqnamereclamate: (absent) -> sl-rock05rec	by finite-metal
+field features/slate/metal.tdf [slatemetal14] seqnameshad:  -> sl-rock05shad	by finite-metal
+field features/slate/metal.tdf [slatemetal15] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal15] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal15] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal15] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal15] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal15] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal15] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal15] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal15] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal15] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal15] metal: 182 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal15] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal15] seqname: slatevein13 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal15] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal15] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal16] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal16] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal16] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal16] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal16] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal16] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal16] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal16] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal16] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal16] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal16] metal: 198 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal16] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal16] seqname: slatevein12 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal16] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal16] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal1] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal1] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal1] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal1] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal1] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal1] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal1] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal1] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal1] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal1] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal1] metal: 165 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal1] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal1] seqname: slatevein03 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal1] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal1] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal2] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal2] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal2] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal2] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal2] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal2] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal2] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal2] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal2] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal2] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal2] metal: 174 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal2] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal2] seqname: slatevein02 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal2] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal2] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal3] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal3] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal3] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal3] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal3] featuredead: (absent) -> SlateCrushed04	by finite-metal
+field features/slate/metal.tdf [slatemetal3] featurereclamate: (absent) -> sl-rocksmudge4	by finite-metal
+field features/slate/metal.tdf [slatemetal3] filename: slateveins -> slaterocks1	by finite-metal
+field features/slate/metal.tdf [slatemetal3] footprintx: 3 -> 2	by finite-metal
+field features/slate/metal.tdf [slatemetal3] footprintz: 3 -> 2	by finite-metal
+field features/slate/metal.tdf [slatemetal3] height: 0 -> 25	by finite-metal
+field features/slate/metal.tdf [slatemetal3] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal3] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal3] metal: 173 -> 150	by finite-metal
+field features/slate/metal.tdf [slatemetal3] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal3] seqname: slatevein03 -> sl-rock04	by finite-metal
+field features/slate/metal.tdf [slatemetal3] seqnamereclamate: (absent) -> sl-rock04rec	by finite-metal
+field features/slate/metal.tdf [slatemetal3] seqnameshad:  -> sl-rock04shad	by finite-metal
+field features/slate/metal.tdf [slatemetal4] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal4] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal4] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal4] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal4] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal4] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal4] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal4] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal4] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal4] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal4] metal: 250 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal4] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal4] seqname: slatevein05 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal4] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal4] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal5] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal5] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal5] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal5] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal5] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal5] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal5] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal5] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal5] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal5] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal5] metal: 194 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal5] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal5] seqname: slatevein09 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal5] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal5] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal6] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal6] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal6] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal6] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal6] featuredead: (absent) -> SlateCrushed05	by finite-metal
+field features/slate/metal.tdf [slatemetal6] featurereclamate: (absent) -> sl-rocksmudge5	by finite-metal
+field features/slate/metal.tdf [slatemetal6] filename: slateveins -> slaterocks1	by finite-metal
+field features/slate/metal.tdf [slatemetal6] footprintx: 6 -> 3	by finite-metal
+field features/slate/metal.tdf [slatemetal6] height: 0 -> 50	by finite-metal
+field features/slate/metal.tdf [slatemetal6] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal6] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal6] metal: 241 -> 600	by finite-metal
+field features/slate/metal.tdf [slatemetal6] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal6] seqname: slatevein06 -> sl-rock05	by finite-metal
+field features/slate/metal.tdf [slatemetal6] seqnamereclamate: (absent) -> sl-rock05rec	by finite-metal
+field features/slate/metal.tdf [slatemetal6] seqnameshad:  -> sl-rock05shad	by finite-metal
+field features/slate/metal.tdf [slatemetal7] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal7] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal7] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal7] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal7] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal7] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal7] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal7] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal7] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal7] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal7] metal: 154 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal7] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal7] seqname: slatevein07 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal7] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal7] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal8] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal8] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal8] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal8] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal8] featuredead: (absent) -> slatecrushed06	by finite-metal
+field features/slate/metal.tdf [slatemetal8] featurereclamate: (absent) -> sl-rocksmudge6	by finite-metal
+field features/slate/metal.tdf [slatemetal8] filename: slateveins -> slaterocks2	by finite-metal
+field features/slate/metal.tdf [slatemetal8] height: 0 -> 60	by finite-metal
+field features/slate/metal.tdf [slatemetal8] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal8] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal8] metal: 195 -> 300	by finite-metal
+field features/slate/metal.tdf [slatemetal8] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal8] seqname: slatevein04 -> sl-rock06	by finite-metal
+field features/slate/metal.tdf [slatemetal8] seqnamereclamate: (absent) -> sl-rock06rec	by finite-metal
+field features/slate/metal.tdf [slatemetal8] seqnameshad:  -> sl-rock06shad	by finite-metal
+field features/slate/metal.tdf [slatemetal9] blocking: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal9] category: metal -> rocks	by finite-metal
+field features/slate/metal.tdf [slatemetal9] damage: 32009 -> 2000	by finite-metal
+field features/slate/metal.tdf [slatemetal9] description: Metal -> Rock	by finite-metal
+field features/slate/metal.tdf [slatemetal9] featuredead: (absent) -> SlateCrushed05	by finite-metal
+field features/slate/metal.tdf [slatemetal9] featurereclamate: (absent) -> sl-rocksmudge5	by finite-metal
+field features/slate/metal.tdf [slatemetal9] filename: slateveins -> slaterocks1	by finite-metal
+field features/slate/metal.tdf [slatemetal9] height: 0 -> 50	by finite-metal
+field features/slate/metal.tdf [slatemetal9] hitdensity: 5 -> 100	by finite-metal
+field features/slate/metal.tdf [slatemetal9] indestructible: 1 -> (absent)	by finite-metal
+field features/slate/metal.tdf [slatemetal9] metal: 210 -> 600	by finite-metal
+field features/slate/metal.tdf [slatemetal9] reclaimable: (absent) -> 1	by finite-metal
+field features/slate/metal.tdf [slatemetal9] seqname: slatevein08 -> sl-rock05	by finite-metal
+field features/slate/metal.tdf [slatemetal9] seqnamereclamate: (absent) -> sl-rock05rec	by finite-metal
+field features/slate/metal.tdf [slatemetal9] seqnameshad:  -> sl-rock05shad	by finite-metal
+field features/water/metal.tdf [wateraquaore1] animating: 0 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore1] animtrans: 0 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore1] blocking: (absent) -> 0	by finite-metal
+field features/water/metal.tdf [wateraquaore1] category: metal -> arm_corpses	by finite-metal
+field features/water/metal.tdf [wateraquaore1] damage: 32009 -> 448	by finite-metal
+field features/water/metal.tdf [wateraquaore1] description: Metal -> Wreckage	by finite-metal
+field features/water/metal.tdf [wateraquaore1] filename: WaterAquaOre -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore1] hitdensity: 5 -> 100	by finite-metal
+field features/water/metal.tdf [wateraquaore1] indestructible: 1 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore1] metal: 86 -> 150	by finite-metal
+field features/water/metal.tdf [wateraquaore1] object: (absent) -> armpt_dead	by finite-metal
+field features/water/metal.tdf [wateraquaore1] reclaimable: (absent) -> 1	by finite-metal
+field features/water/metal.tdf [wateraquaore1] seqname: wateraquaore1 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore1] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/water/metal.tdf [wateraquaore1] seqnameshad:  -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore1] shadtrans: 1 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore2] animating: 0 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore2] animtrans: 0 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore2] blocking: (absent) -> 0	by finite-metal
+field features/water/metal.tdf [wateraquaore2] category: metal -> arm_corpses	by finite-metal
+field features/water/metal.tdf [wateraquaore2] damage: 32009 -> 884	by finite-metal
+field features/water/metal.tdf [wateraquaore2] description: Metal -> Wreckage	by finite-metal
+field features/water/metal.tdf [wateraquaore2] filename: WaterAquaOre -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore2] hitdensity: 5 -> 100	by finite-metal
+field features/water/metal.tdf [wateraquaore2] indestructible: 1 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore2] metal: 127 -> 300	by finite-metal
+field features/water/metal.tdf [wateraquaore2] object: (absent) -> armcs_dead	by finite-metal
+field features/water/metal.tdf [wateraquaore2] reclaimable: (absent) -> 1	by finite-metal
+field features/water/metal.tdf [wateraquaore2] seqname: wateraquaore2 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore2] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/water/metal.tdf [wateraquaore2] seqnameshad:  -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore2] shadtrans: 1 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore3] animating: 0 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore3] animtrans: 0 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore3] blocking: (absent) -> 0	by finite-metal
+field features/water/metal.tdf [wateraquaore3] category: metal -> arm_corpses	by finite-metal
+field features/water/metal.tdf [wateraquaore3] damage: 32009 -> 488	by finite-metal
+field features/water/metal.tdf [wateraquaore3] description: Metal -> Wreckage	by finite-metal
+field features/water/metal.tdf [wateraquaore3] filename: WaterAquaOre -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore3] hitdensity: 5 -> 100	by finite-metal
+field features/water/metal.tdf [wateraquaore3] indestructible: 1 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore3] metal: 223 -> 750	by finite-metal
+field features/water/metal.tdf [wateraquaore3] object: (absent) -> armsub_dead	by finite-metal
+field features/water/metal.tdf [wateraquaore3] reclaimable: (absent) -> 1	by finite-metal
+field features/water/metal.tdf [wateraquaore3] seqname: wateraquaore3 -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore3] seqnamereclamate: (absent) -> tree1reclamate	by finite-metal
+field features/water/metal.tdf [wateraquaore3] seqnameshad:  -> (absent)	by finite-metal
+field features/water/metal.tdf [wateraquaore3] shadtrans: 1 -> (absent)	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] blocking: (absent) -> 1	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] category: metal -> rocks	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] damage: 32009 -> 2000	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] description: Metal Deposit -> Rock	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] featuredead: (absent) -> wetcrush33	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] featurereclamate: (absent) -> wetrock15scar	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] filename: wetmetal -> wetrocks	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] height: 0 -> 45	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] hitdensity: 5 -> 100	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] indestructible: 1 -> (absent)	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] metal: 122 -> 300	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] reclaimable: (absent) -> 1	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] seqname: metal01 -> rock15	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] seqnamedie: (absent) -> rock15boom	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] seqnamereclamate: (absent) -> rock15rec	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal01] seqnameshad:  -> rock15shad	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] blocking: (absent) -> 1	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] category: metal -> rocks	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] damage: 32009 -> 2000	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] description: Metal Deposit -> Rock	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] featuredead: (absent) -> wetcrush32	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] featurereclamate: (absent) -> wetrock01scar	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] filename: wetmetal -> wetrocks	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] footprintz: 3 -> 2	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] height: 0 -> 31	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] hitdensity: 5 -> 100	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] indestructible: 1 -> (absent)	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] metal: 76 -> 150	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] reclaimable: (absent) -> 1	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] seqname: metal02 -> rock01	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] seqnamedie: (absent) -> rock01boom	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] seqnamereclamate: (absent) -> rock01rec	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal02] seqnameshad:  -> rock01shad	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] blocking: (absent) -> 1	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] category: metal -> rocks	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] damage: 32009 -> 2000	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] description: Metal Deposit -> Rock	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] featuredead: (absent) -> wetcrush33	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] featurereclamate: (absent) -> wetrock14scar	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] filename: wetmetal -> wetrocks	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] height: 0 -> 80	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] hitdensity: 5 -> 100	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] indestructible: 1 -> (absent)	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] metal: 223 -> 600	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] reclaimable: (absent) -> 1	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] seqname: metal03 -> rock14	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] seqnamedie: (absent) -> rock14boom	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] seqnamereclamate: (absent) -> rock14rec	by finite-metal
+field features/wetdesert/metal.tdf [wetmetal03] seqnameshad:  -> rock14shad	by finite-metal
+field guis/armaca1.gui [gadget7] grayedout: 0 -> 1
+field guis/armaca1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armack1.gui [gadget7] grayedout: 0 -> 1
+field guis/armack1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armacv1.gui [gadget7] grayedout: 0 -> 1
+field guis/armacv1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armca1.gui [gadget8] grayedout: 0 -> 1
+field guis/armca1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armch1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armch1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armch4.gui [gadget8] grayedout: 0 -> 1
+field guis/armch4.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armck1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armck1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcom1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armcom1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcom3.gui [gadget8] grayedout: (absent) -> 1
+field guis/armcom3.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcsa1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armcsa1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcsa4.gui [gadget8] grayedout: 0 -> 1
+field guis/armcsa4.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcv1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armcv1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/coraca1.gui [gadget7] grayedout: (absent) -> 1
+field guis/coraca1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corack1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corack1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/coracv1.gui [gadget7] grayedout: (absent) -> 1
+field guis/coracv1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corca1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corca1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corch1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corch1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corch4.gui [gadget8] grayedout: (absent) -> 1
+field guis/corch4.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corck1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corck1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcom1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcom1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcom3.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcom3.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcsa1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcsa1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcsa4.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcsa4.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcv1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcv1.gui [gadget8][common] commonattribs: 4 -> 0
+field units/armaca.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+field units/armack.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+field units/armacsub.fbi [unitinfo] metalmake: 0.9 -> (absent)	by finite-metal
+field units/armacv.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+field units/armasy.fbi [unitinfo] metalmake: 1 -> (absent)	by finite-metal
+field units/armca.fbi [unitinfo] metalmake: 0.2 -> (absent)	by finite-metal
+field units/armch.fbi [unitinfo] metalmake: 0.3 -> (absent)	by finite-metal
+field units/armck.fbi [unitinfo] metalmake: 0.25 -> (absent)	by finite-metal
+field units/armcom.fbi [unitinfo] metalmake: 1 -> (absent)	by finite-metal
+field units/armcs.fbi [unitinfo] metalmake: 0.3 -> (absent)	by finite-metal
+field units/armcsa.fbi [unitinfo] metalmake: 0.3 -> (absent)	by finite-metal
+field units/armcv.fbi [unitinfo] metalmake: 0.25 -> (absent)	by finite-metal
+field units/armfark.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+field units/armplat.fbi [unitinfo] metalmake: 1 -> (absent)	by finite-metal
+field units/armsy.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+field units/coraca.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+field units/corack.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+field units/coracsub.fbi [unitinfo] metalmake: 0.9 -> (absent)	by finite-metal
+field units/coracv.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+field units/corasy.fbi [unitinfo] metalmake: 1 -> (absent)	by finite-metal
+field units/corca.fbi [unitinfo] metalmake: 0.2 -> (absent)	by finite-metal
+field units/corch.fbi [unitinfo] metalmake: 0.3 -> (absent)	by finite-metal
+field units/corck.fbi [unitinfo] metalmake: 0.25 -> (absent)	by finite-metal
+field units/corcom.fbi [unitinfo] metalmake: 1 -> (absent)	by finite-metal
+field units/corcs.fbi [unitinfo] metalmake: 0.3 -> (absent)	by finite-metal
+field units/corcsa.fbi [unitinfo] metalmake: 0.3 -> (absent)	by finite-metal
+field units/corcv.fbi [unitinfo] metalmake: 0.25 -> (absent)	by finite-metal
+field units/corplat.fbi [unitinfo] metalmake: 1 -> (absent)	by finite-metal
+field units/corsy.fbi [unitinfo] metalmake: 0.5 -> (absent)	by finite-metal
+file hidden download/armuwmex.tdf	by finite-metal
+file hidden download/coruwmex.tdf	by finite-metal
+file hidden units/armmex.fbi	by finite-metal
+file hidden units/armmoho.fbi	by finite-metal
+file hidden units/armuwmex.fbi	by finite-metal
+file hidden units/cormex.fbi	by finite-metal
+file hidden units/cormoho.fbi	by finite-metal
+file hidden units/coruwmex.fbi	by finite-metal
+menu removed ARMCS 3 5 ARMUWMEX	by finite-metal
+menu removed CORCS 3 5 CORUWMEX	by finite-metal
+unit dropped ARMMEX hidden	by finite-metal
+unit dropped ARMMOHO hidden	by finite-metal
+unit dropped ARMUWMEX hidden	by finite-metal
+unit dropped CORMEX hidden	by finite-metal
+unit dropped CORMOHO hidden	by finite-metal
+unit dropped CORUWMEX hidden	by finite-metal
