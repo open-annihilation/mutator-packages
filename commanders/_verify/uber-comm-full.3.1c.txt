@@ -1,0 +1,19 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: uber-comm 1 strength=full
+# seed: 0
+field units/armcom.fbi [unitinfo] acceleration: 0.15 -> 0.6	by uber-comm
+field units/armcom.fbi [unitinfo] brakerate: 0.3 -> 1.2	by uber-comm
+field units/armcom.fbi [unitinfo] builddistance: 60 -> 120	by uber-comm
+field units/armcom.fbi [unitinfo] maxdamage: 3000 -> 6000	by uber-comm
+field units/armcom.fbi [unitinfo] maxvelocity: 1.2 -> 2.4	by uber-comm
+field units/armcom.fbi [unitinfo] turnrate: 1044 -> 2088	by uber-comm
+field units/armcom.fbi [unitinfo] workertime: 300 -> 1800	by uber-comm
+field units/corcom.fbi [unitinfo] acceleration: 0.16 -> 0.64	by uber-comm
+field units/corcom.fbi [unitinfo] brakerate: 0.32 -> 1.28	by uber-comm
+field units/corcom.fbi [unitinfo] builddistance: 60 -> 120	by uber-comm
+field units/corcom.fbi [unitinfo] maxdamage: 3000 -> 6000	by uber-comm
+field units/corcom.fbi [unitinfo] maxvelocity: 1.07 -> 2.14	by uber-comm
+field units/corcom.fbi [unitinfo] turnrate: 1030 -> 2060	by uber-comm
+field units/corcom.fbi [unitinfo] workertime: 300 -> 1800	by uber-comm

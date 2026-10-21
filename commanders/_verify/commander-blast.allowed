@@ -1,0 +1,14 @@
+# The original's unit files were cut from older OTA data: they revert 3.1c's categories and target lists, drop OvrAdjust and give Core's commander Arm's disintegrator; the curated version changes only the blasts
+right only field units/armcom.fbi [unitinfo] category: *
+right only field units/armcom.fbi [unitinfo] badtargetcategory: *
+right only field units/armcom.fbi [unitinfo] nochasecategory: *
+right only field units/armcom.fbi [unitinfo] ovradjust: *
+right only field units/armcom.fbi [unitinfo] wpri_badtargetcategory: *
+right only field units/armcom.fbi [unitinfo] wspe_badtargetcategory: *
+right only field units/corcom.fbi [unitinfo] category: *
+right only field units/corcom.fbi [unitinfo] badtargetcategory: *
+right only field units/corcom.fbi [unitinfo] nochasecategory: *
+right only field units/corcom.fbi [unitinfo] ovradjust: *
+right only field units/corcom.fbi [unitinfo] wpri_badtargetcategory: *
+right only field units/corcom.fbi [unitinfo] wspe_badtargetcategory: *
+right only field units/corcom.fbi [unitinfo] weapon3: *

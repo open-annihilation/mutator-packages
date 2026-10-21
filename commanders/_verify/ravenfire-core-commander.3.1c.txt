@@ -1,0 +1,7 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: ravenfire-core-commander 1
+# seed: 0
+file replaced objects3d/corcom.3do 626ce9e3489c3685575d26e92b1a0f3ebc79e5247d45248425ba75b76bd34258 89cfb0fa5db26cfaec3b85cc6edcb52cc15599a246ae5748958524cc487b98c8	by ravenfire-core-commander
+file replaced objects3d/cordecom.3do 626ce9e3489c3685575d26e92b1a0f3ebc79e5247d45248425ba75b76bd34258 89cfb0fa5db26cfaec3b85cc6edcb52cc15599a246ae5748958524cc487b98c8	by ravenfire-core-commander

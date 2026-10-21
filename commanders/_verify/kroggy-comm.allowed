@@ -1,0 +1,10 @@
+# 3.1c fields the 2001 unit files predate; the curated version keeps 3.1c's
+right only field units/armcom.fbi [unitinfo] defaultmissiontype: *
+right only field units/armcom.fbi [unitinfo] healtime: *
+right only field units/armcom.fbi [unitinfo] ovradjust: *
+right only field units/corcom.fbi [unitinfo] defaultmissiontype: *
+right only field units/corcom.fbi [unitinfo] healtime: *
+right only field units/corcom.fbi [unitinfo] ovradjust: *
+
+# The script's source, which the game never reads
+right only file added scripts/kroggycom.bos *
