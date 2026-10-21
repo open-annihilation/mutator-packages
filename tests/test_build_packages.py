@@ -16,6 +16,7 @@ import zipfile
 from pathlib import Path
 
 TOOL = Path(__file__).resolve().parent.parent / "tools" / "build-packages"
+CHECK = Path(__file__).resolve().parent.parent / "tools" / "check-comparisons"
 
 # Imports name the folder after the source's stem (or --id); extract reads a zip entry.
 FAKE_OA_TOOL = """
@@ -53,6 +54,7 @@ class BuildPackagesTest(unittest.TestCase):
         self.repo = self.top / "repo"
         (self.repo / "tools").mkdir(parents=True)
         shutil.copy2(TOOL, self.repo / "tools" / "build-packages")
+        shutil.copy2(CHECK, self.repo / "tools" / "check-comparisons")
         self.fake = self.top / "fake-oa-tool"
         self.fake.write_text(f"#!{sys.executable} -I\n{FAKE_OA_TOOL}", encoding="utf-8")
         self.fake.chmod(0o755)
