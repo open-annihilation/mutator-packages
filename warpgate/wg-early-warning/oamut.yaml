@@ -4,7 +4,7 @@ name: "WG Early Warning"
 version: "1"
 author:
   name: "Immerman"
-description: "Both gates give full radar and sonar cover on maps up to 17×17. On a larger map the radius is 25, because of an engine limit.\n\nThis package replaces WG - Early Warning by Immerman. Both distances are locked at 13000."
+description: "Both gates give full radar and sonar cover on maps up to 17×17. On a larger map the cover is a radius of 25 map units (about 4.5 times an advanced radar's), because of an engine limit.\n\nThis package replaces WG - Early Warning by Immerman. Both distances are locked at 13000."
 tags: ["gameplay"]
 works-with: ["*"]
 requires:
