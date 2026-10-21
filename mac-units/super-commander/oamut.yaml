@@ -1,0 +1,26 @@
+oamut: 1
+id: "super-commander"
+name: "Super Commander"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Commanders have half again the armor, build three times as fast and reach twice as far. Arm commanders move seven times as fast, and Core commanders five times as fast.\n\nSuper Commander (Arm) and Super Commander (Core), by MAC (macraig), both promise 50% more armor, 500% more speed, 300% faster construction and 200% more build distance, so the commander stays useful after the early game. The two copies do not use the same speed numbers. Arm multiplies top speed by 7 and braking and acceleration by 49. Core multiplies top speed by 5 and braking and acceleration by 25. Both multiply damage by 1.5, from 1 to 29900, build distance by 2, worker time by 3 and turn rate by 5, up to 29900. This version keeps each side's numbers. The idea is Immerman's."
+tags: ["commanders", "statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: choice
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+legacy:
+  - name: "[MAC] Super Commander (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Super Commander (Arm).tam", "{}MAC Super Commander (Arm).sm"]
+  - name: "[MAC] Super Commander (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Super Commander (Core).tam", "{}MAC Super Commander (Core).sm"]

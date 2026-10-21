@@ -1,0 +1,30 @@
+oamut: 1
+id: "bio-armor"
+name: "Bio-Armor"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Units that do not already repair themselves gain a heal time of 100.\n\nBio-Armor, for Arm, for Core and for every side, by MAC (macraig), sets heal time to 100 where it is outside 1 to 9999. The every-side original is titled Bio-Armor (Arm). This package replaces those three originals and keeps that rule."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: choice
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+legacy:
+  - name: "[MAC] Bio-Armor (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Bio-Armor (Arm).tam", "{}MAC Bio-Armor (Arm).sm"]
+  - name: "[MAC] Bio-Armor (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Bio-Armor (Core).tam", "{}MAC Bio-Armor (Core).sm"]
+  - name: "[MAC] Bio-Armor (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Bio-Armor.tam", "{}MAC Bio-Armor.sm"]

@@ -1,0 +1,16 @@
+oamut: 1
+id: "everybody-rides"
+name: "Everybody Rides the Bus"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "A unit that was forbidden from transports can ride in one large enough to carry it.\n\nEverybody Rides The Bus, by MAC (macraig), removes the transport prohibition where it is set. This package replaces that original and keeps that rule."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Everybody Rides The Bus"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Everybody Rides The Bus.tam", "{}MAC Everybody Rides The Bus.sm"]

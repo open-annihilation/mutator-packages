@@ -1,0 +1,30 @@
+oamut: 1
+id: "enhanced-factories"
+name: "Enhanced Factories"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Factories construct three times as fast, up to a worker time of 2000.\n\nEnhanced Factories, for Arm, for Core and for every side, by MAC (macraig), triples the worker time of a factory whose worker time is from 1 to 10000. This package replaces those three originals and keeps that rule."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: choice
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+legacy:
+  - name: "[MAC] Enhanced Factories (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced Factories (Arm).tam", "{}MAC Enhanced Factories (Arm).sm"]
+  - name: "[MAC] Enhanced Factories (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced Factories (Core).tam", "{}MAC Enhanced Factories (Core).sm"]
+  - name: "[MAC] Enhanced Factories"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced Factories.tam", "{}MAC Enhanced Factories.sm"]

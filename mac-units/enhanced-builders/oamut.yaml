@@ -1,0 +1,30 @@
+oamut: 1
+id: "enhanced-builders"
+name: "Enhanced Builders"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Mobile builders other than commanders construct three times as fast, up to a worker time of 2000.\n\nEnhanced Builders, for Arm, for Core and for every side, by MAC (macraig), tripled the worker time of mobile builders and left the commanders out by name (ARMCOM and CORCOM). This version leaves out every unit with commander set. On Total Annihilation 3.1c that is the same set, and the decoy commanders stay in, because they have no commander flag."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: choice
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+legacy:
+  - name: "[MAC] Enhanced Builders (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced Builders (Arm).tam", "{}MAC Enhanced Builders (Arm).sm"]
+  - name: "[MAC] Enhanced Builders (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced Builders (Core).tam", "{}MAC Enhanced Builders (Core).sm"]
+  - name: "[MAC] Enhanced Builders"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced Builders.tam", "{}MAC Enhanced Builders.sm"]

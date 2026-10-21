@@ -1,0 +1,44 @@
+oamut: 1
+id: "agile-aircraft"
+name: "Agile Aircraft"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Aircraft turn and stop as if they were faster. Construction aircraft under Agile Aircraft II turn harder still, and Switeck's helper plane is left alone.\n\nAgile Aircraft, for Arm and for Core, and Agile Aircraft II, for Arm, for Core and for every side, by MAC (macraig), follow an idea of Immerman's. Every aircraft has its top speed multiplied by 1.5, never past 30, its braking and acceleration by 2.25, its turn rate by 2, never past 29900, and its bank by 2. Agile Aircraft II keeps that for aircraft that do not build. A construction aircraft, other than the unit named HELPER, has its top speed multiplied by 2, never past 15, its braking by 4, never past 5, its acceleration by 10, never past 5, its turn rate by 4, never past 400, and its bank by 2.\n\nAgile Aircraft II's first group also required an empty worker time, which no aircraft has, so that group changed nothing. This version selects the aircraft that do not build."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: choice
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+  version:
+    type: choice
+    values: ["classic", "ii"]
+    default: "ii"
+    labels: ["Agile Aircraft", "Agile Aircraft II"]
+    label: "Version"
+legacy:
+  - name: "[MAC] Agile Aircraft (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Agile Aircraft (Arm).tam", "{}MAC Agile Aircraft (Arm).sm"]
+  - name: "[MAC] Agile Aircraft (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Agile Aircraft (Core).tam", "{}MAC Agile Aircraft (Core).sm"]
+  - name: "[MAC] Agile Aircraft II (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Agile Aircraft II (Arm).tam", "{}MAC Agile Aircraft II (Arm).sm"]
+  - name: "[MAC] Agile Aircraft II (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Agile Aircraft II (Core).tam", "{}MAC Agile Aircraft II (Core).sm"]
+  - name: "[MAC] Agile Aircraft II"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Agile Aircraft II.tam", "{}MAC Agile Aircraft II.sm"]

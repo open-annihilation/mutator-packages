@@ -1,0 +1,16 @@
+oamut: 1
+id: "real-hovers"
+name: "Real Hovers"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Hovercraft fly low, cast a shadow, and move two and a half times as fast.\n\nReal Hovers, by MAC (macraig), was inspired by Shonner's Real Hovers mod. Hovercraft lose their hover and movement-class marks, become VTOL aircraft at a cruise altitude of 0.5, with no extra altitude above the sea and a bank of 0.5, stand by in the air, and have top speed, braking and acceleration multiplied by 2.5 and turn rate by 1.5. The override adjust is set to 1.\n\nThe original required a cruise altitude outside 0 to 9999, which was meant to mean the unit has no cruise altitude. A hovercraft that leaves the key out reads 0, so that test selected nothing. This version selects a missing cruise altitude."
+tags: ["gameplay", "statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Real Hovers"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Real Hovers.tam", "{}MAC Real Hovers.sm"]

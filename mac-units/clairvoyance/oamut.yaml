@@ -1,0 +1,16 @@
+oamut: 1
+id: "clairvoyance"
+name: "Clairvoyance"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Radar and sonar reach ten times as far.\n\nClairvoyance generic, by MAC (macraig), multiplies radar distance by 10 where it is from 1 to 99999, and sonar distance the same way. This package replaces that original and keeps the two groups."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Clairvoyance generic"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Clairvoyance generic.tam", "{}MAC Clairvoyance generic.sm"]
