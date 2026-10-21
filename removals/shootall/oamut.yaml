@@ -1,0 +1,17 @@
+oamut: 1
+id: "shootall"
+name: "Shootall"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Every unit is a valid target, as the shoot-all cheat would do.\n\nATRCaptainKirk's Shootall sets that flag on every unit.\n\nThis package keeps the flag."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Shootall"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Shootall.tam", "{}Shootall.sm"]

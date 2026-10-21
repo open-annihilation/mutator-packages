@@ -1,0 +1,17 @@
+oamut: 1
+id: "they-live-again"
+name: "They Live Again"
+version: "1"
+author:
+  name: "Immerman"
+description: "Ground construction units can resurrect.\n\nImmerman's They Live Again grants resurrect to mobile builders that can reclaim and cannot fly. Aircraft cannot resurrect.\n\nThis package keeps that test."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "They Live Again"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}TheyLiveAgain.tam", "{}TheyLiveAgain.sm"]

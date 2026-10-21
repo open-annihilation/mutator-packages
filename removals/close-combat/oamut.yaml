@@ -1,0 +1,17 @@
+oamut: 1
+id: "close-combat"
+name: "Close Combat"
+version: "1"
+author:
+  name: "Drinken"
+description: "Aircraft, the factories left with nothing but aircraft, air repair pads, long-range plasma cannons, nuclear and EMP silos, anti-nukes and decoy commanders are removed.\n\nDrinken's Close Combat blanked the copyright line. Aircraft were chosen by whether they fly, and their plants by sound category. The cannons are a sound category containing ARM_BRTHA or COR_INT, the silos are the sound category NUC, the anti-nukes are a description containing Missile Defense, and the decoys are the name Decoy Commander. Those four tests find nothing on a mod that uses other names.\n\nThis package removes aircraft, the factories they empty and the air pads directly, and it keeps those four tests for the rest."
+tags: ["disable"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Close Combat"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}CloseCombat.tam", "{}CloseCombat.sm"]

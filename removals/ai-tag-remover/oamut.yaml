@@ -1,0 +1,17 @@
+oamut: 1
+id: "ai-tag-remover"
+name: "AI Tag Remover"
+version: "1"
+author:
+  name: "Drinken"
+description: "The AI's weight and limit tags are cleared, so the AI profile decides what gets built.\n\nDrinken's AI weight & limit remover cleared ai_weight where the text contained \"we\" and ai_limit where it contained \"li\".\n\nThis package removes either field when it is present. On this game those tests find the same units."
+tags: ["ai"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "AI weight & limit remover"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Weight&Limit_Remover.tam", "{}Weight&Limit_Remover.sm"]

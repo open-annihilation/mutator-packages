@@ -1,0 +1,17 @@
+oamut: 1
+id: "double-aoe"
+name: "Double Area of Effect"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Every weapon's blast is twice as wide.\n\nATRCaptainKirk's Double Area of Effect doubles area of effect.\n\nThis package keeps that factor."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["weapons"]
+legacy:
+  - name: "Double Area of Effect"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}DoubleAoE.tam", "{}DoubleAoE.sm"]

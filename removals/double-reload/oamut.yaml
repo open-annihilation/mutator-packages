@@ -1,0 +1,17 @@
+oamut: 1
+id: "double-reload"
+name: "Double Reload Times"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Every weapon takes twice as long to reload.\n\nATRCaptainKirk's Double Reload Times doubles reload time.\n\nThis package keeps that factor."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["weapons"]
+legacy:
+  - name: "Double Reload Times"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}DoubleReloadTimes.tam", "{}DoubleReloadTimes.sm"]

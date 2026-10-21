@@ -1,0 +1,17 @@
+oamut: 1
+id: "double-ranges"
+name: "Double Ranges"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Every weapon reaches twice as far, and no range goes past 32000.\n\nATRCaptainKirk's Double Ranges doubles weapon range and clamps it from 0 to 32000.\n\nThis package keeps that factor and that clamp."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["weapons"]
+legacy:
+  - name: "Double Ranges"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}DoubleRanges.tam", "{}DoubleRanges.sm"]

@@ -1,0 +1,17 @@
+oamut: 1
+id: "no-air"
+name: "No Air"
+version: "1"
+author:
+  name: "Drinken"
+description: "Aircraft are removed, and so are the factories left with nothing but aircraft to build, and the stationary air repair pads.\n\nDrinken's No Air blanked the copyright line and set version 4 on aircraft, on units whose sound category is AIRPLANT, and on the Arm seaplane platform. That sound category also names the two air repair pads.\n\nThis package removes aircraft, factories whose menus are only aircraft, and stationary air bases directly. The Core seaplane platform, which the exact sound-category test missed, goes with the rest."
+tags: ["disable"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "No Air"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}NoAir.tam", "{}NoAir.sm"]

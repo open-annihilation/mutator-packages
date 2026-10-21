@@ -1,0 +1,17 @@
+oamut: 1
+id: "no-hovers"
+name: "No Hovers"
+version: "1"
+author:
+  name: "Total Dave / Davicius"
+description: "Hover plants are removed, and so is every hovercraft that only those plants build.\n\nNo Hovers, by Total Dave / Davicius, blanked the copyright line on the Arm and Core hover plants. The hovercraft stayed in the game, unbuildable, though the description promised both.\n\nThis package removes the plants and the craft only they offered. A hovercraft another builder offers stays, and so does every commander."
+tags: ["disable"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "No Hovers"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}NoHover.tam", "{}NoHover.sm"]

@@ -1,0 +1,17 @@
+oamut: 1
+id: "double-los"
+name: "Double LOS"
+version: "1"
+author:
+  name: "Gamma and Kirk"
+description: "Every unit sees twice as far, and radar reaches half again as far. The sight table is wide enough that the longer sight is not cut short.\n\nDouble LOS, by Gamma and Kirk, doubles sight distance, multiplies radar distance by 1.5, and replaces the line-of-sight table. The table in the companion archive has 32 entries where Total Annihilation 3.1c has 9.\n\nThis package keeps those factors and ships that table."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["files", "units"]
+legacy:
+  - name: "Double LOS"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}DoubleLOS.tam", "{}DoubleLOS.sm", "{}DoubleLOS(1).ccx"]

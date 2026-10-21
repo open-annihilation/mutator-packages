@@ -1,0 +1,17 @@
+oamut: 1
+id: "non-blocking-corpses"
+name: "Non-blocking Corpses"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Wrecks no longer block movement. They can still be reclaimed. Dragon's teeth and other world features still block.\n\nATRCaptainKirk's Non-blocking Corpses cleared blocking on every feature in the corpses folder, which is why dragon's teeth were left alone.\n\nThis package follows each unit's corpse, and the feature that wreck turns into, and clears blocking on that chain. A wreck stored outside the corpses folder counts, and a world feature does not. A unit that is itself a feature, such as dragon's teeth, leaves that feature, not a wreck, so it keeps blocking."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units", "features"]
+legacy:
+  - name: "Non-blocking Corpses"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Non-blockingCorpses.tam", "{}Non-blockingCorpses.sm"]

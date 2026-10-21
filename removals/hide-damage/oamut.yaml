@@ -1,0 +1,17 @@
+oamut: 1
+id: "hide-damage"
+name: "Hide Damage"
+version: "1"
+author:
+  name: "Kirk"
+description: "Opponents cannot see how much health a unit has left.\n\nKirk's Hide Damage sets that flag on every unit.\n\nThis package keeps the flag."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Hide Damage"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}HideDamage.tam", "{}HideDamage.sm"]
