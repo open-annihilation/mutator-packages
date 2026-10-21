@@ -7,6 +7,9 @@ with those bytes is kept. Otherwise the local copy is checked and copied.
 With no local copy, an igi-server row is downloaded from --igi-url-base and
 a ta-mutation row is fetched from S3 by the maintainer's aws command.
 --local-only does neither: it names the URL or the aws command and stops.
+A download follows a redirect only to the same scheme, host and port, reads
+no more than the row's size, and ends any failure (an HTTP status, a refused
+redirect, a timeout, a short or long body) with a "download failed" line.
 
     tools/fetch-originals [--from DIR] [--from-igi DIR] [--out DIR]
         [--set NAME]... [--igi-url-base URL] [--local-only]
@@ -23,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import http.client
 import os
 import shlex
 import shutil
@@ -33,7 +37,9 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import zipfile
+from email.message import Message
 from pathlib import Path
+from typing import IO, BinaryIO
 
 # The igi server answers 403 to Python's default User-Agent.
 CURL_USER_AGENT = "curl/8.7.1"
@@ -42,6 +48,13 @@ KEY_PREFIX = "tools/ta-mutation/"
 IGI_PREFIX = "tools/ta-mutation/igi-server/"
 HEADER = ("key", "size", "sha256", "set", "url")
 DOWNLOAD_TIMEOUT_S = 60
+# No download may be larger; the largest original in originals.tsv is 4,440,872 bytes.
+MAX_DOWNLOAD_BYTES = 8 * 1024 * 1024
+CHUNK_BYTES = 64 * 1024
+
+
+class DownloadFailed(Exception):
+    pass
 
 
 class Row:
@@ -102,6 +115,8 @@ def read_table(path: Path) -> list[Row]:
             fail(f"originals: {path}:{number}: igi-server key is missing its prefix")
         if set_name == "ta-mutation" and key.startswith(IGI_PREFIX):
             fail(f"originals: {path}:{number}: ta-mutation key is under igi-server")
+        if url != "-" and int(size_text) > MAX_DOWNLOAD_BYTES:
+            fail(f"originals: {path}:{number}: size is above MAX_DOWNLOAD_BYTES")
         rows.append(Row(key, int(size_text), sha256.lower(), set_name, url))
     return rows
 
@@ -171,37 +186,84 @@ def download_url(row: Row, base: str) -> str:
     return base + urllib.parse.quote(row.server_path, safe="/")
 
 
-def download(row: Row, dest: Path, base: str) -> int | None:
-    """Download one zip. Return an HTTP status on HTTP failure, else None."""
+def origin(url: str) -> tuple[str, str, int | None]:
+    parts = urllib.parse.urlsplit(url)
+    scheme = parts.scheme.lower()
+    port = parts.port  # ValueError for a port that is not a number
+    if port is None:
+        port = {"http": 80, "https": 443}.get(scheme)
+    return scheme, (parts.hostname or "").lower(), port
+
+
+class SameOriginRedirects(urllib.request.HTTPRedirectHandler):
+    """Follow a redirect only when it keeps the request's scheme, host and port."""
+
+    def redirect_request(
+        self, req: urllib.request.Request, fp: IO[bytes], code: int, msg: str, headers: Message, newurl: str
+    ) -> urllib.request.Request | None:
+        try:
+            same = origin(newurl) == origin(req.full_url)
+        except ValueError:
+            same = False
+        if not same:
+            fp.close()
+            raise DownloadFailed(f"refused a redirect to {newurl}")
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+def copy_bounded(response: http.client.HTTPResponse, handle: BinaryIO, limit: int) -> None:
+    """Copy the body, refusing one longer than limit bytes or shorter than the server announced."""
+    text = (response.headers.get("Content-Length") or "").strip()
+    announced = int(text) if text.isdigit() else None
+    if announced is not None and announced > limit:
+        raise DownloadFailed(f"the server offers {announced} bytes, more than {limit}")
+    received = 0
+    while True:
+        chunk = response.read(min(CHUNK_BYTES, limit + 1 - received))
+        if not chunk:
+            break
+        received += len(chunk)
+        if received > limit:
+            raise DownloadFailed(f"the body is longer than {limit} bytes")
+        handle.write(chunk)
+    # read() returns what arrived when the connection closes early; it does not raise.
+    if announced is not None and received < announced:
+        raise DownloadFailed(f"the body ended after {received} of {announced} bytes")
+
+
+def download(row: Row, dest: Path, base: str) -> str | None:
+    """Download one zip to dest. Return why it failed, or None when it is in place."""
     part = part_path(dest)
     part.parent.mkdir(parents=True, exist_ok=True)
     request = urllib.request.Request(download_url(row, base), headers={"User-Agent": CURL_USER_AGENT})
-    # No proxy, and no Python-urllib user agent added by the opener.
-    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    # No proxy, no Python-urllib user agent added by the opener, and no redirect to another host.
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), SameOriginRedirects())
     opener.addheaders = []
+    reason: str | None = None
     try:
         try:
-            response = opener.open(request, timeout=DOWNLOAD_TIMEOUT_S)
+            with opener.open(request, timeout=DOWNLOAD_TIMEOUT_S) as response, part.open("wb") as handle:
+                copy_bounded(response, handle, min(row.size, MAX_DOWNLOAD_BYTES))
         except urllib.error.HTTPError as err:
-            discard(part)
-            return err.code
-        with response:
-            with part.open("wb") as handle:
-                shutil.copyfileobj(response, handle)
-    except urllib.error.URLError as err:
+            err.close()
+            reason = f"HTTP {err.code}"
+        except DownloadFailed as err:
+            reason = str(err)
+        except urllib.error.URLError as err:
+            reason = str(err.reason) or type(err.reason).__name__
+        except (OSError, http.client.HTTPException) as err:
+            reason = str(err) or type(err).__name__
+        if reason is None:
+            got = file_sha256(part)
+            if part.stat().st_size != row.size or got != row.sha256:
+                discard(dest)
+                mismatch(row, got)
+            os.replace(part, dest)
+    finally:
         discard(part)
-        fail(f"originals: {row.local_name}: download failed: {err.reason}")
-    except Exception:
-        discard(part)
-        raise
-    got = file_sha256(part) if part.is_file() else ""
-    size = part.stat().st_size if part.is_file() else -1
-    if size != row.size or got != row.sha256:
-        discard(part)
+    if reason is not None:
         discard(dest)
-        mismatch(row, got)
-    os.replace(part, dest)
-    return None
+    return reason
 
 
 def fetch_with_aws(row: Row, dest: Path) -> None:
@@ -334,7 +396,7 @@ def main(argv: list[str]) -> int:
         chosen = set(args.sets)
         rows = [row for row in rows if row.set_name in chosen]
     missing: list[tuple[Row, Path]] = []
-    http_failed = False
+    download_failed = False
     for row in rows:
         dest = zip_path(row, out)
         if matches(dest, row):
@@ -354,10 +416,11 @@ def main(argv: list[str]) -> int:
             missing.append((row, dest))
             continue
         if row.url != "-":
-            status = download(row, dest, args.igi_url_base)
-            if status is not None:
-                print(f"originals: {row.local_name}: download failed: HTTP {status}", file=sys.stderr)
-                http_failed = True
+            reason = download(row, dest, args.igi_url_base)
+            if reason is not None:
+                url = download_url(row, args.igi_url_base)
+                print(f"originals: {row.local_name}: download failed: {url}: {reason}", file=sys.stderr)
+                download_failed = True
                 continue
             print(f"originals: {row.local_name} {row.sha256} downloaded")
             continue
@@ -367,7 +430,7 @@ def main(argv: list[str]) -> int:
         for row, dest in missing:
             print(how_to_fetch(row, dest), file=sys.stderr)
         return 1
-    if http_failed:
+    if download_failed:
         return 1
     unpacked = 0
     for row in rows:
