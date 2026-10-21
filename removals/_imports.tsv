@@ -21,3 +21,5 @@ double-area-of-effect	S-Mutators/DoubleAoE_mutator.zip
 double-reload-times	S-Mutators/DoubleReloadTimes_mutator.zip
 weapon-tolerance	Mutators/}{Tolerance.tam
 vibrant-colors	Mutators/}{VibrantColors.tam
+mac-friendly-skies	igi-server/MAC's mutators/{}MAC Friendly Skies.tam
+mac-even-friendlier-skies	igi-server/MAC's mutators/{}MAC Even Friendlier Skies.tam
