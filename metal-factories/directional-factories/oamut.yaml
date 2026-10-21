@@ -1,0 +1,17 @@
+oamut: 1
+id: "directional-factories"
+name: "Directional Factories"
+version: "1"
+author:
+  name: "Duct_Taper"
+description: "Factories that face east, west or north, in any game.\n\nThis package replaces Directional Factories by Duct_Taper. Builders find the new plants on a page of their own, because the original's build pages are protected. Their buttons draw without pictures. The original's Armlatnk.TDF overwrote 3.1c's file of that name, which took the Panther (ARMLATNK) off the Arm advanced vehicle plant's page 4 and put ARMSNIPE on the Arm advanced kbot lab's page 3. This package does not."
+tags: ["new-units", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["files", "menus"]
+legacy:
+  - name: "Directional Factories"
+    prefix: "}{"
+    compatibility: ["TACC", "BF", "DTH"]
+    files: ["}{DirFact.tam", "}{DirFact.ccx"]

@@ -1,0 +1,27 @@
+oamut: 1
+id: "finite-metal"
+name: "Finite Metal"
+version: "1"
+author:
+  name: "Drinken; features by BSR"
+description: "Metal patches are rocks and wrecks, and nothing makes or extracts metal. Computer players handle this badly.\n\nBSR's features replace the metal patches. This package replaces Finite Metal TA and Finite Metal TA (Counter Strike), both by Drinken. With Counter Strike units, a unit whose sound category is GATE keeps its metal income, and FLUXOR and QUARK make 5 metal. It also removes CORBHMTH and the third-party converter whose description is \"Highly unstable Rock to Metal subatomic converter\".\n\nThis package removes MetalMake in a hook, so it combines with no-porc."
+tags: ["economy", "disable"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["files", "units"]
+options:
+  counter_strike:
+    type: "choice"
+    values: ["no", "yes"]
+    default: "no"
+    label: "Counter Strike units"
+legacy:
+  - name: "Finite Metal TA"
+    prefix: "{}"
+    compatibility: ["TACC", "BF", "UH", "UH30"]
+    files: ["{}FiniteMetal.tam", "{}FiniteMetal.sm", "{}FiniteMetal(1).ccx"]
+  - name: "Finite Metal TA (Counter Strike)"
+    prefix: "{}"
+    compatibility: ["TACC", "BF"]
+    files: ["{}FiniteMetal_CS.tam", "{}FiniteMetal_CS.sm", "{}FiniteMetal_CS(1).ccx"]
