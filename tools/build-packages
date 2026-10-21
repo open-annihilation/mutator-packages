@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Build each family's faithful imports and curated packages under build/.
+"""Build each family's faithful imports and copy its curated packages under build/.
 
-Originals stay outside Git. A family folder holds the sources we write.
-_imports.tsv names the originals to import, and a package's from-originals.tsv
-names the archive entries to copy in. This tool checks that those files are
-present, imports each original with oa-tool, and assembles the packages.
-It writes only under --out and under scratch folders it removes before exit.
-After a family is assembled it runs tools/check-comparisons on that build.
+Originals stay outside Git. A family folder holds the sources we write, and a
+curated package is that folder copied whole, including files/. _imports.tsv
+names the originals to import. This tool checks that those originals are
+present and imports each one with oa-tool. An archive anywhere under a
+package's files/ is refused, and the message names the file. The tool writes
+only under --out and under scratch folders it removes before exit. After a
+family is assembled it runs tools/check-comparisons on that build.
 
     tools/build-packages --tool OA_TOOL [--originals DIR] [--out DIR] [FAMILY...]
 
@@ -24,7 +25,6 @@ Exit 0 when every family built, 1 when a build fails, 2 on a usage error.
 from __future__ import annotations
 
 import argparse
-import hashlib
 import os
 import secrets
 import shutil
@@ -38,6 +38,9 @@ from pathlib import Path
 MARKER = ".build-packages"
 MARKER_TEXT = "tools/build-packages built this folder and replaces it on each build.\n"
 
+# An original archive never ships inside a package. Matched in any case.
+ARCHIVE_SUFFIXES = frozenset({".ufo", ".ccx", ".hpi", ".gp3", ".zip", ".tam"})
+
 
 class BuildError(Exception):
     pass
@@ -49,14 +52,6 @@ class UsageError(Exception):
 
 def repo_root() -> Path:
     return Path(__file__).resolve().parent.parent
-
-
-def file_sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
 
 
 def read_tsv(path: Path, header: tuple[str, ...], optional_tail: tuple[str, ...] = ()) -> list[dict[str, str]]:
@@ -101,10 +96,6 @@ def read_imports(path: Path) -> list[dict[str, str]]:
             )
         seen[key] = row["line"]
     return rows
-
-
-def read_files(path: Path) -> list[dict[str, str]]:
-    return read_tsv(path, ("path", "source", "entry", "sha256"))
 
 
 def safe_relative(text: str) -> Path:
@@ -152,17 +143,12 @@ def discover(root: Path) -> list[str]:
 
 
 def source_rows(family_dir: Path) -> list[tuple[str, str]]:
-    """Each (source, label) a chosen family names, in check order."""
+    """Each (source, label) a chosen family's imports name, in check order."""
     named: list[tuple[str, str]] = []
     imports = family_dir / "_imports.tsv"
     if imports.is_file():
         for row in read_imports(imports):
             named.append((row["source"], f"{family_dir.name} import {row['import']}"))
-    for package in package_dirs(family_dir):
-        listing = package / "from-originals.tsv"
-        if listing.is_file():
-            for row in read_files(listing):
-                named.append((row["source"], f"{family_dir.name}/{package.name} {row['path']}"))
     return named
 
 
@@ -185,46 +171,30 @@ def copy_child(src: Path, dest: Path) -> None:
     shutil.copy2(src, dest)
 
 
-def assemble_package(package: Path, dest: Path, originals: Path, tool: str, family: str) -> int:
-    if (package / "files").is_dir():
-        raise BuildError(f"build: {family}/{package.name}: source holds a files/ folder")
+def archive_in_files(files_dir: Path) -> Path | None:
+    """The first archive under files/, in path order, or None."""
+    found: list[Path] = []
+    for path in files_dir.rglob("*"):
+        if path.is_dir() and not path.is_symlink():
+            continue
+        if path.suffix.lower() in ARCHIVE_SUFFIXES:
+            found.append(path)
+    if not found:
+        return None
+    return min(found, key=lambda item: item.as_posix().casefold())
+
+
+def assemble_package(package: Path, dest: Path, family: str) -> None:
+    """Copy the package folder whole. An archive under files/ is refused."""
+    files_dir = package / "files"
+    if files_dir.is_dir() and not files_dir.is_symlink():
+        archive = archive_in_files(files_dir)
+        if archive is not None:
+            relative = archive.relative_to(package).as_posix()
+            raise BuildError(f"build: {family}/{package.name}: files/ holds an archive {relative}")
     dest.mkdir(parents=True)
     for child in package.iterdir():
-        if child.name == "from-originals.tsv":
-            continue
         copy_child(child, dest / child.name)
-    listing = package / "from-originals.tsv"
-    if not listing.is_file():
-        return 0
-    placed = 0
-    for row in read_files(listing):
-        relative = safe_relative(row["path"])
-        target = dest / relative
-        if not target.resolve().is_relative_to(dest.resolve()):
-            raise BuildError(f"build: {family}/{package.name}: unsafe path {row['path']}")
-        source, state = located(originals, row["source"])
-        if state != "ok" or source is None:
-            raise BuildError(f"build: {family}/{package.name}: missing {row['source']}")
-        target.parent.mkdir(parents=True, exist_ok=True)
-        if row["entry"] == "-":
-            shutil.copyfile(source, target)
-        else:
-            proc = subprocess.run(
-                [tool, "extract", str(source), row["entry"], str(target)],
-                check=False,
-                capture_output=True,
-            )
-            if proc.returncode != 0 or not target.is_file():
-                detail = proc.stderr.decode("utf-8", "replace").strip()
-                raise BuildError(f"build: {family}/{package.name}: extract failed for {row['path']}: {detail}")
-        got = file_sha256(target)
-        if got != row["sha256"].lower():
-            raise BuildError(
-                f"build: {family}/{package.name}: {row['path']}: SHA-256 mismatch: "
-                f"expected {row['sha256']}, got {got}"
-            )
-        placed += 1
-    return placed
 
 
 def import_originals(family_dir: Path, dest: Path, originals: Path, tool: str) -> int:
@@ -330,9 +300,8 @@ def build_family(family_dir: Path, out: Path, originals: Path, tool: str) -> Non
         (work / MARKER).write_text(MARKER_TEXT, encoding="utf-8")
         imports = import_originals(family_dir, work, originals, tool)
         packages = package_dirs(family_dir)
-        files = 0
         for package in packages:
-            files += assemble_package(package, work / package.name, originals, tool, name)
+            assemble_package(package, work / package.name, name)
         verify = family_dir / "_verify"
         if verify.is_dir() and not verify.is_symlink():
             shutil.copytree(verify, work / "_verify", symlinks=False)
@@ -352,7 +321,7 @@ def build_family(family_dir: Path, out: Path, originals: Path, tool: str) -> Non
         shutil.rmtree(old)
     else:
         os.rename(work, dest)
-    print(f"build: {name}: {imports} imports, {len(packages)} packages, {files} files from originals")
+    print(f"build: {name}: {imports} imports, {len(packages)} packages")
 
 
 def take_args(argv: list[str]) -> argparse.Namespace:
