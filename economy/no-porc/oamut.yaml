@@ -1,0 +1,17 @@
+oamut: 1
+id: "no-porc"
+name: "No Porc"
+version: "1"
+author:
+  name: "Drinken"
+description: "Metal makers are removed, and small metal income on constructors and commanders is cleared.\n\nDrinken's No Porc blanked the copyright line to drop metal makers and cleared MetalMake.\n\nThis package removes those units and that field directly."
+tags: ["economy", "disable"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "No Porc"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}NoPorc.tam", "{}NoPorc.sm"]

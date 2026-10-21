@@ -1,0 +1,27 @@
+oamut: 1
+id: "quick-build"
+name: "Quick Build"
+version: "1"
+author:
+  name: "Immerman"
+description: "Builders work at two, four or eight times their normal speed.\n\nImmerman's QuickBuild 2x and QuickBuild 4x each multiplied worker time, and the two together made eight times.\n\nThis package is both originals, with one build-speed choice."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  factor:
+    type: "choice"
+    values: [2, 4, 8]
+    default: 2
+    label: "Build speed"
+legacy:
+  - name: "QuickBuild 2x"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}QuickBuild2x.tam", "{}QuickBuild2x.sm"]
+  - name: "QuickBuild 4x"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}QuickBuild4x.tam", "{}QuickBuild4x.sm"]

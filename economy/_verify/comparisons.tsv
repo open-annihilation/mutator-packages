@@ -1,0 +1,23 @@
+row	curated	imports	allowed
+cornucopia	./cornucopia	_imports/cornucopia-2x	cornucopia.allowed
+cost-cutter	./cost-cutter	_imports/cost-cutter-1-2	-
+quick-build-2	./quick-build:factor=2	_imports/quickbuild-2x	-
+quick-build-4	./quick-build:factor=4	_imports/quickbuild-4x	-
+quick-build-8	./quick-build:factor=8	_imports/quickbuild-2x _imports/quickbuild-4x	-
+jumbo-storage-2	./jumbo-storage:factor=2	_imports/jumbo-storage-2x	-
+jumbo-storage-4	./jumbo-storage:factor=4	_imports/jumbo-storage-4x	-
+jumbo-storage-8	./jumbo-storage:factor=8	_imports/jumbo-storage-2x _imports/jumbo-storage-4x	-
+enhanced-wind	./enhanced-wind	_imports/enhanced-wind-generators	-
+no-porc	./no-porc	_imports/no-porc	-
+no-resource-system	./no-resource-system	_imports/no-resource-system	-
+no-waste	./no-waste	_imports/no-waste	-
+resource-comm-standard	./resource-comm:level=standard	_imports/resourcecomm	-
+resource-comm-deluxe	./resource-comm:level=deluxe	_imports/resourcecomm-deluxe	-
+resource-comm-both	./resource-comm:level=both	_imports/resourcecomm _imports/resourcecomm-deluxe	-
+seaplane-platform-speed-1.5	./seaplane-platform-speed:factor=1.5	_imports/seaplaneplatform-wtx1-5	-
+seaplane-platform-speed-2	./seaplane-platform-speed:factor=2	_imports/seaplaneplatform-wtx2	-
+seaplane-platform-speed-4	./seaplane-platform-speed:factor=4	_imports/seaplaneplatform-wtx4	-
+seaplane-platform-speed-3	./seaplane-platform-speed:factor=3	_imports/seaplaneplatform-wtx1-5 _imports/seaplaneplatform-wtx2	-
+advanced-sub-reach	./advanced-sub-reach	_imports/advconstructionsub-bdx1-5	-
+armdecom	./armdecom	_imports/armdecom	-
+level-2-discount	./level-2-discount	-	-

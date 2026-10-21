@@ -1,0 +1,17 @@
+oamut: 1
+id: "armdecom"
+name: "Arm Decoy Commander"
+version: "1"
+author:
+  name: "Havoc"
+description: "The Arm decoy commander builds with a worker time of 999.\n\nHavoc's Armdecom set that absolute value on ARMDECOM, the unit the original names. On Total Annihilation 3.1c that worker time is 30.\n\nThis package keeps the original value."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Armdecom"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Armdecom.tam", "{}Armdecom.sm"]

@@ -1,0 +1,17 @@
+oamut: 1
+id: "no-resource-system"
+name: "No Resource System"
+version: "1"
+author:
+  name: "Drinken"
+description: "Nothing costs metal or energy to build. Every unit makes and stores 1000 energy and 20 metal, and energy is spent only on weapons.\n\nDrinken's No Resource System cleared build costs, set that income and storage, cleared positive energy use, turned cloak into stealth, and sped up units whose names contain \"AI \". It also removed resource buildings that have no weapon. The name and description tests are the original's, aimed at third-party units if they are installed: a name containing \"Fusion Reactor\", and the description \"Highly unstable Rock to Metal subatomic converter\".\n\nThis package removes those units directly instead of blanking the copyright line."
+tags: ["economy", "disable", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "No Resource System"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}NoResourceSystem.tam", "{}NoResourceSystem.sm"]

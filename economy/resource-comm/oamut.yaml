@@ -1,0 +1,27 @@
+oamut: 1
+id: "resource-comm"
+name: "Resource Commander"
+version: "1"
+author:
+  name: "Drinken"
+description: "Commanders make and store more metal and energy, and they build farther and faster.\n\nDrinken's ResourceComm locks production at 1000 energy and 50 metal and storage at 3000 energy and 1000 metal, and multiplies build distance by 1.5 and worker time by 2. ResourceComm Deluxe locks 4000 energy, 200 metal, 12000 energy storage and 4000 metal storage, and multiplies build distance by 2 and worker time by 3. Locks average and factors multiply when both originals are on, so the both choice is 2500 energy, 125 metal, 7500 energy storage, 2500 metal storage, build distance times 3 and worker time times 6.\n\nThis package keeps the locks, so other mutators still cannot change those four fields."
+tags: ["commanders", "economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  level:
+    type: "choice"
+    values: ["standard", "deluxe", "both"]
+    default: "standard"
+    label: "Level"
+legacy:
+  - name: "ResourceComm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}ResourceComm.tam", "{}ResourceComm.sm"]
+  - name: "ResourceComm Deluxe"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}ResourceComm_dlx.tam", "{}ResourceComm_dlx.sm"]
