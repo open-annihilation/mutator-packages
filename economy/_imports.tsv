@@ -17,3 +17,11 @@ seaplaneplatform-wtx4	Mutators/{}SPP_WTx4.tam
 advconstructionsub-bdx1-5	Mutators/{}acsub_bdx1,5.tam
 armdecom	Mutators/{}Armdecom.tam
 level-2-cost-reduc	Mutators/}{level2mut.tam
+mac-cornucopia-200-arm	igi-server/MAC's mutators/{}MAC Cornucopia 200% (Arm).tam
+mac-cornucopia-200-core	igi-server/MAC's mutators/{}MAC Cornucopia 200% (Core).tam
+mac-cost-cutter-50-arm	igi-server/MAC's mutators/{}MAC Cost Cutter 50% (Arm).tam
+mac-cost-cutter-50-core	igi-server/MAC's mutators/{}MAC Cost Cutter 50% (Core).tam
+mac-jumbo-storage-200-arm	igi-server/MAC's mutators/{}MAC Jumbo Storage 200% (Arm).tam
+mac-jumbo-storage-200-core	igi-server/MAC's mutators/{}MAC Jumbo Storage 200% (Core).tam
+mac-enhanced-wind-generators-arm	igi-server/MAC's mutators/{}MAC Enhanced Wind Generators (Arm).tam
+mac-enhanced-wind-generators-core	igi-server/MAC's mutators/{}MAC Enhanced Wind Generators (Core).tam

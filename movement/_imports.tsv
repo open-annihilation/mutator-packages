@@ -13,3 +13,5 @@ regeneration	Mutators/}{regenmut.tam
 fasta	Mutators/{}FasTA.tam
 close-encounters	Mutators/{}CloseEncounters.tam
 tactical-strike	Mutators/{}TacticalStrike.tam
+mac-maneuverable-boats-arm	igi-server/MAC's mutators/{}MAC Maneuverable Boats (Arm).tam
+mac-maneuverable-boats-core	igi-server/MAC's mutators/{}MAC Maneuverable Boats (Core).tam

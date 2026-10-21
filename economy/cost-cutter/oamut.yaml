@@ -4,14 +4,28 @@ name: "Cost Cutter"
 version: "1"
 author:
   name: "Immerman"
-description: "Every unit costs half as much metal and energy to build.\n\nImmerman's Cost Cutter 1/2 halved those two costs on every unit.\n\nThis package keeps that rule."
+description: "Every unit costs half as much metal and energy to build.\n\nImmerman's Cost Cutter 1/2 halved those two costs on every unit.\n\nThis package keeps that rule.\n\nMAC (macraig)'s Cost Cutter 50% (Arm) and Cost Cutter 50% (Core) halve those costs for one side. The side option is all, Arm or Core."
 tags: ["economy"]
 works-with: ["*"]
 requires:
   engine: ">= 0.8.5"
 layers: ["units"]
+options:
+  side:
+    type: "choice"
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
 legacy:
   - name: "Cost Cutter 1/2"
     prefix: "{}"
     compatibility: ["*"]
     files: ["{}CostCutter1_2.tam", "{}CostCutter1_2.sm"]
+  - name: "[MAC] Cost Cutter 50% (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Cost Cutter 50% (Arm).tam", "{}MAC Cost Cutter 50% (Arm).sm"]
+  - name: "[MAC] Cost Cutter 50% (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Cost Cutter 50% (Core).tam", "{}MAC Cost Cutter 50% (Core).sm"]

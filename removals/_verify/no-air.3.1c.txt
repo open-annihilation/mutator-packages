@@ -1,7 +1,7 @@
 # oa-tool mutator diff 1
 # game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
 # mod: none
-# loadout: no-air 1
+# loadout: no-air 1 aircraft=all
 # seed: 0
 field download/armamb.tdf [menuentry3] button: 5 -> (absent)	by no-air
 field download/armamb.tdf [menuentry3] menu: 3 -> (absent)	by no-air

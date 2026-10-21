@@ -1,6 +1,6 @@
 # Economy and build
 
-Thirteen packages replace the eighteen TA: Mutation economy and build mutators. Variants of one mutator are options on one package. Every rule is Lua. No package takes a file from the originals.
+Thirteen packages replace the eighteen TA: Mutation economy and build mutators. MAC (macraig)'s eight one-side copies of Cornucopia, Cost Cutter, Jumbo Storage and Enhanced Wind Generators are options on those packages. Variants of one mutator are options on one package. Every rule is Lua. No package takes a file from the originals.
 
 `originals/` and `build/` are gitignored. The commands below build the faithful imports and the curated packages under `build/economy/`. The comparisons and their reports are in `_verify/`.
 
@@ -26,12 +26,20 @@ Thirteen packages replace the eighteen TA: Mutation economy and build mutators. 
 | AdvConstructionSub_BDx1,5 | Drinken | `Mutators/{}acsub_bdx1,5.tam` | `advconstructionsub-bdx1-5` | `advanced-sub-reach` | `advanced-sub-reach` |
 | Armdecom | Havoc | `Mutators/{}Armdecom.tam` | `armdecom` | `armdecom` | `armdecom` |
 | Level 2 Cost Reduc. | Unknown (idea: Quitch(y) and Zeppelin) | `Mutators/}{level2mut.tam` (with `Mutators/}{level2mut.ccx`) | `level-2-cost-reduc` | `level-2-discount` | `level-2-discount` (no import to compare) |
+| [MAC] Cornucopia 200% (Arm) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Cornucopia 200% (Arm).tam` | `mac-cornucopia-200-arm` | `cornucopia`, side arm | `cornucopia-arm` |
+| [MAC] Cornucopia 200% (Core) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Cornucopia 200% (Core).tam` | `mac-cornucopia-200-core` | `cornucopia`, side core | `cornucopia-core` |
+| [MAC] Cost Cutter 50% (Arm) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Cost Cutter 50% (Arm).tam` | `mac-cost-cutter-50-arm` | `cost-cutter`, side arm | `cost-cutter-arm` |
+| [MAC] Cost Cutter 50% (Core) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Cost Cutter 50% (Core).tam` | `mac-cost-cutter-50-core` | `cost-cutter`, side core | `cost-cutter-core` |
+| [MAC] Jumbo Storage 200% (Arm) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Jumbo Storage 200% (Arm).tam` | `mac-jumbo-storage-200-arm` | `jumbo-storage`, factor 2, side arm | `jumbo-storage-2-arm` |
+| [MAC] Jumbo Storage 200% (Core) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Jumbo Storage 200% (Core).tam` | `mac-jumbo-storage-200-core` | `jumbo-storage`, factor 2, side core | `jumbo-storage-2-core` |
+| [MAC] Enhanced Wind Generators (Arm) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Enhanced Wind Generators (Arm).tam` | `mac-enhanced-wind-generators-arm` | `enhanced-wind`, side arm | `enhanced-wind-arm` |
+| [MAC] Enhanced Wind Generators (Core) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Enhanced Wind Generators (Core).tam` | `mac-enhanced-wind-generators-core` | `enhanced-wind`, side core | `enhanced-wind-core` |
 
 Factor 8 on Quick Build and on Jumbo Storage is what the 2x and 4x originals gave together. Factor 3 on Seaplane Platform Speed is what the x1.5 and x2 originals gave together. Level `both` on Resource Commander is what ResourceComm and ResourceComm Deluxe gave together: locked values average, and the build-distance and worker-time factors multiply. The option `level` is labelled Level, which the manifest requires.
 
 ## Differences from the originals
 
-`cornucopia.allowed`: Cornucopia 2x never doubled tidal generators; the curated version does (ARMTIDE and CORTIDE). The allowance is `left only field units/*.fbi [unitinfo] tidalgenerator: *`, and the report shows ARMTIDE and CORTIDE, each `tidalgenerator` from 1 to 2. `MakesEnergy` is left out: no unit has that field, and scaling an absent field changes nothing.
+`cornucopia.allowed`: Cornucopia 2x never doubled tidal generators; the curated version does (ARMTIDE and CORTIDE). The allowance is `left only field units/*.fbi [unitinfo] tidalgenerator: *`, and the report shows ARMTIDE and CORTIDE, each `tidalgenerator` from 1 to 2. `MakesEnergy` is left out: no unit has that field, and scaling an absent field changes nothing. The same file covers MAC's one-side copies: the Arm row matches ARMTIDE only, and the Core row matches CORTIDE only.
 
 `resource-comm-both.allowed`: Resource Commander's `both` choice keeps the averages TA: Mutation gave players who stacked both originals, 2500 energy, 7500 energy storage, 125 metal and 2500 metal storage on ARMCOM and CORCOM. Open Annihilation runs the two imports in sequence, so the first lock holds at 1000 energy, 3000 energy storage, 50 metal and 1000 metal storage. The allowance is those four fields on ARMCOM and CORCOM, on each side of the comparison. Build distance still ends at 3 times and worker time at 6 times, because the factors multiply.
 
@@ -59,7 +67,7 @@ T=$OA_WT/mutators-engine/build/oa-tool
 tools/build-packages --tool "$T" economy
 ```
 
-That prints `build: economy: 18 imports, 13 packages, 0 files from originals`. Pack and check from `build/economy`:
+That prints `build: economy: 26 imports, 13 packages, 0 files from originals`. Pack and check from `build/economy`:
 
 ```sh
 S=$(mktemp -d -t L02)

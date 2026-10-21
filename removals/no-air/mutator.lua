@@ -14,10 +14,25 @@ local function factory(unit)
   return flag(unit, "builder") and whole(unit.bmcode) == 0
 end
 
+local function armed(unit)
+  local weapon = unit.weapon1
+  return type(weapon) == "string" and weapon ~= ""
+end
+
+local function combat_aircraft(unit)
+  return flag(unit, "canfly")
+    and whole(unit.bmcode) == 1
+    and not flag(unit, "builder")
+    and flag(unit, "canattack")
+    and armed(unit)
+end
+
 -- Menus are read before anything is removed. A factory is left empty when it
 -- offers at least one unit and every unit it offers can fly. A builder that
--- offers nothing is left in place.
+-- offers nothing is left in place. aircraft=combat removes only armed aircraft
+-- that do not build, and leaves factories and pads.
 function mutate(ctx)
+  local combat_only = ctx.options.aircraft == "combat"
   return {
     units = function(units, ctx)
       local function flying(name)
@@ -31,9 +46,19 @@ function mutate(ctx)
       end
 
       for name, unit in pairs(units) do
-        if flag(unit, "canfly") then
+        if combat_only then
+          if combat_aircraft(unit) then
+            take(name)
+          end
+        elseif flag(unit, "canfly") then
           take(name)
         end
+      end
+      if combat_only then
+        for _, name in pairs(chosen) do
+          units[name]:remove()
+        end
+        return
       end
       for name, unit in pairs(units) do
         if factory(unit) then

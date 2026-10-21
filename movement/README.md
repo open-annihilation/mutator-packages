@@ -1,6 +1,6 @@
 # Movement and armour
 
-Fourteen TA: Mutation movement and armour mutators. Each curated package is one folder here. `tools/build-packages` builds the faithful imports, from `_imports.tsv`, into `build/movement/_imports/`. Nothing taken from an original is stored in this folder.
+Fourteen TA: Mutation movement and armour mutators, plus MAC (macraig)'s Arm and Core Maneuverable Boats. Each curated package is one folder here. `tools/build-packages` builds the faithful imports, from `_imports.tsv`, into `build/movement/_imports/`. Nothing taken from an original is stored in this folder.
 
 The weapon blocks of Close Encounters and FasTA are Lua. The rules reference gives `on("weapons", "tdf")` for a weapon file and `["<AllDepth2>"]` for every damage value, so neither block is kept as an `.sm` file. No package in this family has a `rules/` folder.
 
@@ -22,6 +22,8 @@ The weapon blocks of Close Encounters and FasTA are Lua. The rules reference giv
 | 23 | FasTA | ATRCaptainKirk | `Mutators/{}FasTA.tam` | `fasta` | `fasta` |
 | 13 | Close Encounters | Immerman | `Mutators/{}CloseEncounters.tam` | `close-encounters` | `close-encounters` |
 | 61 | Tactical Strike | Immerman | `Mutators/{}TacticalStrike.tam` | `tactical-strike` | `tactical-strike` |
+| 104 | [MAC] Maneuverable Boats (Arm) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Maneuverable Boats (Arm).tam` | `mac-maneuverable-boats-arm` | `maneuverable-boats`, side arm (`maneuverable-boats-arm`) |
+| 105 | [MAC] Maneuverable Boats (Core) | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Maneuverable Boats (Core).tam` | `mac-maneuverable-boats-core` | `maneuverable-boats`, side core (`maneuverable-boats-core`) |
 
 Catalogue numbers are the rows in the legacy catalogue, section 5.1, and section 5.3 for Regeneration. Each package replaces that one original. The comparison of the same name is in `_verify/comparisons.tsv`: the curated package on the left, its import on the right.
 
@@ -38,5 +40,7 @@ Catalogue numbers are the rows in the legacy catalogue, section 5.1, and section
 `regeneration.allowed` is the Uberhack unit files. The original replaced whole Uberhack unit files, and the curated version changes only the healing fields (L03). The file allows one pattern per other field name, on the side the comparison shows (`right only field units/* [unitinfo] <field>: *`), plus the archive's added unit files (`right only file added units/*` and `right only unit added *`). It allows `healtime` only as exact lines, each with its unit and value, so any other healing value still fails the row. They are the 56 healing lines the two sides do not share: 21 mobile units this rule heals that the archive leaves out, 14 water structures and 17 added units the archive heals that this rule leaves out, and the spies (ARMSPY at 10, CORSPY at 12 in the archive, 40 here). The recorded report has 150 lines, each `healtime` set to 40, one per mobile unit that is not a commander. Commanders keep the base game's 27. The 18 water structures in the archive, and the rest of Uberhack's balance, are left out. The package stays the one heal-time rule.
 
 Faster Sumo keeps the original absolute values, top speed 5 and turn rate 666, about fifteen times 3.1c's 0.34. The original's two blocks on CORSUMO are one rule. The comparison allows no difference, because the values are the same. Those two absolutes, and Faster Stumpy/Raiders' 1.6, are the only absolute speeds in this family.
+
+MAC's Maneuverable Boats clamp turn rate at 29900. On 3.1c the fastest boat turns at 911, so four times that rate never reaches the clamp. The curated rule uses the same clamp for every side. The Arm and Core rows allow no other difference.
 
 Hypermobile Builders 3x mentions a cap in a comment and never applies it. The curated rule applies none. Close Encounters and Tactical Strike keep every factor and clamp as written, including 0.333333333, 0.6666666666, 0.66666666, 0.83 and 2.0. Hypermobility 2x, Hypermobile Commanders 3x, Slower Units, 1.75 Speed Contruction KBots and Maneuverable Boats keep the original factors.

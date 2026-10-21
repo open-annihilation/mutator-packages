@@ -1,0 +1,50 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: maneuverable-boats 1 side=arm
+# seed: 0
+field units/armaas.fbi [unitinfo] acceleration: 0.011 -> 0.022	by maneuverable-boats
+field units/armaas.fbi [unitinfo] brakerate: 0.018 -> 0.036	by maneuverable-boats
+field units/armaas.fbi [unitinfo] turnrate: 160 -> 640	by maneuverable-boats
+field units/armacsub.fbi [unitinfo] acceleration: 0.032 -> 0.064	by maneuverable-boats
+field units/armacsub.fbi [unitinfo] brakerate: 0.2 -> 0.4	by maneuverable-boats
+field units/armacsub.fbi [unitinfo] turnrate: 256 -> 1024	by maneuverable-boats
+field units/armbats.fbi [unitinfo] acceleration: 0.005 -> 0.01	by maneuverable-boats
+field units/armbats.fbi [unitinfo] brakerate: 0.018 -> 0.036	by maneuverable-boats
+field units/armbats.fbi [unitinfo] turnrate: 64 -> 256	by maneuverable-boats
+field units/armcarry.fbi [unitinfo] acceleration: 0.01 -> 0.02	by maneuverable-boats
+field units/armcarry.fbi [unitinfo] brakerate: 0.02 -> 0.04	by maneuverable-boats
+field units/armcarry.fbi [unitinfo] turnrate: 64 -> 256	by maneuverable-boats
+field units/armcrus.fbi [unitinfo] acceleration: 0.02 -> 0.04	by maneuverable-boats
+field units/armcrus.fbi [unitinfo] brakerate: 0.05 -> 0.1	by maneuverable-boats
+field units/armcrus.fbi [unitinfo] turnrate: 128 -> 512	by maneuverable-boats
+field units/armcs.fbi [unitinfo] acceleration: 0.009 -> 0.018	by maneuverable-boats
+field units/armcs.fbi [unitinfo] brakerate: 0.04 -> 0.08	by maneuverable-boats
+field units/armcs.fbi [unitinfo] turnrate: 200 -> 800	by maneuverable-boats
+field units/armmship.fbi [unitinfo] acceleration: 0.01 -> 0.02	by maneuverable-boats
+field units/armmship.fbi [unitinfo] brakerate: 0.022 -> 0.044	by maneuverable-boats
+field units/armmship.fbi [unitinfo] turnrate: 134 -> 536	by maneuverable-boats
+field units/armpt.fbi [unitinfo] acceleration: 0.1 -> 0.2	by maneuverable-boats
+field units/armpt.fbi [unitinfo] brakerate: 0.02 -> 0.04	by maneuverable-boats
+field units/armpt.fbi [unitinfo] turnrate: 511 -> 2044	by maneuverable-boats
+field units/armroy.fbi [unitinfo] acceleration: 0.04 -> 0.08	by maneuverable-boats
+field units/armroy.fbi [unitinfo] brakerate: 0.013 -> 0.026	by maneuverable-boats
+field units/armroy.fbi [unitinfo] turnrate: 121 -> 484	by maneuverable-boats
+field units/armscram.fbi [unitinfo] acceleration: 0.2 -> 0.4	by maneuverable-boats
+field units/armscram.fbi [unitinfo] brakerate: 0.36 -> 0.72	by maneuverable-boats
+field units/armscram.fbi [unitinfo] turnrate: 622 -> 2488	by maneuverable-boats
+field units/armsjam.fbi [unitinfo] acceleration: 0.075 -> 0.15	by maneuverable-boats
+field units/armsjam.fbi [unitinfo] brakerate: 0.016 -> 0.032	by maneuverable-boats
+field units/armsjam.fbi [unitinfo] turnrate: 400 -> 1600	by maneuverable-boats
+field units/armss.fbi [unitinfo] acceleration: 0.1 -> 0.2	by maneuverable-boats
+field units/armss.fbi [unitinfo] brakerate: 0.02 -> 0.04	by maneuverable-boats
+field units/armss.fbi [unitinfo] turnrate: 911 -> 3644	by maneuverable-boats
+field units/armsub.fbi [unitinfo] acceleration: 0.015 -> 0.03	by maneuverable-boats
+field units/armsub.fbi [unitinfo] brakerate: 0.18 -> 0.36	by maneuverable-boats
+field units/armsub.fbi [unitinfo] turnrate: 256 -> 1024	by maneuverable-boats
+field units/armsubk.fbi [unitinfo] acceleration: 0.2 -> 0.4	by maneuverable-boats
+field units/armsubk.fbi [unitinfo] brakerate: 0.36 -> 0.72	by maneuverable-boats
+field units/armsubk.fbi [unitinfo] turnrate: 622 -> 2488	by maneuverable-boats
+field units/armtship.fbi [unitinfo] acceleration: 0.009 -> 0.018	by maneuverable-boats
+field units/armtship.fbi [unitinfo] brakerate: 0.018 -> 0.036	by maneuverable-boats
+field units/armtship.fbi [unitinfo] turnrate: 128 -> 512	by maneuverable-boats

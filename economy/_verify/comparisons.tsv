@@ -21,3 +21,11 @@ seaplane-platform-speed-3	./seaplane-platform-speed:factor=3	_imports/seaplanepl
 advanced-sub-reach	./advanced-sub-reach	_imports/advconstructionsub-bdx1-5	-
 armdecom	./armdecom	_imports/armdecom	-
 level-2-discount	./level-2-discount	-	-
+cornucopia-arm	./cornucopia:side=arm	_imports/mac-cornucopia-200-arm	cornucopia.allowed
+cornucopia-core	./cornucopia:side=core	_imports/mac-cornucopia-200-core	cornucopia.allowed
+cost-cutter-arm	./cost-cutter:side=arm	_imports/mac-cost-cutter-50-arm	-
+cost-cutter-core	./cost-cutter:side=core	_imports/mac-cost-cutter-50-core	-
+jumbo-storage-2-arm	./jumbo-storage:factor=2,side=arm	_imports/mac-jumbo-storage-200-arm	-
+jumbo-storage-2-core	./jumbo-storage:factor=2,side=core	_imports/mac-jumbo-storage-200-core	-
+enhanced-wind-arm	./enhanced-wind:side=arm	_imports/mac-enhanced-wind-generators-arm	-
+enhanced-wind-core	./enhanced-wind:side=core	_imports/mac-enhanced-wind-generators-core	-

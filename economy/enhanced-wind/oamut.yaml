@@ -4,14 +4,28 @@ name: "Enhanced Wind Generators"
 version: "1"
 author:
   name: "Immerman"
-description: "Wind generators cost 2.5 times as much and make three times the energy.\n\nImmerman's Enhanced Wind Generators did this only when the English name contained \"Wind Generator\".\n\nThis package selects by the wind-generator field instead, so a translated or modded generator counts. On Total Annihilation 3.1c the same two units, ARMWIN and CORWIN, match."
+description: "Wind generators cost 2.5 times as much and make three times the energy.\n\nImmerman's Enhanced Wind Generators did this only when the English name contained \"Wind Generator\".\n\nThis package selects by the wind-generator field instead, so a translated or modded generator counts. On Total Annihilation 3.1c the same two units, ARMWIN and CORWIN, match.\n\nMAC (macraig)'s Enhanced Wind Generators (Arm) and Enhanced Wind Generators (Core) are that change for one side, with the English-name test left out. The side option is all, Arm or Core."
 tags: ["economy"]
 works-with: ["*"]
 requires:
   engine: ">= 0.8.5"
 layers: ["units"]
+options:
+  side:
+    type: "choice"
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
 legacy:
   - name: "Enhanced Wind Generators"
     prefix: "{}"
     compatibility: ["*"]
     files: ["{}EnhancedWindGenerators.tam", "{}EnhancedWindGenerators.sm"]
+  - name: "[MAC] Enhanced Wind Generators (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced Wind Generators (Arm).tam", "{}MAC Enhanced Wind Generators (Arm).sm"]
+  - name: "[MAC] Enhanced Wind Generators (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced Wind Generators (Core).tam", "{}MAC Enhanced Wind Generators (Core).sm"]

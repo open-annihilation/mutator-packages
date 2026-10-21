@@ -1,6 +1,6 @@
 # Removals, toggles and tables
 
-Eighteen packages replace twenty of the twenty-two TA: Mutation removal, toggle and table mutators. Hover Craft Fix and Vibrant Colors are not converted. Every rule is Lua. Double LOS is the only package that takes a file from the originals, and it names that file in `from-originals.tsv`.
+Eighteen packages replace twenty of the twenty-two TA: Mutation removal, toggle and table mutators. MAC (macraig)'s Friendly Skies and Even Friendlier Skies are the aircraft option on No Air. Hover Craft Fix and Vibrant Colors are not converted. Every rule is Lua. Double LOS is the only package that takes a file from the originals, and it names that file in `from-originals.tsv`.
 
 `originals/` and `build/` are gitignored. The commands below build the faithful imports and the curated packages under `build/removals/`. L21 compares each row and records the reports and the allowed-difference files.
 
@@ -30,6 +30,8 @@ Eighteen packages replace twenty of the twenty-two TA: Mutation removal, toggle 
 | Double Reload Times | ATRCaptainKirk | `S-Mutators/DoubleReloadTimes_mutator.zip` | `double-reload-times` | `double-reload` | `double-reload` |
 | Weapon Tolerance | uncredited | `Mutators/}{Tolerance.tam` with `Mutators/}{Tolerance.ccx` | `weapon-tolerance` | `weapon-tolerance` | `weapon-tolerance` (no import to compare) |
 | Vibrant Colors | Immerman | `Mutators/}{VibrantColors.tam` with `Mutators/}{VibrantColors.ccx` | `vibrant-colors` | not converted | — |
+| [MAC] Friendly Skies | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Friendly Skies.tam` | `mac-friendly-skies` | `no-air`, aircraft combat | `no-air-combat` |
+| [MAC] Even Friendlier Skies | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Even Friendlier Skies.tam` | `mac-even-friendlier-skies` | `no-air`, aircraft all | `no-air-even` |
 
 Cloak distance 5 is what CloakMod v1.0 and +NowISee gave together. Cloak cost 2 is what CloakMod v1.0 and Expen$ive gave together. The option labels are Cloak distance and Cloak cost.
 
@@ -49,6 +51,8 @@ the mutator changes nothing
 A unit removed with `remove()` and a unit the import removes with a blank copyright line compare as one drop, with their menu entries. A unit only one side drops keeps its hidden unit file and its build button. No curated package writes a copyright line or a version.
 
 `no-air.allowed`: No Air's exact sound category `ARM_SEAPLN_PLANT` misses the Core seaplane platform, CORPLAT. The package removes every factory whose menu offers at least one unit and whose offered units can all fly, so CORPLAT goes with the Arm platform, the aircraft plants and the aircraft. Stationary air bases are removed by `isairbase`, which on Total Annihilation 3.1c is ARMASP and CORASP. Those two already use the sound category AIRPLANT, so the original removed them too. The allowed file names that one drop (`unit dropped CORPLAT hidden`), the hidden file `units/corplat.fbi`, and the platform's button on `guis/coracsub1.gui` (gadget 8, `grayedout` and `commonattribs`).
+
+`no-air-even.allowed`: Even Friendlier Skies removed only the aircraft and left the air plants, the seaplane platforms and the repair pads with nothing to build or serve. `no-air` with aircraft all removes them too. The allowance names those eight drops (ARMAP, ARMAAP, CORAP, CORAAP, ARMPLAT, CORPLAT, ARMASP, CORASP), each `left only unit dropped <NAME> hidden`, and the hidden unit file and build-button lines the comparison shows for the same units. A drop only one side makes is not folded into the unit line, which is the same reporting as `no-air.allowed` for CORPLAT. Friendly Skies is aircraft combat: armed aircraft that do not build, and no factory or pad, so `no-air-combat` allows nothing.
 
 `no-hovers.allowed`: No Hovers removed the hover plants ARMHP and CORHP and left the hovercraft in the game, unbuildable. The package removes those plants, then every unit that only they offer. On 3.1c that is the twelve hovercraft ARMCH, ARMSH, ARMANAC, ARMAH, ARMMH, ARMTHOVR, CORCH, CORSH, CORSNAP, CORAH, CORMH and CORTHOVR. Each has `canhover` 1. The allowed file names each one's drop and its hidden unit file. Their build buttons sit on the plants, which both sides remove, so those buttons compare equal. A unit another builder offers stays. The Pelican, ARMAMPH, also hovers but is built by the amphibious lab, so it stays, and so does every commander.
 

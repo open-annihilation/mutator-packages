@@ -4,14 +4,28 @@ name: "Cornucopia"
 version: "1"
 author:
   name: "Immerman"
-description: "Every unit produces twice the resources it normally produces.\n\nImmerman's Cornucopia 2x doubled energy make, negative energy use, wind, metal make, metal production and metal extraction.\n\nThis package also doubles tidal generation, which that original left out, and it leaves MakesEnergy alone because no unit has that field."
+description: "Every unit produces twice the resources it normally produces.\n\nImmerman's Cornucopia 2x doubled energy make, negative energy use, wind, metal make, metal production and metal extraction.\n\nThis package also doubles tidal generation, which that original left out, and it leaves MakesEnergy alone because no unit has that field.\n\nMAC (macraig)'s Cornucopia 200% (Arm) and Cornucopia 200% (Core) are that doubling for one side. The side option is all, Arm or Core."
 tags: ["economy"]
 works-with: ["*"]
 requires:
   engine: ">= 0.8.5"
 layers: ["units"]
+options:
+  side:
+    type: "choice"
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
 legacy:
   - name: "Cornucopia 2x"
     prefix: "{}"
     compatibility: ["*"]
     files: ["{}Cornucopia2x.tam", "{}Cornucopia2x.sm"]
+  - name: "[MAC] Cornucopia 200% (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Cornucopia 200% (Arm).tam", "{}MAC Cornucopia 200% (Arm).sm"]
+  - name: "[MAC] Cornucopia 200% (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Cornucopia 200% (Core).tam", "{}MAC Cornucopia 200% (Core).sm"]

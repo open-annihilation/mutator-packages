@@ -1,0 +1,77 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: no-air 1 aircraft=combat
+# seed: 0
+field guis/armaap1.gui [gadget5] grayedout: (absent) -> 1
+field guis/armaap1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armaap1.gui [gadget6] grayedout: (absent) -> 1
+field guis/armaap1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armaap1.gui [gadget7] grayedout: (absent) -> 1
+field guis/armaap1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armaap1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armaap1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armap1.gui [gadget6] grayedout: (absent) -> 1
+field guis/armap1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armap1.gui [gadget7] grayedout: (absent) -> 1
+field guis/armap1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armplat1.gui [gadget6] grayedout: 0 -> 1
+field guis/armplat1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armplat1.gui [gadget7] grayedout: 0 -> 1
+field guis/armplat1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armplat1.gui [gadget8] grayedout: 0 -> 1
+field guis/armplat1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armplat1.gui [gadget9] grayedout: 0 -> 1
+field guis/armplat1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/coraap1.gui [gadget5] grayedout: (absent) -> 1
+field guis/coraap1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/coraap1.gui [gadget6] grayedout: (absent) -> 1
+field guis/coraap1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/coraap1.gui [gadget7] grayedout: (absent) -> 1
+field guis/coraap1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/coraap1.gui [gadget8] grayedout: (absent) -> 1
+field guis/coraap1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corap1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corap1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corap1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corap1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corplat1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corplat1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corplat1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corplat1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corplat1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corplat1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corplat1.gui [gadget9] grayedout: (absent) -> 1
+field guis/corplat1.gui [gadget9][common] commonattribs: 4 -> 0
+file hidden units/armbrawl.fbi	by no-air
+file hidden units/armfig.fbi	by no-air
+file hidden units/armhawk.fbi	by no-air
+file hidden units/armlance.fbi	by no-air
+file hidden units/armpnix.fbi	by no-air
+file hidden units/armseap.fbi	by no-air
+file hidden units/armsfig.fbi	by no-air
+file hidden units/armthund.fbi	by no-air
+file hidden units/corape.fbi	by no-air
+file hidden units/corhurc.fbi	by no-air
+file hidden units/corseap.fbi	by no-air
+file hidden units/corsfig.fbi	by no-air
+file hidden units/corshad.fbi	by no-air
+file hidden units/cortitan.fbi	by no-air
+file hidden units/corvamp.fbi	by no-air
+file hidden units/corveng.fbi	by no-air
+unit dropped ARMBRAWL hidden	by no-air
+unit dropped ARMFIG hidden	by no-air
+unit dropped ARMHAWK hidden	by no-air
+unit dropped ARMLANCE hidden	by no-air
+unit dropped ARMPNIX hidden	by no-air
+unit dropped ARMSEAP hidden	by no-air
+unit dropped ARMSFIG hidden	by no-air
+unit dropped ARMTHUND hidden	by no-air
+unit dropped CORAPE hidden	by no-air
+unit dropped CORHURC hidden	by no-air
+unit dropped CORSEAP hidden	by no-air
+unit dropped CORSFIG hidden	by no-air
+unit dropped CORSHAD hidden	by no-air
+unit dropped CORTITAN hidden	by no-air
+unit dropped CORVAMP hidden	by no-air
+unit dropped CORVENG hidden	by no-air

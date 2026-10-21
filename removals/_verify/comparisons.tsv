@@ -19,3 +19,5 @@ double-ranges	./double-ranges	_imports/double-ranges	-
 double-aoe	./double-aoe	_imports/double-area-of-effect	-
 double-reload	./double-reload	_imports/double-reload-times	-
 weapon-tolerance	./weapon-tolerance	-	-
+no-air-combat	./no-air:aircraft=combat	_imports/mac-friendly-skies	-
+no-air-even	./no-air	_imports/mac-even-friendlier-skies	no-air-even.allowed
