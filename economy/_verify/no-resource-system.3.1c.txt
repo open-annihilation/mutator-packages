@@ -1,0 +1,2036 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: no-resource-system 1
+# seed: 0
+field guis/armaca1.gui [gadget6] grayedout: 0 -> 1
+field guis/armaca1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armaca1.gui [gadget7] grayedout: 0 -> 1
+field guis/armaca1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armack1.gui [gadget6] grayedout: 0 -> 1
+field guis/armack1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armack1.gui [gadget7] grayedout: 0 -> 1
+field guis/armack1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armacsub1.gui [gadget6] grayedout: (absent) -> 1
+field guis/armacsub1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armacv1.gui [gadget6] grayedout: 0 -> 1
+field guis/armacv1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armacv1.gui [gadget7] grayedout: 0 -> 1
+field guis/armacv1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armca1.gui [gadget4] grayedout: 0 -> 1
+field guis/armca1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armca1.gui [gadget5] grayedout: 0 -> 1
+field guis/armca1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armca1.gui [gadget6] grayedout: 0 -> 1
+field guis/armca1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armca1.gui [gadget7] grayedout: 0 -> 1
+field guis/armca1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armca1.gui [gadget8] grayedout: 0 -> 1
+field guis/armca1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armca1.gui [gadget9] grayedout: 0 -> 1
+field guis/armca1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armca3.gui [gadget5] grayedout: 0 -> 1
+field guis/armca3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armch1.gui [gadget4] grayedout: (absent) -> 1
+field guis/armch1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armch1.gui [gadget5] grayedout: (absent) -> 1
+field guis/armch1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armch1.gui [gadget6] grayedout: (absent) -> 1
+field guis/armch1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armch1.gui [gadget7] grayedout: (absent) -> 1
+field guis/armch1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armch1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armch1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armch1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armch1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armch3.gui [gadget5] grayedout: (absent) -> 1
+field guis/armch3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armch4.gui [gadget6] grayedout: 0 -> 1
+field guis/armch4.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armch4.gui [gadget7] grayedout: 0 -> 1
+field guis/armch4.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armch4.gui [gadget8] grayedout: 0 -> 1
+field guis/armch4.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armch4.gui [gadget9] grayedout: 0 -> 1
+field guis/armch4.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armck1.gui [gadget4] grayedout: (absent) -> 1
+field guis/armck1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armck1.gui [gadget5] grayedout: (absent) -> 1
+field guis/armck1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armck1.gui [gadget6] grayedout: (absent) -> 1
+field guis/armck1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armck1.gui [gadget7] grayedout: (absent) -> 1
+field guis/armck1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armck1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armck1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armck1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armck1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armck3.gui [gadget5] grayedout: (absent) -> 1
+field guis/armck3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armcom1.gui [gadget4] grayedout: (absent) -> 1
+field guis/armcom1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armcom1.gui [gadget5] grayedout: (absent) -> 1
+field guis/armcom1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armcom1.gui [gadget6] grayedout: (absent) -> 1
+field guis/armcom1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcom1.gui [gadget7] grayedout: (absent) -> 1
+field guis/armcom1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armcom1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armcom1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcom1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armcom1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcom3.gui [gadget6] grayedout: (absent) -> 1
+field guis/armcom3.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcom3.gui [gadget7] grayedout: (absent) -> 1
+field guis/armcom3.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armcom3.gui [gadget8] grayedout: (absent) -> 1
+field guis/armcom3.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcom3.gui [gadget9] grayedout: (absent) -> 1
+field guis/armcom3.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcsa1.gui [gadget4] grayedout: (absent) -> 1
+field guis/armcsa1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armcsa1.gui [gadget5] grayedout: (absent) -> 1
+field guis/armcsa1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armcsa1.gui [gadget6] grayedout: (absent) -> 1
+field guis/armcsa1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcsa1.gui [gadget7] grayedout: (absent) -> 1
+field guis/armcsa1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armcsa1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armcsa1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcsa1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armcsa1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcsa3.gui [gadget5] grayedout: (absent) -> 1
+field guis/armcsa3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armcsa4.gui [gadget6] grayedout: 0 -> 1
+field guis/armcsa4.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcsa4.gui [gadget7] grayedout: 0 -> 1
+field guis/armcsa4.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armcsa4.gui [gadget8] grayedout: 0 -> 1
+field guis/armcsa4.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcsa4.gui [gadget9] grayedout: 0 -> 1
+field guis/armcsa4.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcv1.gui [gadget4] grayedout: (absent) -> 1
+field guis/armcv1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armcv1.gui [gadget5] grayedout: (absent) -> 1
+field guis/armcv1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armcv1.gui [gadget6] grayedout: (absent) -> 1
+field guis/armcv1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcv1.gui [gadget7] grayedout: (absent) -> 1
+field guis/armcv1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/armcv1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armcv1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armcv1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armcv1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcv3.gui [gadget5] grayedout: (absent) -> 1
+field guis/armcv3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/coraca1.gui [gadget6] grayedout: (absent) -> 1
+field guis/coraca1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/coraca1.gui [gadget7] grayedout: (absent) -> 1
+field guis/coraca1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corack1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corack1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corack1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corack1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/coracsub1.gui [gadget6] grayedout: (absent) -> 1
+field guis/coracsub1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/coracv1.gui [gadget6] grayedout: (absent) -> 1
+field guis/coracv1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/coracv1.gui [gadget7] grayedout: (absent) -> 1
+field guis/coracv1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corca1.gui [gadget4] grayedout: (absent) -> 1
+field guis/corca1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corca1.gui [gadget5] grayedout: (absent) -> 1
+field guis/corca1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corca1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corca1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corca1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corca1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corca1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corca1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corca1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corca1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corca3.gui [gadget5] grayedout: (absent) -> 1
+field guis/corca3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corch1.gui [gadget4] grayedout: (absent) -> 1
+field guis/corch1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corch1.gui [gadget5] grayedout: (absent) -> 1
+field guis/corch1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corch1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corch1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corch1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corch1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corch1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corch1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corch1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corch1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corch3.gui [gadget5] grayedout: (absent) -> 1
+field guis/corch3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corch4.gui [gadget6] grayedout: (absent) -> 1
+field guis/corch4.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corch4.gui [gadget7] grayedout: (absent) -> 1
+field guis/corch4.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corch4.gui [gadget8] grayedout: (absent) -> 1
+field guis/corch4.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corch4.gui [gadget9] grayedout: (absent) -> 1
+field guis/corch4.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corck1.gui [gadget4] grayedout: (absent) -> 1
+field guis/corck1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corck1.gui [gadget5] grayedout: (absent) -> 1
+field guis/corck1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corck1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corck1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corck1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corck1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corck1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corck1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corck1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corck1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corck3.gui [gadget5] grayedout: (absent) -> 1
+field guis/corck3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corcom1.gui [gadget4] grayedout: (absent) -> 1
+field guis/corcom1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corcom1.gui [gadget5] grayedout: (absent) -> 1
+field guis/corcom1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corcom1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcom1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcom1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corcom1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corcom1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcom1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcom1.gui [gadget9] grayedout: (absent) -> 1
+field guis/corcom1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corcom3.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcom3.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcom3.gui [gadget7] grayedout: (absent) -> 1
+field guis/corcom3.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corcom3.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcom3.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcom3.gui [gadget9] grayedout: (absent) -> 1
+field guis/corcom3.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corcsa1.gui [gadget4] grayedout: (absent) -> 1
+field guis/corcsa1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corcsa1.gui [gadget5] grayedout: (absent) -> 1
+field guis/corcsa1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corcsa1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcsa1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcsa1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corcsa1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corcsa1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corcsa1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corcsa1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcsa1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcsa3.gui [gadget5] grayedout: (absent) -> 1
+field guis/corcsa3.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corcsa4.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcsa4.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcsa4.gui [gadget7] grayedout: (absent) -> 1
+field guis/corcsa4.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corcsa4.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcsa4.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcsa4.gui [gadget9] grayedout: (absent) -> 1
+field guis/corcsa4.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corcv1.gui [gadget4] grayedout: (absent) -> 1
+field guis/corcv1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corcv1.gui [gadget5] grayedout: (absent) -> 1
+field guis/corcv1.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corcv1.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcv1.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcv1.gui [gadget7] grayedout: (absent) -> 1
+field guis/corcv1.gui [gadget7][common] commonattribs: 4 -> 0
+field guis/corcv1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corcv1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corcv1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcv1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcv3.gui [gadget5] grayedout: (absent) -> 1
+field guis/corcv3.gui [gadget5][common] commonattribs: 4 -> 0
+field units/armaap.fbi [unitinfo] buildcostenergy: 4521 -> (absent)	by no-resource-system
+field units/armaap.fbi [unitinfo] buildcostmetal: 2210 -> (absent)	by no-resource-system
+field units/armaap.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armaap.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armaap.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armaap.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/armaas.fbi [unitinfo] buildcostenergy: 17058 -> (absent)	by no-resource-system
+field units/armaas.fbi [unitinfo] buildcostmetal: 1358 -> (absent)	by no-resource-system
+field units/armaas.fbi [unitinfo] energymake: 7 -> 1000	by no-resource-system
+field units/armaas.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armaas.fbi [unitinfo] energyuse: 7 -> (absent)	by no-resource-system
+field units/armaas.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armaas.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armaca.fbi [unitinfo] buildcostenergy: 12096 -> (absent)	by no-resource-system
+field units/armaca.fbi [unitinfo] buildcostmetal: 220 -> (absent)	by no-resource-system
+field units/armaca.fbi [unitinfo] energymake: 24 -> 1000	by no-resource-system
+field units/armaca.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armaca.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armaca.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/armaca.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/armack.fbi [unitinfo] buildcostenergy: 5784 -> (absent)	by no-resource-system
+field units/armack.fbi [unitinfo] buildcostmetal: 300 -> (absent)	by no-resource-system
+field units/armack.fbi [unitinfo] energymake: 17 -> 1000	by no-resource-system
+field units/armack.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armack.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armack.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/armack.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/armacsub.fbi [unitinfo] buildcostenergy: 7568 -> (absent)	by no-resource-system
+field units/armacsub.fbi [unitinfo] buildcostmetal: 695 -> (absent)	by no-resource-system
+field units/armacsub.fbi [unitinfo] energymake: 17 -> 1000	by no-resource-system
+field units/armacsub.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/armacsub.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armacsub.fbi [unitinfo] metalmake: 0.9 -> 20	by no-resource-system
+field units/armacsub.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/armacv.fbi [unitinfo] buildcostenergy: 4263 -> (absent)	by no-resource-system
+field units/armacv.fbi [unitinfo] buildcostmetal: 481 -> (absent)	by no-resource-system
+field units/armacv.fbi [unitinfo] energymake: 21 -> 1000	by no-resource-system
+field units/armacv.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armacv.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armacv.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/armacv.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/armah.fbi [unitinfo] buildcostenergy: 1444 -> (absent)	by no-resource-system
+field units/armah.fbi [unitinfo] buildcostmetal: 120 -> (absent)	by no-resource-system
+field units/armah.fbi [unitinfo] energymake: 2.6 -> 1000	by no-resource-system
+field units/armah.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armah.fbi [unitinfo] energyuse: 2.6 -> (absent)	by no-resource-system
+field units/armah.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armah.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armalab.fbi [unitinfo] buildcostenergy: 3277 -> (absent)	by no-resource-system
+field units/armalab.fbi [unitinfo] buildcostmetal: 2007 -> (absent)	by no-resource-system
+field units/armalab.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armalab.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armalab.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armalab.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/armamb.fbi [unitinfo] buildcostenergy: 16821 -> (absent)	by no-resource-system
+field units/armamb.fbi [unitinfo] buildcostmetal: 2002 -> (absent)	by no-resource-system
+field units/armamb.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armamb.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armamb.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armamb.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armamd.fbi [unitinfo] buildcostenergy: 88000 -> (absent)	by no-resource-system
+field units/armamd.fbi [unitinfo] buildcostmetal: 1437 -> (absent)	by no-resource-system
+field units/armamd.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armamd.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armamd.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armamd.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armamph.fbi [unitinfo] buildcostenergy: 2468 -> (absent)	by no-resource-system
+field units/armamph.fbi [unitinfo] buildcostmetal: 255 -> (absent)	by no-resource-system
+field units/armamph.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/armamph.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armamph.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armamph.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armamph.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armanac.fbi [unitinfo] buildcostenergy: 2856 -> (absent)	by no-resource-system
+field units/armanac.fbi [unitinfo] buildcostmetal: 272 -> (absent)	by no-resource-system
+field units/armanac.fbi [unitinfo] energymake: 2.6 -> 1000	by no-resource-system
+field units/armanac.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armanac.fbi [unitinfo] energyuse: 2.6 -> (absent)	by no-resource-system
+field units/armanac.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armanac.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armanni.fbi [unitinfo] buildcostenergy: 25025 -> (absent)	by no-resource-system
+field units/armanni.fbi [unitinfo] buildcostmetal: 3985 -> (absent)	by no-resource-system
+field units/armanni.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armanni.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armanni.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armanni.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armap.fbi [unitinfo] buildcostenergy: 1370 -> (absent)	by no-resource-system
+field units/armap.fbi [unitinfo] buildcostmetal: 850 -> (absent)	by no-resource-system
+field units/armap.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armap.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armap.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armap.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/armarad.fbi [unitinfo] buildcostenergy: 1830 -> (absent)	by no-resource-system
+field units/armarad.fbi [unitinfo] buildcostmetal: 125 -> (absent)	by no-resource-system
+field units/armarad.fbi [unitinfo] energymake: 18 -> 1000	by no-resource-system
+field units/armarad.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armarad.fbi [unitinfo] energyuse: 18 -> (absent)	by no-resource-system
+field units/armarad.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armarad.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armaser.fbi [unitinfo] buildcostenergy: 1326 -> (absent)	by no-resource-system
+field units/armaser.fbi [unitinfo] buildcostmetal: 73 -> (absent)	by no-resource-system
+field units/armaser.fbi [unitinfo] energymake: 10 -> 1000	by no-resource-system
+field units/armaser.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armaser.fbi [unitinfo] energyuse: 10 -> (absent)	by no-resource-system
+field units/armaser.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armaser.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armason.fbi [unitinfo] buildcostenergy: 2469 -> (absent)	by no-resource-system
+field units/armason.fbi [unitinfo] buildcostmetal: 163 -> (absent)	by no-resource-system
+field units/armason.fbi [unitinfo] energymake: 22 -> 1000	by no-resource-system
+field units/armason.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armason.fbi [unitinfo] energyuse: 22 -> (absent)	by no-resource-system
+field units/armason.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armason.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armasp.fbi [unitinfo] buildcostenergy: 8510 -> (absent)	by no-resource-system
+field units/armasp.fbi [unitinfo] buildcostmetal: 425 -> (absent)	by no-resource-system
+field units/armasp.fbi [unitinfo] energymake: 10 -> 1000	by no-resource-system
+field units/armasp.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armasp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armasp.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armasy.fbi [unitinfo] buildcostenergy: 2402 -> (absent)	by no-resource-system
+field units/armasy.fbi [unitinfo] buildcostmetal: 2524 -> (absent)	by no-resource-system
+field units/armasy.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armasy.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armasy.fbi [unitinfo] metalmake: 1 -> 20	by no-resource-system
+field units/armasy.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/armatl.fbi [unitinfo] buildcostenergy: 4942 -> (absent)	by no-resource-system
+field units/armatl.fbi [unitinfo] buildcostmetal: 1762 -> (absent)	by no-resource-system
+field units/armatl.fbi [unitinfo] energymake: 0.1 -> 1000	by no-resource-system
+field units/armatl.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armatl.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armatl.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armatl.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armatlas.fbi [unitinfo] buildcostenergy: 2479 -> (absent)	by no-resource-system
+field units/armatlas.fbi [unitinfo] buildcostmetal: 107 -> (absent)	by no-resource-system
+field units/armatlas.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/armatlas.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armatlas.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/armatlas.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armatlas.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armavp.fbi [unitinfo] buildcostenergy: 3200 -> (absent)	by no-resource-system
+field units/armavp.fbi [unitinfo] buildcostmetal: 1984 -> (absent)	by no-resource-system
+field units/armavp.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armavp.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armavp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armavp.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/armawac.fbi [unitinfo] buildcostenergy: 8062 -> (absent)	by no-resource-system
+field units/armawac.fbi [unitinfo] buildcostmetal: 165 -> (absent)	by no-resource-system
+field units/armawac.fbi [unitinfo] energymake: 23 -> 1000	by no-resource-system
+field units/armawac.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armawac.fbi [unitinfo] energyuse: 23 -> (absent)	by no-resource-system
+field units/armawac.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armawac.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armbats.fbi [unitinfo] buildcostenergy: 20731 -> (absent)	by no-resource-system
+field units/armbats.fbi [unitinfo] buildcostmetal: 4404 -> (absent)	by no-resource-system
+field units/armbats.fbi [unitinfo] energymake: 50 -> 1000	by no-resource-system
+field units/armbats.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armbats.fbi [unitinfo] energyuse: 48 -> (absent)	by no-resource-system
+field units/armbats.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armbats.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armbeac.fbi [unitinfo] buildcostenergy: 423100 -> (absent)	by no-resource-system
+field units/armbeac.fbi [unitinfo] buildcostmetal: 5214 -> (absent)	by no-resource-system
+field units/armbeac.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armbeac.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armbeac.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armbeac.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armbrawl.fbi [unitinfo] buildcostenergy: 6249 -> (absent)	by no-resource-system
+field units/armbrawl.fbi [unitinfo] buildcostmetal: 314 -> (absent)	by no-resource-system
+field units/armbrawl.fbi [unitinfo] energymake: 0.8 -> 1000	by no-resource-system
+field units/armbrawl.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armbrawl.fbi [unitinfo] energyuse: 0.8 -> (absent)	by no-resource-system
+field units/armbrawl.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armbrawl.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armbrtha.fbi [unitinfo] buildcostenergy: 64680 -> (absent)	by no-resource-system
+field units/armbrtha.fbi [unitinfo] buildcostmetal: 4184 -> (absent)	by no-resource-system
+field units/armbrtha.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armbrtha.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armbrtha.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armbrtha.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armbull.fbi [unitinfo] buildcostenergy: 2994 -> (absent)	by no-resource-system
+field units/armbull.fbi [unitinfo] buildcostmetal: 467 -> (absent)	by no-resource-system
+field units/armbull.fbi [unitinfo] energymake: 0.8 -> 1000	by no-resource-system
+field units/armbull.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armbull.fbi [unitinfo] energyuse: 0.8 -> (absent)	by no-resource-system
+field units/armbull.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armbull.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armca.fbi [unitinfo] buildcostenergy: 4320 -> (absent)	by no-resource-system
+field units/armca.fbi [unitinfo] buildcostmetal: 105 -> (absent)	by no-resource-system
+field units/armca.fbi [unitinfo] energymake: 11 -> 1000	by no-resource-system
+field units/armca.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/armca.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armca.fbi [unitinfo] metalmake: 0.2 -> 20	by no-resource-system
+field units/armca.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/armcarry.fbi [unitinfo] buildcostenergy: 11257 -> (absent)	by no-resource-system
+field units/armcarry.fbi [unitinfo] buildcostmetal: 1372 -> (absent)	by no-resource-system
+field units/armcarry.fbi [unitinfo] energymake: 370 -> 1000	by no-resource-system
+field units/armcarry.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armcarry.fbi [unitinfo] energyuse: 40 -> (absent)	by no-resource-system
+field units/armcarry.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armcarry.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armch.fbi [unitinfo] buildcostenergy: 4370 -> (absent)	by no-resource-system
+field units/armch.fbi [unitinfo] buildcostmetal: 396 -> (absent)	by no-resource-system
+field units/armch.fbi [unitinfo] energymake: 16 -> 1000	by no-resource-system
+field units/armch.fbi [unitinfo] energystorage: 80 -> 1000	by no-resource-system
+field units/armch.fbi [unitinfo] energyuse: 1 -> (absent)	by no-resource-system
+field units/armch.fbi [unitinfo] metalmake: 0.3 -> 20	by no-resource-system
+field units/armch.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/armck.fbi [unitinfo] buildcostenergy: 2410 -> (absent)	by no-resource-system
+field units/armck.fbi [unitinfo] buildcostmetal: 120 -> (absent)	by no-resource-system
+field units/armck.fbi [unitinfo] energymake: 8 -> 1000	by no-resource-system
+field units/armck.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/armck.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armck.fbi [unitinfo] metalmake: 0.25 -> 20	by no-resource-system
+field units/armck.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/armcom.fbi [unitinfo] buildcostenergy: 34125 -> (absent)	by no-resource-system
+field units/armcom.fbi [unitinfo] buildcostmetal: 29854 -> (absent)	by no-resource-system
+field units/armcom.fbi [unitinfo] cloakcost: 200 -> (absent)	by no-resource-system
+field units/armcom.fbi [unitinfo] cloakcostmoving: 1000 -> (absent)	by no-resource-system
+field units/armcom.fbi [unitinfo] energymake: 25 -> 1000	by no-resource-system
+field units/armcom.fbi [unitinfo] energystorage: (absent) -> 1000	by no-resource-system
+field units/armcom.fbi [unitinfo] metalmake: 1 -> 20	by no-resource-system
+field units/armcom.fbi [unitinfo] metalstorage: (absent) -> 20	by no-resource-system
+field units/armcom.fbi [unitinfo] mincloakdistance: 40 -> (absent)	by no-resource-system
+field units/armcom.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armcroc.fbi [unitinfo] buildcostenergy: 2300 -> (absent)	by no-resource-system
+field units/armcroc.fbi [unitinfo] buildcostmetal: 298 -> (absent)	by no-resource-system
+field units/armcroc.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/armcroc.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armcroc.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/armcroc.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armcroc.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armcrus.fbi [unitinfo] buildcostenergy: 8608 -> (absent)	by no-resource-system
+field units/armcrus.fbi [unitinfo] buildcostmetal: 1719 -> (absent)	by no-resource-system
+field units/armcrus.fbi [unitinfo] energymake: 2.5 -> 1000	by no-resource-system
+field units/armcrus.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armcrus.fbi [unitinfo] energyuse: 2.5 -> (absent)	by no-resource-system
+field units/armcrus.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armcrus.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armcs.fbi [unitinfo] buildcostenergy: 2130 -> (absent)	by no-resource-system
+field units/armcs.fbi [unitinfo] buildcostmetal: 255 -> (absent)	by no-resource-system
+field units/armcs.fbi [unitinfo] energymake: 7 -> 1000	by no-resource-system
+field units/armcs.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/armcs.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armcs.fbi [unitinfo] metalmake: 0.3 -> 20	by no-resource-system
+field units/armcs.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/armcsa.fbi [unitinfo] buildcostenergy: 5368 -> (absent)	by no-resource-system
+field units/armcsa.fbi [unitinfo] buildcostmetal: 115 -> (absent)	by no-resource-system
+field units/armcsa.fbi [unitinfo] energymake: 12 -> 1000	by no-resource-system
+field units/armcsa.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/armcsa.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armcsa.fbi [unitinfo] metalmake: 0.3 -> 20	by no-resource-system
+field units/armcsa.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/armcv.fbi [unitinfo] buildcostenergy: 2030 -> (absent)	by no-resource-system
+field units/armcv.fbi [unitinfo] buildcostmetal: 185 -> (absent)	by no-resource-system
+field units/armcv.fbi [unitinfo] energymake: 9 -> 1000	by no-resource-system
+field units/armcv.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/armcv.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armcv.fbi [unitinfo] metalmake: 0.25 -> 20	by no-resource-system
+field units/armcv.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/armdecom.fbi [unitinfo] buildcostenergy: 11561 -> (absent)	by no-resource-system
+field units/armdecom.fbi [unitinfo] buildcostmetal: 721 -> (absent)	by no-resource-system
+field units/armdecom.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armdecom.fbi [unitinfo] energystorage: (absent) -> 1000	by no-resource-system
+field units/armdecom.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armdecom.fbi [unitinfo] metalstorage: (absent) -> 20	by no-resource-system
+field units/armdev1.fbi [unitinfo] buildcostenergy: 132500 -> (absent)	by no-resource-system
+field units/armdev1.fbi [unitinfo] buildcostmetal: 8545 -> (absent)	by no-resource-system
+field units/armdev1.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armdev1.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armdev1.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armdev1.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armdrag.fbi [unitinfo] buildcostenergy: 250 -> (absent)	by no-resource-system
+field units/armdrag.fbi [unitinfo] buildcostmetal: 10 -> (absent)	by no-resource-system
+field units/armdrag.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armdrag.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armdrag.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armdrag.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armemp.fbi [unitinfo] buildcostenergy: 52134 -> (absent)	by no-resource-system
+field units/armemp.fbi [unitinfo] buildcostmetal: 1802 -> (absent)	by no-resource-system
+field units/armemp.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armemp.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armemp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armemp.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfark.fbi [unitinfo] buildcostenergy: 3219 -> (absent)	by no-resource-system
+field units/armfark.fbi [unitinfo] buildcostmetal: 480 -> (absent)	by no-resource-system
+field units/armfark.fbi [unitinfo] energymake: 17 -> 1000	by no-resource-system
+field units/armfark.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armfark.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armfark.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/armfark.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfast.fbi [unitinfo] buildcostenergy: 2221 -> (absent)	by no-resource-system
+field units/armfast.fbi [unitinfo] buildcostmetal: 151 -> (absent)	by no-resource-system
+field units/armfast.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/armfast.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armfast.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armfast.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armfast.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfav.fbi [unitinfo] buildcostenergy: 564 -> (absent)	by no-resource-system
+field units/armfav.fbi [unitinfo] buildcostmetal: 37 -> (absent)	by no-resource-system
+field units/armfav.fbi [unitinfo] energymake: 0.2 -> 1000	by no-resource-system
+field units/armfav.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armfav.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/armfav.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armfav.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfdrag.fbi [unitinfo] buildcostenergy: 600 -> (absent)	by no-resource-system
+field units/armfdrag.fbi [unitinfo] buildcostmetal: 20 -> (absent)	by no-resource-system
+field units/armfdrag.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armfdrag.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armfdrag.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armfdrag.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfhlt.fbi [unitinfo] buildcostenergy: 5796 -> (absent)	by no-resource-system
+field units/armfhlt.fbi [unitinfo] buildcostmetal: 524 -> (absent)	by no-resource-system
+field units/armfhlt.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armfhlt.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armfhlt.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armfhlt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armfhlt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfido.fbi [unitinfo] buildcostenergy: 3556 -> (absent)	by no-resource-system
+field units/armfido.fbi [unitinfo] buildcostmetal: 398 -> (absent)	by no-resource-system
+field units/armfido.fbi [unitinfo] energymake: 0.8 -> 1000	by no-resource-system
+field units/armfido.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armfido.fbi [unitinfo] energyuse: 0.8 -> (absent)	by no-resource-system
+field units/armfido.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armfido.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfig.fbi [unitinfo] buildcostenergy: 3234 -> (absent)	by no-resource-system
+field units/armfig.fbi [unitinfo] buildcostmetal: 99 -> (absent)	by no-resource-system
+field units/armfig.fbi [unitinfo] energymake: 0.7 -> 1000	by no-resource-system
+field units/armfig.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armfig.fbi [unitinfo] energyuse: 0.7 -> (absent)	by no-resource-system
+field units/armfig.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armfig.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armflak.fbi [unitinfo] buildcostenergy: 17425 -> (absent)	by no-resource-system
+field units/armflak.fbi [unitinfo] buildcostmetal: 1069 -> (absent)	by no-resource-system
+field units/armflak.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armflak.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armflak.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armflak.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armflash.fbi [unitinfo] buildcostenergy: 870 -> (absent)	by no-resource-system
+field units/armflash.fbi [unitinfo] buildcostmetal: 106 -> (absent)	by no-resource-system
+field units/armflash.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/armflash.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armflash.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/armflash.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armflash.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armflea.fbi [unitinfo] buildcostenergy: 712 -> (absent)	by no-resource-system
+field units/armflea.fbi [unitinfo] buildcostmetal: 44 -> (absent)	by no-resource-system
+field units/armflea.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/armflea.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armflea.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armflea.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armflea.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfort.fbi [unitinfo] buildcostenergy: 675 -> (absent)	by no-resource-system
+field units/armfort.fbi [unitinfo] buildcostmetal: 27 -> (absent)	by no-resource-system
+field units/armfort.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armfort.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armfort.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armfort.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armfrt.fbi [unitinfo] buildcostenergy: 987 -> (absent)	by no-resource-system
+field units/armfrt.fbi [unitinfo] buildcostmetal: 71 -> (absent)	by no-resource-system
+field units/armfrt.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armfrt.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armfrt.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armfrt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armfrt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armgate.fbi [unitinfo] buildcostenergy: 1865294 -> (absent)	by no-resource-system
+field units/armgate.fbi [unitinfo] buildcostmetal: 213965 -> (absent)	by no-resource-system
+field units/armgate.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armgate.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armgate.fbi [unitinfo] energyuse: 3000 -> (absent)	by no-resource-system
+field units/armgate.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armgate.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armguard.fbi [unitinfo] buildcostenergy: 7687 -> (absent)	by no-resource-system
+field units/armguard.fbi [unitinfo] buildcostmetal: 1946 -> (absent)	by no-resource-system
+field units/armguard.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armguard.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armguard.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armguard.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armham.fbi [unitinfo] buildcostenergy: 1187 -> (absent)	by no-resource-system
+field units/armham.fbi [unitinfo] buildcostmetal: 151 -> (absent)	by no-resource-system
+field units/armham.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/armham.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armham.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/armham.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armham.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armhawk.fbi [unitinfo] buildcostenergy: 6893 -> (absent)	by no-resource-system
+field units/armhawk.fbi [unitinfo] buildcostmetal: 254 -> (absent)	by no-resource-system
+field units/armhawk.fbi [unitinfo] energymake: 20 -> 1000	by no-resource-system
+field units/armhawk.fbi [unitinfo] energystorage: (absent) -> 1000	by no-resource-system
+field units/armhawk.fbi [unitinfo] energyuse: 20 -> (absent)	by no-resource-system
+field units/armhawk.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armhawk.fbi [unitinfo] metalstorage: (absent) -> 20	by no-resource-system
+field units/armhlt.fbi [unitinfo] buildcostenergy: 5398 -> (absent)	by no-resource-system
+field units/armhlt.fbi [unitinfo] buildcostmetal: 584 -> (absent)	by no-resource-system
+field units/armhlt.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armhlt.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armhlt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armhlt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armhp.fbi [unitinfo] buildcostenergy: 5277 -> (absent)	by no-resource-system
+field units/armhp.fbi [unitinfo] buildcostmetal: 2007 -> (absent)	by no-resource-system
+field units/armhp.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armhp.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armhp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armhp.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/armjam.fbi [unitinfo] buildcostenergy: 1621 -> (absent)	by no-resource-system
+field units/armjam.fbi [unitinfo] buildcostmetal: 97 -> (absent)	by no-resource-system
+field units/armjam.fbi [unitinfo] energymake: 16 -> 1000	by no-resource-system
+field units/armjam.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armjam.fbi [unitinfo] energyuse: 16 -> (absent)	by no-resource-system
+field units/armjam.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armjam.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armjeth.fbi [unitinfo] buildcostenergy: 1219 -> (absent)	by no-resource-system
+field units/armjeth.fbi [unitinfo] buildcostmetal: 128 -> (absent)	by no-resource-system
+field units/armjeth.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/armjeth.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armjeth.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armjeth.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armjeth.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armlab.fbi [unitinfo] buildcostenergy: 1130 -> (absent)	by no-resource-system
+field units/armlab.fbi [unitinfo] buildcostmetal: 705 -> (absent)	by no-resource-system
+field units/armlab.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armlab.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armlab.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armlab.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/armlance.fbi [unitinfo] buildcostenergy: 6438 -> (absent)	by no-resource-system
+field units/armlance.fbi [unitinfo] buildcostmetal: 378 -> (absent)	by no-resource-system
+field units/armlance.fbi [unitinfo] energymake: 1.5 -> 1000	by no-resource-system
+field units/armlance.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armlance.fbi [unitinfo] energyuse: 1.5 -> (absent)	by no-resource-system
+field units/armlance.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armlance.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armlatnk.fbi [unitinfo] buildcostenergy: 3830 -> (absent)	by no-resource-system
+field units/armlatnk.fbi [unitinfo] buildcostmetal: 354 -> (absent)	by no-resource-system
+field units/armlatnk.fbi [unitinfo] energymake: 1.5 -> 1000	by no-resource-system
+field units/armlatnk.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armlatnk.fbi [unitinfo] energyuse: 1.5 -> (absent)	by no-resource-system
+field units/armlatnk.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armlatnk.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armllt.fbi [unitinfo] buildcostenergy: 2546 -> (absent)	by no-resource-system
+field units/armllt.fbi [unitinfo] buildcostmetal: 262 -> (absent)	by no-resource-system
+field units/armllt.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armllt.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armllt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armllt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmanni.fbi [unitinfo] buildcostenergy: 17477 -> (absent)	by no-resource-system
+field units/armmanni.fbi [unitinfo] buildcostmetal: 2604 -> (absent)	by no-resource-system
+field units/armmanni.fbi [unitinfo] energymake: 5.2 -> 1000	by no-resource-system
+field units/armmanni.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmanni.fbi [unitinfo] energyuse: 5.2 -> (absent)	by no-resource-system
+field units/armmanni.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmanni.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmark.fbi [unitinfo] buildcostenergy: 1152 -> (absent)	by no-resource-system
+field units/armmark.fbi [unitinfo] buildcostmetal: 95 -> (absent)	by no-resource-system
+field units/armmark.fbi [unitinfo] energymake: 15 -> 1000	by no-resource-system
+field units/armmark.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmark.fbi [unitinfo] energyuse: 15 -> (absent)	by no-resource-system
+field units/armmark.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmark.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmart.fbi [unitinfo] buildcostenergy: 2140 -> (absent)	by no-resource-system
+field units/armmart.fbi [unitinfo] buildcostmetal: 264 -> (absent)	by no-resource-system
+field units/armmart.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/armmart.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmart.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armmart.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmart.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmav.fbi [unitinfo] buildcostenergy: 10914 -> (absent)	by no-resource-system
+field units/armmav.fbi [unitinfo] buildcostmetal: 492 -> (absent)	by no-resource-system
+field units/armmav.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/armmav.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmav.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armmav.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmav.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmerl.fbi [unitinfo] buildcostenergy: 2746 -> (absent)	by no-resource-system
+field units/armmerl.fbi [unitinfo] buildcostmetal: 462 -> (absent)	by no-resource-system
+field units/armmerl.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/armmerl.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmerl.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/armmerl.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmerl.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmh.fbi [unitinfo] buildcostenergy: 3131 -> (absent)	by no-resource-system
+field units/armmh.fbi [unitinfo] buildcostmetal: 325 -> (absent)	by no-resource-system
+field units/armmh.fbi [unitinfo] energymake: 2.6 -> 1000	by no-resource-system
+field units/armmh.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmh.fbi [unitinfo] energyuse: 2.6 -> (absent)	by no-resource-system
+field units/armmh.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmh.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmine1.fbi [unitinfo] buildcostenergy: 1017 -> (absent)	by no-resource-system
+field units/armmine1.fbi [unitinfo] buildcostmetal: 32 -> (absent)	by no-resource-system
+field units/armmine1.fbi [unitinfo] cloakcost: 7 -> (absent)	by no-resource-system
+field units/armmine1.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armmine1.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmine1.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmine1.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmine1.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/armmine1.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armmine2.fbi [unitinfo] buildcostenergy: 1909 -> (absent)	by no-resource-system
+field units/armmine2.fbi [unitinfo] buildcostmetal: 61 -> (absent)	by no-resource-system
+field units/armmine2.fbi [unitinfo] cloakcost: 14 -> (absent)	by no-resource-system
+field units/armmine2.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armmine2.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmine2.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmine2.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmine2.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/armmine2.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armmine3.fbi [unitinfo] buildcostenergy: 2688 -> (absent)	by no-resource-system
+field units/armmine3.fbi [unitinfo] buildcostmetal: 86 -> (absent)	by no-resource-system
+field units/armmine3.fbi [unitinfo] cloakcost: 19 -> (absent)	by no-resource-system
+field units/armmine3.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armmine3.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmine3.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmine3.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmine3.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/armmine3.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armmine4.fbi [unitinfo] buildcostenergy: 4294 -> (absent)	by no-resource-system
+field units/armmine4.fbi [unitinfo] buildcostmetal: 137 -> (absent)	by no-resource-system
+field units/armmine4.fbi [unitinfo] cloakcost: 31 -> (absent)	by no-resource-system
+field units/armmine4.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armmine4.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmine4.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmine4.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmine4.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/armmine4.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armmine5.fbi [unitinfo] buildcostenergy: 4135 -> (absent)	by no-resource-system
+field units/armmine5.fbi [unitinfo] buildcostmetal: 132 -> (absent)	by no-resource-system
+field units/armmine5.fbi [unitinfo] cloakcost: 30 -> (absent)	by no-resource-system
+field units/armmine5.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armmine5.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmine5.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmine5.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmine5.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/armmine5.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armmine6.fbi [unitinfo] buildcostenergy: 22272 -> (absent)	by no-resource-system
+field units/armmine6.fbi [unitinfo] buildcostmetal: 498 -> (absent)	by no-resource-system
+field units/armmine6.fbi [unitinfo] cloakcost: 79 -> (absent)	by no-resource-system
+field units/armmine6.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armmine6.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmine6.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmine6.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmine6.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/armmine6.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armmlv.fbi [unitinfo] buildcostenergy: 1031 -> (absent)	by no-resource-system
+field units/armmlv.fbi [unitinfo] buildcostmetal: 173 -> (absent)	by no-resource-system
+field units/armmlv.fbi [unitinfo] energymake: 1 -> 1000	by no-resource-system
+field units/armmlv.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmlv.fbi [unitinfo] energyuse: 1 -> (absent)	by no-resource-system
+field units/armmlv.fbi [unitinfo] metalmake: 0 -> 20	by no-resource-system
+field units/armmlv.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armmship.fbi [unitinfo] buildcostenergy: 7804 -> (absent)	by no-resource-system
+field units/armmship.fbi [unitinfo] buildcostmetal: 2348 -> (absent)	by no-resource-system
+field units/armmship.fbi [unitinfo] energymake: 0.8 -> 1000	by no-resource-system
+field units/armmship.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armmship.fbi [unitinfo] energyuse: 0.8 -> (absent)	by no-resource-system
+field units/armmship.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armmship.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armpeep.fbi [unitinfo] buildcostenergy: 1475 -> (absent)	by no-resource-system
+field units/armpeep.fbi [unitinfo] buildcostmetal: 40.28 -> (absent)	by no-resource-system
+field units/armpeep.fbi [unitinfo] energymake: 0.2 -> 1000	by no-resource-system
+field units/armpeep.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armpeep.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/armpeep.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armpeep.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armplat.fbi [unitinfo] buildcostenergy: 5396 -> (absent)	by no-resource-system
+field units/armplat.fbi [unitinfo] buildcostmetal: 2223 -> (absent)	by no-resource-system
+field units/armplat.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armplat.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/armplat.fbi [unitinfo] metalmake: 1 -> 20	by no-resource-system
+field units/armplat.fbi [unitinfo] metalstorage: 900 -> 20	by no-resource-system
+field units/armpnix.fbi [unitinfo] buildcostenergy: 7624 -> (absent)	by no-resource-system
+field units/armpnix.fbi [unitinfo] buildcostmetal: 209 -> (absent)	by no-resource-system
+field units/armpnix.fbi [unitinfo] energymake: 1.8 -> 1000	by no-resource-system
+field units/armpnix.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armpnix.fbi [unitinfo] energyuse: 1.8 -> (absent)	by no-resource-system
+field units/armpnix.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armpnix.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armpt.fbi [unitinfo] buildcostenergy: 985 -> (absent)	by no-resource-system
+field units/armpt.fbi [unitinfo] buildcostmetal: 100 -> (absent)	by no-resource-system
+field units/armpt.fbi [unitinfo] energymake: 0.2 -> 1000	by no-resource-system
+field units/armpt.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armpt.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/armpt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armpt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armpw.fbi [unitinfo] buildcostenergy: 697 -> (absent)	by no-resource-system
+field units/armpw.fbi [unitinfo] buildcostmetal: 53 -> (absent)	by no-resource-system
+field units/armpw.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/armpw.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armpw.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/armpw.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armpw.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armrad.fbi [unitinfo] buildcostenergy: 750 -> (absent)	by no-resource-system
+field units/armrad.fbi [unitinfo] buildcostmetal: 49 -> (absent)	by no-resource-system
+field units/armrad.fbi [unitinfo] energymake: 5 -> 1000	by no-resource-system
+field units/armrad.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armrad.fbi [unitinfo] energyuse: 5 -> (absent)	by no-resource-system
+field units/armrad.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armrad.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armrl.fbi [unitinfo] buildcostenergy: 843 -> (absent)	by no-resource-system
+field units/armrl.fbi [unitinfo] buildcostmetal: 79 -> (absent)	by no-resource-system
+field units/armrl.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armrl.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armrl.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armrl.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armrock.fbi [unitinfo] buildcostenergy: 964 -> (absent)	by no-resource-system
+field units/armrock.fbi [unitinfo] buildcostmetal: 117 -> (absent)	by no-resource-system
+field units/armrock.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/armrock.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armrock.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/armrock.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armrock.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armroy.fbi [unitinfo] buildcostenergy: 4537 -> (absent)	by no-resource-system
+field units/armroy.fbi [unitinfo] buildcostmetal: 898 -> (absent)	by no-resource-system
+field units/armroy.fbi [unitinfo] energymake: 2 -> 1000	by no-resource-system
+field units/armroy.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armroy.fbi [unitinfo] energyuse: 2 -> (absent)	by no-resource-system
+field units/armroy.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armroy.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsam.fbi [unitinfo] buildcostenergy: 1027 -> (absent)	by no-resource-system
+field units/armsam.fbi [unitinfo] buildcostmetal: 119 -> (absent)	by no-resource-system
+field units/armsam.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/armsam.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsam.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/armsam.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsam.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armscab.fbi [unitinfo] buildcostenergy: 88000 -> (absent)	by no-resource-system
+field units/armscab.fbi [unitinfo] buildcostmetal: 1437 -> (absent)	by no-resource-system
+field units/armscab.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armscab.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armscab.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armscab.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armscorp.fbi [unitinfo] buildcostenergy: 15660 -> (absent)	by no-resource-system
+field units/armscorp.fbi [unitinfo] buildcostmetal: 0 -> (absent)	by no-resource-system
+field units/armscorp.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armscorp.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armscorp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armscorp.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armscram.fbi [unitinfo] buildcostenergy: 2897 -> (absent)	by no-resource-system
+field units/armscram.fbi [unitinfo] buildcostmetal: 295 -> (absent)	by no-resource-system
+field units/armscram.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/armscram.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armscram.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/armscram.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armscram.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armseap.fbi [unitinfo] buildcostenergy: 9619 -> (absent)	by no-resource-system
+field units/armseap.fbi [unitinfo] buildcostmetal: 557 -> (absent)	by no-resource-system
+field units/armseap.fbi [unitinfo] energymake: 0.7 -> 1000	by no-resource-system
+field units/armseap.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armseap.fbi [unitinfo] energyuse: 0.7 -> (absent)	by no-resource-system
+field units/armseap.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armseap.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armseer.fbi [unitinfo] buildcostenergy: 941 -> (absent)	by no-resource-system
+field units/armseer.fbi [unitinfo] buildcostmetal: 85 -> (absent)	by no-resource-system
+field units/armseer.fbi [unitinfo] energymake: 8 -> 1000	by no-resource-system
+field units/armseer.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armseer.fbi [unitinfo] energyuse: 8 -> (absent)	by no-resource-system
+field units/armseer.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armseer.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsehak.fbi [unitinfo] buildcostenergy: 7624 -> (absent)	by no-resource-system
+field units/armsehak.fbi [unitinfo] buildcostmetal: 139 -> (absent)	by no-resource-system
+field units/armsehak.fbi [unitinfo] energymake: 12 -> 1000	by no-resource-system
+field units/armsehak.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsehak.fbi [unitinfo] energyuse: 12 -> (absent)	by no-resource-system
+field units/armsehak.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsehak.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsfig.fbi [unitinfo] buildcostenergy: 6307 -> (absent)	by no-resource-system
+field units/armsfig.fbi [unitinfo] buildcostmetal: 187 -> (absent)	by no-resource-system
+field units/armsfig.fbi [unitinfo] energymake: 0.7 -> 1000	by no-resource-system
+field units/armsfig.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsfig.fbi [unitinfo] energyuse: 0.7 -> (absent)	by no-resource-system
+field units/armsfig.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsfig.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsh.fbi [unitinfo] buildcostenergy: 1169 -> (absent)	by no-resource-system
+field units/armsh.fbi [unitinfo] buildcostmetal: 76 -> (absent)	by no-resource-system
+field units/armsh.fbi [unitinfo] energymake: 2.6 -> 1000	by no-resource-system
+field units/armsh.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsh.fbi [unitinfo] energyuse: 2.6 -> (absent)	by no-resource-system
+field units/armsh.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsh.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsilo.fbi [unitinfo] buildcostenergy: 52134 -> (absent)	by no-resource-system
+field units/armsilo.fbi [unitinfo] buildcostmetal: 1010 -> (absent)	by no-resource-system
+field units/armsilo.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armsilo.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsilo.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsilo.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsjam.fbi [unitinfo] buildcostenergy: 1928 -> (absent)	by no-resource-system
+field units/armsjam.fbi [unitinfo] buildcostmetal: 131 -> (absent)	by no-resource-system
+field units/armsjam.fbi [unitinfo] energymake: 18 -> 1000	by no-resource-system
+field units/armsjam.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsjam.fbi [unitinfo] energyuse: 18 -> (absent)	by no-resource-system
+field units/armsjam.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsjam.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsnipe.fbi [unitinfo] buildcostenergy: 14727 -> (absent)	by no-resource-system
+field units/armsnipe.fbi [unitinfo] buildcostmetal: 935 -> (absent)	by no-resource-system
+field units/armsnipe.fbi [unitinfo] cloakcost: 780 -> (absent)	by no-resource-system
+field units/armsnipe.fbi [unitinfo] cloakcostmoving: 1100 -> (absent)	by no-resource-system
+field units/armsnipe.fbi [unitinfo] energymake: 0.9 -> 1000	by no-resource-system
+field units/armsnipe.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsnipe.fbi [unitinfo] energyuse: 0.9 -> (absent)	by no-resource-system
+field units/armsnipe.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsnipe.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsnipe.fbi [unitinfo] mincloakdistance: 40 -> (absent)	by no-resource-system
+field units/armsnipe.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armsonar.fbi [unitinfo] buildcostenergy: 403 -> (absent)	by no-resource-system
+field units/armsonar.fbi [unitinfo] buildcostmetal: 20 -> (absent)	by no-resource-system
+field units/armsonar.fbi [unitinfo] energymake: 9 -> 1000	by no-resource-system
+field units/armsonar.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsonar.fbi [unitinfo] energyuse: 9 -> (absent)	by no-resource-system
+field units/armsonar.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsonar.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armspid.fbi [unitinfo] buildcostenergy: 2200 -> (absent)	by no-resource-system
+field units/armspid.fbi [unitinfo] buildcostmetal: 230 -> (absent)	by no-resource-system
+field units/armspid.fbi [unitinfo] energymake: 0.7 -> 1000	by no-resource-system
+field units/armspid.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armspid.fbi [unitinfo] energyuse: 0.7 -> (absent)	by no-resource-system
+field units/armspid.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armspid.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armspy.fbi [unitinfo] buildcostenergy: 9219 -> (absent)	by no-resource-system
+field units/armspy.fbi [unitinfo] buildcostmetal: 128 -> (absent)	by no-resource-system
+field units/armspy.fbi [unitinfo] cloakcost: 210 -> (absent)	by no-resource-system
+field units/armspy.fbi [unitinfo] cloakcostmoving: 800 -> (absent)	by no-resource-system
+field units/armspy.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/armspy.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armspy.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armspy.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armspy.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armspy.fbi [unitinfo] mincloakdistance: 80 -> (absent)	by no-resource-system
+field units/armspy.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/armss.fbi [unitinfo] buildcostenergy: 4385 -> (absent)	by no-resource-system
+field units/armss.fbi [unitinfo] buildcostmetal: 0 -> (absent)	by no-resource-system
+field units/armss.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armss.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armss.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armss.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armstump.fbi [unitinfo] buildcostenergy: 1246 -> (absent)	by no-resource-system
+field units/armstump.fbi [unitinfo] buildcostmetal: 165 -> (absent)	by no-resource-system
+field units/armstump.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/armstump.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armstump.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/armstump.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armstump.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsub.fbi [unitinfo] buildcostenergy: 3724 -> (absent)	by no-resource-system
+field units/armsub.fbi [unitinfo] buildcostmetal: 1151 -> (absent)	by no-resource-system
+field units/armsub.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/armsub.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsub.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/armsub.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsub.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsubk.fbi [unitinfo] buildcostenergy: 5481 -> (absent)	by no-resource-system
+field units/armsubk.fbi [unitinfo] buildcostmetal: 1448 -> (absent)	by no-resource-system
+field units/armsubk.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/armsubk.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armsubk.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/armsubk.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armsubk.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armsy.fbi [unitinfo] buildcostenergy: 775 -> (absent)	by no-resource-system
+field units/armsy.fbi [unitinfo] buildcostmetal: 615 -> (absent)	by no-resource-system
+field units/armsy.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armsy.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armsy.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/armsy.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/armtarg.fbi [unitinfo] buildcostenergy: 136058 -> (absent)	by no-resource-system
+field units/armtarg.fbi [unitinfo] buildcostmetal: 15130 -> (absent)	by no-resource-system
+field units/armtarg.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armtarg.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armtarg.fbi [unitinfo] energyuse: 1250 -> (absent)	by no-resource-system
+field units/armtarg.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armtarg.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armthovr.fbi [unitinfo] buildcostenergy: 7938 -> (absent)	by no-resource-system
+field units/armthovr.fbi [unitinfo] buildcostmetal: 665 -> (absent)	by no-resource-system
+field units/armthovr.fbi [unitinfo] energymake: 2.4 -> 1000	by no-resource-system
+field units/armthovr.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armthovr.fbi [unitinfo] energyuse: 2.4 -> (absent)	by no-resource-system
+field units/armthovr.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armthovr.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armthund.fbi [unitinfo] buildcostenergy: 5496 -> (absent)	by no-resource-system
+field units/armthund.fbi [unitinfo] buildcostmetal: 130 -> (absent)	by no-resource-system
+field units/armthund.fbi [unitinfo] energymake: 1.1 -> 1000	by no-resource-system
+field units/armthund.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armthund.fbi [unitinfo] energyuse: 1.1 -> (absent)	by no-resource-system
+field units/armthund.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armthund.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armtide.fbi [unitinfo] buildcostenergy: 768 -> (absent)	by no-resource-system
+field units/armtide.fbi [unitinfo] buildcostmetal: 82 -> (absent)	by no-resource-system
+field units/armtide.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armtide.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armtide.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armtide.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armtl.fbi [unitinfo] buildcostenergy: 2658 -> (absent)	by no-resource-system
+field units/armtl.fbi [unitinfo] buildcostmetal: 804 -> (absent)	by no-resource-system
+field units/armtl.fbi [unitinfo] energymake: 0.1 -> 1000	by no-resource-system
+field units/armtl.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armtl.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armtl.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armtl.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armtship.fbi [unitinfo] buildcostenergy: 4639 -> (absent)	by no-resource-system
+field units/armtship.fbi [unitinfo] buildcostmetal: 919 -> (absent)	by no-resource-system
+field units/armtship.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/armtship.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armtship.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/armtship.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armtship.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armvader.fbi [unitinfo] buildcostenergy: 5473 -> (absent)	by no-resource-system
+field units/armvader.fbi [unitinfo] buildcostmetal: 61 -> (absent)	by no-resource-system
+field units/armvader.fbi [unitinfo] energymake: 0.1 -> 1000	by no-resource-system
+field units/armvader.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armvader.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/armvader.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armvader.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armvp.fbi [unitinfo] buildcostenergy: 1000 -> (absent)	by no-resource-system
+field units/armvp.fbi [unitinfo] buildcostmetal: 620 -> (absent)	by no-resource-system
+field units/armvp.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/armvp.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/armvp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armvp.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/armvulc.fbi [unitinfo] buildcostenergy: 479111 -> (absent)	by no-resource-system
+field units/armvulc.fbi [unitinfo] buildcostmetal: 45198 -> (absent)	by no-resource-system
+field units/armvulc.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/armvulc.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armvulc.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armvulc.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armwar.fbi [unitinfo] buildcostenergy: 2236 -> (absent)	by no-resource-system
+field units/armwar.fbi [unitinfo] buildcostmetal: 196 -> (absent)	by no-resource-system
+field units/armwar.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/armwar.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armwar.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/armwar.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armwar.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armyork.fbi [unitinfo] buildcostenergy: 10500 -> (absent)	by no-resource-system
+field units/armyork.fbi [unitinfo] buildcostmetal: 830 -> (absent)	by no-resource-system
+field units/armyork.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/armyork.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armyork.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/armyork.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armyork.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/armzeus.fbi [unitinfo] buildcostenergy: 2228 -> (absent)	by no-resource-system
+field units/armzeus.fbi [unitinfo] buildcostmetal: 267 -> (absent)	by no-resource-system
+field units/armzeus.fbi [unitinfo] energymake: 1.1 -> 1000	by no-resource-system
+field units/armzeus.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/armzeus.fbi [unitinfo] energyuse: 1.1 -> (absent)	by no-resource-system
+field units/armzeus.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/armzeus.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/coraap.fbi [unitinfo] buildcostenergy: 4422 -> (absent)	by no-resource-system
+field units/coraap.fbi [unitinfo] buildcostmetal: 2191 -> (absent)	by no-resource-system
+field units/coraap.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/coraap.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/coraap.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/coraap.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/coraca.fbi [unitinfo] buildcostenergy: 12824 -> (absent)	by no-resource-system
+field units/coraca.fbi [unitinfo] buildcostmetal: 231 -> (absent)	by no-resource-system
+field units/coraca.fbi [unitinfo] energymake: 22 -> 1000	by no-resource-system
+field units/coraca.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/coraca.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/coraca.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/coraca.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/corack.fbi [unitinfo] buildcostenergy: 6096 -> (absent)	by no-resource-system
+field units/corack.fbi [unitinfo] buildcostmetal: 325 -> (absent)	by no-resource-system
+field units/corack.fbi [unitinfo] energymake: 19 -> 1000	by no-resource-system
+field units/corack.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corack.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/corack.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/corack.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/coracsub.fbi [unitinfo] buildcostenergy: 7911 -> (absent)	by no-resource-system
+field units/coracsub.fbi [unitinfo] buildcostmetal: 690 -> (absent)	by no-resource-system
+field units/coracsub.fbi [unitinfo] energymake: 16.4 -> 1000	by no-resource-system
+field units/coracsub.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/coracsub.fbi [unitinfo] energyuse: 1.6 -> (absent)	by no-resource-system
+field units/coracsub.fbi [unitinfo] metalmake: 0.9 -> 20	by no-resource-system
+field units/coracsub.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/coracv.fbi [unitinfo] buildcostenergy: 4504 -> (absent)	by no-resource-system
+field units/coracv.fbi [unitinfo] buildcostmetal: 455 -> (absent)	by no-resource-system
+field units/coracv.fbi [unitinfo] energymake: 21 -> 1000	by no-resource-system
+field units/coracv.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/coracv.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/coracv.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/coracv.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/corah.fbi [unitinfo] buildcostenergy: 1542 -> (absent)	by no-resource-system
+field units/corah.fbi [unitinfo] buildcostmetal: 115 -> (absent)	by no-resource-system
+field units/corah.fbi [unitinfo] energymake: 2.6 -> 1000	by no-resource-system
+field units/corah.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corah.fbi [unitinfo] energyuse: 2.6 -> (absent)	by no-resource-system
+field units/corah.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corah.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corak.fbi [unitinfo] buildcostenergy: 696 -> (absent)	by no-resource-system
+field units/corak.fbi [unitinfo] buildcostmetal: 56 -> (absent)	by no-resource-system
+field units/corak.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/corak.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corak.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/corak.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corak.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/coralab.fbi [unitinfo] buildcostenergy: 3625 -> (absent)	by no-resource-system
+field units/coralab.fbi [unitinfo] buildcostmetal: 1972 -> (absent)	by no-resource-system
+field units/coralab.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/coralab.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/coralab.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/coralab.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/coramph.fbi [unitinfo] buildcostenergy: 2935 -> (absent)	by no-resource-system
+field units/coramph.fbi [unitinfo] buildcostmetal: 324 -> (absent)	by no-resource-system
+field units/coramph.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/coramph.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/coramph.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/coramph.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/coramph.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corap.fbi [unitinfo] buildcostenergy: 1340 -> (absent)	by no-resource-system
+field units/corap.fbi [unitinfo] buildcostmetal: 830 -> (absent)	by no-resource-system
+field units/corap.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corap.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corap.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corap.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/corape.fbi [unitinfo] buildcostenergy: 5778 -> (absent)	by no-resource-system
+field units/corape.fbi [unitinfo] buildcostmetal: 294 -> (absent)	by no-resource-system
+field units/corape.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/corape.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corape.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/corape.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corape.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corarad.fbi [unitinfo] buildcostenergy: 1920 -> (absent)	by no-resource-system
+field units/corarad.fbi [unitinfo] buildcostmetal: 122 -> (absent)	by no-resource-system
+field units/corarad.fbi [unitinfo] energymake: 17 -> 1000	by no-resource-system
+field units/corarad.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corarad.fbi [unitinfo] energyuse: 17 -> (absent)	by no-resource-system
+field units/corarad.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corarad.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corarch.fbi [unitinfo] buildcostenergy: 17921 -> (absent)	by no-resource-system
+field units/corarch.fbi [unitinfo] buildcostmetal: 1314 -> (absent)	by no-resource-system
+field units/corarch.fbi [unitinfo] energymake: 8 -> 1000	by no-resource-system
+field units/corarch.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corarch.fbi [unitinfo] energyuse: 8 -> (absent)	by no-resource-system
+field units/corarch.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corarch.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corason.fbi [unitinfo] buildcostenergy: 2257 -> (absent)	by no-resource-system
+field units/corason.fbi [unitinfo] buildcostmetal: 152 -> (absent)	by no-resource-system
+field units/corason.fbi [unitinfo] energymake: 18 -> 1000	by no-resource-system
+field units/corason.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corason.fbi [unitinfo] energyuse: 18 -> (absent)	by no-resource-system
+field units/corason.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corason.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corasp.fbi [unitinfo] buildcostenergy: 8540 -> (absent)	by no-resource-system
+field units/corasp.fbi [unitinfo] buildcostmetal: 430 -> (absent)	by no-resource-system
+field units/corasp.fbi [unitinfo] energymake: 11 -> 1000	by no-resource-system
+field units/corasp.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corasp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corasp.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corasy.fbi [unitinfo] buildcostenergy: 2325 -> (absent)	by no-resource-system
+field units/corasy.fbi [unitinfo] buildcostmetal: 2460 -> (absent)	by no-resource-system
+field units/corasy.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corasy.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/corasy.fbi [unitinfo] metalmake: 1 -> 20	by no-resource-system
+field units/corasy.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/coratl.fbi [unitinfo] buildcostenergy: 5389 -> (absent)	by no-resource-system
+field units/coratl.fbi [unitinfo] buildcostmetal: 1758 -> (absent)	by no-resource-system
+field units/coratl.fbi [unitinfo] energymake: 0.1 -> 1000	by no-resource-system
+field units/coratl.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/coratl.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/coratl.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/coratl.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/coravp.fbi [unitinfo] buildcostenergy: 3520 -> (absent)	by no-resource-system
+field units/coravp.fbi [unitinfo] buildcostmetal: 1947 -> (absent)	by no-resource-system
+field units/coravp.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/coravp.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/coravp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/coravp.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/corawac.fbi [unitinfo] buildcostenergy: 7824 -> (absent)	by no-resource-system
+field units/corawac.fbi [unitinfo] buildcostmetal: 169 -> (absent)	by no-resource-system
+field units/corawac.fbi [unitinfo] energymake: 20 -> 1000	by no-resource-system
+field units/corawac.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corawac.fbi [unitinfo] energyuse: 20 -> (absent)	by no-resource-system
+field units/corawac.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corawac.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corbats.fbi [unitinfo] buildcostenergy: 19741 -> (absent)	by no-resource-system
+field units/corbats.fbi [unitinfo] buildcostmetal: 4181 -> (absent)	by no-resource-system
+field units/corbats.fbi [unitinfo] energymake: 46 -> 1000	by no-resource-system
+field units/corbats.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corbats.fbi [unitinfo] energyuse: 44 -> (absent)	by no-resource-system
+field units/corbats.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corbats.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corbeac.fbi [unitinfo] buildcostenergy: 423100 -> (absent)	by no-resource-system
+field units/corbeac.fbi [unitinfo] buildcostmetal: 5214 -> (absent)	by no-resource-system
+field units/corbeac.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corbeac.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corbeac.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corbeac.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corbuild.fbi [unitinfo] buildcostenergy: 2550 -> (absent)	by no-resource-system
+field units/corbuild.fbi [unitinfo] buildcostmetal: 220 -> (absent)	by no-resource-system
+field units/corbuild.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corbuild.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corbuild.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corbuild.fbi [unitinfo] metalstorage: 1000 -> 20	by no-resource-system
+field units/corbuzz.fbi [unitinfo] buildcostenergy: 462648 -> (absent)	by no-resource-system
+field units/corbuzz.fbi [unitinfo] buildcostmetal: 35264 -> (absent)	by no-resource-system
+field units/corbuzz.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/corbuzz.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corbuzz.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corbuzz.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corca.fbi [unitinfo] buildcostenergy: 4580 -> (absent)	by no-resource-system
+field units/corca.fbi [unitinfo] buildcostmetal: 110 -> (absent)	by no-resource-system
+field units/corca.fbi [unitinfo] energymake: 10 -> 1000	by no-resource-system
+field units/corca.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/corca.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/corca.fbi [unitinfo] metalmake: 0.2 -> 20	by no-resource-system
+field units/corca.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/corcan.fbi [unitinfo] buildcostenergy: 3500 -> (absent)	by no-resource-system
+field units/corcan.fbi [unitinfo] buildcostmetal: 420 -> (absent)	by no-resource-system
+field units/corcan.fbi [unitinfo] energymake: 0.8 -> 1000	by no-resource-system
+field units/corcan.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corcan.fbi [unitinfo] energyuse: 0.8 -> (absent)	by no-resource-system
+field units/corcan.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corcan.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corcarry.fbi [unitinfo] buildcostenergy: 11715 -> (absent)	by no-resource-system
+field units/corcarry.fbi [unitinfo] buildcostmetal: 1379 -> (absent)	by no-resource-system
+field units/corcarry.fbi [unitinfo] energymake: 380 -> 1000	by no-resource-system
+field units/corcarry.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corcarry.fbi [unitinfo] energyuse: 45 -> (absent)	by no-resource-system
+field units/corcarry.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corcarry.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corch.fbi [unitinfo] buildcostenergy: 4455 -> (absent)	by no-resource-system
+field units/corch.fbi [unitinfo] buildcostmetal: 390 -> (absent)	by no-resource-system
+field units/corch.fbi [unitinfo] energymake: 14 -> 1000	by no-resource-system
+field units/corch.fbi [unitinfo] energystorage: 80 -> 1000	by no-resource-system
+field units/corch.fbi [unitinfo] energyuse: 1 -> (absent)	by no-resource-system
+field units/corch.fbi [unitinfo] metalmake: 0.3 -> 20	by no-resource-system
+field units/corch.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/corck.fbi [unitinfo] buildcostenergy: 2540 -> (absent)	by no-resource-system
+field units/corck.fbi [unitinfo] buildcostmetal: 130 -> (absent)	by no-resource-system
+field units/corck.fbi [unitinfo] energymake: 8.5 -> 1000	by no-resource-system
+field units/corck.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/corck.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/corck.fbi [unitinfo] metalmake: 0.25 -> 20	by no-resource-system
+field units/corck.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/corcom.fbi [unitinfo] buildcostenergy: 35838 -> (absent)	by no-resource-system
+field units/corcom.fbi [unitinfo] buildcostmetal: 23512 -> (absent)	by no-resource-system
+field units/corcom.fbi [unitinfo] cloakcost: 200 -> (absent)	by no-resource-system
+field units/corcom.fbi [unitinfo] cloakcostmoving: 1000 -> (absent)	by no-resource-system
+field units/corcom.fbi [unitinfo] energymake: 25 -> 1000	by no-resource-system
+field units/corcom.fbi [unitinfo] energystorage: (absent) -> 1000	by no-resource-system
+field units/corcom.fbi [unitinfo] energyuse: 1 -> (absent)	by no-resource-system
+field units/corcom.fbi [unitinfo] metalmake: 1 -> 20	by no-resource-system
+field units/corcom.fbi [unitinfo] metalstorage: (absent) -> 20	by no-resource-system
+field units/corcom.fbi [unitinfo] mincloakdistance: 40 -> (absent)	by no-resource-system
+field units/corcom.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/corcrash.fbi [unitinfo] buildcostenergy: 1224 -> (absent)	by no-resource-system
+field units/corcrash.fbi [unitinfo] buildcostmetal: 129 -> (absent)	by no-resource-system
+field units/corcrash.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/corcrash.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corcrash.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/corcrash.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corcrash.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corcrus.fbi [unitinfo] buildcostenergy: 8551 -> (absent)	by no-resource-system
+field units/corcrus.fbi [unitinfo] buildcostmetal: 1724 -> (absent)	by no-resource-system
+field units/corcrus.fbi [unitinfo] energymake: 2.2 -> 1000	by no-resource-system
+field units/corcrus.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corcrus.fbi [unitinfo] energyuse: 2.2 -> (absent)	by no-resource-system
+field units/corcrus.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corcrus.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corcs.fbi [unitinfo] buildcostenergy: 2375 -> (absent)	by no-resource-system
+field units/corcs.fbi [unitinfo] buildcostmetal: 260 -> (absent)	by no-resource-system
+field units/corcs.fbi [unitinfo] energymake: 7 -> 1000	by no-resource-system
+field units/corcs.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/corcs.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/corcs.fbi [unitinfo] metalmake: 0.3 -> 20	by no-resource-system
+field units/corcs.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/corcsa.fbi [unitinfo] buildcostenergy: 5824 -> (absent)	by no-resource-system
+field units/corcsa.fbi [unitinfo] buildcostmetal: 125 -> (absent)	by no-resource-system
+field units/corcsa.fbi [unitinfo] energymake: 11 -> 1000	by no-resource-system
+field units/corcsa.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/corcsa.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/corcsa.fbi [unitinfo] metalmake: 0.3 -> 20	by no-resource-system
+field units/corcsa.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/corcv.fbi [unitinfo] buildcostenergy: 2145 -> (absent)	by no-resource-system
+field units/corcv.fbi [unitinfo] buildcostmetal: 175 -> (absent)	by no-resource-system
+field units/corcv.fbi [unitinfo] energymake: 9.2 -> 1000	by no-resource-system
+field units/corcv.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/corcv.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/corcv.fbi [unitinfo] metalmake: 0.25 -> 20	by no-resource-system
+field units/corcv.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/cordecom.fbi [unitinfo] buildcostenergy: 12085 -> (absent)	by no-resource-system
+field units/cordecom.fbi [unitinfo] buildcostmetal: 705 -> (absent)	by no-resource-system
+field units/cordecom.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cordecom.fbi [unitinfo] energystorage: (absent) -> 1000	by no-resource-system
+field units/cordecom.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cordecom.fbi [unitinfo] metalstorage: (absent) -> 20	by no-resource-system
+field units/cordev1.fbi [unitinfo] buildcostenergy: 132500 -> (absent)	by no-resource-system
+field units/cordev1.fbi [unitinfo] buildcostmetal: 8545 -> (absent)	by no-resource-system
+field units/cordev1.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cordev1.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cordev1.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cordev1.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cordoom.fbi [unitinfo] buildcostenergy: 14245 -> (absent)	by no-resource-system
+field units/cordoom.fbi [unitinfo] buildcostmetal: 2140 -> (absent)	by no-resource-system
+field units/cordoom.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cordoom.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cordoom.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cordoom.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cordrag.fbi [unitinfo] buildcostenergy: 300 -> (absent)	by no-resource-system
+field units/cordrag.fbi [unitinfo] buildcostmetal: 11 -> (absent)	by no-resource-system
+field units/cordrag.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/cordrag.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cordrag.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cordrag.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/coreter.fbi [unitinfo] buildcostenergy: 1757 -> (absent)	by no-resource-system
+field units/coreter.fbi [unitinfo] buildcostmetal: 100 -> (absent)	by no-resource-system
+field units/coreter.fbi [unitinfo] energymake: 14 -> 1000	by no-resource-system
+field units/coreter.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/coreter.fbi [unitinfo] energyuse: 14 -> (absent)	by no-resource-system
+field units/coreter.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/coreter.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corfast.fbi [unitinfo] buildcostenergy: 2658 -> (absent)	by no-resource-system
+field units/corfast.fbi [unitinfo] buildcostmetal: 175 -> (absent)	by no-resource-system
+field units/corfast.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/corfast.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corfast.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/corfast.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corfast.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corfav.fbi [unitinfo] buildcostenergy: 575 -> (absent)	by no-resource-system
+field units/corfav.fbi [unitinfo] buildcostmetal: 38 -> (absent)	by no-resource-system
+field units/corfav.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/corfav.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corfav.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/corfav.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corfav.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corfdrag.fbi [unitinfo] buildcostenergy: 630 -> (absent)	by no-resource-system
+field units/corfdrag.fbi [unitinfo] buildcostmetal: 18 -> (absent)	by no-resource-system
+field units/corfdrag.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/corfdrag.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corfdrag.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corfdrag.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corfhlt.fbi [unitinfo] buildcostenergy: 5812 -> (absent)	by no-resource-system
+field units/corfhlt.fbi [unitinfo] buildcostmetal: 558 -> (absent)	by no-resource-system
+field units/corfhlt.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corfhlt.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/corfhlt.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/corfhlt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corfhlt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corfink.fbi [unitinfo] buildcostenergy: 1369 -> (absent)	by no-resource-system
+field units/corfink.fbi [unitinfo] buildcostmetal: 36 -> (absent)	by no-resource-system
+field units/corfink.fbi [unitinfo] energymake: 0.2 -> 1000	by no-resource-system
+field units/corfink.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corfink.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/corfink.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corfink.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corflak.fbi [unitinfo] buildcostenergy: 18995 -> (absent)	by no-resource-system
+field units/corflak.fbi [unitinfo] buildcostmetal: 1092 -> (absent)	by no-resource-system
+field units/corflak.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corflak.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corflak.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corflak.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corfmd.fbi [unitinfo] buildcostenergy: 92321 -> (absent)	by no-resource-system
+field units/corfmd.fbi [unitinfo] buildcostmetal: 1508 -> (absent)	by no-resource-system
+field units/corfmd.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corfmd.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corfmd.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corfmd.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corfort.fbi [unitinfo] buildcostenergy: 612 -> (absent)	by no-resource-system
+field units/corfort.fbi [unitinfo] buildcostmetal: 23 -> (absent)	by no-resource-system
+field units/corfort.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/corfort.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corfort.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corfort.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corfrt.fbi [unitinfo] buildcostenergy: 1054 -> (absent)	by no-resource-system
+field units/corfrt.fbi [unitinfo] buildcostmetal: 72 -> (absent)	by no-resource-system
+field units/corfrt.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corfrt.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corfrt.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/corfrt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corfrt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corgant.fbi [unitinfo] buildcostenergy: 9574 -> (absent)	by no-resource-system
+field units/corgant.fbi [unitinfo] buildcostmetal: 6587 -> (absent)	by no-resource-system
+field units/corgant.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corgant.fbi [unitinfo] energystorage: 1400 -> 1000	by no-resource-system
+field units/corgant.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corgant.fbi [unitinfo] metalstorage: 800 -> 20	by no-resource-system
+field units/corgate.fbi [unitinfo] buildcostenergy: 1982431 -> (absent)	by no-resource-system
+field units/corgate.fbi [unitinfo] buildcostmetal: 197485 -> (absent)	by no-resource-system
+field units/corgate.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corgate.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corgate.fbi [unitinfo] energyuse: 3000 -> (absent)	by no-resource-system
+field units/corgate.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corgate.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corgator.fbi [unitinfo] buildcostenergy: 887 -> (absent)	by no-resource-system
+field units/corgator.fbi [unitinfo] buildcostmetal: 110 -> (absent)	by no-resource-system
+field units/corgator.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/corgator.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corgator.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/corgator.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corgator.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corgol.fbi [unitinfo] buildcostenergy: 3906 -> (absent)	by no-resource-system
+field units/corgol.fbi [unitinfo] buildcostmetal: 697 -> (absent)	by no-resource-system
+field units/corgol.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/corgol.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corgol.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/corgol.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corgol.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corhlt.fbi [unitinfo] buildcostenergy: 5443 -> (absent)	by no-resource-system
+field units/corhlt.fbi [unitinfo] buildcostmetal: 589 -> (absent)	by no-resource-system
+field units/corhlt.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corhlt.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/corhlt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corhlt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corhp.fbi [unitinfo] buildcostenergy: 5421 -> (absent)	by no-resource-system
+field units/corhp.fbi [unitinfo] buildcostmetal: 1793 -> (absent)	by no-resource-system
+field units/corhp.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corhp.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/corhp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corhp.fbi [unitinfo] metalstorage: 200 -> 20	by no-resource-system
+field units/corhrk.fbi [unitinfo] buildcostenergy: 2107 -> (absent)	by no-resource-system
+field units/corhrk.fbi [unitinfo] buildcostmetal: 388 -> (absent)	by no-resource-system
+field units/corhrk.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/corhrk.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corhrk.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/corhrk.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corhrk.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corhunt.fbi [unitinfo] buildcostenergy: 7421 -> (absent)	by no-resource-system
+field units/corhunt.fbi [unitinfo] buildcostmetal: 142 -> (absent)	by no-resource-system
+field units/corhunt.fbi [unitinfo] energymake: 15 -> 1000	by no-resource-system
+field units/corhunt.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corhunt.fbi [unitinfo] energyuse: 15 -> (absent)	by no-resource-system
+field units/corhunt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corhunt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corhurc.fbi [unitinfo] buildcostenergy: 8050 -> (absent)	by no-resource-system
+field units/corhurc.fbi [unitinfo] buildcostmetal: 220 -> (absent)	by no-resource-system
+field units/corhurc.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/corhurc.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corhurc.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/corhurc.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corhurc.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corint.fbi [unitinfo] buildcostenergy: 62520 -> (absent)	by no-resource-system
+field units/corint.fbi [unitinfo] buildcostmetal: 4328 -> (absent)	by no-resource-system
+field units/corint.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corint.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corint.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corint.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corkrog.fbi [unitinfo] buildcostenergy: 116664 -> (absent)	by no-resource-system
+field units/corkrog.fbi [unitinfo] buildcostmetal: 29489 -> (absent)	by no-resource-system
+field units/corkrog.fbi [unitinfo] energymake: 1.1 -> 1000	by no-resource-system
+field units/corkrog.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corkrog.fbi [unitinfo] energyuse: 1.1 -> (absent)	by no-resource-system
+field units/corkrog.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corkrog.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corlab.fbi [unitinfo] buildcostenergy: 1250 -> (absent)	by no-resource-system
+field units/corlab.fbi [unitinfo] buildcostmetal: 680 -> (absent)	by no-resource-system
+field units/corlab.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corlab.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corlab.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corlab.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/corlevlr.fbi [unitinfo] buildcostenergy: 1887 -> (absent)	by no-resource-system
+field units/corlevlr.fbi [unitinfo] buildcostmetal: 292 -> (absent)	by no-resource-system
+field units/corlevlr.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/corlevlr.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corlevlr.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/corlevlr.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corlevlr.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corllt.fbi [unitinfo] buildcostenergy: 2608 -> (absent)	by no-resource-system
+field units/corllt.fbi [unitinfo] buildcostmetal: 268 -> (absent)	by no-resource-system
+field units/corllt.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corllt.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corllt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corllt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormabm.fbi [unitinfo] buildcostenergy: 92321 -> (absent)	by no-resource-system
+field units/cormabm.fbi [unitinfo] buildcostmetal: 1508 -> (absent)	by no-resource-system
+field units/cormabm.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cormabm.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormabm.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormabm.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormart.fbi [unitinfo] buildcostenergy: 1535 -> (absent)	by no-resource-system
+field units/cormart.fbi [unitinfo] buildcostmetal: 251 -> (absent)	by no-resource-system
+field units/cormart.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/cormart.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormart.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/cormart.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormart.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormh.fbi [unitinfo] buildcostenergy: 3352 -> (absent)	by no-resource-system
+field units/cormh.fbi [unitinfo] buildcostmetal: 318 -> (absent)	by no-resource-system
+field units/cormh.fbi [unitinfo] energymake: 2.6 -> 1000	by no-resource-system
+field units/cormh.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormh.fbi [unitinfo] energyuse: 2.6 -> (absent)	by no-resource-system
+field units/cormh.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormh.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormine1.fbi [unitinfo] buildcostenergy: 532 -> (absent)	by no-resource-system
+field units/cormine1.fbi [unitinfo] buildcostmetal: 20 -> (absent)	by no-resource-system
+field units/cormine1.fbi [unitinfo] cloakcost: 5 -> (absent)	by no-resource-system
+field units/cormine1.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cormine1.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormine1.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormine1.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormine1.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/cormine1.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/cormine2.fbi [unitinfo] buildcostenergy: 1156 -> (absent)	by no-resource-system
+field units/cormine2.fbi [unitinfo] buildcostmetal: 48 -> (absent)	by no-resource-system
+field units/cormine2.fbi [unitinfo] cloakcost: 11 -> (absent)	by no-resource-system
+field units/cormine2.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cormine2.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormine2.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormine2.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormine2.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/cormine2.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/cormine3.fbi [unitinfo] buildcostenergy: 1704 -> (absent)	by no-resource-system
+field units/cormine3.fbi [unitinfo] buildcostmetal: 73 -> (absent)	by no-resource-system
+field units/cormine3.fbi [unitinfo] cloakcost: 15 -> (absent)	by no-resource-system
+field units/cormine3.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cormine3.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormine3.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormine3.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormine3.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/cormine3.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/cormine4.fbi [unitinfo] buildcostenergy: 2342 -> (absent)	by no-resource-system
+field units/cormine4.fbi [unitinfo] buildcostmetal: 104 -> (absent)	by no-resource-system
+field units/cormine4.fbi [unitinfo] cloakcost: 21 -> (absent)	by no-resource-system
+field units/cormine4.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cormine4.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormine4.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormine4.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormine4.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/cormine4.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/cormine5.fbi [unitinfo] buildcostenergy: 7607 -> (absent)	by no-resource-system
+field units/cormine5.fbi [unitinfo] buildcostmetal: 264 -> (absent)	by no-resource-system
+field units/cormine5.fbi [unitinfo] cloakcost: 70 -> (absent)	by no-resource-system
+field units/cormine5.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cormine5.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormine5.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormine5.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormine5.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/cormine5.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/cormine6.fbi [unitinfo] buildcostenergy: 26172 -> (absent)	by no-resource-system
+field units/cormine6.fbi [unitinfo] buildcostmetal: 595 -> (absent)	by no-resource-system
+field units/cormine6.fbi [unitinfo] cloakcost: 123 -> (absent)	by no-resource-system
+field units/cormine6.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cormine6.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormine6.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormine6.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormine6.fbi [unitinfo] mincloakdistance: 10 -> (absent)	by no-resource-system
+field units/cormine6.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/cormist.fbi [unitinfo] buildcostenergy: 947 -> (absent)	by no-resource-system
+field units/cormist.fbi [unitinfo] buildcostmetal: 116 -> (absent)	by no-resource-system
+field units/cormist.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/cormist.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormist.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/cormist.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormist.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormlv.fbi [unitinfo] buildcostenergy: 1117 -> (absent)	by no-resource-system
+field units/cormlv.fbi [unitinfo] buildcostmetal: 187 -> (absent)	by no-resource-system
+field units/cormlv.fbi [unitinfo] energymake: 1 -> 1000	by no-resource-system
+field units/cormlv.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormlv.fbi [unitinfo] energyuse: 1 -> (absent)	by no-resource-system
+field units/cormlv.fbi [unitinfo] metalmake: 0 -> 20	by no-resource-system
+field units/cormlv.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormort.fbi [unitinfo] buildcostenergy: 2865 -> (absent)	by no-resource-system
+field units/cormort.fbi [unitinfo] buildcostmetal: 321 -> (absent)	by no-resource-system
+field units/cormort.fbi [unitinfo] energymake: 1 -> 1000	by no-resource-system
+field units/cormort.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormort.fbi [unitinfo] energyuse: 1 -> (absent)	by no-resource-system
+field units/cormort.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormort.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cormship.fbi [unitinfo] buildcostenergy: 7628 -> (absent)	by no-resource-system
+field units/cormship.fbi [unitinfo] buildcostmetal: 2283 -> (absent)	by no-resource-system
+field units/cormship.fbi [unitinfo] energymake: 0.9 -> 1000	by no-resource-system
+field units/cormship.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cormship.fbi [unitinfo] energyuse: 0.9 -> (absent)	by no-resource-system
+field units/cormship.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cormship.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cornecro.fbi [unitinfo] buildcostenergy: 10164 -> (absent)	by no-resource-system
+field units/cornecro.fbi [unitinfo] buildcostmetal: 376 -> (absent)	by no-resource-system
+field units/cornecro.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/cornecro.fbi [unitinfo] energystorage: 50 -> 1000	by no-resource-system
+field units/cornecro.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/cornecro.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cornecro.fbi [unitinfo] metalstorage: 50 -> 20	by no-resource-system
+field units/corplas.fbi [unitinfo] buildcostenergy: 1790 -> (absent)	by no-resource-system
+field units/corplas.fbi [unitinfo] buildcostmetal: 321 -> (absent)	by no-resource-system
+field units/corplas.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corplas.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corplas.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corplas.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corplat.fbi [unitinfo] buildcostenergy: 5367 -> (absent)	by no-resource-system
+field units/corplat.fbi [unitinfo] buildcostmetal: 2305 -> (absent)	by no-resource-system
+field units/corplat.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corplat.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/corplat.fbi [unitinfo] metalmake: 1 -> 20	by no-resource-system
+field units/corplat.fbi [unitinfo] metalstorage: 900 -> 20	by no-resource-system
+field units/corpt.fbi [unitinfo] buildcostenergy: 917 -> (absent)	by no-resource-system
+field units/corpt.fbi [unitinfo] buildcostmetal: 95 -> (absent)	by no-resource-system
+field units/corpt.fbi [unitinfo] energymake: 0.23 -> 1000	by no-resource-system
+field units/corpt.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corpt.fbi [unitinfo] energyuse: 0.23 -> (absent)	by no-resource-system
+field units/corpt.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corpt.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corpun.fbi [unitinfo] buildcostenergy: 7585 -> (absent)	by no-resource-system
+field units/corpun.fbi [unitinfo] buildcostmetal: 1887 -> (absent)	by no-resource-system
+field units/corpun.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corpun.fbi [unitinfo] energystorage: 200 -> 1000	by no-resource-system
+field units/corpun.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corpun.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corpyro.fbi [unitinfo] buildcostenergy: 2200 -> (absent)	by no-resource-system
+field units/corpyro.fbi [unitinfo] buildcostmetal: 260 -> (absent)	by no-resource-system
+field units/corpyro.fbi [unitinfo] energymake: 1.1 -> 1000	by no-resource-system
+field units/corpyro.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corpyro.fbi [unitinfo] energyuse: 1.1 -> (absent)	by no-resource-system
+field units/corpyro.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corpyro.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corrad.fbi [unitinfo] buildcostenergy: 800 -> (absent)	by no-resource-system
+field units/corrad.fbi [unitinfo] buildcostmetal: 50 -> (absent)	by no-resource-system
+field units/corrad.fbi [unitinfo] energymake: 6 -> 1000	by no-resource-system
+field units/corrad.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corrad.fbi [unitinfo] energyuse: 6 -> (absent)	by no-resource-system
+field units/corrad.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corrad.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corraid.fbi [unitinfo] buildcostenergy: 1241 -> (absent)	by no-resource-system
+field units/corraid.fbi [unitinfo] buildcostmetal: 169 -> (absent)	by no-resource-system
+field units/corraid.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/corraid.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corraid.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/corraid.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corraid.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/correap.fbi [unitinfo] buildcostenergy: 3048 -> (absent)	by no-resource-system
+field units/correap.fbi [unitinfo] buildcostmetal: 473 -> (absent)	by no-resource-system
+field units/correap.fbi [unitinfo] energymake: 0.8 -> 1000	by no-resource-system
+field units/correap.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/correap.fbi [unitinfo] energyuse: 0.8 -> (absent)	by no-resource-system
+field units/correap.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/correap.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corrl.fbi [unitinfo] buildcostenergy: 805 -> (absent)	by no-resource-system
+field units/corrl.fbi [unitinfo] buildcostmetal: 76 -> (absent)	by no-resource-system
+field units/corrl.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corrl.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corrl.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corrl.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corroach.fbi [unitinfo] buildcostenergy: 5471 -> (absent)	by no-resource-system
+field units/corroach.fbi [unitinfo] buildcostmetal: 65 -> (absent)	by no-resource-system
+field units/corroach.fbi [unitinfo] energymake: 0.1 -> 1000	by no-resource-system
+field units/corroach.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corroach.fbi [unitinfo] energyuse: 0.1 -> (absent)	by no-resource-system
+field units/corroach.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corroach.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corroy.fbi [unitinfo] buildcostenergy: 4505 -> (absent)	by no-resource-system
+field units/corroy.fbi [unitinfo] buildcostmetal: 887 -> (absent)	by no-resource-system
+field units/corroy.fbi [unitinfo] energymake: 1.9 -> 1000	by no-resource-system
+field units/corroy.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corroy.fbi [unitinfo] energyuse: 1.9 -> (absent)	by no-resource-system
+field units/corroy.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corroy.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corscorp.fbi [unitinfo] buildcostenergy: 15660 -> (absent)	by no-resource-system
+field units/corscorp.fbi [unitinfo] buildcostmetal: 0 -> (absent)	by no-resource-system
+field units/corscorp.fbi [unitinfo] energymake: 0.7 -> 1000	by no-resource-system
+field units/corscorp.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corscorp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corscorp.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corseal.fbi [unitinfo] buildcostenergy: 2310 -> (absent)	by no-resource-system
+field units/corseal.fbi [unitinfo] buildcostmetal: 295 -> (absent)	by no-resource-system
+field units/corseal.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/corseal.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corseal.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/corseal.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corseal.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corseap.fbi [unitinfo] buildcostenergy: 9785 -> (absent)	by no-resource-system
+field units/corseap.fbi [unitinfo] buildcostmetal: 545 -> (absent)	by no-resource-system
+field units/corseap.fbi [unitinfo] energymake: 0.7 -> 1000	by no-resource-system
+field units/corseap.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corseap.fbi [unitinfo] energyuse: 0.7 -> (absent)	by no-resource-system
+field units/corseap.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corseap.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsent.fbi [unitinfo] buildcostenergy: 12487 -> (absent)	by no-resource-system
+field units/corsent.fbi [unitinfo] buildcostmetal: 886 -> (absent)	by no-resource-system
+field units/corsent.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/corsent.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corsent.fbi [unitinfo] energyuse: 0.8 -> (absent)	by no-resource-system
+field units/corsent.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsent.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsfig.fbi [unitinfo] buildcostenergy: 6524 -> (absent)	by no-resource-system
+field units/corsfig.fbi [unitinfo] buildcostmetal: 182 -> (absent)	by no-resource-system
+field units/corsfig.fbi [unitinfo] energymake: 0.7 -> 1000	by no-resource-system
+field units/corsfig.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corsfig.fbi [unitinfo] energyuse: 0.7 -> (absent)	by no-resource-system
+field units/corsfig.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsfig.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsh.fbi [unitinfo] buildcostenergy: 1252 -> (absent)	by no-resource-system
+field units/corsh.fbi [unitinfo] buildcostmetal: 72 -> (absent)	by no-resource-system
+field units/corsh.fbi [unitinfo] energymake: 2.6 -> 1000	by no-resource-system
+field units/corsh.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corsh.fbi [unitinfo] energyuse: 2.6 -> (absent)	by no-resource-system
+field units/corsh.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsh.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corshad.fbi [unitinfo] buildcostenergy: 5691 -> (absent)	by no-resource-system
+field units/corshad.fbi [unitinfo] buildcostmetal: 131 -> (absent)	by no-resource-system
+field units/corshad.fbi [unitinfo] energymake: 0.9 -> 1000	by no-resource-system
+field units/corshad.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corshad.fbi [unitinfo] energyuse: 0.9 -> (absent)	by no-resource-system
+field units/corshad.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corshad.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corshark.fbi [unitinfo] buildcostenergy: 5245 -> (absent)	by no-resource-system
+field units/corshark.fbi [unitinfo] buildcostmetal: 1356 -> (absent)	by no-resource-system
+field units/corshark.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/corshark.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corshark.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/corshark.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corshark.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsilo.fbi [unitinfo] buildcostenergy: 48768 -> (absent)	by no-resource-system
+field units/corsilo.fbi [unitinfo] buildcostmetal: 975 -> (absent)	by no-resource-system
+field units/corsilo.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corsilo.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corsilo.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsilo.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsjam.fbi [unitinfo] buildcostenergy: 2254 -> (absent)	by no-resource-system
+field units/corsjam.fbi [unitinfo] buildcostmetal: 135 -> (absent)	by no-resource-system
+field units/corsjam.fbi [unitinfo] energymake: 20 -> 1000	by no-resource-system
+field units/corsjam.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corsjam.fbi [unitinfo] energyuse: 20 -> (absent)	by no-resource-system
+field units/corsjam.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsjam.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsnap.fbi [unitinfo] buildcostenergy: 3069 -> (absent)	by no-resource-system
+field units/corsnap.fbi [unitinfo] buildcostmetal: 280 -> (absent)	by no-resource-system
+field units/corsnap.fbi [unitinfo] energymake: 2.1 -> 1000	by no-resource-system
+field units/corsnap.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corsnap.fbi [unitinfo] energyuse: 2.1 -> (absent)	by no-resource-system
+field units/corsnap.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsnap.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsonar.fbi [unitinfo] buildcostenergy: 399 -> (absent)	by no-resource-system
+field units/corsonar.fbi [unitinfo] buildcostmetal: 20 -> (absent)	by no-resource-system
+field units/corsonar.fbi [unitinfo] energymake: 8 -> 1000	by no-resource-system
+field units/corsonar.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corsonar.fbi [unitinfo] energyuse: 8 -> (absent)	by no-resource-system
+field units/corsonar.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsonar.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corspec.fbi [unitinfo] buildcostenergy: 1453 -> (absent)	by no-resource-system
+field units/corspec.fbi [unitinfo] buildcostmetal: 70 -> (absent)	by no-resource-system
+field units/corspec.fbi [unitinfo] energymake: 10 -> 1000	by no-resource-system
+field units/corspec.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corspec.fbi [unitinfo] energyuse: 10 -> (absent)	by no-resource-system
+field units/corspec.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corspec.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corspy.fbi [unitinfo] buildcostenergy: 13452 -> (absent)	by no-resource-system
+field units/corspy.fbi [unitinfo] buildcostmetal: 156 -> (absent)	by no-resource-system
+field units/corspy.fbi [unitinfo] cloakcost: 350 -> (absent)	by no-resource-system
+field units/corspy.fbi [unitinfo] cloakcostmoving: 900 -> (absent)	by no-resource-system
+field units/corspy.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/corspy.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corspy.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/corspy.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corspy.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corspy.fbi [unitinfo] mincloakdistance: 90 -> (absent)	by no-resource-system
+field units/corspy.fbi [unitinfo] stealth: (absent) -> 1	by no-resource-system
+field units/corss.fbi [unitinfo] buildcostenergy: 4385 -> (absent)	by no-resource-system
+field units/corss.fbi [unitinfo] buildcostmetal: 0 -> (absent)	by no-resource-system
+field units/corss.fbi [unitinfo] energymake: 0 -> 1000	by no-resource-system
+field units/corss.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corss.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corss.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corssub.fbi [unitinfo] buildcostenergy: 19940 -> (absent)	by no-resource-system
+field units/corssub.fbi [unitinfo] buildcostmetal: 3850 -> (absent)	by no-resource-system
+field units/corssub.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/corssub.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corssub.fbi [unitinfo] energyuse: 15 -> (absent)	by no-resource-system
+field units/corssub.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corssub.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corstorm.fbi [unitinfo] buildcostenergy: 985 -> (absent)	by no-resource-system
+field units/corstorm.fbi [unitinfo] buildcostmetal: 118 -> (absent)	by no-resource-system
+field units/corstorm.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/corstorm.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corstorm.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/corstorm.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corstorm.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsub.fbi [unitinfo] buildcostenergy: 3902 -> (absent)	by no-resource-system
+field units/corsub.fbi [unitinfo] buildcostmetal: 1199 -> (absent)	by no-resource-system
+field units/corsub.fbi [unitinfo] energymake: 0.4 -> 1000	by no-resource-system
+field units/corsub.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corsub.fbi [unitinfo] energyuse: 0.4 -> (absent)	by no-resource-system
+field units/corsub.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsub.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsumo.fbi [unitinfo] buildcostenergy: 5987 -> (absent)	by no-resource-system
+field units/corsumo.fbi [unitinfo] buildcostmetal: 844 -> (absent)	by no-resource-system
+field units/corsumo.fbi [unitinfo] energymake: 2.8 -> 1000	by no-resource-system
+field units/corsumo.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corsumo.fbi [unitinfo] energyuse: 2.8 -> (absent)	by no-resource-system
+field units/corsumo.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corsumo.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corsy.fbi [unitinfo] buildcostenergy: 750 -> (absent)	by no-resource-system
+field units/corsy.fbi [unitinfo] buildcostmetal: 600 -> (absent)	by no-resource-system
+field units/corsy.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corsy.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corsy.fbi [unitinfo] metalmake: 0.5 -> 20	by no-resource-system
+field units/corsy.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/cortarg.fbi [unitinfo] buildcostenergy: 141148 -> (absent)	by no-resource-system
+field units/cortarg.fbi [unitinfo] buildcostmetal: 14982 -> (absent)	by no-resource-system
+field units/cortarg.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cortarg.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cortarg.fbi [unitinfo] energyuse: 1300 -> (absent)	by no-resource-system
+field units/cortarg.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cortarg.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corthovr.fbi [unitinfo] buildcostenergy: 7541 -> (absent)	by no-resource-system
+field units/corthovr.fbi [unitinfo] buildcostmetal: 650 -> (absent)	by no-resource-system
+field units/corthovr.fbi [unitinfo] energymake: 2.3 -> 1000	by no-resource-system
+field units/corthovr.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corthovr.fbi [unitinfo] energyuse: 2.3 -> (absent)	by no-resource-system
+field units/corthovr.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corthovr.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corthud.fbi [unitinfo] buildcostenergy: 1161 -> (absent)	by no-resource-system
+field units/corthud.fbi [unitinfo] buildcostmetal: 147 -> (absent)	by no-resource-system
+field units/corthud.fbi [unitinfo] energymake: 0.6 -> 1000	by no-resource-system
+field units/corthud.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corthud.fbi [unitinfo] energyuse: 0.6 -> (absent)	by no-resource-system
+field units/corthud.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corthud.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cortide.fbi [unitinfo] buildcostenergy: 752 -> (absent)	by no-resource-system
+field units/cortide.fbi [unitinfo] buildcostmetal: 81 -> (absent)	by no-resource-system
+field units/cortide.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cortide.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cortide.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cortide.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cortitan.fbi [unitinfo] buildcostenergy: 6588 -> (absent)	by no-resource-system
+field units/cortitan.fbi [unitinfo] buildcostmetal: 364 -> (absent)	by no-resource-system
+field units/cortitan.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/cortitan.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cortitan.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/cortitan.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cortitan.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cortl.fbi [unitinfo] buildcostenergy: 3058 -> (absent)	by no-resource-system
+field units/cortl.fbi [unitinfo] buildcostmetal: 831 -> (absent)	by no-resource-system
+field units/cortl.fbi [unitinfo] energymake: 0.2 -> 1000	by no-resource-system
+field units/cortl.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cortl.fbi [unitinfo] energyuse: 0.2 -> (absent)	by no-resource-system
+field units/cortl.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cortl.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cortoast.fbi [unitinfo] buildcostenergy: 12687 -> (absent)	by no-resource-system
+field units/cortoast.fbi [unitinfo] buildcostmetal: 2146 -> (absent)	by no-resource-system
+field units/cortoast.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cortoast.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cortoast.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cortoast.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cortron.fbi [unitinfo] buildcostenergy: 52134 -> (absent)	by no-resource-system
+field units/cortron.fbi [unitinfo] buildcostmetal: 1708 -> (absent)	by no-resource-system
+field units/cortron.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/cortron.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cortron.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cortron.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cortruck.fbi [unitinfo] buildcostenergy: 875 -> (absent)	by no-resource-system
+field units/cortruck.fbi [unitinfo] buildcostmetal: 218 -> (absent)	by no-resource-system
+field units/cortruck.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/cortruck.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cortruck.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/cortruck.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cortruck.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/cortship.fbi [unitinfo] buildcostenergy: 4786 -> (absent)	by no-resource-system
+field units/cortship.fbi [unitinfo] buildcostmetal: 887 -> (absent)	by no-resource-system
+field units/cortship.fbi [unitinfo] energymake: 0.3 -> 1000	by no-resource-system
+field units/cortship.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/cortship.fbi [unitinfo] energyuse: 0.3 -> (absent)	by no-resource-system
+field units/cortship.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/cortship.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corvalk.fbi [unitinfo] buildcostenergy: 2695 -> (absent)	by no-resource-system
+field units/corvalk.fbi [unitinfo] buildcostmetal: 115 -> (absent)	by no-resource-system
+field units/corvalk.fbi [unitinfo] energymake: 0.7 -> 1000	by no-resource-system
+field units/corvalk.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corvalk.fbi [unitinfo] energyuse: 0.7 -> (absent)	by no-resource-system
+field units/corvalk.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corvalk.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corvamp.fbi [unitinfo] buildcostenergy: 6973 -> (absent)	by no-resource-system
+field units/corvamp.fbi [unitinfo] buildcostmetal: 257 -> (absent)	by no-resource-system
+field units/corvamp.fbi [unitinfo] energymake: 15 -> 1000	by no-resource-system
+field units/corvamp.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corvamp.fbi [unitinfo] energyuse: 15 -> (absent)	by no-resource-system
+field units/corvamp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corvamp.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corveng.fbi [unitinfo] buildcostenergy: 3181 -> (absent)	by no-resource-system
+field units/corveng.fbi [unitinfo] buildcostmetal: 101 -> (absent)	by no-resource-system
+field units/corveng.fbi [unitinfo] energymake: 0.08 -> 1000	by no-resource-system
+field units/corveng.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corveng.fbi [unitinfo] energyuse: 0.8 -> (absent)	by no-resource-system
+field units/corveng.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corveng.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corvipe.fbi [unitinfo] buildcostenergy: 6687 -> (absent)	by no-resource-system
+field units/corvipe.fbi [unitinfo] buildcostmetal: 642 -> (absent)	by no-resource-system
+field units/corvipe.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corvipe.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corvipe.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corvipe.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corvoyr.fbi [unitinfo] buildcostenergy: 1283 -> (absent)	by no-resource-system
+field units/corvoyr.fbi [unitinfo] buildcostmetal: 93 -> (absent)	by no-resource-system
+field units/corvoyr.fbi [unitinfo] energymake: 16 -> 1000	by no-resource-system
+field units/corvoyr.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corvoyr.fbi [unitinfo] energyuse: 16 -> (absent)	by no-resource-system
+field units/corvoyr.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corvoyr.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corvp.fbi [unitinfo] buildcostenergy: 1100 -> (absent)	by no-resource-system
+field units/corvp.fbi [unitinfo] buildcostmetal: 600 -> (absent)	by no-resource-system
+field units/corvp.fbi [unitinfo] energymake: (absent) -> 1000	by no-resource-system
+field units/corvp.fbi [unitinfo] energystorage: 100 -> 1000	by no-resource-system
+field units/corvp.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corvp.fbi [unitinfo] metalstorage: 100 -> 20	by no-resource-system
+field units/corvrad.fbi [unitinfo] buildcostenergy: 1209 -> (absent)	by no-resource-system
+field units/corvrad.fbi [unitinfo] buildcostmetal: 86 -> (absent)	by no-resource-system
+field units/corvrad.fbi [unitinfo] energymake: 11 -> 1000	by no-resource-system
+field units/corvrad.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corvrad.fbi [unitinfo] energyuse: 11 -> (absent)	by no-resource-system
+field units/corvrad.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corvrad.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+field units/corvroc.fbi [unitinfo] buildcostenergy: 2470 -> (absent)	by no-resource-system
+field units/corvroc.fbi [unitinfo] buildcostmetal: 427 -> (absent)	by no-resource-system
+field units/corvroc.fbi [unitinfo] energymake: 0.5 -> 1000	by no-resource-system
+field units/corvroc.fbi [unitinfo] energystorage: 0 -> 1000	by no-resource-system
+field units/corvroc.fbi [unitinfo] energyuse: 0.5 -> (absent)	by no-resource-system
+field units/corvroc.fbi [unitinfo] metalmake: (absent) -> 20	by no-resource-system
+field units/corvroc.fbi [unitinfo] metalstorage: 0 -> 20	by no-resource-system
+file hidden download/armckfus.tdf	by no-resource-system
+file hidden download/armfmkr.tdf	by no-resource-system
+file hidden download/armmmkr.tdf	by no-resource-system
+file hidden download/armuwes.tdf	by no-resource-system
+file hidden download/armuwmex.tdf	by no-resource-system
+file hidden download/armuwms.tdf	by no-resource-system
+file hidden download/corckfus.tdf	by no-resource-system
+file hidden download/corfmkr.tdf	by no-resource-system
+file hidden download/cormmkr.tdf	by no-resource-system
+file hidden download/coruwes.tdf	by no-resource-system
+file hidden download/coruwmex.tdf	by no-resource-system
+file hidden download/coruwms.tdf	by no-resource-system
+file hidden units/armckfus.fbi	by no-resource-system
+file hidden units/armestor.fbi	by no-resource-system
+file hidden units/armfmkr.fbi	by no-resource-system
+file hidden units/armfus.fbi	by no-resource-system
+file hidden units/armgeo.fbi	by no-resource-system
+file hidden units/armmakr.fbi	by no-resource-system
+file hidden units/armmex.fbi	by no-resource-system
+file hidden units/armmmkr.fbi	by no-resource-system
+file hidden units/armmoho.fbi	by no-resource-system
+file hidden units/armmstor.fbi	by no-resource-system
+file hidden units/armsolar.fbi	by no-resource-system
+file hidden units/armuwes.fbi	by no-resource-system
+file hidden units/armuwfus.fbi	by no-resource-system
+file hidden units/armuwmex.fbi	by no-resource-system
+file hidden units/armuwms.fbi	by no-resource-system
+file hidden units/armwin.fbi	by no-resource-system
+file hidden units/corckfus.fbi	by no-resource-system
+file hidden units/corestor.fbi	by no-resource-system
+file hidden units/corfmkr.fbi	by no-resource-system
+file hidden units/corfus.fbi	by no-resource-system
+file hidden units/corgeo.fbi	by no-resource-system
+file hidden units/cormakr.fbi	by no-resource-system
+file hidden units/cormex.fbi	by no-resource-system
+file hidden units/cormmkr.fbi	by no-resource-system
+file hidden units/cormoho.fbi	by no-resource-system
+file hidden units/cormstor.fbi	by no-resource-system
+file hidden units/corsolar.fbi	by no-resource-system
+file hidden units/coruwes.fbi	by no-resource-system
+file hidden units/coruwfus.fbi	by no-resource-system
+file hidden units/coruwmex.fbi	by no-resource-system
+file hidden units/coruwms.fbi	by no-resource-system
+file hidden units/corwin.fbi	by no-resource-system
+menu removed ARMACA 4 0 ARMCKFUS
+menu removed ARMACA 4 1 ARMMMKR
+menu removed ARMACK 4 0 ARMCKFUS
+menu removed ARMACK 4 1 ARMMMKR
+menu removed ARMACV 4 0 ARMCKFUS
+menu removed ARMACV 4 1 ARMMMKR
+menu removed ARMCS 3 1 ARMUWES	by no-resource-system
+menu removed ARMCS 3 2 ARMFMKR	by no-resource-system
+menu removed ARMCS 3 3 ARMUWMS	by no-resource-system
+menu removed ARMCS 3 5 ARMUWMEX	by no-resource-system
+menu removed CORACA 4 0 CORCKFUS
+menu removed CORACA 4 1 CORMMKR
+menu removed CORACK 4 0 CORCKFUS
+menu removed CORACK 4 1 CORMMKR
+menu removed CORACV 4 0 CORCKFUS
+menu removed CORACV 4 1 CORMMKR
+menu removed CORCS 3 1 CORUWES	by no-resource-system
+menu removed CORCS 3 2 CORFMKR	by no-resource-system
+menu removed CORCS 3 3 CORUWMS	by no-resource-system
+menu removed CORCS 3 5 CORUWMEX	by no-resource-system
+unit dropped ARMCKFUS hidden	by no-resource-system
+unit dropped ARMESTOR hidden	by no-resource-system
+unit dropped ARMFMKR hidden	by no-resource-system
+unit dropped ARMFUS hidden	by no-resource-system
+unit dropped ARMGEO hidden	by no-resource-system
+unit dropped ARMMAKR hidden	by no-resource-system
+unit dropped ARMMEX hidden	by no-resource-system
+unit dropped ARMMMKR hidden	by no-resource-system
+unit dropped ARMMOHO hidden	by no-resource-system
+unit dropped ARMMSTOR hidden	by no-resource-system
+unit dropped ARMSOLAR hidden	by no-resource-system
+unit dropped ARMUWES hidden	by no-resource-system
+unit dropped ARMUWFUS hidden	by no-resource-system
+unit dropped ARMUWMEX hidden	by no-resource-system
+unit dropped ARMUWMS hidden	by no-resource-system
+unit dropped ARMWIN hidden	by no-resource-system
+unit dropped CORCKFUS hidden	by no-resource-system
+unit dropped CORESTOR hidden	by no-resource-system
+unit dropped CORFMKR hidden	by no-resource-system
+unit dropped CORFUS hidden	by no-resource-system
+unit dropped CORGEO hidden	by no-resource-system
+unit dropped CORMAKR hidden	by no-resource-system
+unit dropped CORMEX hidden	by no-resource-system
+unit dropped CORMMKR hidden	by no-resource-system
+unit dropped CORMOHO hidden	by no-resource-system
+unit dropped CORMSTOR hidden	by no-resource-system
+unit dropped CORSOLAR hidden	by no-resource-system
+unit dropped CORUWES hidden	by no-resource-system
+unit dropped CORUWFUS hidden	by no-resource-system
+unit dropped CORUWMEX hidden	by no-resource-system
+unit dropped CORUWMS hidden	by no-resource-system
+unit dropped CORWIN hidden	by no-resource-system
