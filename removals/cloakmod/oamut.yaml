@@ -4,7 +4,7 @@ name: "CloakMod"
 version: "1"
 author:
   name: "me22"
-description: "Every unit is built cloaked. Cloak energy follows the metal cost, and a mobile unit's cloak distance follows its depth.\n\nme22's CloakMod v1.0, CloakMod v1.0: +NowISee and CloakMod v1.0: Expen$ive are this package. Cloak distance 5 is NowISee. Cloak cost 2 is Expen$ive: the rules multiply by 2, and the text said 5. A unit with no metal cost counts as 0, so the cheapest band includes the metal makers that ship without a metal cost. The original's energy bands and width bands are left out, because its later blocks overwrote them for every unit.\n\nThis package is one function for those bands, with the two choices."
+description: "Every unit is built cloaked. Cloak energy follows the metal cost, and a mobile unit's cloak distance follows its depth.\n\nme22's CloakMod v1.0, CloakMod v1.0: +NowISee and CloakMod v1.0: Expen$ive are this package. Cloak distance 5 is NowISee. Cloak cost 2 is Expen$ive: the rules multiply by 2, and the text said 5. A unit with no metal cost counts as 0, so the cheapest band includes the metal makers that ship without a metal cost. The original's energy bands and width bands are left out. TA: Mutation averaged the two energy values, it did not overwrite them, so ARMCOM got a cloak cost of 4.5 and a moving cost of 9. Open Annihilation runs rules in sequence (Q63), so the later block replaces the earlier one and this package gives 5 and 10.\n\nThis package is one function for those bands, with the two choices."
 tags: ["gameplay", "statistics"]
 works-with: ["*"]
 requires:

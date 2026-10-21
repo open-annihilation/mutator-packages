@@ -26,7 +26,11 @@ function mutate(ctx)
       end
 
       for _, unit in pairs(units) do
-        visit(unit.corpse)
+        -- A unit that is itself a feature (dragon's teeth, walls) leaves that
+        -- feature, not a wreck, so it keeps blocking.
+        if unit.isfeature ~= true and unit.isfeature ~= 1 then
+          visit(unit.corpse)
+        end
       end
     end,
   }

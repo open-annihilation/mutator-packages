@@ -1,6 +1,8 @@
 -- Metal cost, missing counts as 0: 0 to 99, 100 to 499, 500 to 1999,
 -- 2000 to 9999, and anything else. The energy bands and the width bands
--- are left out. The original's later blocks overwrote them for every unit.
+-- are left out. TA: Mutation averaged the two energy values, it did not
+-- overwrite them. Open Annihilation runs rules in sequence (Q63), so the
+-- later block replaces the earlier one.
 local function band(metal)
   if metal >= 0 and metal <= 99 then
     return 1

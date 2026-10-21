@@ -15,23 +15,24 @@ local function factory(unit)
 end
 
 local function contains(value, needle)
-  return type(value) == "string" and string.find(value, needle, 1, true) ~= nil
+  return type(value) == "string" and string.find(string.upper(value), string.upper(needle), 1, true) ~= nil
 end
 
 -- No property separates the cannons, silos, anti-nukes and decoys, so the
--- original's own tests stay. They match nothing on a mod with other names.
+-- original's own tests stay. They ignore ASCII case. They match nothing on a
+-- mod with other names.
 local function named_class(unit)
   local sound = unit.soundcategory
   if contains(sound, "ARM_BRTHA") or contains(sound, "COR_INT") then
     return true
   end
-  if sound == "NUC" then
+  if type(sound) == "string" and string.upper(sound) == "NUC" then
     return true
   end
   if contains(unit.description, "Missile Defense") then
     return true
   end
-  return unit.name == "Decoy Commander"
+  return type(unit.name) == "string" and string.upper(unit.name) == "DECOY COMMANDER"
 end
 
 function mutate(ctx)
