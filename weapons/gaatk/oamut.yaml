@@ -1,0 +1,18 @@
+oamut: 1
+id: "gaatk"
+name: "GAATK"
+version: "1"
+author:
+  name: "Dominic"
+description: "The A.K., CORAK, fires the heavy laser tower's laser and has 850 hit points.\n\nThis package replaces GAATK by Dominic. The A.K. is named, as the original names it. It conflicts with A.K. Weapon, which sets the same weapon. Only one swap of that weapon can apply."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["ak-weapon"]
+layers: ["units"]
+legacy:
+  - name: "GAATK"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}GAATK.tam", "{}GAATK.sm"]

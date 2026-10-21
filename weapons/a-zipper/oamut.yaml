@@ -1,0 +1,18 @@
+oamut: 1
+id: "a-zipper"
+name: "A Zipper"
+version: "1"
+author:
+  name: "orion"
+description: "The Zipper, ARMFAST, fires the Annihilator and has 5000 hit points.\n\nThis package replaces A Zipper by orion. The original set the weapon and the health in two blocks on that named unit. This package is one rule. Only one swap of that weapon can apply, so it conflicts with EMG Fast and Hot Zipper."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["emg-zipper", "hot-zipper"]
+layers: ["units"]
+legacy:
+  - name: "A Zipper"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}A Zipper.tam", "{}A Zipper.sm"]

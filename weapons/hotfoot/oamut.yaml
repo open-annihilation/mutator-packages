@@ -1,0 +1,17 @@
+oamut: 1
+id: "hotfoot"
+name: "Hotfoot"
+version: "1"
+author:
+  name: "Dominic Ascione"
+description: "The Freaker, CORFAST, fires the Core light laser.\n\nThis package replaces Hotfoot by Dominic Ascione. The Freaker is named, as the original names it."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Hotfoot"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Hotfoot.tam", "{}Hotfoot.sm"]

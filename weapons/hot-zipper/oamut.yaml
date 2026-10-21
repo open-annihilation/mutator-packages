@@ -1,0 +1,18 @@
+oamut: 1
+id: "hot-zipper"
+name: "Hot Zipper"
+version: "1"
+author:
+  name: "MadBlast"
+description: "The Zipper, ARMFAST, fires the flamethrower.\n\nThis package replaces Hot zipper by MadBlast. The Zipper is named, as the original names it. It conflicts with A Zipper and EMG Fast, which set the same weapon. Only one swap of that weapon can apply."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["a-zipper", "emg-zipper"]
+layers: ["units"]
+legacy:
+  - name: "Hot zipper"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Hot zipper.tam", "{}Hot zipper.sm"]

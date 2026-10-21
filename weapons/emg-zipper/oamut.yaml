@@ -1,0 +1,18 @@
+oamut: 1
+id: "emg-zipper"
+name: "EMG Fast"
+version: "1"
+author:
+  name: "Dominic Ascione"
+description: "The Zipper, ARMFAST, fires the EMG.\n\nThis package replaces EMG Fast by Dominic Ascione. The Zipper is named, as the original names it. It conflicts with A Zipper and Hot Zipper, which set the same weapon. Only one swap of that weapon can apply."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["a-zipper", "hot-zipper"]
+layers: ["units"]
+legacy:
+  - name: "EMG Fast"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}EMG Fast.tam", "{}EMG Fast.sm"]

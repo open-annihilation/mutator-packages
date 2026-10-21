@@ -1,0 +1,17 @@
+oamut: 1
+id: "super-zeus"
+name: "Super Zeus"
+version: "1"
+author:
+  name: "Dominic Ascione"
+description: "The Zeus, ARMZEUS, fires the commander's death explosion as a gun.\n\nThis package replaces Super zeus by Dominic Ascione. The Zeus is named, as the original names it, and the explosion is used as a weapon, as the original uses it."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Super zeus"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Super zeus.tam", "{}Super zeus.sm"]

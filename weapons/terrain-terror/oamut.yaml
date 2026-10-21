@@ -1,0 +1,17 @@
+oamut: 1
+id: "terrain-terror"
+name: "Terrain Terror"
+version: "1"
+author:
+  name: "Amorphis"
+description: "The spider, ARMSPID, fires the Scorpion's weapon and has 5000 hit points.\n\nThis package replaces Terrain Terror by Amorphis. The spider is named, as the original names it. The original's tag said it worked with every mod, but the weapon is Core Contingency's ARMSCORP_WEAPON. When that weapon is missing, the package says it does not fit."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Terrain Terror"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Terrain Terror.tam", "{}Terrain Terror.sm"]

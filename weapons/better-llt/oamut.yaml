@@ -1,0 +1,18 @@
+oamut: 1
+id: "better-llt"
+name: "Better L.L.T"
+version: "1"
+author:
+  name: "Amorphis"
+description: "The Arm light laser tower, ARMLLT, fires the Scorpion's weapon.\n\nThis package replaces Better L.L.T by Amorphis. The tower is named, as the original names it. The original's tag said it worked with every mod, but the weapon is Core Contingency's ARMSCORP_WEAPON. When that weapon is missing, the package says it does not fit. It conflicts with Better LLTs, which sets the same weapon."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["big-llt"]
+layers: ["units"]
+legacy:
+  - name: "Better L.L.T"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Better L.L.T.tam", "{}Better L.L.T.sm"]
