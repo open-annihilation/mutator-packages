@@ -1,0 +1,5 @@
+# The original replaced the commanders' no-chase list; the curated version adds WEAPON to it
+left only field units/armcom.fbi [unitinfo] nochasecategory: VTOL -> VTOL WEAPON
+left only field units/corcom.fbi [unitinfo] nochasecategory: VTOL -> VTOL WEAPON
+right only field units/armcom.fbi [unitinfo] nochasecategory: VTOL -> WEAPON
+right only field units/corcom.fbi [unitinfo] nochasecategory: VTOL -> WEAPON

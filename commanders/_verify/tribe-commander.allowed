@@ -1,0 +1,9 @@
+# The original's whole unit file was cut from older data and lost the commander flag and the other fields 3.1c added; the curated version changes only the model
+right only field units/armcom.fbi [unitinfo] commander: *
+right only field units/armcom.fbi [unitinfo] showplayername: *
+right only field units/armcom.fbi [unitinfo] mincloakdistance: *
+right only field units/armcom.fbi [unitinfo] ovradjust: *
+right only field units/armcom.fbi [unitinfo] italiandescription: *
+right only field units/armcom.fbi [unitinfo] italianname: *
+right only field units/armcom.fbi [unitinfo] spanishdescription: *
+right only field units/armcom.fbi [unitinfo] spanishname: *
