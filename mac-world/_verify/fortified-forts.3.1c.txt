@@ -1,0 +1,42 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: fortified-forts 1
+# seed: 0
+field features/all worlds/armfdrag_teeth.tdf [floatingteeth] damage: 3800 -> 30000	by fortified-forts
+field features/all worlds/armfort_fort.tdf [fortification] damage: 1600 -> 30000	by fortified-forts
+field features/all worlds/corfdrag_teeth.tdf [floatingteeth_core] damage: 3500 -> 30000	by fortified-forts
+field features/all worlds/corfort_fort.tdf [fortification_core] damage: 1500 -> 30000	by fortified-forts
+field features/all worlds/dragonsteeth.tdf [dragonsteeth] damage: 4000 -> 30000	by fortified-forts
+field features/all worlds/dragonsteeth.tdf [dragonsteeth_core] damage: 4000 -> 30000	by fortified-forts
+field units/armamb.fbi [unitinfo] damagemodifier: 0.28 -> 0.0196	by fortified-forts
+field units/armamd.fbi [unitinfo] damagemodifier: 0.5 -> 0.035	by fortified-forts
+field units/armanni.fbi [unitinfo] damagemodifier: 0.5 -> 0.035	by fortified-forts
+field units/armatl.fbi [unitinfo] maxdamage: 520 -> 3640	by fortified-forts
+field units/armbrtha.fbi [unitinfo] maxdamage: 1800 -> 12600	by fortified-forts
+field units/armfdrag.fbi [unitinfo] maxdamage: 3500 -> 24500	by fortified-forts
+field units/armfhlt.fbi [unitinfo] maxdamage: 1325 -> 9275	by fortified-forts
+field units/armflak.fbi [unitinfo] maxdamage: 1524 -> 10668	by fortified-forts
+field units/armfrt.fbi [unitinfo] maxdamage: 252 -> 1764	by fortified-forts
+field units/armguard.fbi [unitinfo] maxdamage: 2477 -> 17339	by fortified-forts
+field units/armhlt.fbi [unitinfo] maxdamage: 1230 -> 8610	by fortified-forts
+field units/armllt.fbi [unitinfo] maxdamage: 750 -> 5250	by fortified-forts
+field units/armrl.fbi [unitinfo] maxdamage: 295 -> 2065	by fortified-forts
+field units/armtl.fbi [unitinfo] maxdamage: 1450 -> 10150	by fortified-forts
+field units/armvulc.fbi [unitinfo] maxdamage: 1400 -> 9800	by fortified-forts
+field units/coratl.fbi [unitinfo] maxdamage: 562 -> 3934	by fortified-forts
+field units/corbuzz.fbi [unitinfo] maxdamage: 1700 -> 11900	by fortified-forts
+field units/cordoom.fbi [unitinfo] damagemodifier: 0.5 -> 0.035	by fortified-forts
+field units/corfdrag.fbi [unitinfo] maxdamage: 3800 -> 26600	by fortified-forts
+field units/corfhlt.fbi [unitinfo] maxdamage: 1385 -> 9695	by fortified-forts
+field units/corflak.fbi [unitinfo] maxdamage: 1655 -> 11585	by fortified-forts
+field units/corfrt.fbi [unitinfo] maxdamage: 290 -> 2030	by fortified-forts
+field units/corhlt.fbi [unitinfo] maxdamage: 1200 -> 8400	by fortified-forts
+field units/corint.fbi [unitinfo] maxdamage: 1900 -> 13300	by fortified-forts
+field units/corllt.fbi [unitinfo] maxdamage: 710 -> 4970	by fortified-forts
+field units/corplas.fbi [unitinfo] maxdamage: 842 -> 5894	by fortified-forts
+field units/corpun.fbi [unitinfo] maxdamage: 2540 -> 17780	by fortified-forts
+field units/corrl.fbi [unitinfo] maxdamage: 300 -> 2100	by fortified-forts
+field units/cortl.fbi [unitinfo] maxdamage: 1520 -> 10640	by fortified-forts
+field units/cortoast.fbi [unitinfo] damagemodifier: 0.15 -> 0.0105	by fortified-forts
+field units/corvipe.fbi [unitinfo] damagemodifier: 0.125 -> 0.00875	by fortified-forts

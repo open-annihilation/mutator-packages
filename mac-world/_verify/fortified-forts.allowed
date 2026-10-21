@@ -1,0 +1,2 @@
+# Under the maintainer's rule a structure without DamageModifier reads 1.0, so the original's ×7 groups selected none; the curated version gives them the ×7 the original meant
+left only field units/*.fbi [unitinfo] maxdamage: *
