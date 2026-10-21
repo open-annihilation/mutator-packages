@@ -1,0 +1,14 @@
+import	source
+ubercomm	Mutators/{}šberComm.tam
+powercomm	Mutators/{}PowerComm.tam
+advanced-radar-comm	Mutators/{}AdvRadarComm.tam
+no-radar-comm	Mutators/{}NoRadarComm.tam
+annicomm	Mutators/{}AnniComm.tam
+special-tech-comm	Mutators/{}SpecialTechComm.tam
+autotargetcomm	Mutators/{}AutotargetComm.tam
+no-rampage-comm	Mutators/{}No_RampageComm.tam
+reduced-commander-blast-ota	Mutators/}{CommBlastOTA.tam
+reduced-commander-blast-uh	Mutators/}{CommBlastUH.tam
+kroggycomm-1-1	Mutators/}{KroggyComm11.tam
+ravenfire-s-core-com-model	Mutators/}{RFCoreComModel.tam
+tribe-commander	Mutators/}{Tribe.tam
