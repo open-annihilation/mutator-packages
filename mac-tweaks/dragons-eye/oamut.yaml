@@ -1,0 +1,17 @@
+oamut: 1
+id: "dragons-eye"
+name: "Dragon's Eye"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "Adds Uberhack's Dragon's Eye to any game, on the Arm builders' page 8, with the original's button picture. With Uberhack it replaces Uberhack's own. The menus also name HELPER and ARMANS, builders the base game does not have.\n\nThis package replaces [MAC] Arm Eyes tweak by MAC (macraig). The files are the original's."
+tags: ["new-units", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["files"]
+legacy:
+  - name: "[MAC] Arm Eyes tweak"
+    prefix: "}{"
+    compatibility: ["*"]
+    files: ["}{MAC ARM_eyes tweak.tam", "}{MAC ARM_eyes tweak.ccx"]

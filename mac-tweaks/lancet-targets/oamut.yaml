@@ -1,0 +1,17 @@
+oamut: 1
+id: "lancet-targets"
+name: "Lancet Targets"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The Lancet treats NOTSUB as a bad target, so it no longer prefers to ignore unarmed submarines and sea metal extractors. MAC wrote it for UTASP. The unit is also in the base game. It names ARMLANCE, so a game without that unit is unchanged.\n\nThis package replaces [MAC] Arm Lancet tweak for UTASP by MAC (macraig)."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Arm Lancet tweak for UTASP"
+    prefix: "{}"
+    compatibility: ["UTASP"]
+    files: ["{}MAC ARMLANCE tweak.tam", "{}MAC ARMLANCE tweak.sm"]

@@ -1,0 +1,18 @@
+oamut: 1
+id: "nano-tower"
+name: "Nano Tower"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "Adds UTASP 3's tower pad and nano tower to any game, on the Arm builders' page 8, with the original's button pictures. The tower itself is built from the pad. The menus also name HELPER and ARMFAB, builders the base game does not have. It cannot run beside Nano Tower Tweak.\n\nThis package replaces [MAC] Arm Nano-Tower tweak by MAC (macraig). The files are the original's."
+tags: ["new-units", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["nano-tower-tweak"]
+layers: ["files"]
+legacy:
+  - name: "[MAC] Arm Nano-Tower tweak"
+    prefix: "}{"
+    compatibility: ["*"]
+    files: ["}{MAC ARMNTOW tweak.tam", "}{MAC ARMNTOW tweak.ccx"]

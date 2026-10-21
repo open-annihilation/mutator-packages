@@ -1,0 +1,17 @@
+oamut: 1
+id: "adv-seaplane-builder-tweak"
+name: "Arm Advanced Seaplane Builder"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The Arm advanced seaplane constructor costs 15985 energy, takes 24870 to build, and can be built in water 255 deep. MAC wrote it for UTASP. It names ARMANS, so a game without that unit is unchanged. The unit file wrote MaxWaterDepth twice, and this one change replaces both, which is what the original hoped for.\n\nThis package replaces [MAC] Arm Adv. G-N Const. Seaplane tweak for UTASP by MAC (macraig)."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Arm Adv. G-N Const. Seaplane tweak for UTASP"
+    prefix: "{}"
+    compatibility: ["UTASP"]
+    files: ["{}MAC ARMANS tweak.tam", "{}MAC ARMANS tweak.sm"]

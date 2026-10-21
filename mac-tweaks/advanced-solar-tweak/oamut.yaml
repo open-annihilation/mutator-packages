@@ -1,0 +1,17 @@
+oamut: 1
+id: "advanced-solar-tweak"
+name: "Arm Advanced Solar Collector"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The Arm advanced solar collector makes 150 energy and can be built on a slope of 30. MAC wrote it for UTASP. TAUCP and TAUIP have the same unit. It names ARMADVSOL, so a game without that unit is unchanged.\n\nThis package replaces [MAC] Arm Advanced Solar Collector tweak for UTASP by MAC (macraig). The AI weight stays the original text."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Arm Advanced Solar Collector tweak for UTASP"
+    prefix: "{}"
+    compatibility: ["UTASP"]
+    files: ["{}MAC ARMADVSOL tweak.tam", "{}MAC ARMADVSOL tweak.sm"]

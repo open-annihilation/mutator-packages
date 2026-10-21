@@ -1,0 +1,17 @@
+oamut: 1
+id: "quad-air-pad-tweak"
+name: "Quad Air Pad"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "Immerman's quad air pad builds at worker time 1000 and on a slope of 20. The rule names QuadAirPad, the unit's own name. UTASP, TAUCP and TAUIP all ship it. A game without that unit is unchanged.\n\nThis package replaces [MAC] Arm Quad Air Pad tweak by MAC (macraig)."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Arm Quad Air Pad tweak"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Arm QuadAirPad tweak.tam", "{}MAC Arm QuadAirPad tweak.sm"]

@@ -1,0 +1,17 @@
+oamut: 1
+id: "peeper-tweak"
+name: "Peeper"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The Peeper sees 1600, carries no radar, stands by, and keeps its flight figures locked. Its sight needs a wider sight table (enhanced-los). It names ARMPEEP, so a game without that unit is unchanged.\n\nThis package replaces [MAC] Arm Peeper tweak by MAC (macraig)."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Arm Peeper tweak"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC ARMPEEP tweak.tam", "{}MAC ARMPEEP tweak.sm"]

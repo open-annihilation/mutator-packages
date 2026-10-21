@@ -1,0 +1,17 @@
+oamut: 1
+id: "armed-extractor-tweak"
+name: "Armed Metal Extractor"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The armed metal extractor uses the weapon CORE_LASERH1. MAC wrote the tweak for UTASP. The unit ships in TAUIP. It names MLEX, so a game without that unit is unchanged.\n\nThis package replaces [MAC] Core Armed Metal Extractor tweak for UTASP by MAC (macraig)."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Core Armed Metal Extractor tweak for UTASP"
+    prefix: "{}"
+    compatibility: ["UTASP"]
+    files: ["{}MAC MLEX tweak.tam", "{}MAC MLEX tweak.sm"]

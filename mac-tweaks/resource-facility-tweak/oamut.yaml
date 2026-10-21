@@ -1,0 +1,17 @@
+oamut: 1
+id: "resource-facility-tweak"
+name: "Arm Resource Facility"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The Arm resource facility can be built underwater, draws no shadow, and takes 371487 to build. MAC wrote it for UTASP and TAUCP. It names TAWF004, so a game without that unit is unchanged.\n\nThis package replaces [MAC] Arm Resource Facility tweak for UTASP, TAUCP by MAC (macraig)."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Arm Resource Facility tweak for UTASP, TAUCP"
+    prefix: "{}"
+    compatibility: ["UT30b", "UT40b", "UT50b", "TAUCP17", "TAUCP18", "TAUCP23"]
+    files: ["{}MAC TAWF004 tweak.tam", "{}MAC TAWF004 tweak.sm"]

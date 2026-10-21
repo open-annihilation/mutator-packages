@@ -1,0 +1,17 @@
+oamut: 1
+id: "heavy-vehicle-plant-tweak"
+name: "Arm Heavy Vehicle Plant"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The Arm heavy vehicle plant builds at worker time 400. MAC wrote it for UTASP. It names ARMHVP, so a game without that unit is unchanged.\n\nThis package replaces [MAC] Arm Heavy Vehicle Plant tweak for UTASP by MAC (macraig)."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Arm Heavy Vehicle Plant tweak for UTASP"
+    prefix: "{}"
+    compatibility: ["UTASP"]
+    files: ["{}MAC ARMHVP tweak.tam", "{}MAC ARMHVP tweak.sm"]

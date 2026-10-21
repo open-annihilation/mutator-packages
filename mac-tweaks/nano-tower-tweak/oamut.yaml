@@ -1,0 +1,28 @@
+oamut: 1
+id: "nano-tower-tweak"
+name: "Nano Tower Tweak"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The nano-tower pad pays for the tower, the tower builds in 10, and its reach and power go up. Choose the pack it was written for. UTASP 4 and 5 also change the second tower and the transportable guns. TAUCP changes the pad and the tower. Each unit is named, so a game without that unit is unchanged. It cannot run beside Nano Tower, which adds its own pad and tower.\n\nThis package replaces [MAC] Arm Nano-Tower tweak for TAUCP and [MAC] Arm Nano-Tower tweak for UTASP 4/5 by MAC (macraig). A bare word such as NOWEAPON stays that text, and a value marked with ^ is locked."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["nano-tower"]
+layers: ["units"]
+options:
+  pack:
+    type: "choice"
+    values: ["utasp", "taucp"]
+    default: "utasp"
+    label: "Written for"
+legacy:
+  - name: "[MAC] Arm Nano-Tower tweak for TAUCP"
+    prefix: "{}"
+    compatibility: ["TAUCP17", "TAUCP18", "TAUCP23"]
+    files: ["{}MAC ARMNTOW TAUCP tweak.tam", "{}MAC ARMNTOW TAUCP tweak.sm"]
+  - name: "[MAC] Arm Nano-Tower tweak for UTASP 4/5"
+    prefix: "{}"
+    compatibility: ["UT40b", "UT50b"]
+    files: ["{}MAC ARMNTOW UTASP45 tweak.tam", "{}MAC ARMNTOW UTASP45 tweak.sm"]
