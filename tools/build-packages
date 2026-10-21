@@ -11,14 +11,21 @@ It writes only under --out and under scratch folders it removes before exit.
 
 --originals defaults to originals/ and --out to build/, both beside tools/.
 With no FAMILY, every top-level folder that holds _imports.tsv or _verify/
-is built. Exit 0 when every family built, 1 when a build fails, 2 on a
-usage error.
+is built. Inside the repository --out must be build/ or a folder below it;
+an empty --out, the repository itself, a folder above it, a folder inside
+--originals or one that would hold it is refused. Each family is built in a
+temporary folder beside <out>/<family> and moved into place only when it
+built; a failed family leaves no <out>/<family>. The tool marks each folder
+it builds with a .build-packages file and only ever replaces a marked one.
+Exit 0 when every family built, 1 when a build fails, 2 on a usage error.
 """
 
 from __future__ import annotations
 
 import argparse
 import hashlib
+import os
+import secrets
 import shutil
 import subprocess
 import sys
@@ -26,7 +33,16 @@ import tempfile
 from pathlib import Path
 
 
+# Every folder this tool builds holds this file; it replaces no folder without it.
+MARKER = ".build-packages"
+MARKER_TEXT = "tools/build-packages built this folder and replaces it on each build.\n"
+
+
 class BuildError(Exception):
+    pass
+
+
+class UsageError(Exception):
     pass
 
 
@@ -242,22 +258,86 @@ def import_originals(family_dir: Path, dest: Path, originals: Path, tool: str) -
     return len(rows)
 
 
-def build_family(family_dir: Path, out: Path, originals: Path, tool: str) -> None:
-    dest = out / family_dir.name
-    if dest.is_symlink():
-        dest.unlink()
-    elif dest.exists():
+def is_marked(folder: Path) -> bool:
+    marker = folder / MARKER
+    return folder.is_dir() and not folder.is_symlink() and marker.is_file() and not marker.is_symlink()
+
+
+def replace_problem(dest: Path) -> str | None:
+    """Why dest may not be replaced, or None when it is absent or a marked build."""
+    if not dest.exists() and not dest.is_symlink():
+        return None
+    if is_marked(dest):
+        return None
+    return f"build: {dest} is not a folder this tool built (no {MARKER}); remove it by hand or choose another --out"
+
+
+def check_out(out: Path, root: Path, originals: Path, names: list[str]) -> None:
+    """Refuse an --out under which a family's folder could be anything but our own build."""
+    if root.is_relative_to(out):
+        raise UsageError(f"build: --out {out} is the repository or a folder above it")
+    if out.is_relative_to(root) and not out.is_relative_to(root / "build"):
+        raise UsageError(f"build: --out {out} is inside the repository; use build/ or a folder outside it")
+    if out.is_relative_to(originals):
+        raise UsageError(f"build: --out {out} is inside --originals {originals}")
+    for name in names:
+        dest = out / name
+        if originals.is_relative_to(dest):
+            raise UsageError(f"build: --out {out}: {dest} would hold --originals {originals}")
+        problem = replace_problem(dest)
+        if problem is not None:
+            raise UsageError(problem)
+
+
+def new_folder(parent: Path, prefix: str) -> Path:
+    for _ in range(100):
+        path = parent / f"{prefix}{secrets.token_hex(4)}"
+        try:
+            path.mkdir()
+        except FileExistsError:
+            continue
+        return path
+    raise BuildError(f"build: could not make a folder in {parent}")
+
+
+def remove_build(dest: Path) -> None:
+    """Remove dest only when this tool built it."""
+    if is_marked(dest):
         shutil.rmtree(dest)
-    dest.mkdir(parents=True)
-    imports = import_originals(family_dir, dest, originals, tool)
-    packages = package_dirs(family_dir)
-    files = 0
-    for package in packages:
-        files += assemble_package(package, dest / package.name, originals, tool, family_dir.name)
-    verify = family_dir / "_verify"
-    if verify.is_dir() and not verify.is_symlink():
-        shutil.copytree(verify, dest / "_verify", symlinks=False)
-    print(f"build: {family_dir.name}: {imports} imports, {len(packages)} packages, {files} files from originals")
+
+
+def build_family(family_dir: Path, out: Path, originals: Path, tool: str) -> None:
+    name = family_dir.name
+    dest = out / name
+    problem = replace_problem(dest)
+    if problem is not None:
+        raise BuildError(problem)
+    out.mkdir(parents=True, exist_ok=True)
+    # Build beside dest and move it in only once the whole family has built.
+    work = new_folder(out, f".{name}.build-")
+    try:
+        (work / MARKER).write_text(MARKER_TEXT, encoding="utf-8")
+        imports = import_originals(family_dir, work, originals, tool)
+        packages = package_dirs(family_dir)
+        files = 0
+        for package in packages:
+            files += assemble_package(package, work / package.name, originals, tool, name)
+        verify = family_dir / "_verify"
+        if verify.is_dir() and not verify.is_symlink():
+            shutil.copytree(verify, work / "_verify", symlinks=False)
+    except BaseException:
+        shutil.rmtree(work, ignore_errors=True)
+        # A failed family leaves no build, so nothing stale is checked in its place.
+        remove_build(dest)
+        raise
+    if dest.exists():
+        old = new_folder(out, f".{name}.old-")
+        os.rename(dest, old / name)
+        os.rename(work, dest)
+        shutil.rmtree(old)
+    else:
+        os.rename(work, dest)
+    print(f"build: {name}: {imports} imports, {len(packages)} packages, {files} files from originals")
 
 
 def take_args(argv: list[str]) -> argparse.Namespace:
@@ -293,9 +373,13 @@ def main(argv: list[str]) -> int:
     except SystemExit as err:
         code = err.code
         return 2 if code is None else int(code)
+    for flag, value in (("--out", args.out), ("--originals", args.originals)):
+        if value is not None and not value.strip():
+            print(f"build: {flag} is empty; give a folder, or leave {flag} out for its default", file=sys.stderr)
+            return 2
     root = repo_root()
-    originals = directory_argument(args.originals, root / "originals")
-    out = directory_argument(args.out, root / "build")
+    originals = directory_argument(args.originals, root / "originals").resolve()
+    out = directory_argument(args.out, root / "build").resolve()
     if args.families:
         names: list[str] = []
         for name in args.families:
@@ -309,6 +393,11 @@ def main(argv: list[str]) -> int:
             names.append(name)
     else:
         names = discover(root)
+    try:
+        check_out(out, root, originals, names)
+    except UsageError as err:
+        print(err, file=sys.stderr)
+        return 2
     try:
         for name in names:
             for source, label in source_rows(root / name):
