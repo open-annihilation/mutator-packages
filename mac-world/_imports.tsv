@@ -1,0 +1,15 @@
+import	source
+mac-brackish-not-acid	igi-server/MAC's mutators/{}MAC Brackish Not Acid.tam
+mac-weak-acid	igi-server/MAC's mutators/{}MAC Weak Acid.tam
+mac-passable-lava	igi-server/MAC's mutators/{}MAC Passable Lava.tam
+mac-condensed-fog	igi-server/MAC's mutators/{}MAC Condensed Fog.tam
+mac-no-wind	igi-server/MAC's mutators/{}MAC No Wind.tam
+mac-steady-winds	igi-server/MAC's mutators/{}MAC Steady Winds.tam
+mac-heavy-metal-1	igi-server/MAC's mutators/{}MAC Heavy Metal 1.tam
+mac-heavy-metal-2	igi-server/MAC's mutators/{}MAC Heavy Metal 2.tam
+mac-heavy-metal-3	igi-server/MAC's mutators/{}MAC Heavy Metal 3.tam
+mac-maxed-metalspots	igi-server/MAC's mutators/{}MAC Maxed Metalspots.tam
+mac-no-fugly-scars	igi-server/MAC's mutators/{}MAC No Fugly Scars.tam
+mac-no-permanent-features	igi-server/MAC's mutators/{}MAC No Permanent Features.tam
+mac-destructible-monorails	igi-server/MAC's mutators/{}MAC Destructible Monorails.tam
+mac-fortified-forts-walls	igi-server/MAC's mutators/{}MAC Fortified Forts & Walls.tam
