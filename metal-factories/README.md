@@ -1,6 +1,6 @@
 # Finite Metal and Directional Factories
 
-Two packages replace three of the four igi-server additions that are not in MAC's pack. Finite Metal turns metal patches into rocks and wrecks and takes metal income away. Directional Factories adds Uberhack's east, west and north-facing plants and offers them from whatever already builds the plant they face. D-TAM is not converted. L26 writes the comparison reports and `directional-factories.allowed`.
+Two packages replace three of the four igi-server additions that are not in MAC's pack. Finite Metal turns metal patches into rocks and wrecks and takes metal income away. Directional Factories adds Uberhack's east, west and north-facing plants and offers them from whatever already builds the plant they face. D-TAM is not converted. The comparison reports and `directional-factories.allowed` are in `_verify/`.
 
 The import id is the id `oa-tool mutator import` makes from the title, with no `--works-with`. The compatibility codes stay on each legacy record.
 
@@ -686,11 +686,19 @@ Each hash is the SHA-256 of the archive entry, read with `oa-tool extract`. The 
 
 ## Differences from the originals
 
-`finite-metal` and `finite-metal-cs` and `finite-metal-uh` allow no difference. The hook removes `MetalMake` from the same units the originals' rules do (with Counter Strike units, not from a unit whose sound category is GATE), and the feature files are the originals' bytes. FLUXOR and QUARK are set to 5 metal only for the Counter Strike choice, by name, as that original does. Extractors, CORBHMTH and the converter found by that description are removed, which is what a blank `Copyright` did. Metal makers remain. Both originals told the player to add No Porc to remove them.
+No package needed a fix. The comparisons of `finite-metal` and `finite-metal-cs` with their imports left nothing over, so those rows have no allowed file. A `remove()` and a blank `Copyright` compare as one drop. The hook removes `MetalMake` from the same units the originals' rules do (with Counter Strike units, not from a unit whose sound category is GATE), and the feature files are the originals' bytes. FLUXOR and QUARK are set to 5 metal only for the Counter Strike choice, by name, as that original does. Extractors, CORBHMTH and the converter found by that description are removed, which is what a blank `Copyright` did. Metal makers remain. Both originals told the player to add No Porc to remove them.
 
-The removal is a hook, as the ticket asks, so it combines with `no-porc` under any rule. R02's text rule would have cancelled two removals of one field (Q17); since Q63 each mutator acts on the state the ones above it left, and both orders were checked on 3.1c.
+The removal is a hook, so it combines with `no-porc` under any rule. R02's text rule would have cancelled two removals of one field (Q17); since Q63 each mutator acts on the state the ones above it left, and both orders were checked on 3.1c.
 
-`directional-factories` may part from its import only where `directional-factories.allowed` says, which L26 writes. The manifest sets `clashes: replace`, which is what the original's whole-file override did and keeps one plant per name. On a mod that already has these plants, such as Uberhack, the package's 2001 copies replace the mod's. Uberhack 4.0's ARMLABE, for example, has `YardMap=yooooy cccccc cccccc cccccc cccccc yooooy` and adds `ALL MDF` to its category; the package's file takes that plant's place.
+`finite-metal-uh` is the same package over Uberhack 4.0. Its report drops CORBHMTH as well as the extractors that mod adds. The faithful import lists `works-with: ["ta-3.1c"]` (its `UH` code is not mapped to a mod), so `oa-tool mutator diff` refuses to apply that import on Uberhack and the versus comparison cannot be run. That row names no import: its recorded report is the check.
+
+`directional-factories.allowed` is the only allowed file. The comparison kept 237 menu lines and nothing else. Each block is one reason:
+
+- The original's download files re-list the base factories' units on extra pages; the curated package leaves them out. One `right only menu added <factory> * * *` for each base factory the comparison showed: ARMALAB, ARMASY, ARMAVP, ARMHP, ARMLAB, ARMSY, ARMVP, CORALAB, CORASY, CORAVP, CORHP, CORLAB, CORSY, CORVP.
+- The original's Armlatnk.TDF overwrote 3.1c's file of that name, taking the Panther off the Arm advanced vehicle plant. The comparison shows `right only menu removed ARMAVP 4 0 ARMLATNK`.
+- Builders offer the directional factories through menus: the original's build pages are protected, so its faithful import offers them nowhere. One `left only menu added * * * <factory>` for each of the 36 directional factories.
+
+The manifest sets `clashes: replace`, which is what the original's whole-file override did and keeps one plant per name. On a mod that already has these plants, such as Uberhack, the package's 2001 copies replace the mod's. Uberhack 4.0's ARMLABE, for example, has `YardMap=yooooy cccccc cccccc cccccc cccccc yooooy` and adds `ALL MDF` to its category; the package's file takes that plant's place.
 
 The original's 40 pages are mostly 3.1c's own pages rewritten: 34 replace an existing page (ARMCOM2, ARMCK2 and 3, ARMCS1, ARMACK1, the CORCH and CORCSA pages, and the like). Six are new fourth pages that hold the hover plant (ARMCA4, ARMCK4, ARMCV4 and the Core three). On each replaced page, the west, north and east buttons overlap the base plant's 64 by 64 cell (for example ARMLABW at 0,27, ARMLAB at 16,27 and ARMLABE at 48,27 on ARMCOM2), drawn with the page's own art. It also moved ARMHP from ARMCH5 and ARMCSA5 to page 3. The curated package cannot overlap buttons or change those pages, so it uses a page of the builder's own.
 

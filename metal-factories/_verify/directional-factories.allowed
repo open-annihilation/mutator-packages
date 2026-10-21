@@ -1,0 +1,56 @@
+# The original's download files re-list the base factories' units on extra pages; the curated package leaves them out
+right only menu added ARMALAB * * *
+right only menu added ARMASY * * *
+right only menu added ARMAVP * * *
+right only menu added ARMHP * * *
+right only menu added ARMLAB * * *
+right only menu added ARMSY * * *
+right only menu added ARMVP * * *
+right only menu added CORALAB * * *
+right only menu added CORASY * * *
+right only menu added CORAVP * * *
+right only menu added CORHP * * *
+right only menu added CORLAB * * *
+right only menu added CORSY * * *
+right only menu added CORVP * * *
+
+# The original's Armlatnk.TDF overwrote 3.1c's file of that name, taking the Panther off the Arm advanced vehicle plant
+right only menu removed ARMAVP 4 0 ARMLATNK
+
+# Builders offer the directional factories through menus: the original's build pages are protected, so its faithful import offers them nowhere
+left only menu added * * * ARMALABE
+left only menu added * * * ARMALABW
+left only menu added * * * ARMASYE
+left only menu added * * * ARMASYN
+left only menu added * * * ARMASYW
+left only menu added * * * ARMAVPE
+left only menu added * * * ARMAVPW
+left only menu added * * * ARMHPE
+left only menu added * * * ARMHPW
+left only menu added * * * ARMLABE
+left only menu added * * * ARMLABW
+left only menu added * * * ARMSYE
+left only menu added * * * ARMSYN
+left only menu added * * * ARMSYW
+left only menu added * * * ARMVPE
+left only menu added * * * ARMVPN
+left only menu added * * * ARMVPW
+left only menu added * * * CORALABE
+left only menu added * * * CORALABN
+left only menu added * * * CORALABW
+left only menu added * * * CORASYE
+left only menu added * * * CORASYN
+left only menu added * * * CORASYW
+left only menu added * * * CORAVPE
+left only menu added * * * CORAVPN
+left only menu added * * * CORAVPW
+left only menu added * * * CORHPE
+left only menu added * * * CORHPW
+left only menu added * * * CORLABE
+left only menu added * * * CORLABW
+left only menu added * * * CORSYE
+left only menu added * * * CORSYN
+left only menu added * * * CORSYW
+left only menu added * * * CORVPE
+left only menu added * * * CORVPN
+left only menu added * * * CORVPW
