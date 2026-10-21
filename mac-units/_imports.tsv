@@ -1,0 +1,36 @@
+import	source	id
+mac-agile-aircraft-arm	igi-server/MAC's mutators/{}MAC Agile Aircraft (Arm).tam	-
+mac-agile-aircraft-core	igi-server/MAC's mutators/{}MAC Agile Aircraft (Core).tam	-
+mac-agile-aircraft-ii-arm	igi-server/MAC's mutators/{}MAC Agile Aircraft II (Arm).tam	-
+mac-agile-aircraft-ii-core	igi-server/MAC's mutators/{}MAC Agile Aircraft II (Core).tam	-
+mac-agile-aircraft-ii	igi-server/MAC's mutators/{}MAC Agile Aircraft II.tam	-
+mac-bio-armor-arm	igi-server/MAC's mutators/{}MAC Bio-Armor (Arm).tam	-
+mac-bio-armor-core	igi-server/MAC's mutators/{}MAC Bio-Armor (Core).tam	-
+mac-bio-armor	igi-server/MAC's mutators/{}MAC Bio-Armor.tam	mac-bio-armor
+mac-clairvoyance-generic	igi-server/MAC's mutators/{}MAC Clairvoyance generic.tam	-
+mac-enhanced-builders-arm	igi-server/MAC's mutators/{}MAC Enhanced Builders (Arm).tam	-
+mac-enhanced-builders-core	igi-server/MAC's mutators/{}MAC Enhanced Builders (Core).tam	-
+mac-enhanced-builders	igi-server/MAC's mutators/{}MAC Enhanced Builders.tam	-
+mac-enhanced-factories-arm	igi-server/MAC's mutators/{}MAC Enhanced Factories (Arm).tam	-
+mac-enhanced-factories-core	igi-server/MAC's mutators/{}MAC Enhanced Factories (Core).tam	-
+mac-enhanced-factories	igi-server/MAC's mutators/{}MAC Enhanced Factories.tam	-
+mac-enhanced-los-1000	igi-server/MAC's mutators/{}MAC Enhanced LOS (1000).tam	-
+mac-enhanced-los-1600	igi-server/MAC's mutators/{}MAC Enhanced LOS (1600).tam	-
+mac-enhanced-los-200	igi-server/MAC's mutators/{}MAC Enhanced LOS (200%).tam	-
+mac-los-1600	igi-server/MAC's mutators/}{MAC LOS_1600.tam	-
+mac-everybody-rides-the-bus	igi-server/MAC's mutators/{}MAC Everybody Rides The Bus.tam	-
+mac-extended-builders-arm	igi-server/MAC's mutators/{}MAC Extended Builders (Arm).tam	-
+mac-extended-builders-core	igi-server/MAC's mutators/{}MAC Extended Builders (Core).tam	-
+mac-extended-builders	igi-server/MAC's mutators/{}MAC Extended Builders.tam	-
+mac-incognito-arm	igi-server/MAC's mutators/{}MAC Incognito (Arm).tam	-
+mac-incognito-core	igi-server/MAC's mutators/{}MAC Incognito (Core).tam	-
+mac-incognito	igi-server/MAC's mutators/{}MAC Incognito.tam	mac-incognito
+mac-maneuverable-hovers	igi-server/MAC's mutators/{}MAC Maneuverable Hovers.tam	-
+mac-real-hovers	igi-server/MAC's mutators/{}MAC Real Hovers.tam	-
+mac-resources-easy-self-destruct-arm	igi-server/MAC's mutators/{}MAC Resources Easy Self-Destruct (Arm).tam	-
+mac-resources-easy-self-destruct-core	igi-server/MAC's mutators/{}MAC Resources Easy Self-Destruct (Core).tam	-
+mac-slippery-slopes	igi-server/MAC's mutators/{}MAC Slippery Slopes.tam	-
+mac-super-commander-arm	igi-server/MAC's mutators/{}MAC Super Commander (Arm).tam	-
+mac-super-commander-core	igi-server/MAC's mutators/{}MAC Super Commander (Core).tam	-
+mac-true-vtol-standby	igi-server/MAC's mutators/{}MAC True VTOL Standby.tam	-
+mac-useful-mines	igi-server/MAC's mutators/{}MAC Useful Mines.tam	-
