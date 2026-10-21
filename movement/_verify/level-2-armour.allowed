@@ -1,0 +1,2 @@
+# The original multiplied excluded units by 1.2 and then by 0.83333, leaving them at 0.999996 of their armour; the curated version leaves them unchanged
+right only field units/*.fbi [unitinfo] maxdamage: *

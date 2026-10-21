@@ -1,0 +1,182 @@
+# The original replaced whole Uberhack unit files, and the curated version changes only the healing fields (L03)
+right only field units/* [unitinfo] acceleration: *
+right only field units/* [unitinfo] activatewhenbuilt: *
+right only field units/* [unitinfo] ai_limit: *
+right only field units/* [unitinfo] ai_weight: *
+right only field units/* [unitinfo] altfromsealevel: *
+right only field units/* [unitinfo] amphibious: *
+right only field units/* [unitinfo] antiweapons: *
+right only field units/* [unitinfo] attackrunlength: *
+right only field units/* [unitinfo] badtargetcategory: *
+right only field units/* [unitinfo] bankscale: *
+right only field units/* [unitinfo] bmcode: *
+right only field units/* [unitinfo] brakerate: *
+right only field units/* [unitinfo] buildangle: *
+right only field units/* [unitinfo] buildcostenergy: *
+right only field units/* [unitinfo] buildcostmetal: *
+right only field units/* [unitinfo] builddistance: *
+right only field units/* [unitinfo] builder: *
+right only field units/* [unitinfo] buildtime: *
+right only field units/* [unitinfo] canattack: *
+right only field units/* [unitinfo] cancapture: *
+right only field units/* [unitinfo] candgun: *
+right only field units/* [unitinfo] canfly: *
+right only field units/* [unitinfo] canguard: *
+right only field units/* [unitinfo] canload: *
+right only field units/* [unitinfo] canmove: *
+right only field units/* [unitinfo] canpatrol: *
+right only field units/* [unitinfo] canreclamate: *
+right only field units/* [unitinfo] canstop: *
+right only field units/* [unitinfo] cantbetransported: *
+right only field units/* [unitinfo] category: *
+right only field units/* [unitinfo] cloakcost: *
+right only field units/* [unitinfo] cloakcostmoving: *
+right only field units/* [unitinfo] copyright: *
+right only field units/* [unitinfo] corpse: *
+right only field units/* [unitinfo] cruisealt: *
+right only field units/* [unitinfo] damagemodifier: *
+right only field units/* [unitinfo] defaultmissiontype: *
+right only field units/* [unitinfo] description: *
+right only field units/* [unitinfo] designation: *
+right only field units/* [unitinfo] downloadable: *
+right only field units/* [unitinfo] energymake: *
+right only field units/* [unitinfo] energystorage: *
+right only field units/* [unitinfo] energyuse: *
+right only field units/* [unitinfo] explodeas: *
+right only field units/* [unitinfo] firestandorders: *
+right only field units/* [unitinfo] floater: *
+right only field units/* [unitinfo] footprintx: *
+right only field units/* [unitinfo] footprintz: *
+right only field units/* [unitinfo] frenchdescription: *
+right only field units/* [unitinfo] frenchname: *
+right only field units/* [unitinfo] germandescription: *
+right only field units/* [unitinfo] germanname: *
+right only field units/* [unitinfo] hoverattack: *
+right only field units/* [unitinfo] immunetoparalyzer: *
+right only field units/* [unitinfo] italiandescription: *
+right only field units/* [unitinfo] italianname: *
+right only field units/* [unitinfo] kamikaze: *
+right only field units/* [unitinfo] kamikazedistance: *
+right only field units/* [unitinfo] maneuverleashlength: *
+right only field units/* [unitinfo] maxdamage: *
+right only field units/* [unitinfo] maxslope: *
+right only field units/* [unitinfo] maxvelocity: *
+right only field units/* [unitinfo] maxwaterdepth: *
+right only field units/* [unitinfo] metalmake: *
+right only field units/* [unitinfo] metalstorage: *
+right only field units/* [unitinfo] mincloakdistance: *
+right only field units/* [unitinfo] minwaterdepth: *
+right only field units/* [unitinfo] mobilestandorders: *
+right only field units/* [unitinfo] movementclass: *
+right only field units/* [unitinfo] moverate1: *
+right only field units/* [unitinfo] name: *
+right only field units/* [unitinfo] noautofire: *
+right only field units/* [unitinfo] nochasecategory: *
+right only field units/* [unitinfo] norestrict: *
+right only field units/* [unitinfo] noshadow: *
+right only field units/* [unitinfo] objectname: *
+right only field units/* [unitinfo] onoffable: *
+right only field units/* [unitinfo] ovradjust: *
+right only field units/* [unitinfo] radardistance: *
+right only field units/* [unitinfo] radardistancejam: *
+right only field units/* [unitinfo] scale: *
+right only field units/* [unitinfo] selfdestructas: *
+right only field units/* [unitinfo] selfdestructcountdown: *
+right only field units/* [unitinfo] shootme: *
+right only field units/* [unitinfo] side: *
+right only field units/* [unitinfo] sightdistance: *
+right only field units/* [unitinfo] sonardistance: *
+right only field units/* [unitinfo] soundcategory: *
+right only field units/* [unitinfo] spanishdescription: *
+right only field units/* [unitinfo] spanishname: *
+right only field units/* [unitinfo] standingfireorder: *
+right only field units/* [unitinfo] standingmoveorder: *
+right only field units/* [unitinfo] stealth: *
+right only field units/* [unitinfo] steeringmode: *
+right only field units/* [unitinfo] tedclass: *
+right only field units/* [unitinfo] threed: *
+right only field units/* [unitinfo] transmaxunits: *
+right only field units/* [unitinfo] transportcapacity: *
+right only field units/* [unitinfo] transportmaxunits: *
+right only field units/* [unitinfo] transportsize: *
+right only field units/* [unitinfo] turnrate: *
+right only field units/* [unitinfo] unitname: *
+right only field units/* [unitinfo] unitnumber: *
+right only field units/* [unitinfo] upright: *
+right only field units/* [unitinfo] version: *
+right only field units/* [unitinfo] waterline: *
+right only field units/* [unitinfo] weapon1: *
+right only field units/* [unitinfo] weapon2: *
+right only field units/* [unitinfo] weapon3: *
+right only field units/* [unitinfo] workertime: *
+right only field units/* [unitinfo] wpri_badtargetcategory: *
+right only field units/* [unitinfo] wsec_badtargetcategory: *
+right only field units/* [unitinfo] wspe_badtargetcategory: *
+right only field units/* [unitinfo] yardmap: *
+right only field units/* [unitinfo] zbuffer: *
+right only file added units/*
+right only unit added *
+
+# The archive never held these mobile units, so the original left their healing time alone, and the curated rule heals every mobile unit that is not a commander (L03)
+left only field units/armaca.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armack.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armacv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armch.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armcv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armdecom.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armmlv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armscorp.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armss.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/coraca.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corack.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/coracv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corca.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corch.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corck.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corcs.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/cordecom.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corfast.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/cormlv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corscorp.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corss.fbi [unitinfo] healtime: (absent) -> 40
+
+# The archive's whole unit files heal these water structures, and the curated rule heals mobile units only (L03)
+right only field units/armason.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armatl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armfhlt.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armfrt.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armsonar.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armtide.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armtl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corason.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/coratl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corfhlt.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corfrt.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corsonar.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/cortide.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/cortl.fbi [unitinfo] healtime: (absent) -> 40
+
+# Uberhack adds these units with their healing times, and the curated version does not add Uberhack's units (L03)
+right only field units/armdfly.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armdl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armhack.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armlemm.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armref.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armsaber.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armsb.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armsptk.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armst.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armtrid.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corcut.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/cordl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corkrak.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/cormanta.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corsb.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corsktl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corsquid.fbi [unitinfo] healtime: (absent) -> 40
+
+# The archive heals ARMSPY at 10 and CORSPY at 12, and the curated rule gives every mobile unit that is not a commander 40 (L03)
+left only field units/armspy.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corspy.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armspy.fbi [unitinfo] healtime: (absent) -> 10
+right only field units/corspy.fbi [unitinfo] healtime: (absent) -> 12
