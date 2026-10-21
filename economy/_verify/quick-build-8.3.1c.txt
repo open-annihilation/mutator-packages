@@ -1,0 +1,58 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: quick-build 1 factor=8
+# seed: 0
+field units/armaap.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armaca.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/armack.fbi [unitinfo] workertime: 160 -> 1280	by quick-build
+field units/armacsub.fbi [unitinfo] workertime: 225 -> 1800	by quick-build
+field units/armacv.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armalab.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armap.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/armasp.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armasy.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armavp.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armca.fbi [unitinfo] workertime: 50 -> 400	by quick-build
+field units/armcarry.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armch.fbi [unitinfo] workertime: 80 -> 640	by quick-build
+field units/armck.fbi [unitinfo] workertime: 80 -> 640	by quick-build
+field units/armcom.fbi [unitinfo] workertime: 300 -> 2400	by quick-build
+field units/armcs.fbi [unitinfo] workertime: 125 -> 1000	by quick-build
+field units/armcsa.fbi [unitinfo] workertime: 50 -> 400	by quick-build
+field units/armcv.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/armdecom.fbi [unitinfo] workertime: 30 -> 240	by quick-build
+field units/armfark.fbi [unitinfo] workertime: 180 -> 1440	by quick-build
+field units/armhp.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armlab.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/armmlv.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/armplat.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/armsy.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/armvp.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/coraap.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/coraca.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/corack.fbi [unitinfo] workertime: 160 -> 1280	by quick-build
+field units/coracsub.fbi [unitinfo] workertime: 225 -> 1800	by quick-build
+field units/coracv.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/coralab.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/corap.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/corasp.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/corasy.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/coravp.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/corca.fbi [unitinfo] workertime: 50 -> 400	by quick-build
+field units/corcarry.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/corch.fbi [unitinfo] workertime: 80 -> 640	by quick-build
+field units/corck.fbi [unitinfo] workertime: 80 -> 640	by quick-build
+field units/corcom.fbi [unitinfo] workertime: 300 -> 2400	by quick-build
+field units/corcs.fbi [unitinfo] workertime: 125 -> 1000	by quick-build
+field units/corcsa.fbi [unitinfo] workertime: 50 -> 400	by quick-build
+field units/corcv.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/cordecom.fbi [unitinfo] workertime: 30 -> 240	by quick-build
+field units/corgant.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/corhp.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/corlab.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/cormlv.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/cornecro.fbi [unitinfo] workertime: 160 -> 1280	by quick-build
+field units/corplat.fbi [unitinfo] workertime: 200 -> 1600	by quick-build
+field units/corsy.fbi [unitinfo] workertime: 100 -> 800	by quick-build
+field units/corvp.fbi [unitinfo] workertime: 100 -> 800	by quick-build

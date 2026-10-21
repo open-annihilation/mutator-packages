@@ -13,7 +13,7 @@ no-resource-system	./no-resource-system	_imports/no-resource-system	-
 no-waste	./no-waste	_imports/no-waste	-
 resource-comm-standard	./resource-comm:level=standard	_imports/resourcecomm	-
 resource-comm-deluxe	./resource-comm:level=deluxe	_imports/resourcecomm-deluxe	-
-resource-comm-both	./resource-comm:level=both	_imports/resourcecomm _imports/resourcecomm-deluxe	-
+resource-comm-both	./resource-comm:level=both	_imports/resourcecomm _imports/resourcecomm-deluxe	resource-comm-both.allowed
 seaplane-platform-speed-1.5	./seaplane-platform-speed:factor=1.5	_imports/seaplaneplatform-wtx1-5	-
 seaplane-platform-speed-2	./seaplane-platform-speed:factor=2	_imports/seaplaneplatform-wtx2	-
 seaplane-platform-speed-4	./seaplane-platform-speed:factor=4	_imports/seaplaneplatform-wtx4	-

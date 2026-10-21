@@ -1,0 +1,94 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: no-porc 1
+# seed: 0
+field guis/armca1.gui [gadget9] grayedout: 0 -> 1
+field guis/armca1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armch1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armch1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armch4.gui [gadget9] grayedout: 0 -> 1
+field guis/armch4.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armck1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armck1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcom1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armcom1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcom3.gui [gadget9] grayedout: (absent) -> 1
+field guis/armcom3.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcsa1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armcsa1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcsa4.gui [gadget9] grayedout: 0 -> 1
+field guis/armcsa4.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armcv1.gui [gadget9] grayedout: (absent) -> 1
+field guis/armcv1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corca1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corca1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corch1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corch1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corch4.gui [gadget9] grayedout: (absent) -> 1
+field guis/corch4.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corck1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corck1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corcom1.gui [gadget9] grayedout: (absent) -> 1
+field guis/corcom1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corcom3.gui [gadget9] grayedout: (absent) -> 1
+field guis/corcom3.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corcsa1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corcsa1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field guis/corcsa4.gui [gadget9] grayedout: (absent) -> 1
+field guis/corcsa4.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/corcv1.gui [gadget8@2] grayedout: (absent) -> 1
+field guis/corcv1.gui [gadget8@2][common] commonattribs: 4 -> 0
+field units/armaca.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+field units/armack.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+field units/armacsub.fbi [unitinfo] metalmake: 0.9 -> (absent)	by no-porc
+field units/armacv.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+field units/armasy.fbi [unitinfo] metalmake: 1 -> (absent)	by no-porc
+field units/armca.fbi [unitinfo] metalmake: 0.2 -> (absent)	by no-porc
+field units/armch.fbi [unitinfo] metalmake: 0.3 -> (absent)	by no-porc
+field units/armck.fbi [unitinfo] metalmake: 0.25 -> (absent)	by no-porc
+field units/armcom.fbi [unitinfo] metalmake: 1 -> (absent)	by no-porc
+field units/armcs.fbi [unitinfo] metalmake: 0.3 -> (absent)	by no-porc
+field units/armcsa.fbi [unitinfo] metalmake: 0.3 -> (absent)	by no-porc
+field units/armcv.fbi [unitinfo] metalmake: 0.25 -> (absent)	by no-porc
+field units/armfark.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+field units/armplat.fbi [unitinfo] metalmake: 1 -> (absent)	by no-porc
+field units/armsy.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+field units/coraca.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+field units/corack.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+field units/coracsub.fbi [unitinfo] metalmake: 0.9 -> (absent)	by no-porc
+field units/coracv.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+field units/corasy.fbi [unitinfo] metalmake: 1 -> (absent)	by no-porc
+field units/corca.fbi [unitinfo] metalmake: 0.2 -> (absent)	by no-porc
+field units/corch.fbi [unitinfo] metalmake: 0.3 -> (absent)	by no-porc
+field units/corck.fbi [unitinfo] metalmake: 0.25 -> (absent)	by no-porc
+field units/corcom.fbi [unitinfo] metalmake: 1 -> (absent)	by no-porc
+field units/corcs.fbi [unitinfo] metalmake: 0.3 -> (absent)	by no-porc
+field units/corcsa.fbi [unitinfo] metalmake: 0.3 -> (absent)	by no-porc
+field units/corcv.fbi [unitinfo] metalmake: 0.25 -> (absent)	by no-porc
+field units/corplat.fbi [unitinfo] metalmake: 1 -> (absent)	by no-porc
+field units/corsy.fbi [unitinfo] metalmake: 0.5 -> (absent)	by no-porc
+file hidden download/armfmkr.tdf	by no-porc
+file hidden download/armmmkr.tdf	by no-porc
+file hidden download/corfmkr.tdf	by no-porc
+file hidden download/cormmkr.tdf	by no-porc
+file hidden units/armfmkr.fbi	by no-porc
+file hidden units/armmakr.fbi	by no-porc
+file hidden units/armmmkr.fbi	by no-porc
+file hidden units/corfmkr.fbi	by no-porc
+file hidden units/cormakr.fbi	by no-porc
+file hidden units/cormmkr.fbi	by no-porc
+menu removed ARMACA 4 1 ARMMMKR
+menu removed ARMACK 4 1 ARMMMKR
+menu removed ARMACV 4 1 ARMMMKR
+menu removed ARMCS 3 2 ARMFMKR	by no-porc
+menu removed CORACA 4 1 CORMMKR
+menu removed CORACK 4 1 CORMMKR
+menu removed CORACV 4 1 CORMMKR
+menu removed CORCS 3 2 CORFMKR	by no-porc
+unit dropped ARMFMKR hidden	by no-porc
+unit dropped ARMMAKR hidden	by no-porc
+unit dropped ARMMMKR hidden	by no-porc
+unit dropped CORFMKR hidden	by no-porc
+unit dropped CORMAKR hidden	by no-porc
+unit dropped CORMMKR hidden	by no-porc

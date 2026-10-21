@@ -2,7 +2,7 @@
 
 Thirteen packages replace the eighteen TA: Mutation economy and build mutators. Variants of one mutator are options on one package. Every rule is Lua. No package takes a file from the originals.
 
-`originals/` and `build/` are gitignored. The commands below build the faithful imports and the curated packages under `build/economy/`. L17 compares each row and records the reports and `cornucopia.allowed`.
+`originals/` and `build/` are gitignored. The commands below build the faithful imports and the curated packages under `build/economy/`. The comparisons and their reports are in `_verify/`.
 
 ## Originals
 
@@ -31,7 +31,9 @@ Factor 8 on Quick Build and on Jumbo Storage is what the 2x and 4x originals gav
 
 ## Differences from the originals
 
-Cornucopia also doubles `tidalgenerator` from 0 to 1e11. Cornucopia 2x left tidal plants out. `MakesEnergy` is left out: no unit has that field, and scaling an absent field changes nothing.
+`cornucopia.allowed`: Cornucopia 2x never doubled tidal generators; the curated version does (ARMTIDE and CORTIDE). The allowance is `left only field units/*.fbi [unitinfo] tidalgenerator: *`, and the report shows ARMTIDE and CORTIDE, each `tidalgenerator` from 1 to 2. `MakesEnergy` is left out: no unit has that field, and scaling an absent field changes nothing.
+
+`resource-comm-both.allowed`: Resource Commander's `both` choice keeps the averages TA: Mutation gave players who stacked both originals, 2500 energy, 7500 energy storage, 125 metal and 2500 metal storage on ARMCOM and CORCOM. Open Annihilation runs the two imports in sequence, so the first lock holds at 1000 energy, 3000 energy storage, 50 metal and 1000 metal storage. The allowance is those four fields on ARMCOM and CORCOM, on each side of the comparison. Build distance still ends at 3 times and worker time at 6 times, because the factors multiply.
 
 Enhanced Wind Generators no longer tests the English name "Wind Generator". A structure with `bmcode` 0 and `windgenerator` from 1 to 1e7 matches, so a translated or modded generator counts. On Total Annihilation 3.1c with both expansions the same two units match: ARMWIN and CORWIN.
 

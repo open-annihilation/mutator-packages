@@ -1,0 +1,17 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: resource-comm 1 level=both
+# seed: 0
+field units/armcom.fbi [unitinfo] builddistance: 60 -> 180	by resource-comm
+field units/armcom.fbi [unitinfo] energymake: 25 -> 2500	by resource-comm
+field units/armcom.fbi [unitinfo] energystorage: (absent) -> 7500	by resource-comm
+field units/armcom.fbi [unitinfo] metalmake: 1 -> 125	by resource-comm
+field units/armcom.fbi [unitinfo] metalstorage: (absent) -> 2500	by resource-comm
+field units/armcom.fbi [unitinfo] workertime: 300 -> 1800	by resource-comm
+field units/corcom.fbi [unitinfo] builddistance: 60 -> 180	by resource-comm
+field units/corcom.fbi [unitinfo] energymake: 25 -> 2500	by resource-comm
+field units/corcom.fbi [unitinfo] energystorage: (absent) -> 7500	by resource-comm
+field units/corcom.fbi [unitinfo] metalmake: 1 -> 125	by resource-comm
+field units/corcom.fbi [unitinfo] metalstorage: (absent) -> 2500	by resource-comm
+field units/corcom.fbi [unitinfo] workertime: 300 -> 1800	by resource-comm
