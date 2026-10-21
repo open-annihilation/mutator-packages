@@ -1,0 +1,15 @@
+row	curated	imports	allowed
+warpgate-at-gate	./warpgate:arrival=at-gate	_imports/warp-gate-3-1	warpgate-at-gate.allowed
+warpgate-near	./warpgate	_imports/warp-gate-4-1	warpgate-near.allowed
+warpgate-near-4.0	./warpgate	_imports/warp-gate-4-0	warpgate-near-4.0.allowed
+warpgate-near-twin	./warpgate:arrival=near-twin	_imports/warp-gate-4-0-twincomm	warpgate-near-twin.allowed
+warpgate-chosen	./warpgate:arrival=chosen	_imports/warp-gate-4-0-targetting	warpgate-chosen.allowed
+warpgate-chosen-twin	./warpgate:arrival=chosen-twin	_imports/warp-gate-4-0-twintarget	warpgate-chosen-twin.allowed
+wg-quickstart	./warpgate ./wg-quickstart	./warpgate _imports/wg-quickstart	-
+wg-fortress-1000	./warpgate ./wg-fortress:income=1000	./warpgate _imports/wg-fortress-frugal-v-2	wg-fortress.allowed
+wg-fortress-5000	./warpgate ./wg-fortress:income=5000	./warpgate _imports/wg-fortress-moderate-v-2	wg-fortress.allowed
+wg-fortress-15000	./warpgate ./wg-fortress:income=15000	./warpgate _imports/wg-fortress-wealthy-v-2	wg-fortress.allowed
+wg-fortress-3000	./warpgate ./wg-fortress:income=3000	./warpgate _imports/wg-fortress-frugal-v-2 _imports/wg-fortress-moderate-v-2	wg-fortress.allowed
+wg-fortress-7000	./warpgate ./wg-fortress:income=7000	./warpgate _imports/wg-fortress-frugal-v-2 _imports/wg-fortress-moderate-v-2 _imports/wg-fortress-wealthy-v-2	wg-fortress.allowed
+wg-early-warning	./warpgate ./wg-early-warning	./warpgate _imports/wg-early-warning	-
+ai-scrouge	./warpgate ./ai-scrouge	./warpgate _imports/ai-scrouge	ai-scrouge.allowed

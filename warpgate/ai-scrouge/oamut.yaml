@@ -1,0 +1,18 @@
+oamut: 1
+id: "ai-scrouge"
+name: "AI Scrouge"
+version: "1"
+author:
+  name: "Unknown"
+description: "An AI-only race: a flying Scrouge commander and armed metal guardians, with Arm and Core technology.\n\nThe race is the Scrouge commander and some heavily armored, armed resource guardians. The Scrouge can use both Arm and Core units. The AI will always choose to play as the Scrouge. A couple of Scrouge players will claim virtually every metal patch on a 20×20 map within about 10 minutes, and will have begun level 2 units and defences.\n\nThe Scrouge and its guardian are locked to side 0. After Warp Gate locks side 0, a units hook writes side 10000 on every other commander Warp Gate marked, so the computers' gates build only the Scrouge. The mark is build code 1 and metal extraction 0.001, and the Scrouge is told apart by its unit name. The Scrouge keeps its own build time of 1 and metal extraction of 0.002, because Warp Gate's rules run before those records exist.\n\nThis package replaces (AI) Scrouge, which credits no one and shipped in Immerman's pack. SCRGGEO is not offered, because the archive never shipped that unit. The script sources, the stale scripts and Scrouge.txt are left out. The note above is that file's text."
+tags: ["ai", "new-units"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+  mutators: ["warpgate"]
+layers: ["files", "units", "menus"]
+legacy:
+  - name: "(AI) Scrouge"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}AI-Scrouge.tam", "{}AI-Scrouge.sm", "{}AI-Scrouge(1).ccx"]

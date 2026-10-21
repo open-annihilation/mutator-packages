@@ -1,0 +1,7 @@
+path	source	entry	sha256
+files/Units/scrouge.fbi	Mutators/{}AI-Scrouge(1).ccx	Units/scrouge.fbi	b9b9e07ebad1c7a6eaec23b96c2d58f0b65aad0f05221d2262928c258d80bad6
+files/Units/scrgMex.fbi	Mutators/{}AI-Scrouge(1).ccx	Units/scrgMex.fbi	984c89baacb34a5548c1292fed94bb70bfd0f65307c7c6739342b98ee071d869
+files/Objects3D/Scrouge.3do	Mutators/{}AI-Scrouge(1).ccx	Objects3D/Scrouge.3do	57f19e278b27f3b1c0606917eb30c0fe0261bdc0f1dc0d0b3b51c9664062f62e
+files/Objects3D/scrgMex.3do	Mutators/{}AI-Scrouge(1).ccx	Objects3D/scrgMex.3do	caceec492ebdd096d4cd45f6c186cddba090a84bff2fa843c6a2217398d6da9c
+files/Scripts/scrouge.cob	Mutators/{}AI-Scrouge(1).ccx	Scripts/scrouge.cob	a615d7b8bdc2c6dfadb0315b459d32dc32814e1a9941f4d4485fc1411086ecb3
+files/Scripts/scrgmex.cob	Mutators/{}AI-Scrouge(1).ccx	Scripts/scrgmex.cob	1346f00481fb9ecd8f1a4548d13a021ca972a46195cb860affeee279bcc765c0
