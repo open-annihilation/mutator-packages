@@ -1,0 +1,27 @@
+# A feature in the corpses folder that no unit leaves
+right only field features/corpses/arm_corpses.tdf [armaca_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armatlas_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armbrawl_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armca_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armfig_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armhawk_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armlance_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armpeep_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armpnix_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armseer_dead] blocking: *
+right only field features/corpses/arm_corpses.tdf [armvader_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [coraca_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corape_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corfink_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corfmd_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corgol_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corhurc_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corroach_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corshad_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [cortitan_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corvalk_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corvamp_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corveng_dead] blocking: *
+right only field features/corpses/core_corpses.tdf [corvrad_dead] blocking: *
+right only field features/corpses/corfmkr_dead.tdf [corfmkr_dead] blocking: *
+right only field features/corpses/cormls_dead.tdf [cormls_dead] blocking: *

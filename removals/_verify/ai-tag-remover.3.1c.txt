@@ -1,0 +1,30 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: ai-tag-remover 1
+# seed: 0
+field units/armamph.fbi [unitinfo] ai_limit: limit ARMAMPH 20 -> (absent)	by ai-tag-remover
+field units/armamph.fbi [unitinfo] ai_weight: weight ARMAMPH 0.5 -> (absent)	by ai-tag-remover
+field units/armawac.fbi [unitinfo] ai_limit: limit ARMAwac 5 -> (absent)	by ai-tag-remover
+field units/armdecom.fbi [unitinfo] ai_limit: limit ARMDECOM 2 -> (absent)	by ai-tag-remover
+field units/armfhlt.fbi [unitinfo] ai_limit: limit ARMFHLT 6 -> (absent)	by ai-tag-remover
+field units/armflak.fbi [unitinfo] ai_limit: limit ARMFLAK 20 -> (absent)	by ai-tag-remover
+field units/armflak.fbi [unitinfo] ai_weight: weight ARMFLAK 0.5 -> (absent)	by ai-tag-remover
+field units/armmark.fbi [unitinfo] ai_limit: limit ARMMARK 2 -> (absent)	by ai-tag-remover
+field units/armmav.fbi [unitinfo] ai_limit: limit ARMMAV 20 -> (absent)	by ai-tag-remover
+field units/armmav.fbi [unitinfo] ai_weight: weight ARMMAV 0.5 -> (absent)	by ai-tag-remover
+field units/armsnipe.fbi [unitinfo] ai_limit: limit ARMAMPH 20 -> (absent)	by ai-tag-remover
+field units/armsnipe.fbi [unitinfo] ai_weight: weight ARMAMPH 0.5 -> (absent)	by ai-tag-remover
+field units/coramph.fbi [unitinfo] ai_limit: limit CORAMPH 20 -> (absent)	by ai-tag-remover
+field units/coramph.fbi [unitinfo] ai_weight: weight CORAMPH 0.5 -> (absent)	by ai-tag-remover
+field units/corawac.fbi [unitinfo] ai_limit: limit CARAwac 5 -> (absent)	by ai-tag-remover
+field units/cordecom.fbi [unitinfo] ai_limit: limit CORDECOM 2 -> (absent)	by ai-tag-remover
+field units/corfhlt.fbi [unitinfo] ai_limit: limit CORFHLT 4 -> (absent)	by ai-tag-remover
+field units/corflak.fbi [unitinfo] ai_limit: limit CORFLAK 8 -> (absent)	by ai-tag-remover
+field units/corflak.fbi [unitinfo] ai_weight: weight CORFLAK 6 -> (absent)	by ai-tag-remover
+field units/corfmkr.fbi [unitinfo] ai_limit: limit CORFMKR 4 -> (absent)	by ai-tag-remover
+field units/corfrt.fbi [unitinfo] ai_limit: limit CORFRT 6 -> (absent)	by ai-tag-remover
+field units/cornecro.fbi [unitinfo] ai_limit: limit CORNECRO 0 -> (absent)	by ai-tag-remover
+field units/cornecro.fbi [unitinfo] ai_weight: weight CORNECRO 0 -> (absent)	by ai-tag-remover
+field units/corsjam.fbi [unitinfo] ai_limit: limit CORSJAM 2 -> (absent)	by ai-tag-remover
+field units/corvoyr.fbi [unitinfo] ai_limit: limit CORVOYR 2 -> (absent)	by ai-tag-remover
