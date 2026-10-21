@@ -1,0 +1,75 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: kroggy-comm 1
+# seed: 0
+field units/armcom.fbi [unitinfo] acceleration: 0.15 -> 0.09	by kroggy-comm
+field units/armcom.fbi [unitinfo] badtargetcategory: VTOL -> (absent)	by kroggy-comm
+field units/armcom.fbi [unitinfo] brakerate: 0.3 -> 0.19	by kroggy-comm
+field units/armcom.fbi [unitinfo] buildcostenergy: 34125 -> 116664	by kroggy-comm
+field units/armcom.fbi [unitinfo] buildcostmetal: 29854 -> 29489	by kroggy-comm
+field units/armcom.fbi [unitinfo] builddistance: 60 -> 120	by kroggy-comm
+field units/armcom.fbi [unitinfo] buildtime: 95897 -> 382193	by kroggy-comm
+field units/armcom.fbi [unitinfo] cantbetransported: (absent) -> 1	by kroggy-comm
+field units/armcom.fbi [unitinfo] cloakcost: 200 -> (absent)	by kroggy-comm
+field units/armcom.fbi [unitinfo] cloakcostmoving: 1000 -> (absent)	by kroggy-comm
+field units/armcom.fbi [unitinfo] corpse: (absent) -> corkrog_dead	by kroggy-comm
+field units/armcom.fbi [unitinfo] downloadable: (absent) -> 1	by kroggy-comm
+field units/armcom.fbi [unitinfo] energymake: 25 -> 32	by kroggy-comm
+field units/armcom.fbi [unitinfo] energyuse: 0 -> 7	by kroggy-comm
+field units/armcom.fbi [unitinfo] explodeas: COMMANDER_BLAST -> NUCLEAR_MISSILE	by kroggy-comm
+field units/armcom.fbi [unitinfo] footprintx: 2 -> 3	by kroggy-comm
+field units/armcom.fbi [unitinfo] footprintz: 2 -> 3	by kroggy-comm
+field units/armcom.fbi [unitinfo] maxdamage: 3000 -> 29918	by kroggy-comm
+field units/armcom.fbi [unitinfo] maxslope: 20 -> 17	by kroggy-comm
+field units/armcom.fbi [unitinfo] maxvelocity: 1.2 -> 1	by kroggy-comm
+field units/armcom.fbi [unitinfo] maxwaterdepth: 35 -> 12	by kroggy-comm
+field units/armcom.fbi [unitinfo] mincloakdistance: 40 -> (absent)	by kroggy-comm
+field units/armcom.fbi [unitinfo] movementclass: TANKDS2 -> TANKDH3	by kroggy-comm
+field units/armcom.fbi [unitinfo] noautofire: (absent) -> 0	by kroggy-comm
+field units/armcom.fbi [unitinfo] objectname: ARMCOM -> KROGCOM	by kroggy-comm
+field units/armcom.fbi [unitinfo] onoffable: (absent) -> 1	by kroggy-comm
+field units/armcom.fbi [unitinfo] selfdestructas: COMMANDER_BLAST -> NUCLEAR_MISSILE	by kroggy-comm
+field units/armcom.fbi [unitinfo] sightdistance: 290 -> 255	by kroggy-comm
+field units/armcom.fbi [unitinfo] soundcategory: ARM_COM -> KROGOTH	by kroggy-comm
+field units/armcom.fbi [unitinfo] turnrate: 1044 -> 960	by kroggy-comm
+field units/armcom.fbi [unitinfo] weapon1: ARMCOMLASER -> CORKROG_FIRE	by kroggy-comm
+field units/armcom.fbi [unitinfo] weapon2: (absent) -> CORKROG_ROCKET	by kroggy-comm
+field units/armcom.fbi [unitinfo] weapon3: ARM_DISINTEGRATOR -> CORKROG_HEAD	by kroggy-comm
+field units/armcom.fbi [unitinfo] wpri_badtargetcategory: VTOL -> (absent)	by kroggy-comm
+field units/corcom.fbi [unitinfo] acceleration: 0.16 -> 0.09	by kroggy-comm
+field units/corcom.fbi [unitinfo] badtargetcategory: VTOL -> (absent)	by kroggy-comm
+field units/corcom.fbi [unitinfo] brakerate: 0.32 -> 0.19	by kroggy-comm
+field units/corcom.fbi [unitinfo] buildcostenergy: 35838 -> 116664	by kroggy-comm
+field units/corcom.fbi [unitinfo] buildcostmetal: 23512 -> 29489	by kroggy-comm
+field units/corcom.fbi [unitinfo] builddistance: 60 -> 120	by kroggy-comm
+field units/corcom.fbi [unitinfo] buildtime: 97852 -> 382193	by kroggy-comm
+field units/corcom.fbi [unitinfo] cantbetransported: (absent) -> 1	by kroggy-comm
+field units/corcom.fbi [unitinfo] cloakcost: 200 -> (absent)	by kroggy-comm
+field units/corcom.fbi [unitinfo] cloakcostmoving: 1000 -> (absent)	by kroggy-comm
+field units/corcom.fbi [unitinfo] corpse: (absent) -> corkrog_dead	by kroggy-comm
+field units/corcom.fbi [unitinfo] downloadable: (absent) -> 1	by kroggy-comm
+field units/corcom.fbi [unitinfo] energymake: 25 -> 32	by kroggy-comm
+field units/corcom.fbi [unitinfo] energyuse: 1 -> 7	by kroggy-comm
+field units/corcom.fbi [unitinfo] explodeas: COMMANDER_BLAST -> NUCLEAR_MISSILE	by kroggy-comm
+field units/corcom.fbi [unitinfo] footprintx: 2 -> 3	by kroggy-comm
+field units/corcom.fbi [unitinfo] footprintz: 2 -> 3	by kroggy-comm
+field units/corcom.fbi [unitinfo] maxdamage: 3000 -> 29918	by kroggy-comm
+field units/corcom.fbi [unitinfo] maxslope: 20 -> 17	by kroggy-comm
+field units/corcom.fbi [unitinfo] maxvelocity: 1.07 -> 1	by kroggy-comm
+field units/corcom.fbi [unitinfo] maxwaterdepth: 35 -> 12	by kroggy-comm
+field units/corcom.fbi [unitinfo] mincloakdistance: 40 -> (absent)	by kroggy-comm
+field units/corcom.fbi [unitinfo] movementclass: TANKDS2 -> TANKDH3	by kroggy-comm
+field units/corcom.fbi [unitinfo] noautofire: (absent) -> 0	by kroggy-comm
+field units/corcom.fbi [unitinfo] objectname: CORCOM -> KROGCOM	by kroggy-comm
+field units/corcom.fbi [unitinfo] onoffable: (absent) -> 1	by kroggy-comm
+field units/corcom.fbi [unitinfo] selfdestructas: COMMANDER_BLAST -> NUCLEAR_MISSILE	by kroggy-comm
+field units/corcom.fbi [unitinfo] sightdistance: 290 -> 255	by kroggy-comm
+field units/corcom.fbi [unitinfo] turnrate: 1030 -> 960	by kroggy-comm
+field units/corcom.fbi [unitinfo] weapon1: CORCOMLASER -> CORKROG_FIRE	by kroggy-comm
+field units/corcom.fbi [unitinfo] weapon2: (absent) -> CORKROG_ROCKET	by kroggy-comm
+field units/corcom.fbi [unitinfo] weapon3: CORE_DISINTEGRATOR -> CORKROG_HEAD	by kroggy-comm
+field units/corcom.fbi [unitinfo] wpri_badtargetcategory: VTOL -> (absent)	by kroggy-comm
+file added objects3d/krogcom.3do fc319c1030fdf813241c3804ecb49482ce2519c4d42f5ab9e1c8dddb675136fd	by kroggy-comm
+file replaced scripts/armcom.cob 2514431df99863d0c1f4f95effbda442938c4b8e9c5aca7ac3cb5a65846bea32 978353bdc78ebe9e1860109af5539ffcfc442e001d6f166c4b8240792e5f724c	by kroggy-comm
+file replaced scripts/corcom.cob cb8605c01c82f98d69ddae501eaa56270d1ff0773fb64a954475e3b43b9657a1 978353bdc78ebe9e1860109af5539ffcfc442e001d6f166c4b8240792e5f724c	by kroggy-comm
