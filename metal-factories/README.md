@@ -690,7 +690,7 @@ No package needed a fix. The comparisons of `finite-metal` and `finite-metal-cs`
 
 The removal is a hook, so it combines with `no-porc` under any rule. R02's text rule would have cancelled two removals of one field (Q17); since Q63 each mutator acts on the state the ones above it left, and both orders were checked on 3.1c.
 
-`finite-metal-uh` is the same package over Uberhack 4.0. Its report drops CORBHMTH as well as the extractors that mod adds. The faithful import lists `works-with: ["ta-3.1c"]` (its `UH` code is not mapped to a mod), so `oa-tool mutator diff` refuses to apply that import on Uberhack and the versus comparison cannot be run.
+`finite-metal-uh` is the same package over Uberhack 4.0. Its report drops CORBHMTH as well as the extractors that mod adds. The faithful import lists `works-with: ["ta-3.1c"]` (its `UH` code is not mapped to a mod), so `oa-tool mutator diff` refuses to apply that import on Uberhack and the versus comparison cannot be run. That row names no import: its recorded report is the check.
 
 `directional-factories.allowed` is the only allowed file. The comparison kept 237 menu lines and nothing else. Each block is one reason:
 
