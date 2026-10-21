@@ -1,6 +1,6 @@
 # MAC's unit tweaks
 
-Fourteen packages replace sixteen of MAC's (macraig) single-unit tweaks and his two unit adders. The tweaks name the units they change, as the originals do, so a game without that unit is unchanged. The two adders ship the original's files, named in `from-originals.tsv` and copied by `tools/build-packages`. Absolute Annihilation 6.0 Tweaks is not converted. No comparison here needs an allowed difference. L25 writes the reports.
+Fourteen packages replace sixteen of MAC's (macraig) single-unit tweaks and his two unit adders. The tweaks name the units they change, as the originals do, so a game without that unit is unchanged. The two adders ship the original's files, named in `from-originals.tsv` and copied by `tools/build-packages`. Absolute Annihilation 6.0 Tweaks is not converted. No comparison needs an allowed difference. The reports are in `_verify/`.
 
 The import id is the id `oa-tool mutator import` makes from the title, with no `--works-with`. MAC's codes (`UTASP`, `TAUCP17`, `UT40b`, `AA60` and the rest) stay on each legacy record.
 
@@ -93,3 +93,11 @@ Each hash is the SHA-256 of the archive entry. The build checks it and copies th
 | `dragons-eye` `files/anims/ARMEYES_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `anims/ARMEYES_gadget.GAF` | `1712b716368e05b39c983debf1004bce9e5567c62d8415191e414c89523b823f` |
 
 `nano-tower` and `nano-tower-tweak` conflict. One adds the pad and the tower, and the other changes those units when a pack already has them.
+
+## Differences from the originals
+
+There is no allowed file. Every row of `_verify/comparisons.tsv` keeps `allowed` as `-`. Each comparison of the curated package with its faithful import matched, over 3.1c or over the row's mod, so no package was changed.
+
+The reports are what `oa-tool mutator diff` prints. A tweak changes only the fields its original names, on the units it names. A field the unit already holds does not appear: the Seahawk's `MaxWaterDepth` is already 255, and on UTASP 5.0 the advanced seaplane builder's `MaxWaterDepth` is already 255. Nano Tower adds ARMMTLAB and ARMNTOW, their files and their menu entries. Dragon's Eye adds ARMEYES. Clairvoyance over UTASP 5.0 changes ARMBEAC and CORBEAC. Over TAUCP 2.3 it changes ARMEYE.
+
+The files layer writes `download/armmtlab-2.tdf` for the pad's ARMFAB entry, a builder 3.1c does not have. The import's own report has the same file, so the comparison does not count it.
