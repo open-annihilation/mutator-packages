@@ -1,0 +1,26 @@
+oamut: 1
+id: "acid-water"
+name: "Acid Water"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Acid maps can be played as ordinary water, or with the acid turned down.\n\nBrackish water does no damage. Weak acid does a tenth of the map's water damage, rounded down to a whole number. Tidal strength is left as the map set it. Cavedog's acid maps already have tides as strong as ordinary water maps, or stronger. A third-party map whose acid is stronger stays stronger than those, at a tenth of its own damage.\n\nBrackish Not Acid and Weak Acid, by MAC (macraig). This version rounds that tenth down, because water damage is stored as a whole number."
+tags: ["maps", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["maps"]
+options:
+  strength:
+    type: choice
+    values: ["brackish", "weak"]
+    default: "brackish"
+    label: "Acid"
+legacy:
+  - name: "[MAC] Brackish Not Acid"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Brackish Not Acid.tam", "{}MAC Brackish Not Acid.sm"]
+  - name: "[MAC] Weak Acid"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Weak Acid.tam", "{}MAC Weak Acid.sm"]

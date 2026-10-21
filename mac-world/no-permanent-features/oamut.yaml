@@ -1,0 +1,26 @@
+oamut: 1
+id: "no-permanent-features"
+name: "No Permanent Features"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Indestructible scenery can be destroyed and reclaimed. Metal patches and geothermal vents are left as they are. Monorails can be chosen on their own.\n\nA chosen feature becomes reclaimable wreckage: 100 metal, 300 damage, a tree reclaim sequence and a widget explosion. The flags that made it permanent are removed.\n\nNo Permanent Features and Destructible Monorails, by MAC (macraig). No Permanent Features named 41 feature folders. This version checks every feature, so a map pack's or a mod's scenery counts as well. Monorails are the features whose description contains Monorail and which cannot be destroyed."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units", "features"]
+options:
+  which:
+    type: choice
+    values: ["all", "monorails"]
+    default: "all"
+    label: "Features"
+legacy:
+  - name: "[MAC] No Permanent Features"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC No Permanent Features.tam", "{}MAC No Permanent Features.sm"]
+  - name: "[MAC] Destructible Monorails"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Destructible Monorails.tam", "{}MAC Destructible Monorails.sm"]
