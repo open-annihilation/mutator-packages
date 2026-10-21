@@ -6,7 +6,8 @@ function mutate(ctx)
         buildtime = scale(0.75),
       },
       where { energyuse = range(0.0001, 400000) }:change { energyuse = remove() },
-      where { cloakcost = not_(absent()) }:change {
+      -- has("") is a written field. absent() is already negated, so not_(absent()) does not run.
+      where { cloakcost = has("") }:change {
         cloakcost = remove(),
         mincloakdistance = remove(),
         cloakcostmoving = remove(),
