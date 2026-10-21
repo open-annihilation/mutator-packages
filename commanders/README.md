@@ -1,6 +1,6 @@
 # Commanders
 
-Ten packages replace the thirteen TA: Mutation commander mutators. ÜberComm and PowerComm share one strength choice, the two radar mutators share one radar choice, and the two commander-blast archives share one blast rule. Five originals shipped whole unit files or models. The stat changes are rules. Models and scripts stay files, named in `from-originals.tsv` and taken from the originals by `tools/build-packages`.
+Ten packages replace the thirteen TA: Mutation commander mutators. ÜberComm and PowerComm share one strength choice, the two radar mutators share one radar choice, and the two commander-blast archives share one blast rule. Five originals shipped whole unit files or models. The stat changes are rules. Models and scripts stay files in the package's `files/`. Files lists each path, the archive and entry it came from, and its SHA-256.
 
 ## Originals
 
@@ -22,19 +22,31 @@ Ten packages replace the thirteen TA: Mutation commander mutators. ÜberComm and
 
 The import id is the id `oa-tool mutator import` makes from the title, with no `--works-with`. Uberhack and the other mods named in the compatibility codes have no OA id, so those codes stay on the legacy record.
 
-## Files from the originals
+## Files
 
-Each hash is the SHA-256 of the archive entry. The build checks it and copies the bytes unchanged. `scripts/KroggyCom.bos` is the script source, which the game never reads, and `features/corpses/Corkrog_dead.tdf` is an unchanged copy of Core Contingency's corpse, so neither ships. The Core commander script is stored in the archive as `scripts/Corcom.cob` and placed at `files/scripts/corcom.cob`. Tribe's script is stored as `scripts/armcom.COB` and placed at `files/scripts/armcom.cob`.
+Each hash is the SHA-256 of the archive entry. The file under `files/` is those bytes. `scripts/KroggyCom.bos` is the script source, which the game never reads, and `features/corpses/Corkrog_dead.tdf` is an unchanged copy of Core Contingency's corpse, so neither ships. The Core commander script is stored in the archive as `scripts/Corcom.cob` and placed at `files/scripts/corcom.cob`. Tribe's script is stored as `scripts/armcom.COB` and placed at `files/scripts/armcom.cob`.
 
-| Package path | Source | Entry | SHA-256 |
+### kroggy-comm
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
 |---|---|---|---|
-| `kroggy-comm` `files/objects3d/KROGCOM.3do` | `Mutators/}{KroggyComm11.ccx` | `objects3d/KROGCOM.3do` | `fc319c1030fdf813241c3804ecb49482ce2519c4d42f5ab9e1c8dddb675136fd` |
-| `kroggy-comm` `files/scripts/armcom.cob` | `Mutators/}{KroggyComm11.ccx` | `scripts/armcom.cob` | `978353bdc78ebe9e1860109af5539ffcfc442e001d6f166c4b8240792e5f724c` |
-| `kroggy-comm` `files/scripts/corcom.cob` | `Mutators/}{KroggyComm11.ccx` | `scripts/Corcom.cob` | `978353bdc78ebe9e1860109af5539ffcfc442e001d6f166c4b8240792e5f724c` |
-| `ravenfire-core-commander` `files/objects3d/corcom.3do` | `Mutators/}{RFCoreComModel.ccx` | `objects3d/corcom.3do` | `89cfb0fa5db26cfaec3b85cc6edcb52cc15599a246ae5748958524cc487b98c8` |
-| `ravenfire-core-commander` `files/objects3d/cordecom.3do` | `Mutators/}{RFCoreComModel.ccx` | `objects3d/cordecom.3do` | `89cfb0fa5db26cfaec3b85cc6edcb52cc15599a246ae5748958524cc487b98c8` |
-| `tribe-commander` `files/objects3d/tribcom.3do` | `Mutators/}{Tribe.ccx` | `objects3d/tribcom.3do` | `dcbd08e1aa70287a1ac294f933c7f40da74e71af5de3c2753243014e0b3cfc28` |
-| `tribe-commander` `files/scripts/armcom.cob` | `Mutators/}{Tribe.ccx` | `scripts/armcom.COB` | `3e2ab51c7b869591ac0a0eb6fc4203779c06f53bac525c4ca7ec315c4504a1ce` |
+| `files/objects3d/KROGCOM.3do` | `Mutators/}{KroggyComm11.ccx` | `objects3d/KROGCOM.3do` | `fc319c1030fdf813241c3804ecb49482ce2519c4d42f5ab9e1c8dddb675136fd` |
+| `files/scripts/armcom.cob` | `Mutators/}{KroggyComm11.ccx` | `scripts/armcom.cob` | `978353bdc78ebe9e1860109af5539ffcfc442e001d6f166c4b8240792e5f724c` |
+| `files/scripts/corcom.cob` | `Mutators/}{KroggyComm11.ccx` | `scripts/Corcom.cob` | `978353bdc78ebe9e1860109af5539ffcfc442e001d6f166c4b8240792e5f724c` |
+
+### ravenfire-core-commander
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/objects3d/corcom.3do` | `Mutators/}{RFCoreComModel.ccx` | `objects3d/corcom.3do` | `89cfb0fa5db26cfaec3b85cc6edcb52cc15599a246ae5748958524cc487b98c8` |
+| `files/objects3d/cordecom.3do` | `Mutators/}{RFCoreComModel.ccx` | `objects3d/cordecom.3do` | `89cfb0fa5db26cfaec3b85cc6edcb52cc15599a246ae5748958524cc487b98c8` |
+
+### tribe-commander
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/objects3d/tribcom.3do` | `Mutators/}{Tribe.ccx` | `objects3d/tribcom.3do` | `dcbd08e1aa70287a1ac294f933c7f40da74e71af5de3c2753243014e0b3cfc28` |
+| `files/scripts/armcom.cob` | `Mutators/}{Tribe.ccx` | `scripts/armcom.COB` | `3e2ab51c7b869591ac0a0eb6fc4203779c06f53bac525c4ca7ec315c4504a1ce` |
 
 The two KroggyComm scripts are one file stored twice, so they share a hash. The two RavenFire models are one model stored twice. KroggyComm's `armcom.cob` and `corcom.cob` change ARMCOM and CORCOM by those names, and Tribe's `armcom.cob` changes ARMCOM by that name. Each of those packages says so in its description. The three packages add `files` in the plan so the Files layer serves the models and scripts.
 
