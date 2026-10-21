@@ -1,0 +1,52 @@
+oamut: 1
+id: "warpgate"
+name: "Warp Gate"
+version: "1"
+author:
+  name: "Immerman"
+description: "Start from a gate and teleport in the commander you choose.\n\nArm starts with the Normal gate and Core with the Easy gate, which makes 40 energy and 3 metal and stores 3000 energy and 1000 metal. With a chosen arrival, Arm's gate is the Target gate: attack-order the ground and the commander is built there. Core's gate is the Random gate, which picks the spot. When the battle room says Game ends, losing the gate ends your game. Some computer profiles may not use the gate. If the match does not start on a gate, that profile is the likely cause. Chosen arrivals are not usable by computer players.\n\nCommander arrives: at-gate puts the commander on the gate, as Warp Gate 3.1 did, and the gate is itself a commander. near puts the commander near the gate, as 4.0 and 4.1 did, and the gate's script places the build point 8 to 30 units out. near-twin gives two commanders, as TwinComm did. chosen builds the commander where you choose, as Targetting did. chosen-twin gives two commanders, at a chosen spot or a random one, as TwinTarget did.\n\nThis package replaces * Warp Gate 3.1 *, * Warp Gate 4.0 *, * Warp Gate 4.0, Targetting *, * Warp Gate 4.0, TwinComm *, * Warp Gate 4.0, TwinTarget * and * Warp Gate 4.1 *, all by Immerman. It follows 4.1. One package holds the six versions, the sides keep their names and prefixes, TwinTarget's two commanders may both exist, and the battle-room screens, their art and the instruction plate are left out."
+tags: ["gameplay", "new-units"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["files", "units", "sides", "menus", "weapons"]
+options:
+  arrival:
+    type: choice
+    values: ["at-gate", "near", "near-twin", "chosen", "chosen-twin"]
+    default: "near"
+    label: "Commander arrives"
+legacy:
+  - name: "* Warp Gate 3.1 *"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Warpgate31.tam", "{}Warpgate31.sm", "{}Warpgate31(1).ccx"]
+  - name: "* Warp Gate 4.0 *"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Warpgate4_0.tam", "{}Warpgate4_0.sm", "{}Warpgate4_0(1).ccx"]
+  - name: "* Warp Gate 4.0, Targetting *"
+    prefix: "{}"
+    compatibility: ["*"]
+    files:
+      - "{}Warpgate4_0-Targetting.tam"
+      - "{}Warpgate4_0-Targetting.sm"
+      - "{}Warpgate4_0-Targetting(1).ccx"
+  - name: "* Warp Gate 4.0, TwinComm *"
+    prefix: "{}"
+    compatibility: ["*"]
+    files:
+      - "{}Warpgate4_0-TwinComm.tam"
+      - "{}Warpgate4_0-TwinComm.sm"
+      - "{}Warpgate4_0-TwinComm(1).ccx"
+  - name: "* Warp Gate 4.0, TwinTarget *"
+    prefix: "{}"
+    compatibility: ["*"]
+    files:
+      - "{}Warpgate4_0-TwinTarget.tam"
+      - "{}Warpgate4_0-TwinTarget.sm"
+      - "{}Warpgate4_0-TwinTarget(1).ccx"
+  - name: "* Warp Gate 4.1 *"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Warpgate4_1.tam", "{}Warpgate4_1.sm", "{}Warpgate4_1(1).ccx"]
