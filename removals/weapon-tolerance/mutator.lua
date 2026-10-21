@@ -1,10 +1,5 @@
-local function flag(weapon, key)
-  local value = weapon[key]
-  return value == true or value == 1
-end
-
 -- Death blasts, mine blasts and meteors are not a unit's weapon 1, 2 or 3,
--- so they keep no tolerance. A bomb is dropped and keeps none too.
+-- so they keep no tolerance.
 function mutate(ctx)
   return {
     weapons = function(weapons, ctx)
@@ -18,7 +13,7 @@ function mutate(ctx)
         end
       end
       for name, weapon in pairs(weapons) do
-        if fired[string.lower(name)] and weapon:get("tolerance") == nil and not flag(weapon, "dropped") then
+        if fired[string.lower(name)] and weapon:get("tolerance") == nil then
           weapon.tolerance = 500
         end
       end
