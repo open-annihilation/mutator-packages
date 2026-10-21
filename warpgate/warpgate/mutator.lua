@@ -12,15 +12,6 @@ local function offer(menus, gate)
   menus:add(gate, "CORCOM", { page = 1, slot = 2 })
 end
 
-local function guard_locator(weapons, ctx)
-  for name, weapon in pairs(weapons) do
-    if name:lower() ~= "target_locator" and weapon.id == 250 then
-      ctx.incompatible("Warp Gate's target locator needs weapon id 250, which this mod already uses")
-      return
-    end
-  end
-end
-
 function mutate(ctx)
   local arrival = ctx.options.arrival
   local buildtime = 100
@@ -65,8 +56,5 @@ function mutate(ctx)
       offer(menus, "CORGATE")
     end,
   }
-  if arrival == "chosen" or arrival == "chosen-twin" then
-    plan.weapons = guard_locator
-  end
   return plan
 end
