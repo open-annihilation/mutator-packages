@@ -1,0 +1,15 @@
+row	curated	imports	allowed	mod	map
+acid-water	./acid-water	_imports/mac-brackish-not-acid	-	-	Acid Pools
+acid-water-weak	./acid-water:strength=weak	_imports/mac-weak-acid	-	-	Acid Pools
+passable-lava	./passable-lava	_imports/mac-passable-lava	-	-	Lava Highground
+condensed-fog	./condensed-fog	_imports/mac-condensed-fog	-	-	Temblorian Mist
+map-wind	./map-wind	_imports/mac-no-wind	-	-	Acid Pools
+map-wind-steady	./map-wind:wind=steady	_imports/mac-steady-winds	-	-	Acid Pools
+heavy-metal-1	./heavy-metal:level=1	_imports/mac-heavy-metal-1	-	-	Acid Pools
+heavy-metal-2	./heavy-metal:level=2	_imports/mac-heavy-metal-2	-	-	Acid Pools
+heavy-metal-3	./heavy-metal:level=3	_imports/mac-heavy-metal-3	-	-	Acid Pools
+maxed-metal-spots	./maxed-metal-spots	_imports/mac-maxed-metalspots	-	-	-
+no-scars	./no-scars	_imports/mac-no-fugly-scars	-	-	-
+no-permanent-features	./no-permanent-features	_imports/mac-no-permanent-features	-	-	-
+no-permanent-features-monorails	./no-permanent-features:which=monorails	_imports/mac-destructible-monorails	-	-	-
+fortified-forts	./fortified-forts	_imports/mac-fortified-forts-walls	fortified-forts.allowed	-	-
