@@ -1,0 +1,19 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: enhanced-builders 1 side=core
+# seed: 0
+field units/coraca.fbi [unitinfo] workertime: 100 -> 300	by enhanced-builders
+field units/corack.fbi [unitinfo] workertime: 160 -> 480	by enhanced-builders
+field units/coracsub.fbi [unitinfo] workertime: 225 -> 675	by enhanced-builders
+field units/coracv.fbi [unitinfo] workertime: 200 -> 600	by enhanced-builders
+field units/corca.fbi [unitinfo] workertime: 50 -> 150	by enhanced-builders
+field units/corcarry.fbi [unitinfo] workertime: 200 -> 600	by enhanced-builders
+field units/corch.fbi [unitinfo] workertime: 80 -> 240	by enhanced-builders
+field units/corck.fbi [unitinfo] workertime: 80 -> 240	by enhanced-builders
+field units/corcs.fbi [unitinfo] workertime: 125 -> 375	by enhanced-builders
+field units/corcsa.fbi [unitinfo] workertime: 50 -> 150	by enhanced-builders
+field units/corcv.fbi [unitinfo] workertime: 100 -> 300	by enhanced-builders
+field units/cordecom.fbi [unitinfo] workertime: 30 -> 90	by enhanced-builders
+field units/cormlv.fbi [unitinfo] workertime: 100 -> 300	by enhanced-builders
+field units/cornecro.fbi [unitinfo] workertime: 160 -> 480	by enhanced-builders

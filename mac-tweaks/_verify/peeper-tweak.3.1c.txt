@@ -1,0 +1,15 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: peeper-tweak 1
+# seed: 0
+field units/armpeep.fbi [unitinfo] acceleration: 0.5 -> 4	by peeper-tweak
+field units/armpeep.fbi [unitinfo] altfromsealevel: (absent) -> 1	by peeper-tweak
+field units/armpeep.fbi [unitinfo] bankscale: 1 -> 4	by peeper-tweak
+field units/armpeep.fbi [unitinfo] brakerate: 9 -> 13.5	by peeper-tweak
+field units/armpeep.fbi [unitinfo] cruisealt: 180 -> 2000	by peeper-tweak
+field units/armpeep.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by peeper-tweak
+field units/armpeep.fbi [unitinfo] maxvelocity: 12 -> 24	by peeper-tweak
+field units/armpeep.fbi [unitinfo] radardistance: 700 -> 0	by peeper-tweak
+field units/armpeep.fbi [unitinfo] sightdistance: 350 -> 1600	by peeper-tweak
+field units/armpeep.fbi [unitinfo] turnrate: 800 -> 1600	by peeper-tweak

@@ -1,0 +1,113 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: useful-mines 1
+# seed: 0
+field units/armmine1.fbi [unitinfo] buildcostenergy: 1017 -> 203.4	by useful-mines
+field units/armmine1.fbi [unitinfo] buildcostmetal: 32 -> 6.4	by useful-mines
+field units/armmine1.fbi [unitinfo] buildtime: 1322 -> 264.4	by useful-mines
+field units/armmine1.fbi [unitinfo] cloakcost: 7 -> 1	by useful-mines
+field units/armmine1.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/armmine1.fbi [unitinfo] maxdamage: 100 -> 50	by useful-mines
+field units/armmine1.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/armmine1.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/armmine1.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/armmine2.fbi [unitinfo] buildcostenergy: 1909 -> 381.8	by useful-mines
+field units/armmine2.fbi [unitinfo] buildcostmetal: 61 -> 12.2	by useful-mines
+field units/armmine2.fbi [unitinfo] buildtime: 2481 -> 496.2	by useful-mines
+field units/armmine2.fbi [unitinfo] cloakcost: 14 -> 1	by useful-mines
+field units/armmine2.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/armmine2.fbi [unitinfo] maxdamage: 100 -> 50	by useful-mines
+field units/armmine2.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/armmine2.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/armmine2.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/armmine3.fbi [unitinfo] buildcostenergy: 2688 -> 537.6	by useful-mines
+field units/armmine3.fbi [unitinfo] buildcostmetal: 86 -> 17.2	by useful-mines
+field units/armmine3.fbi [unitinfo] buildtime: 3494 -> 698.8	by useful-mines
+field units/armmine3.fbi [unitinfo] cloakcost: 19 -> 1	by useful-mines
+field units/armmine3.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/armmine3.fbi [unitinfo] maxdamage: 100 -> 50	by useful-mines
+field units/armmine3.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/armmine3.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/armmine3.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/armmine4.fbi [unitinfo] buildcostenergy: 4294 -> 858.8	by useful-mines
+field units/armmine4.fbi [unitinfo] buildcostmetal: 137 -> 27.4	by useful-mines
+field units/armmine4.fbi [unitinfo] buildtime: 5582 -> 1116.4	by useful-mines
+field units/armmine4.fbi [unitinfo] cloakcost: 31 -> 1	by useful-mines
+field units/armmine4.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/armmine4.fbi [unitinfo] maxdamage: 100 -> 50	by useful-mines
+field units/armmine4.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/armmine4.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/armmine4.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/armmine5.fbi [unitinfo] buildcostenergy: 4135 -> 827	by useful-mines
+field units/armmine5.fbi [unitinfo] buildcostmetal: 132 -> 26.4	by useful-mines
+field units/armmine5.fbi [unitinfo] buildtime: 5375 -> 1075	by useful-mines
+field units/armmine5.fbi [unitinfo] cloakcost: 30 -> 1	by useful-mines
+field units/armmine5.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/armmine5.fbi [unitinfo] maxdamage: 2000 -> 50	by useful-mines
+field units/armmine5.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/armmine5.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/armmine5.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/armmine6.fbi [unitinfo] buildcostenergy: 22272 -> 4454.4	by useful-mines
+field units/armmine6.fbi [unitinfo] buildcostmetal: 498 -> 99.6	by useful-mines
+field units/armmine6.fbi [unitinfo] buildtime: 28953 -> 5790.6	by useful-mines
+field units/armmine6.fbi [unitinfo] cloakcost: 79 -> 1	by useful-mines
+field units/armmine6.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/armmine6.fbi [unitinfo] maxdamage: 100 -> 50	by useful-mines
+field units/armmine6.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/armmine6.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/armmine6.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/cormine1.fbi [unitinfo] buildcostenergy: 532 -> 106.4	by useful-mines
+field units/cormine1.fbi [unitinfo] buildcostmetal: 20 -> 4	by useful-mines
+field units/cormine1.fbi [unitinfo] buildtime: 665 -> 133	by useful-mines
+field units/cormine1.fbi [unitinfo] cloakcost: 5 -> 1	by useful-mines
+field units/cormine1.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/cormine1.fbi [unitinfo] maxdamage: 200 -> 50	by useful-mines
+field units/cormine1.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/cormine1.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/cormine1.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/cormine2.fbi [unitinfo] buildcostenergy: 1156 -> 231.2	by useful-mines
+field units/cormine2.fbi [unitinfo] buildcostmetal: 48 -> 9.6	by useful-mines
+field units/cormine2.fbi [unitinfo] buildtime: 1445 -> 289	by useful-mines
+field units/cormine2.fbi [unitinfo] cloakcost: 11 -> 1	by useful-mines
+field units/cormine2.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/cormine2.fbi [unitinfo] maxdamage: 200 -> 50	by useful-mines
+field units/cormine2.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/cormine2.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/cormine2.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/cormine3.fbi [unitinfo] buildcostenergy: 1704 -> 340.8	by useful-mines
+field units/cormine3.fbi [unitinfo] buildcostmetal: 73 -> 14.6	by useful-mines
+field units/cormine3.fbi [unitinfo] buildtime: 2130 -> 426	by useful-mines
+field units/cormine3.fbi [unitinfo] cloakcost: 15 -> 1	by useful-mines
+field units/cormine3.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/cormine3.fbi [unitinfo] maxdamage: 200 -> 50	by useful-mines
+field units/cormine3.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/cormine3.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/cormine3.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/cormine4.fbi [unitinfo] buildcostenergy: 2342 -> 468.4	by useful-mines
+field units/cormine4.fbi [unitinfo] buildcostmetal: 104 -> 20.8	by useful-mines
+field units/cormine4.fbi [unitinfo] buildtime: 2927 -> 585.4	by useful-mines
+field units/cormine4.fbi [unitinfo] cloakcost: 21 -> 1	by useful-mines
+field units/cormine4.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/cormine4.fbi [unitinfo] maxdamage: 200 -> 50	by useful-mines
+field units/cormine4.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/cormine4.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/cormine4.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/cormine5.fbi [unitinfo] buildcostenergy: 7607 -> 1521.4	by useful-mines
+field units/cormine5.fbi [unitinfo] buildcostmetal: 264 -> 52.8	by useful-mines
+field units/cormine5.fbi [unitinfo] buildtime: 9508 -> 1901.6	by useful-mines
+field units/cormine5.fbi [unitinfo] cloakcost: 70 -> 1	by useful-mines
+field units/cormine5.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/cormine5.fbi [unitinfo] maxdamage: 200 -> 50	by useful-mines
+field units/cormine5.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/cormine5.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/cormine5.fbi [unitinfo] yardmap: o -> 	by useful-mines
+field units/cormine6.fbi [unitinfo] buildcostenergy: 26172 -> 5234.4	by useful-mines
+field units/cormine6.fbi [unitinfo] buildcostmetal: 595 -> 119	by useful-mines
+field units/cormine6.fbi [unitinfo] buildtime: 32715 -> 6543	by useful-mines
+field units/cormine6.fbi [unitinfo] cloakcost: 123 -> 1	by useful-mines
+field units/cormine6.fbi [unitinfo] digger: (absent) -> 1	by useful-mines
+field units/cormine6.fbi [unitinfo] maxdamage: 200 -> 50	by useful-mines
+field units/cormine6.fbi [unitinfo] maxslope: 15 -> 40	by useful-mines
+field units/cormine6.fbi [unitinfo] mincloakdistance: 10 -> 2	by useful-mines
+field units/cormine6.fbi [unitinfo] yardmap: o -> 	by useful-mines

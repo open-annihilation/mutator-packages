@@ -1,0 +1,3 @@
+# The jammer value was written for Uberhack's spies; the description asks for stealth instead
+right only field units/armspy.fbi [unitinfo] radardistancejam: (absent) -> 40
+right only field units/corspy.fbi [unitinfo] radardistancejam: (absent) -> 40

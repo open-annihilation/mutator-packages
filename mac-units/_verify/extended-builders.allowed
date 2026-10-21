@@ -1,0 +1,5 @@
+# The original's selector lacks Builder, so it doubled the sight of every ground unit; the curated version doubles builders' only
+right only field units/*.fbi [unitinfo] sightdistance: *
+
+# The original's leash field is misspelt, so it changed no leash; the curated version doubles maneuverleashlength
+left only field units/*.fbi [unitinfo] maneuverleashlength: *

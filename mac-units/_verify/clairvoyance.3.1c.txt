@@ -1,0 +1,52 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: clairvoyance 1
+# seed: 0
+field units/armaap.fbi [unitinfo] radardistance: 1200 -> 12000	by clairvoyance
+field units/armacsub.fbi [unitinfo] sonardistance: 400 -> 4000	by clairvoyance
+field units/armanni.fbi [unitinfo] radardistance: 1200 -> 12000	by clairvoyance
+field units/armap.fbi [unitinfo] radardistance: 500 -> 5000	by clairvoyance
+field units/armarad.fbi [unitinfo] radardistance: 2880 -> 28800	by clairvoyance
+field units/armason.fbi [unitinfo] sonardistance: 2250 -> 22500	by clairvoyance
+field units/armatl.fbi [unitinfo] sonardistance: 650 -> 6500	by clairvoyance
+field units/armawac.fbi [unitinfo] radardistance: 1650 -> 16500	by clairvoyance
+field units/armcarry.fbi [unitinfo] radardistance: 1800 -> 18000	by clairvoyance
+field units/armcom.fbi [unitinfo] radardistance: 400 -> 4000	by clairvoyance
+field units/armcom.fbi [unitinfo] sonardistance: 400 -> 4000	by clairvoyance
+field units/armcrus.fbi [unitinfo] sonardistance: 425 -> 4250	by clairvoyance
+field units/armmark.fbi [unitinfo] radardistance: 1250 -> 12500	by clairvoyance
+field units/armpeep.fbi [unitinfo] radardistance: 700 -> 7000	by clairvoyance
+field units/armrad.fbi [unitinfo] radardistance: 1440 -> 14400	by clairvoyance
+field units/armroy.fbi [unitinfo] sonardistance: 305 -> 3050	by clairvoyance
+field units/armseer.fbi [unitinfo] radardistance: 1120 -> 11200	by clairvoyance
+field units/armsehak.fbi [unitinfo] sonardistance: 1405 -> 14050	by clairvoyance
+field units/armsonar.fbi [unitinfo] sonardistance: 1180 -> 11800	by clairvoyance
+field units/armss.fbi [unitinfo] sonardistance: 489 -> 4890	by clairvoyance
+field units/armsub.fbi [unitinfo] sonardistance: 405 -> 4050	by clairvoyance
+field units/armsubk.fbi [unitinfo] sonardistance: 489 -> 4890	by clairvoyance
+field units/armtl.fbi [unitinfo] sonardistance: 450 -> 4500	by clairvoyance
+field units/coraap.fbi [unitinfo] radardistance: 1150 -> 11500	by clairvoyance
+field units/coracsub.fbi [unitinfo] sonardistance: 500 -> 5000	by clairvoyance
+field units/corap.fbi [unitinfo] radardistance: 510 -> 5100	by clairvoyance
+field units/corarad.fbi [unitinfo] radardistance: 2880 -> 28800	by clairvoyance
+field units/corason.fbi [unitinfo] sonardistance: 2250 -> 22500	by clairvoyance
+field units/coratl.fbi [unitinfo] sonardistance: 650 -> 6500	by clairvoyance
+field units/corawac.fbi [unitinfo] radardistance: 1590 -> 15900	by clairvoyance
+field units/corcarry.fbi [unitinfo] radardistance: 1780 -> 17800	by clairvoyance
+field units/corcom.fbi [unitinfo] radardistance: 400 -> 4000	by clairvoyance
+field units/corcom.fbi [unitinfo] sonardistance: 400 -> 4000	by clairvoyance
+field units/corcrus.fbi [unitinfo] sonardistance: 420 -> 4200	by clairvoyance
+field units/corfink.fbi [unitinfo] radardistance: 650 -> 6500	by clairvoyance
+field units/corhunt.fbi [unitinfo] sonardistance: 1445 -> 14450	by clairvoyance
+field units/cormship.fbi [unitinfo] radardistance: 1250 -> 12500	by clairvoyance
+field units/corrad.fbi [unitinfo] radardistance: 1440 -> 14400	by clairvoyance
+field units/corroy.fbi [unitinfo] sonardistance: 305 -> 3050	by clairvoyance
+field units/corshark.fbi [unitinfo] sonardistance: 450 -> 4500	by clairvoyance
+field units/corsonar.fbi [unitinfo] sonardistance: 1223 -> 12230	by clairvoyance
+field units/corss.fbi [unitinfo] sonardistance: 489 -> 4890	by clairvoyance
+field units/corssub.fbi [unitinfo] sonardistance: 658 -> 6580	by clairvoyance
+field units/corsub.fbi [unitinfo] sonardistance: 400 -> 4000	by clairvoyance
+field units/cortl.fbi [unitinfo] sonardistance: 440 -> 4400	by clairvoyance
+field units/corvoyr.fbi [unitinfo] radardistance: 1200 -> 12000	by clairvoyance
+field units/corvrad.fbi [unitinfo] radardistance: 1120 -> 11200	by clairvoyance

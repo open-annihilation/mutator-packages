@@ -1,0 +1,13 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: radar-plane-targeting 1 plane=seahawk
+# seed: 0
+field units/armsehak.fbi [unitinfo] canattack: (absent) -> 1	by radar-plane-targeting
+field units/armsehak.fbi [unitinfo] cloakcost: (absent) -> 10	by radar-plane-targeting
+field units/armsehak.fbi [unitinfo] cloakcostmoving: (absent) -> 50	by radar-plane-targeting
+field units/armsehak.fbi [unitinfo] hoverattack: (absent) -> 1	by radar-plane-targeting
+field units/armsehak.fbi [unitinfo] init_cloaked: (absent) -> 1	by radar-plane-targeting
+field units/armsehak.fbi [unitinfo] mincloakdistance: (absent) -> 1	by radar-plane-targeting
+field units/armsehak.fbi [unitinfo] stealth: (absent) -> 1	by radar-plane-targeting
+field units/armsehak.fbi [unitinfo] weapon1: (absent) -> ARMSEAP_WEAPON1	by radar-plane-targeting

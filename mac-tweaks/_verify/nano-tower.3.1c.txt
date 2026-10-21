@@ -1,0 +1,219 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: nano-tower 1
+# seed: 0
+field download/armmtlab-2.tdf [menuentry] button: (absent) -> 1	by nano-tower
+field download/armmtlab-2.tdf [menuentry] menu: (absent) -> 8	by nano-tower
+field download/armmtlab-2.tdf [menuentry] unitmenu: (absent) -> ARMFAB	by nano-tower
+field download/armmtlab-2.tdf [menuentry] unitname: (absent) -> ARMMTLAB	by nano-tower
+field download/armmtlab.tdf [menuentry] button: (absent) -> 1	by nano-tower
+field download/armmtlab.tdf [menuentry] menu: (absent) -> 8	by nano-tower
+field download/armmtlab.tdf [menuentry] unitmenu: (absent) -> ARMACA	by nano-tower
+field download/armmtlab.tdf [menuentry] unitname: (absent) -> ARMMTLAB	by nano-tower
+field download/armmtlab.tdf [menuentry_2] button: (absent) -> 1	by nano-tower
+field download/armmtlab.tdf [menuentry_2] menu: (absent) -> 8	by nano-tower
+field download/armmtlab.tdf [menuentry_2] unitmenu: (absent) -> ARMACV	by nano-tower
+field download/armmtlab.tdf [menuentry_2] unitname: (absent) -> ARMMTLAB	by nano-tower
+field download/armmtlab.tdf [menuentry_3] button: (absent) -> 1	by nano-tower
+field download/armmtlab.tdf [menuentry_3] menu: (absent) -> 8	by nano-tower
+field download/armmtlab.tdf [menuentry_3] unitmenu: (absent) -> ARMACK	by nano-tower
+field download/armmtlab.tdf [menuentry_3] unitname: (absent) -> ARMMTLAB	by nano-tower
+field download/armmtlab.tdf [menuentry_4] button: (absent) -> 1	by nano-tower
+field download/armmtlab.tdf [menuentry_4] menu: (absent) -> 8	by nano-tower
+field download/armmtlab.tdf [menuentry_4] unitmenu: (absent) -> ARMCOM	by nano-tower
+field download/armmtlab.tdf [menuentry_4] unitname: (absent) -> ARMMTLAB	by nano-tower
+field download/armmtlab.tdf [menuentry_5] button: (absent) -> 1	by nano-tower
+field download/armmtlab.tdf [menuentry_5] menu: (absent) -> 8	by nano-tower
+field download/armmtlab.tdf [menuentry_5] unitmenu: (absent) -> HELPER	by nano-tower
+field download/armmtlab.tdf [menuentry_5] unitname: (absent) -> ARMMTLAB	by nano-tower
+field download/armntow.tdf [menuentry1] button: (absent) -> 0	by nano-tower
+field download/armntow.tdf [menuentry1] menu: (absent) -> 2	by nano-tower
+field download/armntow.tdf [menuentry1] unitmenu: (absent) -> ARMMTLAB	by nano-tower
+field download/armntow.tdf [menuentry1] unitname: (absent) -> ARMNTOW	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] blocking: (absent) -> 1	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] category: (absent) -> arm_corpses	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] damage: (absent) -> 2808	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] description: (absent) -> Tower Pad Ruins	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] featurereclamate: (absent) -> smudge01	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] footprintx: (absent) -> 5	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] footprintz: (absent) -> 5	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] height: (absent) -> 20	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] hitdensity: (absent) -> 100	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] metal: (absent) -> 1547	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] object: (absent) -> armmtlab_dead	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] reclaimable: (absent) -> 1	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] seqnamereclamate: (absent) -> tree1reclamate	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_dead] world: (absent) -> All Worlds	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] blocking: (absent) -> 0	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] category: (absent) -> heaps	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] damage: (absent) -> 340	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] description: (absent) -> Wreckage	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] featurereclamate: (absent) -> smudge01	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] footprintx: (absent) -> 3	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] footprintz: (absent) -> 3	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] height: (absent) -> 4	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] hitdensity: (absent) -> 100	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] metal: (absent) -> 423	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] object: (absent) -> 3x3b	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] reclaimable: (absent) -> 1	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] seqnamereclamate: (absent) -> tree1reclamate	by nano-tower
+field features/corpses/armmtlab_dead.tdf [armmtlab_heap] world: (absent) -> All Worlds	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] blocking: (absent) -> 1	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] category: (absent) -> arm_corpses	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] damage: (absent) -> 2808	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] description: (absent) -> Arm Nanotower Remains	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] featurereclamate: (absent) -> smudge01	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] footprintx: (absent) -> 4	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] footprintz: (absent) -> 4	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] height: (absent) -> 20	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] hitdensity: (absent) -> 100	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] metal: (absent) -> 1446	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] object: (absent) -> armntow_dead	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] reclaimable: (absent) -> 1	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] seqnamereclamate: (absent) -> tree1reclamate	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_dead] world: (absent) -> All Worlds	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] blocking: (absent) -> 0	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] category: (absent) -> heaps	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] damage: (absent) -> 340	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] description: (absent) -> Wreckage	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] featurereclamate: (absent) -> smudge01	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] footprintx: (absent) -> 3	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] footprintz: (absent) -> 3	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] height: (absent) -> 4	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] hitdensity: (absent) -> 100	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] metal: (absent) -> 456	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] object: (absent) -> 3x3b	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] reclaimable: (absent) -> 1	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] seqnamereclamate: (absent) -> tree1reclamate	by nano-tower
+field features/corpses/armntow_dead.tdf [armntow_heap] world: (absent) -> All Worlds	by nano-tower
+field units/armmtlab.fbi [unitinfo] bmcode: (absent) -> 0	by nano-tower
+field units/armmtlab.fbi [unitinfo] buildangle: (absent) -> 2048	by nano-tower
+field units/armmtlab.fbi [unitinfo] buildcostenergy: (absent) -> 9277	by nano-tower
+field units/armmtlab.fbi [unitinfo] buildcostmetal: (absent) -> 3457	by nano-tower
+field units/armmtlab.fbi [unitinfo] builder: (absent) -> 1	by nano-tower
+field units/armmtlab.fbi [unitinfo] buildtime: (absent) -> 12120	by nano-tower
+field units/armmtlab.fbi [unitinfo] canmove: (absent) -> 0	by nano-tower
+field units/armmtlab.fbi [unitinfo] canpatrol: (absent) -> 0	by nano-tower
+field units/armmtlab.fbi [unitinfo] canstop: (absent) -> 0	by nano-tower
+field units/armmtlab.fbi [unitinfo] category: (absent) -> ARM PLANT LEVEL2 NOWEAPON NOTAIR ANUKTARG CTRL_F INERT	by nano-tower
+field units/armmtlab.fbi [unitinfo] copyright: (absent) -> Copyright 1997 Humongous Entertainment. All rights reserved.	by nano-tower
+field units/armmtlab.fbi [unitinfo] corpse: (absent) -> armmtlab_dead	by nano-tower
+field units/armmtlab.fbi [unitinfo] description: (absent) -> Nanotower Construction Facility	by nano-tower
+field units/armmtlab.fbi [unitinfo] designation: (absent) -> A-MTCL	by nano-tower
+field units/armmtlab.fbi [unitinfo] energystorage: (absent) -> 200	by nano-tower
+field units/armmtlab.fbi [unitinfo] energyuse: (absent) -> 0	by nano-tower
+field units/armmtlab.fbi [unitinfo] explodeas: (absent) -> SMALL_BUILDINGEX	by nano-tower
+field units/armmtlab.fbi [unitinfo] firestandorders: (absent) -> 1	by nano-tower
+field units/armmtlab.fbi [unitinfo] footprintx: (absent) -> 4	by nano-tower
+field units/armmtlab.fbi [unitinfo] footprintz: (absent) -> 4	by nano-tower
+field units/armmtlab.fbi [unitinfo] germandescription: (absent) -> Mehrzweck-Hightech-Türme	by nano-tower
+field units/armmtlab.fbi [unitinfo] germanname: (absent) -> Turm-Konstruktionsplattform	by nano-tower
+field units/armmtlab.fbi [unitinfo] maxdamage: (absent) -> 3105	by nano-tower
+field units/armmtlab.fbi [unitinfo] maxslope: (absent) -> 20	by nano-tower
+field units/armmtlab.fbi [unitinfo] maxwaterdepth: (absent) -> 255	by nano-tower
+field units/armmtlab.fbi [unitinfo] metalstorage: (absent) -> 200	by nano-tower
+field units/armmtlab.fbi [unitinfo] mobilestandorders: (absent) -> 1	by nano-tower
+field units/armmtlab.fbi [unitinfo] name: (absent) -> Tower Construction Pad	by nano-tower
+field units/armmtlab.fbi [unitinfo] noautofire: (absent) -> 0	by nano-tower
+field units/armmtlab.fbi [unitinfo] noshadow: (absent) -> 1	by nano-tower
+field units/armmtlab.fbi [unitinfo] objectname: (absent) -> ARMMTLAB	by nano-tower
+field units/armmtlab.fbi [unitinfo] ovradjust: (absent) -> 1	by nano-tower
+field units/armmtlab.fbi [unitinfo] radardistance: (absent) -> 0	by nano-tower
+field units/armmtlab.fbi [unitinfo] selfdestructas: (absent) -> SMALL_BUILDING	by nano-tower
+field units/armmtlab.fbi [unitinfo] side: (absent) -> ARM	by nano-tower
+field units/armmtlab.fbi [unitinfo] sightdistance: (absent) -> 220	by nano-tower
+field units/armmtlab.fbi [unitinfo] soundcategory: (absent) -> KBOTPLANT	by nano-tower
+field units/armmtlab.fbi [unitinfo] standingfireorder: (absent) -> 2	by nano-tower
+field units/armmtlab.fbi [unitinfo] standingmoveorder: (absent) -> 1	by nano-tower
+field units/armmtlab.fbi [unitinfo] tedclass: (absent) -> PLANT	by nano-tower
+field units/armmtlab.fbi [unitinfo] threed: (absent) -> 1	by nano-tower
+field units/armmtlab.fbi [unitinfo] unitname: (absent) -> ARMMTLAB	by nano-tower
+field units/armmtlab.fbi [unitinfo] unitnumber: (absent) -> 705	by nano-tower
+field units/armmtlab.fbi [unitinfo] version: (absent) -> 3.0	by nano-tower
+field units/armmtlab.fbi [unitinfo] workertime: (absent) -> 100	by nano-tower
+field units/armmtlab.fbi [unitinfo] yardmap: (absent) -> occo cccc occo	by nano-tower
+field units/armmtlab.fbi [unitinfo] zbuffer: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] acceleration: (absent) -> 0.00000000000000001	by nano-tower
+field units/armntow.fbi [unitinfo] bmcode: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] brakerate: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] buildcostenergy: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] buildcostmetal: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] builddistance: (absent) -> 900	by nano-tower
+field units/armntow.fbi [unitinfo] builder: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] buildtime: (absent) -> 10	by nano-tower
+field units/armntow.fbi [unitinfo] canattack: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] canguard: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] canmove: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] canpatrol: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] canreclamate: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] canstop: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] category: (absent) -> ARM LEVEL3 CONSTR NOWEAPON NOTAIR	by nano-tower
+field units/armntow.fbi [unitinfo] copyright: (absent) -> Copyright 1997 Humongous Entertainment. All rights reserved.	by nano-tower
+field units/armntow.fbi [unitinfo] defaultmissiontype: (absent) -> RepairPatrol	by nano-tower
+field units/armntow.fbi [unitinfo] description: (absent) -> Stationary Nanolathe	by nano-tower
+field units/armntow.fbi [unitinfo] designation: (absent) -> A-MT1	by nano-tower
+field units/armntow.fbi [unitinfo] energymake: (absent) -> 20	by nano-tower
+field units/armntow.fbi [unitinfo] energystorage: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] energyuse: (absent) -> 10	by nano-tower
+field units/armntow.fbi [unitinfo] explodeas: (absent) -> NOWEAPON	by nano-tower
+field units/armntow.fbi [unitinfo] footprintx: (absent) -> 3	by nano-tower
+field units/armntow.fbi [unitinfo] footprintz: (absent) -> 3	by nano-tower
+field units/armntow.fbi [unitinfo] germandescription: (absent) -> stationäre Nanolatheeinheit	by nano-tower
+field units/armntow.fbi [unitinfo] germanname: (absent) -> Nanolathe-Turm	by nano-tower
+field units/armntow.fbi [unitinfo] maneuverleashlength: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] maxdamage: (absent) -> 1840	by nano-tower
+field units/armntow.fbi [unitinfo] maxslope: (absent) -> 20	by nano-tower
+field units/armntow.fbi [unitinfo] maxvelocity: (absent) -> 0.00000000000000001	by nano-tower
+field units/armntow.fbi [unitinfo] maxwaterdepth: (absent) -> 255	by nano-tower
+field units/armntow.fbi [unitinfo] metalmake: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] metalstorage: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] mobilestandorders: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] movementclass: (absent) -> TankDS2	by nano-tower
+field units/armntow.fbi [unitinfo] name: (absent) -> Nanolathe Tower	by nano-tower
+field units/armntow.fbi [unitinfo] noautofire: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] noshadow: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] objectname: (absent) -> ARMNTOW	by nano-tower
+field units/armntow.fbi [unitinfo] ovradjust: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] radardistance: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] selfdestructas: (absent) -> NOWEAPON	by nano-tower
+field units/armntow.fbi [unitinfo] selfdestructcountdown: (absent) -> 0	by nano-tower
+field units/armntow.fbi [unitinfo] shootme: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] side: (absent) -> ARM	by nano-tower
+field units/armntow.fbi [unitinfo] sightdistance: (absent) -> 400	by nano-tower
+field units/armntow.fbi [unitinfo] soundcategory: (absent) -> ARM_CKBOT	by nano-tower
+field units/armntow.fbi [unitinfo] standingmoveorder: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] steeringmode: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] tedclass: (absent) -> CNSTR	by nano-tower
+field units/armntow.fbi [unitinfo] threed: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] turnrate: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] unitname: (absent) -> ARMNTOW	by nano-tower
+field units/armntow.fbi [unitinfo] unitnumber: (absent) -> 709	by nano-tower
+field units/armntow.fbi [unitinfo] upright: (absent) -> 1	by nano-tower
+field units/armntow.fbi [unitinfo] version: (absent) -> 3.0	by nano-tower
+field units/armntow.fbi [unitinfo] workertime: (absent) -> 1000	by nano-tower
+field units/armntow.fbi [unitinfo] zbuffer: (absent) -> 1	by nano-tower
+file added anims/armmtlab_gadget.gaf 37952b88827200c6a5c942a56d73b1adcdd14b30dedc72ee1d7f42b931922a7f	by nano-tower
+file added anims/armntow_gadget.gaf 3d0e26d00bc8b9de1fc693fbd0b01958c42d1ed4e09a480f49d051664845a297	by nano-tower
+file added download/armmtlab-2.tdf	by nano-tower
+file added download/armmtlab.tdf	by nano-tower
+file added download/armntow.tdf	by nano-tower
+file added features/corpses/armmtlab_dead.tdf	by nano-tower
+file added features/corpses/armntow_dead.tdf	by nano-tower
+file added objects3d/armmtlab.3do 9aca5e40edd267f600e6412691d3a2d3788eeda3d73febb3d40032cd647a14ff	by nano-tower
+file added objects3d/armmtlab_dead.3do 96722ea3e7b7562bba6f13f4bb325881becaf5ae5f626d69d9b92a365ca148f6	by nano-tower
+file added objects3d/armntow.3do 4c37c715ae2838dc855fe96685aa3356154e876ea9411c976ebbbe4914acacd5	by nano-tower
+file added objects3d/armntow_dead.3do b6cd9f37158aa8ccae90c22cea8bccb1fd533981893dc9bc22abc6738a7db21c	by nano-tower
+file added scripts/armmtlab.cob 2cdfa0a8c4f9c77ed3d8ef844be1bd558e11457359abcb91ac99a54e83e8edb6	by nano-tower
+file added scripts/armntow.cob b82c78d382fc9e3087e4ab06a96a51955787bd1663459ee59129d0ac051397b3	by nano-tower
+file added unitpics/armmtlab.pcx 60f685447d0ddffbfe77d44306a92fae3b6bbd00886324f60b75011da6fad278	by nano-tower
+file added unitpics/armntow.pcx e5a8b6461abe3a80b917e0e3e3ef2c87d61fa5a9dd8ff1f7e912a597161f55a2	by nano-tower
+file added units/armmtlab.fbi	by nano-tower
+file added units/armntow.fbi	by nano-tower
+menu added ARMACA 8 1 ARMMTLAB
+menu added ARMACK 8 1 ARMMTLAB
+menu added ARMACV 8 1 ARMMTLAB
+menu added ARMCOM 8 1 ARMMTLAB
+menu added ARMMTLAB 2 0 ARMNTOW
+unit added ARMMTLAB	by nano-tower
+unit added ARMNTOW	by nano-tower

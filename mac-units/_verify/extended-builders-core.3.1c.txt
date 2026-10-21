@@ -1,0 +1,39 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: extended-builders 1 side=core
+# seed: 0
+field units/corack.fbi [unitinfo] builddistance: 60 -> 120	by extended-builders
+field units/corack.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/corack.fbi [unitinfo] sightdistance: 245 -> 490	by extended-builders
+field units/coracsub.fbi [unitinfo] builddistance: 80 -> 160	by extended-builders
+field units/coracsub.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/coracsub.fbi [unitinfo] sightdistance: 120 -> 240	by extended-builders
+field units/coracv.fbi [unitinfo] builddistance: 60 -> 120	by extended-builders
+field units/coracv.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/coracv.fbi [unitinfo] sightdistance: 227 -> 454	by extended-builders
+field units/corcarry.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/corcarry.fbi [unitinfo] sightdistance: 350 -> 700	by extended-builders
+field units/corch.fbi [unitinfo] builddistance: 70 -> 140	by extended-builders
+field units/corch.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/corch.fbi [unitinfo] sightdistance: 260 -> 520	by extended-builders
+field units/corck.fbi [unitinfo] builddistance: 40 -> 80	by extended-builders
+field units/corck.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/corck.fbi [unitinfo] sightdistance: 230 -> 460	by extended-builders
+field units/corcom.fbi [unitinfo] builddistance: 60 -> 120	by extended-builders
+field units/corcom.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/corcom.fbi [unitinfo] sightdistance: 290 -> 580	by extended-builders
+field units/corcs.fbi [unitinfo] builddistance: 60 -> 120	by extended-builders
+field units/corcs.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/corcs.fbi [unitinfo] sightdistance: 220 -> 440	by extended-builders
+field units/corcv.fbi [unitinfo] builddistance: 40 -> 80	by extended-builders
+field units/corcv.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/corcv.fbi [unitinfo] sightdistance: 200 -> 400	by extended-builders
+field units/cordecom.fbi [unitinfo] builddistance: 60 -> 120	by extended-builders
+field units/cordecom.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/cordecom.fbi [unitinfo] sightdistance: 290 -> 580	by extended-builders
+field units/cormlv.fbi [unitinfo] builddistance: 70 -> 140	by extended-builders
+field units/cormlv.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/cormlv.fbi [unitinfo] sightdistance: 145 -> 290	by extended-builders
+field units/cornecro.fbi [unitinfo] maneuverleashlength: 640 -> 1280	by extended-builders
+field units/cornecro.fbi [unitinfo] sightdistance: 290 -> 580	by extended-builders

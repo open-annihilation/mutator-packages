@@ -1,0 +1,213 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: no-air 1
+# seed: 0
+field download/armamb.tdf [menuentry3] button: 5 -> (absent)	by no-air
+field download/armamb.tdf [menuentry3] menu: 3 -> (absent)	by no-air
+field download/armamb.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by no-air
+field download/armamb.tdf [menuentry3] unitname: ARMAMB -> (absent)	by no-air
+field download/armckfus.tdf [menuentry3] button: 0 -> (absent)	by no-air
+field download/armckfus.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/armckfus.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by no-air
+field download/armckfus.tdf [menuentry3] unitname: ARMCKFUS -> (absent)	by no-air
+field download/armemp.tdf [menuentry3] button: 5 -> (absent)	by no-air
+field download/armemp.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/armemp.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by no-air
+field download/armemp.tdf [menuentry3] unitname: ARMEMP -> (absent)	by no-air
+field download/armflak.tdf [menuentry3] button: 3 -> (absent)	by no-air
+field download/armflak.tdf [menuentry3] menu: 3 -> (absent)	by no-air
+field download/armflak.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by no-air
+field download/armflak.tdf [menuentry3] unitname: ARMFLAK -> (absent)	by no-air
+field download/armfort.tdf [menuentry3] button: 4 -> (absent)	by no-air
+field download/armfort.tdf [menuentry3] menu: 3 -> (absent)	by no-air
+field download/armfort.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by no-air
+field download/armfort.tdf [menuentry3] unitname: ARMFORT -> (absent)	by no-air
+field download/armhp.tdf [menuentry3] button: 0 -> (absent)	by no-air
+field download/armhp.tdf [menuentry3] menu: 5 -> (absent)	by no-air
+field download/armhp.tdf [menuentry3] unitmenu: ARMCA -> (absent)	by no-air
+field download/armhp.tdf [menuentry3] unitname: ARMHP -> (absent)	by no-air
+field download/armmmkr.tdf [menuentry3] button: 1 -> (absent)	by no-air
+field download/armmmkr.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/armmmkr.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by no-air
+field download/armmmkr.tdf [menuentry3] unitname: ARMMMKR -> (absent)	by no-air
+field download/armtarg.tdf [menuentry3] button: 2 -> (absent)	by no-air
+field download/armtarg.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/armtarg.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by no-air
+field download/armtarg.tdf [menuentry3] unitname: ARMTARG -> (absent)	by no-air
+field download/armvulc.tdf [menuentry3] button: 3 -> (absent)	by no-air
+field download/armvulc.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/armvulc.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by no-air
+field download/armvulc.tdf [menuentry3] unitname: ARMVULC -> (absent)	by no-air
+field download/corbuzz.tdf [menuentry3] button: 3 -> (absent)	by no-air
+field download/corbuzz.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/corbuzz.tdf [menuentry3] unitmenu: CORACA -> (absent)	by no-air
+field download/corbuzz.tdf [menuentry3] unitname: CORBUZZ -> (absent)	by no-air
+field download/corckfus.tdf [menuentry3] button: 0 -> (absent)	by no-air
+field download/corckfus.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/corckfus.tdf [menuentry3] unitmenu: CORACA -> (absent)	by no-air
+field download/corckfus.tdf [menuentry3] unitname: CORCKFUS -> (absent)	by no-air
+field download/corflak.tdf [menuentry3] button: 3 -> (absent)	by no-air
+field download/corflak.tdf [menuentry3] menu: 3 -> (absent)	by no-air
+field download/corflak.tdf [menuentry3] unitmenu: CORACA -> (absent)	by no-air
+field download/corflak.tdf [menuentry3] unitname: CORFLAK -> (absent)	by no-air
+field download/corfort.tdf [menuentry3] button: 4 -> (absent)	by no-air
+field download/corfort.tdf [menuentry3] menu: 3 -> (absent)	by no-air
+field download/corfort.tdf [menuentry3] unitmenu: CORACA -> (absent)	by no-air
+field download/corfort.tdf [menuentry3] unitname: CORFORT -> (absent)	by no-air
+field download/corhp.tdf [menuentry3] button: 0 -> (absent)	by no-air
+field download/corhp.tdf [menuentry3] menu: 5 -> (absent)	by no-air
+field download/corhp.tdf [menuentry3] unitmenu: CORCA -> (absent)	by no-air
+field download/corhp.tdf [menuentry3] unitname: CORHP -> (absent)	by no-air
+field download/cormmkr.tdf [menuentry3] button: 1 -> (absent)	by no-air
+field download/cormmkr.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/cormmkr.tdf [menuentry3] unitmenu: CORACA -> (absent)	by no-air
+field download/cormmkr.tdf [menuentry3] unitname: CORMMKR -> (absent)	by no-air
+field download/corplas.tdf [menuentry4] button: 2 -> (absent)	by no-air
+field download/corplas.tdf [menuentry4] menu: 5 -> (absent)	by no-air
+field download/corplas.tdf [menuentry4] unitmenu: CORCA -> (absent)	by no-air
+field download/corplas.tdf [menuentry4] unitname: CORPLAS -> (absent)	by no-air
+field download/cortarg.tdf [menuentry3] button: 2 -> (absent)	by no-air
+field download/cortarg.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/cortarg.tdf [menuentry3] unitmenu: CORACA -> (absent)	by no-air
+field download/cortarg.tdf [menuentry3] unitname: CORTARG -> (absent)	by no-air
+field download/cortoast.tdf [menuentry3] button: 5 -> (absent)	by no-air
+field download/cortoast.tdf [menuentry3] menu: 3 -> (absent)	by no-air
+field download/cortoast.tdf [menuentry3] unitmenu: CORACA -> (absent)	by no-air
+field download/cortoast.tdf [menuentry3] unitname: CORTOAST -> (absent)	by no-air
+field download/cortron.tdf [menuentry3] button: 5 -> (absent)	by no-air
+field download/cortron.tdf [menuentry3] menu: 4 -> (absent)	by no-air
+field download/cortron.tdf [menuentry3] unitmenu: CORACA -> (absent)	by no-air
+field download/cortron.tdf [menuentry3] unitname: CORTRON -> (absent)	by no-air
+field download/corvipe.tdf [menuentry3] button: 1 -> (absent)	by no-air
+field download/corvipe.tdf [menuentry3] menu: 5 -> (absent)	by no-air
+field download/corvipe.tdf [menuentry3] unitmenu: CORCA -> (absent)	by no-air
+field download/corvipe.tdf [menuentry3] unitname: CORVIPE -> (absent)	by no-air
+field guis/armack2.gui [gadget6] grayedout: 0 -> 1
+field guis/armack2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armacsub1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armacsub1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armacv2.gui [gadget6] grayedout: 0 -> 1
+field guis/armacv2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armch2.gui [gadget6] grayedout: (absent) -> 1
+field guis/armch2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armck2.gui [gadget6] grayedout: (absent) -> 1
+field guis/armck2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcom2.gui [gadget6] grayedout: (absent) -> 1
+field guis/armcom2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcv2.gui [gadget6] grayedout: (absent) -> 1
+field guis/armcv2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corack2.gui [gadget6] grayedout: 0 -> 1
+field guis/corack2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/coracsub1.gui [gadget8] grayedout: (absent) -> 1
+field guis/coracsub1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/coracv2.gui [gadget6] grayedout: 0 -> 1
+field guis/coracv2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corch2.gui [gadget6] grayedout: (absent) -> 1
+field guis/corch2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corck2.gui [gadget6] grayedout: (absent) -> 1
+field guis/corck2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcom2.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcom2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcv2.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcv2.gui [gadget6][common] commonattribs: 4 -> 0
+file hidden download/armawac.tdf	by no-air
+file hidden download/corawac.tdf	by no-air
+file hidden units/armaap.fbi	by no-air
+file hidden units/armaca.fbi	by no-air
+file hidden units/armap.fbi	by no-air
+file hidden units/armasp.fbi	by no-air
+file hidden units/armatlas.fbi	by no-air
+file hidden units/armawac.fbi	by no-air
+file hidden units/armbrawl.fbi	by no-air
+file hidden units/armca.fbi	by no-air
+file hidden units/armcsa.fbi	by no-air
+file hidden units/armfig.fbi	by no-air
+file hidden units/armhawk.fbi	by no-air
+file hidden units/armlance.fbi	by no-air
+file hidden units/armpeep.fbi	by no-air
+file hidden units/armplat.fbi	by no-air
+file hidden units/armpnix.fbi	by no-air
+file hidden units/armseap.fbi	by no-air
+file hidden units/armsehak.fbi	by no-air
+file hidden units/armsfig.fbi	by no-air
+file hidden units/armthund.fbi	by no-air
+file hidden units/coraap.fbi	by no-air
+file hidden units/coraca.fbi	by no-air
+file hidden units/corap.fbi	by no-air
+file hidden units/corape.fbi	by no-air
+file hidden units/corasp.fbi	by no-air
+file hidden units/corawac.fbi	by no-air
+file hidden units/corca.fbi	by no-air
+file hidden units/corcsa.fbi	by no-air
+file hidden units/corfink.fbi	by no-air
+file hidden units/corhunt.fbi	by no-air
+file hidden units/corhurc.fbi	by no-air
+file hidden units/corplat.fbi	by no-air
+file hidden units/corseap.fbi	by no-air
+file hidden units/corsfig.fbi	by no-air
+file hidden units/corshad.fbi	by no-air
+file hidden units/cortitan.fbi	by no-air
+file hidden units/corvalk.fbi	by no-air
+file hidden units/corvamp.fbi	by no-air
+file hidden units/corveng.fbi	by no-air
+menu removed ARMAAP 3 0 ARMAWAC
+menu removed ARMACA 3 3 ARMFLAK
+menu removed ARMACA 3 4 ARMFORT
+menu removed ARMACA 3 5 ARMAMB
+menu removed ARMACA 4 0 ARMCKFUS
+menu removed ARMACA 4 1 ARMMMKR
+menu removed ARMACA 4 2 ARMTARG
+menu removed ARMACA 4 3 ARMVULC
+menu removed ARMACA 4 5 ARMEMP
+menu removed ARMCA 5 0 ARMHP
+menu removed CORAAP 3 0 CORAWAC
+menu removed CORACA 3 3 CORFLAK
+menu removed CORACA 3 4 CORFORT
+menu removed CORACA 3 5 CORTOAST
+menu removed CORACA 4 0 CORCKFUS
+menu removed CORACA 4 1 CORMMKR
+menu removed CORACA 4 2 CORTARG
+menu removed CORACA 4 3 CORBUZZ
+menu removed CORACA 4 5 CORTRON
+menu removed CORCA 5 0 CORHP
+menu removed CORCA 5 1 CORVIPE
+menu removed CORCA 5 2 CORPLAS
+unit dropped ARMAAP hidden	by no-air
+unit dropped ARMACA hidden	by no-air
+unit dropped ARMAP hidden	by no-air
+unit dropped ARMASP hidden	by no-air
+unit dropped ARMATLAS hidden	by no-air
+unit dropped ARMAWAC hidden	by no-air
+unit dropped ARMBRAWL hidden	by no-air
+unit dropped ARMCA hidden	by no-air
+unit dropped ARMCSA hidden	by no-air
+unit dropped ARMFIG hidden	by no-air
+unit dropped ARMHAWK hidden	by no-air
+unit dropped ARMLANCE hidden	by no-air
+unit dropped ARMPEEP hidden	by no-air
+unit dropped ARMPLAT hidden	by no-air
+unit dropped ARMPNIX hidden	by no-air
+unit dropped ARMSEAP hidden	by no-air
+unit dropped ARMSEHAK hidden	by no-air
+unit dropped ARMSFIG hidden	by no-air
+unit dropped ARMTHUND hidden	by no-air
+unit dropped CORAAP hidden	by no-air
+unit dropped CORACA hidden	by no-air
+unit dropped CORAP hidden	by no-air
+unit dropped CORAPE hidden	by no-air
+unit dropped CORASP hidden	by no-air
+unit dropped CORAWAC hidden	by no-air
+unit dropped CORCA hidden	by no-air
+unit dropped CORCSA hidden	by no-air
+unit dropped CORFINK hidden	by no-air
+unit dropped CORHUNT hidden	by no-air
+unit dropped CORHURC hidden	by no-air
+unit dropped CORPLAT hidden	by no-air
+unit dropped CORSEAP hidden	by no-air
+unit dropped CORSFIG hidden	by no-air
+unit dropped CORSHAD hidden	by no-air
+unit dropped CORTITAN hidden	by no-air
+unit dropped CORVALK hidden	by no-air
+unit dropped CORVAMP hidden	by no-air
+unit dropped CORVENG hidden	by no-air

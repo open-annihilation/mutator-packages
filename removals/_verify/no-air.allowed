@@ -1,0 +1,5 @@
+# The original's exact sound-category test missed the Core seaplane platform
+left only unit dropped CORPLAT hidden
+left only file hidden units/corplat.fbi
+left only field guis/coracsub1.gui [gadget8] grayedout: (absent) -> 1
+left only field guis/coracsub1.gui [gadget8][common] commonattribs: 4 -> 0

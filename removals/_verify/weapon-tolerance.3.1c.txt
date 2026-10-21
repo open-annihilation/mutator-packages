@@ -1,0 +1,63 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: weapon-tolerance 1
+# seed: 0
+field weapons/armamb_weapon.tdf [armamb_gun] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/armamph_weapon.tdf [armamph_weapon1] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/armanac_weapon.tdf [armanac_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/armlatnk weapon.tdf [armlatnk_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/armscorp_weapon.tdf [armscorp_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/armsh_weapon.tdf [armsh_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/armsnipe_weapon.tdf [armsnipe_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [arm_artillery] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [arm_bats] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [arm_bull] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [arm_crus] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [arm_ham] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [arm_lightcannon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [arm_mediumcannon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [arm_roy] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [armfixed_gun] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [cor_bats] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [cor_crus] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [cor_gol] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [core_artillery] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [core_lightcannon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [core_mediumcannon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [core_reap] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [core_roy] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [core_thud] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [corfixed_gun] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cannons.tdf [gauss] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/coramph_weapon.tdf [coramph_weapon1] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/corfhlt_weapon.tdf [corfhlt_laser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cormort_weapon.tdf [core_mort] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/corplas_weapon.tdf [corplas_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/corscorp_weapon.tdf [corscorp_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/corsh_weapon.tdf [corsh_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/corsnap_weapon.tdf [corsnap_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/corsumo_weapon.tdf [corsumo_weapon] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/cortoast_weapon.tdf [cortoast_gun] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [arm_fast] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [arm_laser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [armair2airlaser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [armpt_laser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [corair2airlaser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [core_canlaser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [core_laser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [corept_laser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/lasers.tdf [gator_laser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/rockets.tdf [corkbot_rocket] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/rockets.tdf [kbot_rocket] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [arm_disintegrator] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [arm_paralyzer] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [armadvbomb] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [armbomb] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [armcomlaser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [coax_torpedo] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [coradvbomb] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [corbomb] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [corcomlaser] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [core_disintegrator] tolerance: (absent) -> 500	by weapon-tolerance
+field weapons/weapons.tdf [lightning] tolerance: (absent) -> 500	by weapon-tolerance

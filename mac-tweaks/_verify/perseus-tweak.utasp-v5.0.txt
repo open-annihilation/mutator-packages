@@ -1,0 +1,8 @@
+# oa-tool mutator diff 1
+# game: Rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx Cometctr.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo Unitdata.ufo Units.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: utasp 5.0
+# loadout: perseus-tweak 1
+# seed: 0
+field units/armpers.fbi [unitinfo] maneuverleashlength: 3000 -> 1280	by perseus-tweak
+field units/armpers.fbi [unitinfo] sightdistance: 550 -> 700	by perseus-tweak
+field units/armpers.fbi [unitinfo] weapon1: VTOL_ROCKET -> SAM_weapon	by perseus-tweak
