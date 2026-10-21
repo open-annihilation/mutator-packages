@@ -1,0 +1,380 @@
+#!/usr/bin/env python3
+"""Copy the TA: Mutation originals into originals/ and unpack them.
+
+The repository never stores these archives. originals.tsv, beside this
+script's parent, lists each zip's size and SHA-256. A zip already in place
+with those bytes is kept. Otherwise the local copy is checked and copied.
+With no local copy, an igi-server row is downloaded from --igi-url-base and
+a ta-mutation row is fetched from S3 by the maintainer's aws command.
+--local-only does neither: it names the URL or the aws command and stops.
+
+    tools/fetch-originals [--from DIR] [--from-igi DIR] [--out DIR]
+        [--set NAME]... [--igi-url-base URL] [--local-only]
+
+--from defaults to ~/Downloads/legacy-mods/ta-mutators, --from-igi to
+~/Downloads/legacy-mods/ta-mutators-igi, --out to originals/ beside tools/,
+and --igi-url-base to https://files.igi-server.link/. --set (repeatable)
+limits the run to those sets; the default is every row. Exit 0 when every
+row of the run is in place, 1 when a check or a download fails, 2 on a
+usage error.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import os
+import shlex
+import shutil
+import subprocess
+import sys
+import unicodedata
+import urllib.error
+import urllib.parse
+import urllib.request
+import zipfile
+from pathlib import Path
+
+# The igi server answers 403 to Python's default User-Agent.
+CURL_USER_AGENT = "curl/8.7.1"
+BUCKET = "s3://coreprime-downloads-originals"
+KEY_PREFIX = "tools/ta-mutation/"
+IGI_PREFIX = "tools/ta-mutation/igi-server/"
+HEADER = ("key", "size", "sha256", "set", "url")
+DOWNLOAD_TIMEOUT_S = 60
+
+
+class Row:
+    def __init__(self, key: str, size: int, sha256: str, set_name: str, url: str) -> None:
+        self.key = key
+        self.size = size
+        self.sha256 = sha256
+        self.set_name = set_name
+        self.url = url
+
+    @property
+    def local_name(self) -> str:
+        return self.key[len(KEY_PREFIX) :]
+
+    @property
+    def server_path(self) -> str:
+        return self.key[len(IGI_PREFIX) :]
+
+
+def repo_root() -> Path:
+    return Path(__file__).resolve().parent.parent
+
+
+def fail(message: str) -> None:
+    print(message, file=sys.stderr)
+    raise SystemExit(1)
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def matches(path: Path, row: Row) -> bool:
+    return path.is_file() and path.stat().st_size == row.size and file_sha256(path) == row.sha256
+
+
+def read_table(path: Path) -> list[Row]:
+    if not path.is_file():
+        fail(f"originals: {path} is missing")
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines or tuple(lines[0].split("\t")) != HEADER:
+        fail(f"originals: {path} must start with {', '.join(HEADER)}")
+    rows: list[Row] = []
+    for number, line in enumerate(lines[1:], start=2):
+        if not line.strip():
+            continue
+        fields = line.split("\t")
+        if len(fields) != len(HEADER):
+            fail(f"originals: {path}:{number}: expected {len(HEADER)} fields")
+        key, size_text, sha256, set_name, url = fields
+        if not key.startswith(KEY_PREFIX) or not size_text.isdigit() or len(sha256) != 64:
+            fail(f"originals: {path}:{number}: bad key, size or sha256")
+        if set_name == "igi-server" and not key.startswith(IGI_PREFIX):
+            fail(f"originals: {path}:{number}: igi-server key is missing its prefix")
+        if set_name == "ta-mutation" and key.startswith(IGI_PREFIX):
+            fail(f"originals: {path}:{number}: ta-mutation key is under igi-server")
+        rows.append(Row(key, int(size_text), sha256.lower(), set_name, url))
+    return rows
+
+
+def local_copy(row: Row, from_dir: Path, from_igi: Path) -> Path:
+    if row.set_name == "ta-mutation":
+        return from_dir / row.local_name
+    if row.set_name == "igi-server":
+        return from_igi / row.server_path
+    fail(f"originals: unknown set {row.set_name}")
+    raise AssertionError
+
+
+def zip_path(row: Row, out: Path) -> Path:
+    return out / "zips" / row.local_name
+
+
+def part_path(dest: Path) -> Path:
+    return Path(str(dest) + ".part")
+
+
+def discard(path: Path) -> None:
+    if path.is_file() or path.is_symlink():
+        path.unlink()
+
+
+def mismatch(row: Row, got_sha: str) -> None:
+    fail(f"originals: {row.local_name}: SHA-256 mismatch: expected {row.sha256}, got {got_sha}")
+
+
+def publish(src: Path, dest: Path, row: Row) -> None:
+    """Copy src to dest only when the bytes match the row."""
+    part = part_path(dest)
+    part.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        shutil.copyfile(src, part)
+        got = file_sha256(part)
+        if part.stat().st_size != row.size or got != row.sha256:
+            discard(part)
+            discard(dest)
+            mismatch(row, got)
+        os.replace(part, dest)
+    except Exception:
+        discard(part)
+        raise
+
+
+def aws_argv(row: Row, dest: Path) -> list[str]:
+    return [
+        "aws",
+        "s3",
+        "cp",
+        "--profile",
+        "oa-publisher",
+        f"{BUCKET}/{row.key}",
+        str(part_path(dest)),
+    ]
+
+
+def how_to_fetch(row: Row, dest: Path) -> str:
+    if row.url != "-":
+        return f"originals: {row.local_name}: no local copy; URL {row.url}"
+    return f"originals: {row.local_name}: no local copy; {shlex.join(aws_argv(row, dest))}"
+
+
+def download_url(row: Row, base: str) -> str:
+    return base + urllib.parse.quote(row.server_path, safe="/")
+
+
+def download(row: Row, dest: Path, base: str) -> int | None:
+    """Download one zip. Return an HTTP status on HTTP failure, else None."""
+    part = part_path(dest)
+    part.parent.mkdir(parents=True, exist_ok=True)
+    request = urllib.request.Request(download_url(row, base), headers={"User-Agent": CURL_USER_AGENT})
+    # No proxy, and no Python-urllib user agent added by the opener.
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    opener.addheaders = []
+    try:
+        try:
+            response = opener.open(request, timeout=DOWNLOAD_TIMEOUT_S)
+        except urllib.error.HTTPError as err:
+            discard(part)
+            return err.code
+        with response:
+            with part.open("wb") as handle:
+                shutil.copyfileobj(response, handle)
+    except urllib.error.URLError as err:
+        discard(part)
+        fail(f"originals: {row.local_name}: download failed: {err.reason}")
+    except Exception:
+        discard(part)
+        raise
+    got = file_sha256(part) if part.is_file() else ""
+    size = part.stat().st_size if part.is_file() else -1
+    if size != row.size or got != row.sha256:
+        discard(part)
+        discard(dest)
+        mismatch(row, got)
+    os.replace(part, dest)
+    return None
+
+
+def fetch_with_aws(row: Row, dest: Path) -> None:
+    part = part_path(dest)
+    part.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        proc = subprocess.run(aws_argv(row, dest), check=False)
+    except FileNotFoundError:
+        discard(part)
+        fail(f"originals: {row.local_name}: aws was not found")
+    if proc.returncode != 0 or not part.is_file():
+        discard(part)
+        fail(f"originals: {row.local_name}: aws download failed")
+    got = file_sha256(part)
+    if part.stat().st_size != row.size or got != row.sha256:
+        discard(part)
+        discard(dest)
+        mismatch(row, got)
+    os.replace(part, dest)
+
+
+def entry_name(info: zipfile.ZipInfo) -> str:
+    """Names without the UTF-8 flag are Windows-1252, stored as Unicode NFD."""
+    name = info.filename.replace("\\", "/")
+    if not info.flag_bits & 0x800:
+        name = name.encode("cp437").decode("cp1252")
+    return unicodedata.normalize("NFD", name)
+
+
+def relative_entry(name: str) -> str | None:
+    """Return a relative archive path, or None for a directory entry."""
+    if name.startswith("/") or (len(name) >= 2 and name[1] == ":"):
+        fail(f"originals: refusing absolute archive entry {name}")
+    parts: list[str] = []
+    for part in name.split("/"):
+        if part in ("", "."):
+            continue
+        if part == "..":
+            fail(f"originals: refusing archive entry {name}")
+        parts.append(part)
+    if not parts:
+        return None
+    return "/".join(parts)
+
+
+def unpack_root(row: Row, out: Path) -> Path:
+    if row.set_name == "ta-mutation":
+        name = row.local_name
+        if name.lower().endswith(".zip"):
+            name = name[:-4]
+        return out / name
+    relative = row.server_path
+    if relative.lower().endswith(".zip"):
+        relative = relative[:-4]
+    return out / "igi-server" / relative
+
+
+def strip_container(relative: str, folder_name: str) -> str | None:
+    prefix = folder_name + "/"
+    if relative == folder_name:
+        return None
+    if relative.startswith(prefix):
+        relative = relative[len(prefix) :]
+    return relative or None
+
+
+def unpack_zip(row: Row, out: Path) -> int:
+    archive = zip_path(row, out)
+    root = unpack_root(row, out)
+    folder_name = root.name
+    planned: list[tuple[zipfile.ZipInfo, str]] = []
+    with zipfile.ZipFile(archive) as package:
+        for info in package.infolist():
+            if info.is_dir():
+                continue
+            relative = relative_entry(entry_name(info))
+            if relative is None:
+                continue
+            relative = strip_container(relative, folder_name)
+            if relative is None:
+                continue
+            # Reject the stripped name too: a container prefix must not hide "..".
+            checked = relative_entry(relative)
+            if checked is None:
+                continue
+            planned.append((info, checked))
+        if root.is_symlink():
+            fail(f"originals: {root} is a link")
+        if root.exists():
+            shutil.rmtree(root)
+        root.mkdir(parents=True)
+        root_resolved = root.resolve()
+        written = 0
+        for info, relative in planned:
+            target = root / relative
+            if not target.resolve().is_relative_to(root_resolved):
+                fail(f"originals: refusing archive entry {relative}")
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(package.read(info))
+            written += 1
+    return written
+
+
+def take_args(argv: list[str]) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--from", dest="from_dir", default=str(Path.home() / "Downloads/legacy-mods/ta-mutators"))
+    parser.add_argument("--from-igi", default=str(Path.home() / "Downloads/legacy-mods/ta-mutators-igi"))
+    parser.add_argument("--out", default=None)
+    parser.add_argument("--set", dest="sets", action="append", default=None)
+    parser.add_argument("--igi-url-base", default="https://files.igi-server.link/")
+    parser.add_argument("--local-only", action="store_true")
+    return parser.parse_args(argv)
+
+
+def main(argv: list[str]) -> int:
+    args = take_args(argv)
+    root = repo_root()
+    out = Path(args.out).expanduser() if args.out else root / "originals"
+    if not out.is_absolute():
+        out = Path.cwd() / out
+    from_dir = Path(args.from_dir).expanduser()
+    from_igi = Path(args.from_igi).expanduser()
+    rows = read_table(root / "originals.tsv")
+    known = {row.set_name for row in rows}
+    if args.sets:
+        unknown = [name for name in args.sets if name not in known]
+        if unknown:
+            print(f"originals: unknown set {unknown[0]}", file=sys.stderr)
+            return 2
+        chosen = set(args.sets)
+        rows = [row for row in rows if row.set_name in chosen]
+    missing: list[tuple[Row, Path]] = []
+    http_failed = False
+    for row in rows:
+        dest = zip_path(row, out)
+        if matches(dest, row):
+            print(f"originals: {row.local_name} {row.sha256} kept")
+            continue
+        local = local_copy(row, from_dir, from_igi)
+        if local.is_file():
+            got = file_sha256(local)
+            if local.stat().st_size != row.size or got != row.sha256:
+                discard(part_path(dest))
+                discard(dest)
+                mismatch(row, got)
+            publish(local, dest, row)
+            print(f"originals: {row.local_name} {row.sha256} copied")
+            continue
+        if args.local_only:
+            missing.append((row, dest))
+            continue
+        if row.url != "-":
+            status = download(row, dest, args.igi_url_base)
+            if status is not None:
+                print(f"originals: {row.local_name}: download failed: HTTP {status}", file=sys.stderr)
+                http_failed = True
+                continue
+            print(f"originals: {row.local_name} {row.sha256} downloaded")
+            continue
+        fetch_with_aws(row, dest)
+        print(f"originals: {row.local_name} {row.sha256} downloaded")
+    if missing:
+        for row, dest in missing:
+            print(how_to_fetch(row, dest), file=sys.stderr)
+        return 1
+    if http_failed:
+        return 1
+    unpacked = 0
+    for row in rows:
+        unpacked += unpack_zip(row, out)
+    print(f"originals: {unpacked} files unpacked")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
