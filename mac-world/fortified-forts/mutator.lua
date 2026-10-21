@@ -21,6 +21,7 @@ end
 local function modifier_needs(class)
   local needs = weapon_needs(class)
   needs.damagemodifier = range(0.00000001, 1)
+  needs.DamageModifier = has("")
   return needs
 end
 
