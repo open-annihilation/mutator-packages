@@ -1,0 +1,16 @@
+oamut: 1
+id: "condensed-fog"
+name: "Condensed Fog"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Ships, hovercraft and amphibious units can cross mist and fog, and the mist does no damage. A map counts as fog when its planet is not Lava, lava is on, water does no damage, water damage is 100 and the sea-level trigger is on. The lava setting, the water damage and the sea-level trigger are then turned off.\n\nCondensed Fog, by MAC (macraig), was inspired by an earlier Passable Lava mutator. This version keeps that rule."
+tags: ["maps", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["maps"]
+legacy:
+  - name: "[MAC] Condensed Fog"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Condensed Fog.tam", "{}MAC Condensed Fog.sm"]

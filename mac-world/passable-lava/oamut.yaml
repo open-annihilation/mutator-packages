@@ -1,0 +1,16 @@
+oamut: 1
+id: "passable-lava"
+name: "Passable Lava"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Ships, hovercraft and amphibious units can cross lava. The lava becomes water that does 30 damage a tick, three times an ordinary acid map, and the tide is set to zero. Most units are torn apart at once. A navy or a commander can cross when it has plenty of air cover.\n\nPassable Lava, by MAC (macraig), does this on every map whose lava setting is on, not only the original Cavedog lava maps. This version keeps that rule."
+tags: ["maps", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["maps"]
+legacy:
+  - name: "[MAC] Passable Lava"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Passable Lava.tam", "{}MAC Passable Lava.sm"]

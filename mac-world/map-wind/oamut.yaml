@@ -1,0 +1,26 @@
+oamut: 1
+id: "map-wind"
+name: "Map Wind"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Every map's wind can be calmed or raised.\n\nCalm sets both wind speeds to zero. Steady raises each by half, rounds it down to a whole number, then keeps the minimum between 4000 and 9000 and the maximum between 5000 and 10000. Those limits raise a map whose wind was calm.\n\nNo Wind and Steady Winds, by MAC (macraig). This version rounds the half-again wind down, because the wind speeds are stored as whole numbers."
+tags: ["maps"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["maps"]
+options:
+  wind:
+    type: choice
+    values: ["calm", "steady"]
+    default: "calm"
+    label: "Wind"
+legacy:
+  - name: "[MAC] No Wind"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC No Wind.tam", "{}MAC No Wind.sm"]
+  - name: "[MAC] Steady Winds"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Steady Winds.tam", "{}MAC Steady Winds.sm"]

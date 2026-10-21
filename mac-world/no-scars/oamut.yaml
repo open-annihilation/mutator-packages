@@ -1,0 +1,16 @@
+oamut: 1
+id: "no-scars"
+name: "No Scars"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Destroying or reclaiming a feature, a unit or a building leaves no scar and no smudge. Wrecks leave no heap either, because those two keys are what names the heap.\n\nNo Fugly Scars, by MAC (macraig), named 41 feature folders and cleared featuredead and featurereclamate on every feature in them. This version clears those two keys on every feature."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units", "features"]
+legacy:
+  - name: "[MAC] No Fugly Scars"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC No Fugly Scars.tam", "{}MAC No Fugly Scars.sm"]

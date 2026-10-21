@@ -1,0 +1,30 @@
+oamut: 1
+id: "heavy-metal"
+name: "Heavy Metal"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Ground away from metal deposits yields more metal. Level 1 sets every schema's surface metal to 32, level 2 to 128 and level 3 to 255. Cavedog's ordinary maps use 3.\n\nHeavy Metal 1, Heavy Metal 2 and Heavy Metal 3, by MAC (macraig), wrote SurfaceMetal and MohoMetal on the map header, where no map keeps them and where the game does not read surface metal. This version writes surface metal on every schema, which is where the game reads it. MohoMetal is not carried: the game never reads it."
+tags: ["maps", "economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["maps"]
+options:
+  level:
+    type: choice
+    values: [1, 2, 3]
+    default: 1
+    label: "Ground metal"
+legacy:
+  - name: "[MAC] Heavy Metal 1"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Heavy Metal 1.tam", "{}MAC Heavy Metal 1.sm"]
+  - name: "[MAC] Heavy Metal 2"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Heavy Metal 2.tam", "{}MAC Heavy Metal 2.sm"]
+  - name: "[MAC] Heavy Metal 3"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Heavy Metal 3.tam", "{}MAC Heavy Metal 3.sm"]
