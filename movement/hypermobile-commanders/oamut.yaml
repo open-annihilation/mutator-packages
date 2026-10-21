@@ -1,0 +1,17 @@
+oamut: 1
+id: "hypermobile-commanders"
+name: "Hypermobile Commanders 3x"
+version: "1"
+author:
+  name: "Immerman"
+description: "All commanders move three times faster than normal.\n\nImmerman's Hypermobile Commanders 3x triples top speed and turn rate, and multiplies braking and acceleration by nine, for commanders that move. The movement test leaves a warp gate out.\n\nThe curated version keeps those rules."
+tags: ["commanders", "statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Hypermobile Commanders 3x"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}HyperComms3x.tam", "{}HyperComms3x.sm"]

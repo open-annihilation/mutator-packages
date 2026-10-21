@@ -1,0 +1,17 @@
+oamut: 1
+id: "tactical-strike"
+name: "Tactical Strike"
+version: "1"
+author:
+  name: "Immerman"
+description: "Fewer units get built, and the ones that do are tougher, so each one matters more.\n\nImmerman's Tactical Strike makes a construction unit much less help to a factory. Factories work five times as fast, clamped from 10 to 30000. Mobile units take five times as long to build, clamped from 1 to 600000, gain half again as much armour, clamped from 1 to 29900, and cost half again as much. Mobile builders work at 0.83 of their speed, with the same worker-time clamp, gain that armour boost, take 1.3 times the build time and cost, and move a little faster. Land and sea units then move half again as fast, with turn, braking and acceleration at 2.25, 2.25 and 1.5, and a construction unit gets that boost on top of its own. Everything then doubles its armour with the same armour clamp, takes 1.2 times as long to build and costs half again as much. Commanders that move produce five times the energy and metal.\n\nThe curated version keeps every factor and clamp as written, including 0.83 and 2.0."
+tags: ["statistics", "economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Tactical Strike"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}TacticalStrike.tam", "{}TacticalStrike.sm"]

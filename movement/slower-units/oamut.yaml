@@ -1,0 +1,17 @@
+oamut: 1
+id: "slower-units"
+name: "Slower Units"
+version: "1"
+author:
+  name: "Drinken"
+description: "All units except aircraft move at half speed.\n\nDrinken's Slower Units halves top speed and turn rate, and multiplies braking and acceleration by 0.75, for the same mobile units as Hypermobility 2x.\n\nThe curated version keeps those rules."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Slower Units"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}SlowerUnits.tam", "{}SlowerUnits.sm"]

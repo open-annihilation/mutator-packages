@@ -1,0 +1,17 @@
+oamut: 1
+id: "conbot-speed"
+name: "1.75 Speed Contruction KBots"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Construction KBots move at 1.75 times their speed, and brake and accelerate three times as hard.\n\nATRCaptainKirk's 1.75 Speed Contruction KBots selects mobile builders whose category contains KBOT. On 3.1c that is six units, and the Fark and the Necro are among them. The original spelling of the title is kept.\n\nThe curated version keeps those rules."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "1.75 Speed Contruction KBots"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}ConBotSpeedx1,75.tam", "{}ConBotSpeedx1,75.sm"]

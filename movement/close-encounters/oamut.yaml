@@ -1,0 +1,17 @@
+oamut: 1
+id: "close-encounters"
+name: "Close Encounters"
+version: "1"
+author:
+  name: "Immerman"
+description: "Small groups matter more. Units, and stationary ones most of all, take longer and cost more to build, and weapons reach two thirds as far and deal a third of the damage.\n\nImmerman's Close Encounters raises factory worker time fivefold, clamped from 10 to 30000, and doubles factory cost. Mobile units take five times as long to build, clamped from 1 to 600000. Mobile builders work at half speed with the same worker-time clamp, gain half again as much armour clamped from 1 to 29900, take 1.3 times the build time and cost, and move a little faster. Aircraft move at 0.66666666 of their speed. Everything costs half again as much and takes 1.2 times as long to build. Commanders that move produce five times the energy and metal. Every weapon's damage is multiplied by 0.333333333 and its range by 0.6666666666.\n\nThe curated version keeps those factors and clamps."
+tags: ["statistics", "economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units", "weapons"]
+legacy:
+  - name: "Close Encounters"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}CloseEncounters.tam", "{}CloseEncounters.sm"]

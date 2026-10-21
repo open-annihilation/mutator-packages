@@ -1,0 +1,17 @@
+oamut: 1
+id: "fast-raiders"
+name: "Faster Stumpy/Raiders"
+version: "1"
+author:
+  name: "Unknown"
+description: "The Stumpy and the Raider are never slowed. A slower one of either is set to a top speed of 1.6.\n\nThe files credit no one. Faster Stumpy/Raiders shipped only in the S-Mutators pack. It named ARMSTUMP and CORRAID and set both top speeds to 1.6, an absolute value written for another balance. On 3.1c the Stumpy is already 1.7, so that slowed it, and the Raider is already 1.6.\n\nThe curated version still names those two units, and it sets the top speed to 1.6 only when the current speed is from 0 to 1.6, so it never slows a unit. On 3.1c it changes nothing."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Faster Stumpy/Raiders"
+    prefix: "{}"
+    compatibility: ["OTA", "TACC", "UH", "DRUH"]
+    files: ["{}FastStumpy.tam", "{}FastStumpy.sm"]

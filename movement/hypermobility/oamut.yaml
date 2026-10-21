@@ -1,0 +1,17 @@
+oamut: 1
+id: "hypermobility"
+name: "Hypermobility 2x"
+version: "1"
+author:
+  name: "Immerman"
+description: "All land and sea units move twice as fast.\n\nImmerman's Hypermobility 2x doubles top speed and turn rate, and multiplies braking and acceleration by four, for mobile units that are not aircraft and that already move.\n\nThe curated version keeps those rules."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Hypermobility 2x"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}HyperMobility2x.tam", "{}HyperMobility2x.sm"]
