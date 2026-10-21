@@ -1,0 +1,8 @@
+# The originals never enter Git. tools/fetch-originals writes them here.
+/originals/
+
+# build/ is made from the originals by tools/build-packages.
+/build/
+
+# Python writes bytecode here when the tests run.
+__pycache__/

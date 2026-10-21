@@ -1,0 +1,418 @@
+#!/usr/bin/env python3
+"""Build each family's faithful imports and curated packages under build/.
+
+Originals stay outside Git. A family folder holds the sources we write.
+_imports.tsv names the originals to import, and a package's from-originals.tsv
+names the archive entries to copy in. This tool checks that those files are
+present, imports each original with oa-tool, and assembles the packages.
+It writes only under --out and under scratch folders it removes before exit.
+
+    tools/build-packages --tool OA_TOOL [--originals DIR] [--out DIR] [FAMILY...]
+
+--originals defaults to originals/ and --out to build/, both beside tools/.
+With no FAMILY, every top-level folder that holds _imports.tsv or _verify/
+is built. Inside the repository --out must be build/ or a folder below it;
+an empty --out, the repository itself, a folder above it, a folder inside
+--originals or one that would hold it is refused. Each family is built in a
+temporary folder beside <out>/<family> and moved into place only when it
+built; a failed family leaves no <out>/<family>. The tool marks each folder
+it builds with a .build-packages file and only ever replaces a marked one.
+Exit 0 when every family built, 1 when a build fails, 2 on a usage error.
+"""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import os
+import secrets
+import shutil
+import subprocess
+import sys
+import tempfile
+from pathlib import Path
+
+
+# Every folder this tool builds holds this file; it replaces no folder without it.
+MARKER = ".build-packages"
+MARKER_TEXT = "tools/build-packages built this folder and replaces it on each build.\n"
+
+
+class BuildError(Exception):
+    pass
+
+
+class UsageError(Exception):
+    pass
+
+
+def repo_root() -> Path:
+    return Path(__file__).resolve().parent.parent
+
+
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def read_tsv(path: Path, header: tuple[str, ...], optional_tail: tuple[str, ...] = ()) -> list[dict[str, str]]:
+    if not path.is_file():
+        raise BuildError(f"build: {path} is missing")
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines:
+        raise BuildError(f"build: {path} is empty")
+    fields = lines[0].split("\t")
+    allowed = [list(header)]
+    if optional_tail:
+        allowed.append(list(header) + list(optional_tail))
+    if fields not in allowed:
+        expect = " or ".join(", ".join(item) for item in allowed)
+        raise BuildError(f"build: {path}: expected header {expect}")
+    rows: list[dict[str, str]] = []
+    for number, line in enumerate(lines[1:], start=2):
+        if not line.strip():
+            continue
+        values = line.split("\t")
+        if len(values) != len(fields):
+            raise BuildError(f"build: {path}:{number}: expected {len(fields)} fields")
+        row = dict(zip(fields, values))
+        row["line"] = str(number)
+        rows.append(row)
+    return rows
+
+
+def read_imports(path: Path) -> list[dict[str, str]]:
+    rows = read_tsv(path, ("import", "source"), ("id",))
+    seen: dict[str, str] = {}
+    for row in rows:
+        row.setdefault("id", "-")
+        if not row["import"] or row["import"] in (".", "..") or "/" in row["import"]:
+            raise BuildError(f"build: {path}: bad import id {row['import']}")
+        # Each import is its own folder, so two rows may not share one (macOS ignores case).
+        key = row["import"].casefold()
+        if key in seen:
+            raise BuildError(
+                f"build: {path}: lines {seen[key]} and {row['line']} both name import {row['import']}; "
+                "give each original its own id (the id column)"
+            )
+        seen[key] = row["line"]
+    return rows
+
+
+def read_files(path: Path) -> list[dict[str, str]]:
+    return read_tsv(path, ("path", "source", "entry", "sha256"))
+
+
+def safe_relative(text: str) -> Path:
+    if text.startswith("/") or text.startswith("\\") or (len(text) >= 2 and text[1] == ":"):
+        raise BuildError(f"build: unsafe path {text}")
+    parts = [part for part in text.replace("\\", "/").split("/") if part not in ("", ".")]
+    if not parts or any(part == ".." for part in parts):
+        raise BuildError(f"build: unsafe path {text}")
+    return Path(*parts)
+
+
+def located(originals: Path, source: str) -> tuple[Path | None, str]:
+    """Return the file under originals, or None and 'missing' or 'unsafe'."""
+    try:
+        relative = safe_relative(source)
+    except BuildError:
+        return None, "unsafe"
+    root = originals.resolve()
+    path = (originals / relative).resolve()
+    if not path.is_relative_to(root):
+        return None, "unsafe"
+    if not path.is_file():
+        return None, "missing"
+    return path, "ok"
+
+
+def package_dirs(family_dir: Path) -> list[Path]:
+    found: list[Path] = []
+    for child in sorted(family_dir.iterdir(), key=lambda item: item.name):
+        if child.is_symlink() or not child.is_dir() or child.name.startswith("_"):
+            continue
+        if (child / "oamut.yaml").is_file():
+            found.append(child)
+    return found
+
+
+def discover(root: Path) -> list[str]:
+    names: list[str] = []
+    for child in sorted(root.iterdir(), key=lambda item: item.name):
+        if child.is_symlink() or not child.is_dir() or child.name.startswith("."):
+            continue
+        if (child / "_imports.tsv").is_file() or (child / "_verify").is_dir():
+            names.append(child.name)
+    return names
+
+
+def source_rows(family_dir: Path) -> list[tuple[str, str]]:
+    """Each (source, label) a chosen family names, in check order."""
+    named: list[tuple[str, str]] = []
+    imports = family_dir / "_imports.tsv"
+    if imports.is_file():
+        for row in read_imports(imports):
+            named.append((row["source"], f"{family_dir.name} import {row['import']}"))
+    for package in package_dirs(family_dir):
+        listing = package / "from-originals.tsv"
+        if listing.is_file():
+            for row in read_files(listing):
+                named.append((row["source"], f"{family_dir.name}/{package.name} {row['path']}"))
+    return named
+
+
+def fetch_hint(source: str) -> str:
+    hint = "run tools/fetch-originals"
+    if source == "igi-server" or source.startswith("igi-server/"):
+        hint += " --set igi-server"
+    return hint
+
+
+def copy_child(src: Path, dest: Path) -> None:
+    if src.is_symlink():
+        raise BuildError(f"build: refusing to copy link {src}")
+    if src.is_dir():
+        dest.mkdir(parents=True)
+        for child in src.iterdir():
+            copy_child(child, dest / child.name)
+        return
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dest)
+
+
+def assemble_package(package: Path, dest: Path, originals: Path, tool: str, family: str) -> int:
+    if (package / "files").is_dir():
+        raise BuildError(f"build: {family}/{package.name}: source holds a files/ folder")
+    dest.mkdir(parents=True)
+    for child in package.iterdir():
+        if child.name == "from-originals.tsv":
+            continue
+        copy_child(child, dest / child.name)
+    listing = package / "from-originals.tsv"
+    if not listing.is_file():
+        return 0
+    placed = 0
+    for row in read_files(listing):
+        relative = safe_relative(row["path"])
+        target = dest / relative
+        if not target.resolve().is_relative_to(dest.resolve()):
+            raise BuildError(f"build: {family}/{package.name}: unsafe path {row['path']}")
+        source, state = located(originals, row["source"])
+        if state != "ok" or source is None:
+            raise BuildError(f"build: {family}/{package.name}: missing {row['source']}")
+        target.parent.mkdir(parents=True, exist_ok=True)
+        if row["entry"] == "-":
+            shutil.copyfile(source, target)
+        else:
+            proc = subprocess.run(
+                [tool, "extract", str(source), row["entry"], str(target)],
+                check=False,
+                capture_output=True,
+            )
+            if proc.returncode != 0 or not target.is_file():
+                detail = proc.stderr.decode("utf-8", "replace").strip()
+                raise BuildError(f"build: {family}/{package.name}: extract failed for {row['path']}: {detail}")
+        got = file_sha256(target)
+        if got != row["sha256"].lower():
+            raise BuildError(
+                f"build: {family}/{package.name}: {row['path']}: SHA-256 mismatch: "
+                f"expected {row['sha256']}, got {got}"
+            )
+        placed += 1
+    return placed
+
+
+def import_originals(family_dir: Path, dest: Path, originals: Path, tool: str) -> int:
+    listing = family_dir / "_imports.tsv"
+    if not listing.is_file():
+        return 0
+    rows = read_imports(listing)
+    logs = dest / "_logs"
+    logs.mkdir(parents=True, exist_ok=True)
+    imported = dest / "_imports"
+    imported.mkdir(parents=True, exist_ok=True)
+    for row in rows:
+        scratch = Path(tempfile.mkdtemp(prefix="L16-build-"))
+        try:
+            source, state = located(originals, row["source"])
+            if state != "ok" or source is None:
+                raise BuildError(f"build: {family_dir.name}: import {row['import']} failed ({row['source']})")
+            command = [tool, "mutator", "import", str(source), "--out", str(scratch)]
+            if row["id"] != "-":
+                command.extend(["--id", row["id"]])
+            proc = subprocess.run(command, check=False, capture_output=True)
+            (logs / f"import-{row['import']}.txt").write_bytes(proc.stdout + proc.stderr)
+            folder = scratch / row["import"]
+            if proc.returncode != 0 or not folder.is_dir():
+                raise BuildError(f"build: {family_dir.name}: import {row['import']} failed ({row['source']})")
+            target = imported / row["import"]
+            if target.exists() or target.is_symlink():
+                raise BuildError(f"build: {family_dir.name}: import {row['import']} is already built ({row['source']})")
+            shutil.move(str(folder), str(target))
+        finally:
+            shutil.rmtree(scratch, ignore_errors=True)
+    return len(rows)
+
+
+def is_marked(folder: Path) -> bool:
+    marker = folder / MARKER
+    return folder.is_dir() and not folder.is_symlink() and marker.is_file() and not marker.is_symlink()
+
+
+def replace_problem(dest: Path) -> str | None:
+    """Why dest may not be replaced, or None when it is absent or a marked build."""
+    if not dest.exists() and not dest.is_symlink():
+        return None
+    if is_marked(dest):
+        return None
+    return f"build: {dest} is not a folder this tool built (no {MARKER}); remove it by hand or choose another --out"
+
+
+def check_out(out: Path, root: Path, originals: Path, names: list[str]) -> None:
+    """Refuse an --out under which a family's folder could be anything but our own build."""
+    if root.is_relative_to(out):
+        raise UsageError(f"build: --out {out} is the repository or a folder above it")
+    if out.is_relative_to(root) and not out.is_relative_to(root / "build"):
+        raise UsageError(f"build: --out {out} is inside the repository; use build/ or a folder outside it")
+    if out.is_relative_to(originals):
+        raise UsageError(f"build: --out {out} is inside --originals {originals}")
+    for name in names:
+        dest = out / name
+        if originals.is_relative_to(dest):
+            raise UsageError(f"build: --out {out}: {dest} would hold --originals {originals}")
+        problem = replace_problem(dest)
+        if problem is not None:
+            raise UsageError(problem)
+
+
+def new_folder(parent: Path, prefix: str) -> Path:
+    for _ in range(100):
+        path = parent / f"{prefix}{secrets.token_hex(4)}"
+        try:
+            path.mkdir()
+        except FileExistsError:
+            continue
+        return path
+    raise BuildError(f"build: could not make a folder in {parent}")
+
+
+def remove_build(dest: Path) -> None:
+    """Remove dest only when this tool built it."""
+    if is_marked(dest):
+        shutil.rmtree(dest)
+
+
+def build_family(family_dir: Path, out: Path, originals: Path, tool: str) -> None:
+    name = family_dir.name
+    dest = out / name
+    problem = replace_problem(dest)
+    if problem is not None:
+        raise BuildError(problem)
+    out.mkdir(parents=True, exist_ok=True)
+    # Build beside dest and move it in only once the whole family has built.
+    work = new_folder(out, f".{name}.build-")
+    try:
+        (work / MARKER).write_text(MARKER_TEXT, encoding="utf-8")
+        imports = import_originals(family_dir, work, originals, tool)
+        packages = package_dirs(family_dir)
+        files = 0
+        for package in packages:
+            files += assemble_package(package, work / package.name, originals, tool, name)
+        verify = family_dir / "_verify"
+        if verify.is_dir() and not verify.is_symlink():
+            shutil.copytree(verify, work / "_verify", symlinks=False)
+    except BaseException:
+        shutil.rmtree(work, ignore_errors=True)
+        # A failed family leaves no build, so nothing stale is checked in its place.
+        remove_build(dest)
+        raise
+    if dest.exists():
+        old = new_folder(out, f".{name}.old-")
+        os.rename(dest, old / name)
+        os.rename(work, dest)
+        shutil.rmtree(old)
+    else:
+        os.rename(work, dest)
+    print(f"build: {name}: {imports} imports, {len(packages)} packages, {files} files from originals")
+
+
+def take_args(argv: list[str]) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--tool", required=True)
+    parser.add_argument("--originals", default=None)
+    parser.add_argument("--out", default=None)
+    parser.add_argument("families", nargs="*")
+    return parser.parse_args(argv)
+
+
+def directory_argument(text: str | None, default: Path) -> Path:
+    if text is None:
+        return default
+    path = Path(text).expanduser()
+    if not path.is_absolute():
+        path = Path.cwd() / path
+    return path
+
+
+def has_tool(argv: list[str]) -> bool:
+    return any(arg == "--tool" or arg.startswith("--tool=") for arg in argv)
+
+
+def main(argv: list[str]) -> int:
+    if argv in (["-h"], ["--help"]):
+        take_args(argv)
+    if not has_tool(argv):
+        print("build: --tool is required", file=sys.stderr)
+        return 2
+    try:
+        args = take_args(argv)
+    except SystemExit as err:
+        code = err.code
+        return 2 if code is None else int(code)
+    for flag, value in (("--out", args.out), ("--originals", args.originals)):
+        if value is not None and not value.strip():
+            print(f"build: {flag} is empty; give a folder, or leave {flag} out for its default", file=sys.stderr)
+            return 2
+    root = repo_root()
+    originals = directory_argument(args.originals, root / "originals").resolve()
+    out = directory_argument(args.out, root / "build").resolve()
+    if args.families:
+        names: list[str] = []
+        for name in args.families:
+            name = name.rstrip("/")
+            if not name or name in (".", "..") or "/" in name:
+                print(f"build: bad family name {name}", file=sys.stderr)
+                return 2
+            if not (root / name).is_dir():
+                print(f"build: no family folder {name}", file=sys.stderr)
+                return 2
+            names.append(name)
+    else:
+        names = discover(root)
+    try:
+        check_out(out, root, originals, names)
+    except UsageError as err:
+        print(err, file=sys.stderr)
+        return 2
+    try:
+        for name in names:
+            for source, label in source_rows(root / name):
+                _path, state = located(originals, source)
+                if state == "unsafe":
+                    raise BuildError(f"build: unsafe source {source} ({label})")
+                if state == "missing":
+                    raise BuildError(f"build: missing {source} ({label})\n{fetch_hint(source)}")
+        for name in names:
+            build_family(root / name, out, originals, args.tool)
+    except BuildError as err:
+        print(err, file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

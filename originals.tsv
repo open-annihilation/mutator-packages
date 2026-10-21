@@ -1,0 +1,10 @@
+key	size	sha256	set	url
+tools/ta-mutation/Mutators.zip	4440872	68939332db834dbf2e63197af50eee00b250e0198649b3a9c1d2681f2baca0c3	ta-mutation	-
+tools/ta-mutation/S-Mutators.zip	403354	cbb91f0e16afb02fa0ae217a67a4fabaa4eaa3352f03d03027ff2c6438c5aca2	ta-mutation	-
+tools/ta-mutation/H-Mutators.zip	403181	2d7f77674f86e563b356d622c21cab5552ad5b1d48548d72ad693f2fb05ab7ed	ta-mutation	-
+tools/ta-mutation/igi-server/MAC's mutators.zip	181421	5c5d6da5d9dc0083aebd376fc9d17c129642bebc8eed60aa5170c58825445451	igi-server	https://files.igi-server.link/MAC's mutators.zip
+tools/ta-mutation/igi-server/finitemetalta_mutator.zip	6872	fbbda6401bdcec28d1720e53fb27c35cf96d2524cee378f76216d1e379a078dd	igi-server	https://files.igi-server.link/finitemetalta_mutator.zip
+tools/ta-mutation/igi-server/finitemetalta_cs_mutator.zip	6972	bee8a37b2aa776e47f82601b043f806a0b89d24044e7ac8e6f189f9267720eab	igi-server	https://files.igi-server.link/finitemetalta_cs_mutator.zip
+tools/ta-mutation/igi-server/tam-directionalfactoriesv2.zip	2273689	75fa2b8a8fdfd493473b33a433be50f2d8e3e91b9de1fb6d2590707e18ac9b78	igi-server	https://files.igi-server.link/tam-directionalfactoriesv2.zip
+tools/ta-mutation/igi-server/DTAM.ZIP	2470401	985d68ffd1eba43903f1321557aafb7f5c2ce8c525836a70edaa91e210e0e4e9	igi-server	https://files.igi-server.link/DTAM.ZIP
+tools/ta-mutation/igi-server/TA Stuff/New/immerpack10.zip	506130	94a7df60cd2cb5e30ac2c2efe5e9c43cd62d73e5f7570acf284c321873e53617	igi-server	https://files.igi-server.link/TA Stuff/New/immerpack10.zip
