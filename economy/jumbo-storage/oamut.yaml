@@ -4,7 +4,7 @@ name: "Jumbo Storage"
 version: "1"
 author:
   name: "Immerman"
-description: "Storage of 300 or more metal or energy is two, four or eight times larger.\n\nImmerman's Jumbo Storage 2x and Jumbo Storage 4x each multiplied that storage, and the two together made eight times.\n\nThis package is both originals, with one storage choice."
+description: "Storage of 300 or more metal or energy is two, four or eight times larger.\n\nImmerman's Jumbo Storage 2x and Jumbo Storage 4x each multiplied that storage, and the two together made eight times.\n\nThis package is both originals, with one storage choice.\n\nMAC (macraig)'s Jumbo Storage 200% (Arm) and Jumbo Storage 200% (Core) are factor 2 for one side. The side option is all, Arm or Core."
 tags: ["economy"]
 works-with: ["*"]
 requires:
@@ -16,6 +16,11 @@ options:
     values: [2, 4, 8]
     default: 2
     label: "Storage"
+  side:
+    type: "choice"
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
 legacy:
   - name: "Jumbo Storage 2x"
     prefix: "{}"
@@ -25,3 +30,11 @@ legacy:
     prefix: "{}"
     compatibility: ["*"]
     files: ["{}JumboStorage4x.tam", "{}JumboStorage4x.sm"]
+  - name: "[MAC] Jumbo Storage 200% (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Jumbo Storage 200% (Arm).tam", "{}MAC Jumbo Storage 200% (Arm).sm"]
+  - name: "[MAC] Jumbo Storage 200% (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Jumbo Storage 200% (Core).tam", "{}MAC Jumbo Storage 200% (Core).sm"]

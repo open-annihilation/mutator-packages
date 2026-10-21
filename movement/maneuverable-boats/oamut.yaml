@@ -4,14 +4,28 @@ name: "Maneuverable Boats"
 version: "1"
 author:
   name: "Unknown"
-description: "Naval units turn and stop much more sharply. Their top speed stays the same.\n\nThe files credit no one. Maneuverable Boats shipped in the TA: Mutation standard pack. It doubles braking and acceleration and multiplies turn rate by four for mobile units whose movement class contains boat and that already move.\n\nThe curated version keeps those rules."
+description: "Naval units turn and stop much more sharply. Their top speed stays the same.\n\nThe files credit no one. Maneuverable Boats shipped in the TA: Mutation standard pack. It doubles braking and acceleration and multiplies turn rate by four for mobile units whose movement class contains boat and that already move.\n\nThe curated version keeps those rules. Turn rate is clamped at 29900, which four times 3.1c's fastest boat never reaches.\n\nMAC (macraig)'s Maneuverable Boats (Arm) and Maneuverable Boats (Core) are those rules for one side. The side option is all, Arm or Core."
 tags: ["statistics"]
 works-with: ["*"]
 requires:
   engine: ">= 0.8.5"
 layers: ["units"]
+options:
+  side:
+    type: "choice"
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
 legacy:
   - name: "Maneuverable Boats"
     prefix: "{}"
     compatibility: ["*"]
     files: ["{}ManeuverableBoats.tam", "{}ManeuverableBoats.sm"]
+  - name: "[MAC] Maneuverable Boats (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Maneuverable Boats (Arm).tam", "{}MAC Maneuverable Boats (Arm).sm"]
+  - name: "[MAC] Maneuverable Boats (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Maneuverable Boats (Core).tam", "{}MAC Maneuverable Boats (Core).sm"]

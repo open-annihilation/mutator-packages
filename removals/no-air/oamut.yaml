@@ -4,14 +4,28 @@ name: "No Air"
 version: "1"
 author:
   name: "Drinken"
-description: "Aircraft are removed, and so are the factories left with nothing but aircraft to build, and the stationary air repair pads.\n\nDrinken's No Air blanked the copyright line and set version 4 on aircraft, on units whose sound category is AIRPLANT, and on the Arm seaplane platform. That sound category also names the two air repair pads.\n\nThis package removes aircraft, factories whose menus are only aircraft, and stationary air bases directly. The Core seaplane platform, which the exact sound-category test missed, goes with the rest."
+description: "Aircraft are removed, and so are the factories left with nothing but aircraft to build, and the stationary air repair pads.\n\nDrinken's No Air blanked the copyright line and set version 4 on aircraft, on units whose sound category is AIRPLANT, and on the Arm seaplane platform. That sound category also names the two air repair pads.\n\nThis package removes aircraft, factories whose menus are only aircraft, and stationary air bases directly. The Core seaplane platform, which the exact sound-category test missed, goes with the rest.\n\nMAC (macraig)'s Friendly Skies removes armed aircraft that do not build, and Even Friendlier Skies removes every aircraft and leaves the plants and pads. The aircraft option is all, which is today's removal, or combat, which is Friendly Skies."
 tags: ["disable"]
 works-with: ["*"]
 requires:
   engine: ">= 0.8.5"
 layers: ["units"]
+options:
+  aircraft:
+    type: "choice"
+    values: ["all", "combat"]
+    default: "all"
+    label: "Aircraft removed"
 legacy:
   - name: "No Air"
     prefix: "{}"
     compatibility: ["*"]
     files: ["{}NoAir.tam", "{}NoAir.sm"]
+  - name: "[MAC] Friendly Skies"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Friendly Skies.tam", "{}MAC Friendly Skies.sm"]
+  - name: "[MAC] Even Friendlier Skies"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Even Friendlier Skies.tam", "{}MAC Even Friendlier Skies.sm"]
