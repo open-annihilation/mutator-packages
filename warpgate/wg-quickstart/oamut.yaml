@@ -1,0 +1,18 @@
+oamut: 1
+id: "wg-quickstart"
+name: "WG Quickstart"
+version: "1"
+author:
+  name: "Immerman"
+description: "The Normal gate makes 1000 energy and 20 metal, and stores 3000 energy and 1000 metal. The Easy gate makes 1500 energy and 30 metal, and stores 9000 energy and 3000 metal.\n\nThis package replaces WG - Quickstart by Immerman. The numbers are plain assignments, as that file wrote them."
+tags: ["economy", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+  mutators: ["warpgate"]
+layers: ["units"]
+legacy:
+  - name: "WG - Quickstart"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}WG-Quickstart.tam", "{}WG-Quickstart.sm"]
