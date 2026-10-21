@@ -1,0 +1,1308 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: double-los 1
+# seed: 0
+field gamedata/los.tdf [table10] line10: 7, 1, 1, 2, 2, 3, 3, 4, 4, 5, 4, 6, 5, 7, 6 -> 8,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8	by double-los
+field gamedata/los.tdf [table10] line11: 8, 1, 1, 2, 2, 3, 2, 4, 3, 5, 4, 6, 4, 7, 5, 8, 6 -> 7,1,1,2,2,3,3,3,4,4,5,5,6,6,7	by double-los
+field gamedata/los.tdf [table10] line12: 8, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 4, 8, 5 -> 9,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9	by double-los
+field gamedata/los.tdf [table10] line13: 9, 1, 0, 2, 1, 3, 1, 4, 2, 5, 2, 6, 3, 7, 3, 8, 4, 9, 4 -> 8,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8	by double-los
+field gamedata/los.tdf [table10] line14: 9, 1, 0, 2, 1, 3, 1, 4, 1, 5, 2, 6, 2, 7, 2, 8, 3, 9, 3 -> 9,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9	by double-los
+field gamedata/los.tdf [table10] line15: 10, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 2, 9, 2, 10, 2 -> 10,0,1,1,2,1,3,1,4,2,5,2,6,2,7,2,8,3,9,3,10	by double-los
+field gamedata/los.tdf [table10] line16: 10, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 1, 7, 1, 8, 1, 9, 1, 10, 1 -> 8,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8	by double-los
+field gamedata/los.tdf [table10] line17: (absent) -> 10,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10	by double-los
+field gamedata/los.tdf [table10] line18: (absent) -> 10,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10	by double-los
+field gamedata/los.tdf [table10] line19: (absent) -> 10,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10	by double-los
+field gamedata/los.tdf [table10] line1: 10, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10 -> 9,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5	by double-los
+field gamedata/los.tdf [table10] line2: 10, 0, 1, 0, 2, 0, 3, 0, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 9, 1, 10 -> 9,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4	by double-los
+field gamedata/los.tdf [table10] line3: 10, 0, 1, 0, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 7, 2, 8, 2, 9, 2, 10 -> 9,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3	by double-los
+field gamedata/los.tdf [table10] line4: 9, 0, 1, 1, 2, 1, 3, 1, 4, 2, 5, 2, 6, 2, 7, 3, 8, 3, 9 -> 9,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2	by double-los
+field gamedata/los.tdf [table10] line5: 9, 0, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 3, 7, 4, 8, 4, 9 -> 9,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1	by double-los
+field gamedata/los.tdf [table10] line6: 8, 1, 1, 1, 2, 2, 3, 2, 4, 3, 5, 4, 6, 4, 7, 5, 8 -> 8,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6	by double-los
+field gamedata/los.tdf [table10] line7: 8, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 4, 6, 5, 7, 6, 8 -> 8,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5	by double-los
+field gamedata/los.tdf [table10] line8: 7, 1, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 6, 6, 7 -> 7,1,1,2,2,3,3,4,4,5,5,6,6,7,7	by double-los
+field gamedata/los.tdf [table10] line9: 7, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7 -> 7,1,1,2,2,3,3,4,3,5,4,6,5,7,6	by double-los
+field gamedata/los.tdf [table10] numlines: 16 -> 19	by double-los
+field gamedata/los.tdf [table11] line10: 8, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8 -> 8,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8	by double-los
+field gamedata/los.tdf [table11] line11: 8, 1, 1, 2, 2, 3, 3, 4, 3, 5, 4, 6, 5, 7, 6, 8, 7 -> 9,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9	by double-los
+field gamedata/los.tdf [table11] line12: 9, 1, 1, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 7, 6, 8, 6, 9, 7 -> 8,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8	by double-los
+field gamedata/los.tdf [table11] line13: 9, 1, 1, 2, 1, 3, 2, 4, 3, 5, 3, 6, 4, 7, 5, 8, 5, 9, 6 -> 10,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10	by double-los
+field gamedata/los.tdf [table11] line14: 10, 1, 0, 2, 1, 3, 1, 4, 2, 5, 2, 6, 3, 7, 4, 8, 4, 9, 5, 10, 5 -> 10,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10	by double-los
+field gamedata/los.tdf [table11] line15: 10, 1, 0, 2, 1, 3, 1, 4, 2, 5, 2, 6, 2, 7, 3, 8, 3, 9, 4, 10, 4 -> 11,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11	by double-los
+field gamedata/los.tdf [table11] line16: 11, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1, 6, 2, 7, 2, 8, 2, 9, 3, 10, 3, 11, 3 -> 9,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9	by double-los
+field gamedata/los.tdf [table11] line17: 11, 1, 0, 2, 0, 3, 0, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 9, 2, 10, 2, 11, 2 -> 11,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11	by double-los
+field gamedata/los.tdf [table11] line18: 11, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 1, 7, 1, 8, 1, 9, 1, 10, 1, 11, 1 -> 11,0,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11	by double-los
+field gamedata/los.tdf [table11] line19: (absent) -> 11,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11	by double-los
+field gamedata/los.tdf [table11] line1: 11, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11 -> 10,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5	by double-los
+field gamedata/los.tdf [table11] line2: 11, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 1, 7, 1, 8, 1, 9, 1, 10, 1, 11 -> 10,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4	by double-los
+field gamedata/los.tdf [table11] line3: 11, 0, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 2, 9, 2, 10, 2, 11 -> 10,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3	by double-los
+field gamedata/los.tdf [table11] line4: 11, 0, 1, 0, 2, 1, 3, 1, 4, 1, 5, 2, 6, 2, 7, 2, 8, 3, 9, 3, 10, 3, 11 -> 10,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2	by double-los
+field gamedata/los.tdf [table11] line5: 10, 0, 1, 1, 2, 1, 3, 2, 4, 2, 5, 2, 6, 3, 7, 3, 8, 4, 9, 4, 10 -> 10,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1	by double-los
+field gamedata/los.tdf [table11] line6: 10, 0, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 4, 7, 4, 8, 5, 9, 5, 10 -> 9,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6	by double-los
+field gamedata/los.tdf [table11] line7: 9, 1, 1, 1, 2, 2, 3, 3, 4, 3, 5, 4, 6, 5, 7, 5, 8, 6, 9 -> 8,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8	by double-los
+field gamedata/los.tdf [table11] line8: 9, 1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 6, 8, 7, 9 -> 8,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7	by double-los
+field gamedata/los.tdf [table11] line9: 8, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8 -> 8,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6	by double-los
+field gamedata/los.tdf [table11] numlines: 18 -> 19	by double-los
+field gamedata/los.tdf [table12] line10: 9, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 7, 7, 8, 8, 9 -> 9,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9	by double-los
+field gamedata/los.tdf [table12] line11: 9, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9 -> 8,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8	by double-los
+field gamedata/los.tdf [table12] line12: 9, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 5, 7, 6, 8, 7, 9, 8 -> 10,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10	by double-los
+field gamedata/los.tdf [table12] line13: 10, 1, 1, 2, 2, 3, 2, 4, 3, 5, 4, 6, 5, 7, 5, 8, 6, 9, 7, 10, 8 -> 9,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9	by double-los
+field gamedata/los.tdf [table12] line14: 10, 1, 1, 2, 1, 3, 2, 4, 3, 5, 3, 6, 4, 7, 5, 8, 5, 9, 6, 10, 7 -> 10,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10	by double-los
+field gamedata/los.tdf [table12] line15: 11, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 3, 7, 4, 8, 4, 9, 5, 10, 6, 11, 6 -> 11,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11	by double-los
+field gamedata/los.tdf [table12] line16: 11, 1, 0, 2, 1, 3, 1, 4, 2, 5, 2, 6, 3, 7, 3, 8, 4, 9, 4, 10, 5, 11, 5 -> 11,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11	by double-los
+field gamedata/los.tdf [table12] line17: 11, 1, 0, 2, 1, 3, 1, 4, 1, 5, 2, 6, 2, 7, 3, 8, 3, 9, 3, 10, 4, 11, 4 -> 12,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12	by double-los
+field gamedata/los.tdf [table12] line18: 12, 1, 0, 2, 1, 3, 1, 4, 1, 5, 1, 6, 2, 7, 2, 8, 2, 9, 2, 10, 3, 11, 3, 12, 3 -> 12,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12	by double-los
+field gamedata/los.tdf [table12] line19: 12, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 9, 2, 10, 2, 11, 2, 12, 2 -> 12,0,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12	by double-los
+field gamedata/los.tdf [table12] line1: 12, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0, 12 -> 11,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5	by double-los
+field gamedata/los.tdf [table12] line20: 12, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 1, 7, 1, 8, 1, 9, 1, 10, 1, 11, 1, 12, 1 -> 12,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12	by double-los
+field gamedata/los.tdf [table12] line2: 12, 0, 1, 0, 2, 0, 3, 0, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 9, 1, 10, 1, 11, 1, 12 -> 11,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4	by double-los
+field gamedata/los.tdf [table12] line3: 12, 0, 1, 0, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 2, 9, 2, 10, 2, 11, 2, 12 -> 11,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3	by double-los
+field gamedata/los.tdf [table12] line4: 12, 0, 1, 1, 2, 1, 3, 1, 4, 1, 5, 2, 6, 2, 7, 2, 8, 2, 9, 3, 10, 3, 11, 3, 12 -> 11,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2	by double-los
+field gamedata/los.tdf [table12] line5: 11, 0, 1, 1, 2, 1, 3, 1, 4, 2, 5, 2, 6, 3, 7, 3, 8, 3, 9, 4, 10, 4, 11 -> 11,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1	by double-los
+field gamedata/los.tdf [table12] line6: 11, 0, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 3, 7, 4, 8, 4, 9, 5, 10, 5, 11 -> 10,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7	by double-los
+field gamedata/los.tdf [table12] line7: 11, 1, 1, 1, 2, 2, 3, 2, 4, 3, 5, 3, 6, 4, 7, 4, 8, 5, 9, 6, 10, 6, 11 -> 10,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6	by double-los
+field gamedata/los.tdf [table12] line8: 10, 1, 1, 1, 2, 2, 3, 3, 4, 3, 5, 4, 6, 5, 7, 5, 8, 6, 9, 7, 10 -> 9,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8	by double-los
+field gamedata/los.tdf [table12] line9: 10, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 5, 7, 6, 8, 7, 9, 8, 10 -> 9,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7	by double-los
+field gamedata/los.tdf [table13] line10: (absent) -> 9,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9	by double-los
+field gamedata/los.tdf [table13] line11: (absent) -> 9,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8	by double-los
+field gamedata/los.tdf [table13] line12: (absent) -> 10,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10	by double-los
+field gamedata/los.tdf [table13] line13: (absent) -> 9,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9	by double-los
+field gamedata/los.tdf [table13] line14: (absent) -> 11,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11	by double-los
+field gamedata/los.tdf [table13] line15: (absent) -> 10,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10	by double-los
+field gamedata/los.tdf [table13] line16: (absent) -> 12,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12	by double-los
+field gamedata/los.tdf [table13] line17: (absent) -> 12,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12	by double-los
+field gamedata/los.tdf [table13] line18: (absent) -> 12,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12	by double-los
+field gamedata/los.tdf [table13] line19: (absent) -> 13,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13	by double-los
+field gamedata/los.tdf [table13] line1: (absent) -> 12,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6	by double-los
+field gamedata/los.tdf [table13] line20: (absent) -> 13,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13	by double-los
+field gamedata/los.tdf [table13] line21: (absent) -> 13,0,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13	by double-los
+field gamedata/los.tdf [table13] line22: (absent) -> 13,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13	by double-los
+field gamedata/los.tdf [table13] line2: (absent) -> 12,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5	by double-los
+field gamedata/los.tdf [table13] line3: (absent) -> 12,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4	by double-los
+field gamedata/los.tdf [table13] line4: (absent) -> 12,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3	by double-los
+field gamedata/los.tdf [table13] line5: (absent) -> 12,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2	by double-los
+field gamedata/los.tdf [table13] line6: (absent) -> 12,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1	by double-los
+field gamedata/los.tdf [table13] line7: (absent) -> 11,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7	by double-los
+field gamedata/los.tdf [table13] line8: (absent) -> 10,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8	by double-los
+field gamedata/los.tdf [table13] line9: (absent) -> 10,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7	by double-los
+field gamedata/los.tdf [table13] numlines: (absent) -> 22	by double-los
+field gamedata/los.tdf [table14] line10: (absent) -> 11,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7	by double-los
+field gamedata/los.tdf [table14] line11: (absent) -> 10,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10	by double-los
+field gamedata/los.tdf [table14] line12: (absent) -> 10,1,1,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9	by double-los
+field gamedata/los.tdf [table14] line13: (absent) -> 11,1,1,2,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11	by double-los
+field gamedata/los.tdf [table14] line14: (absent) -> 10,1,1,2,2,3,3,4,4,5,5,5,6,6,7,7,8,8,9,9,10	by double-los
+field gamedata/los.tdf [table14] line15: (absent) -> 11,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11	by double-los
+field gamedata/los.tdf [table14] line16: (absent) -> 12,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,6,11,7,12	by double-los
+field gamedata/los.tdf [table14] line17: (absent) -> 11,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11	by double-los
+field gamedata/los.tdf [table14] line18: (absent) -> 13,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13	by double-los
+field gamedata/los.tdf [table14] line19: (absent) -> 13,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13	by double-los
+field gamedata/los.tdf [table14] line1: (absent) -> 13,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6	by double-los
+field gamedata/los.tdf [table14] line20: (absent) -> 13,0,1,1,2,1,3,1,4,2,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13	by double-los
+field gamedata/los.tdf [table14] line21: (absent) -> 14,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14	by double-los
+field gamedata/los.tdf [table14] line22: (absent) -> 14,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14	by double-los
+field gamedata/los.tdf [table14] line23: (absent) -> 14,0,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14	by double-los
+field gamedata/los.tdf [table14] line24: (absent) -> 14,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14	by double-los
+field gamedata/los.tdf [table14] line2: (absent) -> 13,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5	by double-los
+field gamedata/los.tdf [table14] line3: (absent) -> 13,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4	by double-los
+field gamedata/los.tdf [table14] line4: (absent) -> 13,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3	by double-los
+field gamedata/los.tdf [table14] line5: (absent) -> 13,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2	by double-los
+field gamedata/los.tdf [table14] line6: (absent) -> 13,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1	by double-los
+field gamedata/los.tdf [table14] line7: (absent) -> 12,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7	by double-los
+field gamedata/los.tdf [table14] line8: (absent) -> 11,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,7,9,7,10,8,11,9	by double-los
+field gamedata/los.tdf [table14] line9: (absent) -> 11,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8	by double-los
+field gamedata/los.tdf [table14] numlines: (absent) -> 24	by double-los
+field gamedata/los.tdf [table15] line10: (absent) -> 12,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8	by double-los
+field gamedata/los.tdf [table15] line11: (absent) -> 11,1,1,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,10	by double-los
+field gamedata/los.tdf [table15] line12: (absent) -> 11,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,7,9,7,10,8,11,9	by double-los
+field gamedata/los.tdf [table15] line13: (absent) -> 11,1,1,2,2,3,3,4,4,5,5,5,6,6,7,7,8,8,9,9,10,10,11	by double-los
+field gamedata/los.tdf [table15] line14: (absent) -> 10,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10	by double-los
+field gamedata/los.tdf [table15] line15: (absent) -> 12,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12	by double-los
+field gamedata/los.tdf [table15] line16: (absent) -> 11,1,1,2,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11	by double-los
+field gamedata/los.tdf [table15] line17: (absent) -> 13,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,7,12,8,13	by double-los
+field gamedata/los.tdf [table15] line18: (absent) -> 12,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12	by double-los
+field gamedata/los.tdf [table15] line19: (absent) -> 13,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13	by double-los
+field gamedata/los.tdf [table15] line1: (absent) -> 14,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,6,14,6	by double-los
+field gamedata/los.tdf [table15] line20: (absent) -> 14,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14	by double-los
+field gamedata/los.tdf [table15] line21: (absent) -> 14,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14	by double-los
+field gamedata/los.tdf [table15] line22: (absent) -> 14,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,3,12,4,13,4,14	by double-los
+field gamedata/los.tdf [table15] line23: (absent) -> 15,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15	by double-los
+field gamedata/los.tdf [table15] line24: (absent) -> 15,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15	by double-los
+field gamedata/los.tdf [table15] line25: (absent) -> 15,0,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15	by double-los
+field gamedata/los.tdf [table15] line26: (absent) -> 15,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15	by double-los
+field gamedata/los.tdf [table15] line2: (absent) -> 14,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5	by double-los
+field gamedata/los.tdf [table15] line3: (absent) -> 14,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4	by double-los
+field gamedata/los.tdf [table15] line4: (absent) -> 14,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3	by double-los
+field gamedata/los.tdf [table15] line5: (absent) -> 14,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2	by double-los
+field gamedata/los.tdf [table15] line6: (absent) -> 14,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1	by double-los
+field gamedata/los.tdf [table15] line7: (absent) -> 13,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8	by double-los
+field gamedata/los.tdf [table15] line8: (absent) -> 13,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7	by double-los
+field gamedata/los.tdf [table15] line9: (absent) -> 12,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9	by double-los
+field gamedata/los.tdf [table15] numlines: (absent) -> 26	by double-los
+field gamedata/los.tdf [table16] line10: (absent) -> 13,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8	by double-los
+field gamedata/los.tdf [table16] line11: (absent) -> 13,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6	by double-los
+field gamedata/los.tdf [table16] line12: (absent) -> 12,1,1,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,11	by double-los
+field gamedata/los.tdf [table16] line13: (absent) -> 12,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,8,11,9,12,10	by double-los
+field gamedata/los.tdf [table16] line14: (absent) -> 12,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9	by double-los
+field gamedata/los.tdf [table16] line15: (absent) -> 12,1,1,2,2,3,3,4,4,5,5,6,6,6,7,7,8,8,9,9,10,10,11,11,12	by double-los
+field gamedata/los.tdf [table16] line16: (absent) -> 11,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11	by double-los
+field gamedata/los.tdf [table16] line17: (absent) -> 12,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12	by double-los
+field gamedata/los.tdf [table16] line18: (absent) -> 13,1,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,8,12,9,13	by double-los
+field gamedata/los.tdf [table16] line19: (absent) -> 12,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12	by double-los
+field gamedata/los.tdf [table16] line1: (absent) -> 15,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6	by double-los
+field gamedata/los.tdf [table16] line20: (absent) -> 14,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14	by double-los
+field gamedata/los.tdf [table16] line21: (absent) -> 13,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,7,12,8,13	by double-los
+field gamedata/los.tdf [table16] line22: (absent) -> 14,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14	by double-los
+field gamedata/los.tdf [table16] line23: (absent) -> 15,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15	by double-los
+field gamedata/los.tdf [table16] line24: (absent) -> 13,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13	by double-los
+field gamedata/los.tdf [table16] line25: (absent) -> 15,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15	by double-los
+field gamedata/los.tdf [table16] line26: (absent) -> 15,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15	by double-los
+field gamedata/los.tdf [table16] line27: (absent) -> 16,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16	by double-los
+field gamedata/los.tdf [table16] line28: (absent) -> 16,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16	by double-los
+field gamedata/los.tdf [table16] line29: (absent) -> 16,0,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16	by double-los
+field gamedata/los.tdf [table16] line2: (absent) -> 15,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5	by double-los
+field gamedata/los.tdf [table16] line30: (absent) -> 16,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16	by double-los
+field gamedata/los.tdf [table16] line3: (absent) -> 15,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4	by double-los
+field gamedata/los.tdf [table16] line4: (absent) -> 15,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3	by double-los
+field gamedata/los.tdf [table16] line5: (absent) -> 15,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2	by double-los
+field gamedata/los.tdf [table16] line6: (absent) -> 15,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1	by double-los
+field gamedata/los.tdf [table16] line7: (absent) -> 14,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8	by double-los
+field gamedata/los.tdf [table16] line8: (absent) -> 14,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7	by double-los
+field gamedata/los.tdf [table16] line9: (absent) -> 13,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9	by double-los
+field gamedata/los.tdf [table16] numlines: (absent) -> 30	by double-los
+field gamedata/los.tdf [table17] line10: (absent) -> 14,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,8,13,8,14,9	by double-los
+field gamedata/los.tdf [table17] line11: (absent) -> 14,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8	by double-los
+field gamedata/los.tdf [table17] line12: (absent) -> 14,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,6,14,6	by double-los
+field gamedata/los.tdf [table17] line13: (absent) -> 13,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11	by double-los
+field gamedata/los.tdf [table17] line14: (absent) -> 13,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10	by double-los
+field gamedata/los.tdf [table17] line15: (absent) -> 12,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12	by double-los
+field gamedata/los.tdf [table17] line16: (absent) -> 12,1,1,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,11	by double-los
+field gamedata/los.tdf [table17] line17: (absent) -> 13,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13	by double-los
+field gamedata/los.tdf [table17] line18: (absent) -> 12,1,1,2,2,3,3,4,4,5,5,6,6,6,7,7,8,8,9,9,10,10,11,11,12	by double-los
+field gamedata/los.tdf [table17] line19: (absent) -> 14,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,9,13,10,14	by double-los
+field gamedata/los.tdf [table17] line1: (absent) -> 16,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5,14,5,15,6,16,6	by double-los
+field gamedata/los.tdf [table17] line20: (absent) -> 13,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13	by double-los
+field gamedata/los.tdf [table17] line21: (absent) -> 14,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14	by double-los
+field gamedata/los.tdf [table17] line22: (absent) -> 15,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15	by double-los
+field gamedata/los.tdf [table17] line23: (absent) -> 14,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14	by double-los
+field gamedata/los.tdf [table17] line24: (absent) -> 15,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15	by double-los
+field gamedata/los.tdf [table17] line25: (absent) -> 16,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16	by double-los
+field gamedata/los.tdf [table17] line26: (absent) -> 14,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14	by double-los
+field gamedata/los.tdf [table17] line27: (absent) -> 16,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16	by double-los
+field gamedata/los.tdf [table17] line28: (absent) -> 17,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17	by double-los
+field gamedata/los.tdf [table17] line29: (absent) -> 17,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17	by double-los
+field gamedata/los.tdf [table17] line2: (absent) -> 16,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5	by double-los
+field gamedata/los.tdf [table17] line30: (absent) -> 17,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2,16,2,17	by double-los
+field gamedata/los.tdf [table17] line31: (absent) -> 17,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17	by double-los
+field gamedata/los.tdf [table17] line32: (absent) -> 17,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17	by double-los
+field gamedata/los.tdf [table17] line3: (absent) -> 16,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4	by double-los
+field gamedata/los.tdf [table17] line4: (absent) -> 16,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3	by double-los
+field gamedata/los.tdf [table17] line5: (absent) -> 16,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2,16,2	by double-los
+field gamedata/los.tdf [table17] line6: (absent) -> 16,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1	by double-los
+field gamedata/los.tdf [table17] line7: (absent) -> 15,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8	by double-los
+field gamedata/los.tdf [table17] line8: (absent) -> 15,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7	by double-los
+field gamedata/los.tdf [table17] line9: (absent) -> 14,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,9,13,9,14,10	by double-los
+field gamedata/los.tdf [table17] numlines: (absent) -> 32	by double-los
+field gamedata/los.tdf [table18] line10: (absent) -> 15,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10	by double-los
+field gamedata/los.tdf [table18] line11: (absent) -> 15,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9	by double-los
+field gamedata/los.tdf [table18] line12: (absent) -> 15,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7	by double-los
+field gamedata/los.tdf [table18] line13: (absent) -> 14,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,9,13,10,14,11	by double-los
+field gamedata/los.tdf [table18] line14: (absent) -> 14,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,9,13,9,14,10	by double-los
+field gamedata/los.tdf [table18] line15: (absent) -> 13,1,1,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,11,13,12	by double-los
+field gamedata/los.tdf [table18] line16: (absent) -> 13,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11	by double-los
+field gamedata/los.tdf [table18] line17: (absent) -> 13,1,1,2,2,3,3,4,4,5,5,6,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13	by double-los
+field gamedata/los.tdf [table18] line18: (absent) -> 12,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12	by double-los
+field gamedata/los.tdf [table18] line19: (absent) -> 14,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14	by double-los
+field gamedata/los.tdf [table18] line1: (absent) -> 17,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7	by double-los
+field gamedata/los.tdf [table18] line20: (absent) -> 13,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13	by double-los
+field gamedata/los.tdf [table18] line21: (absent) -> 15,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15	by double-los
+field gamedata/los.tdf [table18] line22: (absent) -> 14,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,9,13,10,14	by double-los
+field gamedata/los.tdf [table18] line23: (absent) -> 16,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14,8,15,9,16	by double-los
+field gamedata/los.tdf [table18] line24: (absent) -> 15,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15	by double-los
+field gamedata/los.tdf [table18] line25: (absent) -> 16,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16	by double-los
+field gamedata/los.tdf [table18] line26: (absent) -> 17,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,5,13,6,14,6,15,7,16,7,17	by double-los
+field gamedata/los.tdf [table18] line27: (absent) -> 15,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15	by double-los
+field gamedata/los.tdf [table18] line28: (absent) -> 17,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17	by double-los
+field gamedata/los.tdf [table18] line29: (absent) -> 17,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,4,15,5,16,5,17	by double-los
+field gamedata/los.tdf [table18] line2: (absent) -> 17,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6	by double-los
+field gamedata/los.tdf [table18] line30: (absent) -> 18,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18	by double-los
+field gamedata/los.tdf [table18] line31: (absent) -> 18,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18	by double-los
+field gamedata/los.tdf [table18] line32: (absent) -> 18,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,2,14,2,15,2,16,2,17,2,18	by double-los
+field gamedata/los.tdf [table18] line33: (absent) -> 18,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18	by double-los
+field gamedata/los.tdf [table18] line34: (absent) -> 18,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18	by double-los
+field gamedata/los.tdf [table18] line3: (absent) -> 17,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,4,16,5,17,5	by double-los
+field gamedata/los.tdf [table18] line4: (absent) -> 17,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4	by double-los
+field gamedata/los.tdf [table18] line5: (absent) -> 17,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3	by double-los
+field gamedata/los.tdf [table18] line6: (absent) -> 17,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,2,14,2,15,2,16,2,17,2	by double-los
+field gamedata/los.tdf [table18] line7: (absent) -> 17,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1	by double-los
+field gamedata/los.tdf [table18] line8: (absent) -> 16,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9	by double-los
+field gamedata/los.tdf [table18] line9: (absent) -> 16,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8	by double-los
+field gamedata/los.tdf [table18] numlines: (absent) -> 34	by double-los
+field gamedata/los.tdf [table19] line10: (absent) -> 16,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10	by double-los
+field gamedata/los.tdf [table19] line11: (absent) -> 16,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9	by double-los
+field gamedata/los.tdf [table19] line12: (absent) -> 16,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7	by double-los
+field gamedata/los.tdf [table19] line13: (absent) -> 15,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,10,13,10,14,11,15,12	by double-los
+field gamedata/los.tdf [table19] line14: (absent) -> 15,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8,12,9,13,10,14,10,15,11	by double-los
+field gamedata/los.tdf [table19] line15: (absent) -> 15,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10	by double-los
+field gamedata/los.tdf [table19] line16: (absent) -> 14,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11,10,12,11,13,12,14,13	by double-los
+field gamedata/los.tdf [table19] line17: (absent) -> 14,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12	by double-los
+field gamedata/los.tdf [table19] line18: (absent) -> 14,1,1,2,2,3,3,4,4,5,5,6,6,7,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14	by double-los
+field gamedata/los.tdf [table19] line19: (absent) -> 13,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13	by double-los
+field gamedata/los.tdf [table19] line1: (absent) -> 18,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,7,18,7	by double-los
+field gamedata/los.tdf [table19] line20: (absent) -> 15,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15	by double-los
+field gamedata/los.tdf [table19] line21: (absent) -> 14,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,9,11,10,12,11,13,12,14	by double-los
+field gamedata/los.tdf [table19] line22: (absent) -> 15,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,10,14,11,15	by double-los
+field gamedata/los.tdf [table19] line23: (absent) -> 16,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,9,15,10,16	by double-los
+field gamedata/los.tdf [table19] line24: (absent) -> 15,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15	by double-los
+field gamedata/los.tdf [table19] line25: (absent) -> 17,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17	by double-los
+field gamedata/los.tdf [table19] line26: (absent) -> 16,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14,8,15,9,16	by double-los
+field gamedata/los.tdf [table19] line27: (absent) -> 17,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17	by double-los
+field gamedata/los.tdf [table19] line28: (absent) -> 18,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7,18	by double-los
+field gamedata/los.tdf [table19] line29: (absent) -> 16,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16	by double-los
+field gamedata/los.tdf [table19] line2: (absent) -> 18,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6	by double-los
+field gamedata/los.tdf [table19] line30: (absent) -> 18,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18	by double-los
+field gamedata/los.tdf [table19] line31: (absent) -> 18,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,3,12,4,13,4,14,4,15,4,16,5,17,5,18	by double-los
+field gamedata/los.tdf [table19] line32: (absent) -> 19,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19	by double-los
+field gamedata/los.tdf [table19] line33: (absent) -> 19,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3,19	by double-los
+field gamedata/los.tdf [table19] line34: (absent) -> 19,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,2,15,2,16,2,17,2,18,2,19	by double-los
+field gamedata/los.tdf [table19] line35: (absent) -> 19,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19	by double-los
+field gamedata/los.tdf [table19] line36: (absent) -> 19,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19	by double-los
+field gamedata/los.tdf [table19] line3: (absent) -> 18,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5	by double-los
+field gamedata/los.tdf [table19] line4: (absent) -> 18,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,4,17,4,18,4	by double-los
+field gamedata/los.tdf [table19] line5: (absent) -> 18,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3	by double-los
+field gamedata/los.tdf [table19] line6: (absent) -> 18,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,2,15,2,16,2,17,2,18,2	by double-los
+field gamedata/los.tdf [table19] line7: (absent) -> 18,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1	by double-los
+field gamedata/los.tdf [table19] line8: (absent) -> 17,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9	by double-los
+field gamedata/los.tdf [table19] line9: (absent) -> 17,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8	by double-los
+field gamedata/los.tdf [table19] numlines: (absent) -> 36	by double-los
+field gamedata/los.tdf [table1] line1: 1, 0, 1 -> 1,0,1	by double-los
+field gamedata/los.tdf [table1] line2: 1, 1, 1 -> (absent)	by double-los
+field gamedata/los.tdf [table1] numlines: 2 -> 1	by double-los
+field gamedata/los.tdf [table20] line10: (absent) -> 17,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,10,16,10,17,11	by double-los
+field gamedata/los.tdf [table20] line11: (absent) -> 17,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,8,14,8,15,9,16,9,17,10	by double-los
+field gamedata/los.tdf [table20] line12: (absent) -> 17,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7	by double-los
+field gamedata/los.tdf [table20] line13: (absent) -> 16,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12	by double-los
+field gamedata/los.tdf [table20] line14: (absent) -> 16,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11	by double-los
+field gamedata/los.tdf [table20] line15: (absent) -> 15,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15,13	by double-los
+field gamedata/los.tdf [table20] line16: (absent) -> 15,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,10,13,10,14,11,15,12	by double-los
+field gamedata/los.tdf [table20] line17: (absent) -> 14,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14	by double-los
+field gamedata/los.tdf [table20] line18: (absent) -> 14,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11,10,12,11,13,12,14,13	by double-los
+field gamedata/los.tdf [table20] line19: (absent) -> 15,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,10,12,11,13,12,14,13,15	by double-los
+field gamedata/los.tdf [table20] line1: (absent) -> 19,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,6,16,6,17,6,18,7,19,7	by double-los
+field gamedata/los.tdf [table20] line20: (absent) -> 14,1,1,2,2,3,3,4,4,5,5,6,6,7,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14	by double-los
+field gamedata/los.tdf [table20] line21: (absent) -> 16,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16	by double-los
+field gamedata/los.tdf [table20] line22: (absent) -> 15,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15	by double-los
+field gamedata/los.tdf [table20] line23: (absent) -> 17,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17	by double-los
+field gamedata/los.tdf [table20] line24: (absent) -> 16,1,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,8,12,9,13,10,14,10,15,11,16	by double-los
+field gamedata/los.tdf [table20] line25: (absent) -> 17,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17	by double-los
+field gamedata/los.tdf [table20] line26: (absent) -> 18,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18	by double-los
+field gamedata/los.tdf [table20] line27: (absent) -> 18,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18	by double-los
+field gamedata/los.tdf [table20] line28: (absent) -> 19,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19	by double-los
+field gamedata/los.tdf [table20] line29: (absent) -> 17,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,5,13,6,14,6,15,7,16,7,17	by double-los
+field gamedata/los.tdf [table20] line2: (absent) -> 19,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6	by double-los
+field gamedata/los.tdf [table20] line30: (absent) -> 19,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19	by double-los
+field gamedata/los.tdf [table20] line31: (absent) -> 19,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19	by double-los
+field gamedata/los.tdf [table20] line32: (absent) -> 20,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,4,18,4,19,4,20	by double-los
+field gamedata/los.tdf [table20] line33: (absent) -> 20,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,2,16,3,17,3,18,3,19,3,20	by double-los
+field gamedata/los.tdf [table20] line34: (absent) -> 20,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,2,15,2,16,2,17,2,18,2,19,2,20	by double-los
+field gamedata/los.tdf [table20] line35: (absent) -> 20,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20	by double-los
+field gamedata/los.tdf [table20] line36: (absent) -> 20,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20	by double-los
+field gamedata/los.tdf [table20] line3: (absent) -> 19,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5	by double-los
+field gamedata/los.tdf [table20] line4: (absent) -> 19,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,4,18,4,19,4	by double-los
+field gamedata/los.tdf [table20] line5: (absent) -> 19,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,3,17,3,18,3,19,3	by double-los
+field gamedata/los.tdf [table20] line6: (absent) -> 19,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,2,16,2,17,2,18,2,19,2	by double-los
+field gamedata/los.tdf [table20] line7: (absent) -> 19,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1	by double-los
+field gamedata/los.tdf [table20] line8: (absent) -> 18,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9	by double-los
+field gamedata/los.tdf [table20] line9: (absent) -> 18,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7,17,8,18,8	by double-los
+field gamedata/los.tdf [table20] numlines: (absent) -> 36	by double-los
+field gamedata/los.tdf [table21] line10: (absent) -> 18,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8,14,9,15,9,16,10,17,10,18,11	by double-los
+field gamedata/los.tdf [table21] line11: (absent) -> 18,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10	by double-los
+field gamedata/los.tdf [table21] line12: (absent) -> 18,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,7,18,7	by double-los
+field gamedata/los.tdf [table21] line13: (absent) -> 17,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,11,16,11,17,12	by double-los
+field gamedata/los.tdf [table21] line14: (absent) -> 17,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,10,16,10,17,11	by double-los
+field gamedata/los.tdf [table21] line15: (absent) -> 16,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,11,14,12,15,13,16,14	by double-los
+field gamedata/los.tdf [table21] line16: (absent) -> 16,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,11,14,11,15,12,16,13	by double-los
+field gamedata/los.tdf [table21] line17: (absent) -> 16,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12	by double-los
+field gamedata/los.tdf [table21] line18: (absent) -> 15,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15	by double-los
+field gamedata/los.tdf [table21] line19: (absent) -> 15,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11,10,12,11,13,12,14,13,15,14	by double-los
+field gamedata/los.tdf [table21] line1: (absent) -> 20,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7	by double-los
+field gamedata/los.tdf [table21] line20: (absent) -> 16,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,11,13,12,14,13,15,14,16	by double-los
+field gamedata/los.tdf [table21] line21: (absent) -> 15,1,1,2,2,3,3,4,4,5,5,6,6,7,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15	by double-los
+field gamedata/los.tdf [table21] line22: (absent) -> 16,1,1,2,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11,10,12,11,13,11,14,12,15,13,16	by double-los
+field gamedata/los.tdf [table21] line23: (absent) -> 17,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17	by double-los
+field gamedata/los.tdf [table21] line24: (absent) -> 16,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16	by double-los
+field gamedata/los.tdf [table21] line25: (absent) -> 18,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,10,17,11,18	by double-los
+field gamedata/los.tdf [table21] line26: (absent) -> 17,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17	by double-los
+field gamedata/los.tdf [table21] line27: (absent) -> 18,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8,14,8,15,9,16,9,17,10,18	by double-los
+field gamedata/los.tdf [table21] line28: (absent) -> 19,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19	by double-los
+field gamedata/los.tdf [table21] line29: (absent) -> 19,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,5,13,6,14,6,15,7,16,7,17,8,18,8,19	by double-los
+field gamedata/los.tdf [table21] line2: (absent) -> 20,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,5,19,6,20,6	by double-los
+field gamedata/los.tdf [table21] line30: (absent) -> 20,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20	by double-los
+field gamedata/los.tdf [table21] line31: (absent) -> 18,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7,18	by double-los
+field gamedata/los.tdf [table21] line32: (absent) -> 20,0,1,1,2,1,3,1,4,2,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,5,18,6,19,6,20	by double-los
+field gamedata/los.tdf [table21] line33: (absent) -> 20,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20	by double-los
+field gamedata/los.tdf [table21] line34: (absent) -> 21,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,4,19,4,20,4,21	by double-los
+field gamedata/los.tdf [table21] line35: (absent) -> 18,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18	by double-los
+field gamedata/los.tdf [table21] line36: (absent) -> 21,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,2,17,3,18,3,19,3,20,3,21	by double-los
+field gamedata/los.tdf [table21] line37: (absent) -> 21,0,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,2,16,2,17,2,18,2,19,2,20,2,21	by double-los
+field gamedata/los.tdf [table21] line38: (absent) -> 21,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21	by double-los
+field gamedata/los.tdf [table21] line39: (absent) -> 21,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21	by double-los
+field gamedata/los.tdf [table21] line3: (absent) -> 20,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5	by double-los
+field gamedata/los.tdf [table21] line4: (absent) -> 20,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,4,19,4,20,4	by double-los
+field gamedata/los.tdf [table21] line5: (absent) -> 20,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,2,17,3,18,3,19,3,20,3	by double-los
+field gamedata/los.tdf [table21] line6: (absent) -> 20,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,2,16,2,17,2,18,2,19,2,20,2	by double-los
+field gamedata/los.tdf [table21] line7: (absent) -> 20,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1	by double-los
+field gamedata/los.tdf [table21] line8: (absent) -> 19,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9	by double-los
+field gamedata/los.tdf [table21] line9: (absent) -> 19,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7,18,8,19,8	by double-los
+field gamedata/los.tdf [table21] numlines: (absent) -> 39	by double-los
+field gamedata/los.tdf [table22] line10: (absent) -> 20,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,8,20,8	by double-los
+field gamedata/los.tdf [table22] line11: (absent) -> 19,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,8,14,8,15,9,16,9,17,10,18,10,19,11	by double-los
+field gamedata/los.tdf [table22] line12: (absent) -> 19,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,6,16,6,17,6,18,7,19,7	by double-los
+field gamedata/los.tdf [table22] line13: (absent) -> 18,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,11,16,12,17,12,18,13	by double-los
+field gamedata/los.tdf [table22] line14: (absent) -> 18,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,11,17,11,18,12	by double-los
+field gamedata/los.tdf [table22] line15: (absent) -> 18,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8,14,9,15,9,16,10,17,10,18,11	by double-los
+field gamedata/los.tdf [table22] line16: (absent) -> 17,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,11,14,12,15,12,16,13,17,14	by double-los
+field gamedata/los.tdf [table22] line17: (absent) -> 17,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17,13	by double-los
+field gamedata/los.tdf [table22] line18: (absent) -> 16,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,15	by double-los
+field gamedata/los.tdf [table22] line19: (absent) -> 16,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,11,14,12,15,13,16,14	by double-los
+field gamedata/los.tdf [table22] line1: (absent) -> 21,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7	by double-los
+field gamedata/los.tdf [table22] line20: (absent) -> 16,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16	by double-los
+field gamedata/los.tdf [table22] line21: (absent) -> 15,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15	by double-los
+field gamedata/los.tdf [table22] line22: (absent) -> 17,1,1,2,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11,10,12,11,13,12,14,12,15,13,16,14,17	by double-los
+field gamedata/los.tdf [table22] line23: (absent) -> 16,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,11,13,12,14,13,15,14,16	by double-los
+field gamedata/los.tdf [table22] line24: (absent) -> 18,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,12,17,13,18	by double-los
+field gamedata/los.tdf [table22] line25: (absent) -> 17,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17	by double-los
+field gamedata/los.tdf [table22] line26: (absent) -> 18,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,11,16,11,17,12,18	by double-los
+field gamedata/los.tdf [table22] line27: (absent) -> 19,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17,10,18,11,19	by double-los
+field gamedata/los.tdf [table22] line28: (absent) -> 18,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,10,17,11,18	by double-los
+field gamedata/los.tdf [table22] line29: (absent) -> 20,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20	by double-los
+field gamedata/los.tdf [table22] line2: (absent) -> 21,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,5,17,5,18,5,19,5,20,6,21,6	by double-los
+field gamedata/los.tdf [table22] line30: (absent) -> 20,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20	by double-los
+field gamedata/los.tdf [table22] line31: (absent) -> 20,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,8,19,8,20	by double-los
+field gamedata/los.tdf [table22] line32: (absent) -> 21,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21	by double-los
+field gamedata/los.tdf [table22] line33: (absent) -> 19,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19	by double-los
+field gamedata/los.tdf [table22] line34: (absent) -> 21,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,5,19,6,20,6,21	by double-los
+field gamedata/los.tdf [table22] line35: (absent) -> 21,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5,21	by double-los
+field gamedata/los.tdf [table22] line36: (absent) -> 22,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,3,19,4,20,4,21,4,22	by double-los
+field gamedata/los.tdf [table22] line37: (absent) -> 19,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19	by double-los
+field gamedata/los.tdf [table22] line38: (absent) -> 22,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,3,19,3,20,3,21,3,22	by double-los
+field gamedata/los.tdf [table22] line39: (absent) -> 22,0,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,2,17,2,18,2,19,2,20,2,21,2,22	by double-los
+field gamedata/los.tdf [table22] line3: (absent) -> 21,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18,4,19,5,20,5,21,5	by double-los
+field gamedata/los.tdf [table22] line40: (absent) -> 22,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22	by double-los
+field gamedata/los.tdf [table22] line41: (absent) -> 22,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22	by double-los
+field gamedata/los.tdf [table22] line4: (absent) -> 21,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18,3,19,4,20,4,21,4	by double-los
+field gamedata/los.tdf [table22] line5: (absent) -> 21,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,3,19,3,20,3,21,3	by double-los
+field gamedata/los.tdf [table22] line6: (absent) -> 21,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,2,17,2,18,2,19,2,20,2,21,2	by double-los
+field gamedata/los.tdf [table22] line7: (absent) -> 21,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1	by double-los
+field gamedata/los.tdf [table22] line8: (absent) -> 20,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10	by double-los
+field gamedata/los.tdf [table22] line9: (absent) -> 20,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,5,13,6,14,6,15,7,16,7,17,8,18,8,19,9,20,9	by double-los
+field gamedata/los.tdf [table22] numlines: (absent) -> 41	by double-los
+field gamedata/los.tdf [table23] line10: (absent) -> 21,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,8,19,8,20,9,21,9	by double-los
+field gamedata/los.tdf [table23] line11: (absent) -> 20,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,10,17,10,18,11,19,11,20,12	by double-los
+field gamedata/los.tdf [table23] line12: (absent) -> 20,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11	by double-los
+field gamedata/los.tdf [table23] line13: (absent) -> 20,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,8,20,8	by double-los
+field gamedata/los.tdf [table23] line14: (absent) -> 19,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13	by double-los
+field gamedata/los.tdf [table23] line15: (absent) -> 19,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17,11,18,11,19,12	by double-los
+field gamedata/los.tdf [table23] line16: (absent) -> 18,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,12,17,13,18,14	by double-los
+field gamedata/los.tdf [table23] line17: (absent) -> 18,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,11,16,12,17,12,18,13	by double-los
+field gamedata/los.tdf [table23] line18: (absent) -> 17,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,16	by double-los
+field gamedata/los.tdf [table23] line19: (absent) -> 17,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,11,14,12,15,13,16,14,17,15	by double-los
+field gamedata/los.tdf [table23] line1: (absent) -> 22,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,7,19,7,20,7,21,8,22,8	by double-los
+field gamedata/los.tdf [table23] line20: (absent) -> 17,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,11,14,12,15,12,16,13,17,14	by double-los
+field gamedata/los.tdf [table23] line21: (absent) -> 17,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17	by double-los
+field gamedata/los.tdf [table23] line22: (absent) -> 16,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16	by double-los
+field gamedata/los.tdf [table23] line23: (absent) -> 17,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,11,13,12,14,13,15,14,16,15,17	by double-los
+field gamedata/los.tdf [table23] line24: (absent) -> 18,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,12,16,13,17,14,18	by double-los
+field gamedata/los.tdf [table23] line25: (absent) -> 17,1,1,2,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11,10,12,11,13,12,14,12,15,13,16,14,17	by double-los
+field gamedata/los.tdf [table23] line26: (absent) -> 19,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,10,15,11,16,12,17,12,18,13,19	by double-los
+field gamedata/los.tdf [table23] line27: (absent) -> 18,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,12,17,13,18	by double-los
+field gamedata/los.tdf [table23] line28: (absent) -> 20,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,11,19,12,20	by double-los
+field gamedata/los.tdf [table23] line29: (absent) -> 19,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,9,15,10,16,11,17,11,18,12,19	by double-los
+field gamedata/los.tdf [table23] line2: (absent) -> 22,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7	by double-los
+field gamedata/los.tdf [table23] line30: (absent) -> 20,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8,14,8,15,9,16,9,17,10,18,10,19,11,20	by double-los
+field gamedata/los.tdf [table23] line31: (absent) -> 21,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21	by double-los
+field gamedata/los.tdf [table23] line32: (absent) -> 21,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,6,15,7,16,7,17,8,18,8,19,9,20,9,21	by double-los
+field gamedata/los.tdf [table23] line33: (absent) -> 22,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,7,18,7,19,7,20,8,21,8,22	by double-los
+field gamedata/los.tdf [table23] line34: (absent) -> 20,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,8,19,8,20	by double-los
+field gamedata/los.tdf [table23] line35: (absent) -> 22,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22	by double-los
+field gamedata/los.tdf [table23] line36: (absent) -> 22,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,4,16,5,17,5,18,5,19,5,20,6,21,6,22	by double-los
+field gamedata/los.tdf [table23] line37: (absent) -> 22,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18,4,19,5,20,5,21,5,22	by double-los
+field gamedata/los.tdf [table23] line38: (absent) -> 23,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18,3,19,3,20,4,21,4,22,4,23	by double-los
+field gamedata/los.tdf [table23] line39: (absent) -> 20,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,4,18,4,19,4,20	by double-los
+field gamedata/los.tdf [table23] line3: (absent) -> 22,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,5,21,6,22,6	by double-los
+field gamedata/los.tdf [table23] line40: (absent) -> 23,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,3,20,3,21,3,22,3,23	by double-los
+field gamedata/los.tdf [table23] line41: (absent) -> 23,0,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,2,18,2,19,2,20,2,21,2,22,2,23	by double-los
+field gamedata/los.tdf [table23] line42: (absent) -> 23,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23	by double-los
+field gamedata/los.tdf [table23] line43: (absent) -> 23,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23	by double-los
+field gamedata/los.tdf [table23] line4: (absent) -> 22,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,5,21,5,22,5	by double-los
+field gamedata/los.tdf [table23] line5: (absent) -> 22,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18,3,19,3,20,4,21,4,22,4	by double-los
+field gamedata/los.tdf [table23] line6: (absent) -> 22,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,3,20,3,21,3,22,3	by double-los
+field gamedata/los.tdf [table23] line7: (absent) -> 22,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,2,18,2,19,2,20,2,21,2,22,2	by double-los
+field gamedata/los.tdf [table23] line8: (absent) -> 22,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1	by double-los
+field gamedata/los.tdf [table23] line9: (absent) -> 21,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10	by double-los
+field gamedata/los.tdf [table23] numlines: (absent) -> 43	by double-los
+field gamedata/los.tdf [table24] line10: (absent) -> 22,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7,18,7,19,8,20,8,21,9,22,9	by double-los
+field gamedata/los.tdf [table24] line11: (absent) -> 21,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,9,16,9,17,10,18,10,19,11,20,11,21,12	by double-los
+field gamedata/los.tdf [table24] line12: (absent) -> 21,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11	by double-los
+field gamedata/los.tdf [table24] line13: (absent) -> 21,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,8,21,8	by double-los
+field gamedata/los.tdf [table24] line14: (absent) -> 20,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,12,19,12,20,13	by double-los
+field gamedata/los.tdf [table24] line15: (absent) -> 20,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,10,17,10,18,11,19,11,20,12	by double-los
+field gamedata/los.tdf [table24] line16: (absent) -> 19,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,13,17,13,18,14,19,15	by double-los
+field gamedata/los.tdf [table24] line17: (absent) -> 19,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8,12,9,13,10,14,10,15,11,16,12,17,13,18,13,19,14	by double-los
+field gamedata/los.tdf [table24] line18: (absent) -> 19,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13	by double-los
+field gamedata/los.tdf [table24] line19: (absent) -> 18,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,12,15,13,16,14,17,15,18,16	by double-los
+field gamedata/los.tdf [table24] line1: (absent) -> 23,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8	by double-los
+field gamedata/los.tdf [table24] line20: (absent) -> 18,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,12,15,13,16,13,17,14,18,15	by double-los
+field gamedata/los.tdf [table24] line21: (absent) -> 17,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17	by double-los
+field gamedata/los.tdf [table24] line22: (absent) -> 17,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,16	by double-los
+field gamedata/los.tdf [table24] line23: (absent) -> 18,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,12,14,13,15,14,16,15,17,16,18	by double-los
+field gamedata/los.tdf [table24] line24: (absent) -> 17,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17	by double-los
+field gamedata/los.tdf [table24] line25: (absent) -> 19,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,13,16,13,17,14,18,15,19	by double-los
+field gamedata/los.tdf [table24] line26: (absent) -> 18,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13,12,14,13,15,13,16,14,17,15,18	by double-los
+field gamedata/los.tdf [table24] line27: (absent) -> 19,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,10,14,11,15,12,16,13,17,13,18,14,19	by double-los
+field gamedata/los.tdf [table24] line28: (absent) -> 20,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20	by double-los
+field gamedata/los.tdf [table24] line29: (absent) -> 19,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,10,15,11,16,12,17,12,18,13,19	by double-los
+field gamedata/los.tdf [table24] line2: (absent) -> 23,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,5,19,6,20,6,21,6,22,7,23,7	by double-los
+field gamedata/los.tdf [table24] line30: (absent) -> 21,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14,9,15,9,16,10,17,10,18,11,19,11,20,12,21	by double-los
+field gamedata/los.tdf [table24] line31: (absent) -> 20,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,11,19,12,20	by double-los
+field gamedata/los.tdf [table24] line32: (absent) -> 21,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21	by double-los
+field gamedata/los.tdf [table24] line33: (absent) -> 22,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22	by double-los
+field gamedata/los.tdf [table24] line34: (absent) -> 22,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,5,13,6,14,6,15,7,16,7,17,7,18,8,19,8,20,9,21,9,22	by double-los
+field gamedata/los.tdf [table24] line35: (absent) -> 23,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,7,21,8,22,8,23	by double-los
+field gamedata/los.tdf [table24] line36: (absent) -> 21,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,8,20,8,21	by double-los
+field gamedata/los.tdf [table24] line37: (absent) -> 23,0,1,1,2,1,3,1,4,2,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7,23	by double-los
+field gamedata/los.tdf [table24] line38: (absent) -> 23,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,5,21,6,22,6,23	by double-los
+field gamedata/los.tdf [table24] line39: (absent) -> 23,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,5,21,5,22,5,23	by double-los
+field gamedata/los.tdf [table24] line3: (absent) -> 23,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5,21,5,22,6,23,6	by double-los
+field gamedata/los.tdf [table24] line40: (absent) -> 24,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18,3,19,3,20,4,21,4,22,4,23,4,24	by double-los
+field gamedata/los.tdf [table24] line41: (absent) -> 24,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,3,20,3,21,3,22,3,23,3,24	by double-los
+field gamedata/los.tdf [table24] line42: (absent) -> 24,0,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24	by double-los
+field gamedata/los.tdf [table24] line43: (absent) -> 24,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24	by double-los
+field gamedata/los.tdf [table24] line44: (absent) -> 24,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24	by double-los
+field gamedata/los.tdf [table24] line4: (absent) -> 23,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,4,18,4,19,4,20,4,21,5,22,5,23,5	by double-los
+field gamedata/los.tdf [table24] line5: (absent) -> 23,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3,19,3,20,3,21,4,22,4,23,4	by double-los
+field gamedata/los.tdf [table24] line6: (absent) -> 23,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,3,21,3,22,3,23,3	by double-los
+field gamedata/los.tdf [table24] line7: (absent) -> 23,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,2,19,2,20,2,21,2,22,2,23,2	by double-los
+field gamedata/los.tdf [table24] line8: (absent) -> 23,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1	by double-los
+field gamedata/los.tdf [table24] line9: (absent) -> 22,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,5,13,6,14,6,15,7,16,7,17,8,18,8,19,9,20,9,21,10,22,10	by double-los
+field gamedata/los.tdf [table24] numlines: (absent) -> 44	by double-los
+field gamedata/los.tdf [table25] line10: (absent) -> 23,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,7,18,7,19,7,20,8,21,8,22,9,23,9	by double-los
+field gamedata/los.tdf [table25] line11: (absent) -> 22,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12	by double-los
+field gamedata/los.tdf [table25] line12: (absent) -> 22,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11	by double-los
+field gamedata/los.tdf [table25] line13: (absent) -> 22,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,7,19,7,20,7,21,8,22,8	by double-los
+field gamedata/los.tdf [table25] line14: (absent) -> 21,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,11,17,11,18,12,19,13,20,13,21,14	by double-los
+field gamedata/los.tdf [table25] line15: (absent) -> 21,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8,14,9,15,9,16,10,17,11,18,11,19,12,20,12,21,13	by double-los
+field gamedata/los.tdf [table25] line16: (absent) -> 21,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,9,16,9,17,10,18,10,19,11,20,11,21,12	by double-los
+field gamedata/los.tdf [table25] line17: (absent) -> 21,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10	by double-los
+field gamedata/los.tdf [table25] line18: (absent) -> 20,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17,13,18,14,19,14,20,15	by double-los
+field gamedata/los.tdf [table25] line19: (absent) -> 20,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,11,16,11,17,12,18,13,19,13,20,14	by double-los
+field gamedata/los.tdf [table25] line1: (absent) -> 24,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,8,24,8	by double-los
+field gamedata/los.tdf [table25] line20: (absent) -> 19,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,12,15,13,16,13,17,14,18,15,19,16	by double-los
+field gamedata/los.tdf [table25] line21: (absent) -> 19,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,13,17,13,18,14,19,15	by double-los
+field gamedata/los.tdf [table25] line22: (absent) -> 18,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,17	by double-los
+field gamedata/los.tdf [table25] line23: (absent) -> 18,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,12,15,13,16,14,17,15,18,16	by double-los
+field gamedata/los.tdf [table25] line24: (absent) -> 18,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18	by double-los
+field gamedata/los.tdf [table25] line25: (absent) -> 17,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17	by double-los
+field gamedata/los.tdf [table25] line26: (absent) -> 19,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13,12,14,13,15,13,16,14,17,15,18,16,19	by double-los
+field gamedata/los.tdf [table25] line27: (absent) -> 18,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,12,14,13,15,14,16,15,17,16,18	by double-los
+field gamedata/los.tdf [table25] line28: (absent) -> 20,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,14,19,15,20	by double-los
+field gamedata/los.tdf [table25] line29: (absent) -> 19,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,13,16,13,17,14,18,15,19	by double-los
+field gamedata/los.tdf [table25] line2: (absent) -> 24,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,4,16,5,17,5,18,5,19,6,20,6,21,6,22,6,23,7,24,7	by double-los
+field gamedata/los.tdf [table25] line30: (absent) -> 21,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,11,16,11,17,12,18,13,19,13,20,14,21	by double-los
+field gamedata/los.tdf [table25] line31: (absent) -> 20,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17,13,18,13,19,14,20	by double-los
+field gamedata/los.tdf [table25] line32: (absent) -> 21,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,11,17,11,18,12,19,12,20,13,21	by double-los
+field gamedata/los.tdf [table25] line33: (absent) -> 22,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,9,17,10,18,10,19,11,20,11,21,12,22	by double-los
+field gamedata/los.tdf [table25] line34: (absent) -> 21,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14,9,15,9,16,10,17,10,18,11,19,11,20,12,21	by double-los
+field gamedata/los.tdf [table25] line35: (absent) -> 22,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22	by double-los
+field gamedata/los.tdf [table25] line36: (absent) -> 23,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,7,17,8,18,8,19,9,20,9,21,10,22,10,23	by double-los
+field gamedata/los.tdf [table25] line37: (absent) -> 21,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21	by double-los
+field gamedata/los.tdf [table25] line38: (absent) -> 23,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7,18,7,19,8,20,8,21,9,22,9,23	by double-los
+field gamedata/los.tdf [table25] line39: (absent) -> 24,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8,24	by double-los
+field gamedata/los.tdf [table25] line3: (absent) -> 24,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5,21,5,22,6,23,6,24,6	by double-los
+field gamedata/los.tdf [table25] line40: (absent) -> 22,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,7,18,7,19,7,20,8,21,8,22	by double-los
+field gamedata/los.tdf [table25] line41: (absent) -> 24,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6,20,6,21,6,22,7,23,7,24	by double-los
+field gamedata/los.tdf [table25] line42: (absent) -> 24,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,5,21,6,22,6,23,6,24	by double-los
+field gamedata/los.tdf [table25] line43: (absent) -> 24,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,4,21,5,22,5,23,5,24	by double-los
+field gamedata/los.tdf [table25] line44: (absent) -> 25,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3,19,3,20,3,21,4,22,4,23,4,24,4,25	by double-los
+field gamedata/los.tdf [table25] line45: (absent) -> 25,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,3,21,3,22,3,23,3,24,3,25	by double-los
+field gamedata/los.tdf [table25] line46: (absent) -> 25,0,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,2,19,2,20,2,21,2,22,2,23,2,24,2,25	by double-los
+field gamedata/los.tdf [table25] line47: (absent) -> 25,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25	by double-los
+field gamedata/los.tdf [table25] line48: (absent) -> 25,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25	by double-los
+field gamedata/los.tdf [table25] line4: (absent) -> 24,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,4,18,4,19,4,20,4,21,4,22,5,23,5,24,5	by double-los
+field gamedata/los.tdf [table25] line5: (absent) -> 24,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3,19,3,20,3,21,4,22,4,23,4,24,4	by double-los
+field gamedata/los.tdf [table25] line6: (absent) -> 24,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,3,21,3,22,3,23,3,24,3	by double-los
+field gamedata/los.tdf [table25] line7: (absent) -> 24,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,2,19,2,20,2,21,2,22,2,23,2,24,2	by double-los
+field gamedata/los.tdf [table25] line8: (absent) -> 24,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1	by double-los
+field gamedata/los.tdf [table25] line9: (absent) -> 23,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7,17,7,18,8,19,8,20,9,21,9,22,10,23,10	by double-los
+field gamedata/los.tdf [table25] numlines: (absent) -> 48	by double-los
+field gamedata/los.tdf [table26] line10: (absent) -> 24,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7,18,8,19,8,20,8,21,9,22,9,23,10,24,10	by double-los
+field gamedata/los.tdf [table26] line11: (absent) -> 24,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,8,21,8,22,8,23,9,24,9	by double-los
+field gamedata/los.tdf [table26] line12: (absent) -> 23,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,10,18,10,19,11,20,11,21,12,22,12,23,13	by double-los
+field gamedata/los.tdf [table26] line13: (absent) -> 23,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12	by double-los
+field gamedata/los.tdf [table26] line14: (absent) -> 23,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8	by double-los
+field gamedata/los.tdf [table26] line15: (absent) -> 22,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,11,19,12,20,13,21,13,22,14	by double-los
+field gamedata/los.tdf [table26] line16: (absent) -> 22,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,8,14,8,15,9,16,9,17,10,18,11,19,11,20,12,21,12,22,13	by double-los
+field gamedata/los.tdf [table26] line17: (absent) -> 21,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,9,13,9,14,10,15,11,16,11,17,12,18,13,19,14,20,14,21,15	by double-los
+field gamedata/los.tdf [table26] line18: (absent) -> 21,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,11,17,11,18,12,19,13,20,13,21,14	by double-los
+field gamedata/los.tdf [table26] line19: (absent) -> 20,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,13,16,14,17,14,18,15,19,16,20,17	by double-los
+field gamedata/los.tdf [table26] line1: (absent) -> 25,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7,23,7,24,8,25,8	by double-los
+field gamedata/los.tdf [table26] line20: (absent) -> 20,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,10,13,10,14,11,15,12,16,13,17,14,18,14,19,15,20,16	by double-los
+field gamedata/los.tdf [table26] line21: (absent) -> 20,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17,13,18,14,19,14,20,15	by double-los
+field gamedata/los.tdf [table26] line22: (absent) -> 19,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,18	by double-los
+field gamedata/los.tdf [table26] line23: (absent) -> 19,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,13,15,13,16,14,17,15,18,16,19,17	by double-los
+field gamedata/los.tdf [table26] line24: (absent) -> 19,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19	by double-los
+field gamedata/los.tdf [table26] line25: (absent) -> 18,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18	by double-los
+field gamedata/los.tdf [table26] line26: (absent) -> 20,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,9,11,10,12,11,13,12,14,13,15,14,16,14,17,15,18,16,19,17,20	by double-los
+field gamedata/los.tdf [table26] line27: (absent) -> 19,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,13,15,14,16,15,17,16,18,17,19	by double-los
+field gamedata/los.tdf [table26] line28: (absent) -> 20,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15,13,16,14,17,14,18,15,19,16,20	by double-los
+field gamedata/los.tdf [table26] line29: (absent) -> 21,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,11,16,12,17,13,18,14,19,14,20,15,21	by double-los
+field gamedata/los.tdf [table26] line2: (absent) -> 25,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,6,21,6,22,6,23,6,24,7,25,7	by double-los
+field gamedata/los.tdf [table26] line30: (absent) -> 20,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,14,19,15,20	by double-los
+field gamedata/los.tdf [table26] line31: (absent) -> 22,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,11,18,12,19,13,20,13,21,14,22	by double-los
+field gamedata/los.tdf [table26] line32: (absent) -> 21,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,11,16,11,17,12,18,13,19,13,20,14,21	by double-los
+field gamedata/los.tdf [table26] line33: (absent) -> 23,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14,8,15,9,16,10,17,10,18,11,19,11,20,12,21,12,22,13,23	by double-los
+field gamedata/los.tdf [table26] line34: (absent) -> 22,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17,11,18,11,19,12,20,12,21,13,22	by double-los
+field gamedata/los.tdf [table26] line35: (absent) -> 23,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23	by double-los
+field gamedata/los.tdf [table26] line36: (absent) -> 24,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22,11,23,11,24	by double-los
+field gamedata/los.tdf [table26] line37: (absent) -> 24,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,5,13,6,14,6,15,7,16,7,17,8,18,8,19,8,20,9,21,9,22,10,23,10,24	by double-los
+field gamedata/los.tdf [table26] line38: (absent) -> 24,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,8,20,8,21,8,22,9,23,9,24	by double-los
+field gamedata/los.tdf [table26] line39: (absent) -> 25,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,8,24,8,25	by double-los
+field gamedata/los.tdf [table26] line3: (absent) -> 25,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18,4,19,5,20,5,21,5,22,5,23,6,24,6,25,6	by double-los
+field gamedata/los.tdf [table26] line40: (absent) -> 23,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,7,21,8,22,8,23	by double-los
+field gamedata/los.tdf [table26] line41: (absent) -> 25,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,3,12,4,13,4,14,4,15,4,16,5,17,5,18,5,19,6,20,6,21,6,22,6,23,7,24,7,25	by double-los
+field gamedata/los.tdf [table26] line42: (absent) -> 25,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5,21,5,22,6,23,6,24,6,25	by double-los
+field gamedata/los.tdf [table26] line43: (absent) -> 26,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,3,18,4,19,4,20,4,21,4,22,4,23,5,24,5,25,5,26	by double-los
+field gamedata/los.tdf [table26] line44: (absent) -> 23,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,5,21,5,22,5,23	by double-los
+field gamedata/los.tdf [table26] line45: (absent) -> 26,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,2,16,3,17,3,18,3,19,3,20,3,21,3,22,4,23,4,24,4,25,4,26	by double-los
+field gamedata/los.tdf [table26] line46: (absent) -> 26,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,3,22,3,23,3,24,3,25,3,26	by double-los
+field gamedata/los.tdf [table26] line47: (absent) -> 26,0,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,2,20,2,21,2,22,2,23,2,24,2,25,2,26	by double-los
+field gamedata/los.tdf [table26] line48: (absent) -> 26,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26	by double-los
+field gamedata/los.tdf [table26] line49: (absent) -> 26,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26	by double-los
+field gamedata/los.tdf [table26] line4: (absent) -> 25,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,4,19,4,20,4,21,4,22,4,23,5,24,5,25,5	by double-los
+field gamedata/los.tdf [table26] line5: (absent) -> 25,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,3,17,3,18,3,19,3,20,3,21,3,22,4,23,4,24,4,25,4	by double-los
+field gamedata/los.tdf [table26] line6: (absent) -> 25,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,3,22,3,23,3,24,3,25,3	by double-los
+field gamedata/los.tdf [table26] line7: (absent) -> 25,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,2,20,2,21,2,22,2,23,2,24,2,25,2	by double-los
+field gamedata/los.tdf [table26] line8: (absent) -> 25,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1	by double-los
+field gamedata/los.tdf [table26] line9: (absent) -> 24,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,6,15,7,16,7,17,8,18,8,19,9,20,9,21,10,22,10,23,11,24,11	by double-los
+field gamedata/los.tdf [table26] numlines: (absent) -> 49	by double-los
+field gamedata/los.tdf [table27] line10: (absent) -> 25,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,8,20,8,21,8,22,9,23,9,24,10,25,10	by double-los
+field gamedata/los.tdf [table27] line11: (absent) -> 25,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,8,22,8,23,8,24,9,25,9	by double-los
+field gamedata/los.tdf [table27] line12: (absent) -> 24,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24,13	by double-los
+field gamedata/los.tdf [table27] line13: (absent) -> 24,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12,24,12	by double-los
+field gamedata/los.tdf [table27] line14: (absent) -> 24,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,8,24,8	by double-los
+field gamedata/los.tdf [table27] line15: (absent) -> 23,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,9,15,9,16,10,17,10,18,11,19,12,20,12,21,13,22,13,23,14	by double-los
+field gamedata/los.tdf [table27] line16: (absent) -> 23,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,10,18,10,19,11,20,11,21,12,22,12,23,13	by double-los
+field gamedata/los.tdf [table27] line17: (absent) -> 23,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22,11,23,11	by double-los
+field gamedata/los.tdf [table27] line18: (absent) -> 22,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,11,16,12,17,12,18,13,19,14,20,15,21,15,22,16	by double-los
+field gamedata/los.tdf [table27] line19: (absent) -> 22,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20,14,21,14,22,15	by double-los
+field gamedata/los.tdf [table27] line1: (absent) -> 26,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6,20,6,21,6,22,7,23,7,24,7,25,8,26,8	by double-los
+field gamedata/los.tdf [table27] line20: (absent) -> 22,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,11,19,12,20,13,21,13,22,14	by double-los
+field gamedata/los.tdf [table27] line21: (absent) -> 21,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,15,19,15,20,16,21,17	by double-los
+field gamedata/los.tdf [table27] line22: (absent) -> 21,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17,13,18,14,19,14,20,15,21,16	by double-los
+field gamedata/los.tdf [table27] line23: (absent) -> 20,1,1,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,14,17,15,18,16,19,17,20,18	by double-los
+field gamedata/los.tdf [table27] line24: (absent) -> 20,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,13,16,14,17,14,18,15,19,16,20,17	by double-los
+field gamedata/los.tdf [table27] line25: (absent) -> 19,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19	by double-los
+field gamedata/los.tdf [table27] line26: (absent) -> 19,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,18	by double-los
+field gamedata/los.tdf [table27] line27: (absent) -> 20,1,1,2,2,3,3,4,4,5,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,14,16,15,17,16,18,17,19,18,20	by double-los
+field gamedata/los.tdf [table27] line28: (absent) -> 19,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19	by double-los
+field gamedata/los.tdf [table27] line29: (absent) -> 21,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,11,13,11,14,12,15,13,16,14,17,15,18,15,19,16,20,17,21	by double-los
+field gamedata/los.tdf [table27] line2: (absent) -> 26,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,5,21,6,22,6,23,6,24,6,25,7,26,7	by double-los
+field gamedata/los.tdf [table27] line30: (absent) -> 20,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,9,11,10,12,11,13,12,14,13,15,14,16,14,17,15,18,16,19,17,20	by double-los
+field gamedata/los.tdf [table27] line31: (absent) -> 22,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,12,17,13,18,14,19,15,20,15,21,16,22	by double-los
+field gamedata/los.tdf [table27] line32: (absent) -> 21,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,14,19,15,20,16,21	by double-los
+field gamedata/los.tdf [table27] line33: (absent) -> 22,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,10,15,11,16,12,17,12,18,13,19,14,20,14,21,15,22	by double-los
+field gamedata/los.tdf [table27] line34: (absent) -> 23,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,10,17,11,18,12,19,12,20,13,21,13,22,14,23	by double-los
+field gamedata/los.tdf [table27] line35: (absent) -> 22,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,11,18,12,19,13,20,13,21,14,22	by double-los
+field gamedata/los.tdf [table27] line36: (absent) -> 24,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,9,17,10,18,10,19,11,20,11,21,12,22,12,23,13,24	by double-los
+field gamedata/los.tdf [table27] line37: (absent) -> 23,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14,8,15,9,16,10,17,10,18,11,19,11,20,12,21,12,22,13,23	by double-los
+field gamedata/los.tdf [table27] line38: (absent) -> 24,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24	by double-los
+field gamedata/los.tdf [table27] line39: (absent) -> 25,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,7,17,8,18,8,19,9,20,9,21,10,22,10,23,11,24,11,25	by double-los
+field gamedata/los.tdf [table27] line3: (absent) -> 26,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,5,21,5,22,5,23,5,24,6,25,6,26,6	by double-los
+field gamedata/los.tdf [table27] line40: (absent) -> 23,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23	by double-los
+field gamedata/los.tdf [table27] line41: (absent) -> 25,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,8,19,8,20,8,21,9,22,9,23,10,24,10,25	by double-los
+field gamedata/los.tdf [table27] line42: (absent) -> 25,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,8,21,8,22,8,23,9,24,9,25	by double-los
+field gamedata/los.tdf [table27] line43: (absent) -> 26,0,1,1,2,1,3,1,4,2,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,6,21,7,22,7,23,7,24,8,25,8,26	by double-los
+field gamedata/los.tdf [table27] line44: (absent) -> 24,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8,24	by double-los
+field gamedata/los.tdf [table27] line45: (absent) -> 26,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,4,16,5,17,5,18,5,19,5,20,6,21,6,22,6,23,6,24,7,25,7,26	by double-los
+field gamedata/los.tdf [table27] line46: (absent) -> 26,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18,4,19,5,20,5,21,5,22,5,23,6,24,6,25,6,26	by double-los
+field gamedata/los.tdf [table27] line47: (absent) -> 27,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,4,19,4,20,4,21,4,22,4,23,4,24,5,25,5,26,5,27	by double-los
+field gamedata/los.tdf [table27] line48: (absent) -> 24,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,4,21,5,22,5,23,5,24	by double-los
+field gamedata/los.tdf [table27] line49: (absent) -> 27,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,3,17,3,18,3,19,3,20,3,21,3,22,3,23,4,24,4,25,4,26,4,27	by double-los
+field gamedata/los.tdf [table27] line4: (absent) -> 26,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,3,19,4,20,4,21,4,22,4,23,4,24,5,25,5,26,5	by double-los
+field gamedata/los.tdf [table27] line50: (absent) -> 27,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,3,23,3,24,3,25,3,26,3,27	by double-los
+field gamedata/los.tdf [table27] line51: (absent) -> 27,0,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,2,21,2,22,2,23,2,24,2,25,2,26,2,27	by double-los
+field gamedata/los.tdf [table27] line52: (absent) -> 27,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27	by double-los
+field gamedata/los.tdf [table27] line53: (absent) -> 27,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26,0,27	by double-los
+field gamedata/los.tdf [table27] line5: (absent) -> 26,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,2,17,3,18,3,19,3,20,3,21,3,22,3,23,4,24,4,25,4,26,4	by double-los
+field gamedata/los.tdf [table27] line6: (absent) -> 26,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,3,23,3,24,3,25,3,26,3	by double-los
+field gamedata/los.tdf [table27] line7: (absent) -> 26,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,2,21,2,22,2,23,2,24,2,25,2,26,2	by double-los
+field gamedata/los.tdf [table27] line8: (absent) -> 26,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1	by double-los
+field gamedata/los.tdf [table27] line9: (absent) -> 25,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7,17,7,18,8,19,8,20,9,21,9,22,10,23,10,24,11,25,11	by double-los
+field gamedata/los.tdf [table27] numlines: (absent) -> 53	by double-los
+field gamedata/los.tdf [table28] line10: (absent) -> 26,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,8,19,8,20,8,21,9,22,9,23,10,24,10,25,11,26,11	by double-los
+field gamedata/los.tdf [table28] line11: (absent) -> 26,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,7,18,7,19,7,20,8,21,8,22,8,23,9,24,9,25,10,26,10	by double-los
+field gamedata/los.tdf [table28] line12: (absent) -> 25,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12,24,12,25,13	by double-los
+field gamedata/los.tdf [table28] line13: (absent) -> 25,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22,11,23,11,24,12,25,12	by double-los
+field gamedata/los.tdf [table28] line14: (absent) -> 25,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,8,22,8,23,8,24,9,25,9	by double-los
+field gamedata/los.tdf [table28] line15: (absent) -> 24,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17,11,18,11,19,12,20,13,21,13,22,14,23,14,24,15	by double-los
+field gamedata/los.tdf [table28] line16: (absent) -> 24,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,8,14,8,15,9,16,9,17,10,18,11,19,11,20,12,21,12,22,13,23,13,24,14	by double-los
+field gamedata/los.tdf [table28] line17: (absent) -> 24,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24,13	by double-los
+field gamedata/los.tdf [table28] line18: (absent) -> 24,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,6,15,7,16,7,17,8,18,8,19,9,20,9,21,10,22,10,23,11,24,11	by double-los
+field gamedata/los.tdf [table28] line19: (absent) -> 23,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,13,19,13,20,14,21,15,22,15,23,16	by double-los
+field gamedata/los.tdf [table28] line1: (absent) -> 27,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,8,24,8,25,8,26,9,27,9	by double-los
+field gamedata/los.tdf [table28] line20: (absent) -> 23,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,12,19,12,20,13,21,14,22,14,23,15	by double-los
+field gamedata/los.tdf [table28] line21: (absent) -> 22,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,12,17,13,18,14,19,15,20,15,21,16,22,17	by double-los
+field gamedata/los.tdf [table28] line22: (absent) -> 22,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,11,16,12,17,12,18,13,19,14,20,15,21,15,22,16	by double-los
+field gamedata/los.tdf [table28] line23: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,14,17,15,18,16,19,17,20,18,21,19	by double-los
+field gamedata/los.tdf [table28] line24: (absent) -> 21,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,13,16,14,17,15,18,15,19,16,20,17,21,18	by double-los
+field gamedata/los.tdf [table28] line25: (absent) -> 21,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,15,19,15,20,16,21,17	by double-los
+field gamedata/los.tdf [table28] line26: (absent) -> 20,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20	by double-los
+field gamedata/los.tdf [table28] line27: (absent) -> 20,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,18,20,19	by double-los
+field gamedata/los.tdf [table28] line28: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,14,16,15,17,16,18,17,19,18,20,19,21	by double-los
+field gamedata/los.tdf [table28] line29: (absent) -> 20,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20	by double-los
+field gamedata/los.tdf [table28] line2: (absent) -> 27,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,4,16,5,17,5,18,5,19,6,20,6,21,6,22,7,23,7,24,7,25,7,26,8,27,8	by double-los
+field gamedata/los.tdf [table28] line30: (absent) -> 21,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,15,18,16,19,17,20,18,21	by double-los
+field gamedata/los.tdf [table28] line31: (absent) -> 22,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,12,16,13,17,14,18,15,19,15,20,16,21,17,22	by double-los
+field gamedata/los.tdf [table28] line32: (absent) -> 21,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,11,13,11,14,12,15,13,16,14,17,15,18,15,19,16,20,17,21	by double-los
+field gamedata/los.tdf [table28] line33: (absent) -> 23,1,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,8,12,9,13,10,14,10,15,11,16,12,17,13,18,13,19,14,20,15,21,15,22,16,23	by double-los
+field gamedata/los.tdf [table28] line34: (absent) -> 22,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,12,17,13,18,14,19,15,20,15,21,16,22	by double-los
+field gamedata/los.tdf [table28] line35: (absent) -> 24,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,9,15,10,16,11,17,11,18,12,19,13,20,13,21,14,22,14,23,15,24	by double-los
+field gamedata/los.tdf [table28] line36: (absent) -> 23,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20,14,21,14,22,15,23	by double-los
+field gamedata/los.tdf [table28] line37: (absent) -> 24,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17,11,18,11,19,12,20,12,21,13,22,13,23,14,24	by double-los
+field gamedata/los.tdf [table28] line38: (absent) -> 25,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24,13,25	by double-los
+field gamedata/los.tdf [table28] line39: (absent) -> 24,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,9,17,10,18,10,19,11,20,11,21,12,22,12,23,13,24	by double-los
+field gamedata/los.tdf [table28] line3: (absent) -> 27,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5,21,5,22,6,23,6,24,6,25,6,26,7,27,7	by double-los
+field gamedata/los.tdf [table28] line40: (absent) -> 25,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12,24,12,25	by double-los
+field gamedata/los.tdf [table28] line41: (absent) -> 26,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,6,15,7,16,7,17,8,18,8,19,8,20,9,21,9,22,10,23,10,24,11,25,11,26	by double-los
+field gamedata/los.tdf [table28] line42: (absent) -> 24,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22,11,23,11,24	by double-los
+field gamedata/los.tdf [table28] line43: (absent) -> 26,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7,18,7,19,8,20,8,21,8,22,9,23,9,24,10,25,10,26	by double-los
+field gamedata/los.tdf [table28] line44: (absent) -> 27,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8,24,8,25,9,26,9,27	by double-los
+field gamedata/los.tdf [table28] line45: (absent) -> 25,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,8,21,8,22,8,23,9,24,9,25	by double-los
+field gamedata/los.tdf [table28] line46: (absent) -> 27,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7,23,7,24,7,25,8,26,8,27	by double-los
+field gamedata/los.tdf [table28] line47: (absent) -> 27,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,5,21,6,22,6,23,6,24,6,25,7,26,7,27	by double-los
+field gamedata/los.tdf [table28] line48: (absent) -> 27,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18,4,19,4,20,5,21,5,22,5,23,5,24,6,25,6,26,6,27	by double-los
+field gamedata/los.tdf [table28] line49: (absent) -> 28,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,3,19,4,20,4,21,4,22,4,23,4,24,4,25,5,26,5,27,5,28	by double-los
+field gamedata/los.tdf [table28] line4: (absent) -> 27,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,4,21,5,22,5,23,5,24,5,25,6,26,6,27,6	by double-los
+field gamedata/los.tdf [table28] line50: (absent) -> 25,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,4,18,4,19,4,20,4,21,4,22,5,23,5,24,5,25	by double-los
+field gamedata/los.tdf [table28] line51: (absent) -> 28,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,2,17,3,18,3,19,3,20,3,21,3,22,3,23,3,24,4,25,4,26,4,27,4,28	by double-los
+field gamedata/los.tdf [table28] line52: (absent) -> 28,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,3,24,3,25,3,26,3,27,3,28	by double-los
+field gamedata/los.tdf [table28] line53: (absent) -> 28,0,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,2,21,2,22,2,23,2,24,2,25,2,26,2,27,2,28	by double-los
+field gamedata/los.tdf [table28] line54: (absent) -> 28,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28	by double-los
+field gamedata/los.tdf [table28] line55: (absent) -> 28,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28	by double-los
+field gamedata/los.tdf [table28] line5: (absent) -> 27,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18,3,19,4,20,4,21,4,22,4,23,4,24,4,25,5,26,5,27,5	by double-los
+field gamedata/los.tdf [table28] line6: (absent) -> 27,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,3,18,3,19,3,20,3,21,3,22,3,23,3,24,4,25,4,26,4,27,4	by double-los
+field gamedata/los.tdf [table28] line7: (absent) -> 27,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,3,24,3,25,3,26,3,27,3	by double-los
+field gamedata/los.tdf [table28] line8: (absent) -> 27,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,2,22,2,23,2,24,2,25,2,26,2,27,2	by double-los
+field gamedata/los.tdf [table28] line9: (absent) -> 27,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1	by double-los
+field gamedata/los.tdf [table28] numlines: (absent) -> 55	by double-los
+field gamedata/los.tdf [table29] line10: (absent) -> 27,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,7,17,7,18,7,19,8,20,8,21,9,22,9,23,9,24,10,25,10,26,11,27,11	by double-los
+field gamedata/los.tdf [table29] line11: (absent) -> 27,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,7,21,8,22,8,23,9,24,9,25,9,26,10,27,10	by double-los
+field gamedata/los.tdf [table29] line12: (absent) -> 26,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12,24,12,25,13,26,13	by double-los
+field gamedata/los.tdf [table29] line13: (absent) -> 26,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,6,15,7,16,7,17,8,18,8,19,9,20,9,21,10,22,10,23,11,24,11,25,12,26,12	by double-los
+field gamedata/los.tdf [table29] line14: (absent) -> 26,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8,24,8,25,9,26,9	by double-los
+field gamedata/los.tdf [table29] line15: (absent) -> 25,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,10,17,10,18,11,19,11,20,12,21,13,22,13,23,14,24,14,25,15	by double-los
+field gamedata/los.tdf [table29] line16: (absent) -> 25,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,10,18,10,19,11,20,11,21,12,22,12,23,13,24,13,25,14	by double-los
+field gamedata/los.tdf [table29] line17: (absent) -> 25,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7,17,7,18,8,19,8,20,9,21,9,22,10,23,10,24,11,25,11	by double-los
+field gamedata/los.tdf [table29] line18: (absent) -> 24,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,11,17,11,18,12,19,13,20,13,21,14,22,15,23,15,24,16	by double-los
+field gamedata/los.tdf [table29] line19: (absent) -> 24,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17,11,18,11,19,12,20,13,21,13,22,14,23,14,24,15	by double-los
+field gamedata/los.tdf [table29] line1: (absent) -> 28,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7,23,7,24,8,25,8,26,8,27,9,28,9	by double-los
+field gamedata/los.tdf [table29] line20: (absent) -> 23,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,13,17,13,18,14,19,15,20,16,21,16,22,17,23,18	by double-los
+field gamedata/los.tdf [table29] line21: (absent) -> 23,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8,12,9,13,10,14,10,15,11,16,12,17,13,18,13,19,14,20,15,21,16,22,16,23,17	by double-los
+field gamedata/los.tdf [table29] line22: (absent) -> 23,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,13,19,13,20,14,21,15,22,15,23,16	by double-los
+field gamedata/los.tdf [table29] line23: (absent) -> 22,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15,13,16,14,17,15,18,16,19,16,20,17,21,18,22,19	by double-los
+field gamedata/los.tdf [table29] line24: (absent) -> 22,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,15,19,16,20,16,21,17,22,18	by double-los
+field gamedata/los.tdf [table29] line25: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,18,20,19,21,20	by double-los
+field gamedata/los.tdf [table29] line26: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,14,17,15,18,16,19,17,20,18,21,19	by double-los
+field gamedata/los.tdf [table29] line27: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21	by double-los
+field gamedata/los.tdf [table29] line28: (absent) -> 20,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20	by double-los
+field gamedata/los.tdf [table29] line29: (absent) -> 22,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,16,19,17,20,18,21,19,22	by double-los
+field gamedata/los.tdf [table29] line2: (absent) -> 28,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,5,17,5,18,5,19,5,20,6,21,6,22,6,23,7,24,7,25,7,26,7,27,8,28,8	by double-los
+field gamedata/los.tdf [table29] line30: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,14,16,15,17,16,18,17,19,18,20,19,21	by double-los
+field gamedata/los.tdf [table29] line31: (absent) -> 23,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,13,16,13,17,14,18,15,19,16,20,16,21,17,22,18,23	by double-los
+field gamedata/los.tdf [table29] line32: (absent) -> 22,1,1,2,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11,10,12,11,13,11,14,12,15,13,16,14,17,15,18,16,19,16,20,17,21,18,22	by double-los
+field gamedata/los.tdf [table29] line33: (absent) -> 23,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,10,14,11,15,12,16,13,17,13,18,14,19,15,20,16,21,16,22,17,23	by double-los
+field gamedata/los.tdf [table29] line34: (absent) -> 24,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,11,16,11,17,12,18,13,19,13,20,14,21,15,22,15,23,16,24	by double-los
+field gamedata/los.tdf [table29] line35: (absent) -> 23,1,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,8,12,9,13,10,14,10,15,11,16,12,17,13,18,13,19,14,20,15,21,15,22,16,23	by double-los
+field gamedata/los.tdf [table29] line36: (absent) -> 25,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,11,19,12,20,13,21,13,22,14,23,14,24,15,25	by double-los
+field gamedata/los.tdf [table29] line37: (absent) -> 24,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,9,15,10,16,11,17,11,18,12,19,13,20,13,21,14,22,14,23,15,24	by double-los
+field gamedata/los.tdf [table29] line38: (absent) -> 25,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8,14,8,15,9,16,10,17,10,18,11,19,11,20,12,21,12,22,13,23,13,24,14,25	by double-los
+field gamedata/los.tdf [table29] line39: (absent) -> 26,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24,13,25,13,26	by double-los
+field gamedata/los.tdf [table29] line3: (absent) -> 28,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5,21,5,22,6,23,6,24,6,25,6,26,7,27,7,28,7	by double-los
+field gamedata/los.tdf [table29] line40: (absent) -> 26,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22,11,23,11,24,12,25,12,26	by double-los
+field gamedata/los.tdf [table29] line41: (absent) -> 27,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7,17,7,18,8,19,8,20,9,21,9,22,9,23,10,24,10,25,11,26,11,27	by double-los
+field gamedata/los.tdf [table29] line42: (absent) -> 25,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,7,17,8,18,8,19,9,20,9,21,10,22,10,23,11,24,11,25	by double-los
+field gamedata/los.tdf [table29] line43: (absent) -> 27,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,7,20,8,21,8,22,9,23,9,24,9,25,10,26,10,27	by double-los
+field gamedata/los.tdf [table29] line44: (absent) -> 28,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,8,24,8,25,8,26,9,27,9,28	by double-los
+field gamedata/los.tdf [table29] line45: (absent) -> 26,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,7,21,8,22,8,23,8,24,9,25,9,26	by double-los
+field gamedata/los.tdf [table29] line46: (absent) -> 28,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,5,19,6,20,6,21,6,22,7,23,7,24,7,25,7,26,8,27,8,28	by double-los
+field gamedata/los.tdf [table29] line47: (absent) -> 28,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,5,21,6,22,6,23,6,24,6,25,7,26,7,27,7,28	by double-los
+field gamedata/los.tdf [table29] line48: (absent) -> 28,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,5,21,5,22,5,23,5,24,5,25,6,26,6,27,6,28	by double-los
+field gamedata/los.tdf [table29] line49: (absent) -> 29,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18,3,19,3,20,4,21,4,22,4,23,4,24,4,25,4,26,5,27,5,28,5,29	by double-los
+field gamedata/los.tdf [table29] line4: (absent) -> 28,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,4,18,4,19,4,20,4,21,5,22,5,23,5,24,5,25,5,26,6,27,6,28,6	by double-los
+field gamedata/los.tdf [table29] line50: (absent) -> 26,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,3,18,4,19,4,20,4,21,4,22,4,23,5,24,5,25,5,26	by double-los
+field gamedata/los.tdf [table29] line51: (absent) -> 29,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,3,19,3,20,3,21,3,22,3,23,3,24,3,25,4,26,4,27,4,28,4,29	by double-los
+field gamedata/los.tdf [table29] line52: (absent) -> 29,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24,3,25,3,26,3,27,3,28,3,29	by double-los
+field gamedata/los.tdf [table29] line53: (absent) -> 29,0,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,2,22,2,23,2,24,2,25,2,26,2,27,2,28,2,29	by double-los
+field gamedata/los.tdf [table29] line54: (absent) -> 29,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29	by double-los
+field gamedata/los.tdf [table29] line55: (absent) -> 29,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28,0,29	by double-los
+field gamedata/los.tdf [table29] line5: (absent) -> 28,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18,3,19,3,20,4,21,4,22,4,23,4,24,4,25,4,26,5,27,5,28,5	by double-los
+field gamedata/los.tdf [table29] line6: (absent) -> 28,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,3,19,3,20,3,21,3,22,3,23,3,24,3,25,4,26,4,27,4,28,4	by double-los
+field gamedata/los.tdf [table29] line7: (absent) -> 28,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24,3,25,3,26,3,27,3,28,3	by double-los
+field gamedata/los.tdf [table29] line8: (absent) -> 28,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,2,22,2,23,2,24,2,25,2,26,2,27,2,28,2	by double-los
+field gamedata/los.tdf [table29] line9: (absent) -> 28,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1	by double-los
+field gamedata/los.tdf [table29] numlines: (absent) -> 55	by double-los
+field gamedata/los.tdf [table2] line1: 2, 0, 1, 0, 2 -> 2,1,1,1,2	by double-los
+field gamedata/los.tdf [table2] line2: 2, 0, 1, 1, 2 -> 2,0,1,0,2	by double-los
+field gamedata/los.tdf [table2] line3: 1, 1, 1 -> (absent)	by double-los
+field gamedata/los.tdf [table2] line4: 2, 1, 0, 2, 1 -> (absent)	by double-los
+field gamedata/los.tdf [table2] numlines: 4 -> 2	by double-los
+field gamedata/los.tdf [table30] line10: (absent) -> 28,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,7,20,8,21,8,22,9,23,9,24,9,25,10,26,10,27,11,28,11	by double-los
+field gamedata/los.tdf [table30] line11: (absent) -> 28,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,8,22,8,23,8,24,9,25,9,26,9,27,10,28,10	by double-los
+field gamedata/los.tdf [table30] line12: (absent) -> 27,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12,24,12,25,13,26,13,27,14	by double-los
+field gamedata/los.tdf [table30] line13: (absent) -> 27,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22,11,23,11,24,12,25,12,26,13,27,13	by double-los
+field gamedata/los.tdf [table30] line14: (absent) -> 27,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7,17,8,18,8,19,8,20,9,21,9,22,10,23,10,24,11,25,11,26,12,27,12	by double-los
+field gamedata/los.tdf [table30] line15: (absent) -> 27,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,8,24,8,25,8,26,9,27,9	by double-los
+field gamedata/los.tdf [table30] line16: (absent) -> 26,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,8,14,8,15,9,16,9,17,10,18,10,19,11,20,12,21,12,22,13,23,13,24,14,25,14,26,15	by double-los
+field gamedata/los.tdf [table30] line17: (absent) -> 26,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24,13,25,13,26,14	by double-los
+field gamedata/los.tdf [table30] line18: (absent) -> 26,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,8,19,8,20,8,21,9,22,9,23,10,24,10,25,11,26,11	by double-los
+field gamedata/los.tdf [table30] line19: (absent) -> 25,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20,14,21,14,22,15,23,16,24,16,25,17	by double-los
+field gamedata/los.tdf [table30] line1: (absent) -> 29,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7,23,7,24,7,25,8,26,8,27,8,28,9,29,9	by double-los
+field gamedata/los.tdf [table30] line20: (absent) -> 25,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,12,19,12,20,13,21,13,22,14,23,15,24,15,25,16	by double-los
+field gamedata/los.tdf [table30] line21: (absent) -> 25,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,10,17,10,18,11,19,11,20,12,21,13,22,13,23,14,24,14,25,15	by double-los
+field gamedata/los.tdf [table30] line22: (absent) -> 24,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17,13,18,14,19,14,20,15,21,16,22,17,23,17,24,18	by double-los
+field gamedata/los.tdf [table30] line23: (absent) -> 24,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,9,13,9,14,10,15,11,16,11,17,12,18,13,19,13,20,14,21,15,22,16,23,16,24,17	by double-los
+field gamedata/los.tdf [table30] line24: (absent) -> 23,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,11,14,12,15,12,16,13,17,14,18,15,19,16,20,17,21,17,22,18,23,19	by double-los
+field gamedata/los.tdf [table30] line25: (absent) -> 23,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,13,17,13,18,14,19,15,20,16,21,16,22,17,23,18	by double-los
+field gamedata/los.tdf [table30] line26: (absent) -> 22,1,1,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,15,18,16,19,17,20,18,21,19,22,20	by double-los
+field gamedata/los.tdf [table30] line27: (absent) -> 22,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15,13,16,14,17,15,18,16,19,16,20,17,21,18,22,19	by double-los
+field gamedata/los.tdf [table30] line28: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21	by double-los
+field gamedata/los.tdf [table30] line29: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,18,20,19,21,20	by double-los
+field gamedata/los.tdf [table30] line2: (absent) -> 29,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,6,21,6,22,6,23,6,24,7,25,7,26,7,27,7,28,8,29,8	by double-los
+field gamedata/los.tdf [table30] line30: (absent) -> 22,1,1,2,2,3,3,4,4,5,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,15,17,16,18,17,19,18,20,19,21,20,22	by double-los
+field gamedata/los.tdf [table30] line31: (absent) -> 21,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21	by double-los
+field gamedata/los.tdf [table30] line32: (absent) -> 23,1,1,2,2,2,3,3,4,4,5,5,6,6,7,7,8,7,9,8,10,9,11,10,12,11,13,12,14,12,15,13,16,14,17,15,18,16,19,17,20,17,21,18,22,19,23	by double-los
+field gamedata/los.tdf [table30] line33: (absent) -> 22,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,16,19,17,20,18,21,19,22	by double-los
+field gamedata/los.tdf [table30] line34: (absent) -> 24,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,14,19,15,20,16,21,17,22,17,23,18,24	by double-los
+field gamedata/los.tdf [table30] line35: (absent) -> 23,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,9,12,10,13,11,14,12,15,13,16,13,17,14,18,15,19,16,20,16,21,17,22,18,23	by double-los
+field gamedata/los.tdf [table30] line36: (absent) -> 25,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,10,14,10,15,11,16,12,17,12,18,13,19,14,20,14,21,15,22,16,23,16,24,17,25	by double-los
+field gamedata/los.tdf [table30] line37: (absent) -> 24,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,11,16,12,17,13,18,13,19,14,20,15,21,16,22,16,23,17,24	by double-los
+field gamedata/los.tdf [table30] line38: (absent) -> 25,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20,13,21,14,22,15,23,15,24,16,25	by double-los
+field gamedata/los.tdf [table30] line39: (absent) -> 26,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17,10,18,11,19,12,20,12,21,13,22,13,23,14,24,14,25,15,26	by double-los
+field gamedata/los.tdf [table30] line3: (absent) -> 29,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18,4,19,5,20,5,21,5,22,5,23,6,24,6,25,6,26,6,27,7,28,7,29,7	by double-los
+field gamedata/los.tdf [table30] line40: (absent) -> 25,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15,10,16,10,17,11,18,11,19,12,20,13,21,13,22,14,23,14,24,15,25	by double-los
+field gamedata/los.tdf [table30] line41: (absent) -> 27,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24,13,25,13,26,14,27	by double-los
+field gamedata/los.tdf [table30] line42: (absent) -> 26,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,8,14,8,15,9,16,9,17,10,18,10,19,11,20,11,21,12,22,12,23,13,24,13,25,14,26	by double-los
+field gamedata/los.tdf [table30] line43: (absent) -> 27,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12,24,12,25,13,26,13,27	by double-los
+field gamedata/los.tdf [table30] line44: (absent) -> 27,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,8,19,9,20,9,21,10,22,10,23,11,24,11,25,12,26,12,27	by double-los
+field gamedata/los.tdf [table30] line45: (absent) -> 28,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,7,19,8,20,8,21,9,22,9,23,9,24,10,25,10,26,11,27,11,28	by double-los
+field gamedata/los.tdf [table30] line46: (absent) -> 26,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,6,15,7,16,7,17,8,18,8,19,8,20,9,21,9,22,10,23,10,24,11,25,11,26	by double-los
+field gamedata/los.tdf [table30] line47: (absent) -> 28,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,8,21,8,22,8,23,9,24,9,25,9,26,10,27,10,28	by double-los
+field gamedata/los.tdf [table30] line48: (absent) -> 29,0,1,1,2,1,3,1,4,2,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,7,24,8,25,8,26,8,27,9,28,9,29	by double-los
+field gamedata/los.tdf [table30] line49: (absent) -> 27,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8,24,8,25,9,26,9,27	by double-los
+field gamedata/los.tdf [table30] line4: (absent) -> 29,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,4,18,4,19,4,20,4,21,4,22,5,23,5,24,5,25,5,26,5,27,6,28,6,29,6	by double-los
+field gamedata/los.tdf [table30] line50: (absent) -> 29,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,4,16,5,17,5,18,5,19,6,20,6,21,6,22,6,23,7,24,7,25,7,26,7,27,8,28,8,29	by double-los
+field gamedata/los.tdf [table30] line51: (absent) -> 29,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5,21,5,22,6,23,6,24,6,25,6,26,7,27,7,28,7,29	by double-los
+field gamedata/los.tdf [table30] line52: (absent) -> 29,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,4,21,5,22,5,23,5,24,5,25,5,26,6,27,6,28,6,29	by double-los
+field gamedata/los.tdf [table30] line53: (absent) -> 30,0,1,0,2,1,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,2,14,3,15,3,16,3,17,3,18,3,19,3,20,4,21,4,22,4,23,4,24,4,25,4,26,5,27,5,28,5,29,5,30	by double-los
+field gamedata/los.tdf [table30] line54: (absent) -> 30,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,3,19,3,20,3,21,3,22,3,23,3,24,3,25,3,26,4,27,4,28,4,29,4,30	by double-los
+field gamedata/los.tdf [table30] line55: (absent) -> 30,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,2,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24,3,25,3,26,3,27,3,28,3,29,3,30	by double-los
+field gamedata/los.tdf [table30] line56: (absent) -> 30,0,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,2,23,2,24,2,25,2,26,2,27,2,28,2,29,2,30	by double-los
+field gamedata/los.tdf [table30] line57: (absent) -> 30,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30	by double-los
+field gamedata/los.tdf [table30] line58: (absent) -> 30,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30	by double-los
+field gamedata/los.tdf [table30] line5: (absent) -> 29,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3,19,3,20,3,21,4,22,4,23,4,24,4,25,4,26,4,27,5,28,5,29,5	by double-los
+field gamedata/los.tdf [table30] line6: (absent) -> 29,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,3,20,3,21,3,22,3,23,3,24,3,25,3,26,4,27,4,28,4,29,4	by double-los
+field gamedata/los.tdf [table30] line7: (absent) -> 29,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24,2,25,3,26,3,27,3,28,3,29,3	by double-los
+field gamedata/los.tdf [table30] line8: (absent) -> 29,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,2,23,2,24,2,25,2,26,2,27,2,28,2,29,2	by double-los
+field gamedata/los.tdf [table30] line9: (absent) -> 29,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1	by double-los
+field gamedata/los.tdf [table30] numlines: (absent) -> 58	by double-los
+field gamedata/los.tdf [table31] line10: (absent) -> 29,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,7,17,7,18,7,19,8,20,8,21,9,22,9,23,10,24,10,25,10,26,11,27,11,28,12,29,12	by double-los
+field gamedata/los.tdf [table31] line11: (absent) -> 29,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,5,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,8,21,8,22,8,23,9,24,9,25,9,26,10,27,10,28,11,29,11	by double-los
+field gamedata/los.tdf [table31] line12: (absent) -> 29,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8,24,8,25,9,26,9,27,9,28,10,29,10	by double-los
+field gamedata/los.tdf [table31] line13: (absent) -> 28,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12,24,12,25,13,26,13,27,14,28,14	by double-los
+field gamedata/los.tdf [table31] line14: (absent) -> 28,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,7,17,8,18,8,19,9,20,9,21,10,22,10,23,11,24,11,25,12,26,12,27,13,28,13	by double-los
+field gamedata/los.tdf [table31] line15: (absent) -> 28,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7,23,7,24,8,25,8,26,8,27,9,28,9	by double-los
+field gamedata/los.tdf [table31] line16: (absent) -> 27,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,9,17,10,18,11,19,11,20,12,21,12,22,13,23,14,24,14,25,15,26,15,27,16	by double-los
+field gamedata/los.tdf [table31] line17: (absent) -> 27,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,11,20,11,21,12,22,12,23,13,24,13,25,14,26,14,27,15	by double-los
+field gamedata/los.tdf [table31] line18: (absent) -> 27,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7,17,8,18,8,19,8,20,9,21,9,22,10,23,10,24,11,25,11,26,12,27,12	by double-los
+field gamedata/los.tdf [table31] line19: (absent) -> 26,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,10,17,11,18,12,19,12,20,13,21,14,22,14,23,15,24,16,25,16,26,17	by double-los
+field gamedata/los.tdf [table31] line1: (absent) -> 30,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,5,19,6,20,6,21,6,22,7,23,7,24,7,25,8,26,8,27,8,28,8,29,9,30,9	by double-los
+field gamedata/los.tdf [table31] line20: (absent) -> 26,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8,14,9,15,9,16,10,17,10,18,11,19,12,20,12,21,13,22,14,23,14,24,15,25,15,26,16	by double-los
+field gamedata/los.tdf [table31] line21: (absent) -> 25,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,9,13,9,14,10,15,11,16,12,17,12,18,13,19,14,20,14,21,15,22,16,23,17,24,17,25,18	by double-los
+field gamedata/los.tdf [table31] line22: (absent) -> 25,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20,14,21,14,22,15,23,16,24,16,25,17	by double-los
+field gamedata/los.tdf [table31] line23: (absent) -> 24,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,12,15,13,16,13,17,14,18,15,19,16,20,17,21,18,22,18,23,19,24,20	by double-los
+field gamedata/los.tdf [table31] line24: (absent) -> 24,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,10,13,10,14,11,15,12,16,13,17,13,18,14,19,15,20,16,21,17,22,17,23,18,24,19	by double-los
+field gamedata/los.tdf [table31] line25: (absent) -> 24,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17,13,18,14,19,14,20,15,21,16,22,17,23,17,24,18	by double-los
+field gamedata/los.tdf [table31] line26: (absent) -> 23,1,1,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,16,19,17,20,18,21,19,22,20,23,21	by double-los
+field gamedata/los.tdf [table31] line27: (absent) -> 23,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15,13,16,14,17,15,18,16,19,17,20,17,21,18,22,19,23,20	by double-los
+field gamedata/los.tdf [table31] line28: (absent) -> 22,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22	by double-los
+field gamedata/los.tdf [table31] line29: (absent) -> 22,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,18,20,19,21,20,22,21	by double-los
+field gamedata/los.tdf [table31] line2: (absent) -> 30,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,5,18,5,19,5,20,5,21,6,22,6,23,6,24,6,25,7,26,7,27,7,28,7,29,8,30,8	by double-los
+field gamedata/los.tdf [table31] line30: (absent) -> 23,1,1,2,2,3,3,4,4,5,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,16,18,17,19,18,20,19,21,20,22,21,23	by double-los
+field gamedata/los.tdf [table31] line31: (absent) -> 22,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22	by double-los
+field gamedata/los.tdf [table31] line32: (absent) -> 24,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13,12,14,13,15,13,16,14,17,15,18,16,19,17,20,18,21,18,22,19,23,20,24	by double-los
+field gamedata/los.tdf [table31] line33: (absent) -> 23,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,17,20,18,21,19,22,20,23	by double-los
+field gamedata/los.tdf [table31] line34: (absent) -> 24,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15,13,16,13,17,14,18,15,19,16,20,17,21,17,22,18,23,19,24	by double-los
+field gamedata/los.tdf [table31] line35: (absent) -> 25,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,9,13,10,14,11,15,12,16,12,17,13,18,14,19,14,20,15,21,16,22,17,23,17,24,18,25	by double-los
+field gamedata/los.tdf [table31] line36: (absent) -> 24,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,14,19,15,20,16,21,17,22,17,23,18,24	by double-los
+field gamedata/los.tdf [table31] line37: (absent) -> 26,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20,14,21,14,22,15,23,16,24,16,25,17,26	by double-los
+field gamedata/los.tdf [table31] line38: (absent) -> 25,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,10,14,10,15,11,16,12,17,12,18,13,19,14,20,14,21,15,22,16,23,16,24,17,25	by double-los
+field gamedata/los.tdf [table31] line39: (absent) -> 27,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15,9,16,10,17,11,18,11,19,12,20,12,21,13,22,14,23,14,24,15,25,15,26,16,27	by double-los
+field gamedata/los.tdf [table31] line3: (absent) -> 30,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18,4,19,4,20,5,21,5,22,5,23,5,24,6,25,6,26,6,27,6,28,7,29,7,30,7	by double-los
+field gamedata/los.tdf [table31] line40: (absent) -> 26,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,10,17,11,18,12,19,12,20,13,21,14,22,14,23,15,24,15,25,16,26	by double-los
+field gamedata/los.tdf [table31] line41: (absent) -> 27,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,7,13,8,14,8,15,9,16,9,17,10,18,11,19,11,20,12,21,12,22,13,23,13,24,14,25,14,26,15,27	by double-los
+field gamedata/los.tdf [table31] line42: (absent) -> 28,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24,13,25,13,26,14,27,14,28	by double-los
+field gamedata/los.tdf [table31] line43: (absent) -> 28,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22,11,23,11,24,12,25,12,26,13,27,13,28	by double-los
+field gamedata/los.tdf [table31] line44: (absent) -> 29,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,5,13,6,14,6,15,7,16,7,17,7,18,8,19,8,20,9,21,9,22,10,23,10,24,10,25,11,26,11,27,12,28,12,29	by double-los
+field gamedata/los.tdf [table31] line45: (absent) -> 27,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,8,19,9,20,9,21,10,22,10,23,11,24,11,25,12,26,12,27	by double-los
+field gamedata/los.tdf [table31] line46: (absent) -> 29,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,8,20,8,21,8,22,9,23,9,24,9,25,10,26,10,27,11,28,11,29	by double-los
+field gamedata/los.tdf [table31] line47: (absent) -> 29,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,7,21,8,22,8,23,8,24,9,25,9,26,9,27,10,28,10,29	by double-los
+field gamedata/los.tdf [table31] line48: (absent) -> 30,0,1,1,2,1,3,1,4,2,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7,23,7,24,8,25,8,26,8,27,8,28,9,29,9,30	by double-los
+field gamedata/los.tdf [table31] line49: (absent) -> 28,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,8,24,8,25,8,26,9,27,9,28	by double-los
+field gamedata/los.tdf [table31] line4: (absent) -> 30,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,4,19,4,20,4,21,4,22,4,23,5,24,5,25,5,26,5,27,5,28,6,29,6,30,6	by double-los
+field gamedata/los.tdf [table31] line50: (absent) -> 30,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,5,17,5,18,5,19,5,20,6,21,6,22,6,23,6,24,7,25,7,26,7,27,7,28,8,29,8,30	by double-los
+field gamedata/los.tdf [table31] line51: (absent) -> 30,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,4,19,5,20,5,21,5,22,5,23,6,24,6,25,6,26,6,27,7,28,7,29,7,30	by double-los
+field gamedata/los.tdf [table31] line52: (absent) -> 30,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,4,18,4,19,4,20,4,21,4,22,5,23,5,24,5,25,5,26,5,27,6,28,6,29,6,30	by double-los
+field gamedata/los.tdf [table31] line53: (absent) -> 31,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3,19,3,20,3,21,4,22,4,23,4,24,4,25,4,26,4,27,5,28,5,29,5,30,5,31	by double-los
+field gamedata/los.tdf [table31] line54: (absent) -> 31,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,3,20,3,21,3,22,3,23,3,24,3,25,3,26,3,27,4,28,4,29,4,30,4,31	by double-los
+field gamedata/los.tdf [table31] line55: (absent) -> 31,0,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24,2,25,3,26,3,27,3,28,3,29,3,30,3,31	by double-los
+field gamedata/los.tdf [table31] line56: (absent) -> 31,0,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,2,24,2,25,2,26,2,27,2,28,2,29,2,30,2,31	by double-los
+field gamedata/los.tdf [table31] line57: (absent) -> 31,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1,31	by double-los
+field gamedata/los.tdf [table31] line58: (absent) -> 31,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30,0,31	by double-los
+field gamedata/los.tdf [table31] line5: (absent) -> 30,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3,19,3,20,3,21,4,22,4,23,4,24,4,25,4,26,4,27,5,28,5,29,5,30,5	by double-los
+field gamedata/los.tdf [table31] line6: (absent) -> 30,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,3,20,3,21,3,22,3,23,3,24,3,25,3,26,3,27,4,28,4,29,4,30,4	by double-los
+field gamedata/los.tdf [table31] line7: (absent) -> 30,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24,2,25,3,26,3,27,3,28,3,29,3,30,3	by double-los
+field gamedata/los.tdf [table31] line8: (absent) -> 30,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,2,24,2,25,2,26,2,27,2,28,2,29,2,30,2	by double-los
+field gamedata/los.tdf [table31] line9: (absent) -> 30,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1	by double-los
+field gamedata/los.tdf [table31] numlines: (absent) -> 58	by double-los
+field gamedata/los.tdf [table32] line10: (absent) -> 30,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,8,20,8,21,8,22,9,23,9,24,10,25,10,26,10,27,11,28,11,29,12,30,12	by double-los
+field gamedata/los.tdf [table32] line11: (absent) -> 30,1,0,2,1,3,1,4,1,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,6,16,6,17,6,18,7,19,7,20,7,21,8,22,8,23,8,24,9,25,9,26,10,27,10,28,10,29,11,30,11	by double-los
+field gamedata/los.tdf [table32] line12: (absent) -> 30,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,8,24,8,25,8,26,9,27,9,28,9,29,10,30,10	by double-los
+field gamedata/los.tdf [table32] line13: (absent) -> 29,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,10,21,10,22,11,23,11,24,12,25,12,26,13,27,13,28,14,29,14	by double-los
+field gamedata/los.tdf [table32] line14: (absent) -> 29,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,7,16,7,17,8,18,8,19,9,20,9,21,9,22,10,23,10,24,11,25,11,26,12,27,12,28,13,29,13	by double-los
+field gamedata/los.tdf [table32] line15: (absent) -> 29,1,0,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6,20,6,21,7,22,7,23,7,24,7,25,8,26,8,27,8,28,9,29,9	by double-los
+field gamedata/los.tdf [table32] line16: (absent) -> 28,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,5,9,5,10,6,11,6,12,7,13,7,14,8,15,9,16,9,17,10,18,10,19,11,20,11,21,12,22,13,23,13,24,14,25,14,26,15,27,15,28,16	by double-los
+field gamedata/los.tdf [table32] line17: (absent) -> 28,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,8,15,8,16,9,17,9,18,10,19,10,20,11,21,11,22,12,23,12,24,13,25,13,26,14,27,14,28,15	by double-los
+field gamedata/los.tdf [table32] line18: (absent) -> 28,1,0,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,8,19,8,20,9,21,9,22,9,23,10,24,10,25,11,26,11,27,12,28,12	by double-los
+field gamedata/los.tdf [table32] line19: (absent) -> 27,1,1,2,1,3,2,4,3,5,3,6,4,7,4,8,5,9,6,10,6,11,7,12,8,13,8,14,9,15,9,16,10,17,11,18,11,19,12,20,13,21,13,22,14,23,14,24,15,25,16,26,16,27,17	by double-los
+field gamedata/los.tdf [table32] line1: (absent) -> 31,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,5,17,5,18,5,19,6,20,6,21,6,22,6,23,7,24,7,25,7,26,8,27,8,28,8,29,8,30,9,31,9	by double-los
+field gamedata/los.tdf [table32] line20: (absent) -> 27,1,1,2,1,3,2,4,2,5,3,6,4,7,4,8,5,9,5,10,6,11,7,12,7,13,8,14,8,15,9,16,9,17,10,18,11,19,11,20,12,21,12,22,13,23,14,24,14,25,15,26,15,27,16	by double-los
+field gamedata/los.tdf [table32] line21: (absent) -> 26,1,1,2,1,3,2,4,3,5,4,6,4,7,5,8,6,9,7,10,7,11,8,12,9,13,10,14,10,15,11,16,12,17,12,18,13,19,14,20,15,21,15,22,16,23,17,24,18,25,18,26,19	by double-los
+field gamedata/los.tdf [table32] line22: (absent) -> 26,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20,14,21,15,22,15,23,16,24,17,25,17,26,18	by double-los
+field gamedata/los.tdf [table32] line23: (absent) -> 26,1,1,2,1,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,9,14,9,15,10,16,10,17,11,18,12,19,12,20,13,21,14,22,14,23,15,24,16,25,16,26,17	by double-los
+field gamedata/los.tdf [table32] line24: (absent) -> 25,1,1,2,2,3,2,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,9,12,10,13,10,14,11,15,12,16,13,17,14,18,14,19,15,20,16,21,17,22,18,23,18,24,19,25,20	by double-los
+field gamedata/los.tdf [table32] line25: (absent) -> 25,1,1,2,2,3,2,4,3,5,4,6,5,7,5,8,6,9,7,10,8,11,8,12,9,13,10,14,11,15,11,16,12,17,13,18,14,19,14,20,15,21,16,22,17,23,17,24,18,25,19	by double-los
+field gamedata/los.tdf [table32] line26: (absent) -> 24,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,11,14,12,15,13,16,14,17,15,18,16,19,17,20,18,21,18,22,19,23,20,24,21	by double-los
+field gamedata/los.tdf [table32] line27: (absent) -> 24,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,12,15,13,16,13,17,14,18,15,19,16,20,17,21,18,22,18,23,19,24,20	by double-los
+field gamedata/los.tdf [table32] line28: (absent) -> 23,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,18,20,19,21,20,22,21,23,22	by double-los
+field gamedata/los.tdf [table32] line29: (absent) -> 23,1,1,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14,13,15,14,16,15,17,16,18,16,19,17,20,18,21,19,22,20,23,21	by double-los
+field gamedata/los.tdf [table32] line2: (absent) -> 31,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,3,11,3,12,3,13,3,14,4,15,4,16,4,17,4,18,5,19,5,20,5,21,5,22,6,23,6,24,6,25,6,26,7,27,7,28,7,29,7,30,8,31,8	by double-los
+field gamedata/los.tdf [table32] line30: (absent) -> 23,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22,23	by double-los
+field gamedata/los.tdf [table32] line31: (absent) -> 22,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,17,18,18,19,19,20,20,21,21,22,22	by double-los
+field gamedata/los.tdf [table32] line32: (absent) -> 24,1,1,2,2,3,3,4,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,11,13,12,14,13,15,14,16,15,17,16,18,17,19,18,20,18,21,19,22,20,23,21,24	by double-los
+field gamedata/los.tdf [table32] line33: (absent) -> 23,1,1,2,2,3,3,4,4,5,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13,14,14,15,15,16,16,17,16,18,17,19,18,20,19,21,20,22,21,23	by double-los
+field gamedata/los.tdf [table32] line34: (absent) -> 25,1,1,2,2,2,3,3,4,4,5,5,6,6,7,6,8,7,9,8,10,9,11,10,12,10,13,11,14,12,15,13,16,14,17,14,18,15,19,16,20,17,21,18,22,18,23,19,24,20,25	by double-los
+field gamedata/los.tdf [table32] line35: (absent) -> 24,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,8,8,9,8,10,9,11,10,12,11,13,12,14,13,15,13,16,14,17,15,18,16,19,17,20,18,21,18,22,19,23,20,24	by double-los
+field gamedata/los.tdf [table32] line36: (absent) -> 26,1,1,1,2,2,3,3,4,4,5,4,6,5,7,6,8,7,9,7,10,8,11,9,12,10,13,10,14,11,15,12,16,12,17,13,18,14,19,15,20,15,21,16,22,17,23,18,24,18,25,19,26	by double-los
+field gamedata/los.tdf [table32] line37: (absent) -> 25,1,1,2,2,2,3,3,4,4,5,5,6,5,7,6,8,7,9,8,10,8,11,9,12,10,13,11,14,11,15,12,16,13,17,14,18,14,19,15,20,16,21,17,22,17,23,18,24,19,25	by double-los
+field gamedata/los.tdf [table32] line38: (absent) -> 26,1,1,1,2,2,3,3,4,3,5,4,6,5,7,6,8,6,9,7,10,8,11,8,12,9,13,10,14,10,15,11,16,12,17,12,18,13,19,14,20,15,21,15,22,16,23,17,24,17,25,18,26	by double-los
+field gamedata/los.tdf [table32] line39: (absent) -> 27,1,1,1,2,2,3,3,4,3,5,4,6,4,7,5,8,6,9,6,10,7,11,8,12,8,13,9,14,9,15,10,16,11,17,11,18,12,19,13,20,13,21,14,22,14,23,15,24,16,25,16,26,17,27	by double-los
+field gamedata/los.tdf [table32] line3: (absent) -> 31,1,0,2,0,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,4,17,4,18,4,19,4,20,5,21,5,22,5,23,5,24,5,25,6,26,6,27,6,28,6,29,7,30,7,31,7	by double-los
+field gamedata/los.tdf [table32] line40: (absent) -> 26,1,1,1,2,2,3,3,4,3,5,4,6,5,7,5,8,6,9,7,10,7,11,8,12,9,13,9,14,10,15,10,16,11,17,12,18,12,19,13,20,14,21,14,22,15,23,16,24,16,25,17,26	by double-los
+field gamedata/los.tdf [table32] line41: (absent) -> 28,1,1,1,2,2,3,2,4,3,5,3,6,4,7,5,8,5,9,6,10,6,11,7,12,7,13,8,14,9,15,9,16,10,17,10,18,11,19,11,20,12,21,13,22,13,23,14,24,14,25,15,26,15,27,16,28	by double-los
+field gamedata/los.tdf [table32] line42: (absent) -> 27,1,1,1,2,2,3,2,4,3,5,4,6,4,7,5,8,5,9,6,10,7,11,7,12,8,13,8,14,9,15,9,16,10,17,11,18,11,19,12,20,12,21,13,22,14,23,14,24,15,25,15,26,16,27	by double-los
+field gamedata/los.tdf [table32] line43: (absent) -> 28,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8,5,9,5,10,6,11,6,12,7,13,8,14,8,15,9,16,9,17,10,18,10,19,11,20,11,21,12,22,12,23,13,24,13,25,14,26,14,27,15,28	by double-los
+field gamedata/los.tdf [table32] line44: (absent) -> 29,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,5,10,5,11,6,12,6,13,7,14,7,15,8,16,8,17,9,18,9,19,10,20,10,21,11,22,11,23,12,24,12,25,13,26,13,27,14,28,14,29	by double-los
+field gamedata/los.tdf [table32] line45: (absent) -> 29,0,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4,9,4,10,5,11,5,12,6,13,6,14,7,15,7,16,8,17,8,18,9,19,9,20,9,21,10,22,10,23,11,24,11,25,12,26,12,27,13,28,13,29	by double-los
+field gamedata/los.tdf [table32] line46: (absent) -> 30,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8,4,9,4,10,4,11,5,12,5,13,6,14,6,15,6,16,7,17,7,18,8,19,8,20,8,21,9,22,9,23,10,24,10,25,10,26,11,27,11,28,12,29,12,30	by double-los
+field gamedata/los.tdf [table32] line47: (absent) -> 28,0,1,1,2,1,3,2,4,2,5,3,6,3,7,3,8,4,9,4,10,5,11,5,12,6,13,6,14,6,15,7,16,7,17,8,18,8,19,9,20,9,21,9,22,10,23,10,24,11,25,11,26,12,27,12,28	by double-los
+field gamedata/los.tdf [table32] line48: (absent) -> 30,0,1,1,2,1,3,1,4,2,5,2,6,3,7,3,8,3,9,4,10,4,11,4,12,5,13,5,14,6,15,6,16,6,17,7,18,7,19,7,20,8,21,8,22,8,23,9,24,9,25,10,26,10,27,10,28,11,29,11,30	by double-los
+field gamedata/los.tdf [table32] line49: (absent) -> 30,0,1,1,2,1,3,1,4,2,5,2,6,2,7,3,8,3,9,3,10,4,11,4,12,4,13,5,14,5,15,5,16,6,17,6,18,6,19,7,20,7,21,7,22,8,23,8,24,8,25,9,26,9,27,9,28,10,29,10,30	by double-los
+field gamedata/los.tdf [table32] line4: (absent) -> 31,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,2,9,2,10,2,11,2,12,2,13,3,14,3,15,3,16,3,17,3,18,3,19,4,20,4,21,4,22,4,23,4,24,5,25,5,26,5,27,5,28,5,29,6,30,6,31,6	by double-los
+field gamedata/los.tdf [table32] line50: (absent) -> 31,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,3,9,3,10,3,11,3,12,4,13,4,14,4,15,5,16,5,17,5,18,6,19,6,20,6,21,6,22,7,23,7,24,7,25,8,26,8,27,8,28,8,29,9,30,9,31	by double-los
+field gamedata/los.tdf [table32] line51: (absent) -> 29,0,1,1,2,1,3,1,4,2,5,2,6,2,7,2,8,3,9,3,10,3,11,4,12,4,13,4,14,5,15,5,16,5,17,6,18,6,19,6,20,7,21,7,22,7,23,7,24,8,25,8,26,8,27,9,28,9,29	by double-los
+field gamedata/los.tdf [table32] line52: (absent) -> 31,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8,2,9,3,10,3,11,3,12,3,13,4,14,4,15,4,16,4,17,5,18,5,19,5,20,5,21,6,22,6,23,6,24,6,25,7,26,7,27,7,28,7,29,8,30,8,31	by double-los
+field gamedata/los.tdf [table32] line53: (absent) -> 31,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9,2,10,2,11,3,12,3,13,3,14,3,15,4,16,4,17,4,18,4,19,5,20,5,21,5,22,5,23,5,24,6,25,6,26,6,27,6,28,7,29,7,30,7,31	by double-los
+field gamedata/los.tdf [table32] line54: (absent) -> 31,0,1,0,2,1,3,1,4,1,5,1,6,1,7,2,8,2,9,2,10,2,11,2,12,3,13,3,14,3,15,3,16,3,17,3,18,4,19,4,20,4,21,4,22,4,23,5,24,5,25,5,26,5,27,5,28,6,29,6,30,6,31	by double-los
+field gamedata/los.tdf [table32] line55: (absent) -> 32,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,2,10,2,11,2,12,2,13,2,14,2,15,3,16,3,17,3,18,3,19,3,20,3,21,3,22,4,23,4,24,4,25,4,26,4,27,4,28,5,29,5,30,5,31,5,32	by double-los
+field gamedata/los.tdf [table32] line56: (absent) -> 32,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,2,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,3,20,3,21,3,22,3,23,3,24,3,25,3,26,3,27,4,28,4,29,4,30,4,31,4,32	by double-los
+field gamedata/los.tdf [table32] line57: (absent) -> 32,0,1,0,2,0,3,0,4,0,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,2,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24,2,25,2,26,3,27,3,28,3,29,3,30,3,31,3,32	by double-los
+field gamedata/los.tdf [table32] line58: (absent) -> 32,0,1,0,2,0,3,0,4,0,5,0,6,0,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,2,24,2,25,2,26,2,27,2,28,2,29,2,30,2,31,2,32	by double-los
+field gamedata/los.tdf [table32] line59: (absent) -> 32,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1,31,1,32	by double-los
+field gamedata/los.tdf [table32] line5: (absent) -> 31,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,2,11,2,12,2,13,2,14,2,15,2,16,3,17,3,18,3,19,3,20,3,21,3,22,4,23,4,24,4,25,4,26,4,27,4,28,5,29,5,30,5,31,5	by double-los
+field gamedata/los.tdf [table32] line60: (absent) -> 32,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30,0,31,0,32	by double-los
+field gamedata/los.tdf [table32] line6: (absent) -> 31,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9,1,10,1,11,1,12,2,13,2,14,2,15,2,16,2,17,2,18,2,19,2,20,3,21,3,22,3,23,3,24,3,25,3,26,3,27,3,28,4,29,4,30,4,31,4	by double-los
+field gamedata/los.tdf [table32] line7: (absent) -> 31,1,0,2,0,3,0,4,0,5,0,6,1,7,1,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,2,17,2,18,2,19,2,20,2,21,2,22,2,23,2,24,2,25,2,26,3,27,3,28,3,29,3,30,3,31,3	by double-los
+field gamedata/los.tdf [table32] line8: (absent) -> 31,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,1,9,1,10,1,11,1,12,1,13,1,14,1,15,1,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,2,25,2,26,2,27,2,28,2,29,2,30,2,31,2	by double-los
+field gamedata/los.tdf [table32] line9: (absent) -> 31,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,1,17,1,18,1,19,1,20,1,21,1,22,1,23,1,24,1,25,1,26,1,27,1,28,1,29,1,30,1,31,1	by double-los
+field gamedata/los.tdf [table32] numlines: (absent) -> 60	by double-los
+field gamedata/los.tdf [table3] line1: 3, 0, 1, 0, 2, 0, 3 -> 2,1,1,2,2	by double-los
+field gamedata/los.tdf [table3] line2: 3, 0, 1, 1, 2, 1, 3 -> 2,1,1,2,1	by double-los
+field gamedata/los.tdf [table3] line3: 2, 1, 1, 2, 2 -> 3,0,1,1,2,1,3	by double-los
+field gamedata/los.tdf [table3] line4: 3, 1, 0, 2, 1, 3, 1 -> 3,0,1,0,2,0,3	by double-los
+field gamedata/los.tdf [table4] line1: 4, 0, 1, 0, 2, 0, 3, 0, 4 -> 3,1,1,2,2,3,3	by double-los
+field gamedata/los.tdf [table4] line2: 4, 0, 1, 0, 2, 1, 3, 1, 4 -> 3,1,1,2,1,3,2	by double-los
+field gamedata/los.tdf [table4] line3: 3, 1, 1, 1, 2, 2, 3 -> 3,1,0,2,1,3,1	by double-los
+field gamedata/los.tdf [table4] line4: 3, 1, 1, 2, 2, 3, 3 -> 3,1,1,1,2,2,3	by double-los
+field gamedata/los.tdf [table4] line5: 3, 1, 1, 2, 1, 3, 2 -> 4,0,1,1,2,1,3,1,4	by double-los
+field gamedata/los.tdf [table4] line6: 4, 1, 0, 2, 0, 3, 1, 4, 1 -> 4,0,1,0,2,0,3,0,4	by double-los
+field gamedata/los.tdf [table5] line1: 5, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5 -> 4,1,1,2,2,3,2,4,3	by double-los
+field gamedata/los.tdf [table5] line2: 5, 0, 1, 0, 2, 1, 3, 1, 4, 1, 5 -> 4,1,1,2,1,3,2,4,2	by double-los
+field gamedata/los.tdf [table5] line3: 5, 0, 1, 1, 2, 1, 3, 2, 4, 2, 5 -> 4,1,0,2,1,3,1,4,1	by double-los
+field gamedata/los.tdf [table5] line4: 4, 1, 1, 2, 2, 2, 3, 3, 4 -> 4,1,1,2,2,2,3,3,4	by double-los
+field gamedata/los.tdf [table5] line5: 4, 1, 1, 2, 2, 3, 3, 4, 4 -> 3,1,1,2,2,3,3	by double-los
+field gamedata/los.tdf [table5] line6: 4, 1, 1, 2, 2, 3, 2, 4, 3 -> 5,0,1,1,2,1,3,2,4,2,5	by double-los
+field gamedata/los.tdf [table5] line7: 5, 1, 0, 2, 1, 3, 1, 4, 2, 5, 2 -> 5,0,1,0,2,1,3,1,4,1,5	by double-los
+field gamedata/los.tdf [table5] line8: 5, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1 -> 5,0,1,0,2,0,3,0,4,0,5	by double-los
+field gamedata/los.tdf [table6] line10: 6, 1, 0, 2, 0, 3, 0, 4, 1, 5, 1, 6, 1 -> 6,0,1,0,2,0,3,0,4,0,5,0,6	by double-los
+field gamedata/los.tdf [table6] line1: 6, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6 -> 5,1,1,2,1,3,2,4,2,5,3	by double-los
+field gamedata/los.tdf [table6] line2: 6, 0, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1, 6 -> 5,1,0,2,1,3,1,4,2,5,2	by double-los
+field gamedata/los.tdf [table6] line3: 6, 0, 1, 1, 2, 1, 3, 1, 4, 2, 5, 2, 6 -> 5,1,0,2,0,3,1,4,1,5,1	by double-los
+field gamedata/los.tdf [table6] line4: 5, 1, 1, 1, 2, 2, 3, 2, 4, 3, 5 -> 4,1,1,2,2,3,3,4,4	by double-los
+field gamedata/los.tdf [table6] line5: 5, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5 -> 4,1,1,2,2,3,2,4,3	by double-los
+field gamedata/los.tdf [table6] line6: 4, 1, 1, 2, 2, 3, 3, 4, 4 -> 5,1,1,1,2,2,3,2,4,3,5	by double-los
+field gamedata/los.tdf [table6] line7: 5, 1, 1, 2, 2, 3, 2, 4, 3, 5, 4 -> 4,1,1,2,2,2,3,3,4	by double-los
+field gamedata/los.tdf [table6] line8: 5, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3 -> 6,0,1,1,2,1,3,1,4,2,5,2,6	by double-los
+field gamedata/los.tdf [table6] line9: 6, 1, 0, 2, 1, 3, 1, 4, 1, 5, 2, 6, 2 -> 6,0,1,0,2,1,3,1,4,1,5,1,6	by double-los
+field gamedata/los.tdf [table7] line10: 6, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 3 -> 7,0,1,1,2,1,3,1,4,1,5,2,6,2,7	by double-los
+field gamedata/los.tdf [table7] line11: 7, 1, 0, 2, 1, 3, 1, 4, 1, 5, 2, 6, 2, 7, 2 -> 5,0,1,1,2,1,3,2,4,2,5	by double-los
+field gamedata/los.tdf [table7] line12: 7, 1, 0, 2, 0, 3, 0, 4, 1, 5, 1, 6, 1, 7, 1 -> 7,0,1,0,2,0,3,1,4,1,5,1,6,1,7	by double-los
+field gamedata/los.tdf [table7] line13: (absent) -> 7,0,1,0,2,0,3,0,4,0,5,0,6,0,7	by double-los
+field gamedata/los.tdf [table7] line1: 7, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7 -> 6,1,1,2,1,3,2,4,3,5,3,6,4	by double-los
+field gamedata/los.tdf [table7] line2: 7, 0, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1, 6, 1, 7 -> 6,1,1,2,1,3,2,4,2,5,3,6,3	by double-los
+field gamedata/los.tdf [table7] line3: 7, 0, 1, 1, 2, 1, 3, 1, 4, 2, 5, 2, 6, 2, 7 -> 6,1,0,2,1,3,1,4,1,5,2,6,2	by double-los
+field gamedata/los.tdf [table7] line4: 6, 1, 1, 1, 2, 2, 3, 2, 4, 3, 5, 3, 6 -> 6,1,0,2,0,3,1,4,1,5,1,6,1	by double-los
+field gamedata/los.tdf [table7] line5: 6, 1, 1, 1, 2, 2, 3, 3, 4, 3, 5, 4, 6 -> 5,1,1,2,2,3,3,4,4,5,5	by double-los
+field gamedata/los.tdf [table7] line6: 5, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5 -> 5,1,1,2,2,3,2,4,3,5,4	by double-los
+field gamedata/los.tdf [table7] line7: 5, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 -> 6,1,1,1,2,2,3,3,4,3,5,4,6	by double-los
+field gamedata/los.tdf [table7] line8: 5, 1, 1, 2, 2, 3, 2, 4, 3, 5, 4 -> 5,1,1,2,2,2,3,3,4,4,5	by double-los
+field gamedata/los.tdf [table7] line9: 6, 1, 1, 2, 1, 3, 2, 4, 3, 5, 3, 6, 4 -> 6,1,1,1,2,2,3,2,4,3,5,3,6	by double-los
+field gamedata/los.tdf [table7] numlines: 12 -> 13	by double-los
+field gamedata/los.tdf [table8] line10: 7, 1, 1, 2, 1, 3, 1, 4, 2, 5, 2, 6, 3, 7, 3 -> 6,1,1,1,2,2,3,3,4,3,5,4,6	by double-los
+field gamedata/los.tdf [table8] line11: 8, 1, 0, 2, 1, 3, 1, 4, 1, 5, 1, 6, 2, 7, 2, 8, 2 -> 7,0,1,1,2,1,3,2,4,2,5,3,6,3,7	by double-los
+field gamedata/los.tdf [table8] line12: 8, 1, 0, 2, 0, 3, 0, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1 -> 8,0,1,1,2,1,3,1,4,1,5,2,6,2,7,2,8	by double-los
+field gamedata/los.tdf [table8] line13: (absent) -> 8,0,1,0,2,0,3,1,4,1,5,1,6,1,7,1,8	by double-los
+field gamedata/los.tdf [table8] line14: (absent) -> 8,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8	by double-los
+field gamedata/los.tdf [table8] line1: 8, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8 -> 7,1,1,2,1,3,2,4,2,5,3,6,3,7,4	by double-los
+field gamedata/los.tdf [table8] line2: 8, 0, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8 -> 7,1,0,2,1,3,1,4,2,5,2,6,3,7,3	by double-los
+field gamedata/los.tdf [table8] line3: 8, 0, 1, 1, 2, 1, 3, 1, 4, 1, 5, 2, 6, 2, 7, 2, 8 -> 7,1,0,2,1,3,1,4,1,5,1,6,2,7,2	by double-los
+field gamedata/los.tdf [table8] line4: 7, 1, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 3, 7 -> 7,1,0,2,0,3,0,4,1,5,1,6,1,7,1	by double-los
+field gamedata/los.tdf [table8] line5: 6, 1, 1, 1, 2, 2, 3, 3, 4, 3, 5, 4, 6 -> 6,1,1,2,2,3,3,4,3,5,4,6,5	by double-los
+field gamedata/los.tdf [table8] line6: 6, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6 -> 6,1,1,2,1,3,2,4,3,5,3,6,4	by double-los
+field gamedata/los.tdf [table8] line7: 5, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 -> 6,1,1,2,2,3,3,3,4,4,5,5,6	by double-los
+field gamedata/los.tdf [table8] line8: 6, 1, 1, 2, 2, 3, 3, 4, 3, 5, 4, 6, 5 -> 5,1,1,2,2,3,3,4,4,5,5	by double-los
+field gamedata/los.tdf [table8] line9: 6, 1, 1, 2, 1, 3, 2, 4, 3, 5, 3, 6, 4 -> 7,1,1,1,2,2,3,2,4,3,5,3,6,4,7	by double-los
+field gamedata/los.tdf [table8] numlines: 12 -> 14	by double-los
+field gamedata/los.tdf [table9] line10: 7, 1, 1, 2, 1, 3, 2, 4, 3, 5, 4, 6, 4, 7, 5 -> 8,1,1,1,2,2,3,2,4,3,5,3,6,4,7,4,8	by double-los
+field gamedata/los.tdf [table9] line11: 8, 1, 1, 2, 1, 3, 2, 4, 2, 5, 3, 6, 3, 7, 4, 8, 4 -> 8,0,1,1,2,1,3,2,4,2,5,2,6,3,7,3,8	by double-los
+field gamedata/los.tdf [table9] line12: 8, 1, 1, 2, 1, 3, 1, 4, 2, 5, 2, 6, 2, 7, 3, 8, 3 -> 9,0,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2,9	by double-los
+field gamedata/los.tdf [table9] line13: 9, 1, 0, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 7, 2, 8, 2, 9, 2 -> 9,0,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1,9	by double-los
+field gamedata/los.tdf [table9] line14: 9, 1, 0, 2, 0, 3, 0, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 9, 1 -> 9,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9	by double-los
+field gamedata/los.tdf [table9] line1: 9, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9 -> 8,1,1,2,1,3,2,4,2,5,3,6,3,7,4,8,4	by double-los
+field gamedata/los.tdf [table9] line2: 9, 0, 1, 0, 2, 0, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 9 -> 8,1,0,2,1,3,1,4,2,5,2,6,2,7,3,8,3	by double-los
+field gamedata/los.tdf [table9] line3: 9, 0, 1, 1, 2, 1, 3, 1, 4, 1, 5, 1, 6, 2, 7, 2, 8, 2, 9 -> 8,1,0,2,1,3,1,4,1,5,1,6,2,7,2,8,2	by double-los
+field gamedata/los.tdf [table9] line4: 8, 1, 1, 1, 2, 1, 3, 2, 4, 2, 5, 2, 6, 3, 7, 3, 8 -> 8,1,0,2,0,3,0,4,1,5,1,6,1,7,1,8,1	by double-los
+field gamedata/los.tdf [table9] line5: 8, 1, 1, 1, 2, 2, 3, 2, 4, 3, 5, 3, 6, 4, 7, 4, 8 -> 7,1,1,2,2,3,3,4,3,5,4,6,5,7,6	by double-los
+field gamedata/los.tdf [table9] line6: 7, 1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 4, 6, 5, 7 -> 7,1,1,2,1,3,2,4,3,5,4,6,4,7,5	by double-los
+field gamedata/los.tdf [table9] line7: 7, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7 -> 7,1,1,2,2,3,3,3,4,4,5,5,6,6,7	by double-los
+field gamedata/los.tdf [table9] line8: 6, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 -> 6,1,1,2,2,3,3,4,4,5,5,6,6	by double-los
+field gamedata/los.tdf [table9] line9: 7, 1, 1, 2, 2, 3, 3, 4, 3, 5, 4, 6, 5, 7, 6 -> 7,1,1,1,2,2,3,3,4,4,5,4,6,5,7	by double-los
+field gamedata/los.tdf [tableinfo] numtables: 9 -> 32	by double-los
+field units/armaap.fbi [unitinfo] radardistance: 1200 -> 1800	by double-los
+field units/armaap.fbi [unitinfo] sightdistance: 240 -> 480	by double-los
+field units/armaas.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armaca.fbi [unitinfo] sightdistance: 295 -> 590	by double-los
+field units/armack.fbi [unitinfo] sightdistance: 249 -> 498	by double-los
+field units/armacsub.fbi [unitinfo] sightdistance: 120 -> 240	by double-los
+field units/armacv.fbi [unitinfo] sightdistance: 223 -> 446	by double-los
+field units/armah.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armalab.fbi [unitinfo] sightdistance: 220 -> 440	by double-los
+field units/armamb.fbi [unitinfo] sightdistance: 360 -> 720	by double-los
+field units/armamd.fbi [unitinfo] sightdistance: 155 -> 310	by double-los
+field units/armamph.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/armanac.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armanni.fbi [unitinfo] radardistance: 1200 -> 1800	by double-los
+field units/armanni.fbi [unitinfo] sightdistance: 380 -> 760	by double-los
+field units/armap.fbi [unitinfo] radardistance: 500 -> 750	by double-los
+field units/armap.fbi [unitinfo] sightdistance: 225 -> 450	by double-los
+field units/armarad.fbi [unitinfo] radardistance: 2880 -> 4320	by double-los
+field units/armarad.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armaser.fbi [unitinfo] sightdistance: 200 -> 400	by double-los
+field units/armason.fbi [unitinfo] sightdistance: 185 -> 370	by double-los
+field units/armasp.fbi [unitinfo] sightdistance: 175 -> 350	by double-los
+field units/armasy.fbi [unitinfo] sightdistance: 230 -> 460	by double-los
+field units/armatl.fbi [unitinfo] sightdistance: 150 -> 300	by double-los
+field units/armatlas.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/armavp.fbi [unitinfo] sightdistance: 218 -> 436	by double-los
+field units/armawac.fbi [unitinfo] radardistance: 1650 -> 2475	by double-los
+field units/armawac.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armbats.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armbeac.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armbrawl.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armbrtha.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armbull.fbi [unitinfo] sightdistance: 260 -> 520	by double-los
+field units/armca.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armcarry.fbi [unitinfo] radardistance: 1800 -> 2700	by double-los
+field units/armcarry.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armch.fbi [unitinfo] sightdistance: 270 -> 540	by double-los
+field units/armck.fbi [unitinfo] sightdistance: 235 -> 470	by double-los
+field units/armckfus.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armcom.fbi [unitinfo] radardistance: 400 -> 600	by double-los
+field units/armcom.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/armcroc.fbi [unitinfo] sightdistance: 240 -> 480	by double-los
+field units/armcrus.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armcs.fbi [unitinfo] sightdistance: 224 -> 448	by double-los
+field units/armcsa.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armcv.fbi [unitinfo] sightdistance: 195 -> 390	by double-los
+field units/armdecom.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/armdev1.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armdrag.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/armemp.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armestor.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armfark.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/armfast.fbi [unitinfo] sightdistance: 263 -> 526	by double-los
+field units/armfav.fbi [unitinfo] sightdistance: 310 -> 620	by double-los
+field units/armfdrag.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/armfhlt.fbi [unitinfo] sightdistance: 380 -> 760	by double-los
+field units/armfido.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/armfig.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armflak.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armflash.fbi [unitinfo] sightdistance: 225 -> 450	by double-los
+field units/armflea.fbi [unitinfo] sightdistance: 263 -> 526	by double-los
+field units/armfmkr.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armfort.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/armfrt.fbi [unitinfo] sightdistance: 360 -> 720	by double-los
+field units/armfus.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armgate.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armgeo.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armguard.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armham.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/armhawk.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armhlt.fbi [unitinfo] sightdistance: 380 -> 760	by double-los
+field units/armhp.fbi [unitinfo] sightdistance: 220 -> 440	by double-los
+field units/armjam.fbi [unitinfo] sightdistance: 240 -> 480	by double-los
+field units/armjeth.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/armlab.fbi [unitinfo] sightdistance: 223 -> 446	by double-los
+field units/armlance.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armlatnk.fbi [unitinfo] sightdistance: 255 -> 510	by double-los
+field units/armllt.fbi [unitinfo] sightdistance: 380 -> 760	by double-los
+field units/armmakr.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armmanni.fbi [unitinfo] sightdistance: 260 -> 520	by double-los
+field units/armmark.fbi [unitinfo] radardistance: 1250 -> 1875	by double-los
+field units/armmark.fbi [unitinfo] sightdistance: 240 -> 480	by double-los
+field units/armmart.fbi [unitinfo] sightdistance: 220 -> 440	by double-los
+field units/armmav.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/armmerl.fbi [unitinfo] sightdistance: 230 -> 460	by double-los
+field units/armmex.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armmh.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armmine1.fbi [unitinfo] sightdistance: 55 -> 110	by double-los
+field units/armmine2.fbi [unitinfo] sightdistance: 70 -> 140	by double-los
+field units/armmine3.fbi [unitinfo] sightdistance: 55 -> 110	by double-los
+field units/armmine4.fbi [unitinfo] sightdistance: 60 -> 120	by double-los
+field units/armmine5.fbi [unitinfo] sightdistance: 55 -> 110	by double-los
+field units/armmine6.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/armmlv.fbi [unitinfo] sightdistance: 155 -> 310	by double-los
+field units/armmmkr.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armmoho.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armmship.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/armmstor.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armpeep.fbi [unitinfo] radardistance: 700 -> 1050	by double-los
+field units/armpeep.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armplat.fbi [unitinfo] sightdistance: 130 -> 260	by double-los
+field units/armpnix.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armpt.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armpw.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armrad.fbi [unitinfo] radardistance: 1440 -> 2160	by double-los
+field units/armrad.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armrl.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armrock.fbi [unitinfo] sightdistance: 260 -> 520	by double-los
+field units/armroy.fbi [unitinfo] sightdistance: 330 -> 660	by double-los
+field units/armsam.fbi [unitinfo] sightdistance: 235 -> 470	by double-los
+field units/armscab.fbi [unitinfo] sightdistance: 155 -> 310	by double-los
+field units/armscorp.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armscram.fbi [unitinfo] sightdistance: 150 -> 300	by double-los
+field units/armseap.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armseer.fbi [unitinfo] radardistance: 1120 -> 1680	by double-los
+field units/armseer.fbi [unitinfo] sightdistance: 320 -> 640	by double-los
+field units/armsehak.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armsfig.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armsh.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armsilo.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armsjam.fbi [unitinfo] sightdistance: 300 -> 600	by double-los
+field units/armsnipe.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/armsolar.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armsonar.fbi [unitinfo] sightdistance: 175 -> 350	by double-los
+field units/armspid.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armspy.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armss.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/armstump.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/armsub.fbi [unitinfo] sightdistance: 112 -> 224	by double-los
+field units/armsubk.fbi [unitinfo] sightdistance: 150 -> 300	by double-los
+field units/armsy.fbi [unitinfo] sightdistance: 212 -> 424	by double-los
+field units/armtarg.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armthovr.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/armthund.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/armtide.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/armtl.fbi [unitinfo] sightdistance: 150 -> 300	by double-los
+field units/armtship.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/armuwes.fbi [unitinfo] sightdistance: 140 -> 280	by double-los
+field units/armuwfus.fbi [unitinfo] sightdistance: 110 -> 220	by double-los
+field units/armuwmex.fbi [unitinfo] sightdistance: 140 -> 280	by double-los
+field units/armuwms.fbi [unitinfo] sightdistance: 140 -> 280	by double-los
+field units/armvader.fbi [unitinfo] sightdistance: 101 -> 202	by double-los
+field units/armvp.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armvulc.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armwar.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/armwin.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/armyork.fbi [unitinfo] sightdistance: 300 -> 600	by double-los
+field units/armzeus.fbi [unitinfo] sightdistance: 255 -> 510	by double-los
+field units/coraap.fbi [unitinfo] radardistance: 1150 -> 1725	by double-los
+field units/coraap.fbi [unitinfo] sightdistance: 235 -> 470	by double-los
+field units/coraca.fbi [unitinfo] sightdistance: 295 -> 590	by double-los
+field units/corack.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/coracsub.fbi [unitinfo] sightdistance: 120 -> 240	by double-los
+field units/coracv.fbi [unitinfo] sightdistance: 227 -> 454	by double-los
+field units/corah.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/corak.fbi [unitinfo] sightdistance: 275 -> 550	by double-los
+field units/coralab.fbi [unitinfo] sightdistance: 222 -> 444	by double-los
+field units/coramph.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/corap.fbi [unitinfo] radardistance: 510 -> 765	by double-los
+field units/corap.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corape.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corarad.fbi [unitinfo] radardistance: 2880 -> 4320	by double-los
+field units/corarad.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corarch.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corason.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corasp.fbi [unitinfo] sightdistance: 175 -> 350	by double-los
+field units/corasy.fbi [unitinfo] sightdistance: 232 -> 464	by double-los
+field units/coratl.fbi [unitinfo] sightdistance: 150 -> 300	by double-los
+field units/coravp.fbi [unitinfo] sightdistance: 220 -> 440	by double-los
+field units/corawac.fbi [unitinfo] radardistance: 1590 -> 2385	by double-los
+field units/corawac.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corbats.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corbeac.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corbuild.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corbuzz.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corca.fbi [unitinfo] sightdistance: 270 -> 540	by double-los
+field units/corcan.fbi [unitinfo] sightdistance: 200 -> 400	by double-los
+field units/corcarry.fbi [unitinfo] radardistance: 1780 -> 2670	by double-los
+field units/corcarry.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corch.fbi [unitinfo] sightdistance: 260 -> 520	by double-los
+field units/corck.fbi [unitinfo] sightdistance: 230 -> 460	by double-los
+field units/corckfus.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corcom.fbi [unitinfo] radardistance: 400 -> 600	by double-los
+field units/corcom.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/corcrash.fbi [unitinfo] sightdistance: 292 -> 584	by double-los
+field units/corcrus.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corcs.fbi [unitinfo] sightdistance: 220 -> 440	by double-los
+field units/corcsa.fbi [unitinfo] sightdistance: 270 -> 540	by double-los
+field units/corcv.fbi [unitinfo] sightdistance: 200 -> 400	by double-los
+field units/cordecom.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/cordev1.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/cordoom.fbi [unitinfo] sightdistance: 380 -> 760	by double-los
+field units/cordrag.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/corestor.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/coreter.fbi [unitinfo] sightdistance: 230 -> 460	by double-los
+field units/corfast.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/corfav.fbi [unitinfo] sightdistance: 310 -> 620	by double-los
+field units/corfdrag.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/corfhlt.fbi [unitinfo] sightdistance: 360 -> 720	by double-los
+field units/corfink.fbi [unitinfo] radardistance: 650 -> 975	by double-los
+field units/corfink.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corflak.fbi [unitinfo] sightdistance: 340 -> 680	by double-los
+field units/corfmd.fbi [unitinfo] sightdistance: 150 -> 300	by double-los
+field units/corfmkr.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corfort.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/corfrt.fbi [unitinfo] sightdistance: 360 -> 720	by double-los
+field units/corfus.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corgant.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corgate.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corgator.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corgeo.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corgol.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corhlt.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corhp.fbi [unitinfo] sightdistance: 240 -> 480	by double-los
+field units/corhrk.fbi [unitinfo] sightdistance: 285 -> 570	by double-los
+field units/corhunt.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corhurc.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corint.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corkrog.fbi [unitinfo] sightdistance: 255 -> 510	by double-los
+field units/corlab.fbi [unitinfo] sightdistance: 221 -> 442	by double-los
+field units/corlevlr.fbi [unitinfo] sightdistance: 220 -> 440	by double-los
+field units/corllt.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/cormabm.fbi [unitinfo] sightdistance: 155 -> 310	by double-los
+field units/cormakr.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/cormart.fbi [unitinfo] sightdistance: 230 -> 460	by double-los
+field units/cormex.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/cormh.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/cormine1.fbi [unitinfo] sightdistance: 55 -> 110	by double-los
+field units/cormine2.fbi [unitinfo] sightdistance: 55 -> 110	by double-los
+field units/cormine3.fbi [unitinfo] sightdistance: 55 -> 110	by double-los
+field units/cormine4.fbi [unitinfo] sightdistance: 55 -> 110	by double-los
+field units/cormine5.fbi [unitinfo] sightdistance: 70 -> 140	by double-los
+field units/cormine6.fbi [unitinfo] sightdistance: 90 -> 180	by double-los
+field units/cormist.fbi [unitinfo] sightdistance: 230 -> 460	by double-los
+field units/cormlv.fbi [unitinfo] sightdistance: 145 -> 290	by double-los
+field units/cormmkr.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/cormoho.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/cormort.fbi [unitinfo] sightdistance: 225 -> 450	by double-los
+field units/cormship.fbi [unitinfo] radardistance: 1250 -> 1875	by double-los
+field units/cormship.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/cormstor.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/cornecro.fbi [unitinfo] sightdistance: 290 -> 580	by double-los
+field units/corplas.fbi [unitinfo] sightdistance: 380 -> 760	by double-los
+field units/corplat.fbi [unitinfo] sightdistance: 130 -> 260	by double-los
+field units/corpt.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/corpun.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corpyro.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/corrad.fbi [unitinfo] radardistance: 1440 -> 2160	by double-los
+field units/corrad.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corraid.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/correap.fbi [unitinfo] sightdistance: 240 -> 480	by double-los
+field units/corrl.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corroach.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/corroy.fbi [unitinfo] sightdistance: 330 -> 660	by double-los
+field units/corscorp.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corseal.fbi [unitinfo] sightdistance: 230 -> 460	by double-los
+field units/corseap.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corsent.fbi [unitinfo] sightdistance: 260 -> 520	by double-los
+field units/corsfig.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corsh.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/corshad.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corshark.fbi [unitinfo] sightdistance: 150 -> 300	by double-los
+field units/corsilo.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corsjam.fbi [unitinfo] sightdistance: 310 -> 620	by double-los
+field units/corsnap.fbi [unitinfo] sightdistance: 270 -> 540	by double-los
+field units/corsolar.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corsonar.fbi [unitinfo] sightdistance: 175 -> 350	by double-los
+field units/corspec.fbi [unitinfo] sightdistance: 200 -> 400	by double-los
+field units/corspy.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/corss.fbi [unitinfo] sightdistance: 280 -> 560	by double-los
+field units/corssub.fbi [unitinfo] sightdistance: 490 -> 980	by double-los
+field units/corstorm.fbi [unitinfo] sightdistance: 265 -> 530	by double-los
+field units/corsub.fbi [unitinfo] sightdistance: 112 -> 224	by double-los
+field units/corsumo.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/corsy.fbi [unitinfo] sightdistance: 213 -> 426	by double-los
+field units/cortarg.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corthovr.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/corthud.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/cortide.fbi [unitinfo] sightdistance: 100 -> 200	by double-los
+field units/cortitan.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/cortl.fbi [unitinfo] sightdistance: 150 -> 300	by double-los
+field units/cortoast.fbi [unitinfo] sightdistance: 370 -> 740	by double-los
+field units/cortron.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/cortruck.fbi [unitinfo] sightdistance: 310 -> 620	by double-los
+field units/cortship.fbi [unitinfo] sightdistance: 250 -> 500	by double-los
+field units/coruwes.fbi [unitinfo] sightdistance: 130 -> 260	by double-los
+field units/coruwfus.fbi [unitinfo] sightdistance: 110 -> 220	by double-los
+field units/coruwmex.fbi [unitinfo] sightdistance: 130 -> 260	by double-los
+field units/coruwms.fbi [unitinfo] sightdistance: 130 -> 260	by double-los
+field units/corvalk.fbi [unitinfo] sightdistance: 245 -> 490	by double-los
+field units/corvamp.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corveng.fbi [unitinfo] sightdistance: 350 -> 700	by double-los
+field units/corvipe.fbi [unitinfo] sightdistance: 310 -> 620	by double-los
+field units/corvoyr.fbi [unitinfo] radardistance: 1200 -> 1800	by double-los
+field units/corvoyr.fbi [unitinfo] sightdistance: 240 -> 480	by double-los
+field units/corvp.fbi [unitinfo] sightdistance: 215 -> 430	by double-los
+field units/corvrad.fbi [unitinfo] radardistance: 1120 -> 1680	by double-los
+field units/corvrad.fbi [unitinfo] sightdistance: 210 -> 420	by double-los
+field units/corvroc.fbi [unitinfo] sightdistance: 230 -> 460	by double-los
+field units/corwin.fbi [unitinfo] sightdistance: 210 -> 420	by double-los

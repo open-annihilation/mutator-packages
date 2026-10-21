@@ -1,0 +1,269 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: close-combat 1
+# seed: 0
+field download/armamb.tdf [menuentry3] button: 5 -> (absent)	by close-combat
+field download/armamb.tdf [menuentry3] menu: 3 -> (absent)	by close-combat
+field download/armamb.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by close-combat
+field download/armamb.tdf [menuentry3] unitname: ARMAMB -> (absent)	by close-combat
+field download/armckfus.tdf [menuentry3] button: 0 -> (absent)	by close-combat
+field download/armckfus.tdf [menuentry3] menu: 4 -> (absent)	by close-combat
+field download/armckfus.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by close-combat
+field download/armckfus.tdf [menuentry3] unitname: ARMCKFUS -> (absent)	by close-combat
+field download/armflak.tdf [menuentry3] button: 3 -> (absent)	by close-combat
+field download/armflak.tdf [menuentry3] menu: 3 -> (absent)	by close-combat
+field download/armflak.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by close-combat
+field download/armflak.tdf [menuentry3] unitname: ARMFLAK -> (absent)	by close-combat
+field download/armfort.tdf [menuentry3] button: 4 -> (absent)	by close-combat
+field download/armfort.tdf [menuentry3] menu: 3 -> (absent)	by close-combat
+field download/armfort.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by close-combat
+field download/armfort.tdf [menuentry3] unitname: ARMFORT -> (absent)	by close-combat
+field download/armhp.tdf [menuentry3] button: 0 -> (absent)	by close-combat
+field download/armhp.tdf [menuentry3] menu: 5 -> (absent)	by close-combat
+field download/armhp.tdf [menuentry3] unitmenu: ARMCA -> (absent)	by close-combat
+field download/armhp.tdf [menuentry3] unitname: ARMHP -> (absent)	by close-combat
+field download/armmmkr.tdf [menuentry3] button: 1 -> (absent)	by close-combat
+field download/armmmkr.tdf [menuentry3] menu: 4 -> (absent)	by close-combat
+field download/armmmkr.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by close-combat
+field download/armmmkr.tdf [menuentry3] unitname: ARMMMKR -> (absent)	by close-combat
+field download/armtarg.tdf [menuentry3] button: 2 -> (absent)	by close-combat
+field download/armtarg.tdf [menuentry3] menu: 4 -> (absent)	by close-combat
+field download/armtarg.tdf [menuentry3] unitmenu: ARMACA -> (absent)	by close-combat
+field download/armtarg.tdf [menuentry3] unitname: ARMTARG -> (absent)	by close-combat
+field download/corckfus.tdf [menuentry3] button: 0 -> (absent)	by close-combat
+field download/corckfus.tdf [menuentry3] menu: 4 -> (absent)	by close-combat
+field download/corckfus.tdf [menuentry3] unitmenu: CORACA -> (absent)	by close-combat
+field download/corckfus.tdf [menuentry3] unitname: CORCKFUS -> (absent)	by close-combat
+field download/corflak.tdf [menuentry3] button: 3 -> (absent)	by close-combat
+field download/corflak.tdf [menuentry3] menu: 3 -> (absent)	by close-combat
+field download/corflak.tdf [menuentry3] unitmenu: CORACA -> (absent)	by close-combat
+field download/corflak.tdf [menuentry3] unitname: CORFLAK -> (absent)	by close-combat
+field download/corfort.tdf [menuentry3] button: 4 -> (absent)	by close-combat
+field download/corfort.tdf [menuentry3] menu: 3 -> (absent)	by close-combat
+field download/corfort.tdf [menuentry3] unitmenu: CORACA -> (absent)	by close-combat
+field download/corfort.tdf [menuentry3] unitname: CORFORT -> (absent)	by close-combat
+field download/corhp.tdf [menuentry3] button: 0 -> (absent)	by close-combat
+field download/corhp.tdf [menuentry3] menu: 5 -> (absent)	by close-combat
+field download/corhp.tdf [menuentry3] unitmenu: CORCA -> (absent)	by close-combat
+field download/corhp.tdf [menuentry3] unitname: CORHP -> (absent)	by close-combat
+field download/cormmkr.tdf [menuentry3] button: 1 -> (absent)	by close-combat
+field download/cormmkr.tdf [menuentry3] menu: 4 -> (absent)	by close-combat
+field download/cormmkr.tdf [menuentry3] unitmenu: CORACA -> (absent)	by close-combat
+field download/cormmkr.tdf [menuentry3] unitname: CORMMKR -> (absent)	by close-combat
+field download/corplas.tdf [menuentry4] button: 2 -> (absent)	by close-combat
+field download/corplas.tdf [menuentry4] menu: 5 -> (absent)	by close-combat
+field download/corplas.tdf [menuentry4] unitmenu: CORCA -> (absent)	by close-combat
+field download/corplas.tdf [menuentry4] unitname: CORPLAS -> (absent)	by close-combat
+field download/cortarg.tdf [menuentry3] button: 2 -> (absent)	by close-combat
+field download/cortarg.tdf [menuentry3] menu: 4 -> (absent)	by close-combat
+field download/cortarg.tdf [menuentry3] unitmenu: CORACA -> (absent)	by close-combat
+field download/cortarg.tdf [menuentry3] unitname: CORTARG -> (absent)	by close-combat
+field download/cortoast.tdf [menuentry3] button: 5 -> (absent)	by close-combat
+field download/cortoast.tdf [menuentry3] menu: 3 -> (absent)	by close-combat
+field download/cortoast.tdf [menuentry3] unitmenu: CORACA -> (absent)	by close-combat
+field download/cortoast.tdf [menuentry3] unitname: CORTOAST -> (absent)	by close-combat
+field download/corvipe.tdf [menuentry3] button: 1 -> (absent)	by close-combat
+field download/corvipe.tdf [menuentry3] menu: 5 -> (absent)	by close-combat
+field download/corvipe.tdf [menuentry3] unitmenu: CORCA -> (absent)	by close-combat
+field download/corvipe.tdf [menuentry3] unitname: CORVIPE -> (absent)	by close-combat
+field guis/armack1.gui [gadget8] grayedout: 0 -> 1
+field guis/armack1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armack1.gui [gadget9] grayedout: 0 -> 1
+field guis/armack1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armack2.gui [gadget5] grayedout: 0 -> 1
+field guis/armack2.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armack2.gui [gadget6] grayedout: 0 -> 1
+field guis/armack2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armacsub1.gui [gadget8] grayedout: (absent) -> 1
+field guis/armacsub1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armacv1.gui [gadget8] grayedout: 0 -> 1
+field guis/armacv1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/armacv1.gui [gadget9] grayedout: 0 -> 1
+field guis/armacv1.gui [gadget9][common] commonattribs: 4 -> 0
+field guis/armacv2.gui [gadget5] grayedout: 0 -> 1
+field guis/armacv2.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/armacv2.gui [gadget6] grayedout: 0 -> 1
+field guis/armacv2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armch2.gui [gadget6] grayedout: (absent) -> 1
+field guis/armch2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armck2.gui [gadget6] grayedout: (absent) -> 1
+field guis/armck2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcom2.gui [gadget6] grayedout: (absent) -> 1
+field guis/armcom2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/armcv2.gui [gadget6] grayedout: (absent) -> 1
+field guis/armcv2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corack1.gui [gadget8] grayedout: (absent) -> 1
+field guis/corack1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corack2.gui [gadget4] grayedout: (absent) -> 1
+field guis/corack2.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corack2.gui [gadget5] grayedout: (absent) -> 1
+field guis/corack2.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/corack2.gui [gadget6] grayedout: 0 -> 1
+field guis/corack2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/coracsub1.gui [gadget8] grayedout: (absent) -> 1
+field guis/coracsub1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/coracv1.gui [gadget8] grayedout: (absent) -> 1
+field guis/coracv1.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/coracv2.gui [gadget4] grayedout: (absent) -> 1
+field guis/coracv2.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/coracv2.gui [gadget5] grayedout: (absent) -> 1
+field guis/coracv2.gui [gadget5][common] commonattribs: 4 -> 0
+field guis/coracv2.gui [gadget6] grayedout: 0 -> 1
+field guis/coracv2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corch2.gui [gadget6] grayedout: (absent) -> 1
+field guis/corch2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corck2.gui [gadget6] grayedout: (absent) -> 1
+field guis/corck2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcom2.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcom2.gui [gadget6][common] commonattribs: 4 -> 0
+field guis/corcv2.gui [gadget6] grayedout: (absent) -> 1
+field guis/corcv2.gui [gadget6][common] commonattribs: 4 -> 0
+file hidden download/armawac.tdf	by close-combat
+file hidden download/armdecom.tdf	by close-combat
+file hidden download/armemp.tdf	by close-combat
+file hidden download/armscab.tdf	by close-combat
+file hidden download/armvulc.tdf	by close-combat
+file hidden download/corawac.tdf	by close-combat
+file hidden download/corbuzz.tdf	by close-combat
+file hidden download/cordecom.tdf	by close-combat
+file hidden download/cormabm.tdf	by close-combat
+file hidden download/cortron.tdf	by close-combat
+file hidden units/armaap.fbi	by close-combat
+file hidden units/armaca.fbi	by close-combat
+file hidden units/armamd.fbi	by close-combat
+file hidden units/armap.fbi	by close-combat
+file hidden units/armasp.fbi	by close-combat
+file hidden units/armatlas.fbi	by close-combat
+file hidden units/armawac.fbi	by close-combat
+file hidden units/armbrawl.fbi	by close-combat
+file hidden units/armbrtha.fbi	by close-combat
+file hidden units/armca.fbi	by close-combat
+file hidden units/armcsa.fbi	by close-combat
+file hidden units/armdecom.fbi	by close-combat
+file hidden units/armemp.fbi	by close-combat
+file hidden units/armfig.fbi	by close-combat
+file hidden units/armhawk.fbi	by close-combat
+file hidden units/armlance.fbi	by close-combat
+file hidden units/armpeep.fbi	by close-combat
+file hidden units/armplat.fbi	by close-combat
+file hidden units/armpnix.fbi	by close-combat
+file hidden units/armscab.fbi	by close-combat
+file hidden units/armseap.fbi	by close-combat
+file hidden units/armsehak.fbi	by close-combat
+file hidden units/armsfig.fbi	by close-combat
+file hidden units/armsilo.fbi	by close-combat
+file hidden units/armthund.fbi	by close-combat
+file hidden units/armvulc.fbi	by close-combat
+file hidden units/coraap.fbi	by close-combat
+file hidden units/coraca.fbi	by close-combat
+file hidden units/corap.fbi	by close-combat
+file hidden units/corape.fbi	by close-combat
+file hidden units/corasp.fbi	by close-combat
+file hidden units/corawac.fbi	by close-combat
+file hidden units/corbuzz.fbi	by close-combat
+file hidden units/corca.fbi	by close-combat
+file hidden units/corcsa.fbi	by close-combat
+file hidden units/cordecom.fbi	by close-combat
+file hidden units/corfink.fbi	by close-combat
+file hidden units/corfmd.fbi	by close-combat
+file hidden units/corhunt.fbi	by close-combat
+file hidden units/corhurc.fbi	by close-combat
+file hidden units/corint.fbi	by close-combat
+file hidden units/cormabm.fbi	by close-combat
+file hidden units/corplat.fbi	by close-combat
+file hidden units/corseap.fbi	by close-combat
+file hidden units/corsfig.fbi	by close-combat
+file hidden units/corshad.fbi	by close-combat
+file hidden units/corsilo.fbi	by close-combat
+file hidden units/cortitan.fbi	by close-combat
+file hidden units/cortron.fbi	by close-combat
+file hidden units/corvalk.fbi	by close-combat
+file hidden units/corvamp.fbi	by close-combat
+file hidden units/corveng.fbi	by close-combat
+menu removed ARMAAP 3 0 ARMAWAC
+menu removed ARMACA 3 3 ARMFLAK
+menu removed ARMACA 3 4 ARMFORT
+menu removed ARMACA 3 5 ARMAMB
+menu removed ARMACA 4 0 ARMCKFUS
+menu removed ARMACA 4 1 ARMMMKR
+menu removed ARMACA 4 2 ARMTARG
+menu removed ARMACA 4 3 ARMVULC
+menu removed ARMACA 4 5 ARMEMP
+menu removed ARMACK 4 3 ARMVULC
+menu removed ARMACK 4 5 ARMEMP
+menu removed ARMACV 4 3 ARMVULC
+menu removed ARMACV 4 5 ARMEMP
+menu removed ARMALAB 4 1 ARMDECOM
+menu removed ARMAVP 3 4 ARMSCAB
+menu removed ARMCA 5 0 ARMHP
+menu removed CORAAP 3 0 CORAWAC
+menu removed CORACA 3 3 CORFLAK
+menu removed CORACA 3 4 CORFORT
+menu removed CORACA 3 5 CORTOAST
+menu removed CORACA 4 0 CORCKFUS
+menu removed CORACA 4 1 CORMMKR
+menu removed CORACA 4 2 CORTARG
+menu removed CORACA 4 3 CORBUZZ
+menu removed CORACA 4 5 CORTRON
+menu removed CORACK 4 3 CORBUZZ
+menu removed CORACK 4 5 CORTRON
+menu removed CORACV 4 3 CORBUZZ
+menu removed CORACV 4 5 CORTRON
+menu removed CORALAB 4 1 CORDECOM
+menu removed CORAVP 3 4 CORMABM
+menu removed CORCA 5 0 CORHP
+menu removed CORCA 5 1 CORVIPE
+menu removed CORCA 5 2 CORPLAS
+unit dropped ARMAAP hidden	by close-combat
+unit dropped ARMACA hidden	by close-combat
+unit dropped ARMAMD hidden	by close-combat
+unit dropped ARMAP hidden	by close-combat
+unit dropped ARMASP hidden	by close-combat
+unit dropped ARMATLAS hidden	by close-combat
+unit dropped ARMAWAC hidden	by close-combat
+unit dropped ARMBRAWL hidden	by close-combat
+unit dropped ARMBRTHA hidden	by close-combat
+unit dropped ARMCA hidden	by close-combat
+unit dropped ARMCSA hidden	by close-combat
+unit dropped ARMDECOM hidden	by close-combat
+unit dropped ARMEMP hidden	by close-combat
+unit dropped ARMFIG hidden	by close-combat
+unit dropped ARMHAWK hidden	by close-combat
+unit dropped ARMLANCE hidden	by close-combat
+unit dropped ARMPEEP hidden	by close-combat
+unit dropped ARMPLAT hidden	by close-combat
+unit dropped ARMPNIX hidden	by close-combat
+unit dropped ARMSCAB hidden	by close-combat
+unit dropped ARMSEAP hidden	by close-combat
+unit dropped ARMSEHAK hidden	by close-combat
+unit dropped ARMSFIG hidden	by close-combat
+unit dropped ARMSILO hidden	by close-combat
+unit dropped ARMTHUND hidden	by close-combat
+unit dropped ARMVULC hidden	by close-combat
+unit dropped CORAAP hidden	by close-combat
+unit dropped CORACA hidden	by close-combat
+unit dropped CORAP hidden	by close-combat
+unit dropped CORAPE hidden	by close-combat
+unit dropped CORASP hidden	by close-combat
+unit dropped CORAWAC hidden	by close-combat
+unit dropped CORBUZZ hidden	by close-combat
+unit dropped CORCA hidden	by close-combat
+unit dropped CORCSA hidden	by close-combat
+unit dropped CORDECOM hidden	by close-combat
+unit dropped CORFINK hidden	by close-combat
+unit dropped CORFMD hidden	by close-combat
+unit dropped CORHUNT hidden	by close-combat
+unit dropped CORHURC hidden	by close-combat
+unit dropped CORINT hidden	by close-combat
+unit dropped CORMABM hidden	by close-combat
+unit dropped CORPLAT hidden	by close-combat
+unit dropped CORSEAP hidden	by close-combat
+unit dropped CORSFIG hidden	by close-combat
+unit dropped CORSHAD hidden	by close-combat
+unit dropped CORSILO hidden	by close-combat
+unit dropped CORTITAN hidden	by close-combat
+unit dropped CORTRON hidden	by close-combat
+unit dropped CORVALK hidden	by close-combat
+unit dropped CORVAMP hidden	by close-combat
+unit dropped CORVENG hidden	by close-combat

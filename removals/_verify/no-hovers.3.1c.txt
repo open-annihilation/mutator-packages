@@ -1,0 +1,45 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: no-hovers 1
+# seed: 0
+field guis/armcsa5.gui [gadget8] grayedout: 0 -> 1
+field guis/armcsa5.gui [gadget8][common] commonattribs: 4 -> 0
+field guis/corcsa5.gui [gadget8] grayedout: (absent) -> 1
+field guis/corcsa5.gui [gadget8][common] commonattribs: 4 -> 0
+file hidden download/armhp.tdf	by no-hovers
+file hidden download/corhp.tdf	by no-hovers
+file hidden units/armah.fbi	by no-hovers
+file hidden units/armanac.fbi	by no-hovers
+file hidden units/armch.fbi	by no-hovers
+file hidden units/armhp.fbi	by no-hovers
+file hidden units/armmh.fbi	by no-hovers
+file hidden units/armsh.fbi	by no-hovers
+file hidden units/armthovr.fbi	by no-hovers
+file hidden units/corah.fbi	by no-hovers
+file hidden units/corch.fbi	by no-hovers
+file hidden units/corhp.fbi	by no-hovers
+file hidden units/cormh.fbi	by no-hovers
+file hidden units/corsh.fbi	by no-hovers
+file hidden units/corsnap.fbi	by no-hovers
+file hidden units/corthovr.fbi	by no-hovers
+menu removed ARMCA 5 0 ARMHP	by no-hovers
+menu removed ARMCK 5 0 ARMHP	by no-hovers
+menu removed ARMCV 5 0 ARMHP	by no-hovers
+menu removed CORCA 5 0 CORHP	by no-hovers
+menu removed CORCK 5 0 CORHP	by no-hovers
+menu removed CORCV 5 0 CORHP	by no-hovers
+unit dropped ARMAH hidden	by no-hovers
+unit dropped ARMANAC hidden	by no-hovers
+unit dropped ARMCH hidden	by no-hovers
+unit dropped ARMHP hidden	by no-hovers
+unit dropped ARMMH hidden	by no-hovers
+unit dropped ARMSH hidden	by no-hovers
+unit dropped ARMTHOVR hidden	by no-hovers
+unit dropped CORAH hidden	by no-hovers
+unit dropped CORCH hidden	by no-hovers
+unit dropped CORHP hidden	by no-hovers
+unit dropped CORMH hidden	by no-hovers
+unit dropped CORSH hidden	by no-hovers
+unit dropped CORSNAP hidden	by no-hovers
+unit dropped CORTHOVR hidden	by no-hovers
