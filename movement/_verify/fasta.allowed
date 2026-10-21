@@ -1,0 +1,2 @@
+# The original named a field no weapon has (`reload`); the curated version halves `reloadtime`
+left only field weapons/* reloadtime: *

@@ -1,0 +1,55 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: level-2-armour 1
+# seed: 0
+field units/armack.fbi [unitinfo] maxdamage: 1040 -> 1248	by level-2-armour
+field units/armacsub.fbi [unitinfo] maxdamage: 360 -> 432	by level-2-armour
+field units/armacv.fbi [unitinfo] maxdamage: 1205 -> 1446	by level-2-armour
+field units/armaser.fbi [unitinfo] maxdamage: 305 -> 366	by level-2-armour
+field units/armbull.fbi [unitinfo] maxdamage: 2102 -> 2522.4	by level-2-armour
+field units/armcroc.fbi [unitinfo] maxdamage: 1230 -> 1476	by level-2-armour
+field units/armfark.fbi [unitinfo] maxdamage: 830 -> 996	by level-2-armour
+field units/armfast.fbi [unitinfo] maxdamage: 550 -> 660	by level-2-armour
+field units/armfido.fbi [unitinfo] maxdamage: 1000 -> 1200	by level-2-armour
+field units/armjam.fbi [unitinfo] maxdamage: 460 -> 552	by level-2-armour
+field units/armlatnk.fbi [unitinfo] maxdamage: 1100 -> 1320	by level-2-armour
+field units/armmanni.fbi [unitinfo] maxdamage: 650 -> 780	by level-2-armour
+field units/armmark.fbi [unitinfo] maxdamage: 320 -> 384	by level-2-armour
+field units/armmart.fbi [unitinfo] maxdamage: 525 -> 630	by level-2-armour
+field units/armmav.fbi [unitinfo] maxdamage: 870 -> 1044	by level-2-armour
+field units/armmerl.fbi [unitinfo] maxdamage: 540 -> 648	by level-2-armour
+field units/armmlv.fbi [unitinfo] maxdamage: 1200 -> 1440	by level-2-armour
+field units/armsam.fbi [unitinfo] maxdamage: 650 -> 780	by level-2-armour
+field units/armscorp.fbi [unitinfo] maxdamage: 1000 -> 1200	by level-2-armour
+field units/armseer.fbi [unitinfo] maxdamage: 480 -> 576	by level-2-armour
+field units/armsnipe.fbi [unitinfo] maxdamage: 320 -> 384	by level-2-armour
+field units/armspid.fbi [unitinfo] maxdamage: 450 -> 540	by level-2-armour
+field units/armspy.fbi [unitinfo] maxdamage: 270 -> 324	by level-2-armour
+field units/armvader.fbi [unitinfo] maxdamage: 185 -> 222	by level-2-armour
+field units/armyork.fbi [unitinfo] maxdamage: 621 -> 745.2	by level-2-armour
+field units/armzeus.fbi [unitinfo] maxdamage: 875 -> 1050	by level-2-armour
+field units/corack.fbi [unitinfo] maxdamage: 1070 -> 1284	by level-2-armour
+field units/coracsub.fbi [unitinfo] maxdamage: 370 -> 444	by level-2-armour
+field units/coracv.fbi [unitinfo] maxdamage: 1220 -> 1464	by level-2-armour
+field units/coramph.fbi [unitinfo] maxdamage: 1150 -> 1380	by level-2-armour
+field units/corcan.fbi [unitinfo] maxdamage: 2800 -> 3360	by level-2-armour
+field units/coreter.fbi [unitinfo] maxdamage: 520 -> 624	by level-2-armour
+field units/corfast.fbi [unitinfo] maxdamage: 630 -> 756	by level-2-armour
+field units/corgol.fbi [unitinfo] maxdamage: 2845 -> 3414	by level-2-armour
+field units/corhrk.fbi [unitinfo] maxdamage: 620 -> 744	by level-2-armour
+field units/corkrog.fbi [unitinfo] maxdamage: 29918 -> 35901.6	by level-2-armour
+field units/cormart.fbi [unitinfo] maxdamage: 600 -> 720	by level-2-armour
+field units/cormist.fbi [unitinfo] maxdamage: 655 -> 786	by level-2-armour
+field units/corpyro.fbi [unitinfo] maxdamage: 700 -> 840	by level-2-armour
+field units/corroach.fbi [unitinfo] maxdamage: 195 -> 234	by level-2-armour
+field units/corscorp.fbi [unitinfo] maxdamage: 1000 -> 1200	by level-2-armour
+field units/corseal.fbi [unitinfo] maxdamage: 1144 -> 1372.8	by level-2-armour
+field units/corsent.fbi [unitinfo] maxdamage: 685 -> 822	by level-2-armour
+field units/corshark.fbi [unitinfo] maxdamage: 276 -> 331.2	by level-2-armour
+field units/corspec.fbi [unitinfo] maxdamage: 310 -> 372	by level-2-armour
+field units/corspy.fbi [unitinfo] maxdamage: 340 -> 408	by level-2-armour
+field units/corsumo.fbi [unitinfo] maxdamage: 4950 -> 5940	by level-2-armour
+field units/corvoyr.fbi [unitinfo] maxdamage: 350 -> 420	by level-2-armour
+field units/corvrad.fbi [unitinfo] maxdamage: 510 -> 612	by level-2-armour
+field units/corvroc.fbi [unitinfo] maxdamage: 602 -> 722.4	by level-2-armour
