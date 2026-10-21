@@ -1,0 +1,16 @@
+oamut: 1
+id: "useful-mines"
+name: "Useful Mines"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Mines cost a fifth as much, take a fifth of the time, hold 50 health, sit on steeper ground, and start cloaked and buried, with an empty yard map.\n\nUseful Mines, by MAC (macraig), selects units whose description contains \" Mine\" and whose category contains both \" MINE\" and KAMIKAZE. It sets health to 50, multiplies the two costs and the build time by 0.2, sets the maximum slope to 40, the cloak cost to 1 and the minimum cloak distance to 2, starts them cloaked, and marks them as diggers. The empty yard map is written by the package, because a rule that sets an empty value would remove the field."
+tags: ["gameplay", "economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Useful Mines"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Useful Mines.tam", "{}MAC Useful Mines.sm"]

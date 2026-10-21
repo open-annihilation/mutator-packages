@@ -1,0 +1,16 @@
+oamut: 1
+id: "maneuverable-hovers"
+name: "Maneuverable Hovers"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Hovercraft bank, brake and turn like land units, and they move two and a half times as fast.\n\nManeuverable Hovers, by MAC (macraig), sets bank scale to 0.7, multiplies top speed, braking and acceleration by 2.5, multiplies turn rate by 6, and sets the override adjust to 1. The text says top speeds stay unchanged. The rule multiplies them, and this version keeps the rule."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Maneuverable Hovers"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Maneuverable Hovers.tam", "{}MAC Maneuverable Hovers.sm"]

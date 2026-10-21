@@ -1,0 +1,30 @@
+oamut: 1
+id: "extended-builders"
+name: "Extended Builders"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Mobile builders that do not fly reach twice as far, keep a longer leash, and see twice as far.\n\nExtended Builders, for Arm, for Core and for every side, by MAC (macraig), says that mobile builders which are not aircraft have twice the build distance. The rule doubled the sight of every ground unit, and it scaled a leash field spelt ManueverLeashLength, which the game does not read. This version tests that the unit builds, and it scales maneuverleashlength."
+tags: ["economy"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: choice
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+legacy:
+  - name: "[MAC] Extended Builders (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Extended Builders (Arm).tam", "{}MAC Extended Builders (Arm).sm"]
+  - name: "[MAC] Extended Builders (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Extended Builders (Core).tam", "{}MAC Extended Builders (Core).sm"]
+  - name: "[MAC] Extended Builders"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Extended Builders.tam", "{}MAC Extended Builders.sm"]

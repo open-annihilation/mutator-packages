@@ -1,0 +1,35 @@
+oamut: 1
+id: "easy-self-destruct"
+name: "Easy Self-Destruct"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Metal and energy structures self-destruct at once, and the blast does no damage. They can also be made transportable.\n\nResources Easy Self-Destruct, for Arm and for Core, by MAC (macraig), sets the countdown to 0 and the explosion to NOWEAPON on structures of TED class metal or energy that do not move and do not build. The Arm version also made them transportable. The Core version did not. Side and Transportable keep that difference."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: choice
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+  transportable:
+    type: choice
+    values: ["no", "yes"]
+    default: "no"
+    label: "Transportable"
+legacy:
+  - name: "[MAC] Resources Easy Self-Destruct (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files:
+      - "{}MAC Resources Easy Self-Destruct (Arm).tam"
+      - "{}MAC Resources Easy Self-Destruct (Arm).sm"
+  - name: "[MAC] Resources Easy Self-Destruct (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files:
+      - "{}MAC Resources Easy Self-Destruct (Core).tam"
+      - "{}MAC Resources Easy Self-Destruct (Core).sm"

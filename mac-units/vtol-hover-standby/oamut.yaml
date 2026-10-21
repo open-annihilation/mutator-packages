@@ -1,0 +1,16 @@
+oamut: 1
+id: "vtol-hover-standby"
+name: "True VTOL Standby"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "VTOL aircraft hover when they stand by, instead of landing.\n\nTrue VTOL Standby, by MAC (macraig), changes the default mission from VTOL_Standby to Standby on aircraft whose category contains VTOL. Aircraft can stack in the air, and a stack is harder to pick a unit from until it is stopped, the aircraft land and they spread out. This package replaces that original and keeps that rule."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] True VTOL Standby"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC True VTOL Standby.tam", "{}MAC True VTOL Standby.sm"]

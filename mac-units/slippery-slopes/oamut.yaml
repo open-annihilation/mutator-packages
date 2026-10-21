@@ -1,0 +1,16 @@
+oamut: 1
+id: "slippery-slopes"
+name: "Slippery Slopes"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Structures that are not factories can sit on a slope of 33, where they were limited to 32 or less.\n\nSlippery Slopes, by MAC (macraig), leaves factories alone. A factory built on a slope steeper than one of its units' maximum slope cannot build that unit: the factory stalls until the order is cancelled. This package replaces that original and keeps that limit."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Slippery Slopes"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Slippery Slopes.tam", "{}MAC Slippery Slopes.sm"]

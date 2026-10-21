@@ -1,0 +1,30 @@
+oamut: 1
+id: "incognito"
+name: "Incognito"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Units that are not already stealthy become stealthy, and construction aircraft can cloak for 10 energy, or 50 while moving.\n\nIncognito, for Arm, for Core and for every side, by MAC (macraig), sets stealth where it is not already 1, and gives construction aircraft a cloak cost of 10, a moving cloak cost of 50, a minimum cloak distance of 1, starting uncloaked. The every-side original is titled Incognito (Arm). This package replaces those three originals and keeps those rules."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: choice
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+legacy:
+  - name: "[MAC] Incognito (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Incognito (Arm).tam", "{}MAC Incognito (Arm).sm"]
+  - name: "[MAC] Incognito (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Incognito (Core).tam", "{}MAC Incognito (Core).sm"]
+  - name: "[MAC] Incognito (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Incognito.tam", "{}MAC Incognito.sm"]

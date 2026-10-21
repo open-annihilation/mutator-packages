@@ -1,0 +1,35 @@
+oamut: 1
+id: "enhanced-los"
+name: "Enhanced LOS"
+version: "1"
+author: { name: "MAC (macraig)" }
+description: "Every unit sees twice as far, or out to 1000 or 1600.\n\nEnhanced LOS (200%), Enhanced LOS (1000) and Enhanced LOS (1600), by MAC (macraig), set that sight. Sight past about 400 needs a wider line-of-sight table. This package ships the table from LOS_1600, which allows a sight distance of 1600. LOS_1600 shipped that table as a mutator of its own and did not change any unit's sight. Double LOS replaces the whole table as well, so the two packages cannot be used together."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["double-los"]
+layers: ["files", "units"]
+options:
+  sight:
+    type: choice
+    values: ["double", "1000", "1600"]
+    default: "double"
+    label: "Sight"
+legacy:
+  - name: "[MAC] Enhanced LOS (1000)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced LOS (1000).tam", "{}MAC Enhanced LOS (1000).sm"]
+  - name: "[MAC] Enhanced LOS (1600)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced LOS (1600).tam", "{}MAC Enhanced LOS (1600).sm"]
+  - name: "[MAC] Enhanced LOS (200%)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Enhanced LOS (200%).tam", "{}MAC Enhanced LOS (200%).sm"]
+  - name: "[MAC] LOS_1600"
+    prefix: "}{"
+    compatibility: ["OTA", "TACC", "UT21", "UTASP30", "UTASP40", "GMTA", "GMTA2", "GMTA3"]
+    files: ["}{MAC LOS_1600.tam", "}{MAC LOS_1600.ccx"]
