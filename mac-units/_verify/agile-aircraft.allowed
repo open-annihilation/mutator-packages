@@ -1,0 +1,6 @@
+# The original's first group needs WorkerTime="", which no aircraft meets, so it changed no aircraft that does not build; the curated version changes them
+left only field units/*.fbi [unitinfo] maxvelocity: *
+left only field units/*.fbi [unitinfo] brakerate: *
+left only field units/*.fbi [unitinfo] acceleration: *
+left only field units/*.fbi [unitinfo] turnrate: *
+left only field units/*.fbi [unitinfo] bankscale: *

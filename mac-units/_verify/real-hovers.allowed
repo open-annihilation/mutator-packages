@@ -1,0 +1,13 @@
+# Under the maintainer's rule a hovercraft without CruiseAlt reads 0, so the original selected nothing; the curated version selects hovercraft without CruiseAlt
+left only field units/*.fbi [unitinfo] canhover: *
+left only field units/*.fbi [unitinfo] movementclass: *
+left only field units/*.fbi [unitinfo] canfly: *
+left only field units/*.fbi [unitinfo] tedclass: *
+left only field units/*.fbi [unitinfo] cruisealt: *
+left only field units/*.fbi [unitinfo] altfromsealevel: *
+left only field units/*.fbi [unitinfo] bankscale: *
+left only field units/*.fbi [unitinfo] maxvelocity: *
+left only field units/*.fbi [unitinfo] brakerate: *
+left only field units/*.fbi [unitinfo] acceleration: *
+left only field units/*.fbi [unitinfo] turnrate: *
+left only field units/*.fbi [unitinfo] ovradjust: *

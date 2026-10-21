@@ -1,0 +1,12 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: super-commander 1 side=arm
+# seed: 0
+field units/armcom.fbi [unitinfo] acceleration: 0.15 -> 7.35	by super-commander
+field units/armcom.fbi [unitinfo] brakerate: 0.3 -> 14.7	by super-commander
+field units/armcom.fbi [unitinfo] builddistance: 60 -> 120	by super-commander
+field units/armcom.fbi [unitinfo] maxdamage: 3000 -> 4500	by super-commander
+field units/armcom.fbi [unitinfo] maxvelocity: 1.2 -> 8.4	by super-commander
+field units/armcom.fbi [unitinfo] turnrate: 1044 -> 5220	by super-commander
+field units/armcom.fbi [unitinfo] workertime: 300 -> 900	by super-commander

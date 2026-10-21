@@ -1,0 +1,19 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: enhanced-builders 1 side=arm
+# seed: 0
+field units/armaca.fbi [unitinfo] workertime: 100 -> 300	by enhanced-builders
+field units/armack.fbi [unitinfo] workertime: 160 -> 480	by enhanced-builders
+field units/armacsub.fbi [unitinfo] workertime: 225 -> 675	by enhanced-builders
+field units/armacv.fbi [unitinfo] workertime: 200 -> 600	by enhanced-builders
+field units/armca.fbi [unitinfo] workertime: 50 -> 150	by enhanced-builders
+field units/armcarry.fbi [unitinfo] workertime: 200 -> 600	by enhanced-builders
+field units/armch.fbi [unitinfo] workertime: 80 -> 240	by enhanced-builders
+field units/armck.fbi [unitinfo] workertime: 80 -> 240	by enhanced-builders
+field units/armcs.fbi [unitinfo] workertime: 125 -> 375	by enhanced-builders
+field units/armcsa.fbi [unitinfo] workertime: 50 -> 150	by enhanced-builders
+field units/armcv.fbi [unitinfo] workertime: 100 -> 300	by enhanced-builders
+field units/armdecom.fbi [unitinfo] workertime: 30 -> 90	by enhanced-builders
+field units/armfark.fbi [unitinfo] workertime: 180 -> 540	by enhanced-builders
+field units/armmlv.fbi [unitinfo] workertime: 100 -> 300	by enhanced-builders
