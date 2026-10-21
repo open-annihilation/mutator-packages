@@ -1,0 +1,17 @@
+# Resource Commander's both choice keeps the averages TA: Mutation gave players who stacked both originals (2500 energy, 7500 energy storage, 125 metal, 2500 metal storage on ARMCOM and CORCOM). Open Annihilation runs the two imports in sequence, so the first lock holds (1000, 3000, 50, 1000).
+left only field units/armcom.fbi [unitinfo] energymake: 25 -> 2500
+left only field units/armcom.fbi [unitinfo] energystorage: (absent) -> 7500
+left only field units/armcom.fbi [unitinfo] metalmake: 1 -> 125
+left only field units/armcom.fbi [unitinfo] metalstorage: (absent) -> 2500
+left only field units/corcom.fbi [unitinfo] energymake: 25 -> 2500
+left only field units/corcom.fbi [unitinfo] energystorage: (absent) -> 7500
+left only field units/corcom.fbi [unitinfo] metalmake: 1 -> 125
+left only field units/corcom.fbi [unitinfo] metalstorage: (absent) -> 2500
+right only field units/armcom.fbi [unitinfo] energymake: 25 -> 1000
+right only field units/armcom.fbi [unitinfo] energystorage: (absent) -> 3000
+right only field units/armcom.fbi [unitinfo] metalmake: 1 -> 50
+right only field units/armcom.fbi [unitinfo] metalstorage: (absent) -> 1000
+right only field units/corcom.fbi [unitinfo] energymake: 25 -> 1000
+right only field units/corcom.fbi [unitinfo] energystorage: (absent) -> 3000
+right only field units/corcom.fbi [unitinfo] metalmake: 1 -> 50
+right only field units/corcom.fbi [unitinfo] metalstorage: (absent) -> 1000

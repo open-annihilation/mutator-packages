@@ -1,0 +1,2 @@
+# Cornucopia 2x never doubled tidal generators; the curated version does (ARMTIDE and CORTIDE)
+left only field units/*.fbi [unitinfo] tidalgenerator: *
