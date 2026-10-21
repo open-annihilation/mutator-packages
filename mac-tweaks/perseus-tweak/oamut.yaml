@@ -1,0 +1,17 @@
+oamut: 1
+id: "perseus-tweak"
+name: "Perseus"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The Arm Perseus sees 700, keeps a leash of 1280, and uses the weapon SAM_weapon. That weapon is UTASP 3.0's. A later UTASP still has the gunship and not the weapon, so the game refuses this mutator at the start and names it. It names ARMPERS, so a game without that unit is unchanged.\n\nThis package replaces [MAC] Arm Perseus Advanced Gunship tweaks for UTASP 3 by MAC (macraig)."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "[MAC] Arm Perseus Advanced Gunship tweaks for UTASP 3"
+    prefix: "{}"
+    compatibility: ["UT30b"]
+    files: ["{}MAC ARMPERS tweak.tam", "{}MAC ARMPERS tweak.sm"]

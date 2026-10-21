@@ -1,0 +1,27 @@
+oamut: 1
+id: "radar-plane-targeting"
+name: "Radar Plane Targeting"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "The Eagle and the Seahawk can be ordered to attack, so bombers set to guard one of them shoot whatever it finds. Guard the plane and send it on patrol, and the escort takes out what it targets. The weapon is never fired: the planes' scripts have no aim or fire functions. The Eagle is given FLAMETHROWER and stealth. The Seahawk is given ARMSEAP_WEAPON1, stealth, a cheap cloak, and a water depth of 255. Choose one plane or both. Each plane is named, so a game without it is unchanged.\n\nThis package replaces [MAC] Arm Eagle targeting tweak and [MAC] Arm Seahawk targeting tweak by MAC (macraig)."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  plane:
+    type: "choice"
+    values: ["both", "eagle", "seahawk"]
+    default: "both"
+    label: "Radar planes"
+legacy:
+  - name: "[MAC] Arm Eagle targeting tweak"
+    prefix: "{}"
+    compatibility: ["OTA", "TACC", "UTASP", "TAUCP"]
+    files: ["{}MAC ARMAWAC tweak.tam", "{}MAC ARMAWAC tweak.sm"]
+  - name: "[MAC] Arm Seahawk targeting tweak"
+    prefix: "{}"
+    compatibility: ["OTA", "TACC", "UTASP", "TAUCP"]
+    files: ["{}MAC ARMSEHAK tweak.tam", "{}MAC ARMSEHAK tweak.sm"]

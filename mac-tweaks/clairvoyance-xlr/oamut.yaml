@@ -1,0 +1,31 @@
+oamut: 1
+id: "clairvoyance-xlr"
+name: "Clairvoyance XLR"
+version: "1"
+author:
+  name: "MAC (macraig)"
+description: "An extra-long-range radar sees 13000 on radar and on sonar, and it starts cloaked. As in the originals, each block checks one unit name, ArmBeac or ArmEye or CorBeac or CorEye, and also that the description mentions Radar, the sound is that side's advanced radar, and the radar range is already between 4000 and 32000. Choose Arm, Core or both. A unit that fails those checks is unchanged.\n\nThis package replaces [MAC] Clairvoyance XLR (Arm), [MAC] Clairvoyance XLR (Core) and [MAC] Clairvoyance XLR by MAC (macraig)."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  side:
+    type: "choice"
+    values: ["all", "arm", "core"]
+    default: "all"
+    label: "Side"
+legacy:
+  - name: "[MAC] Clairvoyance XLR (Arm)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Clairvoyance XLR (Arm).tam", "{}MAC Clairvoyance XLR (Arm).sm"]
+  - name: "[MAC] Clairvoyance XLR (Core)"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Clairvoyance XLR (Core).tam", "{}MAC Clairvoyance XLR (Core).sm"]
+  - name: "[MAC] Clairvoyance XLR"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}MAC Clairvoyance XLR.tam", "{}MAC Clairvoyance XLR.sm"]
