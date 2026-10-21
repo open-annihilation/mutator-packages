@@ -1,0 +1,2 @@
+# The original's 1.6 slowed 3.1c's Stumpy; the curated version never slows a unit
+right only field units/armstump.fbi [unitinfo] maxvelocity: 1.7 -> 1.6

@@ -1,0 +1,6 @@
+# The original's velocity test matched no unit, so it changed nothing; the curated version changes moving Arm and Core units
+left only field units/*.fbi [unitinfo] maxdamage: *
+left only field units/*.fbi [unitinfo] maxvelocity: *
+left only field units/*.fbi [unitinfo] turnrate: *
+left only field units/*.fbi [unitinfo] brakerate: *
+left only field units/*.fbi [unitinfo] acceleration: *
