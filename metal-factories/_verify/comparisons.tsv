@@ -1,0 +1,5 @@
+row	curated	imports	allowed	mod	map
+finite-metal	./finite-metal	_imports/finite-metal-ta	-	-	-
+finite-metal-cs	./finite-metal:counter_strike=yes	_imports/finite-metal-ta-counter-strike	-	-	-
+finite-metal-uh	./finite-metal	_imports/finite-metal-ta	-	uberhack-v4.0	-
+directional-factories	./directional-factories	_imports/directional-factories	directional-factories.allowed	-	-
