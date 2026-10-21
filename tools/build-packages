@@ -62,16 +62,27 @@ def read_tsv(path: Path, header: tuple[str, ...], optional_tail: tuple[str, ...]
         values = line.split("\t")
         if len(values) != len(fields):
             raise BuildError(f"build: {path}:{number}: expected {len(fields)} fields")
-        rows.append(dict(zip(fields, values)))
+        row = dict(zip(fields, values))
+        row["line"] = str(number)
+        rows.append(row)
     return rows
 
 
 def read_imports(path: Path) -> list[dict[str, str]]:
     rows = read_tsv(path, ("import", "source"), ("id",))
+    seen: dict[str, str] = {}
     for row in rows:
         row.setdefault("id", "-")
         if not row["import"] or row["import"] in (".", "..") or "/" in row["import"]:
             raise BuildError(f"build: {path}: bad import id {row['import']}")
+        # Each import is its own folder, so two rows may not share one (macOS ignores case).
+        key = row["import"].casefold()
+        if key in seen:
+            raise BuildError(
+                f"build: {path}: lines {seen[key]} and {row['line']} both name import {row['import']}; "
+                "give each original its own id (the id column)"
+            )
+        seen[key] = row["line"]
     return rows
 
 
@@ -222,7 +233,10 @@ def import_originals(family_dir: Path, dest: Path, originals: Path, tool: str) -
             folder = scratch / row["import"]
             if proc.returncode != 0 or not folder.is_dir():
                 raise BuildError(f"build: {family_dir.name}: import {row['import']} failed ({row['source']})")
-            shutil.move(str(folder), str(imported / row["import"]))
+            target = imported / row["import"]
+            if target.exists() or target.is_symlink():
+                raise BuildError(f"build: {family_dir.name}: import {row['import']} is already built ({row['source']})")
+            shutil.move(str(folder), str(target))
         finally:
             shutil.rmtree(scratch, ignore_errors=True)
     return len(rows)
