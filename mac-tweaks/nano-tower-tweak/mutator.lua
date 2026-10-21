@@ -1,5 +1,4 @@
 -- Lines the originals left commented out are not changes.
--- `for` is a Lua keyword, so the choice is read with brackets.
 
 local function taucp()
   return {
@@ -106,7 +105,7 @@ local function utasp()
 end
 
 function mutate(ctx)
-  local written_for = ctx.options["for"]
+  local written_for = ctx.options.pack
   return {
     rules = written_for == "taucp" and taucp() or utasp(),
   }

@@ -12,7 +12,7 @@ requires:
 conflicts-with: ["nano-tower"]
 layers: ["units"]
 options:
-  for:
+  pack:
     type: "choice"
     values: ["utasp", "taucp"]
     default: "utasp"

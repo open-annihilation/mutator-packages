@@ -12,7 +12,7 @@ heavy-vehicle-plant-tweak	./heavy-vehicle-plant-tweak	_imports/mac-arm-heavy-veh
 perseus-tweak	./perseus-tweak	_imports/mac-arm-perseus-advanced-gunship-tweaks-for-utasp-3	-	utasp-v5.0	-
 resource-facility-tweak	./resource-facility-tweak	_imports/mac-arm-resource-facility-tweak-for-utasp-taucp	-	utasp-v5.0	-
 nano-tower-tweak	./nano-tower-tweak	_imports/mac-arm-nano-tower-tweak-for-utasp-4-5	-	utasp-v5.0	-
-nano-tower-tweak-taucp	./nano-tower-tweak:for=taucp	_imports/mac-arm-nano-tower-tweak-for-taucp	-	utasp-v5.0	-
+nano-tower-tweak-taucp	./nano-tower-tweak:pack=taucp	_imports/mac-arm-nano-tower-tweak-for-taucp	-	utasp-v5.0	-
 quad-air-pad-tweak	./quad-air-pad-tweak	_imports/mac-arm-quad-air-pad-tweak	-	utasp-v5.0	-
 clairvoyance-xlr	./clairvoyance-xlr	_imports/mac-clairvoyance-xlr	-	utasp-v5.0	-
 clairvoyance-xlr-arm	./clairvoyance-xlr:side=arm	_imports/mac-clairvoyance-xlr-arm	-	utasp-v5.0	-
