@@ -1,0 +1,35 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: vtol-hover-standby 1
+# seed: 0
+field units/armaca.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armatlas.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armawac.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armbrawl.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armca.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armcsa.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armfig.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armhawk.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armlance.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armpeep.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armpnix.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armseap.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armsehak.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armsfig.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/armthund.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/coraca.fbi [unitinfo] defaultmissiontype: VTOL_Standby -> Standby	by vtol-hover-standby
+field units/corape.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corawac.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corca.fbi [unitinfo] defaultmissiontype: VTOL_Standby -> Standby	by vtol-hover-standby
+field units/corcsa.fbi [unitinfo] defaultmissiontype: VTOL_Standby -> Standby	by vtol-hover-standby
+field units/corfink.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corhunt.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corhurc.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corseap.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corsfig.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corshad.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/cortitan.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corvalk.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corvamp.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
+field units/corveng.fbi [unitinfo] defaultmissiontype: VTOL_standby -> Standby	by vtol-hover-standby
