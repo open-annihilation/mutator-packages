@@ -1,0 +1,21 @@
+oamut: 1
+id: "shared-tech"
+name: "Shared Tech"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Each commander gains a new build page of every factory another commander can build and this one cannot. A commander has commander 1 and bmcode 1. A factory builds and does not move. No factory is named, so the base game's plants and Uberhack's directional plants are both covered.\n\nThis package replaces SharedTech OTA and SharedTech UH by ATRCaptainKirk. Those originals added a fifth commander page and its button art, which a mutator may not ship. The new buttons draw as they do today, with no picture unless the factory has gadget art."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["menus"]
+legacy:
+  - name: "SharedTech OTA"
+    prefix: "}{"
+    compatibility: ["TACC"]
+    files: ["}{SharedTechOTA.tam", "}{SharedTechOTA.ccx"]
+  - name: "SharedTech UH"
+    prefix: "}{"
+    compatibility: ["UH"]
+    files: ["}{SharedTechUH.tam", "}{SharedTechUH.ccx"]

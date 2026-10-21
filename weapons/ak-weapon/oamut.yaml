@@ -1,0 +1,18 @@
+oamut: 1
+id: "ak-weapon"
+name: "A.K. Weapon"
+version: "1"
+author:
+  name: "Havoc"
+description: "The A.K., CORAK, fires the Instigator's laser.\n\nThis package replaces A.K Weapon by Havoc. The A.K. is named, as the original names it. It conflicts with GAATK, which sets the same weapon. In TA: Mutation two swaps of one field cancelled each other."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["gaatk"]
+layers: ["units"]
+legacy:
+  - name: "A.K Weapon"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}A.K Weapon.tam", "{}A.K Weapon.sm"]

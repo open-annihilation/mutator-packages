@@ -1,0 +1,17 @@
+oamut: 1
+id: "battleship-deck-lasers"
+name: "Battleship Deck Lasers"
+version: "1"
+author:
+  name: "Wotan"
+description: "The Arm and Core battleships gain a deck laser, more health and quicker acceleration. The Core ship's guns are ordered as the script it ships expects.\n\nThis package replaces Battle Ship Deck Lasers by Wotan. The battleships are named, as the original names them. The models and the scripts stay files. The original also set Uberhack's category, gave the Arm ship the Uberhack-only guns ARM_BATSAFT and ARM_BATSFORE, and set the Core ship's explosions to ATOMIC_BLASTSML. Those stay out, so the base game's battleship guns remain. The tag said the mutator worked with every mod."
+tags: ["gameplay", "new-units"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["files", "units"]
+legacy:
+  - name: "Battle Ship Deck Lasers"
+    prefix: "}{"
+    compatibility: ["*"]
+    files: ["}{BSDECKL.tam", "}{BSDECKL.ccx"]

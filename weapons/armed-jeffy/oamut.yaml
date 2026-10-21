@@ -1,0 +1,17 @@
+oamut: 1
+id: "armed-jeffy"
+name: "Armed Jeffy"
+version: "1"
+author:
+  name: "Dominic Ascione"
+description: "The Jeffy, ARMFAV, fires the Guardian's plasma gun and has 2000 hit points.\n\nThis package replaces Armed Jeffy by Dominic Ascione. The Jeffy is named, as the original names it."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Armed Jeffy"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Armed Jeffy.tam", "{}Armed Jeffy.sm"]
