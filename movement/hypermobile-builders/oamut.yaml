@@ -1,0 +1,17 @@
+oamut: 1
+id: "hypermobile-builders"
+name: "Hypermobile Builders 3x"
+version: "1"
+author:
+  name: "Immerman"
+description: "All construction units move three times faster than normal.\n\nImmerman's Hypermobile Builders 3x triples top speed and turn rate, and multiplies braking and acceleration by nine, for mobile builders that already move. A comment in the original mentions a speed cap the rules never apply.\n\nThe curated version applies no cap either."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Hypermobile Builders 3x"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}HyperBuilders3x.tam", "{}HyperBuilders3x.sm"]

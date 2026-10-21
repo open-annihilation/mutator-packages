@@ -1,0 +1,17 @@
+oamut: 1
+id: "level-2-armour"
+name: "Level 2 Armour x 1.2"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Level 2 KBots and tanks have 20 percent more armour.\n\nATRCaptainKirk's Level 2 Armour x 1.2 multiplied every mobile level-2 unit by 1.2, then multiplied aircraft, floaters, hovercraft and TED class WATER back by 0.83333, because the rule language had no exception.\n\nThe curated version is one rule: the category contains LEVEL2, the unit moves, and it is not an aircraft, a floater, a hovercraft or TED class WATER."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Level 2 Armour x 1.2"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}L2Armourx1,2.tam", "{}L2Armourx1,2.sm"]

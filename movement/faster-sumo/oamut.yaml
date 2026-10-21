@@ -1,0 +1,17 @@
+oamut: 1
+id: "faster-sumo"
+name: "Faster Sumo"
+version: "1"
+author:
+  name: "Dominic Ascione"
+description: "The Sumo moves and turns far faster than in the base game.\n\nDominic Ascione's Faster Sumo names CORSUMO and sets its top speed to 5 and its turn rate to 666, about fifteen times 3.1c's speed of 0.34. The original wrote the two values as two blocks.\n\nThe curated version names CORSUMO once and keeps both absolute values."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Faster Sumo"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Faster Sumo.tam", "{}Faster Sumo.sm"]

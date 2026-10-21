@@ -1,0 +1,17 @@
+oamut: 1
+id: "fasta"
+name: "FasTA"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "Mobile units move much faster, and weapons hit for less, from closer in, and fire faster.\n\nATRCaptainKirk's FasTA triples top speed and turn rate, and multiplies braking and acceleration by nine, for mobile units that already move. A weapon whose range is not 32000, so a nuke and the like keep theirs, deals half damage, reaches 0.3333 of the range, covers a quarter of the area, flies twice as fast, and spends half the energy and metal per shot.\n\nThe original multiplied a field named reload, which no weapon has, so weapons did not fire faster. The curated version multiplies reload time by half instead."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units", "weapons"]
+legacy:
+  - name: "FasTA"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}FasTA.tam", "{}FasTA.sm"]

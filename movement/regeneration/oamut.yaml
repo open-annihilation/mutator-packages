@@ -1,0 +1,17 @@
+oamut: 1
+id: "regeneration"
+name: "Regeneration"
+version: "1"
+author:
+  name: "Unknown"
+description: "Mobile units repair themselves.\n\nThe files credit no one. The idea is MadRat's, and Regeneration shipped as a hard mutator. Its archive holds 160 Uberhack 2.0 unit files, every one with a heal time of 40, none of them a commander, and 18 of them water structures: torpedo launchers, floating towers, tidal generators and sonar. Every other field was Uberhack's balance. 3.1c gives a heal time, 27, only to the commanders.\n\nThe curated version is one rule on mobile units that are not commanders, and it sets only the heal time to 40. Commanders keep 27. It ships none of the unit files."
+tags: ["gameplay", "statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Regeneration"
+    prefix: "}{"
+    compatibility: ["UH", "UH20"]
+    files: ["}{regenmut.tam", "}{regenmut.ccx"]

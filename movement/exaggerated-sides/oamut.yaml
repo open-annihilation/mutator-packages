@@ -1,0 +1,17 @@
+oamut: 1
+id: "exaggerated-sides"
+name: "Exaggerated Sides"
+version: "1"
+author:
+  name: "Unknown"
+description: "Core mobile units gain armour and lose speed. Arm mobile units do the reverse.\n\nThe files credit no one. Exaggerated Sides shipped in the TA: Mutation standard pack. Core mobile units gain 20 percent armour, lose 15 percent top speed and turn rate, and keep 73 percent of their braking and acceleration. Arm mobile units lose 15 percent armour, gain 20 percent top speed and turn rate, and gain 44 percent braking and acceleration.\n\nThe original also required a top speed from 0 to 0.001, which matches no moving unit, so the rules did nothing. The curated version keeps every other test and selects moving units instead: any top speed outside that range."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Exaggerated Sides"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}ExaggeratedSides.tam", "{}ExaggeratedSides.sm"]

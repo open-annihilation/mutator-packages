@@ -1,0 +1,17 @@
+oamut: 1
+id: "maneuverable-boats"
+name: "Maneuverable Boats"
+version: "1"
+author:
+  name: "Unknown"
+description: "Naval units turn and stop much more sharply. Their top speed stays the same.\n\nThe files credit no one. Maneuverable Boats shipped in the TA: Mutation standard pack. It doubles braking and acceleration and multiplies turn rate by four for mobile units whose movement class contains boat and that already move.\n\nThe curated version keeps those rules."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Maneuverable Boats"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}ManeuverableBoats.tam", "{}ManeuverableBoats.sm"]
