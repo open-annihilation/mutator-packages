@@ -1,0 +1,25 @@
+# oa-tool mutator diff 1
+# game: Rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx Cometctr.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo Unitdata.ufo Units.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: utasp 5.0
+# loadout: nano-tower-tweak 1 pack=taucp
+# seed: 0
+field units/armmtlab.fbi [unitinfo] buildcostenergy: 3277 -> 9277	by nano-tower-tweak
+field units/armmtlab.fbi [unitinfo] buildcostmetal: 2457 -> 3457	by nano-tower-tweak
+field units/armmtlab.fbi [unitinfo] buildtime: 20120 -> 12120	by nano-tower-tweak
+field units/armmtlab.fbi [unitinfo] maxslope: 10 -> 20	by nano-tower-tweak
+field units/armmtlab.fbi [unitinfo] maxwaterdepth: 0 -> 255	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] buildcostenergy: 22784 -> 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] buildcostmetal: 3340 -> 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] builddistance: 460 -> 900	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] buildtime: 27832 -> 10	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] category: ARM KBOT LEVEL3 CONSTR NOWEAPON NOTAIR NOTSUB -> ARM LEVEL3 CONSTR NOWEAPON NOTAIR NOTSUB	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] defaultmissiontype: Standby -> RepairPatrol	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] explodeas: BIG_UNITEX -> NOWEAPON	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] maneuverleashlength: 450 -> 900	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] maxslope: 10 -> 20	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] maxwaterdepth: 25 -> 255	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] mobilestandorders: (absent) -> 1	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] selfdestructas: BIG_UNIT -> NOWEAPON	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] selfdestructcountdown: (absent) -> 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] sightdistance: 450 -> 400	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] workertime: 830 -> 1000	by nano-tower-tweak

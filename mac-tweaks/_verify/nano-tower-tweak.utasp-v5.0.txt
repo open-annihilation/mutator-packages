@@ -1,0 +1,62 @@
+# oa-tool mutator diff 1
+# game: Rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx Cometctr.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo Unitdata.ufo Units.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: utasp 5.0
+# loadout: nano-tower-tweak 1 pack=utasp
+# seed: 0
+field units/armmtlab.fbi [unitinfo] buildcostenergy: 3277 -> 14669	by nano-tower-tweak
+field units/armmtlab.fbi [unitinfo] buildcostmetal: 2457 -> 4127	by nano-tower-tweak
+field units/armmtlab.fbi [unitinfo] buildtime: 20120 -> 34036	by nano-tower-tweak
+field units/armmtlab.fbi [unitinfo] maxslope: 10 -> 20	by nano-tower-tweak
+field units/armmtlab.fbi [unitinfo] maxwaterdepth: 0 -> 255	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] ai_limit: (absent) -> limit ARMNTOW 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] ai_weight: (absent) -> weight ARMNTOW 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] buildcostenergy: 22784 -> 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] buildcostmetal: 3340 -> 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] builddistance: 460 -> 900	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] buildtime: 27832 -> 10	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] defaultmissiontype: Standby -> RepairPatrol	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] explodeas: BIG_UNITEX -> NOWEAPON	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] maneuverleashlength: 450 -> 900	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] maxslope: 10 -> 20	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] maxwaterdepth: 25 -> 255	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] mobilestandorders: (absent) -> 1	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] selfdestructas: BIG_UNIT -> NOWEAPON	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] selfdestructcountdown: (absent) -> 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] sightdistance: 450 -> 900	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] standingmoveorder: 1 -> 0	by nano-tower-tweak
+field units/armntow.fbi [unitinfo] workertime: 830 -> 1000	by nano-tower-tweak
+field units/armtflak.fbi [unitinfo] buildcostenergy: 9100 -> 7280	by nano-tower-tweak
+field units/armtflak.fbi [unitinfo] buildcostmetal: 780 -> 624	by nano-tower-tweak
+field units/armtflak.fbi [unitinfo] buildtime: 17820 -> 14256	by nano-tower-tweak
+field units/armtflak.fbi [unitinfo] category: ARM KBOT LEVEL3 NOWEAPON NOTAIR NOTSUB -> ARM LEVEL3 NOWEAPON NOTAIR NOTSUB	by nano-tower-tweak
+field units/armtflak.fbi [unitinfo] maxslope: 10 -> 20	by nano-tower-tweak
+field units/armtflak.fbi [unitinfo] standingmoveorder: 1 -> 0	by nano-tower-tweak
+field units/armtmrpc.fbi [unitinfo] buildcostenergy: 7400 -> 5920	by nano-tower-tweak
+field units/armtmrpc.fbi [unitinfo] buildcostmetal: 1630 -> 1304	by nano-tower-tweak
+field units/armtmrpc.fbi [unitinfo] buildtime: 12434 -> 9947	by nano-tower-tweak
+field units/armtmrpc.fbi [unitinfo] category: ARM KBOT LEVEL3 NOWEAPON NOTAIR NOTSUB -> ARM LEVEL3 NOWEAPON NOTAIR NOTSUB	by nano-tower-tweak
+field units/armtmrpc.fbi [unitinfo] maxslope: 10 -> 20	by nano-tower-tweak
+field units/armtmrpc.fbi [unitinfo] standingmoveorder: 1 -> 0	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] ai_limit: (absent) -> limit ARMTNTOW 0	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] ai_weight: (absent) -> weight ARMTNTOW 0	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] buildcostenergy: 10530 -> 8424	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] buildcostmetal: 1020 -> 816	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] builddistance: 360 -> 720	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] buildtime: 17800 -> 14240	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] defaultmissiontype: Standby -> RepairPatrol	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] explodeas: BIG_UNITEX -> NOWEAPON	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] maneuverleashlength: 450 -> 720	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] maxslope: 10 -> 20	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] maxwaterdepth: 25 -> 255	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] mobilestandorders: (absent) -> 1	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] selfdestructas: BIG_UNIT -> NOWEAPON	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] selfdestructcountdown: (absent) -> 0	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] sightdistance: 450 -> 720	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] standingmoveorder: 1 -> 0	by nano-tower-tweak
+field units/armtntow.fbi [unitinfo] workertime: 510 -> 750	by nano-tower-tweak
+field units/armtrock.fbi [unitinfo] buildcostenergy: 11650 -> 9320	by nano-tower-tweak
+field units/armtrock.fbi [unitinfo] buildcostmetal: 2135 -> 1708	by nano-tower-tweak
+field units/armtrock.fbi [unitinfo] buildtime: 23500 -> 18800	by nano-tower-tweak
+field units/armtrock.fbi [unitinfo] category: ARM KBOT LEVEL3 NOWEAPON NOTAIR NOTSUB -> ARM LEVEL3 NOWEAPON NOTAIR NOTSUB	by nano-tower-tweak
+field units/armtrock.fbi [unitinfo] maxslope: 10 -> 20	by nano-tower-tweak
+field units/armtrock.fbi [unitinfo] standingmoveorder: 1 -> 0	by nano-tower-tweak

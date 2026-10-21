@@ -1,0 +1,8 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx aiboost.ufo Cometctr.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo taucp-airunits.ufo taucp-genfiles.ufo taucp-groundunits.ufo taucp-hoverunits.ufo taucp-seaunits.ufo taucp-structures.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: taucp 2.3
+# loadout: clairvoyance-xlr 1 side=arm
+# seed: 0
+field units/armeye.fbi [unitinfo] init_cloaked: 0 -> 1	by clairvoyance-xlr
+field units/armeye.fbi [unitinfo] radardistance: 9475 -> 13000	by clairvoyance-xlr
+field units/armeye.fbi [unitinfo] sonardistance: (absent) -> 13000	by clairvoyance-xlr

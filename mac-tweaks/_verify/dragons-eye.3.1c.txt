@@ -1,0 +1,134 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: dragons-eye 1
+# seed: 0
+field download/armeyes.tdf [menuentry] button: (absent) -> 0	by dragons-eye
+field download/armeyes.tdf [menuentry] menu: (absent) -> 8	by dragons-eye
+field download/armeyes.tdf [menuentry] unitmenu: (absent) -> HELPER	by dragons-eye
+field download/armeyes.tdf [menuentry] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes.tdf [menuentry_2] button: (absent) -> 0	by dragons-eye
+field download/armeyes.tdf [menuentry_2] menu: (absent) -> 8	by dragons-eye
+field download/armeyes.tdf [menuentry_2] unitmenu: (absent) -> ARMCV	by dragons-eye
+field download/armeyes.tdf [menuentry_2] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes.tdf [menuentry_3] button: (absent) -> 0	by dragons-eye
+field download/armeyes.tdf [menuentry_3] menu: (absent) -> 8	by dragons-eye
+field download/armeyes.tdf [menuentry_3] unitmenu: (absent) -> ARMCA	by dragons-eye
+field download/armeyes.tdf [menuentry_3] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes.tdf [menuentry_4] button: (absent) -> 0	by dragons-eye
+field download/armeyes.tdf [menuentry_4] menu: (absent) -> 8	by dragons-eye
+field download/armeyes.tdf [menuentry_4] unitmenu: (absent) -> ARMCH	by dragons-eye
+field download/armeyes.tdf [menuentry_4] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes.tdf [menuentry_5] button: (absent) -> 0	by dragons-eye
+field download/armeyes.tdf [menuentry_5] menu: (absent) -> 8	by dragons-eye
+field download/armeyes.tdf [menuentry_5] unitmenu: (absent) -> ARMCOM	by dragons-eye
+field download/armeyes.tdf [menuentry_5] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes1.tdf [menuentry] button: (absent) -> 0	by dragons-eye
+field download/armeyes1.tdf [menuentry] menu: (absent) -> 8	by dragons-eye
+field download/armeyes1.tdf [menuentry] unitmenu: (absent) -> ARMCS	by dragons-eye
+field download/armeyes1.tdf [menuentry] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes1.tdf [menuentry_2] button: (absent) -> 0	by dragons-eye
+field download/armeyes1.tdf [menuentry_2] menu: (absent) -> 8	by dragons-eye
+field download/armeyes1.tdf [menuentry_2] unitmenu: (absent) -> ARMCSA	by dragons-eye
+field download/armeyes1.tdf [menuentry_2] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes1.tdf [menuentry_3] button: (absent) -> 0	by dragons-eye
+field download/armeyes1.tdf [menuentry_3] menu: (absent) -> 8	by dragons-eye
+field download/armeyes1.tdf [menuentry_3] unitmenu: (absent) -> ARMACSUB	by dragons-eye
+field download/armeyes1.tdf [menuentry_3] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes1.tdf [menuentry_4] button: (absent) -> 0	by dragons-eye
+field download/armeyes1.tdf [menuentry_4] menu: (absent) -> 8	by dragons-eye
+field download/armeyes1.tdf [menuentry_4] unitmenu: (absent) -> ARMANS	by dragons-eye
+field download/armeyes1.tdf [menuentry_4] unitname: (absent) -> ARMEYES	by dragons-eye
+field download/armeyes1.tdf [menuentry_5] button: (absent) -> 0	by dragons-eye
+field download/armeyes1.tdf [menuentry_5] menu: (absent) -> 8	by dragons-eye
+field download/armeyes1.tdf [menuentry_5] unitmenu: (absent) -> ARMFARK	by dragons-eye
+field download/armeyes1.tdf [menuentry_5] unitname: (absent) -> ARMEYES	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] blocking: (absent) -> 0	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] category: (absent) -> heaps	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] damage: (absent) -> 26	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] description: (absent) -> Wreckage	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] featurereclamate: (absent) -> smudge01	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] footprintx: (absent) -> 1	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] footprintz: (absent) -> 1	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] height: (absent) -> 4	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] hitdensity: (absent) -> 100	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] metal: (absent) -> 4	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] object: (absent) -> 1x1b	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] reclaimable: (absent) -> 1	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] seqnamereclamate: (absent) -> tree1reclamate	by dragons-eye
+field features/corpses/dragonseyes_dead.tdf [dragonseyes_dead] world: (absent) -> All Worlds	by dragons-eye
+field units/armeyes.fbi [unitinfo] activatewhenbuilt: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] ai_limit: (absent) -> limit ARMEYES 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] ai_weight: (absent) -> weight ARMEYES 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] amphibious: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] bmcode: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] buildangle: (absent) -> 8192	by dragons-eye
+field units/armeyes.fbi [unitinfo] buildcostenergy: (absent) -> 400	by dragons-eye
+field units/armeyes.fbi [unitinfo] buildcostmetal: (absent) -> 15	by dragons-eye
+field units/armeyes.fbi [unitinfo] builder: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] buildtime: (absent) -> 500	by dragons-eye
+field units/armeyes.fbi [unitinfo] canattack: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] canmove: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] category: (absent) -> ARM SPECIAL LEVEL1 NOWEAPON NOTAIR NOTSUB NOTSHIP	by dragons-eye
+field units/armeyes.fbi [unitinfo] cloakcost: (absent) -> 5	by dragons-eye
+field units/armeyes.fbi [unitinfo] copyright: (absent) -> Copyright 1997 Humongous Entertainment. All rights reserved.	by dragons-eye
+field units/armeyes.fbi [unitinfo] corpse: (absent) -> dragonseyes_dead	by dragons-eye
+field units/armeyes.fbi [unitinfo] damagemodifier: (absent) -> 0.001	by dragons-eye
+field units/armeyes.fbi [unitinfo] defaultmissiontype: (absent) -> GUARD_NOMOVE	by dragons-eye
+field units/armeyes.fbi [unitinfo] description: (absent) -> Perimeter Surveillance	by dragons-eye
+field units/armeyes.fbi [unitinfo] designation: (absent) -> A-102-C	by dragons-eye
+field units/armeyes.fbi [unitinfo] downloadable: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] energymake: (absent) -> 3	by dragons-eye
+field units/armeyes.fbi [unitinfo] energystorage: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] energyuse: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] explodeas: (absent) -> NOWEAPON	by dragons-eye
+field units/armeyes.fbi [unitinfo] footprintx: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] footprintz: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] germandescription: (absent) -> Überwachungskamera	by dragons-eye
+field units/armeyes.fbi [unitinfo] germanname: (absent) -> Dragon's Eye	by dragons-eye
+field units/armeyes.fbi [unitinfo] healtime: (absent) -> 4000	by dragons-eye
+field units/armeyes.fbi [unitinfo] init_cloaked: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] maxdamage: (absent) -> 29000	by dragons-eye
+field units/armeyes.fbi [unitinfo] maxslope: (absent) -> 66	by dragons-eye
+field units/armeyes.fbi [unitinfo] maxwaterdepth: (absent) -> 255	by dragons-eye
+field units/armeyes.fbi [unitinfo] metalstorage: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] mincloakdistance: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] name: (absent) -> Dragon's Eye	by dragons-eye
+field units/armeyes.fbi [unitinfo] noautofire: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] objectname: (absent) -> ARMEYES	by dragons-eye
+field units/armeyes.fbi [unitinfo] onoffable: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] ovradjust: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] radardistance: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] selfdestructas: (absent) -> NOWEAPON	by dragons-eye
+field units/armeyes.fbi [unitinfo] selfdestructcountdown: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] shootme: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] side: (absent) -> ARM	by dragons-eye
+field units/armeyes.fbi [unitinfo] sightdistance: (absent) -> 1600	by dragons-eye
+field units/armeyes.fbi [unitinfo] sonardistance: (absent) -> 1600	by dragons-eye
+field units/armeyes.fbi [unitinfo] soundcategory: (absent) -> ARM_RADAR	by dragons-eye
+field units/armeyes.fbi [unitinfo] stealth: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] tedclass: (absent) -> SPECIAL	by dragons-eye
+field units/armeyes.fbi [unitinfo] threed: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] unitname: (absent) -> ARMEYES	by dragons-eye
+field units/armeyes.fbi [unitinfo] unitnumber: (absent) -> 1026	by dragons-eye
+field units/armeyes.fbi [unitinfo] version: (absent) -> 1	by dragons-eye
+field units/armeyes.fbi [unitinfo] workertime: (absent) -> 0	by dragons-eye
+field units/armeyes.fbi [unitinfo] yardmap: (absent) -> o	by dragons-eye
+field units/armeyes.fbi [unitinfo] zbuffer: (absent) -> 1	by dragons-eye
+file added anims/armeyes_gadget.gaf 1712b716368e05b39c983debf1004bce9e5567c62d8415191e414c89523b823f	by dragons-eye
+file added download/armeyes.tdf	by dragons-eye
+file added download/armeyes1.tdf	by dragons-eye
+file added features/corpses/dragonseyes_dead.tdf	by dragons-eye
+file added objects3d/armeyes.3do fde1ee37949e486a664493fceae9296ecef666d1d0fa142b5683dbe7235ccc0c	by dragons-eye
+file added scripts/armeyes.cob 28f0715fada60a392a1eb5d3e27acf9360bb1690d53b339522662444e5a47bed	by dragons-eye
+file added unitpics/armeyes.pcx 1900904298c74994c79d074a814ff264030ab6bb563e5520bdfe184ac7113205	by dragons-eye
+file added units/armeyes.fbi	by dragons-eye
+menu added ARMACSUB 8 0 ARMEYES
+menu added ARMCA 8 0 ARMEYES
+menu added ARMCH 8 0 ARMEYES
+menu added ARMCOM 8 0 ARMEYES
+menu added ARMCS 8 0 ARMEYES
+menu added ARMCSA 8 0 ARMEYES
+menu added ARMCV 8 0 ARMEYES
+menu added ARMFARK 8 0 ARMEYES
+unit added ARMEYES	by dragons-eye
