@@ -1,0 +1,17 @@
+oamut: 1
+id: "weapon-tolerance"
+name: "Weapon Tolerance"
+version: "1"
+author:
+  name: "Unknown"
+description: "A weapon a unit fires, and that has no tolerance of its own, is given a tolerance of 500. Bombs keep none, and so do blasts nothing fires: death explosions, mine blasts and meteors.\n\nThe files credit no one. Weapon Tolerance shipped as a hard mutator of 65 Uberhack weapon files. Each file replaced the whole weapon, so every other field came from Uberhack. The Core Scorpion's file left CORSCORP_WEAPON without a tolerance.\n\nThis package sets only the tolerance, on any mod, for a weapon named by weapon 1, 2 or 3 that is not dropped and does not already have one. CORSCORP_WEAPON is one of those: the Scorpion fires it."
+tags: ["statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["weapons"]
+legacy:
+  - name: "Weapon Tolerance"
+    prefix: "}{"
+    compatibility: ["UH"]
+    files: ["}{Tolerance.tam", "}{Tolerance.ccx"]

@@ -1,0 +1,17 @@
+oamut: 1
+id: "no-corpses"
+name: "No Corpses"
+version: "1"
+author:
+  name: "Drinken"
+description: "Units and buildings leave no wrecks. A unit that is itself a feature keeps its corpse.\n\nDrinken's No Corpses cleared the corpse field on everything that is not a feature, which leaves a resurrector with nothing to raise.\n\nThis package removes that field directly."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "No Corpses"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}NoCorpses.tam", "{}NoCorpses.sm"]

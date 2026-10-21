@@ -1,0 +1,17 @@
+oamut: 1
+id: "subversion"
+name: "Subversion"
+version: "1"
+author:
+  name: "Immerman"
+description: "Ground construction units can capture.\n\nImmerman's Subversion grants capture to mobile builders that can reclaim and cannot fly. Aircraft cannot capture.\n\nThis package keeps that test."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "Subversion"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}Subversion.tam", "{}Subversion.sm"]

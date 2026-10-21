@@ -1,0 +1,17 @@
+oamut: 1
+id: "stealthy-spies"
+name: "Stealthy Spies"
+version: "1"
+author:
+  name: "Unknown"
+description: "The Arm and Core spies are stealthy.\n\nThe files credit no one. StealthySpies shipped in the TA: Mutation standard pack. It names ARMSPY and CORSPY. Its text says stealth rather than personal jamming, and it also set a jammer range of 40, a value written for Uberhack's spies. Total Annihilation 3.1c's spies have no jammer.\n\nThis package names those two units and sets stealth only."
+tags: ["gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "StealthySpies"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}StealthySpies.tam", "{}StealthySpies.sm"]
