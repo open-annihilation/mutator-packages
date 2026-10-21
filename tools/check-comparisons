@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""Check one family's comparison rows without a shell.
+
+Reads <family>/_verify/comparisons.tsv. Splits each row's curated specs and
+imports in Python (str.split), then requires every curated package folder and
+every import folder to hold oamut.yaml. A cell is never handed to a shell, so
+zsh and bash print the same lines. Prints one OK or FAIL line per row and
+exits 1 when any row fails. Exit 2 on a usage error, or when the table is
+missing or its header is not the one the README describes.
+
+    tools/check-comparisons <family>
+
+<family> is the family folder the paths are relative to. After a build that
+is build/<family>, where the imports and the curated packages both exist.
+`imports` of `-` means the row has no import to check. `allowed`, `mod` and
+`map` are recorded for the diff and are not looked up here.
+"""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+
+HEADER = ("row", "curated", "imports", "allowed")
+OPTIONAL = ("mod", "map")
+
+
+def repo_root() -> Path:
+    return Path(__file__).resolve().parent.parent
+
+
+def family_dir(text: str) -> Path:
+    path = Path(text).expanduser()
+    if not path.is_absolute():
+        path = Path.cwd() / path
+    path = path.resolve()
+    if path.is_dir() and not path.is_symlink():
+        return path
+    named = (repo_root() / text).resolve()
+    if named.is_dir() and not named.is_symlink() and "/" not in text and text not in (".", ".."):
+        return named
+    raise ValueError(f"check: no family folder {text}")
+
+
+def read_rows(path: Path) -> tuple[list[str], list[tuple[int, dict[str, str]]]]:
+    if not path.is_file():
+        raise ValueError(f"check: {path} is missing")
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if not lines:
+        raise ValueError(f"check: {path} is empty")
+    fields = lines[0].split("\t")
+    allowed = [list(HEADER), list(HEADER) + list(OPTIONAL)]
+    if fields not in allowed:
+        expect = " or ".join(", ".join(item) for item in allowed)
+        raise ValueError(f"check: {path}: expected header {expect}")
+    rows: list[tuple[int, dict[str, str]]] = []
+    for number, line in enumerate(lines[1:], start=2):
+        if not line.strip():
+            continue
+        values = line.split("\t")
+        if len(values) != len(fields):
+            raise ValueError(f"check: {path}:{number}: expected {len(fields)} fields")
+        rows.append((number, dict(zip(fields, values))))
+    return fields, rows
+
+
+def package_file(family: Path, spec: str) -> Path | None:
+    """oamut.yaml for one curated spec or import, or None when the path is unsafe."""
+    folder = spec.split(":", 1)[0]
+    if not folder or folder.startswith("/") or folder.startswith("\\") or (len(folder) >= 2 and folder[1] == ":"):
+        return None
+    parts = [part for part in folder.replace("\\", "/").split("/") if part not in ("", ".")]
+    if not parts or any(part == ".." for part in parts):
+        return None
+    root = family.resolve()
+    path = (family.joinpath(*parts) / "oamut.yaml").resolve()
+    if not path.is_relative_to(root):
+        return None
+    return path
+
+
+def row_problems(family: Path, row: dict[str, str]) -> list[str]:
+    problems: list[str] = []
+    curated = row["curated"].split()
+    if not curated:
+        problems.append("curated is empty")
+    for spec in curated:
+        found = package_file(family, spec)
+        if found is None or not found.is_file():
+            problems.append(f"spec {spec} names no built package")
+    imports = row["imports"]
+    if imports != "-":
+        named = imports.split()
+        if not named:
+            problems.append("imports is empty")
+        for item in named:
+            if item == "-":
+                problems.append("import - is only allowed on its own")
+                continue
+            found = package_file(family, item)
+            if found is None or not found.is_file():
+                problems.append(f"import {item} names no built package")
+    return problems
+
+
+def check(family: Path) -> int:
+    _fields, rows = read_rows(family / "_verify" / "comparisons.tsv")
+    failed = 0
+    for _number, row in rows:
+        problems = row_problems(family, row)
+        name = row["row"] or "-"
+        if problems:
+            failed += 1
+            print(f"FAIL {name}: {'; '.join(problems)}")
+        else:
+            print(f"OK {name}")
+    return 1 if failed else 0
+
+
+def main(argv: list[str]) -> int:
+    if argv in (["-h"], ["--help"]):
+        print(__doc__.strip())
+        return 0
+    if len(argv) != 1 or not argv[0].strip():
+        print("check: give one family folder", file=sys.stderr)
+        return 2
+    try:
+        return check(family_dir(argv[0]))
+    except ValueError as err:
+        print(err, file=sys.stderr)
+        return 2 if str(err).startswith("check: no family") or "expected header" in str(err) else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

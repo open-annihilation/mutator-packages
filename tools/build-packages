@@ -6,6 +6,7 @@ _imports.tsv names the originals to import, and a package's from-originals.tsv
 names the archive entries to copy in. This tool checks that those files are
 present, imports each original with oa-tool, and assembles the packages.
 It writes only under --out and under scratch folders it removes before exit.
+After a family is assembled it runs tools/check-comparisons on that build.
 
     tools/build-packages --tool OA_TOOL [--originals DIR] [--out DIR] [FAMILY...]
 
@@ -306,6 +307,16 @@ def remove_build(dest: Path) -> None:
         shutil.rmtree(dest)
 
 
+def check_built_comparisons(built: Path, name: str) -> None:
+    """Run tools/check-comparisons on a built family. Arguments, never a shell."""
+    script = Path(__file__).resolve().parent / "check-comparisons"
+    if not script.is_file():
+        raise BuildError(f"build: {name}: {script} is missing")
+    proc = subprocess.run([sys.executable, "-I", str(script), str(built)], check=False)
+    if proc.returncode != 0:
+        raise BuildError(f"build: {name}: comparisons failed")
+
+
 def build_family(family_dir: Path, out: Path, originals: Path, tool: str) -> None:
     name = family_dir.name
     dest = out / name
@@ -325,6 +336,10 @@ def build_family(family_dir: Path, out: Path, originals: Path, tool: str) -> Non
         verify = family_dir / "_verify"
         if verify.is_dir() and not verify.is_symlink():
             shutil.copytree(verify, work / "_verify", symlinks=False)
+        # The comparison check splits cells in Python. A shell loop would
+        # disagree between zsh and bash, and a false FAIL would hide a real one.
+        if (work / "_verify" / "comparisons.tsv").is_file():
+            check_built_comparisons(work, name)
     except BaseException:
         shutil.rmtree(work, ignore_errors=True)
         # A failed family leaves no build, so nothing stale is checked in its place.
