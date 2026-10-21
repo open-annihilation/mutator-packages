@@ -1,0 +1,45 @@
+# The original removed only the aircraft and left the air plants, the seaplane platforms and the repair pads with nothing to build or serve; `no-air` removes them too
+left only unit dropped ARMAP hidden
+left only unit dropped ARMAAP hidden
+left only unit dropped CORAP hidden
+left only unit dropped CORAAP hidden
+left only unit dropped ARMPLAT hidden
+left only unit dropped CORPLAT hidden
+left only unit dropped ARMASP hidden
+left only unit dropped CORASP hidden
+left only field guis/armack2.gui [gadget6] grayedout: 0 -> 1
+left only field guis/armack2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/armacsub1.gui [gadget8] grayedout: (absent) -> 1
+left only field guis/armacsub1.gui [gadget8][common] commonattribs: 4 -> 0
+left only field guis/armacv2.gui [gadget6] grayedout: 0 -> 1
+left only field guis/armacv2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/armch2.gui [gadget6] grayedout: (absent) -> 1
+left only field guis/armch2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/armck2.gui [gadget6] grayedout: (absent) -> 1
+left only field guis/armck2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/armcom2.gui [gadget6] grayedout: (absent) -> 1
+left only field guis/armcom2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/armcv2.gui [gadget6] grayedout: (absent) -> 1
+left only field guis/armcv2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/corack2.gui [gadget6] grayedout: 0 -> 1
+left only field guis/corack2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/coracsub1.gui [gadget8] grayedout: (absent) -> 1
+left only field guis/coracsub1.gui [gadget8][common] commonattribs: 4 -> 0
+left only field guis/coracv2.gui [gadget6] grayedout: 0 -> 1
+left only field guis/coracv2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/corch2.gui [gadget6] grayedout: (absent) -> 1
+left only field guis/corch2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/corck2.gui [gadget6] grayedout: (absent) -> 1
+left only field guis/corck2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/corcom2.gui [gadget6] grayedout: (absent) -> 1
+left only field guis/corcom2.gui [gadget6][common] commonattribs: 4 -> 0
+left only field guis/corcv2.gui [gadget6] grayedout: (absent) -> 1
+left only field guis/corcv2.gui [gadget6][common] commonattribs: 4 -> 0
+left only file hidden units/armaap.fbi
+left only file hidden units/armap.fbi
+left only file hidden units/armasp.fbi
+left only file hidden units/armplat.fbi
+left only file hidden units/coraap.fbi
+left only file hidden units/corap.fbi
+left only file hidden units/corasp.fbi
+left only file hidden units/corplat.fbi

@@ -1,0 +1,50 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: maneuverable-boats 1 side=core
+# seed: 0
+field units/coracsub.fbi [unitinfo] acceleration: 0.04 -> 0.08	by maneuverable-boats
+field units/coracsub.fbi [unitinfo] brakerate: 0.2 -> 0.4	by maneuverable-boats
+field units/coracsub.fbi [unitinfo] turnrate: 256 -> 1024	by maneuverable-boats
+field units/corarch.fbi [unitinfo] acceleration: 0.01 -> 0.02	by maneuverable-boats
+field units/corarch.fbi [unitinfo] brakerate: 0.018 -> 0.036	by maneuverable-boats
+field units/corarch.fbi [unitinfo] turnrate: 145 -> 580	by maneuverable-boats
+field units/corbats.fbi [unitinfo] acceleration: 0.0045 -> 0.009	by maneuverable-boats
+field units/corbats.fbi [unitinfo] brakerate: 0.018310547 -> 0.036621094	by maneuverable-boats
+field units/corbats.fbi [unitinfo] turnrate: 69 -> 276	by maneuverable-boats
+field units/corcarry.fbi [unitinfo] acceleration: 0.01 -> 0.02	by maneuverable-boats
+field units/corcarry.fbi [unitinfo] brakerate: 0.02 -> 0.04	by maneuverable-boats
+field units/corcarry.fbi [unitinfo] turnrate: 64 -> 256	by maneuverable-boats
+field units/corcrus.fbi [unitinfo] acceleration: 0.01 -> 0.02	by maneuverable-boats
+field units/corcrus.fbi [unitinfo] brakerate: 0.05 -> 0.1	by maneuverable-boats
+field units/corcrus.fbi [unitinfo] turnrate: 128 -> 512	by maneuverable-boats
+field units/corcs.fbi [unitinfo] acceleration: 0.008 -> 0.016	by maneuverable-boats
+field units/corcs.fbi [unitinfo] brakerate: 0.042 -> 0.084	by maneuverable-boats
+field units/corcs.fbi [unitinfo] turnrate: 205 -> 820	by maneuverable-boats
+field units/cormship.fbi [unitinfo] acceleration: 0.009155273 -> 0.018310546	by maneuverable-boats
+field units/cormship.fbi [unitinfo] brakerate: 0.018310547 -> 0.036621094	by maneuverable-boats
+field units/cormship.fbi [unitinfo] turnrate: 128 -> 512	by maneuverable-boats
+field units/corpt.fbi [unitinfo] acceleration: 0.1 -> 0.2	by maneuverable-boats
+field units/corpt.fbi [unitinfo] brakerate: 0.02 -> 0.04	by maneuverable-boats
+field units/corpt.fbi [unitinfo] turnrate: 519 -> 2076	by maneuverable-boats
+field units/corroy.fbi [unitinfo] acceleration: 0.009155273 -> 0.018310546	by maneuverable-boats
+field units/corroy.fbi [unitinfo] brakerate: 0.018310547 -> 0.036621094	by maneuverable-boats
+field units/corroy.fbi [unitinfo] turnrate: 128 -> 512	by maneuverable-boats
+field units/corshark.fbi [unitinfo] acceleration: 0.03 -> 0.06	by maneuverable-boats
+field units/corshark.fbi [unitinfo] brakerate: 0.2 -> 0.4	by maneuverable-boats
+field units/corshark.fbi [unitinfo] turnrate: 303 -> 1212	by maneuverable-boats
+field units/corsjam.fbi [unitinfo] acceleration: 0.08 -> 0.16	by maneuverable-boats
+field units/corsjam.fbi [unitinfo] brakerate: 0.018 -> 0.036	by maneuverable-boats
+field units/corsjam.fbi [unitinfo] turnrate: 375 -> 1500	by maneuverable-boats
+field units/corss.fbi [unitinfo] acceleration: 0.1 -> 0.2	by maneuverable-boats
+field units/corss.fbi [unitinfo] brakerate: 0.02 -> 0.04	by maneuverable-boats
+field units/corss.fbi [unitinfo] turnrate: 911 -> 3644	by maneuverable-boats
+field units/corssub.fbi [unitinfo] acceleration: 0.03 -> 0.06	by maneuverable-boats
+field units/corssub.fbi [unitinfo] brakerate: 0.016 -> 0.032	by maneuverable-boats
+field units/corssub.fbi [unitinfo] turnrate: 72 -> 288	by maneuverable-boats
+field units/corsub.fbi [unitinfo] acceleration: 0.03 -> 0.06	by maneuverable-boats
+field units/corsub.fbi [unitinfo] brakerate: 0.2 -> 0.4	by maneuverable-boats
+field units/corsub.fbi [unitinfo] turnrate: 256 -> 1024	by maneuverable-boats
+field units/cortship.fbi [unitinfo] acceleration: 0.009155273 -> 0.018310546	by maneuverable-boats
+field units/cortship.fbi [unitinfo] brakerate: 0.018310547 -> 0.036621094	by maneuverable-boats
+field units/cortship.fbi [unitinfo] turnrate: 130 -> 520	by maneuverable-boats
