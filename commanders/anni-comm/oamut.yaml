@@ -1,0 +1,18 @@
+oamut: 1
+id: "anni-comm"
+name: "Annihilator Commander"
+version: "1"
+author:
+  name: "Drinken"
+description: "Both commanders' lasers are replaced with the Arm annihilator, which needs a lot of energy. Core's commander gets Arm's weapon, as in the original. This package replaces AnniComm by Drinken. It stays a rule on commanders that can move, so it stacks with other commander changes instead of replacing a unit file."
+tags: ["commanders"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["special-tech-comm", "kroggy-comm"]
+layers: ["units"]
+legacy:
+  - name: "AnniComm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}AnniComm.tam", "{}AnniComm.sm"]

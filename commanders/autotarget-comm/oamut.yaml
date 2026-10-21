@@ -1,0 +1,17 @@
+oamut: 1
+id: "autotarget-comm"
+name: "Autotarget Commander"
+version: "1"
+author:
+  name: "ATRCaptainKirk"
+description: "The commander has the same ability as the targeting facility. This package replaces AutotargetComm by ATRCaptainKirk. It sets the targeting flag as a number on commanders that can move."
+tags: ["commanders", "gameplay"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+legacy:
+  - name: "AutotargetComm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}AutotargetComm.tam", "{}AutotargetComm.sm"]

@@ -1,0 +1,27 @@
+oamut: 1
+id: "uber-comm"
+name: "ÜberComm"
+version: "1"
+author:
+  name: "Immerman"
+description: "All commanders have twice the armor and speed, and six times the building power. This makes the commander a much more central unit, rather than having it become mostly obsolete after the early game. The increased usefulness means that playing \"Game Continues\" is no longer an invitation to bomb the commander. Strength lite is ÜberComm Lite: half again the armor and speed, and three times the building power, for the same reason. This package replaces ÜberComm and PowerComm, both by Immerman. The strength choice is the only difference between those two originals."
+tags: ["commanders", "statistics"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+layers: ["units"]
+options:
+  strength:
+    type: choice
+    label: "Strength"
+    values: ["full", "lite"]
+    default: "full"
+legacy:
+  - name: "ÜberComm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}šberComm.tam", "{}šberComm.sm"]
+  - name: "PowerComm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}PowerComm.tam", "{}PowerComm.sm"]

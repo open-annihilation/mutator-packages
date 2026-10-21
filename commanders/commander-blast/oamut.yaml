@@ -1,0 +1,22 @@
+oamut: 1
+id: "commander-blast"
+name: "Reduced Commander Blast"
+version: "1"
+author:
+  name: "Quitch(y)"
+description: "Commanders do less damage when they explode. This is for players who disliked the commander explosion, including those the computer rushed on a small map. This package replaces Reduced Commander Blast (OTA) and Reduced Commander Blast (UH), both by Quitch(y). Those archives were whole unit files, and they differ only in the old data they were cut from; this package sets only the atomic blast."
+tags: ["commanders"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["kroggy-comm"]
+layers: ["units"]
+legacy:
+  - name: "Reduced Commander Blast (OTA)"
+    prefix: "}{"
+    compatibility: ["OTA", "TACC", "BF"]
+    files: ["}{CommBlastOTA.tam", "}{CommBlastOTA.ccx"]
+  - name: "Reduced Commander Blast (UH)"
+    prefix: "}{"
+    compatibility: ["UH"]
+    files: ["}{CommBlastUH.tam", "}{CommBlastUH.ccx"]

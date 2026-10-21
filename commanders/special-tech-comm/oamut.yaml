@@ -1,0 +1,18 @@
+oamut: 1
+id: "special-tech-comm"
+name: "Special Tech Commander"
+version: "1"
+author:
+  name: "Drinken"
+description: "The Arm commander gains the Zeus lightning weapon, and the Core commander gains the flamethrower. Arm and Core are named because the original changes those two units. This package replaces Special Tech Comm by Drinken. The lightning weapon is LIGHTNING with no trailing space; the original wrote a space and relied on the reader to trim it."
+tags: ["commanders"]
+works-with: ["*"]
+requires:
+  engine: ">= 0.8.5"
+conflicts-with: ["anni-comm", "kroggy-comm"]
+layers: ["units"]
+legacy:
+  - name: "Special Tech Comm"
+    prefix: "{}"
+    compatibility: ["*"]
+    files: ["{}SpecialTechComm.tam", "{}SpecialTechComm.sm"]
