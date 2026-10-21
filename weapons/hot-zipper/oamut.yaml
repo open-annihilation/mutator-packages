@@ -4,7 +4,7 @@ name: "Hot Zipper"
 version: "1"
 author:
   name: "MadBlast"
-description: "The Zipper, ARMFAST, fires the flamethrower.\n\nThis package replaces Hot zipper by MadBlast. The Zipper is named, as the original names it. It conflicts with A Zipper and EMG Fast, which set the same weapon. In TA: Mutation two swaps of one field cancelled each other."
+description: "The Zipper, ARMFAST, fires the flamethrower.\n\nThis package replaces Hot zipper by MadBlast. The Zipper is named, as the original names it. It conflicts with A Zipper and EMG Fast, which set the same weapon. Only one swap of that weapon can apply."
 tags: ["gameplay"]
 works-with: ["*"]
 requires:

@@ -4,7 +4,7 @@ name: "A.K. Weapon"
 version: "1"
 author:
   name: "Havoc"
-description: "The A.K., CORAK, fires the Instigator's laser.\n\nThis package replaces A.K Weapon by Havoc. The A.K. is named, as the original names it. It conflicts with GAATK, which sets the same weapon. In TA: Mutation two swaps of one field cancelled each other."
+description: "The A.K., CORAK, fires the Instigator's laser.\n\nThis package replaces A.K Weapon by Havoc. The A.K. is named, as the original names it. It conflicts with GAATK, which sets the same weapon. Only one swap of that weapon can apply."
 tags: ["gameplay"]
 works-with: ["*"]
 requires:

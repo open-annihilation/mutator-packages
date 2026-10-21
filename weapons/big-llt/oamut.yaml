@@ -4,7 +4,7 @@ name: "Better LLTs"
 version: "1"
 author:
   name: "Spunkmonkey"
-description: "The Arm and Core light laser towers cost more, take longer, have more health, can guard, and fire Uberhack's deck laser. The Core tower also sees farther.\n\nThis package replaces Better LLTs by Spunkmonkey. The towers are named, as the original names them. The original replaced both unit files, so it also carried Uberhack's category, bad-target list and the name LLT. Those stay out. The tag said Core Contingency and Uberhack. The weapon is Uberhack's ADV_DECKLASER, so on the base game the integrity check refuses this mutator and names it. It conflicts with Better L.L.T, which sets the Arm tower's weapon."
+description: "The Arm and Core light laser towers cost more, take longer, have more health, can guard, and fire Uberhack's deck laser. The Core tower also sees farther.\n\nThis package replaces Better LLTs by Spunkmonkey. The towers are named, as the original names them. The original replaced both unit files, so it also carried Uberhack's category, bad-target list and the name LLT. Those stay out. The tag said Core Contingency and Uberhack. The weapon is Uberhack's ADV_DECKLASER. When that weapon is missing, the package says it does not fit. It conflicts with Better L.L.T, which sets the Arm tower's weapon."
 tags: ["gameplay"]
 works-with: ["*"]
 requires:

@@ -20,5 +20,10 @@ function mutate(ctx)
         weapon1 = set("ADV_DECKLASER"),
       },
     },
+    units = function(units, ctx)
+      if ctx.weapons["ADV_DECKLASER"] == nil then
+        ctx.incompatible("Better LLTs needs Uberhack's deck laser, ADV_DECKLASER")
+      end
+    end,
   }
 end

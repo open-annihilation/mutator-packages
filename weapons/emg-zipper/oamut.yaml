@@ -4,7 +4,7 @@ name: "EMG Fast"
 version: "1"
 author:
   name: "Dominic Ascione"
-description: "The Zipper, ARMFAST, fires the EMG.\n\nThis package replaces EMG Fast by Dominic Ascione. The Zipper is named, as the original names it. It conflicts with A Zipper and Hot Zipper, which set the same weapon. In TA: Mutation two swaps of one field cancelled each other."
+description: "The Zipper, ARMFAST, fires the EMG.\n\nThis package replaces EMG Fast by Dominic Ascione. The Zipper is named, as the original names it. It conflicts with A Zipper and Hot Zipper, which set the same weapon. Only one swap of that weapon can apply."
 tags: ["gameplay"]
 works-with: ["*"]
 requires:

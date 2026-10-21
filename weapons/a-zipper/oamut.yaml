@@ -4,7 +4,7 @@ name: "A Zipper"
 version: "1"
 author:
   name: "orion"
-description: "The Zipper, ARMFAST, fires the Annihilator and has 5000 hit points.\n\nThis package replaces A Zipper by orion. The original set the weapon and the health in two blocks on that named unit. This package is one rule. Two swaps of one weapon cancelled each other in TA: Mutation, so it conflicts with EMG Fast and Hot Zipper."
+description: "The Zipper, ARMFAST, fires the Annihilator and has 5000 hit points.\n\nThis package replaces A Zipper by orion. The original set the weapon and the health in two blocks on that named unit. This package is one rule. Only one swap of that weapon can apply, so it conflicts with EMG Fast and Hot Zipper."
 tags: ["gameplay"]
 works-with: ["*"]
 requires:

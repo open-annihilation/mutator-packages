@@ -4,7 +4,7 @@ name: "Low Tech"
 version: "1"
 author:
   name: "BULLETCLIP (ACUT)"
-description: "Greys the advanced plant on eight construction menus. The Arm and Core aircraft, kbot, ship and vehicle constructors lose the advanced aircraft plant, the advanced kbot lab, the advanced shipyard and the advanced vehicle plant.\n\nThis package replaces Low Tech by BULLETCLIP (ACUT). The original replaced eight whole build pages copied from the 1997 data, which wiped any other change to those pages. Greying changes one button, so the package fits any mod. Computer players still build level 2."
+description: "Greys the advanced plant on eight construction menus. The Arm and Core aircraft, kbot, ship and vehicle constructors lose the advanced aircraft plant, the advanced kbot lab, the advanced shipyard and the advanced vehicle plant.\n\nThis package replaces Low Tech by BULLETCLIP (ACUT). The original replaced eight whole build pages copied from the 1997 data, which wiped any other change to those pages. Greying changes one button, so the package fits any mod. Computer players still build level 2. The original left an empty slot where each plant was; here it shows greyed."
 tags: ["disable"]
 works-with: ["*"]
 requires:
