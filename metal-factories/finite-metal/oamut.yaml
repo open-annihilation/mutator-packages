@@ -4,7 +4,7 @@ name: "Finite Metal"
 version: "1"
 author:
   name: "Drinken; features by BSR"
-description: "Metal patches are rocks and wrecks, and nothing makes or extracts metal. Computer players handle this badly.\n\nBSR's features replace the metal patches. This package replaces Finite Metal TA and Finite Metal TA (Counter Strike), both by Drinken. With Counter Strike units, a unit whose sound category is GATE keeps its metal income, and FLUXOR and QUARK make 5 metal. It also removes CORBHMTH and the third-party converter whose description is \"Highly unstable Rock to Metal subatomic converter\".\n\nThis package removes MetalMake in a hook, so it combines with no-porc."
+description: "Metal patches become rocks and wrecks to reclaim, metal extractors are removed and units lose their built-in metal income. Metal makers still turn energy into metal; add No Porc to remove them too, as the original advised. Computer players handle this badly.\n\nBSR's features replace the metal patches. This package replaces Finite Metal TA and Finite Metal TA (Counter Strike), both by Drinken. With Counter Strike units, a unit whose sound category is GATE keeps its metal income, and FLUXOR and QUARK make 5 metal. It also removes CORBHMTH and the third-party converter whose description is \"Highly unstable Rock to Metal subatomic converter\".\n\nIt combines with No Porc."
 tags: ["economy", "disable"]
 works-with: ["*"]
 requires:
