@@ -1,3 +1,10 @@
+-- Warp Gate locks side 0 before these records exist, and a later mutator's
+-- rule cannot change that lock. Nothing averages. These rules lock the
+-- Scrouge's own units at side 0. The units hook then writes side 10000 on
+-- every other commander Warp Gate marked. The mark is metal extraction
+-- 0.001 with build code 1, not the commander flag: the twin arrivals clear
+-- that flag before this hook runs. A hook may write a field an earlier
+-- mutator locked.
 -- The six download files name no MENU and no BUTTON. The game reads both as
 -- 0, and a page is MENU minus 1, so those entries link no page. The first
 -- page this hook can write is 1, which stores MENU=2. Warp Gate already
@@ -19,12 +26,12 @@ function mutate(ctx)
   return {
     files = { add = { "files" } },
     rules = {
-      where {
-        commander = 1,
-        bmcode = 1,
-        unitname = not_(is("SCROUGE")),
-      }:change { side = lock(10000) },
+      where { unitname = is("SCROUGE") }:change { side = lock(0) },
+      where { unitname = is("SCRGMEX") }:change { side = lock(0) },
     },
+    units = function(units, ctx)
+      units:where { bmcode = 1, extractsmetal = 0.001, unitname = not_(is("SCROUGE")) }:set { side = 10000 }
+    end,
     menus = function(menus, ctx)
       menus:add("ARMGATE", "SCROUGE", { page = 1, slot = 3 })
       menus:add("CORGATE", "SCROUGE", { page = 1, slot = 3 })
