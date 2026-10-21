@@ -1,0 +1,13 @@
+import	source
+warp-gate-3-1	Mutators/{}Warpgate31.tam
+warp-gate-4-0	Mutators/{}Warpgate4_0.tam
+warp-gate-4-0-targetting	Mutators/{}Warpgate4_0-Targetting.tam
+warp-gate-4-0-twincomm	Mutators/{}Warpgate4_0-TwinComm.tam
+warp-gate-4-0-twintarget	Mutators/{}Warpgate4_0-TwinTarget.tam
+warp-gate-4-1	Mutators/{}Warpgate4_1.tam
+wg-quickstart	Mutators/{}WG-Quickstart.tam
+wg-fortress-frugal-v-2	Mutators/{}WG-FortressFrugal2.tam
+wg-fortress-moderate-v-2	Mutators/{}WG-FortressModerate2.tam
+wg-fortress-wealthy-v-2	Mutators/{}WG-FortressWealthy2.tam
+wg-early-warning	Mutators/{}WG-EarlyWarning.tam
+ai-scrouge	Mutators/{}AI-Scrouge.tam
