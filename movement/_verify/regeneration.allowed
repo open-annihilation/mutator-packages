@@ -116,3 +116,67 @@ right only field units/* [unitinfo] yardmap: *
 right only field units/* [unitinfo] zbuffer: *
 right only file added units/*
 right only unit added *
+
+# The archive never held these mobile units, so the original left their healing time alone, and the curated rule heals every mobile unit that is not a commander (L03)
+left only field units/armaca.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armack.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armacv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armch.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armcv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armdecom.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armmlv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armscorp.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/armss.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/coraca.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corack.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/coracv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corca.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corch.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corck.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corcs.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/cordecom.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corfast.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/cormlv.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corscorp.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corss.fbi [unitinfo] healtime: (absent) -> 40
+
+# The archive's whole unit files heal these water structures, and the curated rule heals mobile units only (L03)
+right only field units/armason.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armatl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armfhlt.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armfrt.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armsonar.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armtide.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armtl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corason.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/coratl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corfhlt.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corfrt.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corsonar.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/cortide.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/cortl.fbi [unitinfo] healtime: (absent) -> 40
+
+# Uberhack adds these units with their healing times, and the curated version does not add Uberhack's units (L03)
+right only field units/armdfly.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armdl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armhack.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armlemm.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armref.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armsaber.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armsb.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armsptk.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armst.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armtrid.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corcut.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/cordl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corkrak.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/cormanta.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corsb.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corsktl.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/corsquid.fbi [unitinfo] healtime: (absent) -> 40
+
+# The archive heals ARMSPY at 10 and CORSPY at 12, and the curated rule gives every mobile unit that is not a commander 40 (L03)
+left only field units/armspy.fbi [unitinfo] healtime: (absent) -> 40
+left only field units/corspy.fbi [unitinfo] healtime: (absent) -> 40
+right only field units/armspy.fbi [unitinfo] healtime: (absent) -> 10
+right only field units/corspy.fbi [unitinfo] healtime: (absent) -> 12
