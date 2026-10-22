@@ -4,6 +4,20 @@ Sources of the mutator packages built for Open Annihilation: the curated transla
 
 Each family is a folder of package sources. [Originals and builds](#originals-and-builds) says what those folders hold, where the TA: Mutation originals live, and how a build is made from them.
 
+## Groups
+
+The packages are grouped by the kind of change they make. Each group is a family as the tools read one. Each original's author stays in that group's README, in the package's manifest and in its legacy records.
+
+- `commanders` changes the commander: its weapons, radar, blast, model, resources and how it moves. Fifteen packages.
+- `economy` changes income, cost, storage, build speed and how far a builder reaches, including Finite Metal and the single-unit economy tweaks. Nineteen packages.
+- `movement-and-armour` changes speed, turning, braking, armour, hover movement, slopes, regeneration and fortified walls. Eighteen packages.
+- `weapons` changes weapon swaps, damage, range, reload, area and tolerance, and the single-unit weapon tweaks. Twenty-two packages.
+- `sight-and-stealth` changes sight, radar, cloak and stealth. Eight packages.
+- `units-and-menus` changes which units can be built, the build menus, and the units a package adds. Nine packages.
+- `rules` changes a match rule rather than one weapon, one price or one map. Ten packages.
+- `maps-and-features` changes what a map does to water, wind, metal, fog and lava, and what happens to the features on it. Nine packages.
+- `game-modes` holds Warp Gate and the add-ons that require it, including the computer player Scrouge. Five packages.
+
 ## Originals and builds
 
 A package folder holds what it ships: the manifest, the Lua, any rules written for the package, and, where the package needs them, a `files/` folder of the unit files, models, scripts, pictures and other bytes. Those bytes are the originals' own. The family's README names the archive and entry each file came from, and its SHA-256. What never enters Git is an original archive (`.ufo`, `.ccx`, `.hpi`, `.gp3`, `.zip` or `.tam`, any case), an original `.sm` copied whole, and a faithful import. `originals/` and `build/` are gitignored. `originals/` is the archives; `build/` holds the faithful imports and a copy of each package.

@@ -1,21 +1,237 @@
-# Finite Metal and Directional Factories
+# Units and menus
 
-Two packages replace three of the four igi-server additions that are not in MAC's pack. Finite Metal turns metal patches into rocks and wrecks and takes metal income away. Directional Factories adds Uberhack's east, west and north-facing plants and offers them from whatever already builds the plant they face. D-TAM is not converted. The comparison reports and `directional-factories.allowed` are in `_verify/`.
+This group holds the mutators that change which units can be built, the build menus, and the units a package adds. Nine packages. Each original's author stays in the tables here and in the package's manifest.
 
-The import id is the id `oa-tool mutator import` makes from the title, with no `--works-with`. The compatibility codes stay on each legacy record.
+## Originals
 
-The Counter Strike behaviour is the option `counter_strike` (`yes` or `no`, default `no`). An option id is a Lua name, so it cannot be `counter-strike`.
+| Title | Author | Source under `originals/` | Import | Package and option | Comparison rows |
+|---|---|---|---|---|---|
+| No Porc | Drinken | `Mutators/{}NoPorc.tam` | `no-porc` | `no-porc` | `no-porc` |
+
+Factor 8 on Quick Build and on Jumbo Storage is what the 2x and 4x originals gave together. Factor 3 on Seaplane Platform Speed is what the x1.5 and x2 originals gave together. Level `both` on Resource Commander is what ResourceComm and ResourceComm Deluxe gave together: locked values average, and the build-distance and worker-time factors multiply. The option `level` is labelled Level, which the manifest requires.
+
+## Differences from the originals
+
+Enhanced Wind Generators no longer tests the English name "Wind Generator". A structure with `bmcode` 0 and `windgenerator` from 1 to 1e7 matches, so a translated or modded generator counts. On Total Annihilation 3.1c with both expansions the same two units match: ARMWIN and CORWIN.
+
+No Porc and No Resource System remove units with `remove()` instead of a blank copyright line. No Porc still clears `metalmake` from 0.01 to 10. No Resource System keeps the original's name and description tests, which aim at third-party units if they are installed: a name containing "Fusion Reactor", a name containing "AI ", and the description "Highly unstable Rock to Metal subatomic converter". A written cloak cost is `has("")`, the original's `CloakCost=""*`. `absent()` is already a negated need, so `not_(absent())` does not run.
+
+No Waste stores 1900000 metal and 1900000 energy. The original text says a million. The package keeps the numbers the rule file wrote.
+
+Level 2 Discount replaces the forty-three Uberhack 2.0 unit files with one rule: `category` contains LEVEL2, `bmcode` is 1, and the unit is not a builder, an aircraft, a floater, a hovercraft or TED class WATER. Costs and build time are multiplied by 0.7. The hand-picked forty-three also held the decoy commanders (ARMDECOM, CORDECOM), the seaplane CORSEAP, and Uberhack's construction Freaker (a builder filed as CORFAST). On 3.1c with both expansions the rule selects these 42 level-2 units:
+
+ARMASER, ARMBULL, ARMCROC, ARMFAST, ARMFIDO, ARMJAM, ARMLATNK, ARMMANNI, ARMMARK, ARMMART, ARMMAV, ARMMERL, ARMSAM, ARMSCORP, ARMSEER, ARMSNIPE, ARMSPID, ARMSPY, ARMVADER, ARMYORK, ARMZEUS, CORAMPH, CORCAN, CORETER, CORFAST, CORGOL, CORHRK, CORKROG, CORMART, CORMIST, CORPYRO, CORROACH, CORSCORP, CORSEAL, CORSENT, CORSHARK, CORSPEC, CORSPY, CORSUMO, CORVOYR, CORVRAD, CORVROC.
+
+Seaplane Platform Speed and Advanced Sub Reach and Arm Decoy Commander name units, as the originals do: ARMPLAT and CORPLAT, ARMACSUB and CORACSUB, and ARMDECOM. Armdecom sets worker time to 999. On 3.1c the Arm decoy's worker time is 30.
+
+## Originals
+
+| Title | Author | Source under `originals/` | Import | Package | Comparison rows |
+|---|---|---|---|---|---|
+| No Air | Drinken | `Mutators/{}NoAir.tam` | `no-air` | `no-air` | `no-air` |
+| No Hovers | Total Dave / Davicius | `Mutators/{}NoHover.tam` | `no-hovers` | `no-hovers` | `no-hovers` |
+| Close Combat | Drinken | `Mutators/{}CloseCombat.tam` | `close-combat` | `close-combat` | `close-combat` |
+| Hover Craft Fix | Davicius / Total Dave | `Mutators/{}HoverFix.tam` | `hover-craft-fix` | not converted | — |
+| Vibrant Colors | Immerman | `Mutators/}{VibrantColors.tam` with `Mutators/}{VibrantColors.ccx` | `vibrant-colors` | not converted | — |
+| [MAC] Friendly Skies | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Friendly Skies.tam` | `mac-friendly-skies` | `no-air`, aircraft combat | `no-air-combat` |
+| [MAC] Even Friendlier Skies | MAC (macraig) | `igi-server/MAC's mutators/{}MAC Even Friendlier Skies.tam` | `mac-even-friendlier-skies` | `no-air`, aircraft all | `no-air-even` |
+
+Cloak distance 5 is what CloakMod v1.0 and +NowISee gave together. Cloak cost 2 is what CloakMod v1.0 and Expen$ive gave together. The option labels are Cloak distance and Cloak cost.
+
+## Not converted
+
+Hover Craft Fix is kept as an import and has no curated package. It sets `TEDClass` to Hover on mobile hovercraft other than ARMAMPH. Open Annihilation does not read `TEDClass`, so the change does nothing. An AI class for hovercraft is later engine work. The import is kept for the record.
+
+Vibrant Colors is kept as an import and has no curated package. Its only file replaces `palettes/PALETTE.pal`. Palettes are read once per run and protected by Decision 4, so a mutator may not replace one. An engine colour filter is the better route. The import leaves the palette out and changes nothing. `build/removals/_logs/import-vibrant-colors.txt` records P05's warning:
+
+```
+left out }{VibrantColors.ccx: palettes/PALETTE.pal (read-once)
+the mutator changes nothing
+```
+
+## Differences from the originals
+
+A unit removed with `remove()` and a unit the import removes with a blank copyright line compare as one drop, with their menu entries. A unit only one side drops keeps its hidden unit file and its build button. No curated package writes a copyright line or a version.
+
+`no-air.allowed`: No Air's exact sound category `ARM_SEAPLN_PLANT` misses the Core seaplane platform, CORPLAT. The package removes every factory whose menu offers at least one unit and whose offered units can all fly, so CORPLAT goes with the Arm platform, the aircraft plants and the aircraft. Stationary air bases are removed by `isairbase`, which on Total Annihilation 3.1c is ARMASP and CORASP. Those two already use the sound category AIRPLANT, so the original removed them too. The allowed file names that one drop (`unit dropped CORPLAT hidden`), the hidden file `units/corplat.fbi`, and the platform's button on `guis/coracsub1.gui` (gadget 8, `grayedout` and `commonattribs`).
+
+`no-air-even.allowed`: Even Friendlier Skies removed only the aircraft and left the air plants, the seaplane platforms and the repair pads with nothing to build or serve. `no-air` with aircraft all removes them too. The allowance names those eight drops (ARMAP, ARMAAP, CORAP, CORAAP, ARMPLAT, CORPLAT, ARMASP, CORASP), each `left only unit dropped <NAME> hidden`, and the hidden unit file and build-button lines the comparison shows for the same units. A drop only one side makes is not folded into the unit line, which is the same reporting as `no-air.allowed` for CORPLAT. Friendly Skies is aircraft combat: armed aircraft that do not build, and no factory or pad, so `no-air-combat` allows nothing.
+
+`no-hovers.allowed`: No Hovers removed the hover plants ARMHP and CORHP and left the hovercraft in the game, unbuildable. The package removes those plants, then every unit that only they offer. On 3.1c that is the twelve hovercraft ARMCH, ARMSH, ARMANAC, ARMAH, ARMMH, ARMTHOVR, CORCH, CORSH, CORSNAP, CORAH, CORMH and CORTHOVR. Each has `canhover` 1. The allowed file names each one's drop and its hidden unit file. Their build buttons sit on the plants, which both sides remove, so those buttons compare equal. A unit another builder offers stays. The Pelican, ARMAMPH, also hovers but is built by the amphibious lab, so it stays, and so does every commander.
+
+CloakMod's twenty-two groups are one function. Every unit starts cloaked. The cloak band comes from the metal cost, and a missing metal cost reads as 0, so ARMFMKR and CORFMKR fall in the first band: 0 to 99 gives 1, 100 to 499 gives 2, 500 to 1999 gives 3, 2000 to 9999 gives 4, and anything else gives 5. Cloak cost is the band times the cost option, and cloak cost while moving is twice that. A mobile unit's cloak distance comes from its depth: 1 or 2 gives 50, 3 gives 70, 4 gives 100, 5 gives 140, and anything else gives 200. Every unit that has a cloak distance, set here or its own, is then multiplied by the distance option. The original's energy bands and width bands are left out. TA: Mutation averaged the two energy values, it did not overwrite them, so ARMCOM got a cloak cost of 4.5 and a moving cost of 9. Open Annihilation runs rules in sequence (Q63), so the later block replaces the earlier one and this package gives 5 and 10, matching the faithful import. Expen$ive's rules multiply by 2. Its text said 5.
+
+Double Reload Times matches its import, including a reload time spelled with a leading dot. On 3.1c that is 28 weapons, and both sides double them, now that the engine reads that spelling (R07).
+
+Double LOS keeps the sight and radar factors and ships `files/gamedata/los.tdf` from `Mutators/{}DoubleLOS(1).ccx`, entry `gamedata/los.tdf`, SHA-256 `47f7079821ce0d0123d844d47343ad82483a48f13b70eed7c2877d9228e5de6a`. The table holds 32 sight entries where 3.1c holds 9, so doubled sight is not cut short.
+
+AI Tag Remover drops `ai_weight` and `ai_limit` when the field is present. The original looked for the text "we" and "li". On this game every unit that has either field holds that text, so the same units match.
+
+## Originals
+
+| Original | Author | Source under `originals/` | Import | Package | Comparison row |
+|---|---|---|---|---|---|
+| SharedTech OTA | ATRCaptainKirk | `Mutators/}{SharedTechOTA.tam` (with `Mutators/}{SharedTechOTA.ccx`) | `sharedtech-ota` | `shared-tech` | `shared-tech` |
+| SharedTech UH | ATRCaptainKirk | `Mutators/}{SharedTechUH.tam` (with `Mutators/}{SharedTechUH.ccx`) | `sharedtech-uh` | `shared-tech` | `shared-tech` |
+| Low Tech | BULLETCLIP (ACUT) | `Mutators/}{LowTech.tam` (with `Mutators/}{LowTech.ccx`) | `low-tech` | `low-tech` | `low-tech` |
+
+The import id is the id `oa-tool mutator import` makes from the title, with no `--works-with`. Uberhack and the other mods named in the compatibility codes have no OA id, so those codes stay on the legacy record.
+
+## Conflicts
+
+In TA: Mutation two string assignments to one field cancelled each other, so two swaps on one unit never worked together. In Open Annihilation the later swap would replace the earlier one (Q63), so the two cannot be picked together. The packages that set the same unit's weapon declare `conflicts-with` each other:
+
+## Wrong compatibility tags
+
+Three tags in the corpus do not match the weapons the originals need. The packages answer them as follows.
+
+## Files
+
+The package adds `files` in the plan so the Files layer serves the models and scripts. `armbats.3do` and `ARMBATS.COB` change ARMBATS by that name, and `corbats.3do` and `corbats.cob` change CORBATS by that name. The description says so.
+
+## Files the imports left out
+
+P05 left no file out of the ten rule imports, Better LLTs or Battle Ship Deck Lasers. Those two hard imports keep the archive as one file. SharedTech OTA, SharedTech UH and Low Tech hold only GUI pages and button art. GUI pages change only through `menus` (F02), and button art in `anims/` other than a unit's `_gadget.gaf` is interface art, so P05 left every entry out. Each import keeps no archive file and changes nothing. `shared-tech` and `low-tech` therefore compare against no import.
+
+From `build/weapons/_logs/import-sharedtech-ota.txt`, each path and F02's rule:
+
+- `}{SharedTechOTA.ccx: anims/corcom5.gaf` (interface-art)
+- `}{SharedTechOTA.ccx: anims/armcom5.gaf` (interface-art)
+- `}{SharedTechOTA.ccx: guis/corcom5.gui` (menus-only)
+- `}{SharedTechOTA.ccx: guis/armcom5.gui` (menus-only)
+
+The log also says the mutator changes nothing, tags default to gameplay, and `TACC` maps to `ta-3.1c`.
+
+From `build/weapons/_logs/import-sharedtech-uh.txt`:
+
+- `}{SharedTechUH.ccx: anims/armcom5.gaf` (interface-art)
+- `}{SharedTechUH.ccx: anims/corcom5.gaf` (interface-art)
+- `}{SharedTechUH.ccx: guis/corcom5.gui` (menus-only)
+- `}{SharedTechUH.ccx: guis/armcom5.gui` (menus-only)
+
+The log also says the mutator changes nothing, tags default to gameplay, `UH` is not mapped to a mod, and no compatibility code maps to a mod.
+
+From `build/weapons/_logs/import-low-tech.txt`:
+
+- `}{LowTech.ccx: guis/armca3.gui` (menus-only)
+- `}{LowTech.ccx: guis/armck3.gui` (menus-only)
+- `}{LowTech.ccx: guis/armcs1.gui` (menus-only)
+- `}{LowTech.ccx: guis/armcv3.gui` (menus-only)
+- `}{LowTech.ccx: guis/corca3.gui` (menus-only)
+- `}{LowTech.ccx: guis/corck3.gui` (menus-only)
+- `}{LowTech.ccx: guis/corcs1.gui` (menus-only)
+- `}{LowTech.ccx: guis/corcv3.gui` (menus-only)
+
+The log also says the mutator changes nothing, tags default to gameplay, and `TACC` maps to `ta-3.1c`.
+
+## Differences from the originals
+
+- Fields of the original's unit files that are Uberhack's: both files' `category`; ARMBATS weapon 1 `ARM_BATS` to `ARM_BATSAFT` and weapon 2 `ARM_BATS` to `ARM_BATSFORE` (the base game's `ARM_BATS` stays in both slots); CORBATS `explodeas` and `selfdestructas`, which the original sets to `ATOMIC_BLASTSML`.
+- Script sources, which the game never reads. The base game already has `scripts/armbats.bos` and `scripts/corbats.bos`, so the import replaces them. The pattern is `right only file replaced scripts/*.bos *`.
+
+Every other field the unit files carry from the balance they were cut from stays out of the package, and the comparison shows none of those fields.
+
+`shared-tech` and `low-tech` have no import to compare, and their recorded reports are the checks. Shared Tech adds, on a new page, every factory (`builder` 1, `bmcode` 0, not an air repair pad) that another commander (`commander` 1, `bmcode` 1) offers and this one does not, in the order that commander offers them. It names no unit. The first button opens that page with `page = "new"`, and the rest fill the same page, which is what the originals' fifth page did. A commander that builds nothing is left out, and one with no free slot keeps its menu. Added buttons without a picture draw blank. The report adds eight menu entries: ARMCOM gains CORLAB, CORVP, CORAP and CORSY, and CORCOM gains ARMLAB, ARMVP, ARMAP and ARMSY. Low Tech greys eight buttons by the names the original took away: ARMCA ARMAAP, ARMCK ARMALAB, ARMCS ARMASY, ARMCV ARMAVP, CORCA CORAAP, CORCK CORALAB, CORCS CORASY and CORCV CORAVP. The original's pages set those buttons `active=0`, leaving empty slots; OA greys them so a player sees the plant exists but cannot be built here. The report changes only those eight pages: each button's `grayedout` becomes 1 and the unit bit of `commonattribs` is cleared, which keeps the button grey. Where a mod offers a plant only by a download entry, or not at all, that builder's menu is left as it is. The original replaced whole pages, so any other change to those pages was lost. Greying changes one button. Computer players still build level 2, as they did before.
+
+The ten swaps and Better LLTs and the battleship stats name their units, as the originals do. A Zipper's two blocks are one rule. Super Zeus fires `COMMANDER_BLAST`, a death explosion used as a gun, as the original does. Each of those eleven comparisons matches its import with nothing left over. Each swap's report changes only that unit's named fields.
+
+## Not in this family
+
+DRUH 00.11 is a whole mod, not a mutator. It is not packaged here.
+
+## Originals
+
+| Original | Source | Import | Package | Option | Checked over |
+|---|---|---|---|---|---|
+| [MAC] Arm Nano-Tower tweak | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.tam` | `mac-arm-nano-tower-tweak` | `nano-tower` | — | 3.1c |
+| [MAC] Arm Eyes tweak | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.tam` | `mac-arm-eyes-tweak` | `dragons-eye` | — | 3.1c |
+| [MAC] Absolute Annihilation 6.0 Tweaks | `igi-server/MAC's mutators/}{MAC AA 6.0 Tweaks.tam` | `mac-absolute-annihilation-6-0-tweaks` | not converted | — | not checked |
+
+Why each row runs where it does:
+
+- Eagle, Seahawk, Lancet and Peeper are units of 3.1c, so those rows run over 3.1c. Lancet was labelled for UTASP and the unit is in the base game as well.
+- Nano Tower and Dragon's Eye add their units, so they run over 3.1c. Their download files name builders 3.1c lacks (HELPER, ARMFAB, ARMANS). Those records stay as the archives wrote them.
+- UTASP 5.0 (`utasp-v5.0`) holds ARMADVSOL, ARMANS, ARMHVP, ARMPERS, TAWF004, ARMMTLAB, ARMNTOW, ARMTNTOW, ARMTFLAK, ARMTMRPC, ARMTROCK, QUADAIRPAD (unit name QuadAirPad), and ARMBEAC and CORBEAC as XLR radars. The solar, seaplane, plant, Perseus, resource facility, both nano-tower choices, the quad pad and the three Clairvoyance choices run there.
+- The TAUCP nano-tower choice runs over UTASP 5.0, not TAUCP 2.3. TAUCP 2.3 has only Core's nano tower. UTASP 5.0 has both ARMNTOW and ARMMTLAB, the two units that choice names.
+- The armed extractor runs over TAUIP 2.1 (`tauip-v2.1`), which holds MLEX. UTASP 5.0 does not.
+- Clairvoyance with side arm also runs over TAUCP 2.3 (`taucp-v2.3`), which holds ARMEYE, TADD's XLR radar. UTASP 5.0's Arm radar is ARMBEAC, so the UTASP rows do not cover ARMEYE.
+
+Clairvoyance keeps the originals' checks: the unit name is ArmBeac or ArmEye (Core: CorBeac or CorEye), the description mentions Radar, the sound is ARM_ADVRADAR or CORE_ADVRADAR, and the radar range is already between 4000 and 32000. On the packaged units those checks hold (the files write the names in capitals; the check ignores ASCII case).
+
+## Not converted
+
+Absolute Annihilation 6.0 Tweaks is not a package. It needs Absolute Annihilation 6.0, which is not packaged, so it is not checked. The import `mac-absolute-annihilation-6-0-tweaks` is kept. The archive is Absolute Annihilation 6.0's whole `weapons/weapons.tdf`, with `burnblow=0`, `unitsonly=1` and `noautorange=1` added to its Mercury (`ADVSAM`). Over 3.1c that file would replace 3.1c's own `weapons.tdf`.
+
+## Needs <mod>; not checked
+
+- TADD's CorEye. No packaged mod holds it. Clairvoyance's Core block still checks CorEye, and nothing here runs that block against TADD.
+- TAUCP 1.7 and 1.8's own towers. Those are the TAUCP nano-tower tweak's own targets, and neither version is packaged. The same two unit names are in UTASP 5.0, so that row runs there.
+- UTASP 3.0's `SAM_weapon`. Perseus names that weapon. UTASP 5.0 has ARMPERS and not the weapon, so the rule is checked there and the weapon is not. `oa-tool mutator diff` does not start a match, so it does not see the game refuse the missing weapon.
+
+## Files left out of the hard imports
+
+P05's warnings, from `tools/build-packages`. F02 refuses a path outside the per-match allow-list. F04 allows `anims/<unit>_gadget.gaf` for a unit the archive adds, so those buttons are kept.
+
+- `}{MAC ARMNTOW tweak.ccx`: left out `gui/ARMMTLAB1.GUI` (unknown-folder). The folder is misspelt. TA never read it either. The two button pictures, `anims/ARMMTLAB_gadget.GAF` and `anims/ARMNTOW_gadget.GAF`, are kept, and the curated package ships them.
+- `}{MAC ARM_eyes tweak.ccx`: nothing left out. `anims/ARMEYES_gadget.GAF` is kept, and the curated package ships it.
+- `}{MAC AA 6.0 Tweaks.ccx`: left out `tweaks.txt` (unknown-folder). It sits at the top of the archive and says which three keys were added to ADVSAM. `weapons/weapons.tdf` is kept in the import only.
+
+Every other import warning is a compatibility code with no mod (`UTASP`, `UT30b`, `UT40b`, `UT50b`, `TAUCP17`, `TAUCP18`, `TAUCP23`, `AA60`), the note that tags default to gameplay, or, for the Seahawk, that an empty line before the compatibility line was skipped. OTA and TACC on the two plane tweaks map to the base game. None of those codes is passed as `--works-with`.
+
+## Files
+
+Each hash is the SHA-256 of the archive entry. The file under `files/` is those bytes. Paths keep the archive's names.
+
+### nano-tower
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/anims/ARMMTLAB_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `anims/ARMMTLAB_gadget.GAF` | `37952b88827200c6a5c942a56d73b1adcdd14b30dedc72ee1d7f42b931922a7f` |
+| `files/anims/ARMNTOW_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `anims/ARMNTOW_gadget.GAF` | `3d0e26d00bc8b9de1fc693fbd0b01958c42d1ed4e09a480f49d051664845a297` |
+| `files/download/armmtlab.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `download/armmtlab.tdf` | `c841fdd6352a85954cbae8f765aca2b3c7261f0e9d8184b68ad850051806973e` |
+| `files/download/armntow.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `download/armntow.tdf` | `39668fd3e75f84631fce9406fc31480b5558f43200ea55ff5659ef4b3f8df6e8` |
+| `files/features/corpses/armmtlab_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `features/corpses/armmtlab_dead.tdf` | `a07d0f7b9d3f92fa73a660b82db7b7be30faf174bc55e5b7b03ca269fe0ccfa3` |
+| `files/features/corpses/armntow_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `features/corpses/armntow_dead.tdf` | `60beee10440e48e6326e69c000d2fe59407fa7a94a864af134765b306f05bcd8` |
+| `files/objects3d/armmtlab.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armmtlab.3do` | `9aca5e40edd267f600e6412691d3a2d3788eeda3d73febb3d40032cd647a14ff` |
+| `files/objects3d/armmtlab_dead.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armmtlab_dead.3do` | `96722ea3e7b7562bba6f13f4bb325881becaf5ae5f626d69d9b92a365ca148f6` |
+| `files/objects3d/armntow.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armntow.3do` | `4c37c715ae2838dc855fe96685aa3356154e876ea9411c976ebbbe4914acacd5` |
+| `files/objects3d/armntow_dead.3do` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `objects3d/armntow_dead.3do` | `b6cd9f37158aa8ccae90c22cea8bccb1fd533981893dc9bc22abc6738a7db21c` |
+| `files/scripts/armmtlab.cob` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `scripts/armmtlab.cob` | `2cdfa0a8c4f9c77ed3d8ef844be1bd558e11457359abcb91ac99a54e83e8edb6` |
+| `files/scripts/armntow.cob` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `scripts/armntow.cob` | `b82c78d382fc9e3087e4ab06a96a51955787bd1663459ee59129d0ac051397b3` |
+| `files/unitpics/armmtlab.pcx` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `unitpics/armmtlab.pcx` | `60f685447d0ddffbfe77d44306a92fae3b6bbd00886324f60b75011da6fad278` |
+| `files/unitpics/armntow.pcx` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `unitpics/armntow.pcx` | `e5a8b6461abe3a80b917e0e3e3ef2c87d61fa5a9dd8ff1f7e912a597161f55a2` |
+| `files/units/armmtlab.fbi` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `units/armmtlab.fbi` | `28fcfd08832d79c1c01e8943513564a79ff653e5b1a283566e241a95359b6f1d` |
+| `files/units/armntow.fbi` | `igi-server/MAC's mutators/}{MAC ARMNTOW tweak.ccx` | `units/armntow.fbi` | `59032f11c6860fd2e816b1c20cae57367f179e4e7f4b0a7e2259edb215502dcf` |
+
+### dragons-eye
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/units/Armeyes.fbi` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `units/Armeyes.fbi` | `53e7746e29a9f07d7812779c8057b0ac4853a33b8fce25dc92fe7e86d2ae59aa` |
+| `files/objects3d/Armeyes.3do` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `objects3d/Armeyes.3do` | `fde1ee37949e486a664493fceae9296ecef666d1d0fa142b5683dbe7235ccc0c` |
+| `files/scripts/Armeyes.COB` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `scripts/Armeyes.COB` | `28f0715fada60a392a1eb5d3e27acf9360bb1690d53b339522662444e5a47bed` |
+| `files/unitpics/Armeyes.pcx` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `unitpics/Armeyes.pcx` | `1900904298c74994c79d074a814ff264030ab6bb563e5520bdfe184ac7113205` |
+| `files/features/corpses/Dragonseyes_dead.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `features/corpses/Dragonseyes_dead.tdf` | `4e6769f1285b49feebe6f3fc11e2d5ac91a520ed80c49e93294de2b0b9b7fee5` |
+| `files/download/Armeyes.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `download/Armeyes.tdf` | `c092c4422e558bca181fa4b10685a0bed2d591d268c8adfde0a27bf8ac3470c3` |
+| `files/download/Armeyes1.tdf` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `download/Armeyes1.tdf` | `d38c47f80635941e4a10be06e377eaefbfe3ff8e140c05c91366ec0f09b40cc0` |
+| `files/anims/ARMEYES_gadget.GAF` | `igi-server/MAC's mutators/}{MAC ARM_eyes tweak.ccx` | `anims/ARMEYES_gadget.GAF` | `1712b716368e05b39c983debf1004bce9e5567c62d8415191e414c89523b823f` |
+
+`nano-tower` and `nano-tower-tweak` conflict. One adds the pad and the tower, and the other changes those units when a pack already has them.
+
+## Differences from the originals
+
+There is no allowed file. Every row of `_verify/comparisons.tsv` keeps `allowed` as `-`. Each comparison of the curated package with its faithful import matched, over 3.1c or over the row's mod, so no package was changed.
+
+The reports are what `oa-tool mutator diff` prints. A tweak changes only the fields its original names, on the units it names. A field the unit already holds does not appear: the Seahawk's `MaxWaterDepth` is already 255, and on UTASP 5.0 the advanced seaplane builder's `MaxWaterDepth` is already 255. Nano Tower adds ARMMTLAB and ARMNTOW, their files and their menu entries. Dragon's Eye adds ARMEYES. Clairvoyance over UTASP 5.0 changes ARMBEAC and CORBEAC. Over TAUCP 2.3 it changes ARMEYE.
+
+The files layer writes `download/armmtlab-2.tdf` for the pad's ARMFAB entry, a builder 3.1c does not have. The import's own report has the same file, so the comparison does not count it.
 
 ## Originals
 
 | Original | Author | Source | Import | Package | Option | Row |
 |---|---|---|---|---|---|---|
-| Finite Metal TA | Drinken; features by BSR | `igi-server/finitemetalta_mutator/{}FiniteMetal.tam` | `finite-metal-ta` | `finite-metal` | counter_strike no | `finite-metal` over 3.1c, `finite-metal-uh` over `uberhack-v4.0` |
-| Finite Metal TA (Counter Strike) | Drinken | `igi-server/finitemetalta_cs_mutator/{}FiniteMetal_CS.tam` | `finite-metal-ta-counter-strike` | `finite-metal` | counter_strike yes | `finite-metal-cs` over 3.1c |
 | Directional Factories | Duct_Taper | `igi-server/tam-directionalfactoriesv2/}{DirFact.tam` | `directional-factories` | `directional-factories` | — | `directional-factories` over 3.1c |
 | D-TAM (Build#:017) | Davicius / Total Dave | `igi-server/DTAM/{}DAVETA.tam` | `d-tam-build-017` | not converted | — | not checked |
-
-`finite-metal` with counter_strike no is the default. The two Finite Metal companion archives, `{}FiniteMetal(1).ccx` and `{}FiniteMetal_CS(1).ccx`, are the same bytes (SHA-256 `4efdc3e1158b11e05f6a680dc1b5d6ef45406a04ff9da0238273c63fa3580a54`). The curated package takes its 16 feature files from the Finite Metal TA archive.
 
 ## Not converted
 
@@ -357,27 +573,6 @@ Each hash is the SHA-256 of the archive entry. The file under `files/` is those 
 
 `finite-metal` ships the 16 feature files. Every section is a metal patch the file turns into a rock or a wreck. `directional-factories` ships the 36 unit files, 72 models (the plants and their wrecks), 36 scripts, 36 pictures, 4 wreck and heap files in `features/corpses/`, and the 121 download files whose `UNITMENU` is one of the 36 new factories.
 
-### finite-metal
-
-| Path in the package | Source under `originals/` | Entry | SHA-256 |
-|---|---|---|---|
-| `files/features/acid/AcidMetal.tdf` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/acid/AcidMetal.tdf` | `a825241fabbb0e5f9d11fe4ca8eab5d2415198a323f48650fd1a59572ff84e76` |
-| `files/features/archi/METAL.TDF` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/archi/METAL.TDF` | `f1f0143ab0e3497e00094739d50500737ef7e40254ff05f30cc51a031c3651ea` |
-| `files/features/archi/watermetal.tdf` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/archi/watermetal.tdf` | `ad794cf3deae0e99fbd40b8afab255ded38dfd59287f5be8b78c296a80490cf1` |
-| `files/features/crystal/Crystal-Metal.tdf` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/crystal/Crystal-Metal.tdf` | `c260cdb33c317fe825f51660abd5fc34ba7816728734980a6bb8aacee633019c` |
-| `files/features/desert/METAL.TDF` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/desert/METAL.TDF` | `ef66a4ba50f6d1f204b0012c1f24957378babb049030f1b474c9b5f44bab0c64` |
-| `files/features/green/METAL.TDF` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/green/METAL.TDF` | `51767f75d6283310c49963840f411010a5c4d10761a975dc56ee4fc99e3d2a78` |
-| `files/features/green/Watermetal.tdf` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/green/Watermetal.tdf` | `319dfb9b98fb5d315b69c170d89dfcb6175cde90fb0c051db664c7307b50f921` |
-| `files/features/ice/IceWaterMetal.tdf` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/ice/IceWaterMetal.tdf` | `47935a030aef7ccde719a7eb720d8bd2370d7230295da0257efb8430b912ce48` |
-| `files/features/ice/METAL.TDF` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/ice/METAL.TDF` | `5b193691a940ada69cd7f168d5dc096e61a52fa96896e5e45b6a1f186930f837` |
-| `files/features/lava/METAL.TDF` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/lava/METAL.TDF` | `6b070dad94b3bc638d2b9ca79c268409b0357b43c80ed716ddf69d745e4aeff4` |
-| `files/features/mars/METAL.TDF` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/mars/METAL.TDF` | `8634b8ae1dc1fb143f3d7f99c7998b7109753e5f5d8095776e20bf34e0045af0` |
-| `files/features/mars/watermetal.tdf` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/mars/watermetal.tdf` | `5cc952c0a1b5cea3b7d2052ff112b1a32ccfb05b8482c96b4b60179a9ae65762` |
-| `files/features/moon/METAL.TDF` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/moon/METAL.TDF` | `90daf1e5651475a79eb0552998744b4413bf7c000e4120ea00ab9c6f7deb75e8` |
-| `files/features/slate/METAL.TDF` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/slate/METAL.TDF` | `347fe92fc229f4eaf26d468d3413a2e60650129729bb80a482137a04551b82d7` |
-| `files/features/water/metal.tdf` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/water/metal.tdf` | `05cb2801ab9fa9f6eb71c558d864fe3e5d6d1f2f62a767493af106d4e598bc3f` |
-| `files/features/wetdesert/metal.tdf` | `igi-server/finitemetalta_mutator/{}FiniteMetal(1).ccx` | `features/wetdesert/metal.tdf` | `19e2c67620352396d67b35baf249a9207aa64cc45a110da84d7b5a54afcaec33` |
-
 ### directional-factories
 
 | Path in the package | Source under `originals/` | Entry | SHA-256 |
@@ -690,11 +885,7 @@ Each hash is the SHA-256 of the archive entry. The file under `files/` is those 
 
 ## Differences from the originals
 
-No package needed a fix. The comparisons of `finite-metal` and `finite-metal-cs` with their imports left nothing over, so those rows have no allowed file. A `remove()` and a blank `Copyright` compare as one drop. The hook removes `MetalMake` from the same units the originals' rules do (with Counter Strike units, not from a unit whose sound category is GATE), and the feature files are the originals' bytes. FLUXOR and QUARK are set to 5 metal only for the Counter Strike choice, by name, as that original does. Extractors, CORBHMTH and the converter found by that description are removed, which is what a blank `Copyright` did. Metal makers remain. Both originals told the player to add No Porc to remove them.
-
 The removal is a hook, so it combines with `no-porc` under any rule. R02's text rule would have cancelled two removals of one field (Q17); since Q63 each mutator acts on the state the ones above it left, and both orders were checked on 3.1c.
-
-`finite-metal-uh` is the same package over Uberhack 4.0. Its report drops CORBHMTH as well as the extractors that mod adds. The faithful import lists `works-with: ["ta-3.1c"]` (its `UH` code is not mapped to a mod), so `oa-tool mutator diff` refuses to apply that import on Uberhack and the versus comparison cannot be run. That row names no import: its recorded report is the check.
 
 `directional-factories.allowed` is the only allowed file. The comparison kept 237 menu lines and nothing else. Each block is one reason:
 
@@ -760,3 +951,45 @@ The import also keeps 48 download files that re-list units of a base factory. Th
 | `download/CORVP2L.TDF` | CORVP,CORVP,CORVP |
 | `download/CORVP2R.TDF` | CORVP,CORVP,CORVP |
 | `download/CORVP3L.TDF` | CORVP |
+
+## Notes from the families these packages came from
+
+These sentences are the old families' own openings. The package counts in them are those families', and a folder they name is the one this grouping replaced.
+
+### Economy and build
+
+Thirteen packages replace the eighteen TA: Mutation economy and build mutators. MAC (macraig)'s eight one-side copies of Cornucopia, Cost Cutter, Jumbo Storage and Enhanced Wind Generators are options on those packages. Variants of one mutator are options on one package. Every rule is Lua. No package takes a file from the originals.
+
+### Removals, toggles and tables
+
+Eighteen packages replace twenty of the twenty-two TA: Mutation removal, toggle and table mutators. MAC (macraig)'s Friendly Skies and Even Friendlier Skies are the aircraft option on No Air. Hover Craft Fix and Vibrant Colors are not converted. Every rule is Lua. Double LOS is the only package that ships a file from the originals, and Files names that file.
+
+### Weapons
+
+Fourteen packages replace fifteen TA: Mutation weapon-swap and build-menu mutators. SharedTech OTA and SharedTech UH are one package. The ten swaps are rules on the units the originals name. Better LLTs is the same kind of rule. Battleship Deck Lasers keeps the models and scripts as files and the stats as rules. Shared Tech and Low Tech edit build menus, so they fit any mod.
+
+### MAC's unit tweaks
+
+Fourteen packages replace sixteen of MAC's (macraig) single-unit tweaks and his two unit adders. The tweaks name the units they change, as the originals do, so a game without that unit is unchanged. The two adders ship the original's files in `files/`. Files lists each path, the archive and entry it came from, and its SHA-256. Absolute Annihilation 6.0 Tweaks is not converted. No comparison needs an allowed difference. The reports are in `_verify/`.
+
+The import id is the id `oa-tool mutator import` makes from the title, with no `--works-with`. MAC's codes (`UTASP`, `TAUCP17`, `UT40b`, `AA60` and the rest) stay on each legacy record.
+
+### Finite Metal and Directional Factories
+
+Two packages replace three of the four igi-server additions that are not in MAC's pack. Finite Metal turns metal patches into rocks and wrecks and takes metal income away. Directional Factories adds Uberhack's east, west and north-facing plants and offers them from whatever already builds the plant they face. D-TAM is not converted. The comparison reports and `directional-factories.allowed` are in `_verify/`.
+
+The import id is the id `oa-tool mutator import` makes from the title, with no `--works-with`. The compatibility codes stay on each legacy record.
+
+The Counter Strike behaviour is the option `counter_strike` (`yes` or `no`, default `no`). An option id is a Lua name, so it cannot be `counter-strike`.
+
+## Build
+
+From this repository, with the mutators environment sourced:
+
+```sh
+tools/fetch-originals --local-only
+T=$OA_WT/mutators-engine/build/oa-tool
+tools/build-packages --tool "$T" units-and-menus
+```
+
+That prints `build: units-and-menus: 9 imports, 9 packages`. Pack and check from `build/units-and-menus`. Paths in `_verify/comparisons.tsv` are relative to that folder. `_imports.tsv` lists an import only when a comparison row uses it. An original kept for the record, or compared against no import, is not a row of that table.
