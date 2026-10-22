@@ -1,0 +1,10 @@
+import	source
+no-porc	Mutators/{}NoPorc.tam
+mac-arm-nano-tower-tweak	igi-server/MAC's mutators/}{MAC ARMNTOW tweak.tam
+mac-arm-eyes-tweak	igi-server/MAC's mutators/}{MAC ARM_eyes tweak.tam
+directional-factories	igi-server/tam-directionalfactoriesv2/}{DirFact.tam
+no-air	Mutators/{}NoAir.tam
+no-hovers	Mutators/{}NoHover.tam
+close-combat	Mutators/{}CloseCombat.tam
+mac-friendly-skies	igi-server/MAC's mutators/{}MAC Friendly Skies.tam
+mac-even-friendlier-skies	igi-server/MAC's mutators/{}MAC Even Friendlier Skies.tam

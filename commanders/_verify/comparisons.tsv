@@ -11,3 +11,12 @@ commander-blast	./commander-blast	_imports/reduced-commander-blast-ota	commander
 kroggy-comm	./kroggy-comm	_imports/kroggycomm-1-1	kroggy-comm.allowed
 ravenfire-core-commander	./ravenfire-core-commander	_imports/ravenfire-s-core-com-model	-
 tribe-commander	./tribe-commander	_imports/tribe-commander	tribe-commander.allowed
+no-waste	./no-waste	_imports/no-waste	-
+resource-comm-standard	./resource-comm:level=standard	_imports/resourcecomm	-
+resource-comm-deluxe	./resource-comm:level=deluxe	_imports/resourcecomm-deluxe	-
+resource-comm-both	./resource-comm:level=both	_imports/resourcecomm _imports/resourcecomm-deluxe	resource-comm-both.allowed
+armdecom	./armdecom	_imports/armdecom	-
+super-commander	./super-commander	_imports/mac-super-commander-arm _imports/mac-super-commander-core	-
+super-commander-arm	./super-commander:side=arm	_imports/mac-super-commander-arm	-
+super-commander-core	./super-commander:side=core	_imports/mac-super-commander-core	-
+hypermobile-commanders	./hypermobile-commanders	_imports/hypermobile-commanders-3x	-

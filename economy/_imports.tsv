@@ -6,17 +6,11 @@ quickbuild-4x	Mutators/{}QuickBuild4x.tam
 jumbo-storage-2x	Mutators/{}JumboStorage2x.tam
 jumbo-storage-4x	Mutators/{}JumboStorage4x.tam
 enhanced-wind-generators	Mutators/{}EnhancedWindGenerators.tam
-no-porc	Mutators/{}NoPorc.tam
 no-resource-system	Mutators/{}NoResourceSystem.tam
-no-waste	Mutators/{}NoWaste.tam
-resourcecomm	Mutators/{}ResourceComm.tam
-resourcecomm-deluxe	Mutators/{}ResourceComm_dlx.tam
 seaplaneplatform-wtx1-5	Mutators/{}SPP_WTx1,5.tam
 seaplaneplatform-wtx2	Mutators/{}SPP_WTx2.tam
 seaplaneplatform-wtx4	Mutators/{}SPP_WTx4.tam
 advconstructionsub-bdx1-5	Mutators/{}acsub_bdx1,5.tam
-armdecom	Mutators/{}Armdecom.tam
-level-2-cost-reduc	Mutators/}{level2mut.tam
 mac-cornucopia-200-arm	igi-server/MAC's mutators/{}MAC Cornucopia 200% (Arm).tam
 mac-cornucopia-200-core	igi-server/MAC's mutators/{}MAC Cornucopia 200% (Core).tam
 mac-cost-cutter-50-arm	igi-server/MAC's mutators/{}MAC Cost Cutter 50% (Arm).tam
@@ -25,3 +19,21 @@ mac-jumbo-storage-200-arm	igi-server/MAC's mutators/{}MAC Jumbo Storage 200% (Ar
 mac-jumbo-storage-200-core	igi-server/MAC's mutators/{}MAC Jumbo Storage 200% (Core).tam
 mac-enhanced-wind-generators-arm	igi-server/MAC's mutators/{}MAC Enhanced Wind Generators (Arm).tam
 mac-enhanced-wind-generators-core	igi-server/MAC's mutators/{}MAC Enhanced Wind Generators (Core).tam
+mac-arm-advanced-solar-collector-tweak-for-utasp	igi-server/MAC's mutators/{}MAC ARMADVSOL tweak.tam
+mac-arm-adv-g-n-const-seaplane-tweak-for-utasp	igi-server/MAC's mutators/{}MAC ARMANS tweak.tam
+mac-arm-heavy-vehicle-plant-tweak-for-utasp	igi-server/MAC's mutators/{}MAC ARMHVP tweak.tam
+mac-arm-resource-facility-tweak-for-utasp-taucp	igi-server/MAC's mutators/{}MAC TAWF004 tweak.tam
+mac-arm-nano-tower-tweak-for-taucp	igi-server/MAC's mutators/{}MAC ARMNTOW TAUCP tweak.tam
+mac-arm-nano-tower-tweak-for-utasp-4-5	igi-server/MAC's mutators/{}MAC ARMNTOW UTASP45 tweak.tam
+mac-arm-quad-air-pad-tweak	igi-server/MAC's mutators/{}MAC Arm QuadAirPad tweak.tam
+mac-enhanced-builders-arm	igi-server/MAC's mutators/{}MAC Enhanced Builders (Arm).tam
+mac-enhanced-builders-core	igi-server/MAC's mutators/{}MAC Enhanced Builders (Core).tam
+mac-enhanced-builders	igi-server/MAC's mutators/{}MAC Enhanced Builders.tam
+mac-enhanced-factories-arm	igi-server/MAC's mutators/{}MAC Enhanced Factories (Arm).tam
+mac-enhanced-factories-core	igi-server/MAC's mutators/{}MAC Enhanced Factories (Core).tam
+mac-enhanced-factories	igi-server/MAC's mutators/{}MAC Enhanced Factories.tam
+mac-extended-builders-arm	igi-server/MAC's mutators/{}MAC Extended Builders (Arm).tam
+mac-extended-builders-core	igi-server/MAC's mutators/{}MAC Extended Builders (Core).tam
+mac-extended-builders	igi-server/MAC's mutators/{}MAC Extended Builders.tam
+finite-metal-ta	igi-server/finitemetalta_mutator/{}FiniteMetal.tam
+finite-metal-ta-counter-strike	igi-server/finitemetalta_cs_mutator/{}FiniteMetal_CS.tam

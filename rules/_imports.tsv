@@ -1,0 +1,12 @@
+import	source
+mac-everybody-rides-the-bus	igi-server/MAC's mutators/{}MAC Everybody Rides The Bus.tam
+mac-resources-easy-self-destruct-arm	igi-server/MAC's mutators/{}MAC Resources Easy Self-Destruct (Arm).tam
+mac-resources-easy-self-destruct-core	igi-server/MAC's mutators/{}MAC Resources Easy Self-Destruct (Core).tam
+mac-useful-mines	igi-server/MAC's mutators/{}MAC Useful Mines.tam
+no-corpses	Mutators/{}NoCorpses.tam
+hide-damage	Mutators/{}HideDamage.tam
+shootall	Mutators/{}Shootall.tam
+trans-allow-fire	Mutators/{}Trans_allow_fire_sm.tam
+subversion	Mutators/{}Subversion.tam
+they-live-again	Mutators/{}TheyLiveAgain.tam
+ai-weight-limit-remover	Mutators/{}Weight&Limit_Remover.tam

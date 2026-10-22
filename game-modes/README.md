@@ -1,8 +1,6 @@
-# Warp Gate
+# Game modes
 
-Five packages replace the twelve Warp Gate mutators Immerman shipped. `warpgate` holds the six gate versions as one Commander arrives choice and follows 4.1 for every arrival. `wg-quickstart`, `wg-fortress`, `wg-early-warning` and `ai-scrouge` each require `warpgate`. Fortress's three tiers are one Gate energy number.
-
-`originals/` and `build/` are gitignored. The commands below build the faithful imports and copy the curated packages under `build/warpgate/`. The gates, models, scripts, commander button art, Scrouge units and locator weapon are in each package's `files/`. Files names the archive and entry of each one. The archives themselves stay out of Git. `_verify/` holds `comparisons.tsv`, each row's report (`<row>.3.1c.txt`) and the allowed-difference files the comparisons needed.
+This group holds Warp Gate and the add-ons that require it, including the computer player Scrouge. Five packages. Each original's author stays in the tables here and in the package's manifest.
 
 ## Originals
 
@@ -29,16 +27,7 @@ Each `.tam` has its `.sm` beside it, and the six gate versions and (AI) Scrouge 
 
 | Part | In the originals | Curated |
 |---|---|---|
-| Gate unit files, models and `scripts/*.cob` | each `(1).ccx` | one folder for each distinct file: `files/plain` and `files/target` for the two model pairs, `files/near` for the unit files near and near-twin share, `files/target` for the chosen unit files, `files/at-gate` for at-gate's unit files, and each arrival's own folder for its scripts |
-| `anims/ARMCOM_GADGET.gaf`, `anims/CORCOM_GADGET.gaf` | each archive, the same bytes | `files/common`, read by every arrival |
-| `weapons/TARGET_LOCATOR.tdf` | Targetting, TwinTarget | `files/target`, read by chosen and chosen-twin |
-| `download/ARMGATE.tdf`, `download/CORGATE.tdf` | each archive | `menus:add` at the originals' places |
-| `gamedata/sidedata.tdf` | 3.1, 4.0, TwinComm, Targetting and TwinTarget ship the file; 4.1 rewrites `commander` by rules | the sides hook writes the commander swap, 4.1's rule, for every arrival. No side is renamed and no prefix is swapped |
-| `guis/LOUNGE2.GUI`, `guis/SKIRMISH.GUI`, `anims/skirmish.gaf`, `anims/lounge2.gaf` | the screens in 4.x, the art in every archive | left out |
-| `textures/WG_Instructions.gaf` | Targetting, TwinTarget | left out |
-| `scripts/*.bos` | each gate archive, and Scrouge | left out |
 | Scrouge units, models and `.cob` scripts | `{}AI-Scrouge(1).ccx` | `ai-scrouge` `files/`, archive names kept |
-| `Scripts/old/`, `Scrouge.txt`, Scrouge's download files | Scrouge | left out. The text of `Scrouge.txt` is in the description. The download lists are the menus hook |
 
 The arrival archives are at-gate `{}Warpgate31(1).ccx`, near `{}Warpgate4_1(1).ccx`, near-twin `{}Warpgate4_0-TwinComm(1).ccx`, chosen `{}Warpgate4_0-Targetting(1).ccx`, chosen-twin `{}Warpgate4_0-TwinTarget(1).ccx`. The gates replace 3.1c's Galactic Gates, as the originals' archives did. The locator weapon keeps the id its file requests, and the engine moves that id when another weapon already holds it.
 
@@ -191,6 +180,14 @@ The three Fortress rule files write `[Group]`, with `[Needs]` and `[Changes]` in
 
 Some computer profiles never build from the gate. If a match does not start on a gate, that profile is the likely cause. With a chosen arrival, a computer player on Arm's side never gets a commander: the Target gate builds only where a player attack-orders. On Core's side the Random gate works for a computer. `at-gate` puts the commander on the gate, and the gate is itself a commander. `near` puts the build point 8 to 30 units out, which is the gate script. The twin arrivals allow two commanders.
 
+## Notes from the families these packages came from
+
+These sentences are the old families' own openings. The package counts in them are those families', and a folder they name is the one this grouping replaced.
+
+### Warp Gate
+
+Five packages replace the twelve Warp Gate mutators Immerman shipped. `warpgate` holds the six gate versions as one Commander arrives choice and follows 4.1 for every arrival. `wg-quickstart`, `wg-fortress`, `wg-early-warning` and `ai-scrouge` each require `warpgate`. Fortress's three tiers are one Gate energy number.
+
 ## Build
 
 From this repository, with the mutators environment sourced:
@@ -198,7 +195,7 @@ From this repository, with the mutators environment sourced:
 ```sh
 tools/fetch-originals --local-only
 T=$OA_WT/mutators-engine/build/oa-tool
-tools/build-packages --tool "$T" warpgate
+tools/build-packages --tool "$T" game-modes
 ```
 
-That prints `build: warpgate: 12 imports, 5 packages`. Pack and check from `build/warpgate`. Paths in `_verify/comparisons.tsv` are relative to that folder. A second `tools/build-packages --tool "$T" warpgate --out <empty folder>` matches `build/warpgate`.
+That prints `build: game-modes: 12 imports, 5 packages`. Pack and check from `build/game-modes`. Paths in `_verify/comparisons.tsv` are relative to that folder. `_imports.tsv` lists an import only when a comparison row uses it. An original kept for the record, or compared against no import, is not a row of that table.

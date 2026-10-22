@@ -1,0 +1,18 @@
+import	source	id
+mac-clairvoyance-xlr-arm	igi-server/MAC's mutators/{}MAC Clairvoyance XLR (Arm).tam	-
+mac-clairvoyance-xlr-core	igi-server/MAC's mutators/{}MAC Clairvoyance XLR (Core).tam	-
+mac-clairvoyance-xlr	igi-server/MAC's mutators/{}MAC Clairvoyance XLR.tam	-
+mac-arm-peeper-tweak	igi-server/MAC's mutators/{}MAC ARMPEEP tweak.tam	-
+mac-clairvoyance-generic	igi-server/MAC's mutators/{}MAC Clairvoyance generic.tam	-
+mac-enhanced-los-1000	igi-server/MAC's mutators/{}MAC Enhanced LOS (1000).tam	-
+mac-enhanced-los-1600	igi-server/MAC's mutators/{}MAC Enhanced LOS (1600).tam	-
+mac-enhanced-los-200	igi-server/MAC's mutators/{}MAC Enhanced LOS (200%).tam	-
+mac-los-1600	igi-server/MAC's mutators/}{MAC LOS_1600.tam	-
+mac-incognito-arm	igi-server/MAC's mutators/{}MAC Incognito (Arm).tam	-
+mac-incognito-core	igi-server/MAC's mutators/{}MAC Incognito (Core).tam	-
+mac-incognito	igi-server/MAC's mutators/{}MAC Incognito.tam	mac-incognito
+stealthyspies	Mutators/{}StealthySpies.tam	-
+cloakmod-v1-0	Mutators/{}CloakMod1-0.tam	-
+cloakmod-v1-0-nowisee	Mutators/{}CloakMod1-0-CanSee.tam	-
+cloakmod-v1-0-expen-ive	Mutators/{}CloakMod1-0-Expensive.tam	-
+double-los	Mutators/{}DoubleLOS.tam	-

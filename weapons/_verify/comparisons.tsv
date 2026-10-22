@@ -1,15 +1,25 @@
-row	curated	imports	allowed
-a-zipper	./a-zipper	_imports/a-zipper	-
-ak-weapon	./ak-weapon	_imports/a-k-weapon	-
-armed-jeffy	./armed-jeffy	_imports/armed-jeffy	-
-better-llt	./better-llt	_imports/better-l-l-t	-
-emg-zipper	./emg-zipper	_imports/emg-fast	-
-gaatk	./gaatk	_imports/gaatk	-
-hot-zipper	./hot-zipper	_imports/hot-zipper	-
-hotfoot	./hotfoot	_imports/hotfoot	-
-super-zeus	./super-zeus	_imports/super-zeus	-
-terrain-terror	./terrain-terror	_imports/terrain-terror	-
-big-llt	./big-llt	-	-
-battleship-deck-lasers	./battleship-deck-lasers	_imports/battle-ship-deck-lasers	battleship-deck-lasers.allowed
-shared-tech	./shared-tech	-	-
-low-tech	./low-tech	-	-
+row	curated	imports	allowed	mod	map
+radar-plane-targeting	./radar-plane-targeting	_imports/mac-arm-eagle-targeting-tweak _imports/mac-arm-seahawk-targeting-tweak	-	-	-
+radar-plane-targeting-eagle	./radar-plane-targeting:plane=eagle	_imports/mac-arm-eagle-targeting-tweak	-	-	-
+radar-plane-targeting-seahawk	./radar-plane-targeting:plane=seahawk	_imports/mac-arm-seahawk-targeting-tweak	-	-	-
+lancet-targets	./lancet-targets	_imports/mac-arm-lancet-tweak-for-utasp	-	-	-
+perseus-tweak	./perseus-tweak	_imports/mac-arm-perseus-advanced-gunship-tweaks-for-utasp-3	-	utasp-v5.0	-
+armed-extractor-tweak	./armed-extractor-tweak	_imports/mac-core-armed-metal-extractor-tweak-for-utasp	-	tauip-v2.1	-
+fasta	./fasta	_imports/fasta	fasta.allowed	-	-
+close-encounters	./close-encounters	_imports/close-encounters	-	-	-
+double-ranges	./double-ranges	_imports/double-ranges	-	-	-
+double-aoe	./double-aoe	_imports/double-area-of-effect	-	-	-
+double-reload	./double-reload	_imports/double-reload-times	-	-	-
+weapon-tolerance	./weapon-tolerance	-	-	-	-
+a-zipper	./a-zipper	_imports/a-zipper	-	-	-
+ak-weapon	./ak-weapon	_imports/a-k-weapon	-	-	-
+armed-jeffy	./armed-jeffy	_imports/armed-jeffy	-	-	-
+better-llt	./better-llt	_imports/better-l-l-t	-	-	-
+emg-zipper	./emg-zipper	_imports/emg-fast	-	-	-
+gaatk	./gaatk	_imports/gaatk	-	-	-
+hot-zipper	./hot-zipper	_imports/hot-zipper	-	-	-
+hotfoot	./hotfoot	_imports/hotfoot	-	-	-
+super-zeus	./super-zeus	_imports/super-zeus	-	-	-
+terrain-terror	./terrain-terror	_imports/terrain-terror	-	-	-
+big-llt	./big-llt	-	-	-	-
+battleship-deck-lasers	./battleship-deck-lasers	_imports/battle-ship-deck-lasers	battleship-deck-lasers.allowed	-	-
