@@ -1,7 +1,7 @@
 # oa-tool mutator diff 1
 # game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
 # mod: none
-# loadout: heavy-metal 1 level=2
+# loadout: heavy-surface-metal 1 level=2
 # seed: 0
 # map: Acid Pools
-field maps/acid pools.ota [globalheader][schema 0] surfacemetal: 3 -> 128	by heavy-metal
+field maps/acid pools.ota [globalheader][schema 0] surfacemetal: 3 -> 128	by heavy-surface-metal

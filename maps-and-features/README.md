@@ -47,9 +47,9 @@ AI Tag Remover drops `ai_weight` and `ai_limit` when the field is present. The o
 | [MAC] Condensed Fog | `igi-server/MAC's mutators/{}MAC Condensed Fog.tam` | `mac-condensed-fog` | `condensed-fog` | Temblorian Mist | `condensed-fog` |
 | [MAC] No Wind | `igi-server/MAC's mutators/{}MAC No Wind.tam` | `mac-no-wind` | `map-wind`, wind calm | Acid Pools | `map-wind` |
 | [MAC] Steady Winds | `igi-server/MAC's mutators/{}MAC Steady Winds.tam` | `mac-steady-winds` | `map-wind`, wind steady | Acid Pools | `map-wind-steady` |
-| [MAC] Heavy Metal 1 | `igi-server/MAC's mutators/{}MAC Heavy Metal 1.tam` | `mac-heavy-metal-1` | `heavy-metal`, level 1 | Acid Pools | `heavy-metal-1` |
-| [MAC] Heavy Metal 2 | `igi-server/MAC's mutators/{}MAC Heavy Metal 2.tam` | `mac-heavy-metal-2` | `heavy-metal`, level 2 | Acid Pools | `heavy-metal-2` |
-| [MAC] Heavy Metal 3 | `igi-server/MAC's mutators/{}MAC Heavy Metal 3.tam` | `mac-heavy-metal-3` | `heavy-metal`, level 3 | Acid Pools | `heavy-metal-3` |
+| [MAC] Heavy Metal 1 | `igi-server/MAC's mutators/{}MAC Heavy Metal 1.tam` | `mac-heavy-metal-1` | `heavy-surface-metal`, level 1 | Acid Pools | `heavy-metal-1` |
+| [MAC] Heavy Metal 2 | `igi-server/MAC's mutators/{}MAC Heavy Metal 2.tam` | `mac-heavy-metal-2` | `heavy-surface-metal`, level 2 | Acid Pools | `heavy-metal-2` |
+| [MAC] Heavy Metal 3 | `igi-server/MAC's mutators/{}MAC Heavy Metal 3.tam` | `mac-heavy-metal-3` | `heavy-surface-metal`, level 3 | Acid Pools | `heavy-metal-3` |
 | [MAC] Maxed Metalspots | `igi-server/MAC's mutators/{}MAC Maxed Metalspots.tam` | `mac-maxed-metalspots` | `maxed-metal-spots` | `-` | `maxed-metal-spots` |
 | [MAC] No Fugly Scars | `igi-server/MAC's mutators/{}MAC No Fugly Scars.tam` | `mac-no-fugly-scars` | `no-scars` | `-` | `no-scars` |
 | [MAC] No Permanent Features | `igi-server/MAC's mutators/{}MAC No Permanent Features.tam` | `mac-no-permanent-features` | `no-permanent-features`, which all | `-` | `no-permanent-features` |
