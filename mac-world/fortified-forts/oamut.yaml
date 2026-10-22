@@ -1,7 +1,7 @@
 oamut: 1
 id: "fortified-forts"
 name: "Fortified Forts"
-version: "1"
+version: "2"
 author: { name: "MAC (macraig)" }
 description: "Static weapon structures and dragon's teeth take more punishment. A fort or a water weapon, with no metal, energy or extractor in its category and with hit points other than zero, has those hit points multiplied by 7, up to 30000, when it has no damage modifier or the modifier sits outside 0.00000001 to 1. A modifier inside that range is multiplied by 0.07 instead. Dragon's teeth that block movement, have a height and are not reclaimed on their own have their damage multiplied by 20, from 1 to 30000.\n\nThe original's text says ten times. Its rule multiplies hit points by seven, and this version keeps the rule. Fortified Forts & Walls is by MAC (macraig). OA reads a damage modifier a structure leaves out as 1, so the original, imported as written, leaves the structures without one as they were; TA: Mutation itself gave them the sevenfold hit points, and so does this version. The teeth are taken from every feature folder."
 tags: ["statistics"]

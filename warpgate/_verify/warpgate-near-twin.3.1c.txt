@@ -1,7 +1,7 @@
 # oa-tool mutator diff 1
 # game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
 # mod: none
-# loadout: warpgate 1 arrival=near-twin
+# loadout: warpgate 2 arrival=near-twin
 # seed: 0
 field download/armcom.tdf [menuentry1] button: (absent) -> 0	by warpgate
 field download/armcom.tdf [menuentry1] menu: (absent) -> 2	by warpgate

@@ -1,14 +1,14 @@
 oamut: 1
 id: "maxed-metal-spots"
 name: "Maxed Metal Spots"
-version: "1"
+version: "2"
 author: { name: "MAC (macraig)" }
 description: "Metal patches yield 255 metal. A patch is a feature whose metal is from 1 to 999, whose damage is 32009 and which cannot be destroyed. This changes the patches themselves. Heavy Metal changes the ground between them.\n\nMaxed Metalspots, by MAC (macraig), named 41 feature folders. This version checks every feature, so a map pack's or a mod's patches count as well."
 tags: ["economy", "maps"]
 works-with: ["*"]
 requires:
   engine: ">= 0.8.5"
-layers: ["units", "features"]
+layers: ["features"]
 legacy:
   - name: "[MAC] Maxed Metalspots"
     prefix: "{}"

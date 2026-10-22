@@ -29,11 +29,11 @@ Each `.tam` has its `.sm` beside it, and the six gate versions and (AI) Scrouge 
 
 | Part | In the originals | Curated |
 |---|---|---|
-| Gate unit files, models and `scripts/*.cob` | each `(1).ccx` | `files/<arrival>/`, from that arrival's archive |
-| `anims/ARMCOM_GADGET.gaf`, `anims/CORCOM_GADGET.gaf` | each archive, the same bytes | `files/<arrival>/`, from that arrival's archive |
-| `weapons/TARGET_LOCATOR.tdf` | Targetting, TwinTarget | `files/chosen/`, `files/chosen-twin/` |
+| Gate unit files, models and `scripts/*.cob` | each `(1).ccx` | one folder for each distinct file: `files/plain` and `files/target` for the two model pairs, `files/near` for the unit files near and near-twin share, `files/target` for the chosen unit files, `files/at-gate` for at-gate's unit files, and each arrival's own folder for its scripts |
+| `anims/ARMCOM_GADGET.gaf`, `anims/CORCOM_GADGET.gaf` | each archive, the same bytes | `files/common`, read by every arrival |
+| `weapons/TARGET_LOCATOR.tdf` | Targetting, TwinTarget | `files/target`, read by chosen and chosen-twin |
 | `download/ARMGATE.tdf`, `download/CORGATE.tdf` | each archive | `menus:add` at the originals' places |
-| `gamedata/sidedata.tdf` | 3.1, 4.0, TwinComm, Targetting and TwinTarget ship the file; 4.1 rewrites `commander` by rules | the units hook writes `ctx.sides`, 4.1's rule, for every arrival. No side is renamed and no prefix is swapped |
+| `gamedata/sidedata.tdf` | 3.1, 4.0, TwinComm, Targetting and TwinTarget ship the file; 4.1 rewrites `commander` by rules | the sides hook writes the commander swap, 4.1's rule, for every arrival. No side is renamed and no prefix is swapped |
 | `guis/LOUNGE2.GUI`, `guis/SKIRMISH.GUI`, `anims/skirmish.gaf`, `anims/lounge2.gaf` | the screens in 4.x, the art in every archive | left out |
 | `textures/WG_Instructions.gaf` | Targetting, TwinTarget | left out |
 | `scripts/*.bos` | each gate archive, and Scrouge | left out |
@@ -44,54 +44,72 @@ The arrival archives are at-gate `{}Warpgate31(1).ccx`, near `{}Warpgate4_1(1).c
 
 ## Files
 
-Each hash is the SHA-256 of the archive entry. The file under `files/` is those bytes. The commanders' two button pictures are the same bytes in every archive, so those two hashes repeat. The other files are hashed from the archive the row names. `near` and 4.0 share gate unit files, models and scripts; TwinComm's scripts differ; Targetting and TwinTarget share the unit files, the models and the locator weapon, and their scripts differ.
+Each hash is the SHA-256 of the archive entry. The file under `files/` is those bytes, stored once. The plan adds `files/common`, then `files/plain` or `files/target`, then for near-twin `files/near`, then `files/<arrival>`. A later folder replaces a path an earlier one added. `near` and 4.0 share gate unit files, models and scripts; TwinComm's scripts differ; Targetting and TwinTarget share the unit files, the models and the locator weapon, and their scripts differ.
 
 ### warpgate
+
+`files/common` is read by at-gate, near, near-twin, chosen and chosen-twin.
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/common/anims/ARMCOM_GADGET.gaf` | `Mutators/{}Warpgate31(1).ccx` | `anims/ARMCOM_GADGET.gaf` | `a7139ec99cc4a9ba950baaafb256e28e56c181f2ce91071b4f0156307b30107f` |
+| `files/common/anims/CORCOM_GADGET.gaf` | `Mutators/{}Warpgate31(1).ccx` | `anims/CORCOM_GADGET.gaf` | `f49c89606c548c1bb8ca42806312bf6d0c3c273dd09fb4d3e30529aa7943d4b6` |
+
+`files/plain` is read by at-gate, near and near-twin. The same model bytes are in 4.1 and TwinComm.
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/plain/objects3D/armgate.3do` | `Mutators/{}Warpgate31(1).ccx` | `objects3D/armgate.3do` | `0707a98b6177bf2e29162621eb36e34e2d5e281bb5277be0d2fac410ce4038d5` |
+| `files/plain/objects3D/corgate.3do` | `Mutators/{}Warpgate31(1).ccx` | `objects3D/corgate.3do` | `3a3f54b3a1eb0fe3473b41cbbb2e2a1c2e89bd408d179b7915799dd15f2b3e25` |
+
+`files/target` is read by chosen and chosen-twin. TwinTarget holds the same unit files, models and locator weapon.
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/target/units/armgate.fbi` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `units/armgate.fbi` | `4dc62556c315463e8ceb00e37958a23df78ee271f17857df92ebef7aa368bc2a` |
+| `files/target/units/corgate.fbi` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `units/corgate.fbi` | `c9fe1499f19d05e7bec4a423258f1ba9e757f81375f4a77ea303c071600cc62f` |
+| `files/target/objects3D/armgate.3do` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `objects3D/armgate.3do` | `6190c1fbeeb295f0ff3d3b4803444ad495cd80564d8bd8a4115df669cfb537b1` |
+| `files/target/objects3D/corgate.3do` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `objects3D/corgate.3do` | `c6300b8aecbc291b4eb7fe61876f862e20c35a444ea9f153840d23628bbfaa5a` |
+| `files/target/weapons/TARGET_LOCATOR.tdf` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `weapons/TARGET_LOCATOR.tdf` | `3430cde637ded3ab421aca804528ed2a453c348786de5ca8350faa87d936e30a` |
+
+`files/near` is read by near and near-twin. near-twin replaces the scripts with `files/near-twin`. TwinComm's unit files match 4.1.
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
+| `files/near/units/armgate.fbi` | `Mutators/{}Warpgate4_1(1).ccx` | `units/armgate.fbi` | `798f67ba2ac911dcadee1ad1608ed4591ef7e107eccce3cbe16971b70f2735b5` |
+| `files/near/units/corgate.fbi` | `Mutators/{}Warpgate4_1(1).ccx` | `units/corgate.fbi` | `1e403daca634b207f9c929cf34f6d6dbb9eb660d3c6465bcd49509e2e79a78a4` |
+| `files/near/scripts/armgate.cob` | `Mutators/{}Warpgate4_1(1).ccx` | `scripts/armgate.cob` | `9dfa07ccca709269efe9678ce9697f1629b64ebe8f4df3d2a134aa6b1f68ccf3` |
+| `files/near/scripts/corgate.cob` | `Mutators/{}Warpgate4_1(1).ccx` | `scripts/corgate.cob` | `b19874dc9050d94fe89dbd4f0f6d93dfadf5585e25f46d3c20b6930bea0f05be` |
+
+`files/at-gate` is read by at-gate.
 
 | Path in the package | Source under `originals/` | Entry | SHA-256 |
 |---|---|---|---|
 | `files/at-gate/units/armgate.fbi` | `Mutators/{}Warpgate31(1).ccx` | `units/armgate.fbi` | `d5ff307c3e927eaa9176627612b5f88e0feec7b80fa5a8c500d61c3ed98628bf` |
 | `files/at-gate/units/corgate.fbi` | `Mutators/{}Warpgate31(1).ccx` | `units/corgate.fbi` | `cc45c07db3acb4481560a89c5d50409e8332cd13c003fb1047d4daf681181a5d` |
-| `files/at-gate/objects3D/armgate.3do` | `Mutators/{}Warpgate31(1).ccx` | `objects3D/armgate.3do` | `0707a98b6177bf2e29162621eb36e34e2d5e281bb5277be0d2fac410ce4038d5` |
-| `files/at-gate/objects3D/corgate.3do` | `Mutators/{}Warpgate31(1).ccx` | `objects3D/corgate.3do` | `3a3f54b3a1eb0fe3473b41cbbb2e2a1c2e89bd408d179b7915799dd15f2b3e25` |
 | `files/at-gate/scripts/armgate.cob` | `Mutators/{}Warpgate31(1).ccx` | `scripts/armgate.cob` | `56b41ef639f380161bc0591df52d4425c4664f457b50c43cfeb53f396f2fa96a` |
 | `files/at-gate/scripts/corgate.cob` | `Mutators/{}Warpgate31(1).ccx` | `scripts/corgate.cob` | `dd4f99189d9d1b69727d88d005e6362b11847c1fa47e6d2c156f2c903e6d55eb` |
-| `files/at-gate/anims/ARMCOM_GADGET.gaf` | `Mutators/{}Warpgate31(1).ccx` | `anims/ARMCOM_GADGET.gaf` | `a7139ec99cc4a9ba950baaafb256e28e56c181f2ce91071b4f0156307b30107f` |
-| `files/at-gate/anims/CORCOM_GADGET.gaf` | `Mutators/{}Warpgate31(1).ccx` | `anims/CORCOM_GADGET.gaf` | `f49c89606c548c1bb8ca42806312bf6d0c3c273dd09fb4d3e30529aa7943d4b6` |
-| `files/near/units/armgate.fbi` | `Mutators/{}Warpgate4_1(1).ccx` | `units/armgate.fbi` | `798f67ba2ac911dcadee1ad1608ed4591ef7e107eccce3cbe16971b70f2735b5` |
-| `files/near/units/corgate.fbi` | `Mutators/{}Warpgate4_1(1).ccx` | `units/corgate.fbi` | `1e403daca634b207f9c929cf34f6d6dbb9eb660d3c6465bcd49509e2e79a78a4` |
-| `files/near/objects3D/armgate.3do` | `Mutators/{}Warpgate4_1(1).ccx` | `objects3D/armgate.3do` | `0707a98b6177bf2e29162621eb36e34e2d5e281bb5277be0d2fac410ce4038d5` |
-| `files/near/objects3D/corgate.3do` | `Mutators/{}Warpgate4_1(1).ccx` | `objects3D/corgate.3do` | `3a3f54b3a1eb0fe3473b41cbbb2e2a1c2e89bd408d179b7915799dd15f2b3e25` |
-| `files/near/scripts/armgate.cob` | `Mutators/{}Warpgate4_1(1).ccx` | `scripts/armgate.cob` | `9dfa07ccca709269efe9678ce9697f1629b64ebe8f4df3d2a134aa6b1f68ccf3` |
-| `files/near/scripts/corgate.cob` | `Mutators/{}Warpgate4_1(1).ccx` | `scripts/corgate.cob` | `b19874dc9050d94fe89dbd4f0f6d93dfadf5585e25f46d3c20b6930bea0f05be` |
-| `files/near/anims/ARMCOM_GADGET.gaf` | `Mutators/{}Warpgate4_1(1).ccx` | `anims/ARMCOM_GADGET.gaf` | `a7139ec99cc4a9ba950baaafb256e28e56c181f2ce91071b4f0156307b30107f` |
-| `files/near/anims/CORCOM_GADGET.gaf` | `Mutators/{}Warpgate4_1(1).ccx` | `anims/CORCOM_GADGET.gaf` | `f49c89606c548c1bb8ca42806312bf6d0c3c273dd09fb4d3e30529aa7943d4b6` |
-| `files/near-twin/units/armgate.fbi` | `Mutators/{}Warpgate4_0-TwinComm(1).ccx` | `units/armgate.fbi` | `798f67ba2ac911dcadee1ad1608ed4591ef7e107eccce3cbe16971b70f2735b5` |
-| `files/near-twin/units/corgate.fbi` | `Mutators/{}Warpgate4_0-TwinComm(1).ccx` | `units/corgate.fbi` | `1e403daca634b207f9c929cf34f6d6dbb9eb660d3c6465bcd49509e2e79a78a4` |
-| `files/near-twin/objects3D/armgate.3do` | `Mutators/{}Warpgate4_0-TwinComm(1).ccx` | `objects3D/armgate.3do` | `0707a98b6177bf2e29162621eb36e34e2d5e281bb5277be0d2fac410ce4038d5` |
-| `files/near-twin/objects3D/corgate.3do` | `Mutators/{}Warpgate4_0-TwinComm(1).ccx` | `objects3D/corgate.3do` | `3a3f54b3a1eb0fe3473b41cbbb2e2a1c2e89bd408d179b7915799dd15f2b3e25` |
+
+`files/near-twin` is read by near-twin.
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
 | `files/near-twin/scripts/armgate.cob` | `Mutators/{}Warpgate4_0-TwinComm(1).ccx` | `scripts/armgate.cob` | `992467c6cccdceb7ae609a9d87bea9a5622751d34148b66bd2a0bfd5df5cb030` |
 | `files/near-twin/scripts/corgate.cob` | `Mutators/{}Warpgate4_0-TwinComm(1).ccx` | `scripts/corgate.cob` | `394df343e2378d0455e75129f414509d0db6ee972ecf0b58216f26de9dbc6f9a` |
-| `files/near-twin/anims/ARMCOM_GADGET.gaf` | `Mutators/{}Warpgate4_0-TwinComm(1).ccx` | `anims/ARMCOM_GADGET.gaf` | `a7139ec99cc4a9ba950baaafb256e28e56c181f2ce91071b4f0156307b30107f` |
-| `files/near-twin/anims/CORCOM_GADGET.gaf` | `Mutators/{}Warpgate4_0-TwinComm(1).ccx` | `anims/CORCOM_GADGET.gaf` | `f49c89606c548c1bb8ca42806312bf6d0c3c273dd09fb4d3e30529aa7943d4b6` |
-| `files/chosen/units/armgate.fbi` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `units/armgate.fbi` | `4dc62556c315463e8ceb00e37958a23df78ee271f17857df92ebef7aa368bc2a` |
-| `files/chosen/units/corgate.fbi` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `units/corgate.fbi` | `c9fe1499f19d05e7bec4a423258f1ba9e757f81375f4a77ea303c071600cc62f` |
-| `files/chosen/objects3D/armgate.3do` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `objects3D/armgate.3do` | `6190c1fbeeb295f0ff3d3b4803444ad495cd80564d8bd8a4115df669cfb537b1` |
-| `files/chosen/objects3D/corgate.3do` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `objects3D/corgate.3do` | `c6300b8aecbc291b4eb7fe61876f862e20c35a444ea9f153840d23628bbfaa5a` |
+
+`files/chosen` is read by chosen.
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
 | `files/chosen/scripts/armgate.cob` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `scripts/armgate.cob` | `f47045f0be312c47585f8417adc311ad8e1632fe5586037d84374685f21f7086` |
 | `files/chosen/scripts/corgate.cob` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `scripts/corgate.cob` | `127fe2864edacfdcf623aa8bdef624844db992e9b7aa69667b5d3db8cdd7c3ae` |
-| `files/chosen/anims/ARMCOM_GADGET.gaf` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `anims/ARMCOM_GADGET.gaf` | `a7139ec99cc4a9ba950baaafb256e28e56c181f2ce91071b4f0156307b30107f` |
-| `files/chosen/anims/CORCOM_GADGET.gaf` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `anims/CORCOM_GADGET.gaf` | `f49c89606c548c1bb8ca42806312bf6d0c3c273dd09fb4d3e30529aa7943d4b6` |
-| `files/chosen/weapons/TARGET_LOCATOR.tdf` | `Mutators/{}Warpgate4_0-Targetting(1).ccx` | `weapons/TARGET_LOCATOR.tdf` | `3430cde637ded3ab421aca804528ed2a453c348786de5ca8350faa87d936e30a` |
-| `files/chosen-twin/units/armgate.fbi` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `units/armgate.fbi` | `4dc62556c315463e8ceb00e37958a23df78ee271f17857df92ebef7aa368bc2a` |
-| `files/chosen-twin/units/corgate.fbi` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `units/corgate.fbi` | `c9fe1499f19d05e7bec4a423258f1ba9e757f81375f4a77ea303c071600cc62f` |
-| `files/chosen-twin/objects3D/armgate.3do` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `objects3D/armgate.3do` | `6190c1fbeeb295f0ff3d3b4803444ad495cd80564d8bd8a4115df669cfb537b1` |
-| `files/chosen-twin/objects3D/corgate.3do` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `objects3D/corgate.3do` | `c6300b8aecbc291b4eb7fe61876f862e20c35a444ea9f153840d23628bbfaa5a` |
+
+`files/chosen-twin` is read by chosen-twin.
+
+| Path in the package | Source under `originals/` | Entry | SHA-256 |
+|---|---|---|---|
 | `files/chosen-twin/scripts/armgate.cob` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `scripts/armgate.cob` | `90efa23bf65786bb609322a2d0072aed211304fa161a37f471d435576cb2d78e` |
 | `files/chosen-twin/scripts/corgate.cob` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `scripts/corgate.cob` | `1e5dcbfe119ab01ed6a1cfad90442c78983046e6738c1259363ad747de93cf31` |
-| `files/chosen-twin/anims/ARMCOM_GADGET.gaf` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `anims/ARMCOM_GADGET.gaf` | `a7139ec99cc4a9ba950baaafb256e28e56c181f2ce91071b4f0156307b30107f` |
-| `files/chosen-twin/anims/CORCOM_GADGET.gaf` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `anims/CORCOM_GADGET.gaf` | `f49c89606c548c1bb8ca42806312bf6d0c3c273dd09fb4d3e30529aa7943d4b6` |
-| `files/chosen-twin/weapons/TARGET_LOCATOR.tdf` | `Mutators/{}Warpgate4_0-TwinTarget(1).ccx` | `weapons/TARGET_LOCATOR.tdf` | `3430cde637ded3ab421aca804528ed2a453c348786de5ca8350faa87d936e30a` |
 
 ### ai-scrouge
 

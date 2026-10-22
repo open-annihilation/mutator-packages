@@ -27,18 +27,30 @@ function mutate(ctx)
   if arrival == "near-twin" or arrival == "chosen-twin" then
     commanders.commander = set(0)
   end
+  local gate = "plain"
+  if arrival == "chosen" or arrival == "chosen-twin" then
+    gate = "target"
+  end
+  -- Shared folders first. A later folder replaces a path an earlier one
+  -- added. near and near-twin share unit files; near-twin then replaces
+  -- the scripts those files sit beside.
+  local add = { "files/common", "files/" .. gate }
+  if arrival == "near-twin" then
+    table.insert(add, "files/near")
+  end
+  table.insert(add, "files/" .. arrival)
   local plan = {
-    files = { add = { "files/" .. arrival } },
+    files = { add = add },
     rules = {
       where { commander = 1, bmcode = 1 }:change(commanders),
       all():change { side = lock(0) },
     },
-    units = function(units, ctx)
-      if units.ARMCOM == nil or units.CORCOM == nil then
+    sides = function(sides, ctx)
+      if ctx.units.ARMCOM == nil or ctx.units.CORCOM == nil then
         ctx.incompatible("Warp Gate needs the Arm and Core commanders, ARMCOM and CORCOM")
         return
       end
-      ctx.sides:each(function(side)
+      sides:each(function(side)
         local commander = side.commander
         if commander == nil then
           return
