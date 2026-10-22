@@ -8,7 +8,13 @@ special-tech-comm	Mutators/{}SpecialTechComm.tam
 autotargetcomm	Mutators/{}AutotargetComm.tam
 no-rampage-comm	Mutators/{}No_RampageComm.tam
 reduced-commander-blast-ota	Mutators/}{CommBlastOTA.tam
-reduced-commander-blast-uh	Mutators/}{CommBlastUH.tam
 kroggycomm-1-1	Mutators/}{KroggyComm11.tam
 ravenfire-s-core-com-model	Mutators/}{RFCoreComModel.tam
 tribe-commander	Mutators/}{Tribe.tam
+no-waste	Mutators/{}NoWaste.tam
+resourcecomm	Mutators/{}ResourceComm.tam
+resourcecomm-deluxe	Mutators/{}ResourceComm_dlx.tam
+armdecom	Mutators/{}Armdecom.tam
+mac-super-commander-arm	igi-server/MAC's mutators/{}MAC Super Commander (Arm).tam
+mac-super-commander-core	igi-server/MAC's mutators/{}MAC Super Commander (Core).tam
+hypermobile-commanders-3x	Mutators/{}HyperComms3x.tam

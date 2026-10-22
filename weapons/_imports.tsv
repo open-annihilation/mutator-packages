@@ -1,4 +1,14 @@
 import	source
+mac-arm-perseus-advanced-gunship-tweaks-for-utasp-3	igi-server/MAC's mutators/{}MAC ARMPERS tweak.tam
+mac-core-armed-metal-extractor-tweak-for-utasp	igi-server/MAC's mutators/{}MAC MLEX tweak.tam
+mac-arm-eagle-targeting-tweak	igi-server/MAC's mutators/{}MAC ARMAWAC tweak.tam
+mac-arm-seahawk-targeting-tweak	igi-server/MAC's mutators/{}MAC ARMSEHAK tweak.tam
+mac-arm-lancet-tweak-for-utasp	igi-server/MAC's mutators/{}MAC ARMLANCE tweak.tam
+fasta	Mutators/{}FasTA.tam
+close-encounters	Mutators/{}CloseEncounters.tam
+double-ranges	S-Mutators/DoubleRanges_mutator.zip
+double-area-of-effect	S-Mutators/DoubleAoE_mutator.zip
+double-reload-times	S-Mutators/DoubleReloadTimes_mutator.zip
 a-zipper	Mutators/{}A Zipper.tam
 a-k-weapon	Mutators/{}A.K Weapon.tam
 armed-jeffy	Mutators/{}Armed Jeffy.tam
@@ -9,8 +19,4 @@ hot-zipper	Mutators/{}Hot zipper.tam
 hotfoot	Mutators/{}Hotfoot.tam
 super-zeus	Mutators/{}Super zeus.tam
 terrain-terror	Mutators/{}Terrain Terror.tam
-better-llts	Mutators/}{BigLLT.tam
 battle-ship-deck-lasers	Mutators/}{BSDECKL.tam
-sharedtech-ota	Mutators/}{SharedTechOTA.tam
-sharedtech-uh	Mutators/}{SharedTechUH.tam
-low-tech	Mutators/}{LowTech.tam

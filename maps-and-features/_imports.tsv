@@ -12,4 +12,4 @@ mac-maxed-metalspots	igi-server/MAC's mutators/{}MAC Maxed Metalspots.tam
 mac-no-fugly-scars	igi-server/MAC's mutators/{}MAC No Fugly Scars.tam
 mac-no-permanent-features	igi-server/MAC's mutators/{}MAC No Permanent Features.tam
 mac-destructible-monorails	igi-server/MAC's mutators/{}MAC Destructible Monorails.tam
-mac-fortified-forts-walls	igi-server/MAC's mutators/{}MAC Fortified Forts & Walls.tam
+non-blocking-corpses	Mutators/{}Non-blockingCorpses.tam

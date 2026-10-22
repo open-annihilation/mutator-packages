@@ -1,31 +1,44 @@
-row	curated	imports	allowed
-cornucopia	./cornucopia	_imports/cornucopia-2x	cornucopia.allowed
-cost-cutter	./cost-cutter	_imports/cost-cutter-1-2	-
-quick-build-2	./quick-build:factor=2	_imports/quickbuild-2x	-
-quick-build-4	./quick-build:factor=4	_imports/quickbuild-4x	-
-quick-build-8	./quick-build:factor=8	_imports/quickbuild-2x _imports/quickbuild-4x	-
-jumbo-storage-2	./jumbo-storage:factor=2	_imports/jumbo-storage-2x	-
-jumbo-storage-4	./jumbo-storage:factor=4	_imports/jumbo-storage-4x	-
-jumbo-storage-8	./jumbo-storage:factor=8	_imports/jumbo-storage-2x _imports/jumbo-storage-4x	-
-enhanced-wind	./enhanced-wind	_imports/enhanced-wind-generators	-
-no-porc	./no-porc	_imports/no-porc	-
-no-resource-system	./no-resource-system	_imports/no-resource-system	-
-no-waste	./no-waste	_imports/no-waste	-
-resource-comm-standard	./resource-comm:level=standard	_imports/resourcecomm	-
-resource-comm-deluxe	./resource-comm:level=deluxe	_imports/resourcecomm-deluxe	-
-resource-comm-both	./resource-comm:level=both	_imports/resourcecomm _imports/resourcecomm-deluxe	resource-comm-both.allowed
-seaplane-platform-speed-1.5	./seaplane-platform-speed:factor=1.5	_imports/seaplaneplatform-wtx1-5	-
-seaplane-platform-speed-2	./seaplane-platform-speed:factor=2	_imports/seaplaneplatform-wtx2	-
-seaplane-platform-speed-4	./seaplane-platform-speed:factor=4	_imports/seaplaneplatform-wtx4	-
-seaplane-platform-speed-3	./seaplane-platform-speed:factor=3	_imports/seaplaneplatform-wtx1-5 _imports/seaplaneplatform-wtx2	-
-advanced-sub-reach	./advanced-sub-reach	_imports/advconstructionsub-bdx1-5	-
-armdecom	./armdecom	_imports/armdecom	-
-level-2-discount	./level-2-discount	-	-
-cornucopia-arm	./cornucopia:side=arm	_imports/mac-cornucopia-200-arm	cornucopia.allowed
-cornucopia-core	./cornucopia:side=core	_imports/mac-cornucopia-200-core	cornucopia.allowed
-cost-cutter-arm	./cost-cutter:side=arm	_imports/mac-cost-cutter-50-arm	-
-cost-cutter-core	./cost-cutter:side=core	_imports/mac-cost-cutter-50-core	-
-jumbo-storage-2-arm	./jumbo-storage:factor=2,side=arm	_imports/mac-jumbo-storage-200-arm	-
-jumbo-storage-2-core	./jumbo-storage:factor=2,side=core	_imports/mac-jumbo-storage-200-core	-
-enhanced-wind-arm	./enhanced-wind:side=arm	_imports/mac-enhanced-wind-generators-arm	-
-enhanced-wind-core	./enhanced-wind:side=core	_imports/mac-enhanced-wind-generators-core	-
+row	curated	imports	allowed	mod	map
+cornucopia	./cornucopia	_imports/cornucopia-2x	cornucopia.allowed	-	-
+cost-cutter	./cost-cutter	_imports/cost-cutter-1-2	-	-	-
+quick-build-2	./quick-build:factor=2	_imports/quickbuild-2x	-	-	-
+quick-build-4	./quick-build:factor=4	_imports/quickbuild-4x	-	-	-
+quick-build-8	./quick-build:factor=8	_imports/quickbuild-2x _imports/quickbuild-4x	-	-	-
+jumbo-storage-2	./jumbo-storage:factor=2	_imports/jumbo-storage-2x	-	-	-
+jumbo-storage-4	./jumbo-storage:factor=4	_imports/jumbo-storage-4x	-	-	-
+jumbo-storage-8	./jumbo-storage:factor=8	_imports/jumbo-storage-2x _imports/jumbo-storage-4x	-	-	-
+enhanced-wind	./enhanced-wind	_imports/enhanced-wind-generators	-	-	-
+no-resource-system	./no-resource-system	_imports/no-resource-system	-	-	-
+seaplane-platform-speed-1.5	./seaplane-platform-speed:factor=1.5	_imports/seaplaneplatform-wtx1-5	-	-	-
+seaplane-platform-speed-2	./seaplane-platform-speed:factor=2	_imports/seaplaneplatform-wtx2	-	-	-
+seaplane-platform-speed-4	./seaplane-platform-speed:factor=4	_imports/seaplaneplatform-wtx4	-	-	-
+seaplane-platform-speed-3	./seaplane-platform-speed:factor=3	_imports/seaplaneplatform-wtx1-5 _imports/seaplaneplatform-wtx2	-	-	-
+advanced-sub-reach	./advanced-sub-reach	_imports/advconstructionsub-bdx1-5	-	-	-
+level-2-discount	./level-2-discount	-	-	-	-
+cornucopia-arm	./cornucopia:side=arm	_imports/mac-cornucopia-200-arm	cornucopia.allowed	-	-
+cornucopia-core	./cornucopia:side=core	_imports/mac-cornucopia-200-core	cornucopia.allowed	-	-
+cost-cutter-arm	./cost-cutter:side=arm	_imports/mac-cost-cutter-50-arm	-	-	-
+cost-cutter-core	./cost-cutter:side=core	_imports/mac-cost-cutter-50-core	-	-	-
+jumbo-storage-2-arm	./jumbo-storage:factor=2,side=arm	_imports/mac-jumbo-storage-200-arm	-	-	-
+jumbo-storage-2-core	./jumbo-storage:factor=2,side=core	_imports/mac-jumbo-storage-200-core	-	-	-
+enhanced-wind-arm	./enhanced-wind:side=arm	_imports/mac-enhanced-wind-generators-arm	-	-	-
+enhanced-wind-core	./enhanced-wind:side=core	_imports/mac-enhanced-wind-generators-core	-	-	-
+advanced-solar-tweak	./advanced-solar-tweak	_imports/mac-arm-advanced-solar-collector-tweak-for-utasp	-	utasp-v5.0	-
+adv-seaplane-builder-tweak	./adv-seaplane-builder-tweak	_imports/mac-arm-adv-g-n-const-seaplane-tweak-for-utasp	-	utasp-v5.0	-
+heavy-vehicle-plant-tweak	./heavy-vehicle-plant-tweak	_imports/mac-arm-heavy-vehicle-plant-tweak-for-utasp	-	utasp-v5.0	-
+resource-facility-tweak	./resource-facility-tweak	_imports/mac-arm-resource-facility-tweak-for-utasp-taucp	-	utasp-v5.0	-
+nano-tower-tweak	./nano-tower-tweak	_imports/mac-arm-nano-tower-tweak-for-utasp-4-5	-	utasp-v5.0	-
+nano-tower-tweak-taucp	./nano-tower-tweak:pack=taucp	_imports/mac-arm-nano-tower-tweak-for-taucp	-	utasp-v5.0	-
+quad-air-pad-tweak	./quad-air-pad-tweak	_imports/mac-arm-quad-air-pad-tweak	-	utasp-v5.0	-
+enhanced-builders	./enhanced-builders	_imports/mac-enhanced-builders	-	-	-
+enhanced-builders-arm	./enhanced-builders:side=arm	_imports/mac-enhanced-builders-arm	-	-	-
+enhanced-builders-core	./enhanced-builders:side=core	_imports/mac-enhanced-builders-core	-	-	-
+enhanced-factories	./enhanced-factories	_imports/mac-enhanced-factories	-	-	-
+enhanced-factories-arm	./enhanced-factories:side=arm	_imports/mac-enhanced-factories-arm	-	-	-
+enhanced-factories-core	./enhanced-factories:side=core	_imports/mac-enhanced-factories-core	-	-	-
+extended-builders	./extended-builders	_imports/mac-extended-builders	extended-builders.allowed	-	-
+extended-builders-arm	./extended-builders:side=arm	_imports/mac-extended-builders-arm	extended-builders.allowed	-	-
+extended-builders-core	./extended-builders:side=core	_imports/mac-extended-builders-core	extended-builders.allowed	-	-
+finite-metal	./finite-metal	_imports/finite-metal-ta	-	-	-
+finite-metal-cs	./finite-metal:counter_strike=yes	_imports/finite-metal-ta-counter-strike	-	-	-
+finite-metal-uh	./finite-metal	-	-	uberhack-v4.0	-

@@ -1,0 +1,18 @@
+row	curated	imports	allowed	mod	map
+peeper-tweak	./peeper-tweak	_imports/mac-arm-peeper-tweak	-	-	-
+clairvoyance-xlr	./clairvoyance-xlr	_imports/mac-clairvoyance-xlr	-	utasp-v5.0	-
+clairvoyance-xlr-arm	./clairvoyance-xlr:side=arm	_imports/mac-clairvoyance-xlr-arm	-	utasp-v5.0	-
+clairvoyance-xlr-core	./clairvoyance-xlr:side=core	_imports/mac-clairvoyance-xlr-core	-	utasp-v5.0	-
+clairvoyance-xlr-taucp	./clairvoyance-xlr:side=arm	_imports/mac-clairvoyance-xlr-arm	-	taucp-v2.3	-
+clairvoyance	./clairvoyance	_imports/mac-clairvoyance-generic	-	-	-
+enhanced-los-double	./enhanced-los	_imports/mac-enhanced-los-200 _imports/mac-los-1600	-	-	-
+enhanced-los-1000	./enhanced-los:sight=1000	_imports/mac-enhanced-los-1000 _imports/mac-los-1600	-	-	-
+enhanced-los-1600	./enhanced-los:sight=1600	_imports/mac-enhanced-los-1600 _imports/mac-los-1600	-	-	-
+incognito	./incognito	_imports/mac-incognito	-	-	-
+incognito-arm	./incognito:side=arm	_imports/mac-incognito-arm	-	-	-
+incognito-core	./incognito:side=core	_imports/mac-incognito-core	-	-	-
+stealthy-spies	./stealthy-spies	_imports/stealthyspies	stealthy-spies.allowed	-	-
+cloakmod	./cloakmod	_imports/cloakmod-v1-0	-	-	-
+cloakmod-see	./cloakmod:distance=5	_imports/cloakmod-v1-0 _imports/cloakmod-v1-0-nowisee	-	-	-
+cloakmod-expensive	./cloakmod:cost=2	_imports/cloakmod-v1-0 _imports/cloakmod-v1-0-expen-ive	-	-	-
+double-los	./double-los	_imports/double-los	-	-	-

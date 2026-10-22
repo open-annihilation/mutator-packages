@@ -12,4 +12,4 @@ maxed-metal-spots	./maxed-metal-spots	_imports/mac-maxed-metalspots	-	-	-
 no-scars	./no-scars	_imports/mac-no-fugly-scars	-	-	-
 no-permanent-features	./no-permanent-features	_imports/mac-no-permanent-features	-	-	-
 no-permanent-features-monorails	./no-permanent-features:which=monorails	_imports/mac-destructible-monorails	-	-	-
-fortified-forts	./fortified-forts	_imports/mac-fortified-forts-walls	fortified-forts.allowed	-	-
+non-blocking-corpses	./non-blocking-corpses	_imports/non-blocking-corpses	non-blocking-corpses.allowed	-	-
