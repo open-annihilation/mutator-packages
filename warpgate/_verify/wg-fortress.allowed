@@ -1,0 +1,16 @@
+# The originals set MakesEnergy, which no unit has, so they added an unused field to every unit
+right only field units/*.fbi [unitinfo] makesenergy: (absent) -> 0
+
+# OA zeroes everything and then locks the gates, so the gates keep their income. The imports leave the gates at 0. The value depends on Gate energy
+left only field units/armgate.fbi [unitinfo] energymake: (absent) -> *
+left only field units/armgate.fbi [unitinfo] metalmake: (absent) -> *
+left only field units/armgate.fbi [unitinfo] energystorage: 0 -> 1000000000
+left only field units/armgate.fbi [unitinfo] metalstorage: 0 -> 1000000000
+left only field units/corgate.fbi [unitinfo] energymake: (absent) -> *
+left only field units/corgate.fbi [unitinfo] metalmake: (absent) -> *
+left only field units/corgate.fbi [unitinfo] energystorage: 0 -> 1000000000
+left only field units/corgate.fbi [unitinfo] metalstorage: 0 -> 1000000000
+right only field units/armgate.fbi [unitinfo] energymake: (absent) -> 0
+right only field units/armgate.fbi [unitinfo] metalmake: (absent) -> 0
+right only field units/corgate.fbi [unitinfo] energymake: (absent) -> 0
+right only field units/corgate.fbi [unitinfo] metalmake: (absent) -> 0

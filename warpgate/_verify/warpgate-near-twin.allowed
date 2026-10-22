@@ -1,0 +1,12 @@
+# The curated package ships the commanders' button art, which the import leaves out because its archive holds no ARMCOM or CORCOM unit file (F04 allows the art at run time)
+left only file added anims/armcom_gadget.gaf a7139ec99cc4a9ba950baaafb256e28e56c181f2ce91071b4f0156307b30107f
+left only file added anims/corcom_gadget.gaf f49c89606c548c1bb8ca42806312bf6d0c3c273dd09fb4d3e30529aa7943d4b6
+
+# Script sources, which the game never reads. The campaign gates already have these files, so the import replaces them
+right only file replaced scripts/*.bos *
+
+# The original renamed the sides NORM and EASY and swapped their name prefixes; the curated package follows 4.1 and keeps the names
+right only field gamedata/sidedata.tdf [side0] name: ARM -> NORM
+right only field gamedata/sidedata.tdf [side0] nameprefix: ARM -> COR
+right only field gamedata/sidedata.tdf [side1] name: CORE -> EASY
+right only field gamedata/sidedata.tdf [side1] nameprefix: COR -> ARM
