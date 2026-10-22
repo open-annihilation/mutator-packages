@@ -1,0 +1,57 @@
+# Script sources and the stale scripts the archive kept in Scripts/old/, which the game never reads
+right only file added scripts/*.bos *
+right only file added scripts/old/* *
+
+# The originals' entries give no MENU or BUTTON, which the game reads as page 0, a page menus:add cannot name. The curated entries take the first free slots
+left only menu added ARMGATE 2 2 SCROUGE
+left only menu added CORGATE 2 2 SCROUGE
+left only menu added SCROUGE 2 0 SCRGMEX
+left only menu added SCROUGE 2 1 ARMGUARD
+left only menu added SCROUGE 2 2 CORPUN
+left only menu added SCROUGE 2 3 ARMLLT
+left only menu added SCROUGE 2 4 CORLLT
+left only menu added SCROUGE 2 5 ARMHLT
+left only menu added SCROUGE 3 0 CORHLT
+left only menu added SCROUGE 3 1 ARMTL
+left only menu added SCROUGE 3 2 CORTL
+left only menu added SCROUGE 3 3 ARMRL
+left only menu added SCROUGE 3 4 CORRL
+left only menu added SCROUGE 3 5 ARMAP
+left only menu added SCROUGE 4 0 ARMLAB
+left only menu added SCROUGE 4 1 ARMSY
+left only menu added SCROUGE 4 2 ARMVP
+left only menu added SCROUGE 4 3 CORAP
+left only menu added SCROUGE 4 4 CORLAB
+left only menu added SCROUGE 4 5 CORSY
+left only menu added SCROUGE 5 0 CORVP
+right only menu added ARMGATE 0 0 SCROUGE
+right only menu added CORGATE 0 0 SCROUGE
+right only menu added SCROUGE 0 0 ARMAP
+right only menu added SCROUGE 0 0 ARMGUARD
+right only menu added SCROUGE 0 0 ARMHLT
+right only menu added SCROUGE 0 0 ARMLAB
+right only menu added SCROUGE 0 0 ARMLLT
+right only menu added SCROUGE 0 0 ARMRL
+right only menu added SCROUGE 0 0 ARMSY
+right only menu added SCROUGE 0 0 ARMTL
+right only menu added SCROUGE 0 0 ARMVP
+right only menu added SCROUGE 0 0 CORAP
+right only menu added SCROUGE 0 0 CORHLT
+right only menu added SCROUGE 0 0 CORLAB
+right only menu added SCROUGE 0 0 CORLLT
+right only menu added SCROUGE 0 0 CORPUN
+right only menu added SCROUGE 0 0 CORRL
+right only menu added SCROUGE 0 0 CORSY
+right only menu added SCROUGE 0 0 CORTL
+right only menu added SCROUGE 0 0 CORVP
+right only menu added SCROUGE 0 0 SCRGMEX
+
+# The import leaves ARMCOM and CORCOM at side 0, and the Scrouge's records at the sides they ship. This package locks SCROUGE and SCRGMEX at side 0, and its units hook writes side 10000 on the commanders Warp Gate marked
+left only field units/armcom.fbi [unitinfo] side: ARM -> 10000
+left only field units/corcom.fbi [unitinfo] side: CORE -> 10000
+left only field units/scrgmex.fbi [unitinfo] side: (absent) -> 0
+left only field units/scrouge.fbi [unitinfo] side: (absent) -> 0
+right only field units/armcom.fbi [unitinfo] side: ARM -> 0
+right only field units/corcom.fbi [unitinfo] side: CORE -> 0
+right only field units/scrgmex.fbi [unitinfo] side: (absent) -> CORE
+right only field units/scrouge.fbi [unitinfo] side: (absent) -> SCROUGE
