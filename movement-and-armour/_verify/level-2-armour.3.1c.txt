@@ -38,7 +38,7 @@ field units/coreter.fbi [unitinfo] maxdamage: 520 -> 624	by level-2-armour
 field units/corfast.fbi [unitinfo] maxdamage: 630 -> 756	by level-2-armour
 field units/corgol.fbi [unitinfo] maxdamage: 2845 -> 3414	by level-2-armour
 field units/corhrk.fbi [unitinfo] maxdamage: 620 -> 744	by level-2-armour
-field units/corkrog.fbi [unitinfo] maxdamage: 29918 -> 35901.6	by level-2-armour
+field units/corkrog.fbi [unitinfo] maxdamage: 29918 -> 32767	by level-2-armour
 field units/cormart.fbi [unitinfo] maxdamage: 600 -> 720	by level-2-armour
 field units/cormist.fbi [unitinfo] maxdamage: 655 -> 786	by level-2-armour
 field units/corpyro.fbi [unitinfo] maxdamage: 700 -> 840	by level-2-armour

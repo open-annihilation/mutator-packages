@@ -545,7 +545,7 @@ field units/corhurc.fbi [unitinfo] maxvelocity: 9.1 -> 7.735	by exaggerated-side
 field units/corhurc.fbi [unitinfo] turnrate: 256 -> 217.6	by exaggerated-sides
 field units/corkrog.fbi [unitinfo] acceleration: 0.09 -> 0.0657	by exaggerated-sides
 field units/corkrog.fbi [unitinfo] brakerate: 0.19 -> 0.1387	by exaggerated-sides
-field units/corkrog.fbi [unitinfo] maxdamage: 29918 -> 35901.6	by exaggerated-sides
+field units/corkrog.fbi [unitinfo] maxdamage: 29918 -> 32767	by exaggerated-sides
 field units/corkrog.fbi [unitinfo] maxvelocity: 1 -> 0.85	by exaggerated-sides
 field units/corkrog.fbi [unitinfo] turnrate: 960 -> 816	by exaggerated-sides
 field units/corlevlr.fbi [unitinfo] acceleration: 0.02 -> 0.0146	by exaggerated-sides
