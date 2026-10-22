@@ -1,0 +1,22 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: battleship-deck-lasers 1
+# seed: 0
+field units/armbats.fbi [unitinfo] acceleration: 0.005 -> 0.01	by battleship-deck-lasers
+field units/armbats.fbi [unitinfo] brakerate: 0.018 -> 0.025	by battleship-deck-lasers
+field units/armbats.fbi [unitinfo] maxdamage: 5720 -> 8064	by battleship-deck-lasers
+field units/armbats.fbi [unitinfo] weapon3: (absent) -> ARM_LIGHTLASER	by battleship-deck-lasers
+field units/armbats.fbi [unitinfo] wspe_badtargetcategory: (absent) -> ANTILASER	by battleship-deck-lasers
+field units/corbats.fbi [unitinfo] acceleration: 0.0045 -> 0.011	by battleship-deck-lasers
+field units/corbats.fbi [unitinfo] brakerate: 0.018310547 -> 0.02	by battleship-deck-lasers
+field units/corbats.fbi [unitinfo] maxdamage: 6140 -> 8364	by battleship-deck-lasers
+field units/corbats.fbi [unitinfo] weapon1: CORE_BATSLASER -> COR_BATS	by battleship-deck-lasers
+field units/corbats.fbi [unitinfo] weapon2: COR_BATS -> CORE_BATSLASER	by battleship-deck-lasers
+field units/corbats.fbi [unitinfo] weapon3: (absent) -> CORE_LIGHTLASER	by battleship-deck-lasers
+field units/corbats.fbi [unitinfo] wsec_badtargetcategory: (absent) -> ANTILASER	by battleship-deck-lasers
+field units/corbats.fbi [unitinfo] wspe_badtargetcategory: (absent) -> ANTILASER	by battleship-deck-lasers
+file replaced objects3d/armbats.3do d654a298169be9e0b62174cb1c3c7e1ec81d74882add443bd3430b324e5b5f15 ba74d46536db75d664c238963deec8eb6cce8a08276a213ac7ab93e3329d84ab	by battleship-deck-lasers
+file replaced objects3d/corbats.3do 612c2c833414791686c38c5b9b776c15952b09cc2cd16197016fda52c97fbceb 1136af2b7883559a8f01ad27ca245f7b2d485ee194a93d0574d502291fbad7a7	by battleship-deck-lasers
+file replaced scripts/armbats.cob 6a5fcd725391801fe9fb45a5916e003fccd7b6b5665fdadb3787015630d64c1c a9f6dbc305afc40de04418c962503687b735f4a90261eabd5a60457b3f6a6320	by battleship-deck-lasers
+file replaced scripts/corbats.cob e01432d1cc563ff725cf8856e0459360c6fdc513453de26325e5d2ed5bc562d8 0a3404ab63aebe158ac478434044bde3118d4f6e4c665fc3527460ceac6aa64e	by battleship-deck-lasers
