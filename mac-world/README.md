@@ -1,6 +1,6 @@
 # MAC's map and feature mutators
 
-Nine packages replace the fourteen map and feature mutators MAC (macraig) wrote. Acid's two strengths, wind's two settings, Heavy Metal's three levels and the choice between every indestructible feature and the monorails are options. The map packages run in the maps phase, on the one map the match chose. The feature packages declare `units` and `features` and write `ctx.features` from the units hook, because a plan has no features hook.
+Nine packages replace the fourteen map and feature mutators MAC (macraig) wrote. Acid's two strengths, wind's two settings, Heavy Metal's three levels and the choice between every indestructible feature and the monorails are options. The map packages run in the maps phase, on the one map the match chose. Maxed Metalspots, No Scars and No Permanent Features declare `features` and do their work in a features hook. Fortified Forts keeps `units`, because its rules change wall and fort units by ted class, and fortifies dragon's teeth in a features hook.
 
 `originals/` and `build/` are gitignored. The commands below build the faithful imports and the curated packages under `build/mac-world/`. L24 compares each row and records the reports. `fortified-forts.allowed` is L24's as well.
 

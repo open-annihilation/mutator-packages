@@ -19,15 +19,15 @@ end
 function mutate(ctx)
   local monorails = ctx.options.which == "monorails"
   return {
-    units = function(units, ctx)
+    features = function(features, ctx)
       local chosen
       if monorails then
-        chosen = ctx.features:where {
+        chosen = features:where {
           description = has("Monorail"),
           indestructible = 1,
         }
       else
-        chosen = ctx.features:where {
+        chosen = features:where {
           indestructible = "1",
           geothermal = not_(is("1")),
           metal = not_(range(1, 999)),

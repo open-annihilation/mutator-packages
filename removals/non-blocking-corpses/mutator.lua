@@ -1,10 +1,9 @@
--- A plan has no features hook. The units hook writes the features collection.
 -- A wreck is a feature some unit names as its corpse, then each feature that
--- wreck turns into, followed to the end of the chain.
+-- wreck turns into, followed to the end of the chain. Reading units needs
+-- no layer.
 function mutate(ctx)
   return {
-    units = function(units, ctx)
-      local features = ctx.features
+    features = function(features, ctx)
       local seen = {}
 
       local function visit(name)
@@ -25,7 +24,7 @@ function mutate(ctx)
         visit(next_name)
       end
 
-      for _, unit in pairs(units) do
+      for _, unit in pairs(ctx.units) do
         -- A unit that is itself a feature (dragon's teeth, walls) leaves that
         -- feature, not a wreck, so it keeps blocking.
         if unit.isfeature ~= true and unit.isfeature ~= 1 then

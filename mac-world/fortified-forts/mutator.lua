@@ -63,8 +63,8 @@ function mutate(ctx)
       where(hp_needs("WATER", not_(range(0.00000001, 1)))):change(hp_change),
       where(modifier_needs("WATER")):change(modifier_change),
     },
-    units = function(units, ctx)
-      ctx.features:where {
+    features = function(features, ctx)
+      features:where {
         category = "dragonteeth",
         blocking = "1",
         height = not_(is("0")),
