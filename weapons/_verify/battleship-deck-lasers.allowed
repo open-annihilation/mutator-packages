@@ -1,0 +1,10 @@
+# Fields of the original's unit files that are Uberhack's
+right only field units/armbats.fbi [unitinfo] category: *
+right only field units/corbats.fbi [unitinfo] category: *
+right only field units/armbats.fbi [unitinfo] weapon1: ARM_BATS -> ARM_BATSAFT
+right only field units/armbats.fbi [unitinfo] weapon2: ARM_BATS -> ARM_BATSFORE
+right only field units/corbats.fbi [unitinfo] explodeas: *
+right only field units/corbats.fbi [unitinfo] selfdestructas: *
+
+# Script sources, which the game never reads
+right only file replaced scripts/*.bos *

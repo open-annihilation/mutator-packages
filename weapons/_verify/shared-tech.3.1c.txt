@@ -1,0 +1,85 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: shared-tech 1
+# seed: 0
+field download/armap.tdf [menuentry1] button: (absent) -> 2	by shared-tech
+field download/armap.tdf [menuentry1] menu: (absent) -> 6	by shared-tech
+field download/armap.tdf [menuentry1] unitmenu: (absent) -> CORCOM	by shared-tech
+field download/armap.tdf [menuentry1] unitname: (absent) -> ARMAP	by shared-tech
+field download/armap.tdf [placeholder] button: (absent) -> 0	by shared-tech
+field download/armap.tdf [placeholder] menu: (absent) -> 0	by shared-tech
+field download/armap.tdf [placeholder] unitmenu: (absent) -> 	by shared-tech
+field download/armap.tdf [placeholder] unitname: (absent) -> 	by shared-tech
+field download/armlab.tdf [menuentry1] button: (absent) -> 0	by shared-tech
+field download/armlab.tdf [menuentry1] menu: (absent) -> 6	by shared-tech
+field download/armlab.tdf [menuentry1] unitmenu: (absent) -> CORCOM	by shared-tech
+field download/armlab.tdf [menuentry1] unitname: (absent) -> ARMLAB	by shared-tech
+field download/armlab.tdf [placeholder] button: (absent) -> 0	by shared-tech
+field download/armlab.tdf [placeholder] menu: (absent) -> 0	by shared-tech
+field download/armlab.tdf [placeholder] unitmenu: (absent) -> 	by shared-tech
+field download/armlab.tdf [placeholder] unitname: (absent) -> 	by shared-tech
+field download/armsy.tdf [menuentry1] button: (absent) -> 3	by shared-tech
+field download/armsy.tdf [menuentry1] menu: (absent) -> 6	by shared-tech
+field download/armsy.tdf [menuentry1] unitmenu: (absent) -> CORCOM	by shared-tech
+field download/armsy.tdf [menuentry1] unitname: (absent) -> ARMSY	by shared-tech
+field download/armsy.tdf [placeholder] button: (absent) -> 0	by shared-tech
+field download/armsy.tdf [placeholder] menu: (absent) -> 0	by shared-tech
+field download/armsy.tdf [placeholder] unitmenu: (absent) -> 	by shared-tech
+field download/armsy.tdf [placeholder] unitname: (absent) -> 	by shared-tech
+field download/armvp.tdf [menuentry1] button: (absent) -> 1	by shared-tech
+field download/armvp.tdf [menuentry1] menu: (absent) -> 6	by shared-tech
+field download/armvp.tdf [menuentry1] unitmenu: (absent) -> CORCOM	by shared-tech
+field download/armvp.tdf [menuentry1] unitname: (absent) -> ARMVP	by shared-tech
+field download/armvp.tdf [placeholder] button: (absent) -> 0	by shared-tech
+field download/armvp.tdf [placeholder] menu: (absent) -> 0	by shared-tech
+field download/armvp.tdf [placeholder] unitmenu: (absent) -> 	by shared-tech
+field download/armvp.tdf [placeholder] unitname: (absent) -> 	by shared-tech
+field download/corap.tdf [menuentry1] button: (absent) -> 2	by shared-tech
+field download/corap.tdf [menuentry1] menu: (absent) -> 6	by shared-tech
+field download/corap.tdf [menuentry1] unitmenu: (absent) -> ARMCOM	by shared-tech
+field download/corap.tdf [menuentry1] unitname: (absent) -> CORAP	by shared-tech
+field download/corap.tdf [placeholder] button: (absent) -> 0	by shared-tech
+field download/corap.tdf [placeholder] menu: (absent) -> 0	by shared-tech
+field download/corap.tdf [placeholder] unitmenu: (absent) -> 	by shared-tech
+field download/corap.tdf [placeholder] unitname: (absent) -> 	by shared-tech
+field download/corlab.tdf [menuentry1] button: (absent) -> 0	by shared-tech
+field download/corlab.tdf [menuentry1] menu: (absent) -> 6	by shared-tech
+field download/corlab.tdf [menuentry1] unitmenu: (absent) -> ARMCOM	by shared-tech
+field download/corlab.tdf [menuentry1] unitname: (absent) -> CORLAB	by shared-tech
+field download/corlab.tdf [placeholder] button: (absent) -> 0	by shared-tech
+field download/corlab.tdf [placeholder] menu: (absent) -> 0	by shared-tech
+field download/corlab.tdf [placeholder] unitmenu: (absent) -> 	by shared-tech
+field download/corlab.tdf [placeholder] unitname: (absent) -> 	by shared-tech
+field download/corsy.tdf [menuentry1] button: (absent) -> 3	by shared-tech
+field download/corsy.tdf [menuentry1] menu: (absent) -> 6	by shared-tech
+field download/corsy.tdf [menuentry1] unitmenu: (absent) -> ARMCOM	by shared-tech
+field download/corsy.tdf [menuentry1] unitname: (absent) -> CORSY	by shared-tech
+field download/corsy.tdf [placeholder] button: (absent) -> 0	by shared-tech
+field download/corsy.tdf [placeholder] menu: (absent) -> 0	by shared-tech
+field download/corsy.tdf [placeholder] unitmenu: (absent) -> 	by shared-tech
+field download/corsy.tdf [placeholder] unitname: (absent) -> 	by shared-tech
+field download/corvp.tdf [menuentry1] button: (absent) -> 1	by shared-tech
+field download/corvp.tdf [menuentry1] menu: (absent) -> 6	by shared-tech
+field download/corvp.tdf [menuentry1] unitmenu: (absent) -> ARMCOM	by shared-tech
+field download/corvp.tdf [menuentry1] unitname: (absent) -> CORVP	by shared-tech
+field download/corvp.tdf [placeholder] button: (absent) -> 0	by shared-tech
+field download/corvp.tdf [placeholder] menu: (absent) -> 0	by shared-tech
+field download/corvp.tdf [placeholder] unitmenu: (absent) -> 	by shared-tech
+field download/corvp.tdf [placeholder] unitname: (absent) -> 	by shared-tech
+file added download/armap.tdf	by shared-tech
+file added download/armlab.tdf	by shared-tech
+file added download/armsy.tdf	by shared-tech
+file added download/armvp.tdf	by shared-tech
+file added download/corap.tdf	by shared-tech
+file added download/corlab.tdf	by shared-tech
+file added download/corsy.tdf	by shared-tech
+file added download/corvp.tdf	by shared-tech
+menu added ARMCOM 6 0 CORLAB	by shared-tech
+menu added ARMCOM 6 1 CORVP	by shared-tech
+menu added ARMCOM 6 2 CORAP	by shared-tech
+menu added ARMCOM 6 3 CORSY	by shared-tech
+menu added CORCOM 6 0 ARMLAB	by shared-tech
+menu added CORCOM 6 1 ARMVP	by shared-tech
+menu added CORCOM 6 2 ARMAP	by shared-tech
+menu added CORCOM 6 3 ARMSY	by shared-tech

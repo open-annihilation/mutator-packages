@@ -1,0 +1,21 @@
+# oa-tool mutator diff 1
+# game: rev31.gp3 btdata.ccx btmaps.ccx by.ccx ccdata.ccx ccmaps.ccx ccmiss.ccx AFark.ufo AFlea.ufo AScarab.ufo Cometctr.ufo Cormabm.ufo CorNecro.ufo corplas.ufo Evadrivd.ufo Example.ufo floggen.ufo Mndsmars.ufo tactics1.hpi tactics2.hpi tactics3.hpi tactics4.hpi tactics5.hpi tactics6.hpi tactics7.hpi tactics8.hpi totala1.hpi totala2.hpi totala3.hpi totala4.hpi worlds.hpi
+# mod: none
+# loadout: low-tech 1
+# seed: 0
+field guis/armca3.gui [gadget4] grayedout: 0 -> 1
+field guis/armca3.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armck3.gui [gadget4] grayedout: (absent) -> 1
+field guis/armck3.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armcs1.gui [gadget4] grayedout: 0 -> 1
+field guis/armcs1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/armcv3.gui [gadget4] grayedout: (absent) -> 1
+field guis/armcv3.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corca3.gui [gadget4] grayedout: (absent) -> 1
+field guis/corca3.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corck3.gui [gadget4] grayedout: (absent) -> 1
+field guis/corck3.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corcs1.gui [gadget4] grayedout: (absent) -> 1
+field guis/corcs1.gui [gadget4][common] commonattribs: 4 -> 0
+field guis/corcv3.gui [gadget4] grayedout: (absent) -> 1
+field guis/corcv3.gui [gadget4][common] commonattribs: 4 -> 0

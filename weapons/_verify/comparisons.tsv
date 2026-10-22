@@ -9,7 +9,7 @@ hot-zipper	./hot-zipper	_imports/hot-zipper	-
 hotfoot	./hotfoot	_imports/hotfoot	-
 super-zeus	./super-zeus	_imports/super-zeus	-
 terrain-terror	./terrain-terror	_imports/terrain-terror	-
-big-llt	./big-llt	_imports/better-llts	big-llt.allowed
+big-llt	./big-llt	-	-
 battleship-deck-lasers	./battleship-deck-lasers	_imports/battle-ship-deck-lasers	battleship-deck-lasers.allowed
 shared-tech	./shared-tech	-	-
 low-tech	./low-tech	-	-
